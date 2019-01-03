@@ -60,6 +60,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <xcb/composite.h>
 #include <xcb/damage.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <libdrm/drm.h>
+
+#include <sys/stat.h>
+#define drmcard "/dev/dri/card0"
+
+int dri_fd;
 
 Q_DECLARE_METATYPE(KWin::Compositor::SuspendReason)
 
@@ -351,6 +360,8 @@ void Compositor::startupWithWorkspace()
     if (m_releaseSelectionTimer.isActive()) {
         m_releaseSelectionTimer.stop();
     }
+
+    dri_fd=open(drmcard,O_RDWR);
 
     // render at least once
     performCompositing();
@@ -771,7 +782,21 @@ void Compositor::performCompositing()
     if (m_bufferSwapPending && m_scene->syncsToVBlank()) {
         m_composeAtSwapCompletion = true;
     } else {
-        scheduleRepaint();
+drm_wait_vblank_t vblank;
+         int retval;
+         vblank.request.sequence = 1;
+         vblank.request.type = _DRM_VBLANK_RELATIVE;
+         /*
+         if (write(fifoFD,"A\n",2)<0) {
+           perror("eww");
+         }
+         */
+         do {
+           retval = ioctl (dri_fd, DRM_IOCTL_WAIT_VBLANK, &vblank);
+           *((int*)&vblank.request.type )&=~_DRM_VBLANK_RELATIVE;
+         }
+         while (retval == -1 && errno == EINTR);
+           scheduleRepaint();
     }
 }
 
@@ -884,6 +909,7 @@ void Compositor::setCompositeTimer()
             waitTime = 1; // ... "0" would be sufficient, but the compositor isn't the WMs only task
         }
     }
+    waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this); // force 4fps minimum
 }
 
