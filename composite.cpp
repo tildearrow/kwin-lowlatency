@@ -786,16 +786,12 @@ drm_wait_vblank_t vblank;
          int retval;
          vblank.request.sequence = 1;
          vblank.request.type = _DRM_VBLANK_RELATIVE;
-         /*
-         if (write(fifoFD,"A\n",2)<0) {
-           perror("eww");
-         }
-         */
          do {
            retval = ioctl (dri_fd, DRM_IOCTL_WAIT_VBLANK, &vblank);
            *((int*)&vblank.request.type )&=~_DRM_VBLANK_RELATIVE;
          }
          while (retval == -1 && errno == EINTR);
+usleep(8000);
            scheduleRepaint();
     }
 }
