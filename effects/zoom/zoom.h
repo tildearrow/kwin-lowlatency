@@ -100,6 +100,7 @@ private:
     void moveZoom(int x, int y);
 private:
     double zoom;
+    double previous_zoom;
     double target_zoom;
     double source_zoom;
     bool polling; // Mouse polling

@@ -45,6 +45,7 @@ namespace KWin
 ZoomEffect::ZoomEffect()
     : Effect()
     , zoom(1)
+    , previous_zoom(1)
     , target_zoom(1)
     , polling(false)
     , zoomFactor(1.25)
@@ -254,6 +255,7 @@ void ZoomEffect::reconfigure(ReconfigureFlags)
 
 void ZoomEffect::prePaintScreen(ScreenPrePaintData& data, int time)
 {
+    previous_zoom=zoom;
     if (zoom != target_zoom) {
         const float zoomDist = qAbs(target_zoom - source_zoom);
         if (target_zoom > zoom)
