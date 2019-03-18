@@ -3245,9 +3245,9 @@ void Client::doResizeSync()
         syncRequest.timeout->start(250);
         sendSyncRequest();
     } else {                            // for clients not supporting the XSYNC protocol, we
-        //syncRequest.isPending = true;   // limit the resizes to 30Hz to take pointless load from X11
+        //syncRequest.isPending = true; // limit the resizes to 30Hz to take pointless load from X11
         performMoveResize();
-        //syncRequest.timeout->start(1);  // and the client, the mouse is still moved at full speed
+        //syncRequest.timeout->start(1);// and the client, the mouse is still moved at full speed
     }                                   // and no human can control faster resizes anyway
                                         // no, don't. Windows can do 60Hz resizes, so why don't we?
     const QRect &moveResizeGeom = moveResizeGeometry();
