@@ -1,48 +1,67 @@
-# KWin
+# KWin-lowlatency
 
-KWin is an easy to use, but flexible, composited Window Manager for Xorg windowing systems (Wayland, X11) on Linux. Its primary usage is in conjunction with a Desktop Shell (e.g. KDE Plasma Desktop). KWin is designed to go out of the way; users should not notice that they use a window manager at all. Nevertheless KWin provides a steep learning curve for advanced features, which are available, if they do not conflict with the primary mission. KWin does not have a dedicated targeted user group, but follows the targeted user group of the Desktop Shell using KWin as it's window manager.
+KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
 
-## KWin is not...
+## background
 
- * a standalone window manager (c.f. openbox, i3) and does not provide any functionality belonging to a Desktop Shell.
- * a replacement for window managers designed for use with a specific Desktop Shell (e.g. GNOME Shell)
- * a minimalistic window manager
- * designed for use without compositing or for X11 network transparency, though both are possible.
+stock KWin has a major issue regarding stuttering. it stutters heavily, and if you don't want that, then you have the input latency problem (of up to 50ms! (probably even worse on NVIDIA cards!)).
 
-# Contacting KWin development team
+the rationale for such a problem is that KWin uses a weird method to paint the screen.
+instead of simply sync'ing to vblank, it uses a timer. yeah, a **timer** that is off-sync with the vblank interval.
+you can prove this by disabling VSync in the system settings. you'll see just 1 line of tearing in your screen, and well, that's the time it swaps due to the timer.
+
+in order to "fix" this under vanilla KWin, a typical solution is to insert this in kwinrc:
+
+```
+MaxFPS=200
+RefreshRate=200
+```
+
+effectively making the timer faster than the actual screen's rate, forcing VSync at some point.
+
+however, this introduces additional input lag, which varies depending on your driver, but usually it's 50ms (still too high).
+you can prove this by moving a window. you'll see the cursor being ahead of the title bar, or at least so under X.
+
+so, how to fix this? let's ditch the timer and let us access the VBlank interval directly.
+
+but how do we do that? there are 2 methods. both have flaws though:
+
+1. GLX_OML_sync_control
+2. DRM (Direct Rendering Manager)
+
+the first one has the problem of working only under GLX (which means on X with EGL support, OpenGL ES or Wayland support), but works everywhere and no tinkering is necessary if you have multiple cards.
+
+the second one in the other hand works everywhere (although I only tested with GLX), but requires addressing the card at a lower level than X, and may require tinkering if multiple cards are present.
+
+I went for the second one. now, by doing this, we have a proper desktop without stuttering, but hey, can we go further? yes, of course!
+
+now, by sleeping for a very few milliseconds (up to 10) the compositor has more time for user input before rendering, which further reduces input lag.
+
+the reason why only up to 10ms is because any further would leave little room for rendering, and that will actually produce more stuttering than fix it.
+
+## KWin-lowlatency is not...
+
+* perfect. it tries its best to deliver low-latency no-stutter video, but I can't promise this is always the case.
+  as an example, it will stutter if you select another window, or if you have too many windows open.
+  I eventually will think of some approach to fix this, however.
+
+# contacting original KWin development team
 
  * mailing list: [kwin@kde.org](https://mail.kde.org/mailman/listinfo/kwin)
  * IRC: #kwin on freenode
 
-# Support
-## Application Developer
-If you are an application developer having questions regarding windowing systems (either X11 or Wayland) please do not hesitate to contact us. Preferable through our mailing list. Ideally subscribe to the mailing list, so that your mail doesn't get stuck in the moderation queue.
+# support
 
-## End user
-Please contact the support channels of your Linux distribution for user support. The KWin development team does not provide end user support.
+use the issues section at the top.
 
-# Reporting bugs
+# bugs?
 
-Please use [KDE's bugtracker](https://bugs.kde.org) and report for [product KWin](https://bugs.kde.org/enter_bug.cgi?product=kwin).
+use the issues section at the top. **but wait!** before reporting an issue, first test it again on [the official KWin](https://cgit.kde.org/kwin.git/) to determine whether this is really a KWin-lowlatency-only bug.
+
+if the bug also reproduces in official KWin, please file a bug on [their bug tracker](https://bugs.kde.org/enter_bug.cgi?product=kwin) instead.
 
 # Developing on KWin
+
 Please refer to [hacking documentation](HACKING.md) for how to build and start KWin. Further information about KWin's test suite can be found in [TESTING.md](TESTING.md).
 
-## Guidelines for new features
-
-A new Feature can only be added to KWin if:
-
- * it does not violate the primary missions as stated at the start of this document
- * it does not introduce instabilities
- * it is maintained, that is bugs are fixed in a timely manner (second next minor release) if it is not a corner case.
- * it works together with all existing features
- * it supports both single and multi screen (xrandr)
- * it adds a significant advantage
- * it is feature complete, that is supports at least all useful features from competitive implementations
- * it is not a special case for a small user group
- * it does not increase code complexity significantly
- * it does not affect KWin's license (GPLv2+)
-
-All new added features are under probation, that is if any of the non-functional requirements as listed above do not hold true in the next two feature releases, the added feature will be removed again.
-
-The same non functional requirements hold true for any kind of plugins (effects, scripts, etc.). It is suggested to use scripted plugins and distribute them separately.
+no, sorry, there are no tests for the low-latency features yet.
