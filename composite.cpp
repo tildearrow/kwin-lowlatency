@@ -77,7 +77,7 @@ namespace KWin
 
 extern int currentRefreshRate();
 
-int LastPaintFree=8000;
+int LastPaintFree;
 
 CompositorSelectionOwner::CompositorSelectionOwner(const char *selection) : KSelectionOwner(selection, connection(), rootWindow()), owning(false)
 {
@@ -806,7 +806,7 @@ drm_wait_vblank_t vblank;
            *((int*)&vblank.request.type )&=~_DRM_VBLANK_RELATIVE;
          }
          while (retval == -1 && errno == EINTR);
-         //LastPaintFree=8000;
+         LastPaintFree=8000;
          usleep(LastPaintFree);
            scheduleRepaint();
     }
@@ -921,10 +921,6 @@ void Compositor::setCompositeTimer()
             waitTime = 1; // ... "0" would be sufficient, but the compositor isn't the WMs only task
         }
     }
-    //printf("waitTime: %d\n",waitTime);
-    if (waitTime<5) waitTime=5;
-    LastPaintFree=fmin((waitTime*1000)-5000,LastPaintFree+200);
-    //printf("LPF: %d\n",LastPaintFree);
     waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this); // force 4fps minimum
 }
