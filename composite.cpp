@@ -78,6 +78,7 @@ namespace KWin
 extern int currentRefreshRate();
 
 int LastPaintFree=8000;
+float totalSkips=0;
 
 CompositorSelectionOwner::CompositorSelectionOwner(const char *selection) : KSelectionOwner(selection, connection(), rootWindow()), owning(false)
 {
@@ -923,8 +924,18 @@ void Compositor::setCompositeTimer()
     }
     //printf("waitTime: %d\n",waitTime);
     if (waitTime<5) waitTime=5;
-    LastPaintFree=fmin((waitTime*1000)-5000,LastPaintFree+200);
-    //printf("LPF: %d\n",LastPaintFree);
+    totalSkips-=0.004;
+    if (totalSkips<0) {
+      totalSkips=0;
+    }
+    if ((signed)(LastPaintFree-2000)>(signed)((waitTime*1000)-5000)) {
+      totalSkips++;
+    }
+    LastPaintFree=fmin((waitTime*1000)-5000,LastPaintFree+(200-totalSkips*20));
+    if (LastPaintFree<1) {
+      LastPaintFree=1;
+    }
+    printf("LPF: %d ts: %.2f\n",LastPaintFree,totalSkips);
     waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this); // force 4fps minimum
 }
