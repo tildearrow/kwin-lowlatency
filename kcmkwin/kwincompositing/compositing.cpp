@@ -41,6 +41,7 @@ Compositing::Compositing(QObject *parent)
     , m_windowThumbnail(0)
     , m_glScaleFilter(0)
     , m_xrScaleFilter(false)
+    , m_unredirectFullscreen(false)
     , m_glSwapStrategy(0)
     , m_compositingType(0)
     , m_compositingEnabled(true)
@@ -55,6 +56,7 @@ Compositing::Compositing(QObject *parent)
     connect(this, &Compositing::windowThumbnailChanged,      this, &Compositing::changed);
     connect(this, &Compositing::glScaleFilterChanged,        this, &Compositing::changed);
     connect(this, &Compositing::xrScaleFilterChanged,        this, &Compositing::changed);
+    connect(this, &Compositing::unredirectFullscreenChanged, this, &Compositing::changed);
     connect(this, &Compositing::glSwapStrategyChanged,       this, &Compositing::changed);
     connect(this, &Compositing::compositingTypeChanged,      this, &Compositing::changed);
     connect(this, &Compositing::compositingEnabledChanged,   this, &Compositing::changed);
@@ -73,6 +75,7 @@ void Compositing::reset()
     setWindowThumbnail(kwinConfig.readEntry("HiddenPreviews", 5) - 4);
     setGlScaleFilter(kwinConfig.readEntry("GLTextureFilter", 2));
     setXrScaleFilter(kwinConfig.readEntry("XRenderSmoothScale", false));
+    setUnredirectFullscreen(kwinConfig.readEntry("UnredirectFullscreen", false));
     setCompositingEnabled(kwinConfig.readEntry("Enabled", true));
 
     auto swapStrategy = [&kwinConfig]() {
@@ -123,6 +126,7 @@ void Compositing::defaults()
     setWindowThumbnail(1);
     setGlScaleFilter(2);
     setXrScaleFilter(false);
+    setUnredirectFullscreen(false);
     setGlSwapStrategy(1);
     setCompositingType(CompositingType::OPENGL20_INDEX);
     const QModelIndex index = m_openGLPlatformInterfaceModel->indexForKey(QStringLiteral("glx"));
@@ -183,6 +187,11 @@ bool Compositing::xrScaleFilter() const
     return m_xrScaleFilter;
 }
 
+bool Compositing::unredirectFullscreen() const
+{
+    return m_unredirectFullscreen;
+}
+
 int Compositing::glSwapStrategy() const
 {
     return m_glSwapStrategy;
@@ -223,6 +232,15 @@ void Compositing::setGlSwapStrategy(int strategy)
     }
     m_glSwapStrategy = strategy;
     emit glSwapStrategyChanged(strategy);
+}
+
+void Compositing::setUnredirectFullscreen(bool unredirect)
+{
+    if (unredirect == m_unredirectFullscreen) {
+        return;
+    }
+    m_unredirectFullscreen = unredirect;
+    emit unredirectFullscreenChanged(unredirect);
 }
 
 void Compositing::setWindowThumbnail(int index)
@@ -272,6 +290,7 @@ void Compositing::save()
     kwinConfig.writeEntry("HiddenPreviews", windowThumbnail() + 4);
     kwinConfig.writeEntry("GLTextureFilter", glScaleFilter());
     kwinConfig.writeEntry("XRenderSmoothScale", xrScaleFilter());
+    kwinConfig.writeEntry("UnredirectFullscreen", unredirectFullscreen());
     if (!compositingRequired()) {
         kwinConfig.writeEntry("Enabled", compositingEnabled());
     }
