@@ -959,6 +959,9 @@ void Client::internalShow()
         m_decoInputExtent.map();
         updateHiddenPreview();
     }
+    if (Compositor::isCreated()) {
+        Compositor::self()->checkUnredirect();
+    }
     emit windowShown(this);
 }
 
@@ -974,6 +977,9 @@ void Client::internalHide()
         updateHiddenPreview();
     addWorkspaceRepaint(visibleRect());
     workspace()->clientHidden(this);
+    if (Compositor::isCreated()) {
+        Compositor::self()->checkUnredirect();
+    }
     emit windowHidden(this);
 }
 
@@ -992,6 +998,9 @@ void Client::internalKeep()
     updateHiddenPreview();
     addWorkspaceRepaint(visibleRect());
     workspace()->clientHidden(this);
+    if (Compositor::isCreated()) {
+        Compositor::self()->checkUnredirect();
+    }
 }
 
 /**

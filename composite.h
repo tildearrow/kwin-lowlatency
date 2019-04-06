@@ -158,6 +158,8 @@ public Q_SLOTS:
      * Schedules a new repaint if no repaint is currently scheduled.
      **/
     void scheduleRepaint();
+    void checkUnredirect();
+    void checkUnredirect(bool force);
     void updateCompositeBlocking();
     void updateCompositeBlocking(KWin::Client* c);
 
@@ -195,6 +197,7 @@ private Q_SLOTS:
      **/
     void restart();
     void performCompositing();
+    void delayedCheckUnredirect();
     void slotConfigChanged();
     void releaseCompositorSelection();
     void deleteUnusedSupportProperties();
@@ -224,6 +227,8 @@ private:
     QElapsedTimer nextPaintReference;
     QRegion repaints_region;
 
+    QTimer unredirectTimer;
+    bool forceUnredirectCheck;
     QTimer compositeResetTimer; // for compressing composite resets
     bool m_finishing; // finish() sets this variable while shutting down
     bool m_starting; // start() sets this variable while starting
