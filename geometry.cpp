@@ -86,6 +86,9 @@ void Workspace::desktopResized()
     if (effects) {
         static_cast<EffectsHandlerImpl*>(effects)->desktopResized(geom.size());
     }
+
+    //Update the shape of the overlay window to fix redrawing of unredirected windows. bug#305781
+    m_compositor->checkUnredirect(true);
 }
 
 void Workspace::saveOldScreenSizes()
@@ -2137,6 +2140,10 @@ void AbstractClient::move(int x, int y, ForceGeometry_t force)
     updateWindowRules(Rules::Position);
     screens()->setCurrent(this);
     workspace()->updateStackingOrder();
+    if (Compositor::isCreated()) {
+        // TODO: move out of geometry.cpp, is this really needed here?
+        Compositor::self()->checkUnredirect();
+    }
     // client itself is not damaged
     addRepaintDuringGeometryUpdates();
     updateGeometryBeforeUpdateBlocking();

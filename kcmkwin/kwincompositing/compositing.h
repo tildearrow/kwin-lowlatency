@@ -40,6 +40,7 @@ class Compositing : public QObject
     Q_PROPERTY(int windowThumbnail READ windowThumbnail WRITE setWindowThumbnail NOTIFY windowThumbnailChanged)
     Q_PROPERTY(int glScaleFilter READ glScaleFilter WRITE setGlScaleFilter NOTIFY glScaleFilterChanged)
     Q_PROPERTY(bool xrScaleFilter READ xrScaleFilter WRITE setXrScaleFilter NOTIFY xrScaleFilterChanged)
+    Q_PROPERTY(bool unredirectFullscreen READ unredirectFullscreen WRITE setUnredirectFullscreen NOTIFY unredirectFullscreenChanged)
     Q_PROPERTY(int glSwapStrategy READ glSwapStrategy WRITE setGlSwapStrategy NOTIFY glSwapStrategyChanged)
     Q_PROPERTY(int compositingType READ compositingType WRITE setCompositingType NOTIFY compositingTypeChanged)
     Q_PROPERTY(bool compositingEnabled READ compositingEnabled WRITE setCompositingEnabled NOTIFY compositingEnabledChanged)
@@ -57,6 +58,7 @@ public:
     int windowThumbnail() const;
     int glScaleFilter() const;
     bool xrScaleFilter() const;
+    bool unredirectFullscreen() const;
     int glSwapStrategy() const;
     int compositingType() const;
     bool compositingEnabled() const;
@@ -70,6 +72,7 @@ public:
     void setWindowThumbnail(int index);
     void setGlScaleFilter(int index);
     void setXrScaleFilter(bool filter);
+    void setUnredirectFullscreen(bool unredirect);
     void setGlSwapStrategy(int strategy);
     void setCompositingType(int index);
     void setCompositingEnabled(bool enalbed);
@@ -88,6 +91,7 @@ Q_SIGNALS:
     void windowThumbnailChanged(int);
     void glScaleFilterChanged(int);
     void xrScaleFilterChanged(int);
+    void unredirectFullscreenChanged(bool);
     void glSwapStrategyChanged(int);
     void compositingTypeChanged(int);
     void compositingEnabledChanged(bool);
@@ -99,6 +103,7 @@ private:
     int m_windowThumbnail;
     int m_glScaleFilter;
     bool m_xrScaleFilter;
+    bool m_unredirectFullscreen;
     int m_glSwapStrategy;
     int m_compositingType;
     bool m_compositingEnabled;

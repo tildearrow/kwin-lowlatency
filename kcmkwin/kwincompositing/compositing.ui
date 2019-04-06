@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>462</width>
-    <height>349</height>
+    <height>415</height>
    </rect>
   </property>
   <layout class="QFormLayout" name="formLayout">
@@ -30,6 +30,22 @@ Alternatively, you might want to use the XRender backend instead.</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="KMessageWidget" name="unredirectInformation">
+       <property name="visible">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Having full screen windows bypass the compositor is not supported on every hardware.</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="messageType">
+        <enum>KMessageWidget::Information</enum>
        </property>
       </widget>
      </item>
@@ -278,6 +294,13 @@ Alternatively, you might want to use the XRender backend instead.</string>
      </property>
      <property name="text">
       <string>Allow applications to block compositing</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="QCheckBox" name="unredirectFullscreen">
+     <property name="text">
+      <string>Suspend compositor for full screen windows</string>
      </property>
     </widget>
    </item>
