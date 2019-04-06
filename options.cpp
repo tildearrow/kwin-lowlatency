@@ -636,14 +636,14 @@ void Options::setHiddenPreviews(int hiddenPreviews)
 
 void Options::setUnredirectFullscreen(bool unredirectFullscreen)
 {
-    if (GLPlatform::instance()->driver() == Driver_Intel)
-        unredirectFullscreen = false; // bug #252817
+    //if (GLPlatform::instance()->driver() == Driver_Intel)
+        //unredirectFullscreen = false; // bug #252817
     if (m_unredirectFullscreen == unredirectFullscreen) {
         return;
     }
-    if (GLPlatform::instance()->driver() == Driver_Intel) { // write back the value
-        KConfigGroup(m_settings->config(), "Compositing").writeEntry("UnredirectFullscreen", false);
-    }
+    //if (GLPlatform::instance()->driver() == Driver_Intel) { // write back the value
+        //KConfigGroup(m_settings->config(), "Compositing").writeEntry("UnredirectFullscreen", false);
+    //}
     m_unredirectFullscreen = unredirectFullscreen;
     emit unredirectFullscreenChanged();
 }
