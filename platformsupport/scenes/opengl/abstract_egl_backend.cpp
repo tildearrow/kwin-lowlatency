@@ -131,8 +131,8 @@ void AbstractEglBackend::initKWinGL()
 {
     GLPlatform *glPlatform = GLPlatform::instance();
     glPlatform->detect(EglPlatformInterface);
-    if (GLPlatform::instance()->driver() == Driver_Intel)
-        options->setUnredirectFullscreen(false); // bug #252817 which I'm not fixing yet
+    //if (GLPlatform::instance()->driver() == Driver_Intel)
+        //options->setUnredirectFullscreen(false); // bug #252817 which I'm not fixing yet
     options->setGlPreferBufferSwap(options->glPreferBufferSwap()); // resolve autosetting
     if (options->glPreferBufferSwap() == Options::AutoSwapStrategy)
         options->setGlPreferBufferSwap('e'); // for unknown drivers - should not happen
