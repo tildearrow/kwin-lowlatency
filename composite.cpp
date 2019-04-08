@@ -68,17 +68,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <sys/stat.h>
 #define drmcard "/dev/dri/card0"
 
-int dri_fd;
-
 Q_DECLARE_METATYPE(KWin::Compositor::SuspendReason)
 
 namespace KWin
 {
 
 extern int currentRefreshRate();
-
-int LastPaintFree=8000;
-float totalSkips=0;
 
 CompositorSelectionOwner::CompositorSelectionOwner(const char *selection) : KSelectionOwner(selection, connection(), rootWindow()), owning(false)
 {
@@ -370,7 +365,7 @@ void Compositor::startupWithWorkspace()
         m_releaseSelectionTimer.stop();
     }
 
-    dri_fd=open(drmcard,O_RDWR);
+    m_drmFD=open(drmcard,O_RDWR);
 
     // render at least once
     performCompositing();
@@ -798,18 +793,16 @@ void Compositor::performCompositing()
     if (m_bufferSwapPending && m_scene->syncsToVBlank()) {
         m_composeAtSwapCompletion = true;
     } else {
-drm_wait_vblank_t vblank;
-         int retval;
-         vblank.request.sequence = 1;
-         vblank.request.type = _DRM_VBLANK_RELATIVE;
-         do {
-           retval = ioctl (dri_fd, DRM_IOCTL_WAIT_VBLANK, &vblank);
-           *((int*)&vblank.request.type )&=~_DRM_VBLANK_RELATIVE;
-         }
-         while (retval == -1 && errno == EINTR);
-         //LastPaintFree=8000;
-         usleep(LastPaintFree);
-           scheduleRepaint();
+        drm_wait_vblank_t vblank;
+        int retval;
+        vblank.request.sequence=1;
+        vblank.request.type=_DRM_VBLANK_RELATIVE;
+        do {
+          retval=ioctl(m_drmFD,DRM_IOCTL_WAIT_VBLANK,&vblank);
+          *((int*)&vblank.request.type )&=~_DRM_VBLANK_RELATIVE;
+        } while (retval==-1 && errno==EINTR);
+        usleep(m_lastPaintFree);
+        scheduleRepaint();
     }
 }
 
@@ -924,18 +917,18 @@ void Compositor::setCompositeTimer()
     }
     //printf("waitTime: %d\n",waitTime);
     if (waitTime<5) waitTime=5;
-    totalSkips-=0.004;
-    if (totalSkips<0) {
-      totalSkips=0;
+    m_totalSkips-=0.004;
+    if (m_totalSkips<0) {
+      m_totalSkips=0;
     }
-    if ((signed)(LastPaintFree-2000)>(signed)((waitTime*1000)-5000)) {
-      totalSkips++;
+    if ((signed)(m_lastPaintFree-2000)>(signed)((waitTime*1000)-5000)) {
+      m_totalSkips++;
     }
-    LastPaintFree=fmin((waitTime*1000)-5000,LastPaintFree+(200-totalSkips*20));
-    if (LastPaintFree<1) {
-      LastPaintFree=1;
+    m_lastPaintFree=fmin((waitTime*1000)-5000,m_lastPaintFree+(200-m_totalSkips*20));
+    if (m_lastPaintFree<1) {
+      m_lastPaintFree=1;
     }
-    printf("LPF: %d ts: %.2f\n",LastPaintFree,totalSkips);
+    printf("LPF: %d ts: %.2f\n",m_lastPaintFree,m_totalSkips);
     waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this); // force 4fps minimum
 }
