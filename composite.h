@@ -238,6 +238,7 @@ private:
     int m_drmFD;
     int m_lastPaintFree=8000;
     float m_totalSkips=0;
+    bool m_idle;
 
     KWIN_SINGLETON_VARIABLE(Compositor, s_compositor)
 };

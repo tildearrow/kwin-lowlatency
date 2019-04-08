@@ -103,6 +103,7 @@ Compositor::Compositor(QObject* workspace)
     , m_scene(NULL)
     , m_bufferSwapPending(false)
     , m_composeAtSwapCompletion(false)
+    , m_idle(false)
 {
     qRegisterMetaType<Compositor::SuspendReason>("Compositor::SuspendReason");
     connect(&compositeResetTimer, SIGNAL(timeout()), SLOT(restart()));
@@ -733,6 +734,7 @@ void Compositor::performCompositing()
         m_scene->idle();
         m_timeSinceLastVBlank = fpsInterval - (options->vBlankTime() + 1); // means "start now"
         m_timeSinceStart += m_timeSinceLastVBlank;
+        m_idle=true;
         // Note: It would seem here we should undo suspended unredirect, but when scenes need
         // it for some reason, e.g. transformations or translucency, the next pass that does not
         // need this anymore and paints normally will also reset the suspended unredirect.
@@ -795,6 +797,13 @@ void Compositor::performCompositing()
     } else {
         drm_wait_vblank_t vblank;
         int retval;
+        if (m_idle) {
+          m_idle=false;
+          m_totalSkips--;
+          if (m_totalSkips<0) m_totalSkips=0;
+          // TODO: improve this thing
+          m_lastPaintFree=8000;
+        }
         vblank.request.sequence=1;
         vblank.request.type=_DRM_VBLANK_RELATIVE;
         do {
