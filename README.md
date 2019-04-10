@@ -1,3 +1,8 @@
+# note for NVIDIA users
+
+this will most likely not work. sorry. I don't have an NVIDIA card to test with so I can't ensure it will work for you.
+please see [bug #2](https://github.com/tildearrow/kwin-lowlatency/issues/2).
+
 # KWin-lowlatency
 
 KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
