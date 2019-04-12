@@ -168,6 +168,8 @@ public:
         return m_backend->usesOverlayWindow();
     }
     Decoration::Renderer *createDecorationRenderer(Decoration::DecoratedClientImpl *client);
+    
+    virtual bool waitVBlank();
 
     bool animationsSupported() const override {
         return true;

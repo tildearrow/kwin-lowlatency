@@ -583,6 +583,10 @@ void SceneOpenGL::triggerFence()
     }
 }
 
+bool SceneOpenGL::waitVBlank() {
+  return m_backend->waitVBlank();
+}
+
 void SceneOpenGL::insertWait()
 {
     if (m_currentFence && m_currentFence->state() != SyncObject::Waiting) {
