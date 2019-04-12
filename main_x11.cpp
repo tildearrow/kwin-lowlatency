@@ -324,8 +324,9 @@ void ApplicationX11::crashHandler(int signal)
     sprintf(cmd, "%s --crashes %d &",
             QFile::encodeName(QCoreApplication::applicationFilePath()).constData(), crashes);
 
-    sleep(1);
-    system(cmd);
+    //sleep(1);
+    //system(cmd);
+    abort();
 }
 
 } // namespace
