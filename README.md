@@ -1,6 +1,6 @@
 # note for NVIDIA users
 
-this will most likely not work. sorry. I don't have an NVIDIA card to test with so I can't ensure it will work for you.
+this will most likely not work well. sorry. however, I am working on it as of now!
 please see [bug #2](https://github.com/tildearrow/kwin-lowlatency/issues/2).
 
 # KWin-lowlatency
