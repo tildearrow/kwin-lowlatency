@@ -68,16 +68,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <sys/stat.h>
 #define drmcard "/dev/dri/card0"
 
-int dri_fd;
-
 Q_DECLARE_METATYPE(KWin::Compositor::SuspendReason)
 
 namespace KWin
 {
 
 extern int currentRefreshRate();
-
-int LastPaintFree;
 
 CompositorSelectionOwner::CompositorSelectionOwner(const char *selection) : KSelectionOwner(selection, connection(), rootWindow()), owning(false)
 {
@@ -107,6 +103,7 @@ Compositor::Compositor(QObject* workspace)
     , m_scene(NULL)
     , m_bufferSwapPending(false)
     , m_composeAtSwapCompletion(false)
+    , m_idle(false)
 {
     qRegisterMetaType<Compositor::SuspendReason>("Compositor::SuspendReason");
     connect(&compositeResetTimer, SIGNAL(timeout()), SLOT(restart()));
@@ -369,7 +366,7 @@ void Compositor::startupWithWorkspace()
         m_releaseSelectionTimer.stop();
     }
 
-    dri_fd=open(drmcard,O_RDWR);
+    m_drmFD=open(drmcard,O_RDWR);
 
     // render at least once
     performCompositing();
@@ -737,6 +734,7 @@ void Compositor::performCompositing()
         m_scene->idle();
         m_timeSinceLastVBlank = fpsInterval - (options->vBlankTime() + 1); // means "start now"
         m_timeSinceStart += m_timeSinceLastVBlank;
+        m_idle=true;
         // Note: It would seem here we should undo suspended unredirect, but when scenes need
         // it for some reason, e.g. transformations or translucency, the next pass that does not
         // need this anymore and paints normally will also reset the suspended unredirect.
@@ -797,18 +795,23 @@ void Compositor::performCompositing()
     if (m_bufferSwapPending && m_scene->syncsToVBlank()) {
         m_composeAtSwapCompletion = true;
     } else {
-drm_wait_vblank_t vblank;
-         int retval;
-         vblank.request.sequence = 1;
-         vblank.request.type = _DRM_VBLANK_RELATIVE;
-         do {
-           retval = ioctl (dri_fd, DRM_IOCTL_WAIT_VBLANK, &vblank);
-           *((int*)&vblank.request.type )&=~_DRM_VBLANK_RELATIVE;
-         }
-         while (retval == -1 && errno == EINTR);
-         LastPaintFree=8000;
-         usleep(LastPaintFree);
-           scheduleRepaint();
+        drm_wait_vblank_t vblank;
+        int retval;
+        if (m_idle) {
+          m_idle=false;
+          m_totalSkips--;
+          if (m_totalSkips<0) m_totalSkips=0;
+          // TODO: improve this thing
+          m_lastPaintFree=8000;
+        }
+        vblank.request.sequence=1;
+        vblank.request.type=_DRM_VBLANK_RELATIVE;
+        do {
+          retval=ioctl(m_drmFD,DRM_IOCTL_WAIT_VBLANK,&vblank);
+          *((int*)&vblank.request.type )&=~_DRM_VBLANK_RELATIVE;
+        } while (retval==-1 && errno==EINTR);
+        usleep(m_lastPaintFree);
+        scheduleRepaint();
     }
 }
 
@@ -921,6 +924,20 @@ void Compositor::setCompositeTimer()
             waitTime = 1; // ... "0" would be sufficient, but the compositor isn't the WMs only task
         }
     }
+    //printf("waitTime: %d\n",waitTime);
+    if (waitTime<5) waitTime=5;
+    m_totalSkips-=0.004;
+    if (m_totalSkips<0) {
+      m_totalSkips=0;
+    }
+    if ((signed)(m_lastPaintFree-2000)>(signed)((waitTime*1000)-5000)) {
+      m_totalSkips++;
+    }
+    m_lastPaintFree=fmin((waitTime*1000)-5000,m_lastPaintFree+(200-m_totalSkips*20));
+    if (m_lastPaintFree<1) {
+      m_lastPaintFree=1;
+    }
+    printf("LPF: %d ts: %.2f\n",m_lastPaintFree,m_totalSkips);
     waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this); // force 4fps minimum
 }
