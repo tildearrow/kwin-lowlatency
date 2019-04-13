@@ -281,7 +281,7 @@ void GlxBackend::init()
     } else {
       // for some reason Mesa does not tear even if I tell it to do so
       // and actually lowers latency!
-      setSwapInterval(0);
+      setSwapInterval(1);
     }
     setIsDirectRendering(bool(glXIsDirect(display(), ctx)));
 
@@ -674,13 +674,16 @@ void GlxBackend::waitSync()
 {
     // NOTE that vsync has no effect with indirect rendering
     if (haveWaitSync) {
-        uint sync;
+        uint sync, psync;
 #if 0
         // TODO: why precisely is this important?
         // the sync counter /can/ perform multiple steps during glXGetVideoSync & glXWaitVideoSync
         // but this only leads to waiting for two frames??!?
-        glXGetVideoSync(&sync);
-        glXWaitVideoSync(2, (sync + 1) % 2, &sync);
+        glXGetVideoSyncSGI(&sync);
+        psync=sync;
+        while (psync==sync) {
+          glXGetVideoSyncSGI(&sync);
+        }
 #else
         glXWaitVideoSyncSGI(1, 0, &sync);
 #endif
