@@ -275,8 +275,14 @@ void GlxBackend::init()
         // and the GLPlatform has not been initialized at the moment when initGLX() is called.
         glXQueryDrawable = NULL;
     }
-haveWaitSync = true;
-setSwapInterval(1);
+    haveWaitSync = true;
+    if (glPlatform->driver()==Driver_NVidia) {
+      setSwapInterval(1);
+    } else {
+      // for some reason Mesa does not tear even if I tell it to do so
+      // and actually lowers latency!
+      setSwapInterval(0);
+    }
     setIsDirectRendering(bool(glXIsDirect(display(), ctx)));
 
     qCDebug(KWIN_X11STANDALONE) << "Direct rendering:" << isDirectRendering();

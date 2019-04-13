@@ -931,19 +931,21 @@ void Compositor::setCompositeTimer()
             waitTime = 1; // ... "0" would be sufficient, but the compositor isn't the WMs only task
         }
     }
-    //printf("waitTime: %d\n",waitTime);
+    printf("waitTime: %d\n",waitTime);
+    if (waitTime<0) m_totalSkips++;
     if (waitTime<5) waitTime=5;
     m_totalSkips-=0.004;
     if (m_totalSkips<0) {
       m_totalSkips=0;
     }
-    if ((signed)(m_lastPaintFree-2000)>(signed)((waitTime*1000)-5000)) {
-      m_totalSkips++;
+    if (m_totalSkips>10) {
+      m_totalSkips=10;
     }
     m_lastPaintFree=fmin((waitTime*1000)-5000,m_lastPaintFree+(200-m_totalSkips*20));
     if (m_lastPaintFree<1) {
       m_lastPaintFree=1;
     }
+    m_lastPaintFree=7000;
     printf("LPF: %d ts: %.2f\n",m_lastPaintFree,m_totalSkips);
     waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this); // force 4fps minimum
