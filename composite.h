@@ -235,7 +235,6 @@ private:
     int m_framesToTestForSafety = 3;
 
     // low-latency stuff
-    int m_drmFD;
     int m_lastPaintFree=8000;
     float m_totalSkips=0;
     bool m_idle;

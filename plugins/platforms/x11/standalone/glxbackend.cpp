@@ -245,24 +245,21 @@ void GlxBackend::init()
     const bool wantSync = options->glPreferBufferSwap() != Options::NoSwapEncourage;
     if (wantSync && glXIsDirect(display(), ctx)) {
         if (haveSwapInterval) { // glXSwapInterval is preferred being more reliable
-            setSwapInterval(1);
-            setSyncsToVBlank(true);
-            const QByteArray tripleBuffer = qgetenv("KWIN_TRIPLE_BUFFER");
-            if (!tripleBuffer.isEmpty()) {
-                setBlocksForRetrace(qstrcmp(tripleBuffer, "0") == 0);
-                gs_tripleBufferUndetected = false;
-            }
-            gs_tripleBufferNeedsDetection = gs_tripleBufferUndetected;
-        } else if (hasExtension(QByteArrayLiteral("GLX_SGI_video_sync"))) {
+            setSwapInterval(1); // but adds latency. see below
+        } else {
+          qCWarning(KWIN_X11STANDALONE) << "TEARING ALERT! unable to set swap interval";
+        }
+        if (hasExtension(QByteArrayLiteral("GLX_SGI_video_sync"))) {
+            // we still need this extension for lowering latency.
             unsigned int sync;
             if (glXGetVideoSyncSGI(&sync) == 0 && glXWaitVideoSyncSGI(1, 0, &sync) == 0) {
                 setSyncsToVBlank(true);
                 setBlocksForRetrace(true);
                 haveWaitSync = true;
             } else
-                qCWarning(KWIN_X11STANDALONE) << "NO VSYNC! glXSwapInterval is not supported, glXWaitVideoSync is supported but broken";
+                qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitVideoSync is supported but broken";
         } else
-            qCWarning(KWIN_X11STANDALONE) << "NO VSYNC! neither glSwapInterval nor glXWaitVideoSync are supported";
+            qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitVideoSync is not supported";
     } else {
         // disable v-sync (if possible)
         setSwapInterval(0);
@@ -722,6 +719,7 @@ void GlxBackend::present()
         copyPixels(lastDamage());
         glDrawBuffer(GL_BACK);
     }
+    waitSync();
 
     setLastDamage(QRegion());
     if (!supportsBufferAge()) {
@@ -795,15 +793,8 @@ void GlxBackend::endRenderingFrame(const QRegion &renderedRegion, const QRegion 
 
     setLastDamage(renderedRegion);
 
-    if (!blocksForRetrace()) {
-        // This also sets lastDamage to empty which prevents the frame from
-        // being posted again when prepareRenderingFrame() is called.
-        present();
-    } else {
-        // Make sure that the GPU begins processing the command stream
-        // now and not the next time prepareRenderingFrame() is called.
-        glFlush();
-    }
+    // just present. this is the culprit.
+    present();
 
     if (overlayWindow()->window())  // show the window only after the first pass,
         overlayWindow()->show();   // since that pass may take long
