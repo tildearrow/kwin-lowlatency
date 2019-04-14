@@ -243,6 +243,8 @@ void GlxBackend::init()
     haveWaitSync = false;
     gs_tripleBufferNeedsDetection = false;
     m_swapProfiler.init();
+    haveSwapInterval=false;
+    setSwapInterval(0);
     const bool wantSync = options->glPreferBufferSwap() != Options::NoSwapEncourage;
     if (wantSync && glXIsDirect(display(), ctx)) {
         if (haveSwapInterval) { // glXSwapInterval is preferred being more reliable
@@ -275,8 +277,7 @@ void GlxBackend::init()
         // and the GLPlatform has not been initialized at the moment when initGLX() is called.
         glXQueryDrawable = NULL;
     }
-haveWaitSync = true;
-setSwapInterval(1);
+
     setIsDirectRendering(bool(glXIsDirect(display(), ctx)));
 
     qCDebug(KWIN_X11STANDALONE) << "Direct rendering:" << isDirectRendering();
@@ -727,7 +728,6 @@ void GlxBackend::present()
         copyPixels(lastDamage());
         glDrawBuffer(GL_BACK);
     }
-    waitSync();
 
     setLastDamage(QRegion());
     if (!supportsBufferAge()) {

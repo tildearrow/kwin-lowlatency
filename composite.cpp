@@ -814,7 +814,7 @@ void Compositor::performCompositing()
           *((int*)&vblank.request.type )&=~_DRM_VBLANK_RELATIVE;
         } while (retval==-1 && errno==EINTR);
 */
-        //m_scene->waitVBlank();
+        m_scene->waitVBlank();
         usleep(m_lastPaintFree);
         scheduleRepaint();
     }
@@ -883,9 +883,7 @@ void Compositor::setCompositeTimer()
 
     uint waitTime = 1;
 
-    //if (m_scene->blocksForRetrace()) {
-    if (true) {
-        // TODO: properly detect total render time
+    if (m_scene->blocksForRetrace()) {
 
         // TODO: make vBlankTime dynamic?!
         // It's required because glXWaitVideoSync will *likely* block a full frame if one enters
@@ -944,7 +942,7 @@ void Compositor::setCompositeTimer()
     if (m_lastPaintFree<1) {
       m_lastPaintFree=1;
     }
-    printf("LPF: %d ts: %.2f\n",m_lastPaintFree,m_totalSkips);
+    //printf("LPF: %d ts: %.2f\n",m_lastPaintFree,m_totalSkips);
     waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this); // force 4fps minimum
 }
