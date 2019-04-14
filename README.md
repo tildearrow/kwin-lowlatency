@@ -1,15 +1,10 @@
-# note for NVIDIA users
-
-this will most likely not work well. sorry. however, I am working on it as of now!
-please see [bug #2](https://github.com/tildearrow/kwin-lowlatency/issues/2).
-
 # KWin-lowlatency
 
 KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
 
 ## background
 
-stock KWin has a major issue regarding stuttering. it stutters heavily, and if you don't want that, then you have the input latency problem (of up to 50ms! (probably even worse on NVIDIA cards!)).
+stock KWin has a major issue regarding stuttering. it stutters heavily, and if you don't want that, then you have the input latency problem (of up to 50ms!).
 
 the rationale for such a problem is that KWin uses a weird method to paint the screen.
 instead of simply sync'ing to vblank, it uses a timer. yeah, a **timer** that is off-sync with the vblank interval.
@@ -29,26 +24,41 @@ you can prove this by moving a window. you'll see the cursor being ahead of the 
 
 so, how to fix this? let's ditch the timer and let us access the VBlank interval directly.
 
-but how do we do that? there are 2 methods. both have flaws though:
+but how do we do that? by using glXWaitVideoSync.
 
-1. GLX_OML_sync_control
-2. DRM (Direct Rendering Manager)
+the only problem is that this only works under GLX (which means no X with EGL support, OpenGL ES or Wayland support).
 
-the first one has the problem of working only under GLX (which means on X with EGL support, OpenGL ES or Wayland support), but works everywhere and no tinkering is necessary if you have multiple cards.
+however, this is much better than the formerly-employed DRM approach, since you don't have to deal anymore with the code if you had multiple cards.
 
-the second one in the other hand works everywhere (although I only tested with GLX), but requires addressing the card at a lower level than X, and may require tinkering if multiple cards are present.
+now, by doing this, we have a proper desktop without stuttering, but the input lag persists...
 
-I went for the second one. now, by doing this, we have a proper desktop without stuttering, but hey, can we go further? yes, of course!
+after digging deep into the code, i found this piece of code in particular, which is pretty much the culprit:
 
-now, by sleeping for a very few milliseconds (up to 10) the compositor has more time for user input before rendering, which further reduces input lag.
+```
+if (!blocksForRetrace()) {
+  // This also sets lastDamage to empty which prevents the frame from
+  // being posted again when prepareRenderingFrame() is called.
+  present();
+} else {
+  // Make sure that the GPU begins processing the command stream
+  // now and not the next time prepareRenderingFrame() is called.
+  glFlush();
+}
+```
 
-the reason why only up to 10ms is because any further would leave little room for rendering, and that will actually produce more stuttering than fix it.
+by removing this code and simply presenting as soon as possible (we're blocking for retrace anyway due to the glXWaitVideoSync thingy), we cut off 1 whole frame of lag!
+
+but hey, can we go further? yes, of course!
+
+now, by sleeping for a very few milliseconds (up to 8 in high-end systems) the compositor has more time for user input before rendering, which further reduces input lag.
+
+the reason why only up to 8ms is because any further would leave little room for rendering, and that will actually produce more stuttering than fix it.
 
 ## KWin-lowlatency is not...
 
 * perfect. it tries its best to deliver low-latency no-stutter video, but I can't promise this is always the case.
   as an example, it will stutter if you select another window, or if you have too many windows open.
-  I eventually will think of some approach to fix this, however.
+* truly designed for low-end systems. if you use KWin-lowlatency in one of them, you may experience stuttering.
 
 # contacting original KWin development team
 
