@@ -797,9 +797,9 @@ void Compositor::performCompositing()
           m_totalSkips--;
           if (m_totalSkips<0) m_totalSkips=0;
           // TODO: improve this thing
-          m_lastPaintFree=8000;
+          m_lastPaintFree=2000;
         }
-        //usleep(8000); // TODO: enable/finish
+        usleep(m_lastPaintFree+2000);
         scheduleRepaint();
     }
 }
@@ -885,9 +885,9 @@ void Compositor::setCompositeTimer()
         }
 
         if (padding < options->vBlankTime()) { // we'll likely miss this frame
-            waitTime = nanoToMilli(padding + vBlankInterval - options->vBlankTime()); // so we add one
+            waitTime = nanoToMilli(padding + vBlankInterval); // so we add one
         } else {
-            waitTime = nanoToMilli(padding - options->vBlankTime());
+            waitTime = nanoToMilli(padding);
         }
     }
     else { // w/o blocking vsync we just jump to the next demanded tick
@@ -914,17 +914,23 @@ void Compositor::setCompositeTimer()
         }
     }
     //printf("waitTime: %d\n",waitTime);
-    if (waitTime<5) waitTime=5;
+    if (waitTime<4) waitTime=4;
     m_totalSkips-=0.004;
     if (m_totalSkips<0) {
       m_totalSkips=0;
     }
-    if ((signed)(m_lastPaintFree-2000)>(signed)((waitTime*1000)-5000)) {
+    if ((signed)(m_lastPaintFree-2000)>(signed)((waitTime*1000)-4000)) {
       m_totalSkips++;
+      m_lastPaintFree-=500;
+      //printf("\x1b[1;31mstutter\x1b[m\n");
+    } else {
+      m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(200-m_totalSkips*20));
     }
-    m_lastPaintFree=fmin((waitTime*1000)-5000,m_lastPaintFree+(200-m_totalSkips*20));
     if (m_lastPaintFree<1) {
       m_lastPaintFree=1;
+    }
+    if (m_totalSkips>10) {
+      m_totalSkips=10;
     }
     //printf("LPF: %d ts: %.2f\n",m_lastPaintFree,m_totalSkips);
     waitTime=0;
