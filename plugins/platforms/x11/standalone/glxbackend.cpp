@@ -254,13 +254,14 @@ void GlxBackend::init()
                 gs_tripleBufferUndetected = false;
             }
             gs_tripleBufferNeedsDetection = gs_tripleBufferUndetected;
-        } else if (hasExtension(QByteArrayLiteral("GLX_SGI_video_sync"))) {
+        }
+        if (hasExtension(QByteArrayLiteral("GLX_SGI_video_sync"))) {
             unsigned int sync;
             if (glXGetVideoSyncSGI(&sync) == 0 && glXWaitVideoSyncSGI(1, 0, &sync) == 0) {
                 setSyncsToVBlank(true);
                 setBlocksForRetrace(true);
                 haveWaitSync = true;
-            } else
+            } else if (!haveSwapInterval)
                 qCWarning(KWIN_X11STANDALONE) << "NO VSYNC! glXSwapInterval is not supported, glXWaitVideoSync is supported but broken";
         } else
             qCWarning(KWIN_X11STANDALONE) << "NO VSYNC! neither glSwapInterval nor glXWaitVideoSync are supported";
@@ -851,6 +852,18 @@ OverlayWindow* GlxBackend::overlayWindow()
 
 bool GlxBackend::usesOverlayWindow() const
 {
+    return true;
+}
+
+bool GlxBackend::waitVBlank()
+{
+    QTime t;
+    t.start();
+    while (!m_finished) {
+      if (t.elapsed()>200) break;
+    }
+    printf("we had to wait %d\n",t.elapsed());
+    m_finished=false;
     return true;
 }
 

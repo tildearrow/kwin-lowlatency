@@ -85,6 +85,11 @@ OverlayWindow* OpenGLBackend::overlayWindow()
     return NULL;
 }
 
+bool OpenGLBackend::waitVBlank() {
+  printf("should not happen :(\n");
+  return false;
+}
+
 QRegion OpenGLBackend::prepareRenderingForScreen(int screenId)
 {
     // fallback to repaint complete screen

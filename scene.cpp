@@ -655,6 +655,11 @@ void Scene::triggerFence()
 {
 }
 
+bool Scene::waitVBlank() {
+  printf("nobody handles vblank...\n");
+  return false;
+}
+
 QMatrix4x4 Scene::screenProjectionMatrix() const
 {
     return QMatrix4x4();

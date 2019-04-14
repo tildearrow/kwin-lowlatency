@@ -44,6 +44,8 @@ public:
     virtual Shadow *createShadow(Toplevel *toplevel) override;
     Decoration::Renderer *createDecorationRenderer(Decoration::DecoratedClientImpl *impl) override;
     void screenGeometryChanged(const QSize &size) override;
+    
+    virtual bool waitVBlank();
 
     bool animationsSupported() const override {
         return false;
