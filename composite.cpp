@@ -795,8 +795,8 @@ void Compositor::performCompositing()
     if (m_bufferSwapPending && m_scene->syncsToVBlank()) {
         m_composeAtSwapCompletion = true;
     } else {
-        //drm_wait_vblank_t vblank;
-        //int retval;
+        drm_wait_vblank_t vblank;
+        int retval;
         if (m_idle) {
           m_idle=false;
           m_totalSkips--;
@@ -804,10 +804,8 @@ void Compositor::performCompositing()
           // TODO: improve this thing
           m_lastPaintFree=8000;
         }
-        /*
         vblank.request.sequence=1;
         vblank.request.type=_DRM_VBLANK_RELATIVE;
-        */
 /*
         do {
           retval=ioctl(m_drmFD,DRM_IOCTL_WAIT_VBLANK,&vblank);
@@ -942,7 +940,7 @@ void Compositor::setCompositeTimer()
     if (m_lastPaintFree<1) {
       m_lastPaintFree=1;
     }
-    //printf("LPF: %d ts: %.2f\n",m_lastPaintFree,m_totalSkips);
+    printf("LPF: %d ts: %.2f\n",m_lastPaintFree,m_totalSkips);
     waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this); // force 4fps minimum
 }

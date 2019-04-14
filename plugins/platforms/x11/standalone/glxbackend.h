@@ -117,7 +117,6 @@ private:
     bool m_haveEXTSwapControl = false;
     bool m_haveSGISwapControl = false;
     bool m_haveINTELSwapEvent = false;
-    bool m_finished = true;
     bool haveSwapInterval = false;
     bool haveWaitSync = false;
     Display *m_x11Display;

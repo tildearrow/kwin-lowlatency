@@ -42,7 +42,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Qt
 #include <QDebug>
 #include <QOpenGLContext>
-#include <QTime>
 #include <QX11Info>
 // system
 #include <unistd.h>
@@ -243,8 +242,6 @@ void GlxBackend::init()
     haveWaitSync = false;
     gs_tripleBufferNeedsDetection = false;
     m_swapProfiler.init();
-    haveSwapInterval=false;
-    setSwapInterval(0);
     const bool wantSync = options->glPreferBufferSwap() != Options::NoSwapEncourage;
     if (wantSync && glXIsDirect(display(), ctx)) {
         if (haveSwapInterval) { // glXSwapInterval is preferred being more reliable
@@ -679,15 +676,11 @@ void GlxBackend::waitSync()
 #else
         glXWaitVideoSyncSGI(1, 0, &sync);
 #endif
-    } else {
-      printf("FUCKER\n");
     }
 }
 
 void GlxBackend::present()
 {
-    QTime t;
-    t.start();
     if (lastDamage().isEmpty())
         return;
 
@@ -713,12 +706,8 @@ void GlxBackend::present()
                 }
             }
         } else {
-            //waitSync();
-            long int ust, msc, sbc;
-            glXGetSyncValuesOML(display(),glxWindow,&ust,&msc,&sbc);
-            
-            glXSwapBuffersMscOML(display(),glxWindow,msc+1,0,0);
-            //glXSwapBuffers(display(), glxWindow);
+            waitSync();
+            glXSwapBuffers(display(), glxWindow);
         }
         if (supportsBufferAge()) {
             glXQueryDrawable(display(), glxWindow, GLX_BACK_BUFFER_AGE_EXT, (GLuint *) &m_bufferAge);
@@ -740,8 +729,6 @@ void GlxBackend::present()
         glXWaitGL();
         XFlush(display());
     }
-    printf("elapsed: %d\n",t.elapsed());
-    m_finished=true;
 }
 
 void GlxBackend::screenGeometryChanged(const QSize &size)
@@ -854,14 +841,12 @@ bool GlxBackend::usesOverlayWindow() const
 
 bool GlxBackend::waitVBlank()
 {
-    QTime t;
-    t.start();
-    while (!m_finished) {
-      if (t.elapsed()>200) break;
+    if (haveWaitSync) {
+      //waitSync();
+      //return true;
     }
-    printf("we had to wait %d\n",t.elapsed());
-    m_finished=false;
-    return true;
+    printf("CAN'T WAIT\n");
+    return false;
 }
 
 /********************************************************
