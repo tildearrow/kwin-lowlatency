@@ -308,11 +308,6 @@ Decoration::Renderer *SceneXrender::createDecorationRenderer(Decoration::Decorat
     return new SceneXRenderDecorationRenderer(client);
 }
 
-bool SceneXrender::waitVBlank() {
-  printf("This should NOT happen.\n");
-  return false;
-}
-
 //****************************************
 // SceneXrender::Window
 //****************************************

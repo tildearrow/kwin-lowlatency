@@ -113,18 +113,6 @@ public:
      * @return :OverlayWindow*
      **/
     virtual OverlayWindow *overlayWindow();
-    
-    /**
-     * @brief Wait for next VBlank
-     * 
-     * This is used internally by kwin-lowlatency.
-     * I had to devise this method for eventual Wayland, NVIDIA and multi-card support.
-     * 
-     * @return bool @c true if could do so @c false otherwise.
-     */
-    virtual bool waitVBlank();
-    
-    
     /**
      * @brief Whether the creation of the Backend failed.
      *

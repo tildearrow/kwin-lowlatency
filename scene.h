@@ -146,7 +146,6 @@ public:
     virtual bool usesOverlayWindow() const = 0;
 
     virtual void triggerFence();
-    virtual bool waitVBlank();
 
     virtual Decoration::Renderer *createDecorationRenderer(Decoration::DecoratedClientImpl *) = 0;
 
