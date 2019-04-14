@@ -679,6 +679,8 @@ void GlxBackend::waitSync()
 #else
         glXWaitVideoSyncSGI(1, 0, &sync);
 #endif
+    } else {
+      printf("FUCKER\n");
     }
 }
 
