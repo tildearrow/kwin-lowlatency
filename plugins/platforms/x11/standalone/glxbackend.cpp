@@ -711,8 +711,12 @@ void GlxBackend::present()
                 }
             }
         } else {
-            glXSwapBuffers(display(), glxWindow);
-            waitSync();
+            //waitSync();
+            long int ust, msc, sbc;
+            glXGetSyncValuesOML(display(),glxWindow,&ust,&msc,&sbc);
+            
+            glXSwapBuffersMscOML(display(),glxWindow,msc+1,0,0);
+            //glXSwapBuffers(display(), glxWindow);
         }
         if (supportsBufferAge()) {
             glXQueryDrawable(display(), glxWindow, GLX_BACK_BUFFER_AGE_EXT, (GLuint *) &m_bufferAge);
