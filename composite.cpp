@@ -66,7 +66,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <libdrm/drm.h>
 
 #include <sys/stat.h>
-#define drmcard "/dev/dri/card2"
+#define drmcard "/dev/dri/card0"
 
 Q_DECLARE_METATYPE(KWin::Compositor::SuspendReason)
 
@@ -804,17 +804,6 @@ void Compositor::performCompositing()
           // TODO: improve this thing
           m_lastPaintFree=8000;
         }
-        /*
-        vblank.request.sequence=1;
-        vblank.request.type=_DRM_VBLANK_RELATIVE;
-        */
-/*
-        do {
-          retval=ioctl(m_drmFD,DRM_IOCTL_WAIT_VBLANK,&vblank);
-          *((int*)&vblank.request.type )&=~_DRM_VBLANK_RELATIVE;
-        } while (retval==-1 && errno==EINTR);
-*/
-        //m_scene->waitVBlank();
         usleep(m_lastPaintFree);
         scheduleRepaint();
     }

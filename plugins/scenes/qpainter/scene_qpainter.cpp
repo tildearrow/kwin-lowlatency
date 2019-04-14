@@ -192,11 +192,6 @@ void SceneQPainter::screenGeometryChanged(const QSize &size)
     m_backend->screenGeometryChanged(size);
 }
 
-bool SceneQPainter::waitVBlank() {
-  printf("This should NOT happen.\n");
-  return false;
-}
-
 QImage *SceneQPainter::qpainterRenderBuffer() const
 {
     return m_backend->buffer();

@@ -78,7 +78,6 @@ public:
     virtual void doneCurrent() override;
     virtual OverlayWindow* overlayWindow() override;
     virtual bool usesOverlayWindow() const override;
-    virtual bool waitVBlank() override;
     void init() override;
 
 protected:
