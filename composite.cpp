@@ -799,7 +799,7 @@ void Compositor::performCompositing()
           // TODO: improve this thing
           m_lastPaintFree=8000;
         }
-        usleep(8000);
+        //usleep(8000); // TODO: enable/finish
         scheduleRepaint();
     }
 }
