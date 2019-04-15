@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>462</width>
-    <height>349</height>
+    <width>497</width>
+    <height>552</height>
    </rect>
   </property>
   <layout class="QFormLayout" name="formLayout">
@@ -21,14 +21,27 @@
        <property name="visible">
         <bool>false</bool>
        </property>
-       <property name="text">
+       <property name="text" stdset="0">
         <string>OpenGL compositing (the default) has crashed KWin in the past.
 This was most likely due to a driver bug.
 If you think that you have meanwhile upgraded to a stable driver,
 you can reset this protection but be aware that this might result in an immediate crash!
 Alternatively, you might want to use the XRender backend instead.</string>
        </property>
-       <property name="wordWrap">
+       <property name="wordWrap" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="KMessageWidget" name="unredirectInformation">
+       <property name="visible">
+        <bool>false</bool>
+       </property>
+       <property name="text" stdset="0">
+        <string>Having full screen windows bypass the compositor is not supported on every hardware.</string>
+       </property>
+       <property name="wordWrap" stdset="0">
         <bool>true</bool>
        </property>
       </widget>
@@ -38,10 +51,10 @@ Alternatively, you might want to use the XRender backend instead.</string>
        <property name="visible">
         <bool>false</bool>
        </property>
-       <property name="text">
+       <property name="text" stdset="0">
         <string>Scale method &quot;Accurate&quot; is not supported by all hardware and can cause performance regressions and rendering artifacts.</string>
        </property>
-       <property name="wordWrap">
+       <property name="wordWrap" stdset="0">
         <bool>true</bool>
        </property>
       </widget>
@@ -51,7 +64,7 @@ Alternatively, you might want to use the XRender backend instead.</string>
        <property name="visible">
         <bool>false</bool>
        </property>
-       <property name="wordWrap">
+       <property name="wordWrap" stdset="0">
         <bool>true</bool>
        </property>
       </widget>
@@ -61,10 +74,10 @@ Alternatively, you might want to use the XRender backend instead.</string>
        <property name="visible">
         <bool>false</bool>
        </property>
-       <property name="text">
+       <property name="text" stdset="0">
         <string>Keeping the window thumbnail always interferes with the minimized state of windows. This can result in windows not suspending their work when minimized.</string>
        </property>
-       <property name="wordWrap">
+       <property name="wordWrap" stdset="0">
         <bool>true</bool>
        </property>
       </widget>
@@ -278,6 +291,115 @@ Alternatively, you might want to use the XRender backend instead.</string>
      </property>
      <property name="text">
       <string>Allow applications to block compositing</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="QCheckBox" name="unredirectFullscreen">
+     <property name="text">
+      <string>Suspend compositor for full screen windows</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0" colspan="2">
+    <widget class="Line" name="line_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>Animation curve:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="1">
+    <widget class="QComboBox" name="animationCurve">
+     <item>
+      <property name="text">
+       <string>Linear</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Quadratic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sine</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Latency/stutter control:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="1">
+    <widget class="QComboBox" name="latencyControl">
+     <item>
+      <property name="text">
+       <string>Favor responsiveness</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Balanced</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Favor low latency</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Aggressively favor low latency</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="17" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Maximum latency reduction:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="1">
+    <widget class="QSpinBox" name="maxLatency">
+     <property name="maximum">
+      <number>8</number>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>Minimum latency reduction:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="1">
+    <widget class="QSpinBox" name="minLatency">
+     <property name="maximum">
+      <number>8</number>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="1">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>(units in milliseconds)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
    </item>
