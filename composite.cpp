@@ -885,9 +885,9 @@ void Compositor::setCompositeTimer()
         }
 
         if (padding < options->vBlankTime()) { // we'll likely miss this frame
-            waitTime = nanoToMilli(padding + vBlankInterval); // so we add one
+            waitTime = nanoToMilli(padding + vBlankInterval - options->vBlankTime()); // so we add one
         } else {
-            waitTime = nanoToMilli(padding);
+            waitTime = nanoToMilli(padding - options->vBlankTime());
         }
     }
     else { // w/o blocking vsync we just jump to the next demanded tick
