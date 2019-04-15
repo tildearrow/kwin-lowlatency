@@ -386,10 +386,10 @@ EFFECT_FALLBACK
     }, {
         QStringLiteral("mousepos"),
         i18ndc("kwin_effects", "Name of a KWin Effect", "Paint cursor"),
-        i18ndc("kwin_effects", "Comment describing the KWin Effect", "Redraw the mouse cursor for capturing the scanout buffer"),
+        i18ndc("kwin_effects", "Comment describing the KWin Effect", "Redraw the mouse cursor for capturing the display using kmsgrab in FFmpeg"),
         QStringLiteral("Tools"),
         QString(),
-        QUrl(QStringLiteral("http://10.0.0.1/mousepos.mp4")),
+        QUrl(),
         false,
         false,
 #ifdef EFFECT_BUILTINS

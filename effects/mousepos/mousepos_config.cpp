@@ -71,7 +71,7 @@ MousePosEffectConfig::MousePosEffectConfig(QWidget* parent, const QVariantList& 
     KGlobalAccel::self()->setDefaultShortcut(a, QList<QKeySequence>());
     KGlobalAccel::self()->setShortcut(a, QList<QKeySequence>());
 
-    connect(m_ui->shortcut, SIGNAL(keySequenceChanged(QKeySequence)),
+    connect(m_ui->kcfg_mpMotionBlur, SIGNAL(keySequenceChanged(QKeySequence)),
                             SLOT(shortcutChanged(QKeySequence)));
 
     load();
@@ -83,10 +83,6 @@ MousePosEffectConfig::~MousePosEffectConfig()
 
 void MousePosEffectConfig::checkModifiers()
 {
-    const bool modifiers = m_ui->kcfg_Shift->isChecked() || m_ui->kcfg_Alt->isChecked() ||
-                           m_ui->kcfg_Control->isChecked() || m_ui->kcfg_Meta->isChecked();
-    m_ui->modifierRadio->setChecked(modifiers);
-    m_ui->shortcutRadio->setChecked(!modifiers);
 }
 
 void MousePosEffectConfig::load()
@@ -110,15 +106,14 @@ void MousePosEffectConfig::save()
 void MousePosEffectConfig::defaults()
 {
     KCModule::defaults();
-    m_ui->shortcut->clearKeySequence();
     checkModifiers();
 }
 
 void MousePosEffectConfig::shortcutChanged(const QKeySequence &seq)
 {
-    if (QAction *a = m_actionCollection->action(QStringLiteral("MousePos"))) {
+    /*if (QAction *a = m_actionCollection->action(QStringLiteral("MousePos"))) {
         KGlobalAccel::self()->setShortcut(a, QList<QKeySequence>() << seq, KGlobalAccel::NoAutoloading);
-    }
+    }*/
 //     m_actionCollection->writeSettings();
     emit changed(true);
 }
