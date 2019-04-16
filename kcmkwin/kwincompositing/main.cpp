@@ -26,6 +26,7 @@
 #include <QAction>
 #include <QApplication>
 #include <QLayout>
+#include <QSpinBox>
 
 #include <kcmodule.h>
 #include <kservice.h>
@@ -98,6 +99,7 @@ void KWinCompositingSettings::init()
 {
     using namespace KWin::Compositing;
     auto currentIndexChangedSignal = static_cast<void(QComboBox::*)(int)>(&QComboBox::currentIndexChanged);
+    auto valueChangedSignal = static_cast<void(QSpinBox::*)(int)>(&QSpinBox::valueChanged);
 
     connect(m_compositing, &Compositing::changed, this, static_cast<void(KCModule::*)()>(&KWinCompositingSettings::changed));
 
@@ -193,12 +195,12 @@ void KWinCompositingSettings::init()
     // max latency
     m_form.maxLatency->setValue(m_compositing->maxLatency());
     connect(m_compositing, &Compositing::maxLatencyChanged, m_form.maxLatency, &QSpinBox::setValue);
-    connect(m_form.maxLatency, &QSpinBox::valueChanged, m_compositing, &Compositing::setMaxLatency);
+    connect(m_form.maxLatency, valueChangedSignal, m_compositing, &Compositing::setMaxLatency);
 
     // min latency
     m_form.minLatency->setValue(m_compositing->minLatency());
     connect(m_compositing, &Compositing::minLatencyChanged, m_form.minLatency, &QSpinBox::setValue);
-    connect(m_form.minLatency, &QSpinBox::valueChanged, m_compositing, &Compositing::setMinLatency);
+    connect(m_form.minLatency, valueChangedSignal, m_compositing, &Compositing::setMinLatency);
 
     // compositing type
     CompositingType *type = new CompositingType(this);
