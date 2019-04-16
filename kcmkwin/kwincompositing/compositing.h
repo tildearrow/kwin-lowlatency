@@ -80,7 +80,7 @@ public:
     void setXrScaleFilter(bool filter);
     void setGlSwapStrategy(int strategy);
     void setCompositingType(int index);
-    void setCompositingEnabled(bool enalbed);
+    void setCompositingEnabled(bool enabled);
     void setOpenGLPlatformInterface(int interface);
     void setWindowsBlockCompositing(bool set);
     void setAnimationCurve(int curve);
