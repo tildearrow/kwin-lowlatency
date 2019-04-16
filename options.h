@@ -594,6 +594,18 @@ public:
     {
         return m_windowsBlockCompositing;
     }
+    int animationCurve() const {
+      return m_animationCurve;
+    }
+    int latencyControl() const {
+      return m_latencyControl;
+    }
+    int maxLatency() const {
+      return m_maxLatency;
+    }
+    int minLatency() const {
+      return m_minLatency;
+    }
 
     QStringList modifierOnlyDBusShortcut(Qt::KeyboardModifier mod) const;
 
@@ -659,6 +671,10 @@ public:
     void setGlPreferBufferSwap(char glPreferBufferSwap);
     void setGlPlatformInterface(OpenGLPlatformInterface interface);
     void setWindowsBlockCompositing(bool set);
+    void setAnimationCurve(int curve);
+    void setLatencyControl(int index);
+    void setMaxLatency(int val);
+    void setMinLatency(int val);
 
     // default values
     static WindowOperation defaultOperationTitlebarDblClick() {
@@ -772,6 +788,18 @@ public:
     static int defaultAnimationSpeed() {
         return 3;
     }
+    static int defaultAnimationCurve() {
+      return 2;
+    }
+    static int defaultLatencyControl() {
+      return 1;
+    }
+    static int defaultMaxLatency() {
+      return 8;
+    }
+    static int defaultMinLatency() {
+      return 0;
+    }
 
     /**
      * Performs loading all settings except compositing related.
@@ -850,6 +878,10 @@ Q_SIGNALS:
     void glPreferBufferSwapChanged();
     void glPlatformInterfaceChanged();
     void windowsBlockCompositingChanged();
+    void animationCurveChanged();
+    void latencyControlChanged();
+    void maxLatencyChanged();
+    void minLatencyChanged();
 
     void configChanged();
 
@@ -896,6 +928,10 @@ private:
     GlSwapStrategy m_glPreferBufferSwap;
     OpenGLPlatformInterface m_glPlatformInterface;
     bool m_windowsBlockCompositing;
+    int m_animationCurve;
+    int m_latencyControl;
+    int m_maxLatency;
+    int m_minLatency;
 
     WindowOperation OpTitlebarDblClick;
     WindowOperation opMaxButtonRightClick = defaultOperationMaxButtonRightClick();
