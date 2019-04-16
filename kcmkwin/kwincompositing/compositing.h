@@ -46,6 +46,10 @@ class Compositing : public QObject
     Q_PROPERTY(KWin::Compositing::OpenGLPlatformInterfaceModel *openGLPlatformInterfaceModel READ openGLPlatformInterfaceModel CONSTANT)
     Q_PROPERTY(int openGLPlatformInterface READ openGLPlatformInterface WRITE setOpenGLPlatformInterface NOTIFY openGLPlatformInterfaceChanged)
     Q_PROPERTY(bool windowsBlockCompositing READ windowsBlockCompositing WRITE setWindowsBlockCompositing NOTIFY windowsBlockCompositingChanged)
+    Q_PROPERTY(int animationCurve READ animationCurve WRITE setAnimationCurve NOTIFY animationCurveChanged)
+    Q_PROPERTY(int latencyControl READ latencyControl WRITE setLatencyControl NOTIFY latencyControlChanged)
+    Q_PROPERTY(int maxLatency READ maxLatency WRITE setMaxLatency NOTIFY maxLatencyChanged)
+    Q_PROPERTY(int minLatency READ minLatency WRITE setMinLatency NOTIFY minLatencyChanged)
     Q_PROPERTY(bool compositingRequired READ compositingRequired CONSTANT)
 public:
     explicit Compositing(QObject *parent = 0);
@@ -62,6 +66,10 @@ public:
     bool compositingEnabled() const;
     int openGLPlatformInterface() const;
     bool windowsBlockCompositing() const;
+    int animationCurve() const;
+    int latencyControl() const;
+    int maxLatency() const;
+    int minLatency() const;
     bool compositingRequired() const;
 
     OpenGLPlatformInterfaceModel *openGLPlatformInterfaceModel() const;
@@ -75,7 +83,10 @@ public:
     void setCompositingEnabled(bool enalbed);
     void setOpenGLPlatformInterface(int interface);
     void setWindowsBlockCompositing(bool set);
-
+    void setAnimationCurve(int curve);
+    void setLatencyControl(int index);
+    void setMaxLatency(int val);
+    void setMinLatency(int val);
     void save();
 
 public Q_SLOTS:
@@ -93,6 +104,10 @@ Q_SIGNALS:
     void compositingEnabledChanged(bool);
     void openGLPlatformInterfaceChanged(int);
     void windowsBlockCompositingChanged(bool);
+    void animationCurveChanged(int);
+    void latencyControlChanged(int);
+    void maxLatencyChanged(int);
+    void minLatencyChanged(int);
 
 private:
     int m_animationSpeed;
@@ -106,6 +121,10 @@ private:
     OpenGLPlatformInterfaceModel *m_openGLPlatformInterfaceModel;
     int m_openGLPlatformInterface;
     bool m_windowsBlockCompositing;
+    int m_animationCurve;
+    int m_latencyControl;
+    int m_maxLatency;
+    int m_minLatency;
     bool m_windowsBlockingCompositing;
     OrgKdeKwinCompositingInterface *m_compositingInterface;
 };
