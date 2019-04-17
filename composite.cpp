@@ -799,7 +799,7 @@ void Compositor::performCompositing()
           // TODO: improve this thing
           m_lastPaintFree=2000;
         }
-        usleep(m_lastPaintFree+2000);
+        usleep(m_lastPaintFree);
         scheduleRepaint();
     }
 }
@@ -926,13 +926,19 @@ void Compositor::setCompositeTimer()
     } else {
       m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(200-m_totalSkips*20));
     }
+    if (m_lastPaintFree<options->minLatency()*1000) {
+      m_lastPaintFree=options->minLatency()*1000;
+    }
     if (m_lastPaintFree<1) {
       m_lastPaintFree=1;
+    }
+    if (m_lastPaintFree>options->maxLatency()*1000) {
+      m_lastPaintFree=options->maxLatency()*1000;
     }
     if (m_totalSkips>10) {
       m_totalSkips=10;
     }
-    //printf("LPF: %d ts: %.2f\n",m_lastPaintFree,m_totalSkips);
+    printf("LPF: %d ts: %.2f\n",m_lastPaintFree,m_totalSkips);
     waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this); // force 4fps minimum
 }
