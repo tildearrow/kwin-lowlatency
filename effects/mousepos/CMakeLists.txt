@@ -1,12 +1,4 @@
 #######################################
-# Effect
-# Data files
-install( FILES
-    data/tm_inner.png
-    data/tm_outer.png
-    DESTINATION ${DATA_INSTALL_DIR}/kwin )
-
-#######################################
 # Config
 set(kwin_mousepos_config_SRCS mousepos_config.cpp)
 ki18n_wrap_ui(kwin_mousepos_config_SRCS mousepos_config.ui)

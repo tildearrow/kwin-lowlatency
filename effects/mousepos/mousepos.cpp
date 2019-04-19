@@ -226,28 +226,6 @@ void MousePosEffect::slotMouseChanged(const QPoint&, const QPoint&,
 
 void MousePosEffect::loadTexture()
 {
-    QString f[2] = {QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("tm_outer.png")),
-                    QStandardPaths::locate(QStandardPaths::DataLocation, QStringLiteral("tm_inner.png"))};
-    if (f[0].isEmpty() || f[1].isEmpty())
-        return;
-
-    for (int i = 0; i < 2; ++i) {
-        if ( effects->isOpenGLCompositing()) {
-            QImage img(f[i]);
-            m_lastRect[i].setSize(img.size());
-        }
-#ifdef KWIN_HAVE_XRENDER_COMPOSITING
-        if ( effects->compositingType() == XRenderCompositing) {
-            QImage pixmap(f[i]);
-            m_size[i] = pixmap.size();
-            m_lastRect[i].setSize(pixmap.size());
-        }
-#endif
-        if (effects->compositingType() == QPainterCompositing) {
-            m_image[i] = QImage(f[i]);
-            m_lastRect[i].setSize(m_image[i].size());
-        }
-    }
 }
 
 bool MousePosEffect::isActive() const
