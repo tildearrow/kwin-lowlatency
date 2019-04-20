@@ -80,6 +80,10 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
 it's an effect I wrote back in 2018 when experimenting with kmsgrab for some private recordings.
 it basically redraws the cursor. this may seem redundant, but actually is helpful for recording with kmsgrab (since it doesn't draw the hardware sprite).
 
+> will this work under Wayland?
+
+no, it won't. it hasn't been done yet, since there's no way to ensure every retrace will wait for VBlank (especially on Mesa)... and although I could use DRM VBlank waiting there, it won't work on NVIDIA. sorry.
+
 > do you have any plans to upstream this?
 
 at this moment, not really:
