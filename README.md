@@ -73,7 +73,7 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
 - latency/stutter control: use if you have a high-end system and want lower latency, or if you're having stuttering and want to reduce it.
 - maximum/minimum latency reduction: allows you to configure the latency reduction window. examples (min/max): 8/0 default, 0/0 disable latency reduction, and 8/8 lowest latency possible. this is limited to 8ms, since any further would cause major stuttering and slowdowns.
 
-# misc
+# misc/FAQ
 
 > what's this "Paint cursor" effect in Desktop Effects?
 
@@ -83,6 +83,10 @@ it basically redraws the cursor. this may seem redundant, but actually is helpfu
 > will this work under Wayland?
 
 no, it won't. it hasn't been done yet, since there's no way to ensure every retrace will wait for VBlank (especially on Mesa)... and although I could use DRM VBlank waiting there, it won't work on NVIDIA. sorry.
+
+> i'm using the `modesetting` driver (instead of the `amdgpu` DDX driver) under an AMD card, and can see some latency. how do I fix this?
+
+an option will come soon.
 
 > do you have any plans to upstream this?
 
