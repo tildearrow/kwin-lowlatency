@@ -96,7 +96,7 @@ at this moment, not really:
 - eventually I am merging the unredirect branch, which is a feature the KDE devs definitely [don't want to see in upstream](https://blog.martin-graesslin.com/blog/2016/08/opengl-changes-in-kwin-compositing/) since they have another "approach" (allow apps to block compositing).
   - the problem with their approach is that it means every app must support it in order to work, which is something not every app does. on the other hand, unredirection works for most apps, and doesn't require developers to change their code for it to work.
   - another problem is that instead of suspending compositing, it **disables** compositing. this means you get to see a few frames of an ugly desktop when the app quits. this doesn't happen with unredirection.
-- furthermore, I am bringing the "close" option in Present Windows, which once again the KDE devs despise.
+- furthermore, this also brings back "close" option in Present Windows, which once again the KDE devs despise.
 
 # support
 
