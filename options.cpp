@@ -126,6 +126,10 @@ Options::Options(QObject *parent)
     , m_glPreferBufferSwap(Options::defaultGlPreferBufferSwap())
     , m_glPlatformInterface(Options::defaultGlPlatformInterface())
     , m_windowsBlockCompositing(true)
+    , m_animationCurve(Options::defaultAnimationCurve())
+    , m_latencyControl(Options::defaultLatencyControl())
+    , m_maxLatency(Options::defaultMaxLatency())
+    , m_minLatency(Options::defaultMinLatency())
     , OpTitlebarDblClick(Options::defaultOperationTitlebarDblClick())
     , CmdActiveTitlebar1(Options::defaultCommandActiveTitlebar1())
     , CmdActiveTitlebar2(Options::defaultCommandActiveTitlebar2())
@@ -729,6 +733,38 @@ void Options::setWindowsBlockCompositing(bool value)
     emit windowsBlockCompositingChanged();
 }
 
+void Options::setAnimationCurve(int val) {
+  if (m_animationCurve == val) {
+    return;
+  }
+  m_animationCurve = val;
+  emit animationCurveChanged();
+}
+
+void Options::setLatencyControl(int val) {
+  if (m_latencyControl == val) {
+    return;
+  }
+  m_latencyControl = val;
+  emit latencyControlChanged();
+}
+
+void Options::setMaxLatency(int val) {
+  if (m_maxLatency == val) {
+    return;
+  }
+  m_maxLatency = val;
+  emit maxLatencyChanged();
+}
+
+void Options::setMinLatency(int val) {
+  if (m_minLatency == val) {
+    return;
+  }
+  m_minLatency = val;
+  emit minLatencyChanged();
+}
+
 void Options::setGlPreferBufferSwap(char glPreferBufferSwap)
 {
     if (glPreferBufferSwap == 'a') {
@@ -903,6 +939,10 @@ void Options::syncFromKcfgc()
     setElectricBorderCornerRatio(m_settings->electricBorderCornerRatio());
     setWindowsBlockCompositing(m_settings->windowsBlockCompositing());
 
+    setAnimationCurve(m_settings->animationCurve());
+    setLatencyControl(m_settings->latencyControl());
+    setMaxLatency(m_settings->maxLatency());
+    setMinLatency(m_settings->minLatency());
 }
 
 bool Options::loadCompositingConfig (bool force)

@@ -65,6 +65,39 @@ the reason why only up to 8ms is because any further would leave little room for
  * mailing list: [kwin@kde.org](https://mail.kde.org/mailman/listinfo/kwin)
  * IRC: #kwin on freenode
 
+# additional options menu
+
+KWin-lowlatency introduces few extra options in System Settings > Display and Monitor > Compositor. these are:
+
+- animation curve: allows you to make animations look smoother. I have a gripe with linear animations, hence this option. i'll post a video about this later.
+- latency/stutter control: use if you have a high-end system and want lower latency, or if you're having stuttering and want to reduce it.
+- maximum/minimum latency reduction: allows you to configure the latency reduction window. examples (min/max): 8/0 default, 0/0 disable latency reduction, and 8/8 lowest latency possible. this is limited to 8ms, since any further would cause major stuttering and slowdowns.
+
+# misc/FAQ
+
+> what's this "Paint cursor" effect in Desktop Effects?
+
+it's an effect I wrote back in 2018 when experimenting with kmsgrab for some private recordings.
+it basically redraws the cursor. this may seem redundant, but actually is helpful for recording with kmsgrab (since it doesn't draw the hardware sprite).
+
+> will this work under Wayland?
+
+no, it won't. it hasn't been done yet, since there's no way to ensure every retrace will wait for VBlank (especially on Mesa)... and although I could use DRM VBlank waiting there, it won't work on NVIDIA. sorry.
+
+> i'm using the `modesetting` driver (instead of the `amdgpu` DDX driver) under an AMD card, and can see some latency. how do I fix this?
+
+an option will come soon.
+
+> do you have any plans to upstream this?
+
+at this moment, not really:
+
+- i still can't ensure this will work everywhere (but it should).
+- eventually I am merging the unredirect branch, which is a feature the KDE devs definitely [don't want to see in upstream](https://blog.martin-graesslin.com/blog/2016/08/opengl-changes-in-kwin-compositing/) since they have another "approach" (allow apps to block compositing).
+  - the problem with their approach is that it means every app must support it in order to work, which is something not every app does. on the other hand, unredirection works for most apps, and doesn't require developers to change their code for it to work.
+  - another problem is that instead of suspending compositing, it **disables** compositing. this means you get to see a few frames of an ugly desktop when the app quits. this doesn't happen with unredirection.
+- furthermore, this also brings back "close" option in Present Windows, which once again the KDE devs despise.
+
 # support
 
 use the issues section at the top.

@@ -49,6 +49,10 @@ Compositing::Compositing(QObject *parent)
     , m_openGLPlatformInterfaceModel(new OpenGLPlatformInterfaceModel(this))
     , m_openGLPlatformInterface(0)
     , m_windowsBlockCompositing(true)
+    , m_animationCurve(2)
+    , m_latencyControl(1)
+    , m_maxLatency(8)
+    , m_minLatency(0)
     , m_compositingInterface(new OrgKdeKwinCompositingInterface(QStringLiteral("org.kde.KWin"), QStringLiteral("/Compositor"), QDBusConnection::sessionBus(), this))
 {
     reset();
@@ -62,6 +66,10 @@ Compositing::Compositing(QObject *parent)
     connect(this, &Compositing::compositingEnabledChanged,   this, &Compositing::changed);
     connect(this, &Compositing::openGLPlatformInterfaceChanged, this, &Compositing::changed);
     connect(this, &Compositing::windowsBlockCompositingChanged, this, &Compositing::changed);
+    connect(this, &Compositing::animationCurveChanged,          this, &Compositing::changed);
+    connect(this, &Compositing::latencyControlChanged,          this, &Compositing::changed);
+    connect(this, &Compositing::maxLatencyChanged,              this, &Compositing::changed);
+    connect(this, &Compositing::minLatencyChanged,              this, &Compositing::changed);
 
     connect(this, &Compositing::changed, [this]{
         m_changed = true;
@@ -117,6 +125,11 @@ void Compositing::reset()
 
     setWindowsBlockCompositing(kwinConfig.readEntry("WindowsBlockCompositing", true));
 
+    setAnimationCurve(kwinConfig.readEntry("AnimationCurve",2));
+    setLatencyControl(kwinConfig.readEntry("LatencyControl",1));
+    setMaxLatency(kwinConfig.readEntry("MaxLatency",8));
+    setMinLatency(kwinConfig.readEntry("MinLatency",0));
+
     m_changed = false;
 }
 
@@ -132,6 +145,10 @@ void Compositing::defaults()
     const QModelIndex index = m_openGLPlatformInterfaceModel->indexForKey(QStringLiteral("glx"));
     setOpenGLPlatformInterface(index.isValid() ? index.row() : 0);
     setWindowsBlockCompositing(true);
+    setAnimationCurve(2);
+    setLatencyControl(1);
+    setMaxLatency(8);
+    setMinLatency(0);
     m_changed = true;
 }
 
@@ -331,6 +348,10 @@ void Compositing::save()
     if (!compositingRequired()) {
         kwinConfig.writeEntry("WindowsBlockCompositing", windowsBlockCompositing());
     }
+    kwinConfig.writeEntry("AnimationCurve",animationCurve());
+    kwinConfig.writeEntry("LatencyControl",latencyControl());
+    kwinConfig.writeEntry("MaxLatency",maxLatency());
+    kwinConfig.writeEntry("MinLatency",minLatency());
     kwinConfig.sync();
 
     if (m_changed) {
@@ -377,6 +398,62 @@ void Compositing::setWindowsBlockCompositing(bool set)
     }
     m_windowsBlockCompositing = set;
     emit windowsBlockCompositingChanged(set);
+}
+
+int Compositing::animationCurve() const
+{
+    return m_animationCurve;
+}
+
+int Compositing::latencyControl() const
+{
+    return m_latencyControl;
+}
+
+int Compositing::maxLatency() const
+{
+    return m_maxLatency;
+}
+
+int Compositing::minLatency() const
+{
+    return m_minLatency;
+}
+
+void Compositing::setAnimationCurve(int val)
+{
+    if (m_animationCurve == val) {
+        return;
+    }
+    m_animationCurve = val;
+    emit animationCurveChanged(val);
+}
+
+void Compositing::setLatencyControl(int val)
+{
+    if (m_latencyControl == val) {
+        return;
+    }
+    m_latencyControl = val;
+    emit latencyControlChanged(val);
+}
+
+void Compositing::setMaxLatency(int val)
+{
+    if (m_maxLatency == val) {
+        return;
+    }
+    m_maxLatency = val;
+    emit maxLatencyChanged(val);
+}
+
+void Compositing::setMinLatency(int val)
+{
+    if (m_minLatency == val) {
+        return;
+    }
+    m_minLatency = val;
+    emit minLatencyChanged(val);
 }
 
 bool Compositing::compositingRequired() const

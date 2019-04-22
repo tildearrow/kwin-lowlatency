@@ -803,7 +803,7 @@ void Compositor::performCompositing()
           // TODO: improve this thing
           m_lastPaintFree=2000;
         }
-        usleep(m_lastPaintFree+2000);
+        usleep(m_lastPaintFree);
         scheduleRepaint();
     }
 }
@@ -889,9 +889,9 @@ void Compositor::setCompositeTimer()
         }
 
         if (padding < options->vBlankTime()) { // we'll likely miss this frame
-            waitTime = nanoToMilli(padding + vBlankInterval); // so we add one
+            waitTime = nanoToMilli(padding + vBlankInterval - options->vBlankTime()); // so we add one
         } else {
-            waitTime = nanoToMilli(padding);
+            waitTime = nanoToMilli(padding - options->vBlankTime());
         }
     }
     else { // w/o blocking vsync we just jump to the next demanded tick
@@ -925,13 +925,45 @@ void Compositor::setCompositeTimer()
     }
     if ((signed)(m_lastPaintFree-2000)>(signed)((waitTime*1000)-4000)) {
       m_totalSkips++;
-      m_lastPaintFree-=500;
+      switch (options->latencyControl()) {
+        case 0: // favor responsive
+          m_lastPaintFree=(waitTime*1000)-4000;
+          break;
+        case 2: // favor low-latency
+          m_lastPaintFree-=500;
+          break;
+        case 3: // aggressive
+          m_lastPaintFree-=300;
+          break;
+        case 1: default: // balanced
+          m_lastPaintFree-=500;
+          break;
+      }
       //printf("\x1b[1;31mstutter\x1b[m\n");
     } else {
-      m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(200-m_totalSkips*20));
+      switch (options->latencyControl()) {
+        case 0: // favor responsive
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(50-m_totalSkips*5));
+          break;
+        case 2: // favor low-latency
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(500-m_totalSkips*30));
+          break;
+        case 3: // aggressive
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(1000-m_totalSkips*30));
+          break;
+        case 1: default: // balanced
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(200-m_totalSkips*20));
+          break;
+      }
+    }
+    if (m_lastPaintFree<options->minLatency()*1000) {
+      m_lastPaintFree=options->minLatency()*1000;
     }
     if (m_lastPaintFree<1) {
       m_lastPaintFree=1;
+    }
+    if (m_lastPaintFree>options->maxLatency()*1000) {
+      m_lastPaintFree=options->maxLatency()*1000;
     }
     if (m_totalSkips>10) {
       m_totalSkips=10;

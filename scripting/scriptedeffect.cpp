@@ -153,7 +153,17 @@ AnimationSettings animationSettingsFromObject(QScriptValue &object)
         settings.curve = static_cast<QEasingCurve::Type>(curve.toInt32());
         settings.set |= AnimationSettings::Curve;
     } else {
-        settings.curve = QEasingCurve::Linear;
+      switch (options->animationCurve()) {
+        case 1:
+          settings.curve = QEasingCurve::InOutQuad;
+          break;
+        case 2:
+          settings.curve = QEasingCurve::InOutSine;
+          break;
+        default:
+          settings.curve = QEasingCurve::Linear;
+          break;
+      }
     }
 
     QScriptValue type = object.property(QStringLiteral("type"));
