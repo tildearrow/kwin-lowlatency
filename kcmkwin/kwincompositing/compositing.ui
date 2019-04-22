@@ -38,51 +38,6 @@ Alternatively, you might want to use the XRender backend instead.</string>
        <property name="visible">
         <bool>false</bool>
        </property>
-       <property name="text" stdset="0">
-        <string>Having full screen windows bypass the compositor is not supported on every hardware.</string>
-       </property>
-       <property name="wordWrap" stdset="0">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="KMessageWidget" name="unredirectInformation">
-       <property name="visible">
-        <bool>false</bool>
-       </property>
-       <property name="text">
-        <string>Having full screen windows bypass the compositor is not supported on every hardware.</string>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-       <property name="messageType">
-        <enum>KMessageWidget::Information</enum>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="KMessageWidget" name="unredirectInformation">
-       <property name="visible">
-        <bool>false</bool>
-       </property>
-       <property name="text">
-        <string>Having full screen windows bypass the compositor is not supported on every hardware.</string>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-       <property name="messageType">
-        <enum>KMessageWidget::Information</enum>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="KMessageWidget" name="scaleWarning">
-       <property name="visible">
-        <bool>false</bool>
-       </property>
        <property name="text">
         <string>Having full screen windows bypass the compositor is not supported on every hardware.</string>
        </property>
