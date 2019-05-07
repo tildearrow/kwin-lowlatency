@@ -23,3 +23,4 @@ the following applications prevent unredirection from working:
 
 - calfjackhost
 - [latte-dock](https://github.com/tildearrow/kwin-lowlatency/issues/1#issuecomment-483403493) (sometimes)
+- any Vulkan application. tested with RetroArch and apparently doesn't work. I may be wrong, however.
