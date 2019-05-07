@@ -98,6 +98,10 @@ at this moment, not really:
   - another problem is that instead of suspending compositing, it **disables** compositing. this means you get to see a few frames of an ugly desktop when the app quits. this doesn't happen with unredirection.
 - furthermore, this also brings back "close" option in Present Windows, which once again the KDE devs despise.
 
+> unredirection is not working.
+
+please see [unredirect.md](https://github.com/tildearrow/kwin-lowlatency/blob/Plasma/5.15/unredirect.md) for known issues. you may file a bug report as well.
+
 # support
 
 use the issues section at the top.
