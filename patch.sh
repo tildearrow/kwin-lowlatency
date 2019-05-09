@@ -9,4 +9,4 @@ if [ ! -e kwin-$version.tar.xz ]
 fi
 
 tar -xf kwin-$version.tar.xz
-diff -ruNx .git -x build -x po kwin-$version $klpath > $klpath/kwin-lowlatency-$version.patch
+diff -ruNx .git -x build -x po -x CMakeLists.txt kwin-$version $klpath > kwin-lowlatency-$version.patch
