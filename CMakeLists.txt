@@ -39,8 +39,7 @@ set_package_properties(Qt5Test PROPERTIES
 add_feature_info("Qt5Test" Qt5Test_FOUND "Required for building tests")
 
 # issue #6. will fix later.
-#if (NOT Qt5Test_FOUND)
-if (TRUE)
+if (NOT Qt5Test_FOUND)
     set(BUILD_TESTING OFF CACHE BOOL "Build the testing tree.")
 endif()
 

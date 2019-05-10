@@ -153,6 +153,7 @@ AnimationSettings animationSettingsFromObject(QScriptValue &object)
         settings.curve = static_cast<QEasingCurve::Type>(curve.toInt32());
         settings.set |= AnimationSettings::Curve;
     } else {
+#ifndef KWINLL_NO_OPTIONS
       switch (options->animationCurve()) {
         case 1:
           settings.curve = QEasingCurve::InOutQuad;
@@ -164,6 +165,9 @@ AnimationSettings animationSettingsFromObject(QScriptValue &object)
           settings.curve = QEasingCurve::Linear;
           break;
       }
+#else
+      settings.curve = QEasingCurve::InOutSine;
+#endif
     }
 
     QScriptValue type = object.property(QStringLiteral("type"));
