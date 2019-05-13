@@ -1376,10 +1376,15 @@ bool Client::shouldUnredirect() const
                 pos >= 0;
                 --pos) {
             Toplevel* c = stacking.at(pos);
-            if (c == this)   // is not covered by any other window, ok to unredirect
+            if (c == this) {  // is not covered by any other window, ok to unredirect
+                printf("I can unredirect\n");
                 return true;
-            if (c->geometry().intersects(geometry()))
+            }
+            // -> Possible Culprit <-
+            if (c->geometry().intersects(geometry())) {
+                printf("intersection.\n");
                 return false;
+            }
         }
         abort();
     }
