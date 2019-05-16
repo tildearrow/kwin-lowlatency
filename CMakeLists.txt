@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
 
 project(KWIN)
-set(PROJECT_VERSION "5.15.5")
+set(PROJECT_VERSION "5.15.90")
 set(PROJECT_VERSION_MAJOR 5)
 
-set(QT_MIN_VERSION "5.11.0")
-set(KF5_MIN_VERSION "5.54.0")
+set(QT_MIN_VERSION "5.12.0")
+set(KF5_MIN_VERSION "5.58.0")
 
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH} )
 
@@ -55,8 +55,12 @@ add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0 -DQT_USE_QSTRINGBUILDER -DQT_NO
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# This is a workaround/compromise for a Kwin specific policy of not applying the relevant override fix.
+# See thread in D18167.
 if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-inconsistent-missing-override")
+else()
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-suggest-override")
 endif()
 
 find_package(Qt5Multimedia QUIET)
@@ -154,7 +158,7 @@ set_package_properties(EGL PROPERTIES
 
 find_package(epoxy)
 set_package_properties(epoxy PROPERTIES DESCRIPTION "libepoxy"
-                       URL "http://github.com/anholt/libepoxy"
+                       URL "https://github.com/anholt/libepoxy"
                        TYPE REQUIRED
                        PURPOSE "OpenGL dispatch library"
                       )
@@ -208,13 +212,18 @@ if(HAVE_DRM AND gbm_FOUND)
     set(HAVE_GBM TRUE)
 endif()
 
+option(KWIN_BUILD_EGL_STREAM_BACKEND "Enable building of EGLStream based DRM backend" ON)
+if(HAVE_DRM AND KWIN_BUILD_EGL_STREAM_BACKEND)
+    set(HAVE_EGL_STREAMS TRUE)
+endif()
+
 find_package(libhybris)
 set_package_properties(libhybris PROPERTIES TYPE OPTIONAL PURPOSE "Required for libhybris backend")
 set(HAVE_LIBHYBRIS ${libhybris_FOUND})
 
 find_package(X11)
 set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
-                        URL "http://www.x.org"
+                        URL "https://www.x.org"
                         TYPE REQUIRED
                     )
 add_feature_info("XInput" X11_Xinput_FOUND "Required for poll-free mouse cursor updates")
@@ -258,7 +267,7 @@ find_package(Qt5EventDispatcherSupport REQUIRED)
 
 find_package(Freetype REQUIRED)
 set_package_properties(Freetype PROPERTIES DESCRIPTION "A font rendering engine"
-                       URL "http://www.freetype.org"
+                       URL "https://www.freetype.org"
                        TYPE REQUIRED
                        PURPOSE "Needed for KWin's QPA plugin."
                       )
@@ -270,7 +279,7 @@ set_package_properties(Fontconfig PROPERTIES
 
 find_package(Xwayland)
 set_package_properties(Xwayland PROPERTIES
-    URL "http://x.org"
+    URL "https://x.org"
     DESCRIPTION "Xwayland X server"
     TYPE RUNTIME
     PURPOSE "Needed for running kwin_wayland"
@@ -435,7 +444,6 @@ set(kwin_KDEINIT_SRCS
    scene.cpp
    screenlockerwatcher.cpp
    thumbnailitem.cpp
-   lanczosfilter.cpp
    deleted.cpp
    effects.cpp
    effectloader.cpp
@@ -492,6 +500,8 @@ set(kwin_KDEINIT_SRCS
     libinput/libinput_logging.cpp
     udev.cpp
     touch_hide_cursor_spy.cpp
+    internal_client.cpp
+    xwl/xwayland_interface.cpp
    )
 
 include(ECMQtDeclareLoggingCategory)
@@ -546,11 +556,9 @@ qt5_add_dbus_adaptor( kwin_KDEINIT_SRCS ${kwin_effects_dbus_xml} effects.h KWin:
 qt5_add_dbus_adaptor( kwin_KDEINIT_SRCS org.kde.kwin.OrientationSensor.xml orientation_sensor.h KWin::OrientationSensor)
 qt5_add_dbus_adaptor( kwin_KDEINIT_SRCS org.kde.KWin.VirtualDesktopManager.xml dbusinterface.h KWin::VirtualDesktopManagerDBusInterface )
 
-qt5_add_dbus_interface( kwin_KDEINIT_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/org.freedesktop.ScreenSaver.xml screenlocker_interface)
+qt5_add_dbus_interface( kwin_KDEINIT_SRCS ${KSCREENLOCKER_DBUS_INTERFACES_DIR}/kf5_org.freedesktop.ScreenSaver.xml screenlocker_interface )
 
 qt5_add_dbus_interface( kwin_KDEINIT_SRCS org.kde.kappmenu.xml appmenu_interface )
-
-qt5_add_resources( kwin_KDEINIT_SRCS resources.qrc )
 
 ki18n_wrap_ui(kwin_KDEINIT_SRCS
     debug_console.ui
@@ -652,7 +660,36 @@ install(TARGETS kwin             ${INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELIN
 install(TARGETS kdeinit_kwin_x11 ${INSTALL_TARGETS_DEFAULT_ARGS} )
 install(TARGETS kwin_x11         ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
-add_executable(kwin_wayland tabletmodemanager.cpp main_wayland.cpp)
+set(kwin_XWAYLAND_SRCS
+   ${CMAKE_CURRENT_SOURCE_DIR}/xwl/xwayland.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/xwl/databridge.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/xwl/selection.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/xwl/selection_source.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/xwl/transfer.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/xwl/clipboard.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/xwl/dnd.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/xwl/drag.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/xwl/drag_wl.cpp
+   ${CMAKE_CURRENT_SOURCE_DIR}/xwl/drag_x.cpp
+   )
+include(ECMQtDeclareLoggingCategory)
+ecm_qt_declare_logging_category(kwin_XWAYLAND_SRCS
+    HEADER
+        xwayland_logging.h
+    IDENTIFIER
+        KWIN_XWL
+    CATEGORY_NAME
+        kwin_xwl
+    DEFAULT_SEVERITY
+        Critical
+)
+
+set(kwin_WAYLAND_SRCS
+   tabletmodemanager.cpp
+   main_wayland.cpp
+   )
+
+add_executable(kwin_wayland ${kwin_WAYLAND_SRCS} ${kwin_XWAYLAND_SRCS})
 target_link_libraries(kwin_wayland kwin KF5::Crash)
 if (HAVE_LIBCAP)
     target_link_libraries(kwin_wayland ${Libcap_LIBRARIES})
@@ -692,20 +729,7 @@ install( FILES ${CMAKE_CURRENT_BINARY_DIR}/kwin_export.h DESTINATION ${INCLUDE_I
 # Install the KWin/Script service type
 install( FILES scripting/kwinscript.desktop DESTINATION ${SERVICETYPES_INSTALL_DIR} )
 
-ecm_install_icons(
-    ICONS
-        16-apps-kwin.png
-        32-apps-kwin.png
-        48-apps-kwin.png
-        sc-apps-kwin.svgz
-    DESTINATION
-        ${ICON_INSTALL_DIR}
-    THEME
-        hicolor
-)
-
 add_subdirectory(qml)
-add_subdirectory(packageplugins)
 
 if (BUILD_TESTING)
     add_subdirectory(autotests)

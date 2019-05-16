@@ -52,8 +52,18 @@ public:
     Xcb::Atom kde_net_wm_user_creation_time;
     Xcb::Atom net_wm_take_activity;
     Xcb::Atom net_wm_window_opacity;
+    Xcb::Atom xdnd_selection;
     Xcb::Atom xdnd_aware;
+    Xcb::Atom xdnd_enter;
+    Xcb::Atom xdnd_type_list;
     Xcb::Atom xdnd_position;
+    Xcb::Atom xdnd_status;
+    Xcb::Atom xdnd_action_copy;
+    Xcb::Atom xdnd_action_move;
+    Xcb::Atom xdnd_action_ask;
+    Xcb::Atom xdnd_drop;
+    Xcb::Atom xdnd_leave;
+    Xcb::Atom xdnd_finished;
     Xcb::Atom net_frame_extents;
     Xcb::Atom kde_net_wm_frame_strut;
     Xcb::Atom net_wm_sync_request_counter;
@@ -67,9 +77,19 @@ public:
     Xcb::Atom gtk_frame_extents;
     Xcb::Atom kwin_dbus_service;
     Xcb::Atom utf8_string;
+    Xcb::Atom text;
+    Xcb::Atom uri_list;
+    Xcb::Atom netscape_url;
+    Xcb::Atom moz_url;
     Xcb::Atom wl_surface_id;
     Xcb::Atom kde_net_wm_appmenu_service_name;
     Xcb::Atom kde_net_wm_appmenu_object_path;
+    Xcb::Atom clipboard;
+    Xcb::Atom timestamp;
+    Xcb::Atom targets;
+    Xcb::Atom delete_atom;
+    Xcb::Atom incr;
+    Xcb::Atom wl_selection;
 
     /**
      * @internal

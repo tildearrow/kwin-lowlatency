@@ -100,7 +100,7 @@ Scene::Scene(QObject *parent)
 
 Scene::~Scene()
 {
-    qDeleteAll(m_windows);
+    Q_ASSERT(m_windows.isEmpty());
 }
 
 // returns mask and possibly modified region
@@ -351,7 +351,7 @@ void Scene::paintSimpleScreen(int orig_mask, QRegion region)
 
         // Here we rely on WindowPrePaintData::setTranslucent() to remove
         // the clip if needed.
-        if (!data->clip.isEmpty() && !(data->mask & PAINT_WINDOW_TRANSFORMED)) {
+        if (!data->clip.isEmpty() && !(data->mask & PAINT_WINDOW_TRANSLUCENT)) {
             // clip away the opaque regions for all windows below this one
             allclips |= data->clip;
             // extend the translucent damage for windows below this by remaining (translucent) regions
@@ -396,7 +396,7 @@ void Scene::paintSimpleScreen(int orig_mask, QRegion region)
     }
 }
 
-void Scene::windowAdded(Toplevel *c)
+void Scene::addToplevel(Toplevel *c)
 {
     assert(!m_windows.contains(c));
     Scene::Window *w = createWindow(c);
@@ -418,28 +418,27 @@ void Scene::windowAdded(Toplevel *c)
     );
 }
 
-void Scene::windowClosed(Toplevel *c, Deleted *deleted)
+void Scene::removeToplevel(Toplevel *toplevel)
 {
-    assert(m_windows.contains(c));
-    if (deleted != NULL) {
-        // replace c with deleted
-        Window* w = m_windows.take(c);
-        w->updateToplevel(deleted);
-        if (w->shadow()) {
-            w->shadow()->setToplevel(deleted);
-        }
-        m_windows[ deleted ] = w;
-    } else {
-        delete m_windows.take(c);
-        c->effectWindow()->setSceneWindow(NULL);
-    }
+    Q_ASSERT(m_windows.contains(toplevel));
+    delete m_windows.take(toplevel);
+    toplevel->effectWindow()->setSceneWindow(nullptr);
 }
 
-void Scene::windowDeleted(Deleted *c)
+void Scene::windowClosed(Toplevel *toplevel, Deleted *deleted)
 {
-    assert(m_windows.contains(c));
-    delete m_windows.take(c);
-    c->effectWindow()->setSceneWindow(NULL);
+    if (!deleted) {
+        removeToplevel(toplevel);
+        return;
+    }
+
+    Q_ASSERT(m_windows.contains(toplevel));
+    Window *window = m_windows.take(toplevel);
+    window->updateToplevel(deleted);
+    if (window->shadow()) {
+        window->shadow()->setToplevel(deleted);
+    }
+    m_windows[deleted] = window;
 }
 
 void Scene::windowGeometryShapeChanged(Toplevel *c)

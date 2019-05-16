@@ -56,6 +56,32 @@ static KConfig *sessionConfig(QString id, QString key)
     return config;
 }
 
+static const char* const window_type_names[] = {
+    "Unknown", "Normal" , "Desktop", "Dock", "Toolbar", "Menu", "Dialog",
+    "Override", "TopMenu", "Utility", "Splash"
+};
+// change also the two functions below when adding new entries
+
+static const char* windowTypeToTxt(NET::WindowType type)
+{
+    if (type >= NET::Unknown && type <= NET::Splash)
+        return window_type_names[ type + 1 ]; // +1 (unknown==-1)
+    if (type == -2)   // undefined (not really part of NET::WindowType)
+        return "Undefined";
+    qFatal("Unknown Window Type");
+    return NULL;
+}
+
+static NET::WindowType txtToWindowType(const char* txt)
+{
+    for (int i = NET::Unknown;
+            i <= NET::Splash;
+            ++i)
+        if (qstrcmp(txt, window_type_names[ i + 1 ]) == 0)     // +1
+            return static_cast< NET::WindowType >(i);
+    return static_cast< NET::WindowType >(-2);   // undefined
+}
+
 void Workspace::saveState(QSessionManager &sm)
 {
     // If the session manager is ksmserver, save stacking
@@ -95,11 +121,11 @@ void Workspace::commitData(QSessionManager &sm)
 
 // Workspace
 
-/*!
-  Stores the current session in the config file
-
-  \sa loadSessionInfo()
- */
+/**
+ * Stores the current session in the config file
+ *
+ * @see loadSessionInfo
+ **/
 void Workspace::storeSession(KConfig* config, SMSavePhase phase)
 {
     KConfigGroup cg(config, "Session");
@@ -213,11 +239,11 @@ void Workspace::storeSubSession(const QString &name, QSet<QByteArray> sessionIds
     //cg.writeEntry( "desktop", currentDesktop());
 }
 
-/*!
-  Loads the session information from the config file.
-
-  \sa storeSession()
- */
+/**
+ * Loads the session information from the config file.
+ *
+ * @see storeSession
+ **/
 void Workspace::loadSessionInfo(const QString &key)
 {
     // NOTICE: qApp->sessionKey() is outdated when this gets invoked
@@ -273,15 +299,24 @@ void Workspace::loadSubSessionInfo(const QString &name)
     addSessionInfo(cg);
 }
 
-/*!
-  Returns a SessionInfo for client \a c. The returned session
-  info is removed from the storage. It's up to the caller to delete it.
+static bool sessionInfoWindowTypeMatch(Client* c, SessionInfo* info)
+{
+    if (info->windowType == -2) {
+        // undefined (not really part of NET::WindowType)
+        return !c->isSpecialWindow();
+    }
+    return info->windowType == c->windowType();
+}
 
-  This function is called when a new window is mapped and must be managed.
-  We try to find a matching entry in the session.
-
-  May return 0 if there's no session info for the client.
- */
+/**
+ * Returns a SessionInfo for client \a c. The returned session
+ * info is removed from the storage. It's up to the caller to delete it.
+ *
+ * This function is called when a new window is mapped and must be managed.
+ * We try to find a matching entry in the session.
+ *
+ * May return 0 if there's no session info for the client.
+ **/
 SessionInfo* Workspace::takeSessionInfo(Client* c)
 {
     SessionInfo *realInfo = 0;
@@ -339,44 +374,6 @@ SessionInfo* Workspace::takeSessionInfo(Client* c)
 
     return realInfo;
 }
-
-bool Workspace::sessionInfoWindowTypeMatch(Client* c, SessionInfo* info)
-{
-    if (info->windowType == -2) {
-        // undefined (not really part of NET::WindowType)
-        return !c->isSpecialWindow();
-    }
-    return info->windowType == c->windowType();
-}
-
-static const char* const window_type_names[] = {
-    "Unknown", "Normal" , "Desktop", "Dock", "Toolbar", "Menu", "Dialog",
-    "Override", "TopMenu", "Utility", "Splash"
-};
-// change also the two functions below when adding new entries
-
-const char* Workspace::windowTypeToTxt(NET::WindowType type)
-{
-    if (type >= NET::Unknown && type <= NET::Splash)
-        return window_type_names[ type + 1 ]; // +1 (unknown==-1)
-    if (type == -2)   // undefined (not really part of NET::WindowType)
-        return "Undefined";
-    qFatal("Unknown Window Type");
-    return NULL;
-}
-
-NET::WindowType Workspace::txtToWindowType(const char* txt)
-{
-    for (int i = NET::Unknown;
-            i <= NET::Splash;
-            ++i)
-        if (qstrcmp(txt, window_type_names[ i + 1 ]) == 0)     // +1
-            return static_cast< NET::WindowType >(i);
-    return static_cast< NET::WindowType >(-2);   // undefined
-}
-
-
-
 
 // KWin's focus stealing prevention causes problems with user interaction
 // during session save, as it prevents possible dialogs from getting focus.

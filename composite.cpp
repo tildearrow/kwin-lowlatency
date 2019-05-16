@@ -112,7 +112,7 @@ Compositor::Compositor(QObject* workspace)
     connect(options, SIGNAL(unredirectFullscreenChanged()), SLOT(delayedCheckUnredirect()));
     unredirectTimer.setSingleShot(true);
     compositeResetTimer.setSingleShot(true);
-    nextPaintReference.invalidate(); // Initialize the timer
+    m_monotonicClock.start();
 
     // 2 sec which should be enough to restart the compositor
     static const int compositorLostMessageDelay = 2000;
@@ -271,6 +271,8 @@ void Compositor::slotCompositingOptionsInitialized()
         return;
     }
 
+    kwinApp()->platform()->setSelectedCompositor(m_scene->compositingType() & OpenGLCompositing ? OpenGLCompositing : m_scene->compositingType());
+
     if (!Workspace::self() && m_scene && m_scene->compositingType() == QPainterCompositing) {
         // Force Software QtQuick on first startup with QPainter
         QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
@@ -336,7 +338,7 @@ void Compositor::startupWithWorkspace()
     m_timeSinceLastVBlank = fpsInterval - (options->vBlankTime() + 1); // means "start now" - we don't have even a slight idea when the first vsync will occur
     scheduleRepaint();
     kwinApp()->platform()->createEffectsHandler(this, m_scene);   // sets also the 'effects' pointer
-    connect(Workspace::self(), &Workspace::deletedRemoved, m_scene, &Scene::windowDeleted);
+    connect(Workspace::self(), &Workspace::deletedRemoved, m_scene, &Scene::removeToplevel);
     connect(effects, SIGNAL(screenGeometryChanged(QSize)), SLOT(addRepaintFull()));
     addRepaintFull();
     foreach (Client * c, Workspace::self()->clientList()) {
@@ -396,31 +398,30 @@ void Compositor::finish()
 
     if (Workspace::self()) {
         foreach (Client * c, Workspace::self()->clientList())
-            m_scene->windowClosed(c, NULL);
+            m_scene->removeToplevel(c);
         foreach (Client * c, Workspace::self()->desktopList())
-            m_scene->windowClosed(c, NULL);
+            m_scene->removeToplevel(c);
         foreach (Unmanaged * c, Workspace::self()->unmanagedList())
-            m_scene->windowClosed(c, NULL);
-        foreach (Deleted * c, Workspace::self()->deletedList())
-            m_scene->windowDeleted(c);
+            m_scene->removeToplevel(c);
         foreach (Client * c, Workspace::self()->clientList())
         c->finishCompositing();
         foreach (Client * c, Workspace::self()->desktopList())
         c->finishCompositing();
         foreach (Unmanaged * c, Workspace::self()->unmanagedList())
         c->finishCompositing();
-        foreach (Deleted * c, Workspace::self()->deletedList())
-        c->finishCompositing();
         if (auto c = kwinApp()->x11Connection()) {
             xcb_composite_unredirect_subwindows(c, kwinApp()->x11RootWindow(), XCB_COMPOSITE_REDIRECT_MANUAL);
+        }
+        while (!workspace()->deletedList().isEmpty()) {
+            workspace()->deletedList().first()->discard();
         }
     }
     if (waylandServer()) {
         foreach (ShellClient *c, waylandServer()->clients()) {
-            m_scene->windowClosed(c, nullptr);
+            m_scene->removeToplevel(c);
         }
         foreach (ShellClient *c, waylandServer()->internalClients()) {
-            m_scene->windowClosed(c, nullptr);
+            m_scene->removeToplevel(c);
         }
         foreach (ShellClient *c, waylandServer()->clients()) {
             c->finishCompositing();
@@ -433,20 +434,6 @@ void Compositor::finish()
     m_scene = NULL;
     compositeTimer.stop();
     repaints_region = QRegion();
-    if (Workspace::self()) {
-        for (ClientList::ConstIterator it = Workspace::self()->clientList().constBegin();
-                it != Workspace::self()->clientList().constEnd();
-                ++it) {
-            // forward all opacity values to the frame in case there'll be other CM running
-            if ((*it)->opacity() != 1.0) {
-                NETWinInfo i(connection(), (*it)->frameId(), rootWindow(), 0, 0);
-                i.setOpacity(static_cast< unsigned long >((*it)->opacity() * 0xffffffff));
-            }
-        }
-        // discard all Deleted windows (#152914)
-        while (!Workspace::self()->deletedList().isEmpty())
-            Workspace::self()->deletedList().first()->discard();
-    }
     m_finishing = false;
     emit compositingToggled(false);
 }
@@ -666,6 +653,8 @@ void Compositor::bufferSwapComplete()
     assert(m_bufferSwapPending);
     m_bufferSwapPending = false;
 
+    emit bufferSwapCompleted();
+
     if (m_composeAtSwapCompletion) {
         m_composeAtSwapCompletion = false;
         performCompositing();
@@ -777,12 +766,12 @@ void Compositor::performCompositing()
             kwinApp()->platform()->createOpenGLSafePoint(Platform::OpenGLSafePoint::PostLastGuardedFrame);
         }
     }
-    m_timeSinceStart += m_timeSinceLastVBlank;
 
     if (waylandServer()) {
-        for (Toplevel *win : qAsConst(damaged)) {
+        const auto currentTime = static_cast<quint32>(m_monotonicClock.elapsed());
+        for (Toplevel *win : qAsConst(windows)) {
             if (auto surface = win->surface()) {
-                surface->frameRendered(m_timeSinceStart);
+                surface->frameRendered(currentTime);
             }
         }
     }
@@ -1082,7 +1071,7 @@ bool Toplevel::setupCompositing()
     unredirect = false;
  
     Compositor::self()->checkUnredirect(true);
-    Compositor::self()->scene()->windowAdded(this);
+    Compositor::self()->scene()->addToplevel(this);
 
     // With unmanaged windows there is a race condition between the client painting the window
     // and us setting up damage tracking.  If the client wins we won't get a damage event even

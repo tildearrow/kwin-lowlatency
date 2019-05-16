@@ -321,7 +321,7 @@ set( testScreenEdges_SRCS
     ../orientation_sensor.cpp
 )
 kconfig_add_kcfg_files(testScreenEdges_SRCS ../settings.kcfgc)
-qt5_add_dbus_interface( testScreenEdges_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/../org.freedesktop.ScreenSaver.xml screenlocker_interface)
+qt5_add_dbus_interface( testScreenEdges_SRCS ${KSCREENLOCKER_DBUS_INTERFACES_DIR}/kf5_org.freedesktop.ScreenSaver.xml screenlocker_interface )
 qt5_add_dbus_adaptor( testScreenEdges_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/../org.kde.kwin.OrientationSensor.xml ${CMAKE_CURRENT_SOURCE_DIR}/../orientation_sensor.h KWin::OrientationSensor)
 
 add_executable( testScreenEdges ${testScreenEdges_SRCS})
@@ -366,6 +366,7 @@ target_link_libraries(testOnScreenNotification
     Qt5::Test
     Qt5::Widgets # QAction include
     Qt5::Quick
+    Qt5::DBus
     KF5::ConfigCore
 )
 

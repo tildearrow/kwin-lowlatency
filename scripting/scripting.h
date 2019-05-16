@@ -30,6 +30,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QtScript/QScriptEngineAgent>
 #include <QJSValue>
 
+#include <QDBusContext>
+#include <QDBusMessage>
+
 class QQmlComponent;
 class QQmlContext;
 class QQmlEngine;
@@ -214,7 +217,7 @@ private:
     QList<QScriptValue> m_userActionsMenuCallbacks;
 };
 
-class Script : public AbstractScript
+class Script : public AbstractScript, QDBusContext
 {
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "org.kde.kwin.Scripting")
@@ -237,9 +240,9 @@ Q_SIGNALS:
 
 private Q_SLOTS:
     /**
-      * A nice clean way to handle exceptions in scripting.
-      * TODO: Log to file, show from notifier..
-      */
+     * A nice clean way to handle exceptions in scripting.
+     * TODO: Log to file, show from notifier..
+     **/
     void sigException(const QScriptValue &exception);
     /**
      * Callback for when loadScriptFromFile has finished.
@@ -254,6 +257,7 @@ private:
      **/
     QByteArray loadScriptFromFile(const QString &fileName);
     QScriptEngine *m_engine;
+    QDBusMessage m_invocationContext;
     bool m_starting;
     QScopedPointer<ScriptUnloaderAgent> m_agent;
     QHash<int, QAction*> m_touchScreenEdgeCallbacks;
@@ -327,8 +331,8 @@ private:
 };
 
 /**
-  * The heart of KWin::Scripting. Infinite power lies beyond
-  */
+ * The heart of KWin::Scripting. Infinite power lies beyond
+ **/
 class KWIN_EXPORT Scripting : public QObject
 {
     Q_OBJECT

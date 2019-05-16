@@ -64,9 +64,9 @@ static inline int sign(int v) {
 extern int screen_number;
 extern bool is_multihead;
 
-/*!
-  Resizes the workspace after an XRANDR screen size change
- */
+/**
+ * Resizes the workspace after an XRANDR screen size change
+ **/
 void Workspace::desktopResized()
 {
     QRect geom = screens()->geometry();
@@ -101,18 +101,17 @@ void Workspace::saveOldScreenSizes()
         oldscreensizes.append( screens()->geometry( i ));
 }
 
-/*!
-  Updates the current client areas according to the current clients.
-
-  If the area changes or force is true, the new areas are propagated to the world.
-
-  The client area is the area that is available for clients (that
-  which is not taken by windows like panels, the top-of-screen menu
-  etc).
-
-  \sa clientArea()
- */
-
+/**
+ * Updates the current client areas according to the current clients.
+ *
+ * If the area changes or force is @c true, the new areas are propagated to the world.
+ *
+ * The client area is the area that is available for clients (that
+ * which is not taken by windows like panels, the top-of-screen menu
+ * etc).
+ *
+ * @see clientArea()
+ **/
 void Workspace::updateClientArea(bool force)
 {
     const Screens *s = Screens::self();
@@ -329,10 +328,6 @@ void Workspace::updateClientArea(bool force)
                 it != m_allClients.constEnd();
                 ++it)
             (*it)->checkWorkspacePosition();
-        for (ClientList::ConstIterator it = desktops.constBegin();
-                it != desktops.constEnd();
-                ++it)
-            (*it)->checkWorkspacePosition();
 
         oldrestrictedmovearea.clear(); // reset, no longer valid or needed
     }
@@ -344,14 +339,11 @@ void Workspace::updateClientArea()
 }
 
 
-/*!
-  returns the area available for clients. This is the desktop
-  geometry minus windows on the dock.  Placement algorithms should
-  refer to this rather than geometry().
-
-  \sa geometry()
- */
-
+/**
+ * Returns the area available for clients. This is the desktop
+ * geometry minus windows on the dock. Placement algorithms should
+ * refer to this rather than Screens::geometry.
+ **/
 QRect Workspace::clientArea(clientAreaOption opt, int screen, int desktop) const
 {
     if (desktop == NETWinInfo::OnAllDesktops || desktop == 0)
@@ -456,15 +448,15 @@ int Workspace::oldDisplayHeight() const
     return olddisplaysize.height();
 }
 
-/*!
-  Client \a c is moved around to position \a pos. This gives the
-  workspace the opportunity to interveniate and to implement
-  snap-to-windows functionality.
-
-  The parameter \a snapAdjust is a multiplier used to calculate the
-  effective snap zones. When 1.0, it means that the snap zones will be
-  used without change.
- */
+/**
+ * Client \a c is moved around to position \a pos. This gives the
+ * workspace the opportunity to interveniate and to implement
+ * snap-to-windows functionality.
+ *
+ * The parameter \a snapAdjust is a multiplier used to calculate the
+ * effective snap zones. When 1.0, it means that the snap zones will be
+ * used without change.
+ **/
 QPoint Workspace::adjustClientPosition(AbstractClient* c, QPoint pos, bool unrestricted, double snapAdjust)
 {
     QSize borderSnapZone(options->borderSnapZone(), options->borderSnapZone());
@@ -517,17 +509,17 @@ QPoint Workspace::adjustClientPosition(AbstractClient* c, QPoint pos, bool unres
             int padding[4] = { cp.x(), cs.width() - cp.x(), cp.y(), cs.height() - cp.y() };
 
             // snap to titlebar / snap to window borders on inner screen edges
-            Client::Position titlePos = c->titlebarPosition();
-            if (padding[0] && (titlePos == Client::PositionLeft || (c->maximizeMode() & MaximizeHorizontal) ||
+            AbstractClient::Position titlePos = c->titlebarPosition();
+            if (padding[0] && (titlePos == AbstractClient::PositionLeft || (c->maximizeMode() & MaximizeHorizontal) ||
                                screens()->intersecting(geo.translated(maxRect.x() - (padding[0] + geo.x()), 0)) > 1))
                 padding[0] = 0;
-            if (padding[1] && (titlePos == Client::PositionRight || (c->maximizeMode() & MaximizeHorizontal) ||
+            if (padding[1] && (titlePos == AbstractClient::PositionRight || (c->maximizeMode() & MaximizeHorizontal) ||
                                screens()->intersecting(geo.translated(maxRect.right() + padding[1] - geo.right(), 0)) > 1))
                 padding[1] = 0;
-            if (padding[2] && (titlePos == Client::PositionTop || (c->maximizeMode() & MaximizeVertical) ||
+            if (padding[2] && (titlePos == AbstractClient::PositionTop || (c->maximizeMode() & MaximizeVertical) ||
                                screens()->intersecting(geo.translated(0, maxRect.y() - (padding[2] + geo.y()))) > 1))
                 padding[2] = 0;
-            if (padding[3] && (titlePos == Client::PositionBottom || (c->maximizeMode() & MaximizeVertical) ||
+            if (padding[3] && (titlePos == AbstractClient::PositionBottom || (c->maximizeMode() & MaximizeVertical) ||
                                screens()->intersecting(geo.translated(0, maxRect.bottom() + padding[3] - geo.bottom())) > 1))
                 padding[3] = 0;
             if ((sOWO ? (cx < xmin) : true) && (qAbs(xmin - cx) < snapX)) {
@@ -709,31 +701,31 @@ QRect Workspace::adjustClientSize(AbstractClient* c, QRect moveResizeGeom, int m
         newrx = xmax; \
     }
             switch(mode) {
-            case Client::PositionBottomRight:
+            case AbstractClient::PositionBottomRight:
                 SNAP_BORDER_BOTTOM
                 SNAP_BORDER_RIGHT
                 break;
-            case Client::PositionRight:
+            case AbstractClient::PositionRight:
                 SNAP_BORDER_RIGHT
                 break;
-            case Client::PositionBottom:
+            case AbstractClient::PositionBottom:
                 SNAP_BORDER_BOTTOM
                 break;
-            case Client::PositionTopLeft:
+            case AbstractClient::PositionTopLeft:
                 SNAP_BORDER_TOP
                 SNAP_BORDER_LEFT
                 break;
-            case Client::PositionLeft:
+            case AbstractClient::PositionLeft:
                 SNAP_BORDER_LEFT
                 break;
-            case Client::PositionTop:
+            case AbstractClient::PositionTop:
                 SNAP_BORDER_TOP
                 break;
-            case Client::PositionTopRight:
+            case AbstractClient::PositionTopRight:
                 SNAP_BORDER_TOP
                 SNAP_BORDER_RIGHT
                 break;
-            case Client::PositionBottomLeft:
+            case AbstractClient::PositionBottomLeft:
                 SNAP_BORDER_BOTTOM
                 SNAP_BORDER_LEFT
                 break;
@@ -825,41 +817,41 @@ QRect Workspace::adjustClientSize(AbstractClient* c, QRect moveResizeGeom, int m
 }
 
                     switch(mode) {
-                    case Client::PositionBottomRight:
+                    case AbstractClient::PositionBottomRight:
                         SNAP_WINDOW_BOTTOM
                         SNAP_WINDOW_RIGHT
                         SNAP_WINDOW_C_BOTTOM
                         SNAP_WINDOW_C_RIGHT
                         break;
-                    case Client::PositionRight:
+                    case AbstractClient::PositionRight:
                         SNAP_WINDOW_RIGHT
                         SNAP_WINDOW_C_RIGHT
                         break;
-                    case Client::PositionBottom:
+                    case AbstractClient::PositionBottom:
                         SNAP_WINDOW_BOTTOM
                         SNAP_WINDOW_C_BOTTOM
                         break;
-                    case Client::PositionTopLeft:
+                    case AbstractClient::PositionTopLeft:
                         SNAP_WINDOW_TOP
                         SNAP_WINDOW_LEFT
                         SNAP_WINDOW_C_TOP
                         SNAP_WINDOW_C_LEFT
                         break;
-                    case Client::PositionLeft:
+                    case AbstractClient::PositionLeft:
                         SNAP_WINDOW_LEFT
                         SNAP_WINDOW_C_LEFT
                         break;
-                    case Client::PositionTop:
+                    case AbstractClient::PositionTop:
                         SNAP_WINDOW_TOP
                         SNAP_WINDOW_C_TOP
                         break;
-                    case Client::PositionTopRight:
+                    case AbstractClient::PositionTopRight:
                         SNAP_WINDOW_TOP
                         SNAP_WINDOW_RIGHT
                         SNAP_WINDOW_C_TOP
                         SNAP_WINDOW_C_RIGHT
                         break;
-                    case Client::PositionBottomLeft:
+                    case AbstractClient::PositionBottomLeft:
                         SNAP_WINDOW_BOTTOM
                         SNAP_WINDOW_LEFT
                         SNAP_WINDOW_C_BOTTOM
@@ -888,10 +880,10 @@ QRect Workspace::adjustClientSize(AbstractClient* c, QRect moveResizeGeom, int m
     return moveResizeGeom;
 }
 
-/*!
-  Marks the client as being moved around by the user.
- */
-void Workspace::setClientIsMoving(AbstractClient *c)
+/**
+ * Marks the client as being moved or resized by the user.
+ **/
+void Workspace::setMoveResizeClient(AbstractClient *c)
 {
     Q_ASSERT(!c || !movingClient); // Catch attempts to move a second
     // window while still moving the first one.
@@ -923,11 +915,11 @@ void Workspace::fixPositionAfterCrash(xcb_window_t w, const xcb_get_geometry_rep
 // Client
 //********************************************
 
-/*!
-  Returns \a area with the client's strut taken into account.
-
-  Used from Workspace in updateClientArea.
- */
+/**
+ * Returns \a area with the client's strut taken into account.
+ *
+ * Used from Workspace in updateClientArea.
+ **/
 // TODO move to Workspace?
 
 QRect Client::adjustedClientArea(const QRect &desktopArea, const QRect& area) const
@@ -1152,14 +1144,9 @@ void AbstractClient::checkWorkspacePosition(QRect oldGeometry, int oldDesktop, Q
     // Old and new maximums have different starting values so windows on the screen
     // edge will move when a new strut is placed on the edge.
     QRect oldScreenArea;
-    QRect oldGeomTall;
-    QRect oldGeomWide;
-    const auto displaySize = screens()->displaySize();
     if( workspace()->inUpdateClientArea()) {
         // we need to find the screen area as it was before the change
         oldScreenArea = QRect( 0, 0, workspace()->oldDisplayWidth(), workspace()->oldDisplayHeight());
-        oldGeomTall = QRect(oldGeometry.x(), 0, oldGeometry.width(), workspace()->oldDisplayHeight());   // Full screen height
-        oldGeomWide = QRect(0, oldGeometry.y(), workspace()->oldDisplayWidth(), oldGeometry.height());   // Full screen width
         int distance = INT_MAX;
         foreach(const QRect &r, workspace()->previousScreenSizes()) {
             int d = r.contains( oldGeometry.center()) ? 0 : ( r.center() - oldGeometry.center()).manhattanLength();
@@ -1170,9 +1157,9 @@ void AbstractClient::checkWorkspacePosition(QRect oldGeometry, int oldDesktop, Q
         }
     } else {
         oldScreenArea = workspace()->clientArea(ScreenArea, oldGeometry.center(), oldDesktop);
-        oldGeomTall = QRect(oldGeometry.x(), 0, oldGeometry.width(), displaySize.height());   // Full screen height
-        oldGeomWide = QRect(0, oldGeometry.y(), displaySize.width(), oldGeometry.height());   // Full screen width
     }
+    const QRect oldGeomTall = QRect(oldGeometry.x(), oldScreenArea.y(), oldGeometry.width(), oldScreenArea.height());   // Full screen height
+    const QRect oldGeomWide = QRect(oldScreenArea.x(), oldGeometry.y(), oldScreenArea.width(), oldGeometry.height());   // Full screen width
     int oldTopMax = oldScreenArea.y();
     int oldRightMax = oldScreenArea.x() + oldScreenArea.width();
     int oldBottomMax = oldScreenArea.y() + oldScreenArea.height();
@@ -1184,8 +1171,8 @@ void AbstractClient::checkWorkspacePosition(QRect oldGeometry, int oldDesktop, Q
     int leftMax = screenArea.x();
     QRect newGeom = geometryRestore(); // geometry();
     QRect newClientGeom = newGeom.adjusted(border[Left], border[Top], -border[Right], -border[Bottom]);
-    const QRect newGeomTall = QRect(newGeom.x(), 0, newGeom.width(), displaySize.height());   // Full screen height
-    const QRect newGeomWide = QRect(0, newGeom.y(), displaySize.width(), newGeom.height());   // Full screen width
+    const QRect newGeomTall = QRect(newGeom.x(), screenArea.y(), newGeom.width(), screenArea.height());   // Full screen height
+    const QRect newGeomWide = QRect(screenArea.x(), newGeom.y(), screenArea.width(), newGeom.height());   // Full screen width
     // Get the max strut point for each side where the window is (E.g. Highest point for
     // the bottom struts bounded by the window's left and right sides).
 
@@ -1339,9 +1326,6 @@ void AbstractClient::checkOffscreenPosition(QRect* geom, const QRect& screenArea
     }
 }
 
-/*!
-  Adjust the frame size \a frame according to he window's size hints.
- */
 QSize AbstractClient::adjustedSize(const QSize& frame, Sizemode mode) const
 {
     // first, get the window size for the given frame size s
@@ -1360,14 +1344,13 @@ QSize AbstractClient::adjustedSize() const
     return sizeForClientSize(clientSize());
 }
 
-/*!
-  Calculate the appropriate frame size for the given client size \a
-  wsize.
-
-  \a wsize is adapted according to the window's size hints (minimum,
-  maximum and incremental size changes).
-
- */
+/**
+ * Calculate the appropriate frame size for the given client size \a
+ * wsize.
+ *
+ * \a wsize is adapted according to the window's size hints (minimum,
+ * maximum and incremental size changes).
+ **/
 QSize Client::sizeForClientSize(const QSize& wsize, Sizemode mode, bool noframe) const
 {
     int w = wsize.width();
@@ -1537,9 +1520,9 @@ QSize Client::sizeForClientSize(const QSize& wsize, Sizemode mode, bool noframe)
     return rules()->checkSize(QSize(w, h));
 }
 
-/*!
-  Gets the client's normal WM hints and reconfigures itself respectively.
- */
+/**
+ * Gets the client's normal WM hints and reconfigures itself respectively.
+ **/
 void Client::getWmNormalHints()
 {
     const bool hadFixedAspect = m_geometryHints.hasAspect();
@@ -1591,11 +1574,10 @@ QSize Client::basicUnit() const
     return m_geometryHints.resizeIncrements();
 }
 
-/*!
-  Auxiliary function to inform the client about the current window
-  configuration.
-
- */
+/**
+ * Auxiliary function to inform the client about the current window
+ * configuration.
+ **/
 void Client::sendSyntheticConfigureNotify()
 {
     xcb_configure_notify_event_t c;
@@ -1881,10 +1863,6 @@ void Client::NETMoveResizeWindow(int flags, int x, int y, int width, int height)
     configureRequest(value_mask, x, y, width, height, gravity, true);
 }
 
-/*!
-  Returns whether the window is moveable or has a fixed
-  position.
- */
 bool Client::isMovable() const
 {
     if (!hasNETSupport() && !m_motif.move()) {
@@ -1899,9 +1877,6 @@ bool Client::isMovable() const
     return true;
 }
 
-/*!
-  Returns whether the window is moveable across Xinerama screens
- */
 bool Client::isMovableAcrossScreens() const
 {
     if (!hasNETSupport() && !m_motif.move()) {
@@ -1914,9 +1889,6 @@ bool Client::isMovableAcrossScreens() const
     return true;
 }
 
-/*!
-  Returns whether the window is resizable or has a fixed size.
- */
 bool Client::isResizable() const
 {
     if (!hasNETSupport() && !m_motif.resize()) {
@@ -1938,9 +1910,6 @@ bool Client::isResizable() const
     return min.width() < max.width() || min.height() < max.height();
 }
 
-/*
-  Returns whether the window is maximizable or not
- */
 bool Client::isMaximizable() const
 {
     if (!isResizable() || isToolbar())  // SELI isToolbar() ?
@@ -1951,9 +1920,9 @@ bool Client::isMaximizable() const
 }
 
 
-/*!
-  Reimplemented to inform the client about the new window position.
- */
+/**
+ * Reimplemented to inform the client about the new window position.
+ **/
 void Client::setGeometry(int x, int y, int w, int h, ForceGeometry_t force)
 {
     // this code is also duplicated in Client::plainResize()
@@ -2113,9 +2082,9 @@ void Client::plainResize(int w, int h, ForceGeometry_t force)
     emit geometryChanged();
 }
 
-/*!
-  Reimplemented to inform the client about the new window position.
- */
+/**
+ * Reimplemented to inform the client about the new window position.
+ **/
 void AbstractClient::move(int x, int y, ForceGeometry_t force)
 {
     // resuming geometry updates is handled only in setGeometry()
@@ -2186,9 +2155,6 @@ void AbstractClient::maximize(MaximizeMode m)
     setMaximize(m & MaximizeVertical, m & MaximizeHorizontal);
 }
 
-/*!
-  Sets the maximization according to \a vertically and \a horizontally
- */
 void AbstractClient::setMaximize(bool vertically, bool horizontally)
 {
     // changeMaximize() flips the state, so change from set->flip
@@ -2594,11 +2560,10 @@ void Client::updateFullscreenMonitors(NETFullscreenMonitors topology)
         setGeometry(fullscreenMonitorsArea(topology));
 }
 
-
-/*!
-  Calculates the bounding rectangle defined by the 4 monitor indices indicating the
-  top, bottom, left, and right edges of the window when the fullscreen state is enabled.
- */
+/**
+ * Calculates the bounding rectangle defined by the 4 monitor indices indicating the
+ * top, bottom, left, and right edges of the window when the fullscreen state is enabled.
+ **/
 QRect Client::fullscreenMonitorsArea(NETFullscreenMonitors requestedTopology) const
 {
     QRect top, bottom, left, right, total;
@@ -2696,7 +2661,7 @@ bool AbstractClient::startMoveResize()
     invalidateDecorationDoubleClickTimer();
 
     setMoveResize(true);
-    workspace()->setClientIsMoving(this);
+    workspace()->setMoveResizeClient(this);
 
     const Position mode = moveResizePointerMode();
     if (mode != PositionCenter) { // means "isResize()" but moveResizeMode = true is set below
@@ -2727,7 +2692,7 @@ bool Client::doStartMoveResize()
     bool has_grab = false;
     // This reportedly improves smoothness of the moveresize operation,
     // something with Enter/LeaveNotify events, looks like XFree performance problem or something *shrug*
-    // (http://lists.kde.org/?t=107302193400001&r=1&w=2)
+    // (https://lists.kde.org/?t=107302193400001&r=1&w=2)
     QRect r = workspace()->clientArea(FullArea, this);
     m_moveResizeGrabWindow.create(r, XCB_WINDOW_CLASS_INPUT_ONLY, 0, NULL, rootWindow());
     m_moveResizeGrabWindow.map();

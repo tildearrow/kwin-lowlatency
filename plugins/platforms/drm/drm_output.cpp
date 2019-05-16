@@ -127,6 +127,38 @@ bool DrmOutput::showCursor()
     return ret;
 }
 
+int orientationToRotation(Qt::ScreenOrientation orientation)
+{
+    switch (orientation) {
+    case Qt::PrimaryOrientation:
+    case Qt::LandscapeOrientation:
+        return 0;
+    case Qt::InvertedPortraitOrientation:
+        return 90;
+    case Qt::InvertedLandscapeOrientation:
+        return 180;
+    case Qt::PortraitOrientation:
+        return 270;
+    }
+    Q_UNREACHABLE();
+    return 0;
+}
+
+QMatrix4x4 DrmOutput::matrixDisplay(const QSize &s) const
+{
+    QMatrix4x4 matrix;
+    const int angle = orientationToRotation(orientation());
+    if (angle) {
+        const QSize center = s / 2;
+
+        matrix.translate(center.width(), center.height());
+        matrix.rotate(angle, 0, 0, 1);
+        matrix.translate(-center.width(), -center.height());
+    }
+    matrix.scale(scale());
+    return matrix;
+}
+
 void DrmOutput::updateCursor()
 {
     QImage cursorImage = m_backend->softwareCursor();
@@ -136,39 +168,35 @@ void DrmOutput::updateCursor()
     m_hasNewCursor = true;
     QImage *c = m_cursor[m_cursorIndex]->image();
     c->fill(Qt::transparent);
-    c->setDevicePixelRatio(scale());
 
     QPainter p;
     p.begin(c);
-    if (orientation() == Qt::InvertedLandscapeOrientation) {
-        QMatrix4x4 matrix;
-        matrix.translate(cursorImage.width() / 2.0, cursorImage.height() / 2.0);
-        matrix.rotate(180.0f, 0.0f, 0.0f, 1.0f);
-        matrix.translate(-cursorImage.width() / 2.0, -cursorImage.height() / 2.0);
-        p.setWorldTransform(matrix.toTransform());
-    }
+    p.setWorldTransform(matrixDisplay(QSize(cursorImage.width(), cursorImage.height())).toTransform());
     p.drawImage(QPoint(0, 0), cursorImage);
     p.end();
 }
 
 void DrmOutput::moveCursor(const QPoint &globalPos)
 {
-    QMatrix4x4 matrix;
-    QMatrix4x4 hotspotMatrix;
-    if (orientation() == Qt::InvertedLandscapeOrientation) {
-        matrix.translate(pixelSize().width() /2.0, pixelSize().height() / 2.0);
-        matrix.rotate(180.0f, 0.0f, 0.0f, 1.0f);
-        matrix.translate(-pixelSize().width() /2.0, -pixelSize().height() / 2.0);
-        const auto cursorSize = m_backend->softwareCursor().size();
-        hotspotMatrix.translate(cursorSize.width()/2.0, cursorSize.height()/2.0);
-        hotspotMatrix.rotate(180.0f, 0.0f, 0.0f, 1.0f);
-        hotspotMatrix.translate(-cursorSize.width()/2.0, -cursorSize.height()/2.0);
+    const QMatrix4x4 hotspotMatrix = matrixDisplay(m_backend->softwareCursor().size());
+
+    QPoint p = globalPos-AbstractOutput::globalPos();
+    switch (orientation()) {
+    case Qt::PrimaryOrientation:
+    case Qt::LandscapeOrientation:
+        break;
+    case Qt::PortraitOrientation:
+        p = QPoint(p.y(), pixelSize().height() - p.x());
+        break;
+    case Qt::InvertedPortraitOrientation:
+        p = QPoint(pixelSize().width() - p.y(), p.x());
+        break;
+    case Qt::InvertedLandscapeOrientation:
+        p = QPoint(pixelSize().width() - p.x(), pixelSize().height() - p.y());
+        break;
     }
-    hotspotMatrix.scale(scale());
-    matrix.scale(scale());
-    const auto outputGlobalPos = AbstractOutput::globalPos();
-    matrix.translate(-outputGlobalPos.x(), -outputGlobalPos.y());
-    const QPoint p = matrix.map(globalPos) - hotspotMatrix.map(m_backend->softwareCursorHotspot());
+    p *= scale();
+    p -= hotspotMatrix.map(m_backend->softwareCursorHotspot());
     drmModeMoveCursor(m_backend->fd(), m_crtc->id(), p.x(), p.y());
 }
 
@@ -189,7 +217,10 @@ static QHash<int, QByteArray> s_connectorNames = {
     {DRM_MODE_CONNECTOR_TV, QByteArrayLiteral("TV")},
     {DRM_MODE_CONNECTOR_eDP, QByteArrayLiteral("eDP")},
     {DRM_MODE_CONNECTOR_VIRTUAL, QByteArrayLiteral("Virtual")},
-    {DRM_MODE_CONNECTOR_DSI, QByteArrayLiteral("DSI")}
+    {DRM_MODE_CONNECTOR_DSI, QByteArrayLiteral("DSI")},
+#ifdef DRM_MODE_CONNECTOR_DPI
+    {DRM_MODE_CONNECTOR_DPI, QByteArrayLiteral("DPI")},
+#endif
 };
 
 namespace {
@@ -227,7 +258,7 @@ bool DrmOutput::init(drmModeConnector *connector)
     setInternal(connector->connector_type == DRM_MODE_CONNECTOR_LVDS || connector->connector_type == DRM_MODE_CONNECTOR_eDP);
     setDpmsSupported(true);
 
-    if (internal()) {
+    if (isInternal()) {
         connect(kwinApp(), &Application::screensCreated, this,
             [this] {
                 connect(screens()->orientationSensor(), &OrientationSensor::orientationChanged, this, &DrmOutput::automaticRotation);
@@ -463,9 +494,9 @@ static QSize extractPhysicalSize(drmModePropertyBlobPtr edid)
 
 void DrmOutput::initEdid(drmModeConnector *connector)
 {
-    ScopedDrmPointer<_drmModePropertyBlob, &drmModeFreePropertyBlob> edid;
+    DrmScopedPointer<drmModePropertyBlobRes> edid;
     for (int i = 0; i < connector->count_props; ++i) {
-        ScopedDrmPointer<_drmModeProperty, &drmModeFreeProperty> property(drmModeGetProperty(m_backend->fd(), connector->props[i]));
+        DrmScopedPointer<drmModePropertyRes> property(drmModeGetProperty(m_backend->fd(), connector->props[i]));
         if (!property) {
             continue;
         }
@@ -566,7 +597,7 @@ bool DrmOutput::initCursor(const QSize &cursorSize)
 void DrmOutput::initDpms(drmModeConnector *connector)
 {
     for (int i = 0; i < connector->count_props; ++i) {
-        ScopedDrmPointer<_drmModeProperty, &drmModeFreeProperty> property(drmModeGetProperty(m_backend->fd(), connector->props[i]));
+        DrmScopedPointer<drmModePropertyRes> property(drmModeGetProperty(m_backend->fd(), connector->props[i]));
         if (!property) {
             continue;
         }
@@ -767,7 +798,7 @@ void DrmOutput::transform(KWayland::Server::OutputDeviceInterface::Transform tra
 void DrmOutput::updateMode(int modeIndex)
 {
     // get all modes on the connector
-    ScopedDrmPointer<_drmModeConnector, &drmModeFreeConnector> connector(drmModeGetConnector(m_backend->fd(), m_conn->id()));
+    DrmScopedPointer<drmModeConnector> connector(drmModeGetConnector(m_backend->fd(), m_conn->id()));
     if (connector->count_modes <= modeIndex) {
         // TODO: error?
         return;
@@ -887,6 +918,15 @@ bool DrmOutput::presentAtomically(DrmBuffer *buffer)
         qCWarning(KWIN_DRM) << "Page not yet flipped.";
         return false;
     }
+
+#if HAVE_EGL_STREAMS
+    if (m_backend->useEglStreams() && !m_modesetRequested) {
+        // EglStreamBackend queues normal page flips through EGL,
+        // modesets are still performed through DRM-KMS
+        m_pageFlipPending = true;
+        return true;
+    }
+#endif
 
     m_primaryPlane->setNext(buffer);
     m_nextPlanesFlipList << m_primaryPlane;
@@ -1031,7 +1071,13 @@ bool DrmOutput::doAtomicCommit(AtomicCommitMode mode)
                 // TODO: Evaluating this condition should only be necessary, as long as we expect older kernels than 4.10.
                 flags |= DRM_MODE_ATOMIC_NONBLOCK;
             }
-            flags |= DRM_MODE_PAGE_FLIP_EVENT;
+
+#if HAVE_EGL_STREAMS
+            if (!m_backend->useEglStreams())
+                // EglStreamBackend uses the NV_output_drm_flip_event EGL extension
+                // to register the flip event through eglStreamConsumerAcquireAttribNV
+#endif
+                flags |= DRM_MODE_PAGE_FLIP_EVENT;
         }
     } else {
         flags |= DRM_MODE_ATOMIC_TEST_ONLY;

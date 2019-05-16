@@ -60,9 +60,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <unistd.h>
 #include <signal.h>
 
-using namespace KWayland::Server;
+Q_DECLARE_METATYPE(NET::WindowType)
 
-static const QByteArray s_skipClosePropertyName = QByteArrayLiteral("KWIN_SKIP_CLOSE_ANIMATION");
+using namespace KWayland::Server;
 
 namespace KWin
 {
@@ -86,7 +86,9 @@ ShellClient::ShellClient(XdgShellSurfaceInterface *surface)
     , m_internal(surface->client() == waylandServer()->internalConnection())
 {
     setSurface(surface->surface());
+    m_requestGeometryBlockCounter++;
     init();
+    connect(surface->surface(), &SurfaceInterface::committed, this, &ShellClient::finishInit);
 }
 
 ShellClient::ShellClient(XdgShellPopupInterface *surface)
@@ -97,7 +99,9 @@ ShellClient::ShellClient(XdgShellPopupInterface *surface)
     , m_internal(surface->client() == waylandServer()->internalConnection())
 {
     setSurface(surface->surface());
+    m_requestGeometryBlockCounter++;
     init();
+    connect(surface->surface(), &SurfaceInterface::committed, this, &ShellClient::finishInit);
 }
 
 ShellClient::~ShellClient() = default;
@@ -207,7 +211,6 @@ void ShellClient::initSurface(T *shellSurface)
 void ShellClient::init()
 {
     connect(this, &ShellClient::desktopFileNameChanged, this, &ShellClient::updateIcon);
-    findInternalWindow();
     createWindowId();
     setupCompositing();
     updateIcon();
@@ -223,10 +226,7 @@ void ShellClient::init()
     } else {
         ready_for_painting = false;
     }
-    if (m_internalWindow) {
-        updateInternalWindowGeometry();
-        updateDecoration(true);
-    } else {
+    if (!m_internal) {
         doSetGeometry(QRect(QPoint(0, 0), m_clientSize));
     }
     if (waylandServer()->inputMethodConnection() == s->client()) {
@@ -316,7 +316,6 @@ void ShellClient::init()
             }
             m_xdgShellSurface->configure(xdgSurfaceStates(), m_requestedClientSize);
         };
-        configure();
         connect(this, &AbstractClient::activeChanged, this, configure);
         connect(this, &AbstractClient::clientStartUserMovedResized, this, configure);
         connect(this, &AbstractClient::clientFinishUserMovedResized, this, configure);
@@ -331,9 +330,6 @@ void ShellClient::init()
         connect(m_xdgShellPopup, &XdgShellPopupInterface::configureAcknowledged, this, [this](int serial) {
            m_lastAckedConfigureRequest = serial;
         });
-
-        QRect position = QRect(m_xdgShellPopup->transientOffset(), m_xdgShellPopup->initialSize());
-        m_xdgShellPopup->configure(position);
 
         connect(m_xdgShellPopup, &XdgShellPopupInterface::destroyed, this, &ShellClient::destroyClient);
     }
@@ -361,10 +357,6 @@ void ShellClient::init()
         }
     });
     setTransient();
-    // check whether we have a ServerSideDecoration
-    if (ServerSideDecorationInterface *deco = ServerSideDecorationInterface::get(s)) {
-        installServerSideDecoration(deco);
-    }
 
     AbstractClient::updateColorScheme(QString());
 
@@ -376,9 +368,27 @@ void ShellClient::init()
     }
 }
 
+void ShellClient::finishInit() {
+    SurfaceInterface *s = surface();
+    disconnect(s, &SurfaceInterface::committed, this, &ShellClient::finishInit);
+
+    if (!isInitialPositionSet()) {
+        QRect area = workspace()->clientArea(PlacementArea, Screens::self()->current(), desktop());
+        placeIn(area);
+    }
+
+    m_requestGeometryBlockCounter--;
+    if (m_requestGeometryBlockCounter == 0) {
+        requestGeometry(m_blockedRequestGeometry);
+    }
+}
+
 void ShellClient::destroyClient()
 {
     m_closing = true;
+    if (isMoveResize()) {
+        leaveMoveResize();
+    }
     Deleted *del = nullptr;
     if (workspace()) {
         del = Deleted::create(this);
@@ -438,6 +448,20 @@ void ShellClient::debug(QDebug &stream) const
     stream.nospace();
     stream << "\'ShellClient:" << surface() << ";WMCLASS:" << resourceClass() << ":"
            << resourceName() << ";Caption:" << caption() << "\'";
+}
+
+bool ShellClient::belongsToDesktop() const
+{
+    const auto clients = waylandServer()->clients();
+
+    return std::any_of(clients.constBegin(), clients.constEnd(),
+        [this](const ShellClient *client) {
+            if (belongsToSameApplication(client, SameApplicationChecks())) {
+                return client->isDesktop();
+            }
+            return false;
+        }
+    );
 }
 
 Layer ShellClient::layerForDock() const
@@ -507,20 +531,6 @@ void ShellClient::addDamage(const QRegion &damage)
     setDepth((s->buffer()->hasAlphaChannel() && !isDesktop()) ? 32 : 24);
     repaints_region += damage.translated(clientPos());
     Toplevel::addDamage(damage);
-}
-
-void ShellClient::setInternalFramebufferObject(const QSharedPointer<QOpenGLFramebufferObject> &fbo)
-{
-    if (fbo.isNull()) {
-        unmap();
-        return;
-    }
-
-    m_clientSize = fbo->size() / surface()->scale();
-    markAsMapped();
-    doSetGeometry(QRect(geom.topLeft(), m_clientSize));
-    Toplevel::setInternalFramebufferObject(fbo);
-    Toplevel::addDamage(QRegion(0, 0, width(), height()));
 }
 
 void ShellClient::markAsMapped()
@@ -615,8 +625,10 @@ void ShellClient::setGeometry(int x, int y, int w, int h, ForceGeometry_t force)
     }
     // TODO: better merge with Client's implementation
     const QSize requestedClientSize = QSize(w, h) - QSize(borderLeft() + borderRight(), borderTop() + borderBottom());
-    if (requestedClientSize == m_clientSize && !isWaitingForMoveResizeSync()) {
-        // size didn't change, update directly
+
+    if (requestedClientSize == m_clientSize && !isWaitingForMoveResizeSync() &&
+        (m_requestedClientSize.isEmpty() || requestedClientSize == m_requestedClientSize)) {
+        // size didn't change, and we don't need to explicitly request a new size
         doSetGeometry(QRect(x, y, w, h));
         updateMaximizeMode(m_requestedMaximizeMode);
     } else {
@@ -643,7 +655,6 @@ void ShellClient::doSetGeometry(const QRect &rect)
     if (!m_unmapped) {
         addWorkspaceRepaint(visibleRect());
     }
-    syncGeometryToInternalWindow();
     if (hasStrut()) {
         workspace()->updateClientArea();
     }
@@ -653,26 +664,6 @@ void ShellClient::doSetGeometry(const QRect &rect)
 
     if (isResize()) {
         performMoveResize();
-    }
-}
-
-void ShellClient::doMove(int x, int y)
-{
-    Q_UNUSED(x)
-    Q_UNUSED(y)
-    syncGeometryToInternalWindow();
-}
-
-void ShellClient::syncGeometryToInternalWindow()
-{
-    if (!m_internalWindow) {
-        return;
-    }
-    const QRect windowRect = QRect(geom.topLeft() + QPoint(borderLeft(), borderTop()),
-                                    geom.size() - QSize(borderLeft() + borderRight(), borderTop() + borderBottom()));
-    if (m_internalWindow->geometry() != windowRect) {
-        // delay to end of cycle to prevent freeze, see BUG 384441
-        QTimer::singleShot(0, m_internalWindow, std::bind(static_cast<void (QWindow::*)(const QRect&)>(&QWindow::setGeometry), m_internalWindow, windowRect));
     }
 }
 
@@ -722,10 +713,6 @@ void ShellClient::closeWindow()
         m_xdgShellSurface->close();
         const qint32 pingSerial = static_cast<XdgShellInterface *>(m_xdgShellSurface->global())->ping(m_xdgShellSurface);
         m_pingSerials.insert(pingSerial, PingReason::CloseWindow);
-    } else if (m_qtExtendedSurface && isCloseable()) {
-        m_qtExtendedSurface->close();
-    } else if (m_internalWindow) {
-        m_internalWindow->hide();
     }
 }
 
@@ -743,10 +730,7 @@ bool ShellClient::isCloseable() const
     if (m_xdgShellSurface) {
         return true;
     }
-    if (m_internal) {
-        return true;
-    }
-    return m_qtExtendedSurface ? true : false;
+    return false;
 }
 
 bool ShellClient::isFullScreen() const
@@ -756,17 +740,11 @@ bool ShellClient::isFullScreen() const
 
 bool ShellClient::isMaximizable() const
 {
-    if (m_internal) {
-        return false;
-    }
     return true;
 }
 
 bool ShellClient::isMinimizable() const
 {
-    if (m_internal) {
-        return false;
-    }
     return (!m_plasmaShellSurface || m_plasmaShellSurface->role() == PlasmaShellSurfaceInterface::Role::Normal);
 }
 
@@ -934,9 +912,6 @@ MaximizeMode ShellClient::requestedMaximizeMode() const
 
 bool ShellClient::noBorder() const
 {
-    if (isInternal()) {
-        return m_internalWindowFlags.testFlag(Qt::FramelessWindowHint) || m_internalWindowFlags.testFlag(Qt::Popup);
-    }
     if (m_serverDecoration) {
         if (m_serverDecoration->mode() == ServerSideDecorationManagerInterface::Mode::Server) {
             return m_userNoBorder || isFullScreen();
@@ -983,14 +958,15 @@ void ShellClient::setFullScreen(bool set, bool user)
     if (isFullScreen()) {
         setGeometry(workspace()->clientArea(FullScreenArea, this));
     } else {
-        if (!m_geomFsRestore.isNull()) {
+        if (m_geomFsRestore.isValid()) {
             int currentScreen = screen();
             setGeometry(QRect(m_geomFsRestore.topLeft(), adjustedSize(m_geomFsRestore.size())));
             if( currentScreen != screen())
                 workspace()->sendClientToScreen( this, currentScreen );
         } else {
-            // does this ever happen?
-            setGeometry(workspace()->clientArea(MaximizeArea, this));
+            // this can happen when the window was first shown already fullscreen,
+            // so let the client set the size by itself
+            setGeometry(QRect(workspace()->clientArea(PlacementArea, this).topLeft(), QSize(0, 0)));
         }
     }
     updateWindowRules(Rules::Fullscreen|Rules::Position|Rules::Size);
@@ -1029,22 +1005,9 @@ void ShellClient::takeFocus()
         setActive(true);
     }
 
-    bool breakShowingDesktop = !keepAbove() && !isOnScreenDisplay();
-    if (breakShowingDesktop) {
-        // check that it doesn't belong to the desktop
-        const auto &clients = waylandServer()->clients();
-        for (auto c: clients) {
-            if (!belongsToSameApplication(c, SameApplicationChecks())) {
-                continue;
-            }
-            if (c->isDesktop()) {
-                breakShowingDesktop = false;
-                break;
-            }
-        }
-    }
-    if (breakShowingDesktop)
+    if (!keepAbove() && !isOnScreenDisplay() && !belongsToDesktop()) {
         workspace()->setShowingDesktop(false);
+    }
 }
 
 void ShellClient::doSetActive()
@@ -1072,9 +1035,6 @@ bool ShellClient::userCanSetNoBorder() const
     if (m_xdgDecoration && m_xdgDecoration->requestedMode() != XdgDecorationInterface::Mode::ClientSide) {
         return !isFullScreen() && !isShade() && !tabGroup();
     }
-    if (m_internal) {
-        return !m_internalWindowFlags.testFlag(Qt::FramelessWindowHint) || m_internalWindowFlags.testFlag(Qt::Popup);
-    }
     return false;
 }
 
@@ -1085,16 +1045,14 @@ bool ShellClient::wantsInput() const
 
 bool ShellClient::acceptsFocus() const
 {
-    if (isInternal()) {
-        return false;
-    }
     if (waylandServer()->inputMethodConnection() == surface()->client()) {
         return false;
     }
     if (m_plasmaShellSurface) {
         if (m_plasmaShellSurface->role() == PlasmaShellSurfaceInterface::Role::OnScreenDisplay ||
             m_plasmaShellSurface->role() == PlasmaShellSurfaceInterface::Role::ToolTip ||
-            m_plasmaShellSurface->role() == PlasmaShellSurfaceInterface::Role::Notification) {
+            m_plasmaShellSurface->role() == PlasmaShellSurfaceInterface::Role::Notification ||
+            m_plasmaShellSurface->role() == PlasmaShellSurfaceInterface::Role::CriticalNotification) {
             return false;
         }
     }
@@ -1121,56 +1079,9 @@ bool ShellClient::acceptsFocus() const
 
 void ShellClient::createWindowId()
 {
-    if (m_internalWindow) {
-        m_windowId = m_internalWindow->winId();
-    } else {
+    if (!m_internal) {
         m_windowId = waylandServer()->createWindowId(surface());
     }
-}
-
-void ShellClient::findInternalWindow()
-{
-    if (surface()->client() != waylandServer()->internalConnection()) {
-        return;
-    }
-    const QWindowList windows = kwinApp()->topLevelWindows();
-    for (QWindow *w: windows) {
-        auto s = KWayland::Client::Surface::fromWindow(w);
-        if (!s) {
-            continue;
-        }
-        if (s->id() != surface()->id()) {
-            continue;
-        }
-        m_internalWindow = w;
-        m_internalWindowFlags = m_internalWindow->flags();
-        connect(m_internalWindow, &QWindow::xChanged, this, &ShellClient::updateInternalWindowGeometry);
-        connect(m_internalWindow, &QWindow::yChanged, this, &ShellClient::updateInternalWindowGeometry);
-        connect(m_internalWindow, &QWindow::destroyed, this, [this] { m_internalWindow = nullptr; });
-        connect(m_internalWindow, &QWindow::opacityChanged, this, &ShellClient::setOpacity);
-
-        // Try reading the window type from the QWindow. PlasmaCore.Dialog provides a dynamic type property
-        // let's check whether it exists, if it does it's our window type
-        const QVariant windowType = m_internalWindow->property("type");
-        if (!windowType.isNull()) {
-            m_windowType = static_cast<NET::WindowType>(windowType.toInt());
-        }
-        setOpacity(m_internalWindow->opacity());
-
-        // skip close animation support
-        setSkipCloseAnimation(m_internalWindow->property(s_skipClosePropertyName).toBool());
-        m_internalWindow->installEventFilter(this);
-        return;
-    }
-}
-
-void ShellClient::updateInternalWindowGeometry()
-{
-    if (!m_internalWindow) {
-        return;
-    }
-    doSetGeometry(QRect(m_internalWindow->geometry().topLeft() - QPoint(borderLeft(), borderTop()),
-                        m_internalWindow->geometry().size() + QSize(borderLeft() + borderRight(), borderTop() + borderBottom())));
 }
 
 pid_t ShellClient::pid() const
@@ -1180,59 +1091,61 @@ pid_t ShellClient::pid() const
 
 bool ShellClient::isInternal() const
 {
-    return m_internal;
+    return false;
 }
 
 bool ShellClient::isLockScreen() const
 {
-    if (m_internalWindow) {
-        return m_internalWindow->property("org_kde_ksld_emergency").toBool();
-    }
     return surface()->client() == waylandServer()->screenLockerClientConnection();
 }
 
 bool ShellClient::isInputMethod() const
 {
-    if (m_internal && m_internalWindow) {
-        return m_internalWindow->property("__kwin_input_method").toBool();
-    }
     return surface()->client() == waylandServer()->inputMethodConnection();
 }
 
-void ShellClient::requestGeometry(const QRect &rect)
+bool ShellClient::requestGeometry(const QRect &rect)
 {
     if (m_requestGeometryBlockCounter != 0) {
         m_blockedRequestGeometry = rect;
-        return;
+        return false;
     }
-    PendingConfigureRequest configureRequest;
-    configureRequest.positionAfterResize = rect.topLeft();
-    configureRequest.maximizeMode = m_requestedMaximizeMode;
 
-    const QSize size = rect.size() - QSize(borderLeft() + borderRight(), borderTop() + borderBottom());
+    QSize size;
+    if (rect.isValid()) {
+        size = rect.size() - QSize(borderLeft() + borderRight(), borderTop() + borderBottom());
+    } else {
+        size = QSize(0, 0);
+    }
     m_requestedClientSize = size;
 
-    if (m_shellSurface) {
+    quint64 serialId = 0;
+
+    if (m_shellSurface && !size.isEmpty()) {
         m_shellSurface->requestSize(size);
     }
     if (m_xdgShellSurface) {
-        configureRequest.serialId = m_xdgShellSurface->configure(xdgSurfaceStates(), size);
+        serialId = m_xdgShellSurface->configure(xdgSurfaceStates(), size);
     }
     if (m_xdgShellPopup) {
         auto parent = transientFor();
         if (parent) {
             const QPoint globalClientContentPos = parent->geometry().topLeft() + parent->clientPos();
-            const QPoint relativeOffset = rect.topLeft() -globalClientContentPos;
-            configureRequest.serialId = m_xdgShellPopup->configure(QRect(relativeOffset, rect.size()));
+            const QPoint relativeOffset = rect.topLeft() - globalClientContentPos;
+            serialId = m_xdgShellPopup->configure(QRect(relativeOffset, rect.size()));
         }
     }
 
-    m_pendingConfigureRequests.append(configureRequest);
+    if (rect.isValid()) { //if there's no requested size, then there's implicity no positional information worth using
+        PendingConfigureRequest configureRequest;
+        configureRequest.serialId = serialId;
+        configureRequest.positionAfterResize = rect.topLeft();
+        configureRequest.maximizeMode = m_requestedMaximizeMode;
+        m_pendingConfigureRequests.append(configureRequest);
+    }
 
     m_blockedRequestGeometry = QRect();
-    if (m_internal) {
-        m_internalWindow->setGeometry(QRect(rect.topLeft() + QPoint(borderLeft(), borderTop()), rect.size() - QSize(borderLeft() + borderRight(), borderTop() + borderBottom())));
-    }
+    return true;
 }
 
 void ShellClient::updatePendingGeometry()
@@ -1282,14 +1195,14 @@ void ShellClient::resizeWithChecks(int w, int h, ForceGeometry_t force)
     if (m_xdgShellSurface) {
         m_xdgShellSurface->configure(xdgSurfaceStates(), QSize(w, h));
     }
-    if (m_internal) {
-        m_internalWindow->setGeometry(QRect(pos() + QPoint(borderLeft(), borderTop()), QSize(w, h) - QSize(borderLeft() + borderRight(), borderTop() + borderBottom())));
-    }
 }
 
 void ShellClient::unmap()
 {
     m_unmapped = true;
+    if (isMoveResize()) {
+        leaveMoveResize();
+    }
     m_requestedClientSize = QSize(0, 0);
     destroyWindowManagementInterface();
     if (Workspace::self()) {
@@ -1304,11 +1217,7 @@ void ShellClient::installPlasmaShellSurface(PlasmaShellSurfaceInterface *surface
     m_plasmaShellSurface = surface;
     auto updatePosition = [this, surface] {
         QRect rect = QRect(surface->position(), m_clientSize + QSize(borderLeft() + borderRight(), borderTop() + borderBottom()));
-        // Shell surfaces of internal windows are sometimes desync to current value.
-        // Make sure to not set window geometry of internal windows to invalid values (bug 386304)
-        if (!m_internal || rect.isValid()) {
-            doSetGeometry(rect);
-        }
+        doSetGeometry(rect);
     };
     auto updateRole = [this, surface] {
         NET::WindowType type = NET::Unknown;
@@ -1328,6 +1237,9 @@ void ShellClient::installPlasmaShellSurface(PlasmaShellSurfaceInterface *surface
         case PlasmaShellSurfaceInterface::Role::ToolTip:
             type = NET::Tooltip;
             break;
+        case PlasmaShellSurfaceInterface::Role::CriticalNotification:
+            type = NET::CriticalNotification;
+            break;
         case PlasmaShellSurfaceInterface::Role::Normal:
         default:
             type = NET::Normal;
@@ -1335,7 +1247,7 @@ void ShellClient::installPlasmaShellSurface(PlasmaShellSurfaceInterface *surface
         }
         if (type != m_windowType) {
             m_windowType = type;
-            if (m_windowType == NET::Desktop || type == NET::Dock || type == NET::OnScreenDisplay || type == NET::Notification || type == NET::Tooltip) {
+            if (m_windowType == NET::Desktop || type == NET::Dock || type == NET::OnScreenDisplay || type == NET::Notification || type == NET::Tooltip || type == NET::CriticalNotification) {
                 setOnAllDesktops(true);
             }
             workspace()->updateClientArea();
@@ -1460,19 +1372,6 @@ bool ShellClient::isInitialPositionSet() const
     return false;
 }
 
-void ShellClient::installQtExtendedSurface(QtExtendedSurfaceInterface *surface)
-{
-    m_qtExtendedSurface = surface;
-
-    connect(m_qtExtendedSurface.data(), &QtExtendedSurfaceInterface::raiseRequested, this, [this]() {
-        workspace()->raiseClientRequest(this);
-    });
-    connect(m_qtExtendedSurface.data(), &QtExtendedSurfaceInterface::lowerRequested, this, [this]() {
-        workspace()->lowerClientRequest(this);
-    });
-    m_qtExtendedSurface->installEventFilter(this);
-}
-
 void ShellClient::installAppMenu(AppMenuInterface *menu)
 {
     m_appMenuInterface = menu;
@@ -1501,18 +1400,6 @@ void ShellClient::installPalette(ServerSideDecorationPaletteInterface *palette)
         updatePalette(QString());
     });
     updatePalette(palette->palette());
-}
-
-
-bool ShellClient::eventFilter(QObject *watched, QEvent *event)
-{
-    if (watched == m_internalWindow && event->type() == QEvent::DynamicPropertyChange) {
-        QDynamicPropertyChangeEvent *pe = static_cast<QDynamicPropertyChangeEvent*>(event);
-        if (pe->propertyName() == s_skipClosePropertyName) {
-            setSkipCloseAnimation(m_internalWindow->property(s_skipClosePropertyName).toBool());
-        }
-    }
-    return false;
 }
 
 void ShellClient::updateColorScheme()
@@ -1609,6 +1496,7 @@ QRect ShellClient::transientPlacement(const QRect &bounds) const
     Qt::Edges gravity;
     QPoint offset;
     PositionerConstraints constraintAdjustments;
+    QSize size = geometry().size();
 
     const QPoint parentClientPos = transientFor()->pos() + transientFor()->clientPos();
     QRect popupPosition;
@@ -1642,12 +1530,16 @@ QRect ShellClient::transientPlacement(const QRect &bounds) const
         gravity = m_xdgShellPopup->gravity();
         offset = m_xdgShellPopup->anchorOffset();
         constraintAdjustments = m_xdgShellPopup->constraintAdjustments();
+        if (!size.isValid()) {
+            size = m_xdgShellPopup->initialSize();
+        }
     } else {
         Q_UNREACHABLE();
     }
 
+
     //initial position
-    popupPosition = QRect(popupOffset(anchorRect, anchorEdge, gravity) + offset + parentClientPos, geometry().size());
+    popupPosition = QRect(popupOffset(anchorRect, anchorEdge, gravity, size) + offset + parentClientPos, size);
 
     //if that fits, we don't need to do anything
     if (inBounds(popupPosition)) {
@@ -1666,20 +1558,21 @@ QRect ShellClient::transientPlacement(const QRect &bounds) const
             if (flippedGravity & (Qt::LeftEdge | Qt::RightEdge)) {
                 flippedGravity ^= (Qt::LeftEdge | Qt::RightEdge);
             }
-            auto flippedPopupPosition = QRect(popupOffset(anchorRect, flippedAnchorEdge, flippedGravity) + offset + parentClientPos, geometry().size());
+            auto flippedPopupPosition = QRect(popupOffset(anchorRect, flippedAnchorEdge, flippedGravity, size) + offset + parentClientPos, size);
 
             //if it still doesn't fit we should continue with the unflipped version
             if (inBounds(flippedPopupPosition, Qt::LeftEdge | Qt::RightEdge)) {
-                popupPosition.setX(flippedPopupPosition.x());
+                popupPosition.moveLeft(flippedPopupPosition.x());
             }
         }
     }
     if (constraintAdjustments & PositionerConstraint::SlideX) {
         if (!inBounds(popupPosition, Qt::LeftEdge)) {
-            popupPosition.setX(bounds.x());
+            popupPosition.moveLeft(bounds.x());
         }
         if (!inBounds(popupPosition, Qt::RightEdge)) {
-            popupPosition.setX(bounds.x() + bounds.width() - geometry().width());
+            // moveRight suffers from the classic QRect off by one issue
+            popupPosition.moveLeft(bounds.x() + bounds.width() - size.width());
         }
     }
     if (constraintAdjustments & PositionerConstraint::ResizeX) {
@@ -1698,20 +1591,20 @@ QRect ShellClient::transientPlacement(const QRect &bounds) const
             if (flippedGravity & (Qt::TopEdge | Qt::BottomEdge)) {
                 flippedGravity ^= (Qt::TopEdge | Qt::BottomEdge);
             }
-            auto flippedPopupPosition = QRect(popupOffset(anchorRect, flippedAnchorEdge, flippedGravity) + offset + parentClientPos, geometry().size());
+            auto flippedPopupPosition = QRect(popupOffset(anchorRect, flippedAnchorEdge, flippedGravity, size) + offset + parentClientPos, size);
 
             //if it still doesn't fit we should continue with the unflipped version
             if (inBounds(flippedPopupPosition, Qt::TopEdge | Qt::BottomEdge)) {
-                popupPosition.setY(flippedPopupPosition.y());
+                popupPosition.moveTop(flippedPopupPosition.y());
             }
         }
     }
     if (constraintAdjustments & PositionerConstraint::SlideY) {
         if (!inBounds(popupPosition, Qt::TopEdge)) {
-            popupPosition.setY(bounds.y());
+            popupPosition.moveTop(bounds.y());
         }
         if (!inBounds(popupPosition, Qt::BottomEdge)) {
-            popupPosition.setY(bounds.y() + bounds.height() - geometry().height());
+            popupPosition.moveTop(bounds.y() + bounds.height() - size.height());
         }
     }
     if (constraintAdjustments & PositionerConstraint::ResizeY) {
@@ -1721,9 +1614,8 @@ QRect ShellClient::transientPlacement(const QRect &bounds) const
     return popupPosition;
 }
 
-QPoint ShellClient::popupOffset(const QRect &anchorRect, const Qt::Edges anchorEdge, const Qt::Edges gravity) const
+QPoint ShellClient::popupOffset(const QRect &anchorRect, const Qt::Edges anchorEdge, const Qt::Edges gravity, const QSize popupSize) const
 {
-    const QSize popupSize = geometry().size();
     QPoint anchorPoint;
     switch (anchorEdge & (Qt::LeftEdge | Qt::RightEdge)) {
     case Qt::LeftEdge:
@@ -1776,7 +1668,10 @@ QPoint ShellClient::popupOffset(const QRect &anchorRect, const Qt::Edges anchorE
 
 bool ShellClient::isWaitingForMoveResizeSync() const
 {
-    return !m_pendingConfigureRequests.isEmpty();
+    if (m_shellSurface) {
+        return !m_pendingConfigureRequests.isEmpty();
+    }
+    return false;
 }
 
 void ShellClient::doResizeSync()
@@ -1847,7 +1742,7 @@ void ShellClient::installXdgDecoration(XdgDecorationInterface *deco)
 
 bool ShellClient::shouldExposeToWindowManagement()
 {
-    if (isInternal()) {
+    if (m_internal) {
         return false;
     }
     if (isLockScreen()) {
@@ -1937,9 +1832,6 @@ bool ShellClient::dockWantsInput() const
 
 void ShellClient::killWindow()
 {
-    if (isInternal()) {
-        return;
-    }
     if (!surface()) {
         return;
     }
@@ -1986,9 +1878,6 @@ bool ShellClient::isPopupWindow() const
     if (Toplevel::isPopupWindow()) {
         return true;
     }
-    if (isInternal()) {
-        return m_internalWindowFlags.testFlag(Qt::Popup);
-    }
     if (m_shellSurface != nullptr) {
         return m_shellSurface->isPopup();
     }
@@ -1996,6 +1885,11 @@ bool ShellClient::isPopupWindow() const
         return true;
     }
     return false;
+}
+
+QWindow *ShellClient::internalWindow() const
+{
+    return nullptr;
 }
 
 }

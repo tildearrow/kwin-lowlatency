@@ -32,6 +32,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "focuschain.h"
 #include "group.h"
 #include "shadow.h"
+#ifdef KWIN_BUILD_TABBOX
+#include "tabbox.h"
+#endif
 #include "workspace.h"
 #include "screenedge.h"
 #include "decorations/decorationbridge.h"
@@ -86,12 +89,12 @@ const long ClientWinMask = XCB_EVENT_MASK_KEY_PRESS | XCB_EVENT_MASK_KEY_RELEASE
 /**
  * \class Client client.h
  * \brief The Client class encapsulates a window decoration frame.
- */
+ **/
 
 /**
  * This ctor is "dumb" - it only initializes data. All the real initialization
  * is done in manage().
- */
+ **/
 Client::Client()
     : AbstractClient()
     , m_client()
@@ -184,7 +187,7 @@ Client::Client()
 
 /**
  * "Dumb" destructor.
- */
+ **/
 Client::~Client()
 {
     if (m_killHelperPID && !::kill(m_killHelperPID, 0)) { // means the process is alive
@@ -212,11 +215,17 @@ void Client::deleteClient(Client* c)
 
 /**
  * Releases the window. The client has done its job and the window is still existing.
- */
+ **/
 void Client::releaseWindow(bool on_shutdown)
 {
     assert(!deleting);
     deleting = true;
+#ifdef KWIN_BUILD_TABBOX
+    TabBox::TabBox *tabBox = TabBox::TabBox::self();
+    if (tabBox->isDisplayed() && tabBox->currentClient() == this) {
+        tabBox->nextPrev(true);
+    }
+#endif
     destroyWindowManagementInterface();
     Deleted* del = NULL;
     if (!on_shutdown) {
@@ -235,7 +244,7 @@ void Client::releaseWindow(bool on_shutdown)
     if (isOnCurrentDesktop() && isShown(true))
         addWorkspaceRepaint(visibleRect());
     // Grab X during the release to make removing of properties, setting to withdrawn state
-    // and repareting to root an atomic operation (http://lists.kde.org/?l=kde-devel&m=116448102901184&w=2)
+    // and repareting to root an atomic operation (https://lists.kde.org/?l=kde-devel&m=116448102901184&w=2)
     grabXServer();
     exportMappingState(WithdrawnState);
     setModal(false);   // Otherwise its mainwindow wouldn't get focus
@@ -282,11 +291,17 @@ void Client::releaseWindow(bool on_shutdown)
 /**
  * Like releaseWindow(), but this one is called when the window has been already destroyed
  * (E.g. The application closed it)
- */
+ **/
 void Client::destroyClient()
 {
     assert(!deleting);
     deleting = true;
+#ifdef KWIN_BUILD_TABBOX
+    TabBox::TabBox *tabBox = TabBox::TabBox::self();
+    if (tabBox->isDisplayed() && tabBox->currentClient() == this) {
+        tabBox->nextPrev(true);
+    }
+#endif
     destroyWindowManagementInterface();
     Deleted* del = Deleted::create(this);
     if (isMoveResize())
@@ -511,6 +526,7 @@ void Client::detectNoBorder()
     case NET::Splash :
     case NET::Notification :
     case NET::OnScreenDisplay :
+    case NET::CriticalNotification :
         noborder = true;
         app_noborder = true;
         break;
@@ -567,7 +583,7 @@ void Client::detectGtkFrameExtents()
  * re-layouts (e.g. when maximization state changes,
  * the decoration may alter some borders, but the actual size
  * of the decoration stays the same).
- */
+ **/
 void Client::resizeDecoration()
 {
     triggerDecorationRepaint();
@@ -690,7 +706,7 @@ void Client::hideClient(bool hide)
 
 /**
  * Returns whether the window is minimizable or not
- */
+ **/
 bool Client::isMinimizable() const
 {
     if (isSpecialWindow() && !isTransient())
@@ -930,7 +946,7 @@ void Client::updateVisibility()
 /**
  * Sets the client window's mapping state. Possible values are
  * WithdrawnState, IconicState, NormalState.
- */
+ **/
 void Client::exportMappingState(int s)
 {
     assert(m_client != XCB_WINDOW_NONE);
@@ -1007,7 +1023,7 @@ void Client::internalKeep()
  * Maps (shows) the client. Note that it is mapping state of the frame,
  * not necessarily the client window itself (i.e. a shaded window is here
  * considered mapped, even though it is in IconicState).
- */
+ **/
 void Client::map()
 {
     // XComposite invalidates backing pixmaps on unmap (minimize, different
@@ -1028,7 +1044,7 @@ void Client::map()
 
 /**
  * Unmaps the client. Again, this is about the frame.
- */
+ **/
 void Client::unmap()
 {
     // Here it may look like a race condition, as some other client might try to unmap
@@ -1056,7 +1072,7 @@ void Client::unmap()
  * then it's hoped that there will be some other desktop above it *shrug*.
  * Using normal shape would be better, but that'd affect other things, e.g. painting
  * of the actual preview.
- */
+ **/
 void Client::updateHiddenPreview()
 {
     if (hiddenPreview()) {
@@ -1094,7 +1110,7 @@ void Client::sendClientMessage(xcb_window_t w, xcb_atom_t a, xcb_atom_t protocol
 
 /**
  * Returns whether the window may be closed (have a close button)
- */
+ **/
 bool Client::isCloseable() const
 {
     return rules()->checkCloseable(m_motif.close() && !isSpecialWindow());
@@ -1102,7 +1118,7 @@ bool Client::isCloseable() const
 
 /**
  * Closes the window by either sending a delete_window message or using XKill.
- */
+ **/
 void Client::closeWindow()
 {
     if (!isCloseable())
@@ -1122,7 +1138,7 @@ void Client::closeWindow()
 
 /**
  * Kills the window via XKill
- */
+ **/
 void Client::killWindow()
 {
     qCDebug(KWIN_CORE) << "Client::killWindow():" << caption();
@@ -1134,7 +1150,7 @@ void Client::killWindow()
 /**
  * Send a ping to the window using _NET_WM_PING if possible if it
  * doesn't respond within a reasonable time, it will be killed.
- */
+ **/
 void Client::pingWindow()
 {
     if (!info->supportsProtocol(NET::PingProtocol))
@@ -1246,7 +1262,7 @@ void Client::doSetDesktop(int desktop, int was_desk)
  *
  * Note: If it was on all activities and you try to remove it from one, nothing will happen;
  * I don't think that's an important enough use case to handle here.
- */
+ **/
 void Client::setOnActivity(const QString &activity, bool enable)
 {
 #ifdef KWIN_BUILD_ACTIVITIES
@@ -1272,7 +1288,7 @@ void Client::setOnActivity(const QString &activity, bool enable)
 
 /**
  * set exactly which activities this client is on
- */
+ **/
 void Client::setOnActivities(QStringList newActivitiesList)
 {
 #ifdef KWIN_BUILD_ACTIVITIES
@@ -1329,7 +1345,7 @@ void Client::blockActivityUpdates(bool b)
 
 /**
  * update after activities changed
- */
+ **/
 void Client::updateActivities(bool includeTransients)
 {
     if (m_activityUpdatesBlocked) {
@@ -1351,7 +1367,7 @@ void Client::updateActivities(bool includeTransients)
  * Returns the list of activities the client window is on.
  * if it's on all activities, the list will be empty.
  * Don't use this, use isOnActivity() and friends (from class Toplevel)
- */
+ **/
 QStringList Client::activities() const
 {
     if (sessionActivityOverride) {
@@ -1363,7 +1379,7 @@ QStringList Client::activities() const
 /**
  * if @p on is true, sets on all activities.
  * if it's false, sets it to only be on the current activity
- */
+ **/
 void Client::setOnAllActivities(bool on)
 {
 #ifdef KWIN_BUILD_ACTIVITIES
@@ -1382,7 +1398,7 @@ void Client::setOnAllActivities(bool on)
 
 /**
  * Performs the actual focusing of the window using XSetInputFocus and WM_TAKE_FOCUS
- */
+ **/
 void Client::takeFocus()
 {
     if (rules()->checkAcceptFocus(info->input()))
@@ -1413,7 +1429,7 @@ void Client::takeFocus()
  * contextHelp() if this is invoked.
  *
  * \sa contextHelp()
- */
+ **/
 bool Client::providesContextHelp() const
 {
     return info->supportsProtocol(NET::ContextHelpProtocol);
@@ -1424,7 +1440,7 @@ bool Client::providesContextHelp() const
  * actually provides context help.
  *
  * \sa providesContextHelp()
- */
+ **/
 void Client::showContextHelp()
 {
     if (info->supportsProtocol(NET::ContextHelpProtocol)) {
@@ -1435,7 +1451,7 @@ void Client::showContextHelp()
 /**
  * Fetches the window's caption (WM_NAME property). It will be
  * stored in the client's caption().
- */
+ **/
 void Client::fetchName()
 {
     setCaption(readName());
@@ -1467,7 +1483,7 @@ QString Client::readName() const
     }
 }
 
-// The list is taken from http://www.unicode.org/reports/tr9/ (#154840)
+// The list is taken from https://www.unicode.org/reports/tr9/ (#154840)
 static const QChar LRM(0x200E);
 
 void Client::setCaption(const QString& _s, bool force)
@@ -1692,7 +1708,7 @@ void Client::getSyncCounter()
 
 /**
  * Send the client a _NET_SYNC_REQUEST
- */
+ **/
 void Client::sendSyncRequest()
 {
     if (syncRequest.counter == XCB_NONE || syncRequest.isPending)

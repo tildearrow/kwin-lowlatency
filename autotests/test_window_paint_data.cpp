@@ -59,6 +59,9 @@ public:
     void closeWindow() override;
     void referencePreviousWindowPixmap() override {}
     void unreferencePreviousWindowPixmap() override {}
+    QWindow *internalWindow() const override {
+        return nullptr;
+    }
     bool isDeleted() const override {
         return false;
     }
@@ -173,6 +176,9 @@ public:
     bool isNotification() const override {
         return false;
     }
+    bool isCriticalNotification() const override {
+        return false;
+    }
     bool isOnScreenDisplay() const override  {
         return false;
     }
@@ -243,6 +249,9 @@ public:
         return true;
     }
     bool isX11Client() const override {
+        return false;
+    }
+    bool isOutline() const override {
         return false;
     }
 

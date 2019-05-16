@@ -34,47 +34,92 @@ OrientationSensor::OrientationSensor(QObject *parent)
     : QObject(parent)
     , m_sensor(new QOrientationSensor(this))
 {
-    connect(m_sensor, &QOrientationSensor::readingChanged, this,
-        [this] {
-            auto toOrientation = [] (auto reading) {
-                switch (reading->orientation()) {
-                case QOrientationReading::Undefined:
-                    return OrientationSensor::Orientation::Undefined;
-                case QOrientationReading::TopUp:
-                    return OrientationSensor::Orientation::TopUp;
-                case QOrientationReading::TopDown:
-                    return OrientationSensor::Orientation::TopDown;
-                case QOrientationReading::LeftUp:
-                    return OrientationSensor::Orientation::LeftUp;
-                case QOrientationReading::RightUp:
-                    return OrientationSensor::Orientation::RightUp;
-                case QOrientationReading::FaceUp:
-                    return OrientationSensor::Orientation::FaceUp;
-                case QOrientationReading::FaceDown:
-                    return OrientationSensor::Orientation::FaceDown;
-                default:
-                    Q_UNREACHABLE();
-                }
-            };
-            const auto orientation = toOrientation(m_sensor->reading());
-            if (m_orientation != orientation) {
-                m_orientation = orientation;
-                emit orientationChanged();
-            }
+    connect(m_sensor, &QOrientationSensor::readingChanged, this, &OrientationSensor::updateState);
+    connect(m_sensor, &QOrientationSensor::activeChanged, this, &OrientationSensor::refresh);
+}
+
+void OrientationSensor::updateState()
+{
+    auto toOrientation = [] (auto reading) {
+        switch (reading->orientation()) {
+        case QOrientationReading::Undefined:
+            return OrientationSensor::Orientation::Undefined;
+        case QOrientationReading::TopUp:
+            return OrientationSensor::Orientation::TopUp;
+        case QOrientationReading::TopDown:
+            return OrientationSensor::Orientation::TopDown;
+        case QOrientationReading::LeftUp:
+            return OrientationSensor::Orientation::LeftUp;
+        case QOrientationReading::RightUp:
+            return OrientationSensor::Orientation::RightUp;
+        case QOrientationReading::FaceUp:
+            return OrientationSensor::Orientation::FaceUp;
+        case QOrientationReading::FaceDown:
+            return OrientationSensor::Orientation::FaceDown;
+        default:
+            Q_UNREACHABLE();
         }
-    );
-    connect(m_sensor, &QOrientationSensor::activeChanged, this,
-        [this] {
-            if (!m_sni) {
-                return;
-            }
-            if (m_sensor->isActive()) {
-                m_sni->setToolTipTitle(i18n("Automatic screen rotation is enabled"));
-            } else {
-                m_sni->setToolTipTitle(i18n("Automatic screen rotation is disabled"));
-            }
+    };
+    const auto orientation = toOrientation(m_sensor->reading());
+    if (m_orientation != orientation) {
+        m_orientation = orientation;
+        emit orientationChanged();
+    }
+}
+
+void OrientationSensor::activate()
+{
+    m_userEnabled = !m_userEnabled;
+    startStopSensor();
+    emit userEnabledChanged(m_userEnabled);
+}
+
+void OrientationSensor::refresh()
+{
+    if (m_orientation == Orientation::Undefined) {
+        delete m_sni;
+        m_sni = nullptr;
+        return;
+    }
+
+    if (!m_sni) {
+        m_sni = new KStatusNotifierItem(QStringLiteral("kwin-automatic-rotation"), this);
+        m_sni->setStandardActionsEnabled(false);
+        m_sni->setCategory(KStatusNotifierItem::Hardware);
+        m_sni->setStatus(KStatusNotifierItem::Passive);
+        // TODO: proper icon with state
+        m_sni->setIconByName(QStringLiteral("preferences-desktop-display"));
+        // we start disabled, it gets updated when the sensor becomes active
+
+        connect(m_sni, &KStatusNotifierItem::activateRequested, this, &OrientationSensor::activate);
+    }
+
+    if (m_sensor->isActive()) {
+        m_sni->setTitle(i18n("Allow Rotation"));
+        m_sni->setToolTipTitle(i18n("Automatic screen rotation is enabled"));
+        updateState();
+    } else {
+        QString text;
+        switch(m_orientation) {
+            case Orientation::Undefined:
+                Q_UNREACHABLE(); //we don't want an sni if it's undefined
+                break;
+            case Orientation::FaceUp:
+            case Orientation::FaceDown:
+                text = i18n("Undefined");
+                break;
+            case Orientation::TopUp:
+            case Orientation::TopDown:
+                text = i18nc("Portrait oriented display", "Vertical");
+                break;
+            case Orientation::LeftUp:
+            case Orientation::RightUp:
+                text = i18nc("Landscape oriented display", "Horizontal");
+                break;
         }
-    );
+        m_sni->setTitle(text);
+        m_sni->setToolTipTitle(i18n("Automatic screen rotation is disabled"));
+    }
 }
 
 OrientationSensor::~OrientationSensor() = default;
@@ -87,7 +132,7 @@ void OrientationSensor::setEnabled(bool enabled)
     m_enabled = enabled;
     if (m_enabled) {
         loadConfig();
-        setupStatusNotifier();
+        refresh();
         m_adaptor = new OrientationSensorAdaptor(this);
     } else {
         delete m_sni;
@@ -104,29 +149,6 @@ void OrientationSensor::loadConfig()
         return;
     }
     m_userEnabled = m_config->group("OrientationSensor").readEntry("Enabled", true);
-}
-
-void OrientationSensor::setupStatusNotifier()
-{
-    if (m_sni) {
-        return;
-    }
-    m_sni = new KStatusNotifierItem(QStringLiteral("kwin-automatic-rotation"), this);
-    m_sni->setStandardActionsEnabled(false);
-    m_sni->setCategory(KStatusNotifierItem::Hardware);
-    m_sni->setStatus(KStatusNotifierItem::Passive);
-    m_sni->setTitle(i18n("Automatic Screen Rotation"));
-    // TODO: proper icon with state
-    m_sni->setIconByName(QStringLiteral("preferences-desktop-display"));
-    // we start disabled, it gets updated when the sensor becomes active
-    m_sni->setToolTipTitle(i18n("Automatic screen rotation is disabled"));
-    connect(m_sni, &KStatusNotifierItem::activateRequested, this,
-        [this] {
-            m_userEnabled = !m_userEnabled;
-            startStopSensor();
-            emit userEnabledChanged(m_userEnabled);
-        }
-    );
 }
 
 void OrientationSensor::startStopSensor()

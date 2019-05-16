@@ -83,6 +83,13 @@ public:
         return m_uuid;
     }
 
+    const DrmCrtc *crtc() const {
+        return m_crtc;
+    }
+    const DrmPlane *primaryPlane() const {
+        return m_primaryPlane;
+    }
+
     bool initCursor(const QSize &cursorSize);
 
     bool supportsTransformations() const;
@@ -128,6 +135,7 @@ private:
 
     int getGammaRampSize() const override;
     bool setGammaRamp(const ColorCorrect::GammaRamp &gamma) override;
+    QMatrix4x4 matrixDisplay(const QSize &s) const;
 
     DrmBackend *m_backend;
     DrmConnector *m_conn = nullptr;
@@ -135,7 +143,7 @@ private:
     bool m_lastGbm = false;
     drmModeModeInfo m_mode;
     Edid m_edid;
-    KWin::ScopedDrmPointer<_drmModeProperty, &drmModeFreeProperty> m_dpms;
+    DrmScopedPointer<drmModePropertyRes> m_dpms;
     DpmsMode m_dpmsMode = DpmsMode::On;
     DpmsMode m_dpmsModePending = DpmsMode::On;
     QByteArray m_uuid;
@@ -158,7 +166,6 @@ private:
     DrmDumbBuffer *m_cursor[2] = {nullptr, nullptr};
     int m_cursorIndex = 0;
     bool m_hasNewCursor = false;
-    bool m_internal = false;
     bool m_deleted = false;
 };
 

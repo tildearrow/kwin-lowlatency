@@ -22,6 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "platform.h"
 #include "composite.h"
 #include "idle_inhibition.h"
+#include "internal_client.h"
 #include "screens.h"
 #include "shell_client.h"
 #include "workspace.h"
@@ -30,6 +31,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <KWayland/Client/connection_thread.h>
 #include <KWayland/Client/event_queue.h>
 #include <KWayland/Client/registry.h>
+#include <KWayland/Client/compositor.h>
+#include <KWayland/Client/seat.h>
+#include <KWayland/Client/datadevicemanager.h>
 #include <KWayland/Client/shm_pool.h>
 #include <KWayland/Client/surface.h>
 // Server
@@ -90,7 +94,6 @@ WaylandServer::WaylandServer(QObject *parent)
     qRegisterMetaType<KWayland::Server::OutputInterface::DpmsMode>();
 
     connect(kwinApp(), &Application::screensCreated, this, &WaylandServer::initOutputs);
-    connect(kwinApp(), &Application::x11ConnectionChanged, this, &WaylandServer::setupX11ClipboardSync);
 }
 
 WaylandServer::~WaylandServer()
@@ -112,6 +115,9 @@ void WaylandServer::destroyInternalConnection()
         }
 
         delete m_internalConnection.registry;
+        delete m_internalConnection.compositor;
+        delete m_internalConnection.seat;
+        delete m_internalConnection.ddm;
         delete m_internalConnection.shm;
         dispatch();
         m_internalConnection.client->deleteLater();
@@ -150,7 +156,15 @@ void WaylandServer::createSurface(T *surface)
     if (surface->client() == m_screenLockerClientConnection) {
         ScreenLocker::KSldApp::self()->lockScreenShown();
     }
-    auto client = new ShellClient(surface);
+    ShellClient *client;
+    if (surface->client() == waylandServer()->internalConnection()) {
+        client = new InternalClient(surface);
+    } else {
+        client = new ShellClient(surface);
+    }
+    if (ServerSideDecorationInterface *deco = ServerSideDecorationInterface::get(surface->surface())) {
+        client->installServerSideDecoration(deco);
+    }
     auto it = std::find_if(m_plasmaShellSurfaces.begin(), m_plasmaShellSurfaces.end(),
         [client] (PlasmaShellSurfaceInterface *surface) {
             return client->surface() == surface->surface();
@@ -189,6 +203,8 @@ bool WaylandServer::init(const QByteArray &socketName, InitalizationFlags flags)
     m_display = new KWayland::Server::Display(this);
     if (!socketName.isNull() && !socketName.isEmpty()) {
         m_display->setSocketName(QString::fromUtf8(socketName));
+    } else {
+        m_display->setAutomaticSocketNaming(true);
     }
     m_display->start();
     if (!m_display->isRunning()) {
@@ -249,26 +265,8 @@ bool WaylandServer::init(const QByteArray &socketName, InitalizationFlags flags)
     m_seat->create();
     m_display->createPointerGestures(PointerGesturesInterfaceVersion::UnstableV1, m_display)->create();
     m_display->createPointerConstraints(PointerConstraintsInterfaceVersion::UnstableV1, m_display)->create();
-    auto ddm = m_display->createDataDeviceManager(m_display);
-    ddm->create();
-    connect(ddm, &DataDeviceManagerInterface::dataDeviceCreated, this,
-        [this] (DataDeviceInterface *ddi) {
-            if (ddi->client() == m_xclipbaordSync.client && m_xclipbaordSync.client != nullptr) {
-                m_xclipbaordSync.ddi = QPointer<DataDeviceInterface>(ddi);
-                emit xclipboardSyncDataDeviceCreated();
-                connect(m_xclipbaordSync.ddi.data(), &DataDeviceInterface::selectionChanged, this,
-                    [this] {
-                        // testing whether the active client inherits Client
-                        // it would be better to test for the keyboard focus, but we might get a clipboard update
-                        // when the Client is already active, but no Surface is created yet.
-                        if (workspace()->activeClient() && workspace()->activeClient()->inherits("KWin::Client")) {
-                            m_seat->setSelection(m_xclipbaordSync.ddi.data());
-                        }
-                    }
-                );
-            }
-        }
-    );
+    m_dataDeviceManager = m_display->createDataDeviceManager(m_display);
+    m_dataDeviceManager->create();
     m_idle = m_display->createIdle(m_display);
     m_idle->create();
     auto idleInhibition = new IdleInhibition(m_idle);
@@ -287,17 +285,6 @@ bool WaylandServer::init(const QByteArray &socketName, InitalizationFlags flags)
                         m_plasmaShellSurfaces.removeOne(surface);
                     }
                 );
-            }
-        }
-    );
-
-
-    m_qtExtendedSurface = m_display->createQtSurfaceExtension(m_display);
-    m_qtExtendedSurface->create();
-    connect(m_qtExtendedSurface, &QtSurfaceExtensionInterface::surfaceCreated,
-        [this] (QtExtendedSurfaceInterface *surface) {
-            if (ShellClient *client = findClient(surface->surface())) {
-                client->installQtExtendedSurface(surface);
             }
         }
     );
@@ -533,10 +520,6 @@ void WaylandServer::destroyXWaylandConnection()
     if (!m_xwayland.client) {
         return;
     }
-    // first terminate the clipboard sync
-    if (m_xclipbaordSync.process) {
-        m_xclipbaordSync.process->terminate();
-    }
     disconnect(m_xwayland.destroyConnection);
     m_xwayland.client->destroy();
     m_xwayland.client = nullptr;
@@ -559,62 +542,6 @@ void WaylandServer::destroyInputMethodConnection()
     }
     m_inputMethodServerConnection->destroy();
     m_inputMethodServerConnection = nullptr;
-}
-
-int WaylandServer::createXclipboardSyncConnection()
-{
-    const auto socket = createConnection();
-    if (!socket.connection) {
-        return -1;
-    }
-    m_xclipbaordSync.client = socket.connection;
-    return socket.fd;
-}
-
-void WaylandServer::setupX11ClipboardSync()
-{
-    if (m_xclipbaordSync.process) {
-        qCWarning(KWIN_CORE) << "Tried to start x clipboard syncer although process already started";
-        return;
-    }
-
-    int socket = dup(createXclipboardSyncConnection());
-    if (socket == -1) {
-        delete m_xclipbaordSync.client;
-        m_xclipbaordSync.client = nullptr;
-        qCWarning(KWIN_CORE) << "Could not create wayland socket for x clipboard syncer";
-        return;
-    }
-    if (socket >= 0) {
-        QProcessEnvironment environment = kwinApp()->processStartupEnvironment();
-        environment.insert(QStringLiteral("WAYLAND_SOCKET"), QByteArray::number(socket));
-        environment.insert(QStringLiteral("DISPLAY"), QString::fromUtf8(qgetenv("DISPLAY")));
-        environment.remove("WAYLAND_DISPLAY");
-        m_xclipbaordSync.process = new Process(this);
-        m_xclipbaordSync.process->setProcessChannelMode(QProcess::ForwardedChannels);
-        auto finishedSignal = static_cast<void (QProcess::*)(int, QProcess::ExitStatus)>(&QProcess::finished);
-        connect(m_xclipbaordSync.process, finishedSignal, this,
-            [this] {
-                qCDebug(KWIN_CORE) << "X clipboard syncer process finished";
-                m_xclipbaordSync.process->deleteLater();
-                m_xclipbaordSync.process = nullptr;
-                m_xclipbaordSync.ddi.clear();
-                m_xclipbaordSync.client->destroy();
-                m_xclipbaordSync.client = nullptr;
-                // TODO: restart
-            }
-        );
-        m_xclipbaordSync.process->setProcessEnvironment(environment);
-        // start from build directory if executable is available there (e.g. autotests), otherwise start libexec executable
-        const QFileInfo clipboardSync{QDir{QCoreApplication::applicationDirPath()}, QStringLiteral("org_kde_kwin_xclipboard_syncer")};
-        if (clipboardSync.exists()) {
-            qCDebug(KWIN_CORE) << "Starting" << clipboardSync.absoluteFilePath();
-            m_xclipbaordSync.process->start(clipboardSync.absoluteFilePath());
-        } else {
-            qCDebug(KWIN_CORE) << "Starting" << KWIN_XCLIPBOARD_SYNC_BIN;
-            m_xclipbaordSync.process->start(QStringLiteral(KWIN_XCLIPBOARD_SYNC_BIN));
-        }
-    }
 }
 
 void WaylandServer::createInternalConnection()
@@ -645,8 +572,21 @@ void WaylandServer::createInternalConnection()
                 }
             );
             connect(registry, &Registry::interfacesAnnounced, this,
-                [this] {
+                [this, registry] {
                     m_internalConnection.interfacesAnnounced = true;
+
+                    const auto compInterface = registry->interface(Registry::Interface::Compositor);
+                    if (compInterface.name != 0) {
+                        m_internalConnection.compositor = registry->createCompositor(compInterface.name, compInterface.version, this);
+                    }
+                    const auto seatInterface = registry->interface(Registry::Interface::Seat);
+                    if (seatInterface.name != 0) {
+                        m_internalConnection.seat = registry->createSeat(seatInterface.name, seatInterface.version, this);
+                    }
+                    const auto ddmInterface = registry->interface(Registry::Interface::DataDeviceManager);
+                    if (ddmInterface.name != 0) {
+                        m_internalConnection.ddm = registry->createDataDeviceManager(ddmInterface.name, ddmInterface.version, this);
+                    }
                 }
             );
             registry->setup();

@@ -1,12 +1,13 @@
 [Desktop Entry]
 Exec=kcmshell5 kcm_kwin_virtualdesktops
-Icon=preferences-desktop
+Icon=preferences-desktop-virtual
 Type=Service
 X-KDE-ServiceTypes=KCModule
 X-DocPath=kcontrol/kwin_virtualdesktops/index.html
 
 X-KDE-Library=kcm_kwin_virtualdesktops
 X-KDE-ParentApp=kcontrol
+X-KDE-FormFactors=desktop
 
 X-KDE-System-Settings-Parent-Category=desktopbehavior
 X-KDE-Weight=60

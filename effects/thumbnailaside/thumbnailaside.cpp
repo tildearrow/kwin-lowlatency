@@ -23,9 +23,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // KConfigSkeleton
 #include "thumbnailasideconfig.h"
 
-#include <QAction>
 #include <KGlobalAccel>
 #include <KLocalizedString>
+
+#include <QAction>
+#include <QMatrix4x4>
 
 namespace KWin
 {
@@ -39,12 +41,12 @@ ThumbnailAsideEffect::ThumbnailAsideEffect()
     KGlobalAccel::self()->setDefaultShortcut(a, QList<QKeySequence>() << Qt::META + Qt::CTRL + Qt::Key_T);
     KGlobalAccel::self()->setShortcut(a, QList<QKeySequence>() << Qt::META + Qt::CTRL + Qt::Key_T);
     effects->registerGlobalShortcut(Qt::META + Qt::CTRL + Qt::Key_T, a);
-    connect(a, SIGNAL(triggered(bool)), this, SLOT(toggleCurrentThumbnail()));
+    connect(a, &QAction::triggered, this, &ThumbnailAsideEffect::toggleCurrentThumbnail);
 
-    connect(effects, SIGNAL(windowClosed(KWin::EffectWindow*)), this, SLOT(slotWindowClosed(KWin::EffectWindow*)));
-    connect(effects, SIGNAL(windowGeometryShapeChanged(KWin::EffectWindow*,QRect)), this, SLOT(slotWindowGeometryShapeChanged(KWin::EffectWindow*,QRect)));
-    connect(effects, SIGNAL(windowDamaged(KWin::EffectWindow*,QRect)), this, SLOT(slotWindowDamaged(KWin::EffectWindow*,QRect)));
-    connect(effects, SIGNAL(screenLockingChanged(bool)), SLOT(repaintAll()));
+    connect(effects, &EffectsHandler::windowClosed, this, &ThumbnailAsideEffect::slotWindowClosed);
+    connect(effects, &EffectsHandler::windowGeometryShapeChanged, this, &ThumbnailAsideEffect::slotWindowGeometryShapeChanged);
+    connect(effects, &EffectsHandler::windowDamaged, this, &ThumbnailAsideEffect::slotWindowDamaged);
+    connect(effects, &EffectsHandler::screenLockingChanged, this, &ThumbnailAsideEffect::repaintAll);
     reconfigure(ReconfigureAll);
 }
 
@@ -62,9 +64,11 @@ void ThumbnailAsideEffect::paintScreen(int mask, QRegion region, ScreenPaintData
 {
     painted = QRegion();
     effects->paintScreen(mask, region, data);
+
+    const QMatrix4x4 projectionMatrix = data.projectionMatrix();
     foreach (const Data & d, windows) {
         if (painted.intersects(d.rect)) {
-            WindowPaintData data(d.window);
+            WindowPaintData data(d.window, projectionMatrix);
             data.multiplyOpacity(opacity);
             QRect region;
             setPositionTransformations(data, region, d.window, d.rect, Qt::KeepAspectRatio);

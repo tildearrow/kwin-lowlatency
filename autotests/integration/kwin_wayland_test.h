@@ -45,6 +45,8 @@ class ShadowManager;
 class Shell;
 class ShellSurface;
 class ShmPool;
+class SubCompositor;
+class SubSurface;
 class Surface;
 class XdgDecorationManager;
 }
@@ -52,11 +54,15 @@ class XdgDecorationManager;
 
 namespace KWin
 {
+namespace Xwl
+{
+class Xwayland;
+}
 
 class AbstractClient;
 class ShellClient;
 
-class WaylandTestApplication : public Application
+class WaylandTestApplication : public ApplicationWaylandAbstract
 {
     Q_OBJECT
 public:
@@ -68,15 +74,11 @@ protected:
 
 private:
     void createBackend();
-    void createX11Connection();
     void continueStartupWithScreens();
-    void continueStartupWithSceen();
-    void continueStartupWithX();
-    void startXwaylandServer();
+    void continueStartupWithScene();
+    void finalizeStartup();
 
-    int m_xcbConnectionFd = -1;
-    QProcess *m_xwaylandProcess = nullptr;
-    QMetaObject::Connection m_xwaylandFailConnection;
+    Xwl::Xwayland *m_xwayland = nullptr;
 };
 
 namespace Test
@@ -112,6 +114,7 @@ void destroyWaylandConnection();
 
 KWayland::Client::ConnectionThread *waylandConnection();
 KWayland::Client::Compositor *waylandCompositor();
+KWayland::Client::SubCompositor *waylandSubCompositor();
 KWayland::Client::ShadowManager *waylandShadowManager();
 KWayland::Client::Shell *waylandShell();
 KWayland::Client::ShmPool *waylandShmPool();
@@ -131,18 +134,56 @@ bool waitForWaylandKeyboard();
 void flushWaylandConnection();
 
 KWayland::Client::Surface *createSurface(QObject *parent = nullptr);
+KWayland::Client::SubSurface *createSubSurface(KWayland::Client::Surface *surface,
+                                               KWayland::Client::Surface *parentSurface, QObject *parent = nullptr);
 enum class ShellSurfaceType {
     WlShell,
     XdgShellV5,
     XdgShellV6,
     XdgShellStable
 };
+
+enum class CreationSetup {
+    CreateOnly,
+    CreateAndConfigure, /// commit and wait for the configure event, making this surface ready to commit buffers
+};
+
+/**
+ * Creates either a ShellSurface * or XdgShellSurface * as defined by @arg type
+ * For XDG top levels this method will block for a configure event, make this surface ready to commit buffers
+ */
 QObject *createShellSurface(ShellSurfaceType type, KWayland::Client::Surface *surface, QObject *parent = nullptr);
-KWayland::Client::ShellSurface *createShellSurface(KWayland::Client::Surface *surface, QObject *parent = nullptr);
-KWayland::Client::XdgShellSurface *createXdgShellV5Surface(KWayland::Client::Surface *surface, QObject *parent = nullptr);
-KWayland::Client::XdgShellSurface *createXdgShellV6Surface(KWayland::Client::Surface *surface, QObject *parent = nullptr);
-KWayland::Client::XdgShellSurface *createXdgShellStableSurface(KWayland::Client::Surface *surface, QObject *parent = nullptr);
-KWayland::Client::XdgShellPopup *createXdgShellStablePopup(KWayland::Client::Surface *surface, KWayland::Client::XdgShellSurface *parentSurface, const KWayland::Client::XdgPositioner &positioner, QObject *parent = nullptr);
+
+KWayland::Client::XdgShellSurface *createXdgShellSurface(ShellSurfaceType type,
+                                                         KWayland::Client::Surface *surface,
+                                                         QObject *parent = nullptr,
+                                                         CreationSetup creationSetup = CreationSetup::CreateAndConfigure);
+
+KWayland::Client::ShellSurface *createShellSurface(KWayland::Client::Surface *surface,
+                                                   QObject *parent = nullptr);
+KWayland::Client::XdgShellSurface *createXdgShellV5Surface(KWayland::Client::Surface *surface,
+                                                           QObject *parent = nullptr,
+                                                           CreationSetup = CreationSetup::CreateAndConfigure);
+KWayland::Client::XdgShellSurface *createXdgShellV6Surface(KWayland::Client::Surface *surface,
+                                                           QObject *parent = nullptr,
+                                                           CreationSetup = CreationSetup::CreateAndConfigure);
+KWayland::Client::XdgShellSurface *createXdgShellStableSurface(KWayland::Client::Surface *surface,
+                                                               QObject *parent = nullptr,
+                                                               CreationSetup = CreationSetup::CreateAndConfigure);
+KWayland::Client::XdgShellPopup *createXdgShellStablePopup(KWayland::Client::Surface *surface,
+                                                           KWayland::Client::XdgShellSurface *parentSurface,
+                                                           const KWayland::Client::XdgPositioner &positioner,
+                                                           QObject *parent = nullptr,
+                                                           CreationSetup = CreationSetup::CreateAndConfigure);
+
+
+/**
+ * Commits the XdgShellSurface to the given surface, and waits for the configure event from the compositor
+ */
+void initXdgShellSurface(KWayland::Client::Surface *surface, KWayland::Client::XdgShellSurface *shellSurface);
+void initXdgShellPopup(KWayland::Client::Surface *surface, KWayland::Client::XdgShellPopup *popup);
+
+
 
 /**
  * Creates a shared memory buffer of @p size in @p color and attaches it to the @p surface.

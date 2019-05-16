@@ -37,13 +37,7 @@ class KWIN_EXPORT Deleted
     : public Toplevel
 {
     Q_OBJECT
-    Q_PROPERTY(bool minimized READ isMinimized)
-    Q_PROPERTY(bool modal READ isModal)
-    Q_PROPERTY(bool fullScreen READ isFullScreen CONSTANT)
-    Q_PROPERTY(bool isCurrentTab READ isCurrentTab)
-    Q_PROPERTY(bool keepAbove READ keepAbove CONSTANT)
-    Q_PROPERTY(bool keepBelow READ keepBelow CONSTANT)
-    Q_PROPERTY(QString caption READ caption CONSTANT)
+
 public:
     static Deleted* create(Toplevel* c);
     // used by effects to keep the window around for e.g. fadeout effects when it's destroyed
@@ -183,9 +177,17 @@ public:
 
     QVector<uint> x11DesktopIds() const;
 
+    /**
+     * Whether this Deleted represents the outline.
+     **/
+    bool isOutline() const override {
+        return m_wasOutline;
+    }
+
 protected:
     virtual void debug(QDebug& stream) const;
     virtual bool shouldUnredirect() const;
+
 private Q_SLOTS:
     void mainClientClosed(KWin::Toplevel *client);
     void transientForClosed(Toplevel *toplevel, Deleted *deleted);
@@ -201,7 +203,6 @@ private:
     void removeTransientFor(Deleted *parent);
 
     int delete_refcount;
-    double window_opacity;
     int desk;
     QStringList activityList;
     QRect contentsRect; // for clientPos()/clientSize()
@@ -236,6 +237,7 @@ private:
     ToplevelList m_transientFor;
     DeletedList m_transients;
     bool m_wasPopupWindow;
+    bool m_wasOutline;
 };
 
 inline void Deleted::refWindow()

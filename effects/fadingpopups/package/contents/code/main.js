@@ -42,6 +42,11 @@ function isPopupWindow(window) {
         return true;
     }
 
+    // Maybe the outline deserves its own effect.
+    if (window.outline) {
+        return true;
+    }
+
     // Override-redirect windows are usually used for user interface
     // concepts that are expected to be animated by this effect, e.g.
     // popups that contain window thumbnails on X11, etc.
@@ -63,7 +68,8 @@ function isPopupWindow(window) {
     // special windows(e.g. notifications) because the monolithic version
     // was doing that.
     if (window.dock || window.splash || window.toolbar
-            || window.notification || window.onScreenDisplay) {
+            || window.notification || window.onScreenDisplay
+            || window.criticalNotification) {
         return true;
     }
 

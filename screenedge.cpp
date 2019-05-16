@@ -183,7 +183,7 @@ bool Edge::activatesForPointer() const
         return true;
     }
     if (m_edges->isDesktopSwitchingMovingClients()) {
-        auto c = Workspace::self()->getMovingClient();
+        auto c = Workspace::self()->moveResizeClient();
         if (c && !c->isResize()) {
             return true;
         }
@@ -297,7 +297,7 @@ bool Edge::canActivate(const QPoint &cursorPos, const QDateTime &triggerTime)
 
 void Edge::handle(const QPoint &cursorPos)
 {
-    AbstractClient *movingClient = Workspace::self()->getMovingClient();
+    AbstractClient *movingClient = Workspace::self()->moveResizeClient();
     if ((edges()->isDesktopSwitchingMovingClients() && movingClient && !movingClient->isResize()) ||
         (edges()->isDesktopSwitching() && isScreenEdge())) {
         // always switch desktops in case:
@@ -436,7 +436,7 @@ void Edge::switchDesktop(const QPoint &cursorPos)
             pos.setY(OFFSET);
     }
 #ifndef KWIN_UNIT_TEST
-    if (AbstractClient *c = Workspace::self()->getMovingClient()) {
+    if (AbstractClient *c = Workspace::self()->moveResizeClient()) {
         if (c->rules()->checkDesktop(desktop) != int(desktop)) {
             // user attempts to move a client to another desktop where it is ruleforced to not be
             return;
@@ -616,20 +616,21 @@ void Edge::updateApproaching(const QPoint &point)
     if (approachGeometry().contains(point)) {
         int factor = 0;
         const int edgeDistance = m_edges->cornerOffset();
-        // manhattan length for our edge
-        const int cornerDistance = 2*edgeDistance;
+        auto cornerDistance = [=](const QPoint &corner) {
+            return qMax(qAbs(corner.x() - point.x()), qAbs(corner.y() - point.y()));
+        };
         switch (border()) {
         case ElectricTopLeft:
-            factor = (point.manhattanLength()<<8) / cornerDistance;
+            factor = (cornerDistance(approachGeometry().topLeft())<<8) / edgeDistance;
             break;
         case ElectricTopRight:
-            factor = ((point - approachGeometry().topRight()).manhattanLength()<<8) / cornerDistance;
+            factor = (cornerDistance(approachGeometry().topRight())<<8) / edgeDistance;
             break;
         case ElectricBottomRight:
-            factor = ((point - approachGeometry().bottomRight()).manhattanLength()<<8) / cornerDistance;
+            factor = (cornerDistance(approachGeometry().bottomRight())<<8) / edgeDistance;
             break;
         case ElectricBottomLeft:
-            factor = ((point - approachGeometry().bottomLeft()).manhattanLength()<<8) / cornerDistance;
+            factor = (cornerDistance(approachGeometry().bottomLeft())<<8) / edgeDistance;
             break;
         case ElectricTop:
             factor = (qAbs(point.y() - approachGeometry().y())<<8) / edgeDistance;

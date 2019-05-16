@@ -33,7 +33,6 @@ class ServerSideDecorationInterface;
 class ServerSideDecorationPaletteInterface;
 class AppMenuInterface;
 class PlasmaShellSurfaceInterface;
-class QtExtendedSurfaceInterface;
 class XdgDecorationInterface;
 }
 }
@@ -43,12 +42,12 @@ namespace KWin
 
 /**
  * @brief The reason for which the server pinged a client surface
- */
+ **/
 enum class PingReason {
     CloseWindow = 0,
     FocusWindow
 };
-    
+
 class KWIN_EXPORT ShellClient : public AbstractClient
 {
     Q_OBJECT
@@ -57,8 +56,6 @@ public:
     ShellClient(KWayland::Server::XdgShellSurfaceInterface *surface);
     ShellClient(KWayland::Server::XdgShellPopupInterface *surface);
     virtual ~ShellClient();
-
-    bool eventFilter(QObject *watched, QEvent *event) override;
 
     QStringList activities() const override;
     QPoint clientContentPos() const override;
@@ -70,10 +67,6 @@ public:
     double opacity() const override;
     void setOpacity(double opacity) override;
     QByteArray windowRole() const override;
-
-    KWayland::Server::ShellSurfaceInterface *shellSurface() const {
-        return m_shellSurface;
-    }
 
     void blockActivityUpdates(bool b = true) override;
     QString captionNormal() const override {
@@ -118,8 +111,6 @@ public:
     void setGeometry(int x, int y, int w, int h, ForceGeometry_t force = NormalGeometrySet) override;
     bool hasStrut() const override;
 
-    void setInternalFramebufferObject(const QSharedPointer<QOpenGLFramebufferObject> &fbo) override;
-
     quint32 windowId() const override {
         return m_windowId;
     }
@@ -132,15 +123,12 @@ public:
      **/
     pid_t pid() const override;
 
-    bool isInternal() const;
+    virtual bool isInternal() const;
     bool isLockScreen() const override;
     bool isInputMethod() const override;
-    QWindow *internalWindow() const {
-        return m_internalWindow;
-    }
+    virtual QWindow *internalWindow() const;
 
     void installPlasmaShellSurface(KWayland::Server::PlasmaShellSurfaceInterface *surface);
-    void installQtExtendedSurface(KWayland::Server::QtExtendedSurfaceInterface *surface);
     void installServerSideDecoration(KWayland::Server::ServerSideDecorationInterface *decoration);
     void installAppMenu(KWayland::Server::AppMenuInterface *appmenu);
     void installPalette(KWayland::Server::ServerSideDecorationPaletteInterface *palette);
@@ -180,6 +168,7 @@ protected:
     void addDamage(const QRegion &damage) override;
     bool belongsToSameApplication(const AbstractClient *other, SameApplicationChecks checks) const override;
     void doSetActive() override;
+    bool belongsToDesktop() const override;
     Layer layerForDock() const override;
     void changeMaximize(bool horizontal, bool vertical, bool adjust) override;
     void setGeometryRestore(const QRect &geo) override {
@@ -189,27 +178,40 @@ protected:
     bool isWaitingForMoveResizeSync() const override;
     bool acceptsFocus() const override;
     void doMinimize() override;
-    void doMove(int x, int y) override;
     void updateCaption() override;
+
+    virtual bool requestGeometry(const QRect &rect);
+    virtual void doSetGeometry(const QRect &rect);
+    void unmap();
+    void markAsMapped();
+
+    void setClientSize(const QSize &size) {
+        m_clientSize = size;
+    }
+
+    bool isUnmapped() const {
+        return m_unmapped;
+    }
 
 private Q_SLOTS:
     void clientFullScreenChanged(bool fullScreen);
 
 private:
+    /**
+     *  Called when the shell is created.
+     **/
     void init();
+    /**
+     * Called for the XDG case when the shell surface is committed to the surface.
+     * At this point all initial properties should have been set by the client.
+     **/
+    void finishInit();
     template <class T>
     void initSurface(T *shellSurface);
-    void requestGeometry(const QRect &rect);
-    void doSetGeometry(const QRect &rect);
     void createDecoration(const QRect &oldgeom);
     void destroyClient();
-    void unmap();
     void createWindowId();
-    void findInternalWindow();
-    void updateInternalWindowGeometry();
-    void syncGeometryToInternalWindow();
     void updateIcon();
-    void markAsMapped();
     void setTransient();
     bool shouldExposeToWindowManagement();
     void updateClientOutputs();
@@ -218,7 +220,7 @@ private:
     void updateMaximizeMode(MaximizeMode maximizeMode);
     // called on surface commit and processes all m_pendingConfigureRequests up to m_lastAckedConfigureReqest
     void updatePendingGeometry();
-    QPoint popupOffset(const QRect &anchorRect, const Qt::Edges anchorEdge, const Qt::Edges gravity) const;
+    QPoint popupOffset(const QRect &anchorRect, const Qt::Edges anchorEdge, const Qt::Edges gravity, const QSize popupSize) const;
     static void deleteClient(ShellClient *c);
 
     KWayland::Server::ShellSurfaceInterface *m_shellSurface;
@@ -250,13 +252,10 @@ private:
     QRect m_geomFsRestore; //size and position of the window before it was set to fullscreen
     bool m_closing = false;
     quint32 m_windowId = 0;
-    QWindow *m_internalWindow = nullptr;
-    Qt::WindowFlags m_internalWindowFlags = Qt::WindowFlags();
     bool m_unmapped = true;
     QRect m_geomMaximizeRestore; // size and position of the window before it was set to maximize
     NET::WindowType m_windowType = NET::Normal;
     QPointer<KWayland::Server::PlasmaShellSurfaceInterface> m_plasmaShellSurface;
-    QPointer<KWayland::Server::QtExtendedSurfaceInterface> m_qtExtendedSurface;
     QPointer<KWayland::Server::AppMenuInterface> m_appMenuInterface;
     QPointer<KWayland::Server::ServerSideDecorationPaletteInterface> m_paletteInterface;
     KWayland::Server::ServerSideDecorationInterface *m_serverDecoration = nullptr;
@@ -269,7 +268,7 @@ private:
     bool m_hasPopupGrab = false;
     qreal m_opacity = 1.0;
 
-    class RequestGeometryBlocker {
+    class RequestGeometryBlocker { //TODO rename ConfigureBlocker when this class is Xdg only
     public:
         RequestGeometryBlocker(ShellClient *client)
             : m_client(client)
@@ -280,11 +279,7 @@ private:
         {
             m_client->m_requestGeometryBlockCounter--;
             if (m_client->m_requestGeometryBlockCounter == 0) {
-                if (m_client->m_blockedRequestGeometry.isValid()) {
-                    m_client->requestGeometry(m_client->m_blockedRequestGeometry);
-                } else if (m_client->m_xdgShellSurface) {
-                    m_client->m_xdgShellSurface->configure(m_client->xdgSurfaceStates());
-                }
+                m_client->requestGeometry(m_client->m_blockedRequestGeometry);
             }
         }
     private:

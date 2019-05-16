@@ -153,8 +153,8 @@ void ButtonsModel::add(DecorationButtonType type)
 
 void ButtonsModel::add(int index, int type)
 {
-    beginInsertRows(QModelIndex(), index + 1, index+1);
-    m_buttons.insert(index+1, KDecoration2::DecorationButtonType(type));
+    beginInsertRows(QModelIndex(), index, index);
+    m_buttons.insert(index, KDecoration2::DecorationButtonType(type));
     endInsertRows();
 }
 
@@ -166,7 +166,7 @@ void ButtonsModel::move(int sourceIndex, int targetIndex)
 
     /* When moving an item down, the destination index needs to be incremented
        by one, as explained in the documentation:
-       http://doc.qt.nokia.com/qabstractitemmodel.html#beginMoveRows */
+       https://doc.qt.io/qt-5/qabstractitemmodel.html#beginMoveRows */
     if (targetIndex > sourceIndex) {
         // Row will be moved down
         beginMoveRows(QModelIndex(), sourceIndex, sourceIndex, QModelIndex(), targetIndex + 1);
@@ -176,6 +176,24 @@ void ButtonsModel::move(int sourceIndex, int targetIndex)
 
     m_buttons.move(sourceIndex, qMax(0, targetIndex));
     endMoveRows();
+}
+
+void ButtonsModel::clear()
+{
+    beginResetModel();
+    m_buttons.clear();
+    endResetModel();
+}
+
+void ButtonsModel::replace(const QVector< DecorationButtonType > &buttons)
+{
+    if (buttons.isEmpty()) {
+        return;
+    }
+
+    beginResetModel();
+    m_buttons = buttons;
+    endResetModel();
 }
 
 }

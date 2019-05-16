@@ -108,6 +108,7 @@ void SceneQPainterTest::testStartFrame()
     Compositor::self()->addRepaintFull();
     auto scene = Compositor::self()->scene();
     QVERIFY(scene);
+    QCOMPARE(kwinApp()->platform()->selectedCompositor(), QPainterCompositing);
     QSignalSpy frameRenderedSpy(scene, &Scene::frameRendered);
     QVERIFY(frameRenderedSpy.isValid());
     QVERIFY(frameRenderedSpy.wait());
@@ -157,6 +158,7 @@ void SceneQPainterTest::testWindow_data()
     QTest::newRow("wlShell") << Test::ShellSurfaceType::WlShell;
     QTest::newRow("xdgShellV5") << Test::ShellSurfaceType::XdgShellV5;
     QTest::newRow("xdgShellV6") << Test::ShellSurfaceType::XdgShellV6;
+    QTest::newRow("xdgWmBase") << Test::ShellSurfaceType::XdgShellStable;
 }
 
 void SceneQPainterTest::testWindow()

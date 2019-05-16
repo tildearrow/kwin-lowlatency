@@ -1087,6 +1087,29 @@ EffectWindow* EffectsHandlerImpl::findWindow(KWayland::Server::SurfaceInterface 
     return nullptr;
 }
 
+EffectWindow *EffectsHandlerImpl::findWindow(QWindow *w) const
+{
+    if (waylandServer()) {
+        if (auto c = waylandServer()->findClient(w)) {
+            return c->effectWindow();
+        }
+    }
+    if (auto u = Workspace::self()->findUnmanaged(w->winId())) {
+        return u->effectWindow();
+    }
+    return nullptr;
+}
+
+EffectWindow *EffectsHandlerImpl::findWindow(const QUuid &id) const
+{
+    if (const auto client = workspace()->findAbstractClient([&id] (const AbstractClient *c) { return c->internalId() == id; })) {
+        return client->effectWindow();
+    }
+    if (const auto unmanaged = workspace()->findUnmanaged([&id] (const Unmanaged *c) { return c->internalId() == id; })) {
+        return unmanaged->effectWindow();
+    }
+    return nullptr;
+}
 
 EffectWindowList EffectsHandlerImpl::stackingOrder() const
 {
@@ -1800,6 +1823,7 @@ TOPLEVEL_HELPER(bool, isDropdownMenu, isDropdownMenu)
 TOPLEVEL_HELPER(bool, isPopupMenu, isPopupMenu)
 TOPLEVEL_HELPER(bool, isTooltip, isTooltip)
 TOPLEVEL_HELPER(bool, isNotification, isNotification)
+TOPLEVEL_HELPER(bool, isCriticalNotification, isCriticalNotification)
 TOPLEVEL_HELPER(bool, isOnScreenDisplay, isOnScreenDisplay)
 TOPLEVEL_HELPER(bool, isComboBox, isComboBox)
 TOPLEVEL_HELPER(bool, isDNDIcon, isDNDIcon)
@@ -1810,6 +1834,7 @@ TOPLEVEL_HELPER(QStringList, activities, activities)
 TOPLEVEL_HELPER(bool, skipsCloseAnimation, skipsCloseAnimation)
 TOPLEVEL_HELPER(KWayland::Server::SurfaceInterface *, surface, surface)
 TOPLEVEL_HELPER(bool, isPopupWindow, isPopupWindow)
+TOPLEVEL_HELPER(bool, isOutline, isOutline)
 
 #undef TOPLEVEL_HELPER
 
@@ -1937,6 +1962,15 @@ EffectWindow* EffectWindowImpl::findModal()
     return nullptr;
 }
 
+QWindow *EffectWindowImpl::internalWindow() const
+{
+    auto client = qobject_cast<ShellClient*>(toplevel);
+    if (!client) {
+        return nullptr;
+    }
+    return client->internalWindow();
+}
+
 template <typename T>
 EffectWindowList getMainWindows(T *c)
 {
@@ -2002,7 +2036,7 @@ void EffectWindowImpl::registerThumbnail(AbstractThumbnailItem *item)
     if (WindowThumbnailItem *thumb = qobject_cast<WindowThumbnailItem*>(item)) {
         insertThumbnail(thumb);
         connect(thumb, SIGNAL(destroyed(QObject*)), SLOT(thumbnailDestroyed(QObject*)));
-        connect(thumb, SIGNAL(wIdChanged(qulonglong)), SLOT(thumbnailTargetChanged()));
+        connect(thumb, &WindowThumbnailItem::wIdChanged, this, &EffectWindowImpl::thumbnailTargetChanged);
     } else if (DesktopThumbnailItem *desktopThumb = qobject_cast<DesktopThumbnailItem*>(item)) {
         m_desktopThumbnails.append(desktopThumb);
         connect(desktopThumb, SIGNAL(destroyed(QObject*)), SLOT(desktopThumbnailDestroyed(QObject*)));

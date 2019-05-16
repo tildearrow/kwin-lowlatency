@@ -40,12 +40,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
  Every window has one layer assigned in which it is. There are 7 layers,
  from bottom : DesktopLayer, BelowLayer, NormalLayer, DockLayer, AboveLayer, NotificationLayer,
- ActiveLayer and OnScreenDisplayLayer (see also NETWM sect.7.10.). The layer a window is in depends
- on the window type, and on other things like whether the window is active. We extend the layers
- provided in NETWM by the NotificationLayer and OnScreenDisplayLayer.
+ ActiveLayer, CriticalNotificationLayer, and OnScreenDisplayLayer (see also NETWM sect.7.10.).
+ The layer a window is in depends on the window type, and on other things like whether the window
+ is active. We extend the layers provided in NETWM by the NotificationLayer, OnScreenDisplayLayer,
+ and CriticalNotificationLayer.
  The NoficationLayer contains notification windows which are kept above all windows except the active
- fullscreen window. The OnScreenDisplayLayer is used for eg. volume and brightness change feedback and
- is kept above all windows since it provides immediate response to a user action.
+ fullscreen window. The CriticalNotificationLayer contains notification windows which are important
+ enough to keep them even above fullscreen windows. The OnScreenDisplayLayer is used for eg. volume
+ and brightness change feedback and is kept above all windows since it provides immediate response
+ to a user action.
 
  NET::Splash clients belong to the Normal layer. NET::TopMenu clients
  belong to Dock layer. Clients that are both NET::Dock and NET::KeepBelow
@@ -133,13 +136,13 @@ void Workspace::updateStackingOrder(bool propagate_new_clients)
     }
 }
 
-/*!
+/**
  * Some fullscreen effects have to raise the screenedge on top of an input window, thus all windows
  * this function puts them back where they belong for regular use and is some cheap variant of
  * the regular propagateClients function in that it completely ignores managed clients and everything
  * else and also does not update the NETWM property.
  * Called from Effects::destroyInputWindow so far.
- */
+ **/
 void Workspace::stackScreenEdgesUnderOverrideRedirect()
 {
     if (!rootInfo()) {
@@ -148,10 +151,10 @@ void Workspace::stackScreenEdgesUnderOverrideRedirect()
     Xcb::restackWindows(QVector<xcb_window_t>() << rootInfo()->supportWindow() << ScreenEdges::self()->windows());
 }
 
-/*!
-  Propagates the managed clients to the world.
-  Called ONLY from updateStackingOrder().
- */
+/**
+ * Propagates the managed clients to the world.
+ * Called ONLY from updateStackingOrder().
+ **/
 void Workspace::propagateClients(bool propagate_new_clients)
 {
     if (!rootInfo()) {
@@ -169,6 +172,8 @@ void Workspace::propagateClients(bool propagate_new_clients)
     newWindowStack << rootInfo()->supportWindow();
 
     newWindowStack << ScreenEdges::self()->windows();
+
+    newWindowStack << manual_overlays;
 
     newWindowStack.reserve(newWindowStack.size() + 2*stacking_order.size()); // *2 for inputWindow
 
@@ -202,7 +207,10 @@ void Workspace::propagateClients(bool propagate_new_clients)
     int pos = 0;
     xcb_window_t *cl(nullptr);
     if (propagate_new_clients) {
-        cl = new xcb_window_t[ desktops.count() + clients.count()];
+        cl = new xcb_window_t[ manual_overlays.count() + desktops.count() + clients.count()];
+        for (const auto win : manual_overlays) {
+            cl[pos++] = win;
+        }
         // TODO this is still not completely in the map order
         for (ClientList::ConstIterator it = desktops.constBegin(); it != desktops.constEnd(); ++it)
             cl[pos++] = (*it)->window();
@@ -212,11 +220,14 @@ void Workspace::propagateClients(bool propagate_new_clients)
         delete [] cl;
     }
 
-    cl = new xcb_window_t[ stacking_order.count()];
+    cl = new xcb_window_t[ manual_overlays.count() + stacking_order.count()];
     pos = 0;
     for (ToplevelList::ConstIterator it = stacking_order.constBegin(); it != stacking_order.constEnd(); ++it) {
         if ((*it)->isClient())
             cl[pos++] = (*it)->window();
+    }
+    for (const auto win : manual_overlays) {
+        cl[pos++] = win;
     }
     rootInfo()->setClientListStacking(cl, pos);
     delete [] cl;
@@ -226,11 +237,11 @@ void Workspace::propagateClients(bool propagate_new_clients)
     markXStackingOrderAsDirty();
 }
 
-/*!
-  Returns topmost visible client. Windows on the dock, the desktop
-  or of any other special kind are excluded. Also if the window
-  doesn't accept focus it's excluded.
- */
+/**
+ * Returns topmost visible client. Windows on the dock, the desktop
+ * or of any other special kind are excluded. Also if the window
+ * doesn't accept focus it's excluded.
+ **/
 // TODO misleading name for this method, too many slightly different ways to use it
 AbstractClient* Workspace::topClientOnDesktop(int desktop, int screen, bool unconstrained, bool only_normal) const
 {
@@ -490,9 +501,9 @@ void Workspace::restoreSessionStackingOrder(Client* c)
     unconstrained_stacking_order.append(c);
 }
 
-/*!
-  Returns a stacking order based upon \a list that fulfills certain contained.
- */
+/**
+ * Returns a stacking order based upon \a list that fulfills certain contained.
+ **/
 ToplevelList Workspace::constrainedStackingOrder()
 {
     ToplevelList layer[ NumLayers ];

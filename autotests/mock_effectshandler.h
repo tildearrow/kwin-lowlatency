@@ -134,6 +134,14 @@ public:
     KWin::EffectWindow *findWindow(KWayland::Server::SurfaceInterface *) const override {
         return nullptr;
     }
+    KWin::EffectWindow *findWindow(QWindow *w) const override {
+        Q_UNUSED(w)
+        return nullptr;
+    }
+    KWin::EffectWindow *findWindow(const QUuid &id) const override {
+        Q_UNUSED(id)
+        return nullptr;
+    }
     void *getProxy(QString) override {
         return nullptr;
     }

@@ -35,6 +35,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "egl_gbm_backend.h"
 #include <gbm.h>
 #endif
+#if HAVE_EGL_STREAMS
+#include "egl_stream_backend.h"
+#endif
 // KWayland
 #include <KWayland/Server/seat_interface.h>
 #include <KWayland/Server/outputconfiguration_interface.h>
@@ -74,6 +77,11 @@ DrmBackend::DrmBackend(QObject *parent)
     , m_udevMonitor(m_udev->monitor())
     , m_dpmsFilter()
 {
+#if HAVE_EGL_STREAMS
+    if (qEnvironmentVariableIsSet("KWIN_DRM_USE_EGL_STREAMS")) {
+        m_useEglStreams = true;
+    }
+#endif
     setSupportsGammaControl(true);
     handleOutputs();
 }
@@ -250,9 +258,10 @@ void DrmBackend::openDrm()
         qCWarning(KWIN_DRM) << "Did not find a GPU";
         return;
     }
-    int fd = LogindIntegration::self()->takeDevice(device->devNode());
+    m_devNode = device->devNode();
+    int fd = LogindIntegration::self()->takeDevice(m_devNode.constData());
     if (fd < 0) {
-        qCWarning(KWIN_DRM) << "failed to open drm device at" << device->devNode();
+        qCWarning(KWIN_DRM) << "failed to open drm device at" << m_devNode;
         return;
     }
     m_fd = fd;
@@ -278,7 +287,7 @@ void DrmBackend::openDrm()
             qCDebug(KWIN_DRM) << "Using Atomic Mode Setting.";
             m_atomicModeSetting = true;
 
-            ScopedDrmPointer<drmModePlaneRes, &drmModeFreePlaneResources> planeResources(drmModeGetPlaneResources(m_fd));
+            DrmScopedPointer<drmModePlaneRes> planeResources(drmModeGetPlaneResources(m_fd));
             if (!planeResources) {
                 qCWarning(KWIN_DRM) << "Failed to get plane resources. Falling back to legacy mode";
                 m_atomicModeSetting = false;
@@ -311,7 +320,7 @@ void DrmBackend::openDrm()
         }
     }
 
-    ScopedDrmPointer<_drmModeRes, &drmModeFreeResources> resources(drmModeGetResources(m_fd));
+    DrmScopedPointer<drmModeRes> resources(drmModeGetResources(m_fd));
     drmModeRes *res = resources.data();
     if (!resources) {
         qCWarning(KWIN_DRM) << "drmModeGetResources failed";
@@ -381,7 +390,7 @@ void DrmBackend::updateOutputs()
         return;
     }
 
-    ScopedDrmPointer<_drmModeRes, &drmModeFreeResources> resources(drmModeGetResources(m_fd));
+    DrmScopedPointer<drmModeRes> resources(drmModeGetResources(m_fd));
     if (!resources) {
         qCWarning(KWIN_DRM) << "drmModeGetResources failed";
         return;
@@ -419,7 +428,7 @@ void DrmBackend::updateOutputs()
 
     // now check new connections
     for (DrmConnector *con : qAsConst(pendingConnectors)) {
-        ScopedDrmPointer<_drmModeConnector, &drmModeFreeConnector> connector(drmModeGetConnector(m_fd, con->id()));
+        DrmScopedPointer<drmModeConnector> connector(drmModeGetConnector(m_fd, con->id()));
         if (!connector) {
             continue;
         }
@@ -430,7 +439,7 @@ void DrmBackend::updateOutputs()
 
         QVector<uint32_t> encoders = con->encoders();
         for (auto encId : qAsConst(encoders)) {
-            ScopedDrmPointer<_drmModeEncoder, &drmModeFreeEncoder> encoder(drmModeGetEncoder(m_fd, encId));
+            DrmScopedPointer<drmModeEncoder> encoder(drmModeGetEncoder(m_fd, encId));
             if (!encoder) {
                 continue;
             }
@@ -451,7 +460,7 @@ void DrmBackend::updateOutputs()
 
                 // we found a suitable encoder+crtc
                 // TODO: we could avoid these lib drm calls if we store all struct data in DrmCrtc and DrmConnector in the beginning
-                ScopedDrmPointer<_drmModeCrtc, &drmModeFreeCrtc> modeCrtc(drmModeGetCrtc(m_fd, crtc->id()));
+                DrmScopedPointer<drmModeCrtc> modeCrtc(drmModeGetCrtc(m_fd, crtc->id()));
                 if (!modeCrtc) {
                     continue;
                 }
@@ -514,7 +523,8 @@ void DrmBackend::readOutputsConfiguration()
         const auto outputConfig = configGroup.group((*it)->uuid());
         (*it)->setGlobalPos(outputConfig.readEntry<QPoint>("Position", pos));
         // TODO: add mode
-        (*it)->setScale(outputConfig.readEntry("Scale", 1.0));
+        if (outputConfig.hasKey("Scale"))
+            (*it)->setScale(outputConfig.readEntry("Scale", 1.0));
         pos.setX(pos.x() + (*it)->geometry().width());
     }
 }
@@ -605,13 +615,13 @@ DrmOutput *DrmBackend::findOutput(const QByteArray &uuid)
     return nullptr;
 }
 
-void DrmBackend::present(DrmBuffer *buffer, DrmOutput *output)
+bool DrmBackend::present(DrmBuffer *buffer, DrmOutput *output)
 {
     if (!buffer || buffer->bufferId() == 0) {
         if (m_deleteBufferAfterPageFlip) {
             delete buffer;
         }
-        return;
+        return false;
     }
 
     if (output->present(buffer)) {
@@ -619,13 +629,24 @@ void DrmBackend::present(DrmBuffer *buffer, DrmOutput *output)
         if (m_pageFlipsPending == 1 && Compositor::self()) {
             Compositor::self()->aboutToSwapBuffers();
         }
+        return true;
     } else if (m_deleteBufferAfterPageFlip) {
         delete buffer;
     }
+    return false;
 }
 
 void DrmBackend::initCursor()
 {
+
+#if HAVE_EGL_STREAMS
+    // Hardware cursors aren't currently supported with EGLStream backend,
+    // possibly an NVIDIA driver bug
+    if (m_useEglStreams) {
+        setSoftWareCursor(true);
+    }
+#endif
+
     m_cursorEnabled = waylandServer()->seat()->hasPointer();
     connect(waylandServer()->seat(), &KWayland::Server::SeatInterface::hasPointerChanged, this,
         [this] {
@@ -702,7 +723,7 @@ void DrmBackend::doShowCursor()
 
 void DrmBackend::doHideCursor()
 {
-    if (!m_cursorEnabled) {
+    if (!m_cursorEnabled || usesSoftwareCursor()) {
         return;
     }
     for (auto it = m_outputs.constBegin(); it != m_outputs.constEnd(); ++it) {
@@ -712,7 +733,7 @@ void DrmBackend::doHideCursor()
 
 void DrmBackend::moveCursor()
 {
-    if (!m_cursorEnabled || isCursorHidden()) {
+    if (!m_cursorEnabled || isCursorHidden() || usesSoftwareCursor()) {
         return;
     }
     for (auto it = m_outputs.constBegin(); it != m_outputs.constEnd(); ++it) {
@@ -733,6 +754,13 @@ QPainterBackend *DrmBackend::createQPainterBackend()
 
 OpenGLBackend *DrmBackend::createOpenGLBackend()
 {
+#if HAVE_EGL_STREAMS
+    if (m_useEglStreams) {
+        m_deleteBufferAfterPageFlip = false;
+        return new EglStreamBackend(this);
+    }
+#endif
+
 #if HAVE_GBM
     m_deleteBufferAfterPageFlip = true;
     return new EglGbmBackend(this);
@@ -769,8 +797,15 @@ void DrmBackend::outputDpmsChanged()
 
 QVector<CompositingType> DrmBackend::supportedCompositors() const
 {
+    if (selectedCompositor() != NoCompositing) {
+        return {selectedCompositor()};
+    }
 #if HAVE_GBM
     return QVector<CompositingType>{OpenGLCompositing, QPainterCompositing};
+#elif HAVE_EGL_STREAMS
+    return m_useEglStreams ?
+        QVector<CompositingType>{OpenGLCompositing, QPainterCompositing} :
+        QVector<CompositingType>{QPainterCompositing};
 #else
     return QVector<CompositingType>{QPainterCompositing};
 #endif
@@ -784,6 +819,9 @@ QString DrmBackend::supportInformation() const
     s << "Name: " << "DRM" << endl;
     s << "Active: " << m_active << endl;
     s << "Atomic Mode Setting: " << m_atomicModeSetting << endl;
+#if HAVE_EGL_STREAMS
+    s << "Using EGL Streams: " << m_useEglStreams << endl;
+#endif
     return supportInfo;
 }
 

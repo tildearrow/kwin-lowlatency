@@ -62,7 +62,7 @@ class Shadow;
 
 /**
  * Enum to describe the reason why a Toplevel has to be released.
- */
+ **/
 enum class ReleaseReason {
     Release, ///< Normal Release after e.g. an Unmap notify event (window still valid)
     Destroyed, ///< Release after an Destroy notify event (window no longer valid)
@@ -99,85 +99,89 @@ class KWIN_EXPORT Toplevel
     Q_PROPERTY(QByteArray windowRole READ windowRole NOTIFY windowRoleChanged)
     /**
      * Returns whether the window is a desktop background window (the one with wallpaper).
-     * See _NET_WM_WINDOW_TYPE_DESKTOP at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_DESKTOP at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool desktopWindow READ isDesktop)
     /**
      * Returns whether the window is a dock (i.e. a panel).
-     * See _NET_WM_WINDOW_TYPE_DOCK at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_DOCK at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool dock READ isDock)
     /**
      * Returns whether the window is a standalone (detached) toolbar window.
-     * See _NET_WM_WINDOW_TYPE_TOOLBAR at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_TOOLBAR at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool toolbar READ isToolbar)
     /**
      * Returns whether the window is a torn-off menu.
-     * See _NET_WM_WINDOW_TYPE_MENU at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_MENU at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool menu READ isMenu)
     /**
      * Returns whether the window is a "normal" window, i.e. an application or any other window
      * for which none of the specialized window types fit.
-     * See _NET_WM_WINDOW_TYPE_NORMAL at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_NORMAL at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool normalWindow READ isNormalWindow)
     /**
      * Returns whether the window is a dialog window.
-     * See _NET_WM_WINDOW_TYPE_DIALOG at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_DIALOG at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool dialog READ isDialog)
     /**
      * Returns whether the window is a splashscreen. Note that many (especially older) applications
      * do not support marking their splash windows with this type.
-     * See _NET_WM_WINDOW_TYPE_SPLASH at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_SPLASH at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool splash READ isSplash)
     /**
      * Returns whether the window is a utility window, such as a tool window.
-     * See _NET_WM_WINDOW_TYPE_UTILITY at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_UTILITY at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool utility READ isUtility)
     /**
      * Returns whether the window is a dropdown menu (i.e. a popup directly or indirectly open
      * from the applications menubar).
-     * See _NET_WM_WINDOW_TYPE_DROPDOWN_MENU at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_DROPDOWN_MENU at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool dropdownMenu READ isDropdownMenu)
     /**
      * Returns whether the window is a popup menu (that is not a torn-off or dropdown menu).
-     * See _NET_WM_WINDOW_TYPE_POPUP_MENU at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_POPUP_MENU at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool popupMenu READ isPopupMenu)
     /**
      * Returns whether the window is a tooltip.
-     * See _NET_WM_WINDOW_TYPE_TOOLTIP at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_TOOLTIP at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool tooltip READ isTooltip)
     /**
      * Returns whether the window is a window with a notification.
-     * See _NET_WM_WINDOW_TYPE_NOTIFICATION at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_NOTIFICATION at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool notification READ isNotification)
     /**
+     * Returns whether the window is a window with a critical notification.
+     **/
+    Q_PROPERTY(bool criticalNotification READ isCriticalNotification)
+    /**
      * Returns whether the window is an On Screen Display.
-     */
+     **/
     Q_PROPERTY(bool onScreenDisplay READ isOnScreenDisplay)
     /**
      * Returns whether the window is a combobox popup.
-     * See _NET_WM_WINDOW_TYPE_COMBO at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_COMBO at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool comboBox READ isComboBox)
     /**
      * Returns whether the window is a Drag&Drop icon.
-     * See _NET_WM_WINDOW_TYPE_DND at http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See _NET_WM_WINDOW_TYPE_DND at https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(bool dndIcon READ isDNDIcon)
     /**
      * Returns the NETWM window type
-     * See http://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
-     */
+     * See https://standards.freedesktop.org/wm-spec/wm-spec-latest.html .
+     **/
     Q_PROPERTY(int windowType READ windowType)
     Q_PROPERTY(QStringList activities READ activities NOTIFY activitiesChanged)
     /**
@@ -208,13 +212,20 @@ class KWIN_EXPORT Toplevel
     /**
      * Interface to the Wayland Surface.
      * Relevant only in Wayland, in X11 it will be nullptr
-     */
+     **/
     Q_PROPERTY(KWayland::Server::SurfaceInterface *surface READ surface)
 
     /**
      * Whether the window is a popup.
      **/
     Q_PROPERTY(bool popupWindow READ isPopupWindow)
+
+    /**
+     * Whether this Toplevel represents the outline.
+     *
+     * @note It's always @c false if compositing is turned off.
+     **/
+    Q_PROPERTY(bool outline READ isOutline)
 
 public:
     explicit Toplevel();
@@ -246,7 +257,7 @@ public:
      * The scale of the screen this window is currently on
      * @note The buffer scale can be different.
      * @since 5.12
-     */
+     **/
     qreal screenScale() const; //
     virtual QPoint clientPos() const = 0; // inside of geometry()
     /**
@@ -277,19 +288,21 @@ public:
     bool isPopupMenu() const; // a context popup, not dropdown, not torn-off
     bool isTooltip() const;
     bool isNotification() const;
+    bool isCriticalNotification() const;
     bool isOnScreenDisplay() const;
     bool isComboBox() const;
     bool isDNDIcon() const;
 
     virtual bool isLockScreen() const;
     virtual bool isInputMethod() const;
+    virtual bool isOutline() const;
 
     /**
      * Returns the virtual desktop within the workspace() the client window
      * is located in, 0 if it isn't located on any special desktop (not mapped yet),
      * or NET::OnAllDesktops. Do not use desktop() directly, use
      * isOnDesktop() instead.
-     */
+     **/
     virtual int desktop() const = 0;
     virtual QVector<VirtualDesktop *> desktops() const = 0;
     virtual QStringList activities() const = 0;
@@ -388,14 +401,14 @@ public:
      * or the reply will be leaked.
      *
      * Returns true if the window was damaged, and false otherwise.
-     */
+     **/
     bool resetAndFetchDamage();
 
     /**
      * Gets the reply from a previous call to resetAndFetchDamage().
      * Calling this function is a no-op if there is no pending reply.
      * Call damage() to return the fetched region.
-     */
+     **/
     void getDamageRegionReply();
 
     bool skipsCloseAnimation() const;
@@ -450,7 +463,7 @@ public:
      * @param list The list to search in
      * @param func The condition function (compare std::find_if)
      * @return T* The found Toplevel or @c null if there is no matching Toplevel
-     */
+     **/
     template <class T, class U>
     static T *findInList(const QList<T*> &list, std::function<bool (const U*)> func);
 
@@ -528,7 +541,7 @@ Q_SIGNALS:
      * Emitted when the client's screen changes onto a screen of a different scale
      * or the screen we're on changes
      * @since 5.12
-     */
+     **/
     void screenScaleChanged();
 
     /**
@@ -745,6 +758,11 @@ inline bool Toplevel::isNotification() const
     return windowType() == NET::Notification;
 }
 
+inline bool Toplevel::isCriticalNotification() const
+{
+    return windowType() == NET::CriticalNotification;
+}
+
 inline bool Toplevel::isOnScreenDisplay() const
 {
     return windowType() == NET::OnScreenDisplay;
@@ -766,6 +784,11 @@ inline bool Toplevel::isLockScreen() const
 }
 
 inline bool Toplevel::isInputMethod() const
+{
+    return false;
+}
+
+inline bool Toplevel::isOutline() const
 {
     return false;
 }

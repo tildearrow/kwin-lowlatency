@@ -167,12 +167,12 @@ public Q_SLOTS:
      * Notifies the compositor that SwapBuffers() is about to be called.
      * Rendering of the next frame will be deferred until bufferSwapComplete()
      * is called.
-     */
+     **/
     void aboutToSwapBuffers();
 
     /**
      * Notifies the compositor that a pending buffer swap has completed.
-     */
+     **/
     void bufferSwapComplete();
 
 Q_SIGNALS:
@@ -180,6 +180,7 @@ Q_SIGNALS:
     void aboutToDestroy();
     void aboutToToggleCompositing();
     void sceneCreated();
+    void bufferSwapCompleted();
 
 protected:
     void timerEvent(QTimerEvent *te);
@@ -224,7 +225,6 @@ private:
     QTimer m_unusedSupportPropertyTimer;
     qint64 vBlankInterval, fpsInterval;
     int m_xrrRefreshRate;
-    QElapsedTimer nextPaintReference;
     QRegion repaints_region;
 
     QTimer unredirectTimer;
@@ -233,11 +233,11 @@ private:
     bool m_finishing; // finish() sets this variable while shutting down
     bool m_starting; // start() sets this variable while starting
     qint64 m_timeSinceLastVBlank;
-    qint64 m_timeSinceStart = 0;
     Scene *m_scene;
     bool m_bufferSwapPending;
     bool m_composeAtSwapCompletion;
     int m_framesToTestForSafety = 3;
+    QElapsedTimer m_monotonicClock;
 
     // low-latency stuff
     int m_lastPaintFree=8000;

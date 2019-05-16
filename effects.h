@@ -134,6 +134,8 @@ public:
     void stopMousePolling() override;
     EffectWindow* findWindow(WId id) const override;
     EffectWindow* findWindow(KWayland::Server::SurfaceInterface *surf) const override;
+    EffectWindow *findWindow(QWindow *w) const override;
+    EffectWindow *findWindow(const QUuid &id) const override;
     EffectWindowList stackingOrder() const override;
     void setElevatedWindow(KWin::EffectWindow* w, bool set) override;
 
@@ -430,6 +432,7 @@ public:
     bool isPopupMenu() const override;
     bool isTooltip() const override;
     bool isNotification() const override;
+    bool isCriticalNotification() const override;
     bool isOnScreenDisplay() const override;
     bool isComboBox() const override;
     bool isDNDIcon() const override;
@@ -440,6 +443,7 @@ public:
     bool keepBelow() const override;
     bool isModal() const override;
     bool isPopupWindow() const override;
+    bool isOutline() const override;
 
     KWayland::Server::SurfaceInterface *surface() const override;
     bool isFullScreen() const override;
@@ -473,6 +477,8 @@ public:
 
     void referencePreviousWindowPixmap() override;
     void unreferencePreviousWindowPixmap() override;
+
+    QWindow *internalWindow() const override;
 
     const Toplevel* window() const;
     Toplevel* window();
@@ -570,7 +576,7 @@ public:
     }
     /**
      * The foreground text color as specified by the default Plasma theme.
-     */
+     **/
     QColor styledTextColor();
 
 private Q_SLOTS:

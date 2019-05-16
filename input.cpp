@@ -44,6 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "popup_input_filter.h"
 #include "shell_client.h"
 #include "wayland_server.h"
+#include "xwl/xwayland_interface.h"
 #include <KWayland/Server/display.h>
 #include <KWayland/Server/fakeinput_interface.h>
 #include <KWayland/Server/seat_interface.h>
@@ -441,7 +442,7 @@ class MoveResizeFilter : public InputEventFilter {
 public:
     bool pointerEvent(QMouseEvent *event, quint32 nativeButton) override {
         Q_UNUSED(nativeButton)
-        AbstractClient *c = workspace()->getMovingClient();
+        AbstractClient *c = workspace()->moveResizeClient();
         if (!c) {
             return false;
         }
@@ -462,10 +463,10 @@ public:
     bool wheelEvent(QWheelEvent *event) override {
         Q_UNUSED(event)
         // filter out while moving a window
-        return workspace()->getMovingClient() != nullptr;
+        return workspace()->moveResizeClient() != nullptr;
     }
     bool keyEvent(QKeyEvent *event) override {
-        AbstractClient *c = workspace()->getMovingClient();
+        AbstractClient *c = workspace()->moveResizeClient();
         if (!c) {
             return false;
         }
@@ -483,7 +484,7 @@ public:
         Q_UNUSED(id)
         Q_UNUSED(pos)
         Q_UNUSED(time)
-        AbstractClient *c = workspace()->getMovingClient();
+        AbstractClient *c = workspace()->moveResizeClient();
         if (!c) {
             return false;
         }
@@ -492,7 +493,7 @@ public:
 
     bool touchMotion(quint32 id, const QPointF &pos, quint32 time) override {
         Q_UNUSED(time)
-        AbstractClient *c = workspace()->getMovingClient();
+        AbstractClient *c = workspace()->moveResizeClient();
         if (!c) {
             return false;
         }
@@ -508,7 +509,7 @@ public:
 
     bool touchUp(quint32 id, quint32 time) override {
         Q_UNUSED(time)
-        AbstractClient *c = workspace()->getMovingClient();
+        AbstractClient *c = workspace()->moveResizeClient();
         if (!c) {
             return false;
         }
@@ -1473,7 +1474,20 @@ public:
         case QEvent::MouseMove: {
             const auto pos = input()->globalPointer();
             seat->setPointerPos(pos);
-            if (Toplevel *t = input()->pointer()->at()) {
+
+            const auto eventPos = event->globalPos();
+            // TODO: use InputDeviceHandler::at() here and check isClient()?
+            Toplevel *t = input()->findManagedToplevel(eventPos);
+            if (auto *xwl = xwayland()) {
+                const auto ret = xwl->dragMoveFilter(t, eventPos);
+                if (ret == Xwl::DragEventReply::Ignore) {
+                    return false;
+                } else if (ret == Xwl::DragEventReply::Take) {
+                    break;
+                }
+            }
+
+            if (t) {
                 // TODO: consider decorations
                 if (t->surface() != seat->dragSurface()) {
                     if (AbstractClient *c = qobject_cast<AbstractClient*>(t)) {
@@ -1670,6 +1684,13 @@ void InputRedirection::setupWorkspace()
                     [this] (const QSizeF &delta) {
                         // TODO: Fix time
                         m_pointer->processMotion(globalPointer() + QPointF(delta.width(), delta.height()), 0);
+                        waylandServer()->simulateUserActivity();
+                    }
+                );
+               connect(device, &FakeInputDevice::pointerMotionAbsoluteRequested, this,
+                    [this] (const QPointF &pos) {
+                        // TODO: Fix time
+                        m_pointer->processMotion(pos, 0);
                         waylandServer()->simulateUserActivity();
                     }
                 );
@@ -2075,6 +2096,15 @@ Toplevel *InputRedirection::findToplevel(const QPoint &pos)
             }
         }
     }
+    return findManagedToplevel(pos);
+}
+
+Toplevel *InputRedirection::findManagedToplevel(const QPoint &pos)
+{
+    if (!Workspace::self()) {
+        return nullptr;
+    }
+    const bool isScreenLocked = waylandServer() && waylandServer()->isScreenLocked();
     const ToplevelList &stacking = Workspace::self()->stackingOrder();
     if (stacking.isEmpty()) {
         return NULL;

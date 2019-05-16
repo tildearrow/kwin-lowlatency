@@ -96,12 +96,10 @@ void WobblyWindowsShadeTest::init()
 void WobblyWindowsShadeTest::cleanup()
 {
     Test::destroyWaylandConnection();
-    EffectsHandlerImpl *e = static_cast<EffectsHandlerImpl*>(effects);
-    while (!e->loadedEffects().isEmpty()) {
-        const QString effect = e->loadedEffects().first();
-        e->unloadEffect(effect);
-        QVERIFY(!e->isEffectLoaded(effect));
-    }
+
+    auto effectsImpl = static_cast<EffectsHandlerImpl *>(effects);
+    effectsImpl->unloadAllEffects();
+    QVERIFY(effectsImpl->loadedEffects().isEmpty());
 }
 
 struct XcbConnectionDeleter
@@ -162,10 +160,10 @@ void WobblyWindowsShadeTest::testShadeMove()
     QVERIFY(windowStartUserMovedResizedSpy.isValid());
 
     // begin move
-    QVERIFY(workspace()->getMovingClient() == nullptr);
+    QVERIFY(workspace()->moveResizeClient() == nullptr);
     QCOMPARE(client->isMove(), false);
     workspace()->slotWindowMove();
-    QCOMPARE(workspace()->getMovingClient(), client);
+    QCOMPARE(workspace()->moveResizeClient(), client);
     QCOMPARE(client->isMove(), true);
     QCOMPARE(windowStartUserMovedResizedSpy.count(), 1);
 

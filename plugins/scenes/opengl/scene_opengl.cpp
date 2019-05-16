@@ -90,7 +90,7 @@ extern int currentRefreshRate();
 /**
  * SyncObject represents a fence used to synchronize operations in
  * the kwin command stream with operations in the X command stream.
- */
+ **/
 class SyncObject
 {
 public:
@@ -237,7 +237,7 @@ void SyncObject::finishResetting()
 /**
  * SyncManager manages a set of fences used for explicit synchronization
  * with the X command stream.
- */
+ **/
 class SyncManager
 {
 public:
@@ -369,13 +369,16 @@ SceneOpenGL::~SceneOpenGL()
 {
     // do cleanup after initBuffer()
     gs_debuggedScene = nullptr;
-    SceneOpenGL::EffectFrame::cleanup();
-    if (init_ok) {
-        delete m_syncManager;
 
-        // backend might be still needed for a different scene
-        delete m_backend;
+    if (init_ok) {
+        makeOpenGLContextCurrent();
     }
+    SceneOpenGL::EffectFrame::cleanup();
+
+    delete m_syncManager;
+
+    // backend might be still needed for a different scene
+    delete m_backend;
 }
 
 static void scheduleVboReInit()
@@ -508,7 +511,7 @@ SceneOpenGL *SceneOpenGL::createScene(QObject *parent)
         if (GLPlatform::instance()->recommendedCompositor() == XRenderCompositing) {
             qCCritical(KWIN_OPENGL) << "OpenGL driver recommends XRender based compositing. Falling back to XRender.";
             qCCritical(KWIN_OPENGL) << "To overwrite the detection use the environment variable KWIN_COMPOSE";
-            qCCritical(KWIN_OPENGL) << "For more information see http://community.kde.org/KWin/Environment_Variables#KWIN_COMPOSE";
+            qCCritical(KWIN_OPENGL) << "For more information see https://community.kde.org/KWin/Environment_Variables#KWIN_COMPOSE";
         }
         delete backend;
     }
@@ -593,11 +596,13 @@ void SceneOpenGL::insertWait()
 /**
  * Render cursor texture in case hardware cursor is disabled.
  * Useful for screen recording apps or backends that can't do planes.
- */
+ **/
 void SceneOpenGL2::paintCursor()
 {
-    // don't paint if we use hardware cursor
-    if (!kwinApp()->platform()->usesSoftwareCursor()) {
+    // don't paint if we use hardware cursor or the cursor is hidden
+    if (!kwinApp()->platform()->usesSoftwareCursor() ||
+        kwinApp()->platform()->isCursorHidden() ||
+        kwinApp()->platform()->softwareCursor().isNull()) {
         return;
     }
 
@@ -616,7 +621,7 @@ void SceneOpenGL2::paintCursor()
         updateCursorTexture();
 
         // handle shape update on case cursor image changed
-        connect(Cursor::self(), &Cursor::cursorChanged, this, updateCursorTexture);
+        connect(kwinApp()->platform(), &Platform::cursorChanged, this, updateCursorTexture);
     }
 
     // get cursor position in projection coordinates
@@ -2430,7 +2435,12 @@ SceneOpenGLDecorationRenderer::SceneOpenGLDecorationRenderer(Decoration::Decorat
     connect(this, &Renderer::renderScheduled, client->client(), static_cast<void (AbstractClient::*)(const QRect&)>(&AbstractClient::addRepaint));
 }
 
-SceneOpenGLDecorationRenderer::~SceneOpenGLDecorationRenderer() = default;
+SceneOpenGLDecorationRenderer::~SceneOpenGLDecorationRenderer()
+{
+    if (Scene *scene = Compositor::self()->scene()) {
+        scene->makeOpenGLContextCurrent();
+    }
+}
 
 // Rotates the given source rect 90° counter-clockwise,
 // and flips it vertically

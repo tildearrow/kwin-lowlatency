@@ -28,7 +28,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <kwineffects.h>
 #include <kwineffects_export.h>
 
-
 namespace KWin
 {
 
@@ -111,8 +110,6 @@ class KWINEFFECTS_EXPORT AnimationEffect : public Effect
     Q_OBJECT
 
 public:
-    typedef QMap< EffectWindow*, QPair<QList<AniData>, QRect> > AniMap;
-
     enum Anchor { Left = 1<<0, Top = 1<<1, Right = 1<<2, Bottom = 1<<3,
                   Horizontal = Left|Right, Vertical = Top|Bottom, Mouse = 1<<4  };
     Q_ENUM(Anchor)
@@ -377,7 +374,14 @@ protected:
     virtual void genericAnimation( EffectWindow *w, WindowPaintData &data, float progress, uint meta )
     {Q_UNUSED(w); Q_UNUSED(data); Q_UNUSED(progress); Q_UNUSED(meta);}
 
-    //Internal for unit tests
+    /**
+     * @internal
+     **/
+    typedef QMap<EffectWindow *, QPair<QList<AniData>, QRect> > AniMap;
+
+    /**
+     * @internal
+     **/
     AniMap state() const;
 
 private:
@@ -389,20 +393,23 @@ private:
     void disconnectGeometryChanges();
     void updateLayerRepaints();
     void validate(Attribute a, uint &meta, FPx2 *from, FPx2 *to, const EffectWindow *w) const;
+
 private Q_SLOTS:
     void init();
     void triggerRepaint();
     void _windowClosed( KWin::EffectWindow* w );
     void _windowDeleted( KWin::EffectWindow* w );
     void _expandedGeometryChanged(KWin::EffectWindow *w, const QRect &old);
+
 private:
     static QElapsedTimer s_clock;
     AnimationEffectPrivate * const d_ptr;
     Q_DECLARE_PRIVATE(AnimationEffect)
+    Q_DISABLE_COPY(AnimationEffect)
 };
 
-
 } // namespace
+
 QDebug operator<<(QDebug dbg, const KWin::FPx2 &fpx2);
 
 Q_DECLARE_METATYPE(KWin::FPx2)

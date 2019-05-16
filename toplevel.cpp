@@ -168,10 +168,10 @@ void Toplevel::getWmClientLeader()
     readWmClientLeader(prop);
 }
 
-/*!
-  Returns sessionId for this client,
-  taken either from its window or from the leader window.
- */
+/**
+ * Returns sessionId for this client,
+ * taken either from its window or from the leader window.
+ **/
 QByteArray Toplevel::sessionId() const
 {
     QByteArray result = Xcb::StringProperty(window(), atoms->sm_client_id);
@@ -180,10 +180,10 @@ QByteArray Toplevel::sessionId() const
     return result;
 }
 
-/*!
-  Returns command property for this client,
-  taken either from its window or from the leader window.
- */
+/**
+ * Returns command property for this client,
+ * taken either from its window or from the leader window.
+ **/
 QByteArray Toplevel::wmCommand()
 {
     QByteArray result = Xcb::StringProperty(window(), XCB_ATOM_WM_COMMAND);
@@ -198,10 +198,10 @@ void Toplevel::getWmClientMachine()
     m_clientMachine->resolve(window(), wmClientLeader());
 }
 
-/*!
-  Returns client machine for this client,
-  taken either from its window or from the leader window.
-*/
+/**
+ * Returns client machine for this client,
+ * taken either from its window or from the leader window.
+ **/
 QByteArray Toplevel::wmClientMachine(bool use_localhost) const
 {
     if (!m_clientMachine) {
@@ -215,10 +215,10 @@ QByteArray Toplevel::wmClientMachine(bool use_localhost) const
     return m_clientMachine->hostName();
 }
 
-/*!
-  Returns client leader window for this client.
-  Returns the client window itself if no leader window is defined.
-*/
+/**
+ * Returns client leader window for this client.
+ * Returns the client window itself if no leader window is defined.
+ **/
 Window Toplevel::wmClientLeader() const
 {
     if (wmClientLeaderWin)

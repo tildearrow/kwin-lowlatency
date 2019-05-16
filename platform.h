@@ -174,7 +174,7 @@ public:
      *
      * Base implementation warns that the current backend does not implement this
      * functionality.
-     */
+     **/
     virtual void configurationChangeRequested(KWayland::Server::OutputConfigurationInterface *config);
 
     /**
@@ -421,14 +421,33 @@ public:
         return Outputs();
     }
 
-    /*
+    /**
      * A string of information to include in kwin debug output
      * It should not be translated.
      *
      * The base implementation prints the name.
      * @since 5.12
-     */
+     **/
     virtual QString supportInformation() const;
+
+    /**
+     * The compositor plugin which got selected from @link{supportedCompositors}.
+     * Prior to selecting a compositor this returns @c NoCompositing.
+     *
+     * This method allows the platforms to limit the offerings in @link{supportedCompositors}
+     * in case they do not support runtime compositor switching
+     **/
+    CompositingType selectedCompositor() const
+    {
+        return m_selectedCompositor;
+    }
+    /**
+     * Used by Compositor to set the used compositor.
+     **/
+    void setSelectedCompositor(CompositingType type)
+    {
+        m_selectedCompositor = type;
+    }
 
 public Q_SLOTS:
     void pointerMotion(const QPointF &position, quint32 time);
@@ -531,6 +550,7 @@ private:
     int m_hideCursorCounter = 0;
     ColorCorrect::Manager *m_colorCorrect = nullptr;
     bool m_supportsGammaControl = false;
+    CompositingType m_selectedCompositor = NoCompositing;
 };
 
 }
