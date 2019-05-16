@@ -257,15 +257,10 @@ void GlxBackend::init()
         if (useOMLInstead) {
           if (hasExtension(QByteArrayLiteral("GLX_OML_sync_control"))) {
               // we still need this extension for lowering latency.
-              unsigned int sync_ust, sync_msc, sync_sbc;
-              if (glXGetSyncValuesOML(display(),ctx,&sync_ust,&sync_msc,&sync_sbc)==0 &&
-                  glXWaitForMscOML(display(),ctx,sync_sbc+1,1,0,&sync_ust,&sync_msc,&sync_sbc)==0) {
-                  setSyncsToVBlank(true);
-                  setBlocksForRetrace(true);
-                  haveWaitSync = true;
-              } else qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitForMscOML is supported but broken";
+              setSyncsToVBlank(true);
+              setBlocksForRetrace(true);
+              haveWaitSync = true;
           } else qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitForMscOML is not supported";
-          printf("OML check over\n");
         } else {
           if (hasExtension(QByteArrayLiteral("GLX_SGI_video_sync"))) {
               // we still need this extension for lowering latency.
@@ -680,9 +675,10 @@ void GlxBackend::waitSync()
     // NOTE that vsync has no effect with indirect rendering
     if (haveWaitSync) {
       if (useOMLInstead) {
-        unsigned int sync_ust, sync_msc, sync_sbc;
-        glXGetSyncValuesOML(display(),ctx,&sync_ust,&sync_msc,&sync_sbc);
-        glXWaitForMscOML(display(),ctx,sync_sbc+1,1,0,&sync_ust,&sync_msc,&sync_sbc);
+        int64_t sync_ust, sync_msc, sync_sbc;
+        glXGetSyncValuesOML(display(),glxWindow,&sync_ust,&sync_msc,&sync_sbc);
+        printf("sbc: %ld\n",sync_sbc);
+        glXWaitForMscOML(display(),glxWindow,sync_sbc+1,1,0,&sync_ust,&sync_msc,&sync_sbc);
       } else {
         uint sync;
 #if 0
