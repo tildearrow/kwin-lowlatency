@@ -1376,6 +1376,7 @@ bool Client::shouldUnredirect() const
                 pos >= 0;
                 --pos) {
             Toplevel* c = stacking.at(pos);
+            printf("OBJ NAME: %p. MY NAME: %p\n",c,this);
             if (c == this) {  // is not covered by any other window, ok to unredirect
                 printf("I can unredirect\n");
                 return true;
