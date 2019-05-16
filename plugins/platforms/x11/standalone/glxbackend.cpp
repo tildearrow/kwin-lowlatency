@@ -208,6 +208,9 @@ void GlxBackend::init()
     glPlatform->detect(GlxPlatformInterface);
     //if (GLPlatform::instance()->driver() == Driver_Intel)
         //options->setUnredirectFullscreen(false); // bug #252817
+    if (GLPlatform::instance()->driver() == Driver_Intel) {
+      useOMLInstead=true;
+    }
     options->setGlPreferBufferSwap(options->glPreferBufferSwap()); // resolve autosetting
     if (options->glPreferBufferSwap() == Options::AutoSwapStrategy)
         options->setGlPreferBufferSwap('e'); // for unknown drivers - should not happen
@@ -251,17 +254,29 @@ void GlxBackend::init()
         } else {
           qCWarning(KWIN_X11STANDALONE) << "TEARING ALERT! unable to set swap interval";
         }
-        if (hasExtension(QByteArrayLiteral("GLX_SGI_video_sync"))) {
-            // we still need this extension for lowering latency.
-            unsigned int sync;
-            if (glXGetVideoSyncSGI(&sync) == 0 && glXWaitVideoSyncSGI(1, 0, &sync) == 0) {
-                setSyncsToVBlank(true);
-                setBlocksForRetrace(true);
-                haveWaitSync = true;
-            } else
-                qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitVideoSync is supported but broken";
-        } else
-            qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitVideoSync is not supported";
+        if (useOMLInstead) {
+          if (hasExtension(QByteArrayLiteral("GLX_OML_sync_control"))) {
+              // we still need this extension for lowering latency.
+              unsigned int sync_ust, sync_msc, sync_sbc;
+              if (glXGetSyncValuesOML(display(),ctx,&sync_ust,&sync_msc,&sync_sbc)==0 &&
+                  glXWaitForMscOML(display(),ctx,sync_sbc+1,1,0,&sync_ust,&sync_msc,&sync_sbc)==0) {
+                  setSyncsToVBlank(true);
+                  setBlocksForRetrace(true);
+                  haveWaitSync = true;
+              } else qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitForMscOML is supported but broken";
+          } else qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitForMscOML is not supported";
+          printf("OML check over\n");
+        } else {
+          if (hasExtension(QByteArrayLiteral("GLX_SGI_video_sync"))) {
+              // we still need this extension for lowering latency.
+              unsigned int sync;
+              if (glXGetVideoSyncSGI(&sync) == 0 && glXWaitVideoSyncSGI(1, 0, &sync) == 0) {
+                  setSyncsToVBlank(true);
+                  setBlocksForRetrace(true);
+                  haveWaitSync = true;
+              } else qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitVideoSync is supported but broken";
+          } else qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitVideoSync is not supported";
+       }
     } else {
         // disable v-sync (if possible)
         setSwapInterval(0);
@@ -664,6 +679,11 @@ void GlxBackend::waitSync()
 {
     // NOTE that vsync has no effect with indirect rendering
     if (haveWaitSync) {
+      if (useOMLInstead) {
+        unsigned int sync_ust, sync_msc, sync_sbc;
+        glXGetSyncValuesOML(display(),ctx,&sync_ust,&sync_msc,&sync_sbc);
+        glXWaitForMscOML(display(),ctx,sync_sbc+1,1,0,&sync_ust,&sync_msc,&sync_sbc);
+      } else {
         uint sync;
 #if 0
         // TODO: why precisely is this important?
@@ -674,6 +694,7 @@ void GlxBackend::waitSync()
 #else
         glXWaitVideoSyncSGI(1, 0, &sync);
 #endif
+      }
     }
 }
 
