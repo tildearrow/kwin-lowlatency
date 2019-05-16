@@ -1070,15 +1070,8 @@ bool Toplevel::setupCompositing()
     effect_window = new EffectWindowImpl(this);
     unredirect = false;
  
-    Compositor::self()->checkUnredirect(true);
     Compositor::self()->scene()->addToplevel(this);
-
-    // With unmanaged windows there is a race condition between the client painting the window
-    // and us setting up damage tracking.  If the client wins we won't get a damage event even
-    // though the window has been painted.  To avoid this we mark the whole window as damaged
-    // and schedule a repaint immediately after creating the damage object.
-    if (dynamic_cast<Unmanaged*>(this))
-        addDamageFull();
+    Compositor::self()->checkUnredirect(true);
 
     return true;
 }
