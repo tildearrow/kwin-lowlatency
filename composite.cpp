@@ -723,7 +723,6 @@ void Compositor::performCompositing()
     if (repaints_region.isEmpty() && !windowRepaintsPending()) {
         m_scene->idle();
         m_timeSinceLastVBlank = fpsInterval - (options->vBlankTime() + 1); // means "start now"
-        m_timeSinceStart += m_timeSinceLastVBlank;
         m_idle=true;
         // Note: It would seem here we should undo suspended unredirect, but when scenes need
         // it for some reason, e.g. transformations or translucency, the next pass that does not
