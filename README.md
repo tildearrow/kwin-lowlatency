@@ -72,6 +72,10 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 [an overlay](https://github.com/agates/kwin-lowlatency-overlay) is available, courtesy of agates.
 
+## openSUSE Tumbleweed
+
+kwin-lowlatency can be found at [home:KAMiKAZOW:KDE](https://software.opensuse.org/download.html?project=home%3AKAMiKAZOW%3AKDE&package=kwin-lowlatency) (OBS).
+
 ## other distributions/manual method
 
 you can compile/install this yourself if your distro isn't listed here (yes, I know Ubuntu is missing) or if you want to.
