@@ -208,6 +208,10 @@ void GlxBackend::init()
     glPlatform->detect(GlxPlatformInterface);
     //if (GLPlatform::instance()->driver() == Driver_Intel)
         //options->setUnredirectFullscreen(false); // bug #252817
+    // HACK! please replace with a better solution soon
+    if (GLPlatform::instance()->driver() == Driver_Intel) {
+      useHorribleHack=true; // issue #13
+    }
     options->setGlPreferBufferSwap(options->glPreferBufferSwap()); // resolve autosetting
     if (options->glPreferBufferSwap() == Options::AutoSwapStrategy)
         options->setGlPreferBufferSwap('e'); // for unknown drivers - should not happen
@@ -721,7 +725,19 @@ void GlxBackend::present()
         copyPixels(lastDamage());
         glDrawBuffer(GL_BACK);
     }
-    glFinish();
+    if (useHorribleHack) {
+      // HACK HACK HACK! please replace with a better solution soon
+      unsigned int oldSync, sync;
+      glXGetVideoSyncSGI(&sync);
+      oldSync=sync;
+      while (1) {
+        glXGetVideoSyncSGI(&sync);
+        if (sync!=oldSync) break;
+        usleep(1000);
+      }
+    } else {
+      glFinish();
+    }
 
     setLastDamage(QRegion());
     if (!supportsBufferAge()) {
