@@ -313,6 +313,7 @@ void EglGbmBackend::presentOnOutput(EglGbmBackend::Output &o)
         m_remoteaccessManager->passBuffer(o.output, o.buffer);
     }
     m_backend->present(o.buffer, o.output);
+    glFinish();
 
     if (supportsBufferAge()) {
         eglQuerySurface(eglDisplay(), o.eglSurface, EGL_BUFFER_AGE_EXT, &o.bufferAge);
