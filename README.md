@@ -24,11 +24,9 @@ you can prove this by moving a window. you'll see the cursor being ahead of the 
 
 so, how to fix this? let's ditch the timer and let us access the VBlank interval directly.
 
-but how do we do that? by using glXWaitVideoSync.
+but how do we do that? by using glFinish.
 
-the only problem is that this only works under GLX (which means no X with EGL support, OpenGL ES or Wayland support).
-
-however, this is much better than the formerly-employed DRM approach, since you don't have to deal anymore with the code if you had multiple cards.
+this is a much, **much** better solution over glXWaitVideoSyncSGI, as it achieves the same effect, doesn't have a chance of freezing under Mesa, and may work under EGL on X and Wayland.
 
 now, by doing this, we have a proper desktop without stuttering, but the input lag persists...
 
@@ -46,7 +44,7 @@ if (!blocksForRetrace()) {
 }
 ```
 
-by removing this code and simply presenting as soon as possible (we're blocking for retrace anyway due to the glXWaitVideoSync thingy), we cut off 1 whole frame of lag!
+by removing this code and simply presenting as soon as possible (we're blocking for retrace anyway due to the glFinish thingy), we cut off 1 whole frame of lag!
 
 but hey, can we go further? yes, of course!
 
@@ -59,6 +57,78 @@ the reason why only up to 8ms is because any further would leave little room for
 * perfect. it tries its best to deliver low-latency no-stutter video, but I can't promise this is always the case.
   as an example, it will stutter if you select another window, or if you have too many windows open.
 * truly designed for low-end systems. if you use KWin-lowlatency in one of them, you may experience stuttering.
+
+# installation
+
+## Arch Linux
+
+[kwin-lowlatency is available in the AUR](https://aur.archlinux.org/packages/kwin-lowlatency).
+
+## Fedora
+
+ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracloud.org/coprs/zawertun/kde/package/kwin-lowlatency/).
+
+## Gentoo
+
+[an overlay](https://github.com/agates/kwin-lowlatency-overlay) is available, courtesy of agates.
+
+## other distributions/manual method
+
+you can compile/install this yourself if your distro isn't listed here (yes, I know Ubuntu is missing) or if you want to.
+
+### acquiring the source
+
+you can get the source code by using any of the following 2 methods:
+
+#### git repo clone
+
+```
+$ git clone https://github.com/tildearrow/kwin-lowlatency.git
+$ cd kwin-lowlatency
+```
+
+you may want to check the current stable version out:
+
+```
+$ git checkout v5.15.5
+```
+
+#### patch format
+
+download stock KWin source and patch file:
+
+```
+$ wget https://download.kde.org/stable/plasma/5.15.5/kwin-5.15.5.tar.xz
+$ wget http://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.15.5.patch
+```
+
+extract:
+
+```
+$ tar -xvf kwin-5.15.5.tar.xz
+```
+
+patch:
+
+```
+$ cd kwin-5.15.5
+$ patch -p1 < ../kwin-lowlatency-5.15.5.patch
+```
+
+### building
+
+```
+$ mkdir build
+$ cd build
+$ cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_INSTALL_LIBEXECDIR=lib -DBUILD_TESTING=OFF
+$ make
+```
+
+### installing
+
+```
+$ sudo make install
+```
 
 # contacting original KWin development team
 
