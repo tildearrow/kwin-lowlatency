@@ -704,7 +704,7 @@ void GlxBackend::present()
                 }
             }
         } else {
-            waitSync();
+            //waitSync();
             glXSwapBuffers(display(), glxWindow);
         }
         if (supportsBufferAge()) {
@@ -721,7 +721,7 @@ void GlxBackend::present()
         copyPixels(lastDamage());
         glDrawBuffer(GL_BACK);
     }
-    waitSync();
+    glFinish();
 
     setLastDamage(QRegion());
     if (!supportsBufferAge()) {
