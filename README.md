@@ -4,7 +4,7 @@ KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KW
 
 ## background
 
-stock KWin has a major issue regarding stuttering. it stutters heavily, and if you don't want that, then you have the input latency problem (of up to 50ms!).
+stock KWin has a major issue regarding stuttering. it stutters heavily, and if you don't want that, then you have the latency problem (of up to 50ms!).
 
 the rationale for such a problem is that KWin uses a weird method to paint the screen.
 instead of simply sync'ing to vblank, it uses a timer. yeah, a **timer** that is off-sync with the vblank interval.
@@ -19,7 +19,7 @@ RefreshRate=200
 
 effectively making the timer faster than the actual screen's rate, forcing VSync at some point.
 
-however, this introduces additional input lag, which varies depending on your driver, but usually it's 50ms (still too high).
+however, this introduces additional output lag, which varies depending on your driver, but usually it's 50ms (still too high).
 you can prove this by moving a window. you'll see the cursor being ahead of the title bar, or at least so under X.
 
 so, how to fix this? let's ditch the timer and let us access the VBlank interval directly.
@@ -28,7 +28,7 @@ but how do we do that? by using glFinish.
 
 this is a much, **much** better solution over glXWaitVideoSyncSGI, as it achieves the same effect, doesn't have a chance of freezing under Mesa, and may work under EGL on X and Wayland.
 
-now, by doing this, we have a proper desktop without stuttering, but the input lag persists...
+now, by doing this, we have a proper desktop without stuttering, but the output lag persists...
 
 after digging deep into the code, i found this piece of code in particular, which is pretty much the culprit:
 
@@ -48,7 +48,7 @@ by removing this code and simply presenting as soon as possible (we're blocking 
 
 but hey, can we go further? yes, of course!
 
-now, by sleeping for a very few milliseconds (up to 8 in high-end systems) the compositor has more time for user input before rendering, which further reduces input lag.
+now, by sleeping for a very few milliseconds (up to 8 in high-end systems) the compositor has more time for user input before rendering, which further reduces latency.
 
 the reason why only up to 8ms is because any further would leave little room for rendering, and that will actually produce more stuttering than fix it.
 
@@ -156,7 +156,7 @@ it basically redraws the cursor. this may seem redundant, but actually is helpfu
 
 > will this work under Wayland?
 
-no, it won't. it hasn't been done yet, since there's no way to ensure every retrace will wait for VBlank (especially on Mesa)... and although I could use DRM VBlank waiting there, it won't work on NVIDIA. sorry.
+no, it won't, but I am working on it. so far using DRM VBlank only showed negative results, with applications running at half speed. now i'm trying again with glFinish and friends...
 
 > i'm using the `modesetting` driver (instead of the `amdgpu` DDX driver) under an AMD card, and can see some latency. how do I fix this?
 
@@ -167,7 +167,7 @@ an option will come soon.
 at this moment, not really:
 
 - i still can't ensure this will work everywhere (but it should).
-- eventually I am merging the unredirect branch, which is a feature the KDE devs definitely [don't want to see in upstream](https://blog.martin-graesslin.com/blog/2016/08/opengl-changes-in-kwin-compositing/) since they have another "approach" (allow apps to block compositing).
+- this patchset brings full-screen unredirection back, which is a feature the KDE devs definitely [don't want to see in upstream](https://blog.martin-graesslin.com/blog/2016/08/opengl-changes-in-kwin-compositing/) since they have another "approach" (allow apps to block compositing).
   - the problem with their approach is that it means every app must support it in order to work, which is something not every app does. on the other hand, unredirection works for most apps, and doesn't require developers to change their code for it to work.
   - another problem is that instead of suspending compositing, it **disables** compositing. this means you get to see a few frames of an ugly desktop when the app quits. this doesn't happen with unredirection.
 - furthermore, this also brings back "close" option in Present Windows, which once again the KDE devs despise.
