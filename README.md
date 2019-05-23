@@ -28,7 +28,7 @@ but how do we do that? by using glFinish.
 
 this is a much, **much** better solution over glXWaitVideoSyncSGI, as it achieves the same effect, doesn't have a chance of freezing under Mesa, and may work under EGL on X and Wayland.
 
-now, by doing this, we have a proper desktop without stuttering, but the output lag persists...
+now, by doing this, we have a proper desktop without stuttering, but the lag persists...
 
 after digging deep into the code, i found this piece of code in particular, which is pretty much the culprit:
 
@@ -148,6 +148,10 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
 - maximum/minimum latency reduction: allows you to configure the latency reduction window. examples (min/max): 8/0 default, 0/0 disable latency reduction, and 8/8 lowest latency possible. this is limited to 8ms, since any further would cause major stuttering and slowdowns.
 
 # misc/FAQ
+
+> Ubuntu Ubuntu Ubuntu
+
+i'm working on it...
 
 > what's this "Paint cursor" effect in Desktop Effects?
 
