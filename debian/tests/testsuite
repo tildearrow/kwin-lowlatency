@@ -1,0 +1,11 @@
+#!/bin/sh
+#if [ -z "$HOME" ] || [ ! -d "$HOME" ]; then
+    [ -e debian/tests.home ] || mkdir debian/tests.home
+    export HOME="$(pwd)/debian/tests.home"
+    trap "rm -rf debian/tests.home" EXIT
+#fi
+mkdir -p "$HOME"/.config || true
+mkdir -p "$HOME"/.kde-unit-test || true
+
+xvfb-run -a --server-args="-screen 0 1024x768x24" \
+    dbus-run-session -- debian/tests/testsuite.xsession

@@ -1,0 +1,5 @@
+kwin (4:5.15.6-1ta1) disco; urgency=medium
+
+  * kwin-lowlatency 5.15.6
+
+ -- tildearrow <acc12345acc@gmail.com>  Thu, 23 May 2019 14:10:46 -0500
