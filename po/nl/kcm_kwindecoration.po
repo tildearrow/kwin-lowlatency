@@ -1,0 +1,206 @@
+# translation of kcmkwindecoration.po to Dutch
+# translation of kcmkwindecoration.po to
+# Copyright (C) 2001, 2002 KDE e.v..
+# translation of kcmkwindecoration.po to
+# Nederlandse vertaling van kcmkwindecoration
+# KDE-vertaalgroep Nederlands <www.kde.nl>
+# Rinse de Vries <Rinse@kde.nl>, 2001, 2002.
+# Nagelezen door Peter Bosch <peter.bosch@hccnet.nl>, 2002.
+# Rinse de Vries <rinse@kde.nl>, 2003, 2004.
+# Wilbert Berendsen <wbsoft@xs4all.nl>, 2003.
+# Rinse de Vries <rinsedevries@kde.nl>, 2004, 2005, 2007.
+# Tom Albers <tomalbers@kde.nl>, 2004.
+# Kristof Bal <kristof.bal@gmail.com>, 2008.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2009, 2010, 2012, 2013, 2014, 2015, 2018, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2019-03-18 07:59+0100\n"
+"PO-Revision-Date: 2019-01-12 10:31+0100\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 18.12.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Menu"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Menu van toepassing"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "Op alle bureaubladen"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Minimaliseren"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Maximaliseren"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Sluiten"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Contexthelp"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Oprollen"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Altijd op achtergrond"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Altijd op voorgrond"
+
+#: kcm.cpp:142
+#, kde-format
+msgid ""
+"Close by double clicking:\n"
+" To open the menu, keep the button pressed until it appears."
+msgstr ""
+"Sluiten door dubbel te klikken:\n"
+" Houd, om het menu te openen, de knop ingedrukt totdat deze verschijnt."
+
+#. i18n: ectx: attribute (title), widget (QWidget, theTab)
+#: kcm.ui:21
+#, kde-format
+msgid "Theme"
+msgstr "Thema"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, filter)
+#: kcm.ui:29
+#, kde-format
+msgid "Search..."
+msgstr "Zoeken..."
+
+#. i18n: ectx: property (text), widget (QCheckBox, closeWindowsDoubleClick)
+#: kcm.ui:44
+#, kde-format
+msgid "Close windows by double clicking &the menu button"
+msgstr "Vensters &sluiten door te dubbelklikken op de menuknop"
+
+#. i18n: ectx: property (text), widget (QLabel, borderSizesLabel)
+#: kcm.ui:72
+#, kde-format
+msgid "Border si&ze:"
+msgstr "Rand&grootte:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:86
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "No Borders"
+msgstr "Geen randen"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:91
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "No Side Borders"
+msgstr "Geen zijranden"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:96
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Tiny"
+msgstr "Heel klein"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:101
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Normal"
+msgstr "Normaal"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:106
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Large"
+msgstr "Groot"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:111
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Very Large"
+msgstr "Erg groot"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:116
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Huge"
+msgstr "Enorm"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:121
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Very Huge"
+msgstr "Extra enorm"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:126
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Oversized"
+msgstr "Veel te groot"
+
+#. i18n: ectx: property (text), widget (QPushButton, knsButton)
+#: kcm.ui:150
+#, kde-format
+msgid "Get New Window Decorations..."
+msgstr "Nieuwe vensterdecoraties ophalen..."
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: kcm.ui:160
+#, kde-format
+msgid "Buttons"
+msgstr "Knoppen"
+
+#: qml/Buttons.qml:73
+#, kde-format
+msgid "Titlebar"
+msgstr "Titelbalk"
+
+#: qml/Buttons.qml:202
+#, kde-format
+msgid "Drop here to remove button"
+msgstr "Hier laten vallen om knop te verwijderen"
+
+#: qml/Buttons.qml:227
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Versleep knoppen tussen hier en de titelbalk"
+
+#: qml/Previews.qml:146
+#, kde-format
+msgid "Configure %1..."
+msgstr "%1 configureren..."

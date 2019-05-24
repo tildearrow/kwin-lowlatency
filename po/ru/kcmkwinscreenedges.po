@@ -1,0 +1,245 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Alexander Potashev <aspotashev@gmail.com>, 2009, 2010, 2014, 2016, 2017, 2018.
+# Nick Shaforostoff <shaforostoff@kde.ru>, 2009.
+# Nick Shaforostoff <shafff@ukr.net>, 2009, 2010.
+# Andrey Cherepanov <skull@kde.ru>, 2009.
+# Yuri Efremov <yur.arh@gmail.com>, 2012.
+# Alexander Lakhin <exclusion@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2019-03-18 07:59+0100\n"
+"PO-Revision-Date: 2018-01-31 05:45+0300\n"
+"Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Александр Поташев"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "aspotashev@gmail.com"
+
+#: main.cpp:190 touch.cpp:131
+#, kde-format
+msgid "No Action"
+msgstr "Ничего не делать"
+
+#: main.cpp:191 touch.cpp:132
+#, kde-format
+msgid "Show Desktop"
+msgstr "Показать рабочий стол"
+
+#: main.cpp:192 touch.cpp:133
+#, kde-format
+msgid "Lock Screen"
+msgstr "Заблокировать экран"
+
+#: main.cpp:193 touch.cpp:134
+#, kde-format
+msgctxt "Open krunner"
+msgid "Run Command"
+msgstr "Выполнить команду"
+
+#: main.cpp:194 touch.cpp:135
+#, kde-format
+msgid "Activity Manager"
+msgstr "Диспетчер комнат"
+
+#: main.cpp:195 touch.cpp:136
+#, kde-format
+msgid "Application Launcher"
+msgstr "Меню запуска приложений"
+
+#: main.cpp:199 touch.cpp:140
+#, kde-format
+msgid "%1 - All Desktops"
+msgstr "%1 — Все рабочие столы"
+
+#: main.cpp:200 touch.cpp:141
+#, kde-format
+msgid "%1 - Current Desktop"
+msgstr "%1 — Текущий рабочий стол"
+
+#: main.cpp:201 touch.cpp:142
+#, kde-format
+msgid "%1 - Current Application"
+msgstr "%1 — Текущее приложение"
+
+#: main.cpp:204 touch.cpp:145
+#, kde-format
+msgid "%1 - Cube"
+msgstr "%1 — Куб"
+
+#: main.cpp:205 touch.cpp:146
+#, kde-format
+msgid "%1 - Cylinder"
+msgstr "%1 — Цилиндр"
+
+#: main.cpp:206 touch.cpp:147
+#, kde-format
+msgid "%1 - Sphere"
+msgstr "%1 — Сфера"
+
+#: main.cpp:208 touch.cpp:149
+#, kde-format
+msgid "Toggle window switching"
+msgstr "Вызвать переключение окон"
+
+#: main.cpp:209 touch.cpp:150
+#, kde-format
+msgid "Toggle alternative window switching"
+msgstr "Вызвать альтернативное переключение"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: main.ui:17
+#, kde-format
+msgid "Active Screen Corners and Edges"
+msgstr "Действия для краёв экрана"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: main.ui:36
+#, kde-format
+msgid ""
+"Trigger an action by pushing the mouse cursor against the corresponding "
+"screen edge or corner"
+msgstr ""
+"Для выбора действия, выполняемого при подведении мыши к какому-либо краю или "
+"углу экрана, нажмите в соответствующем месте мини-экрана."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: main.ui:52
+#, kde-format
+msgid "Window Management"
+msgstr "Управление окнами"
+
+#. i18n: ectx: property (text), widget (QCheckBox, quickMaximizeBox)
+#: main.ui:58
+#, kde-format
+msgid "Maximize windows by dragging them to the top edge of the screen"
+msgstr "Растягивать окно при перемещении его к верхнему краю экрана"
+
+#. i18n: ectx: property (text), widget (QCheckBox, quickTileBox)
+#: main.ui:65
+#, kde-format
+msgid "Tile windows by dragging them to the left or right edges of the screen"
+msgstr "Растягивать окно наполовину при перемещении его к боковому краю экрана"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: main.ui:93
+#, kde-format
+msgid "Quarter tiling triggered in the outer"
+msgstr "Укладывать в четверть в крайних"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, electricBorderCornerRatio)
+#: main.ui:106
+#, no-c-format, kde-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: main.ui:122
+#, kde-format
+msgid "of the screen"
+msgstr "экрана"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: main.ui:150
+#, kde-format
+msgid "Other Settings"
+msgstr "Задержки"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, desktopSwitchLabel)
+#: main.ui:162
+#, kde-format
+msgid ""
+"Change desktop when the mouse cursor is pushed against the edge of the screen"
+msgstr ""
+"Переход на другой рабочий стол при подведении курсора мыши к краю экрана"
+
+#. i18n: ectx: property (text), widget (QLabel, desktopSwitchLabel)
+#: main.ui:165
+#, kde-format
+msgid "&Switch desktop on edge:"
+msgstr "&Смена рабочего стола при движении мыши за край экрана:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:176
+#, kde-format
+msgctxt "Switch desktop on edge"
+msgid "Disabled"
+msgstr "Отключена"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:181
+#, kde-format
+msgid "Only When Moving Windows"
+msgstr "Только при перемещении окна"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:186
+#, kde-format
+msgid "Always Enabled"
+msgstr "Всегда"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label)
+#: main.ui:194
+#, kde-format
+msgid ""
+"Amount of time required for the mouse cursor to be pushed against the edge "
+"of the screen before the action is triggered"
+msgstr "Задержка между подведением к краю экрана и выполнением действия."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: main.ui:197
+#, kde-format
+msgid "Activation &delay:"
+msgstr "&Задержка перед реакцией на подведение мыши к краю экрана:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, activationDelaySpin)
+#. i18n: ectx: property (suffix), widget (QSpinBox, triggerCooldownSpin)
+#: main.ui:207 main.ui:242
+#, kde-format
+msgid " ms"
+msgstr " мс"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label_2)
+#: main.ui:226
+#, kde-format
+msgid ""
+"Amount of time required after triggering an action until the next trigger "
+"can occur"
+msgstr ""
+"Задержка между выполнением действий при подведении курсора мыши к краю экрана"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: main.ui:229
+#, kde-format
+msgid "&Reactivation delay:"
+msgstr "&Задержка перед повторной реакцией:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: touch.ui:36
+#, kde-format
+msgid ""
+"Trigger an action by swiping from the screen edge towards the center of the "
+"screen"
+msgstr ""
+"Для выполнения действия проведите по экрану от соответствующего края к "
+"центру экрана."

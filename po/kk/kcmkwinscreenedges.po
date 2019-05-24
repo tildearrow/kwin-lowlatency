@@ -1,0 +1,250 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sairan Kikkarin <sairan@computer.org>, 2010, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2019-03-18 07:59+0100\n"
+"PO-Revision-Date: 2013-10-04 02:08+0600\n"
+"Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
+"Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Сайран Киккарин"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sairan@computer.org"
+
+#: main.cpp:190 touch.cpp:131
+#, kde-format
+msgid "No Action"
+msgstr "Әрекет жоқ"
+
+#: main.cpp:191 touch.cpp:132
+#, kde-format
+msgid "Show Desktop"
+msgstr "Үстелді көрсету"
+
+#: main.cpp:192 touch.cpp:133
+#, kde-format
+msgid "Lock Screen"
+msgstr "Экранды бұғаттау"
+
+#: main.cpp:193 touch.cpp:134
+#, kde-format
+msgctxt "Open krunner"
+msgid "Run Command"
+msgstr ""
+
+#: main.cpp:194 touch.cpp:135
+#, kde-format
+msgid "Activity Manager"
+msgstr ""
+
+#: main.cpp:195 touch.cpp:136
+#, kde-format
+msgid "Application Launcher"
+msgstr ""
+
+#: main.cpp:199 touch.cpp:140
+#, fuzzy, kde-format
+#| msgid "All Desktops"
+msgid "%1 - All Desktops"
+msgstr "Барлық үстелдер"
+
+#: main.cpp:200 touch.cpp:141
+#, fuzzy, kde-format
+#| msgid "Current Desktop"
+msgid "%1 - Current Desktop"
+msgstr "Назардағы үстел"
+
+#: main.cpp:201 touch.cpp:142
+#, fuzzy, kde-format
+#| msgid "Current Application"
+msgid "%1 - Current Application"
+msgstr "Назардағы қолданба"
+
+#: main.cpp:204 touch.cpp:145
+#, fuzzy, kde-format
+#| msgid "Cube"
+msgid "%1 - Cube"
+msgstr "Текше"
+
+#: main.cpp:205 touch.cpp:146
+#, fuzzy, kde-format
+#| msgid "Cylinder"
+msgid "%1 - Cylinder"
+msgstr "Цилиндр"
+
+#: main.cpp:206 touch.cpp:147
+#, fuzzy, kde-format
+#| msgid "Sphere"
+msgid "%1 - Sphere"
+msgstr "Сфера"
+
+#: main.cpp:208 touch.cpp:149
+#, kde-format
+msgid "Toggle window switching"
+msgstr "Терезеге ауысуы"
+
+#: main.cpp:209 touch.cpp:150
+#, kde-format
+msgid "Toggle alternative window switching"
+msgstr "Баламалы терезеге ауысуы"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: main.ui:17
+#, fuzzy, kde-format
+#| msgid "Active Screen Edge Actions"
+msgid "Active Screen Corners and Edges"
+msgstr "Белсенді экран шетінің әрекеттері"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: main.ui:36
+#, fuzzy, kde-format
+#| msgid ""
+#| "To trigger an action push your mouse cursor against the edge of the "
+#| "screen in the action's direction."
+msgid ""
+"Trigger an action by pushing the mouse cursor against the corresponding "
+"screen edge or corner"
+msgstr ""
+"Әрекетті істеу үшін тышқанның меңзерін керек бағыттағы экранның шетіне апару "
+"керек."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: main.ui:52
+#, kde-format
+msgid "Window Management"
+msgstr "Терезе басқаруы"
+
+#. i18n: ectx: property (text), widget (QCheckBox, quickMaximizeBox)
+#: main.ui:58
+#, fuzzy, kde-format
+#| msgid "Maximize windows by dragging them to the top of the screen"
+msgid "Maximize windows by dragging them to the top edge of the screen"
+msgstr "Терезені кеңейту үшін экранның жоғарына тарту"
+
+#. i18n: ectx: property (text), widget (QCheckBox, quickTileBox)
+#: main.ui:65
+#, fuzzy, kde-format
+#| msgid "Tile windows by dragging them to the side of the screen"
+msgid "Tile windows by dragging them to the left or right edges of the screen"
+msgstr "Терезелерді қатарлап қою үшін экранның бүйір шетіне тарту"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: main.ui:93
+#, kde-format
+msgid "Quarter tiling triggered in the outer"
+msgstr "Сырттағыда ширектеп қатарлауы"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, electricBorderCornerRatio)
+#: main.ui:106
+#, no-c-format, kde-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: main.ui:122
+#, kde-format
+msgid "of the screen"
+msgstr "экрандан"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: main.ui:150
+#, kde-format
+msgid "Other Settings"
+msgstr "Басқа параметрлері"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, desktopSwitchLabel)
+#: main.ui:162
+#, kde-format
+msgid ""
+"Change desktop when the mouse cursor is pushed against the edge of the screen"
+msgstr "Басқа үстелге ауысу үшін тышқанның меңзерін экранның шетіне апару"
+
+#. i18n: ectx: property (text), widget (QLabel, desktopSwitchLabel)
+#: main.ui:165
+#, kde-format
+msgid "&Switch desktop on edge:"
+msgstr "Шетіне апарып үстелді &ауыстыру:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:176
+#, kde-format
+msgctxt "Switch desktop on edge"
+msgid "Disabled"
+msgstr "Бұғатталған"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:181
+#, kde-format
+msgid "Only When Moving Windows"
+msgstr "Терезелерді жылжытқанда ғана"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:186
+#, kde-format
+msgid "Always Enabled"
+msgstr "Әрқашан рұқсат етілген"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label)
+#: main.ui:194
+#, kde-format
+msgid ""
+"Amount of time required for the mouse cursor to be pushed against the edge "
+"of the screen before the action is triggered"
+msgstr ""
+"Әрекет орындалу үшін тышқанның меңзерін экранның шетіне апарып ұстайтын уақыт"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: main.ui:197
+#, kde-format
+msgid "Activation &delay:"
+msgstr "Белсендететін &кідіріс:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, activationDelaySpin)
+#. i18n: ectx: property (suffix), widget (QSpinBox, triggerCooldownSpin)
+#: main.ui:207 main.ui:242
+#, kde-format
+msgid " ms"
+msgstr " мсек"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label_2)
+#: main.ui:226
+#, kde-format
+msgid ""
+"Amount of time required after triggering an action until the next trigger "
+"can occur"
+msgstr "Келесі әрекет басталу үшін қанша уақыт өту керек"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: main.ui:229
+#, kde-format
+msgid "&Reactivation delay:"
+msgstr "К&елесі әрекетінің кідіруі:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: touch.ui:36
+#, fuzzy, kde-format
+#| msgid ""
+#| "To trigger an action push your mouse cursor against the edge of the "
+#| "screen in the action's direction."
+msgid ""
+"Trigger an action by swiping from the screen edge towards the center of the "
+"screen"
+msgstr ""
+"Әрекетті істеу үшін тышқанның меңзерін керек бағыттағы экранның шетіне апару "
+"керек."

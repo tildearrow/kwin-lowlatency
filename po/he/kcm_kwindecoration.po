@@ -1,0 +1,209 @@
+# translation of kcmkwindecoration.po to Hebrew
+# KDE Hebrew Localization Project
+# Translation of kcmkwindecoration.po into Hebrew
+#
+# In addition to the copyright owners of the program
+# which this translation accompanies, this translation is
+# Copyright (C) 2001-2002 Meni Livne <livne@kde.org>
+#
+# This translation is subject to the same Open Source
+# license as the program which it accompanies.
+#
+# Diego Iastrubni <elcuco@kde.org>, 2004.
+# Diego Iastrubni <elcuco@kde.org>, 2005, 2006, 2008, 2012, 2013.
+# elkana bardugo <ttv200@gmail.com>, 2016.
+# Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2019-03-18 07:59+0100\n"
+"PO-Revision-Date: 2017-05-16 06:53-0400\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "תפריט"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "תפריט יישום"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "בכל השולחנות עבודה"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "מזער"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "הגדל"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "סגור"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "לחצן עזרה"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "גלול"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "שמור תמיד מתחת לאחרים"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "שמור מעל אחרים"
+
+#: kcm.cpp:142
+#, kde-format
+msgid ""
+"Close by double clicking:\n"
+" To open the menu, keep the button pressed until it appears."
+msgstr ""
+"סגור באמצעות לחיצה כפולה:\n"
+"לפתיחת התפריט, שמור על הכפתור לחוץ על שהתפריט מופיע"
+
+#. i18n: ectx: attribute (title), widget (QWidget, theTab)
+#: kcm.ui:21
+#, kde-format
+msgid "Theme"
+msgstr "ערכת נושא"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, filter)
+#: kcm.ui:29
+#, fuzzy, kde-format
+#| msgid "Search"
+msgid "Search..."
+msgstr "חפש"
+
+#. i18n: ectx: property (text), widget (QCheckBox, closeWindowsDoubleClick)
+#: kcm.ui:44
+#, kde-format
+msgid "Close windows by double clicking &the menu button"
+msgstr "סגור חלונות על ידי לחיצה כפולה על תפריט החלון"
+
+#. i18n: ectx: property (text), widget (QLabel, borderSizesLabel)
+#: kcm.ui:72
+#, kde-format
+msgid "Border si&ze:"
+msgstr "גודל מסגרת: "
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:86
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "No Borders"
+msgstr "ללא מסגרת"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:91
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "No Side Borders"
+msgstr "ללא גבולות צד"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:96
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Tiny"
+msgstr "פצפון"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:101
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Normal"
+msgstr "רגיל"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:106
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Large"
+msgstr "גדול"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:111
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Very Large"
+msgstr "גדול מאוד"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:116
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Huge"
+msgstr "ענק"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:121
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Very Huge"
+msgstr "ענק מאוד"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:126
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Oversized"
+msgstr "גדול מדי"
+
+#. i18n: ectx: property (text), widget (QPushButton, knsButton)
+#: kcm.ui:150
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgid "Get New Window Decorations..."
+msgstr "קבל קישוטים חדשים..."
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: kcm.ui:160
+#, kde-format
+msgid "Buttons"
+msgstr "כפתורים"
+
+#: qml/Buttons.qml:73
+#, kde-format
+msgid "Titlebar"
+msgstr "שורת הכותרת"
+
+#: qml/Buttons.qml:202
+#, kde-format
+msgid "Drop here to remove button"
+msgstr "שחרר כאן כדי להסיר כפתור"
+
+#: qml/Buttons.qml:227
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "גרור בין כאן לשורת הכותרת"
+
+#: qml/Previews.qml:146
+#, kde-format
+msgid "Configure %1..."
+msgstr ""

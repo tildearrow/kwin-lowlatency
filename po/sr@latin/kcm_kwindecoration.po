@@ -1,0 +1,202 @@
+# Translation of kcmkwindecoration.po into Serbian.
+# Toplica Tanaskovic <toptan@kde.org.yu>, 2003, 2004.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2005, 2007, 2008, 2009, 2010, 2012, 2013, 2014, 2015.
+# Dalibor Djuric <daliborddjuric@gmail.com>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2019-03-18 07:59+0100\n"
+"PO-Revision-Date: 2015-10-14 18:13+0200\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Associated-UI-Catalogs: kwidgetsaddons5_qt\n"
+"X-Environment: kde\n"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Meni"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Meni programa"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "Na sve površi"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Minimizuj"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Maksimizuj"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Zatvori"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Kontekstna pomoć"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Namotaj"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Drži ispod"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Drži iznad"
+
+#: kcm.cpp:142
+#, kde-format
+msgid ""
+"Close by double clicking:\n"
+" To open the menu, keep the button pressed until it appears."
+msgstr ""
+"Zatvorite dvoklikom.\n"
+"Da otvorite meni, držite dugme pritisnuto dok se ne pojavi."
+
+#. i18n: ectx: attribute (title), widget (QWidget, theTab)
+#: kcm.ui:21
+#, kde-format
+msgid "Theme"
+msgstr "Tema"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, filter)
+#: kcm.ui:29
+#, fuzzy, kde-format
+#| msgid "Search"
+msgid "Search..."
+msgstr "Traži"
+
+#. i18n: ectx: property (text), widget (QCheckBox, closeWindowsDoubleClick)
+#: kcm.ui:44
+#, kde-format
+msgid "Close windows by double clicking &the menu button"
+msgstr "Zatvori prozor dvoklikom na &dugme menija"
+
+#. i18n: ectx: property (text), widget (QLabel, borderSizesLabel)
+#: kcm.ui:72
+#, kde-format
+msgid "Border si&ze:"
+msgstr "Veličina &ivica:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:86
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "No Borders"
+msgstr "bez ivica"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:91
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "No Side Borders"
+msgstr "bez bočnih ivica"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:96
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Tiny"
+msgstr "sićušne"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:101
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Normal"
+msgstr "normalne"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:106
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Large"
+msgstr "velike"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:111
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Very Large"
+msgstr "vrlo velike"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:116
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Huge"
+msgstr "ogromne"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:121
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Very Huge"
+msgstr "vrlo ogromne"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:126
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Oversized"
+msgstr "neizmerne"
+
+#. i18n: ectx: property (text), widget (QPushButton, knsButton)
+#: kcm.ui:150
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgid "Get New Window Decorations..."
+msgstr "Dobavi nove dekoracije..."
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: kcm.ui:160
+#, kde-format
+msgid "Buttons"
+msgstr "Dugmad"
+
+#: qml/Buttons.qml:73
+#, kde-format
+msgid "Titlebar"
+msgstr "Naslovna traka"
+
+#: qml/Buttons.qml:202
+#, kde-format
+msgid "Drop here to remove button"
+msgstr "Uklonite dugme ispuštanjem ovde."
+
+#: qml/Buttons.qml:227
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Prevlačite dugmad između ovog mesta i naslovne trake."
+
+#: qml/Previews.qml:146
+#, kde-format
+msgid "Configure %1..."
+msgstr ""

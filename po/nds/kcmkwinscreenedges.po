@@ -1,0 +1,246 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Sönke Dibbern <s_dibbern@web.de>, 2009, 2014.
+# Manfred Wiese <m.j.wiese@web.de>, 2010, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwinscreenedges\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2019-03-18 07:59+0100\n"
+"PO-Revision-Date: 2014-04-30 14:22+0200\n"
+"Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
+"Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sönke Dibbern"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "s_dibbern@web.de"
+
+#: main.cpp:190 touch.cpp:131
+#, kde-format
+msgid "No Action"
+msgstr "Keen Akschoon"
+
+#: main.cpp:191 touch.cpp:132
+#, kde-format
+msgid "Show Desktop"
+msgstr "Schriefdisch wiesen"
+
+#: main.cpp:192 touch.cpp:133
+#, kde-format
+msgid "Lock Screen"
+msgstr "Schirm afsluten"
+
+#: main.cpp:193 touch.cpp:134
+#, kde-format
+msgctxt "Open krunner"
+msgid "Run Command"
+msgstr ""
+
+#: main.cpp:194 touch.cpp:135
+#, kde-format
+msgid "Activity Manager"
+msgstr ""
+
+#: main.cpp:195 touch.cpp:136
+#, kde-format
+msgid "Application Launcher"
+msgstr ""
+
+#: main.cpp:199 touch.cpp:140
+#, kde-format
+msgid "%1 - All Desktops"
+msgstr "%1 - All Schriefdischen"
+
+#: main.cpp:200 touch.cpp:141
+#, kde-format
+msgid "%1 - Current Desktop"
+msgstr "%1 - Aktuell Schriefdisch"
+
+#: main.cpp:201 touch.cpp:142
+#, kde-format
+msgid "%1 - Current Application"
+msgstr "%1 - Aktuell Programm"
+
+#: main.cpp:204 touch.cpp:145
+#, kde-format
+msgid "%1 - Cube"
+msgstr "%1 - Wörpel"
+
+#: main.cpp:205 touch.cpp:146
+#, kde-format
+msgid "%1 - Cylinder"
+msgstr "%1 - Zylinner"
+
+#: main.cpp:206 touch.cpp:147
+#, kde-format
+msgid "%1 - Sphere"
+msgstr "%1 - Kugel"
+
+#: main.cpp:208 touch.cpp:149
+#, kde-format
+msgid "Toggle window switching"
+msgstr "Finsterwesseln utlösen"
+
+#: main.cpp:209 touch.cpp:150
+#, kde-format
+msgid "Toggle alternative window switching"
+msgstr "Anner Finsterwesseln utlösen"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: main.ui:17
+#, fuzzy, kde-format
+#| msgid "Active Screen Edge Actions"
+msgid "Active Screen Corners and Edges"
+msgstr "Schirmkant-Akschonen"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: main.ui:36
+#, fuzzy, kde-format
+#| msgid ""
+#| "To trigger an action push your mouse cursor against the edge of the "
+#| "screen in the action's direction."
+msgid ""
+"Trigger an action by pushing the mouse cursor against the corresponding "
+"screen edge or corner"
+msgstr ""
+"Fohr mit de Muus gegen de Schirmkant in de Akschoon ehr Richt, wenn Du en "
+"Akschoon utlösen wullt"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: main.ui:52
+#, kde-format
+msgid "Window Management"
+msgstr "Finsterpleeg"
+
+#. i18n: ectx: property (text), widget (QCheckBox, quickMaximizeBox)
+#: main.ui:58
+#, fuzzy, kde-format
+#| msgid "Maximize windows by dragging them to the top of the screen"
+msgid "Maximize windows by dragging them to the top edge of the screen"
+msgstr "Finstern dör Trecken na baven maximeren"
+
+#. i18n: ectx: property (text), widget (QCheckBox, quickTileBox)
+#: main.ui:65
+#, fuzzy, kde-format
+#| msgid "Tile windows by dragging them to the side of the screen"
+msgid "Tile windows by dragging them to the left or right edges of the screen"
+msgstr "Finstern dör Trecken na de Schirmkant kacheln"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: main.ui:93
+#, kde-format
+msgid "Quarter tiling triggered in the outer"
+msgstr "Viddelkacheln in de butenliggen"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, electricBorderCornerRatio)
+#: main.ui:106
+#, no-c-format, kde-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: main.ui:122
+#, kde-format
+msgid "of the screen"
+msgstr "vun den Schirm utlösen"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: main.ui:150
+#, kde-format
+msgid "Other Settings"
+msgstr "Anner Instellen"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, desktopSwitchLabel)
+#: main.ui:162
+#, kde-format
+msgid ""
+"Change desktop when the mouse cursor is pushed against the edge of the screen"
+msgstr "Den Schriefdisch wesseln, wenn Du de Muus gegen de Schirmkant schuffst"
+
+#. i18n: ectx: property (text), widget (QLabel, desktopSwitchLabel)
+#: main.ui:165
+#, kde-format
+msgid "&Switch desktop on edge:"
+msgstr "&Schrifdisch wesseln an Kant:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:176
+#, kde-format
+msgctxt "Switch desktop on edge"
+msgid "Disabled"
+msgstr "Utmaakt"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:181
+#, kde-format
+msgid "Only When Moving Windows"
+msgstr "Bloots bi't Verschuven vun Finstern"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:186
+#, kde-format
+msgid "Always Enabled"
+msgstr "Jümmers an"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label)
+#: main.ui:194
+#, kde-format
+msgid ""
+"Amount of time required for the mouse cursor to be pushed against the edge "
+"of the screen before the action is triggered"
+msgstr ""
+"De Tiet, wo lang Du de Muus gegen de Schirmkant schuven muttst, ehr dat de "
+"Akschoon utlösen deit"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: main.ui:197
+#, kde-format
+msgid "Activation &delay:"
+msgstr "&Töövtiet:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, activationDelaySpin)
+#. i18n: ectx: property (suffix), widget (QSpinBox, triggerCooldownSpin)
+#: main.ui:207 main.ui:242
+#, kde-format
+msgid " ms"
+msgstr " ms"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label_2)
+#: main.ui:226
+#, kde-format
+msgid ""
+"Amount of time required after triggering an action until the next trigger "
+"can occur"
+msgstr "Tiet na en Akschoon, ehr sik wedder en Akschoon utlösen lett"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: main.ui:229
+#, kde-format
+msgid "&Reactivation delay:"
+msgstr "Wedderutlöös-&Töövtiet:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: touch.ui:36
+#, fuzzy, kde-format
+#| msgid ""
+#| "To trigger an action push your mouse cursor against the edge of the "
+#| "screen in the action's direction."
+msgid ""
+"Trigger an action by swiping from the screen edge towards the center of the "
+"screen"
+msgstr ""
+"Fohr mit de Muus gegen de Schirmkant in de Akschoon ehr Richt, wenn Du en "
+"Akschoon utlösen wullt"

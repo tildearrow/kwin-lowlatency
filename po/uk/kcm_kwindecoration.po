@@ -1,0 +1,203 @@
+# Translation of kcm_kwindecoration.po to Ukrainian
+# Copyright (C) 2002-2019 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Andriy Rysin <rysin@kde.org>, 2002, 2003, 2004.
+# Eugene Onischenko <oneugene@ukr.net>, 2004, 2005.
+# Ivan Petrouchtchak <fr.ivan@ukrainian-orthodox.org>, 2005, 2006, 2007.
+# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2018, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_kwindecoration\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2019-03-18 07:59+0100\n"
+"PO-Revision-Date: 2019-01-12 09:12+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Меню"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Меню програм"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "На всіх стільницях"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Мінімізувати"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Максимізувати"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Закрити"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Контекстна довідка"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Згорнути"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Тримати знизу"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Тримати зверху"
+
+#: kcm.cpp:142
+#, kde-format
+msgid ""
+"Close by double clicking:\n"
+" To open the menu, keep the button pressed until it appears."
+msgstr ""
+"Закрити можна подвійним клацанням лівою кнопкою миші.\n"
+" Щоб відкрити меню, утримуйте кнопку натиснутою, аж доки меню не буде "
+"показано."
+
+#. i18n: ectx: attribute (title), widget (QWidget, theTab)
+#: kcm.ui:21
+#, kde-format
+msgid "Theme"
+msgstr "Тема"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, filter)
+#: kcm.ui:29
+#, kde-format
+msgid "Search..."
+msgstr "Шукати…"
+
+#. i18n: ectx: property (text), widget (QCheckBox, closeWindowsDoubleClick)
+#: kcm.ui:44
+#, kde-format
+msgid "Close windows by double clicking &the menu button"
+msgstr "Закривати вікна у відповідь на по&двійне клацання на кнопці меню"
+
+#. i18n: ectx: property (text), widget (QLabel, borderSizesLabel)
+#: kcm.ui:72
+#, kde-format
+msgid "Border si&ze:"
+msgstr "&Ширина рамки:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:86
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "No Borders"
+msgstr "Без обрамлення"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:91
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "No Side Borders"
+msgstr "Без бічної рамки"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:96
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Tiny"
+msgstr "Крихітний"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:101
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Normal"
+msgstr "Звичайний"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:106
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Large"
+msgstr "Великий"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:111
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Very Large"
+msgstr "Дуже великий"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:116
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Huge"
+msgstr "Величезний"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:121
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Very Huge"
+msgstr "Гігантський"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:126
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Oversized"
+msgstr "Найбільший"
+
+#. i18n: ectx: property (text), widget (QPushButton, knsButton)
+#: kcm.ui:150
+#, kde-format
+msgid "Get New Window Decorations..."
+msgstr "Отримати нові обрамлення вікон…"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: kcm.ui:160
+#, kde-format
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: qml/Buttons.qml:73
+#, kde-format
+msgid "Titlebar"
+msgstr "Смужка заголовка"
+
+#: qml/Buttons.qml:202
+#, kde-format
+msgid "Drop here to remove button"
+msgstr "Перетягніть сюди, щоб вилучити кнопку"
+
+#: qml/Buttons.qml:227
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Перетягніть кнопки між цією областю і смужкою заголовка"
+
+#: qml/Previews.qml:146
+#, kde-format
+msgid "Configure %1..."
+msgstr "Налаштувати %1…"

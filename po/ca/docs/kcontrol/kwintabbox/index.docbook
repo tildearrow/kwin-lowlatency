@@ -1,0 +1,157 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Catalan  "INCLUDE">
+]>
+<article id="kwintabbox" lang="&language;">
+<articleinfo>
+<title
+>Commutador de tasques</title>
+<authorgroup>
+<author
+>&Martin.Graesslin;&Martin.Graesslin.mail;</author>
+&traductor.Antoni.Bella; 
+</authorgroup>
+
+<date
+>24 de juliol de 2015</date>
+<releaseinfo
+>&plasma; 5.4</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Arranjament del sistema</keyword>
+<keyword
+>escriptori</keyword>
+<keyword
+>finestra</keyword>
+<keyword
+>navegació</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="windows-navigating">
+<title
+>Navegar per les finestres</title>
+
+<para
+>Aquest mòdul ofereix la possibilitat de configurar el comportament de navegar a través de les finestres, sovint referida com a <keycombo
+>&Alt;&Tab;</keycombo
+>. Hi ha dos conjunts independents d'efectes que poden tenir ajustaments diferents. En aquest mòdul, cadascun d'aquests conjunts disposa d'una pestanya pròpia (<guilabel
+>Principal</guilabel
+> i <guilabel
+>Alternativa</guilabel
+>). </para>
+
+<note
+><para
+>La primera sèrie d'efectes en la pestanya <guilabel
+>Principal</guilabel
+> té dreceres predefinides. Si voleu utilitzar el segon conjunt d'efectes en la pestanya <guilabel
+>Alternativa</guilabel
+>, haureu d'establir manualment una drecera per a aquests efectes a l'editor de dreceres.</para
+></note>
+
+<note
+><para
+>Per navegar a través de les finestres sense <keycombo
+>&Alt;&Tab;</keycombo
+>, podeu definir accions per a la vora de la pantalla en el mòdul de <ulink url="help:/kcontrol/kwinscreenedges/index.html"
+><guilabel
+>Vores de la pantalla</guilabel
+></ulink
+> de &systemsettings;. </para
+></note>
+
+<para
+>La següent documentació de les opcions s'aplica a l'ajustament general i també a les alternatives.</para>
+
+<sect2 id="visualization">
+<title
+>Visualitzar</title>
+<para
+>Hi ha diversos efectes que es poden utilitzar en comptes de la llista de finestres normal quan la composició està activada. Per omissió, s'utilitza l'efecte <guilabel
+>Brisa</guilabel
+>. Aquest efecte mostra una miniatura de cada finestra en una llista a l'esquerra de la pantalla i ressalta la finestra seleccionada. Hi ha diverses disposicions predefinides addicionals que proporcionen una vista informativa o compacta, icones petites o grans, només una graella i un títol de finestra.</para>
+<para
+>En seleccionar una d'aquestes disposicions tindreu un botó per a mostrar una vista prèvia.</para
+> 
+<para
+>Si habiliteu <guilabel
+>Mostra la finestra seleccionada</guilabel
+>, la finestra actualment seleccionada es realçarà esvaint totes les altres finestres. Aquesta opció requereix que els efectes d'escriptori estiguin actius.</para>
+
+<para
+>Els efectes <guilabel
+>Canvi de capa</guilabel
+> i <guilabel
+>Canvi en roda</guilabel
+> són més aviat efectes de fantasia que requereixin OpenGL. <guilabel
+>Canvi de capa</guilabel
+> mostra les finestres en una galeria amb una gran miniatura de la finestra actualment seleccionada en el centre de la pantalla, mentre que totes les altres finestres es giren a l'esquerra i la dreta. <guilabel
+>Canvi en roda</guilabel
+> mostra totes les finestres en una pila 3D. La finestra seleccionada resta a la part superior de la pila i en navegar a través de les finestres mourà la pila de manera que la nova finestra seleccionada resti a la part superior. </para>
+<para
+>Si l'efecte proporciona ajustaments addicionals, el botó configura serà activat. En fer clic sobre aquest botó es mostrarà un diàleg de configuració. </para>
+<note
+><para
+>Quan la composició no està activa o aquesta s'ha suspès, es mostrarà el llistat de finestres normal. No hi haurà pèrdua de funcionalitat si se selecciona un efecte i la composició no està activa.</para
+></note>
+</sect2>
+
+<sect2 id="shortcuts">
+<title
+>Dreceres</title>
+<para
+>L'editor de dreceres proporciona la interfície de configuració per a les dreceres de teclat per a navegar a través de les finestres. Cadascun dels dos conjunts d'efectes té dues dreceres: Una per a la direcció cap endavant i una per a la direcció cap enrere. Si us plau, tingueu en compte que la llista de finestres només es pot mostrar si se selecciona una drecera amb un modificador de teclat com les tecles &Alt; o &Ctrl;. Aquest modificador s'ha de mantenir premut mentre es canvia. El fet de seleccionar una drecera sense una tecla modificadora pot trencar el comportament de la navegació a través de les finestres. </para>
+</sect2>
+
+<sect2 id="content-and-sort-order">
+<title
+>Contingut</title>
+<para
+>Aquí és possible influir en l'ordre, podeu utilitzar un ordre basat en l'últim ús de les finestres o en el seu ordre d'apilament. </para>
+<para
+>Si marqueu <guilabel
+>Inclou la icona «Mostra l'escriptori»</guilabel
+>, s'afegirà una entrada per a l'escriptori a la llista amb les finestres de les aplicacions. A continuació, podreu seleccionar aquesta entrada en la llista per a minimitzar totes les finestres.</para>
+<para
+>Si se selecciona <guilabel
+>Només una finestra per aplicació</guilabel
+>, llavors només restarà continguda a la llista l'última instància utilitzada d'una aplicació. El canvi a altres instàncies només serà possible a través del plafó.</para>
+</sect2>
+
+<sect2 id="filter">
+<title
+>Filtrar les finestres</title>
+<para
+>Podeu configurar quines finestres s'han de mostrar en la llista inicial prement <keycombo
+>&Alt;&Tab;</keycombo
+> (predefinides per a l'ajustament de la pestanya <guilabel
+>Principal</guilabel
+>) o la drecera definida per l'usuari per a l'ajustament de les alternatives. </para>
+<para
+>D'aquesta manera és possible només mostrar les finestres a l'escriptori virtual actual o les de tots els escriptoris. A més podeu aplicar regles similars per a les finestres de les activitats o per a les pantalles a una configuració de múltiples monitors. </para>
+<para
+>L'última opció us permet filtrar sobre l'estat de minimització de les finestres. </para>
+</sect2>
+
+</sect1>
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
+

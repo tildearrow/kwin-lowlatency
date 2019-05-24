@@ -1,0 +1,200 @@
+# Translation of kcm_kwindecoration to Norwegian Bokmål
+#
+# Axel Bojer <fri_programvare@bojer.no>, 2003.
+# Knut Yrvin <knut.yrvin@gmail.com>, 2003.
+# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2005, 2007, 2008, 2009, 2010, 2012, 2013, 2014, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2019-03-18 07:59+0100\n"
+"PO-Revision-Date: 2015-04-26 21:29+0200\n"
+"Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
+"Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Meny"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Programmeny"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "På alle skrivebord"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Minimer"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Maksimer"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Lukk"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Konteksthjelp"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Rull"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Hold under"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Hold over"
+
+#: kcm.cpp:142
+#, kde-format
+msgid ""
+"Close by double clicking:\n"
+" To open the menu, keep the button pressed until it appears."
+msgstr ""
+"Lukk ved å dobbelttrykke.\n"
+" Hvis menyen skal vises igjen så hold knappen nede til den kommer til syne."
+
+#. i18n: ectx: attribute (title), widget (QWidget, theTab)
+#: kcm.ui:21
+#, kde-format
+msgid "Theme"
+msgstr ""
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, filter)
+#: kcm.ui:29
+#, kde-format
+msgid "Search..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, closeWindowsDoubleClick)
+#: kcm.ui:44
+#, kde-format
+msgid "Close windows by double clicking &the menu button"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, borderSizesLabel)
+#: kcm.ui:72
+#, kde-format
+msgid "Border si&ze:"
+msgstr "Kantlin&jestørrelse:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:86
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "No Borders"
+msgstr "Ingen kantlinjer"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:91
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "No Side Borders"
+msgstr "Ingen sidekantlinjer"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:96
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Tiny"
+msgstr "Bitteliten"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:101
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Normal"
+msgstr "Normal"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:106
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Large"
+msgstr "Stor"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:111
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Very Large"
+msgstr "Svært stor"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:116
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Huge"
+msgstr "Enorm"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:121
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Very Huge"
+msgstr "Veldig enorm"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, borderSizesCombo)
+#: kcm.ui:126
+#, kde-format
+msgctxt "@item:inlistbox Border size:"
+msgid "Oversized"
+msgstr "Forstørret"
+
+#. i18n: ectx: property (text), widget (QPushButton, knsButton)
+#: kcm.ui:150
+#, kde-format
+msgid "Get New Window Decorations..."
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: kcm.ui:160
+#, kde-format
+msgid "Buttons"
+msgstr "Knapper"
+
+#: qml/Buttons.qml:73
+#, kde-format
+msgid "Titlebar"
+msgstr "Tittellinje"
+
+#: qml/Buttons.qml:202
+#, kde-format
+msgid "Drop here to remove button"
+msgstr "Slipp her for å fjerne knapp"
+
+#: qml/Buttons.qml:227
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Dra knapper mellom her og tittellinja"
+
+#: qml/Previews.qml:146
+#, kde-format
+msgid "Configure %1..."
+msgstr ""

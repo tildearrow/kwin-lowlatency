@@ -38,7 +38,6 @@ set_package_properties(Qt5Test PROPERTIES
          )
 add_feature_info("Qt5Test" Qt5Test_FOUND "Required for building tests")
 
-# issue #6. will fix later.
 if (NOT Qt5Test_FOUND)
     set(BUILD_TESTING OFF CACHE BOOL "Build the testing tree.")
 endif()
@@ -728,3 +727,11 @@ configure_package_config_file(KWinDBusInterfaceConfig.cmake.in
     INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR})
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/KWinDBusInterfaceConfig.cmake
     DESTINATION ${CMAKECONFIG_INSTALL_DIR})
+
+find_package(KF5I18n CONFIG REQUIRED)
+ki18n_install(po)
+
+  find_package(KF5DocTools CONFIG)
+  if(KF5DocTools_FOUND)
+    kdoctools_install(po)
+  endif()

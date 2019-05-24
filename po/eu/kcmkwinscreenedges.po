@@ -1,0 +1,278 @@
+# Translation of kcmkwinscreenedges.po to Euskara/Basque (eu).
+# Copyright (C) 2010-2018, Free Software Foundation.
+# This file is distributed under the same license as the kde-workspace package.
+# KDE Euskaratzeko proiektuaren arduraduna <xalba@euskalnet.net>.
+#
+# Translators:
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2010, 2011, 2014, 2017, 2018.
+# Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwinscreenedges\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2019-03-18 07:59+0100\n"
+"PO-Revision-Date: 2018-07-14 20:09+0100\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
+"Language-Team: Basque <kde-i18n-doc@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Iñigo Salvador Azurmendi,Hizkuntza Politikarako Sailburuordetza"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "xalba@euskalnet.net,hizpol@ej-gv.es"
+
+#: main.cpp:190 touch.cpp:131
+#, kde-format
+msgid "No Action"
+msgstr "Ekintzarik ez"
+
+#: main.cpp:191 touch.cpp:132
+#, kde-format
+msgid "Show Desktop"
+msgstr "Erakutsi mahaigaina"
+
+#: main.cpp:192 touch.cpp:133
+#, kde-format
+msgid "Lock Screen"
+msgstr "Giltzatu pantaila"
+
+#: main.cpp:193 touch.cpp:134
+#, kde-format
+msgctxt "Open krunner"
+msgid "Run Command"
+msgstr "Exekutatu komandoa"
+
+#: main.cpp:194 touch.cpp:135
+#, kde-format
+msgid "Activity Manager"
+msgstr "Jarduera-kudeatzailea"
+
+#: main.cpp:195 touch.cpp:136
+#, kde-format
+msgid "Application Launcher"
+msgstr "Aplikazio-abiarazlea"
+
+#: main.cpp:199 touch.cpp:140
+#, kde-format
+msgid "%1 - All Desktops"
+msgstr "%1 - Mahaigain guztiak"
+
+#: main.cpp:200 touch.cpp:141
+#, kde-format
+msgid "%1 - Current Desktop"
+msgstr "%1 - Uneko mahaigaina"
+
+#: main.cpp:201 touch.cpp:142
+#, kde-format
+msgid "%1 - Current Application"
+msgstr "%1 - Uneko aplikazioa"
+
+#: main.cpp:204 touch.cpp:145
+#, kde-format
+msgid "%1 - Cube"
+msgstr "%1 - Kuboa"
+
+#: main.cpp:205 touch.cpp:146
+#, kde-format
+msgid "%1 - Cylinder"
+msgstr "%1 - Zilindroa"
+
+#: main.cpp:206 touch.cpp:147
+#, kde-format
+msgid "%1 - Sphere"
+msgstr "%1 - Esfera"
+
+#: main.cpp:208 touch.cpp:149
+#, kde-format
+msgid "Toggle window switching"
+msgstr "Aktibatu/desaktibatu leiho-aldatzea"
+
+#: main.cpp:209 touch.cpp:150
+#, kde-format
+msgid "Toggle alternative window switching"
+msgstr "Aktibatu/desaktibatu ordezko leiho-aldatzea"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: main.ui:17
+#, kde-format
+msgid "Active Screen Corners and Edges"
+msgstr "Pantailaren izkin eta ertz aktiboak"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: main.ui:36
+#, kde-format
+msgid ""
+"Trigger an action by pushing the mouse cursor against the corresponding "
+"screen edge or corner"
+msgstr ""
+"izkinaEkintza bat eragin saguaren kurtsorea, dagokion pantaila ertz edo "
+"izkinaren aurka bultzatuz"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: main.ui:52
+#, kde-format
+msgid "Window Management"
+msgstr "Leiho-kudeaketa"
+
+#. i18n: ectx: property (text), widget (QCheckBox, quickMaximizeBox)
+#: main.ui:58
+#, kde-format
+msgid "Maximize windows by dragging them to the top edge of the screen"
+msgstr "Maximizatu leihoak haiek pantailaren goiko ertzera arrastatuz"
+
+#. i18n: ectx: property (text), widget (QCheckBox, quickTileBox)
+#: main.ui:65
+#, kde-format
+msgid "Tile windows by dragging them to the left or right edges of the screen"
+msgstr ""
+"Teilakatu leihoak haiek pantailaren ezker edo eskuin ertzetara arrastatuz"
+
+# xalba 2018-07-14 lr:
+#
+# 3 itzulgaiekin mezu bakarra osatzen da:
+#
+# 1. Quarter tiling triggered in the outer
+# 2. %
+# 3. Of the screen
+#
+# 1. Laurdeneko lauza eragin pantailaren kanpoko
+# 2. %
+# 3. -(e)an
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: main.ui:93
+#, kde-format
+msgid "Quarter tiling triggered in the outer"
+msgstr "Laurdeneko lauza eragin pantailaren kanpoko"
+
+# xalba 2018-07-14 lr:
+#
+# 3 itzulgaiekin mezu bakarra osatzen da:
+#
+# 1. Quarter tiling triggered in the outer
+# 2. %
+# 3. Of the screen
+#
+# 1. Laurdeneko lauza eragin pantailaren kanpoko
+# 2. %
+# 3. -(e)an
+#. i18n: ectx: property (suffix), widget (QSpinBox, electricBorderCornerRatio)
+#: main.ui:106
+#, no-c-format, kde-format
+msgid "%"
+msgstr "%"
+
+# xalba 2018-07-14 lr:
+#
+# 3 itzulgaiekin mezu bakarra osatzen da:
+#
+# 1. Quarter tiling triggered in the outer
+# 2. %
+# 3. Of the screen
+#
+# 1. Laurdeneko lauza eragin pantailaren kanpoko
+# 2. %
+# 3. -(e)an
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: main.ui:122
+#, kde-format
+msgid "of the screen"
+msgstr "-(e)an"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: main.ui:150
+#, kde-format
+msgid "Other Settings"
+msgstr "Beste ezarpen batzuk"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, desktopSwitchLabel)
+#: main.ui:162
+#, kde-format
+msgid ""
+"Change desktop when the mouse cursor is pushed against the edge of the screen"
+msgstr ""
+"Aldatu mahaigaina, saguaren kurtsorea pantailaren ertzaren aurka bultzatzen "
+"denean"
+
+#. i18n: ectx: property (text), widget (QLabel, desktopSwitchLabel)
+#: main.ui:165
+#, kde-format
+msgid "&Switch desktop on edge:"
+msgstr "&Aldatu mahaigaina ertzetik:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:176
+#, kde-format
+msgctxt "Switch desktop on edge"
+msgid "Disabled"
+msgstr "Desgaituta"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:181
+#, kde-format
+msgid "Only When Moving Windows"
+msgstr "Leihoak mugitzean bakarrik"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:186
+#, kde-format
+msgid "Always Enabled"
+msgstr "Beti gaituta"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label)
+#: main.ui:194
+#, kde-format
+msgid ""
+"Amount of time required for the mouse cursor to be pushed against the edge "
+"of the screen before the action is triggered"
+msgstr ""
+"Ekintza eragiteko saguaren kurtsoreak leiho-ertzaren aurka bultzatzen eman "
+"behar duen denbora-tartea"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: main.ui:197
+#, kde-format
+msgid "Activation &delay:"
+msgstr "Aktibatzeko &atzerapena:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, activationDelaySpin)
+#. i18n: ectx: property (suffix), widget (QSpinBox, triggerCooldownSpin)
+#: main.ui:207 main.ui:242
+#, kde-format
+msgid " ms"
+msgstr " ms"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label_2)
+#: main.ui:226
+#, kde-format
+msgid ""
+"Amount of time required after triggering an action until the next trigger "
+"can occur"
+msgstr ""
+"Ekintza bat eragin ondoren hurrengo eragitea gertatu arte igaro behar duen "
+"denbora-tartea"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: main.ui:229
+#, kde-format
+msgid "&Reactivation delay:"
+msgstr "&Berraktibatzeko atzerapena:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: touch.ui:36
+#, kde-format
+msgid ""
+"Trigger an action by swiping from the screen edge towards the center of the "
+"screen"
+msgstr ""
+"Ekintza bat eragin hatzarekin pantailaren ertzetik pantailaren erdirantz "
+"kolpe arina emanez"
