@@ -1,0 +1,243 @@
+# translation of kcmkwindecoration.po to Lithuanian
+#
+# Donatas Glodenis <dgvirtual@akl.lt>, 2004-2005.
+# Tomas Straupis <tomasstraupis@gmail.com>, 2010.
+# Remigijus Jarmalavičius <remigijus@jarmalavicius.lt>, 2011.
+# Liudas Alisauskas <liudas@akmc.lt>, 2013, 2015.
+# liudas@aksioma.lt <liudas@aksioma.lt>, 2014, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"PO-Revision-Date: 2015-01-25 12:14+0200\n"
+"Last-Translator: Liudas Ališauskas <liudas@akmc.lt>\n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Meniu"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Programos meniu"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "Visuose darbalaukiuose"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Sumažinti"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Išdidinti"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Užverti"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Kontekstinė pagalba"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Šešėlis"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Laikyti apačioje"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Laikyti viršuje"
+
+#: kcm.cpp:92
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgid "Window Decorations"
+msgstr "Gauti naujų dekoracijų..."
+
+#: kcm.cpp:96
+#, kde-format
+msgid "Valerio Pilo"
+msgstr ""
+
+#: kcm.cpp:97
+#, kde-format
+msgid "Author"
+msgstr ""
+
+#: kcm.cpp:135
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgid "Download New Window Decorations"
+msgstr "Gauti naujų dekoracijų..."
+
+#: package/contents/ui/Buttons.qml:85
+#, kde-format
+msgid "Titlebar"
+msgstr "Antraštės juosta"
+
+#: package/contents/ui/Buttons.qml:224
+#, fuzzy, kde-format
+#| msgid "Drop here to remove button"
+msgid "Drop button here to remove it"
+msgstr "Paleiskite čia, kad pašalinti mygtuką"
+
+#: package/contents/ui/Buttons.qml:241
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Tempkite mygtukus tarp šios vietos ir antraštės juostos"
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr ""
+
+#: package/contents/ui/main.qml:54
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr ""
+
+#: package/contents/ui/main.qml:58
+#, fuzzy, kde-format
+#| msgid "Titlebar"
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Antraštės juosta"
+
+#: package/contents/ui/main.qml:79
+#, fuzzy, kde-format
+#| msgid "Border si&ze:"
+msgctxt "combobox label"
+msgid "Window border size:"
+msgstr "K&raštinės plotis:"
+
+#: package/contents/ui/main.qml:94
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Gauti naujų dekoracijų..."
+
+#: package/contents/ui/main.qml:110
+#, fuzzy, kde-format
+#| msgid "Close windows by double clicking &the menu button:"
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "Uždaryti langus du kartus spustelėjus meniu mygtuką:"
+
+#: package/contents/ui/main.qml:122
+#, fuzzy, kde-format
+#| msgid "Close windows by double clicking &the menu button:"
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr "Uždaryti langus du kartus spustelėjus meniu mygtuką:"
+
+#: package/contents/ui/main.qml:129
+#, fuzzy, kde-format
+#| msgid "Titlebar"
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "Antraštės juosta"
+
+#: package/contents/ui/Themes.qml:97
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr ""
+
+#: utils.cpp:38
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Borders"
+msgid "No Borders"
+msgstr "Be rėmelių"
+
+#: utils.cpp:39
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Side Borders"
+msgid "No Side Borders"
+msgstr "Be krašto rėmelio"
+
+#: utils.cpp:40
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Tiny"
+msgid "Tiny"
+msgstr "Smulki"
+
+#: utils.cpp:41
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Normal"
+msgid "Normal"
+msgstr "Normali"
+
+#: utils.cpp:42
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Large"
+msgid "Large"
+msgstr "Didelė"
+
+#: utils.cpp:43
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Very Large"
+msgid "Very Large"
+msgstr "L. didelė"
+
+#: utils.cpp:44
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Huge"
+msgid "Huge"
+msgstr "Didžiulė"
+
+#: utils.cpp:45
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Very Huge"
+msgid "Very Huge"
+msgstr "Milžiniška"
+
+#: utils.cpp:46
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Oversized"
+msgid "Oversized"
+msgstr "Per didelė"

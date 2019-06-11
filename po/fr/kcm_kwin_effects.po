@@ -1,0 +1,93 @@
+# Simon Depiets <sdepiets@gmail.com>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"PO-Revision-Date: 2019-03-20 01:05+0800\n"
+"Last-Translator: Simon Depiets <sdepiets@gmail.com>\n"
+"Language-Team: French <kde-francophone@kde.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 19.07.70\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Simon Depiets"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sdepiets@gmail.com"
+
+#: kcm.cpp:44
+#, kde-format
+msgid "Configure Desktop Effects"
+msgstr "Configurer les effets de bureau"
+
+#: kcm.cpp:49
+#, kde-format
+msgid "Vlad Zagorodniy"
+msgstr "Vlad Zagorodniy"
+
+#: kcm.cpp:87
+#, kde-format
+msgid "Download New Desktop Effects"
+msgstr "Télécharger de nouveaux effets de bureau"
+
+#: package/contents/ui/Effect.qml:88
+#, kde-format
+msgid ""
+"Author: %1\n"
+"License: %2"
+msgstr ""
+"Auteur : %1\n"
+"Licence : %2"
+
+#: package/contents/ui/main.qml:28
+#, kde-format
+msgid "This module lets you configure desktop effects."
+msgstr "Ce module vous permet de configurer les effets du bureau."
+
+#: package/contents/ui/main.qml:35
+#, kde-format
+msgid ""
+"Hint: To find out or configure how to activate an effect, look at the "
+"effect's settings."
+msgstr ""
+"Remarque : pour trouver ou pour savoir comment configurer un effet, veuillez "
+"regarder dans les paramètres de l'effet."
+
+#: package/contents/ui/main.qml:45
+#, kde-format
+msgid "Search..."
+msgstr "Chercher…"
+
+#: package/contents/ui/main.qml:52
+#, kde-format
+msgid "Configure filter"
+msgstr "Configurer le filtre"
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgid "Exclude Desktop Effects not supported by the Compositor"
+msgstr ""
+"Exclure les effets de bureau qui ne sont pas pris en charge par le "
+"compositeur"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgid "Exclude internal Desktop Effects"
+msgstr "Exclure les effets de bureau internes"
+
+#: package/contents/ui/main.qml:147
+#, kde-format
+msgid "Get New Desktop Effects..."
+msgstr "Obtenir de nouveaux effets de bureau..."

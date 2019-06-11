@@ -1,0 +1,230 @@
+# translation of kcmkwindecoration.po to Tajik
+# translation of kcmkwindecoration.po to Тоҷикӣ
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# 2004, Khujand Computer Technologies, Inc.
+# 2004, KCT1, NGO
+# Dilshod Marupov <dma165@hotmail.com>, 2004
+# Victor Ibragimov <youth_opportunities@tajik.net>, 2004
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"PO-Revision-Date: 2009-01-11 14:47+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Tajik KDE Teams"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "youth_opportunities@tajik.net"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Меню"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr ""
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, fuzzy, kde-format
+#| msgid "On All Desktops"
+msgid "On all desktops"
+msgstr "Дар ҳамаи мизи корӣ"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Маҳдуд кунед"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Кушодан"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Хуруҷ"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr ""
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Соя"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, fuzzy, kde-format
+#| msgid "Keep Below Others"
+msgid "Keep below"
+msgstr "Дар Поёни Дигарон Нигоҳ доштан"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, fuzzy, kde-format
+#| msgid "Keep Above Others"
+msgid "Keep above"
+msgstr "Дар Болои Дигарон Нигоҳ доштан"
+
+#: kcm.cpp:92
+#, fuzzy, kde-format
+#| msgid "&Window Decoration"
+msgid "Window Decorations"
+msgstr "Ороиши &Тиреза"
+
+#: kcm.cpp:96
+#, kde-format
+msgid "Valerio Pilo"
+msgstr ""
+
+#: kcm.cpp:97
+#, kde-format
+msgid "Author"
+msgstr ""
+
+#: kcm.cpp:135
+#, fuzzy, kde-format
+#| msgid "&Window Decoration"
+msgid "Download New Window Decorations"
+msgstr "Ороиши &Тиреза"
+
+#: package/contents/ui/Buttons.qml:85
+#, kde-format
+msgid "Titlebar"
+msgstr ""
+
+#: package/contents/ui/Buttons.qml:224
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr ""
+
+#: package/contents/ui/Buttons.qml:241
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr ""
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr ""
+
+#: package/contents/ui/main.qml:54
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr ""
+
+#: package/contents/ui/main.qml:58
+#, fuzzy, kde-format
+#| msgid "Buttons"
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Тугмаҳо"
+
+#: package/contents/ui/main.qml:79
+#, fuzzy, kde-format
+msgctxt "combobox label"
+msgid "Window border size:"
+msgstr "Border size: Tiny"
+
+#: package/contents/ui/main.qml:94
+#, fuzzy, kde-format
+#| msgid "&Window Decoration"
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Ороиши &Тиреза"
+
+#: package/contents/ui/main.qml:110
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr ""
+
+#: package/contents/ui/main.qml:122
+#, kde-format
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+
+#: package/contents/ui/main.qml:129
+#, fuzzy, kde-format
+#| msgid "&Show window button tooltips"
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "&Нишон додани луқмаи кнопкаҳои тиреза"
+
+#: package/contents/ui/Themes.qml:97
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr ""
+
+#: utils.cpp:38
+#, fuzzy, kde-format
+msgid "No Borders"
+msgstr "Border size: Tiny"
+
+#: utils.cpp:39
+#, fuzzy, kde-format
+msgid "No Side Borders"
+msgstr "Border size: Tiny"
+
+#: utils.cpp:40
+#, fuzzy, kde-format
+#| msgid "Tiny"
+msgid "Tiny"
+msgstr "Хурд"
+
+#: utils.cpp:41
+#, fuzzy, kde-format
+#| msgid "Normal"
+msgid "Normal"
+msgstr "Оддӣ"
+
+#: utils.cpp:42
+#, fuzzy, kde-format
+#| msgid "Large"
+msgid "Large"
+msgstr "Калон"
+
+#: utils.cpp:43
+#, fuzzy, kde-format
+#| msgid "Very Large"
+msgid "Very Large"
+msgstr "Калонтарин"
+
+#: utils.cpp:44
+#, fuzzy, kde-format
+#| msgid "Huge"
+msgid "Huge"
+msgstr "Калонтар"
+
+#: utils.cpp:45
+#, fuzzy, kde-format
+#| msgid "Very Huge"
+msgid "Very Huge"
+msgstr "Калонтарин"
+
+#: utils.cpp:46
+#, fuzzy, kde-format
+msgid "Oversized"
+msgstr "Бозандозагирӣ"

@@ -1,0 +1,178 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % Italian "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="desktop" lang="&language;">
+<title
+>Desktop virtuali</title>
+<articleinfo>
+
+<authorgroup>
+<author
+>&Mike.McBride; &Mike.McBride.mail;</author>
+<author
+>&Jost.Schenck; &Jost.Schenck.mail;</author>
+<othercredit role="translator"
+><firstname
+>Luciano</firstname
+><surname
+>Montanaro</surname
+><contrib
+>Traduzione della documentazione</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>Federico</firstname
+><surname
+>Zenith</surname
+><affiliation
+><address
+><email
+>federico.zenith@member.fsf.org</email
+></address
+></affiliation
+><contrib
+>Traduzione della documentazione</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2015-04-09</date>
+<releaseinfo
+>Plasma 5.3</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Impostazioni di sistema</keyword>
+<keyword
+>desktop</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="virtual-desktops">
+
+<title
+>Desktop virtuali</title>
+
+<sect2 id="desktop-number">
+<title
+><guilabel
+>Desktop</guilabel
+></title>
+
+<para
+>&kde; offre la possibilità di avere molti desktop virtuali. In questa scheda puoi configurare il numero di desktop, il numero di righe nel <guilabel
+>Cambiadesktop</guilabel
+> e i nomi dei desktop. Basta usare la casella per regolarne il numero. Puoi assegnar loro dei nomi scrivendoli nelle campi di testo sottostanti.</para
+> 
+<!-- not in 5.3
+<para
+>Enable <guilabel
+>Different widgets for each desktop</guilabel
+> 
+to use independent widgets and wallpapers on each individual desktop.
+</para>
+-->
+</sect2>
+
+<sect2 id="desktop-switching">
+<title
+><guilabel
+>Cambio</guilabel
+></title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Lo scorrimento dei desktop è ad anello</guilabel
+></term>
+<listitem
+><para
+>Abilita questa opzione se vuoi che la navigazione oltre i bordi dello schermo, sia con la tastiera che con il desktop attivo, porti al lato opposto del desktop successivo. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Animazione al cambio desktop</guilabel
+></term>
+<listitem
+><para
+>Seleziona <guilabel
+>Nessun'animazione</guilabel
+>, <guilabel
+>Scivola</guilabel
+>, <guilabel
+>Animazione del cubo dei desktop</guilabel
+> o <guilabel
+>Dissolvenza dei desktop</guilabel
+> dalla casella a cascata. Se l'animazione selezionata ha delle opzioni, fai clic sull'icona degli strumenti sulla destra della casella per avviarne la finestra di configurazione. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Mostra a schermo il cambio del desktop</guilabel
+></term>
+<listitem
+><para
+>Abilita questa opzione se vuoi avere una visualizzazione su schermo del cambio del desktop. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Mostra indicatori per la disposizione dei desktop</guilabel
+></term>
+<listitem
+><para
+>Abilitare questa opzione mostrerà una piccola anteprima della disposizione del desktop selezionato. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Scorciatoie</guilabel
+></term>
+<listitem
+><para
+>Questa sezione visualizza le scorciatoie configurate per cambiare i desktop e permette di modificarle. </para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Far ruotare la rotellina del mouse su un'area vuota del desktop o sul <guilabel
+>Cambiadesktop</guilabel
+> nel pannello passa a un altro desktop virtuale in ordine numerico, a seconda della direzione di rotazione (in su o in giù).</para>
+<para
+>Puoi modificare questo comportamento predefinito sulla pagina <guilabel
+>Azioni del mouse</guilabel
+> nelle <guilabel
+>Impostazioni del desktop</guilabel
+> (<keycombo action="simul"
+>&Alt;<keycap
+>D</keycap
+></keycombo
+>, <keycombo action="simul"
+>&Alt;<keycap
+>S</keycap
+></keycombo
+>).</para>
+</sect2>
+</sect1>
+
+</article>

@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Swedish "INCLUDE">
+]>
+<article id="kwintabbox" lang="&language;">
+<articleinfo>
+<title
+>Aktivitetsbyte</title>
+<authorgroup>
+<author
+>&Martin.Graesslin;&Martin.Graesslin.mail;</author>
+<othercredit role="translator"
+><firstname
+>Stefan</firstname
+><surname
+>Asserhäll</surname
+><affiliation
+><address
+><email
+>stefan.asserhall@bredband.net</email
+></address
+></affiliation
+><contrib
+>Översättare</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2015-07-24</date>
+<releaseinfo
+>&plasma; 5.4</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systeminställningar</keyword>
+<keyword
+>skrivbord</keyword>
+<keyword
+>fönster</keyword>
+<keyword
+>navigering</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="windows-navigating">
+<title
+>Navigera mellan fönster</title>
+
+<para
+>Den här modulen ger möjlighet att anpassa beteendet hos navigering mellan fönster, som ofta kallas <keycombo
+>&Alt;<keycap
+>Tabulator</keycap
+></keycombo
+>. Det finns två oberoende listor som kan ha olika inställningar. För var och en av listorna finns det en egen flik (<guilabel
+>Huvudmetod</guilabel
+> och <guilabel
+>Alternativ</guilabel
+>) i den här modulen. </para>
+
+<note
+><para
+>Den första uppsättningen effekter under fliken <guilabel
+>Huvudmetod</guilabel
+> har fördefinierade genvägar. Om du vill använda den andra uppsättningen effekter under fliken <guilabel
+>Alternativ</guilabel
+>, måste du ställa in en genväg för dessa effekter manuellt i snabbtangenteditorn.</para
+></note>
+
+<note
+><para
+>För att navigera genom fönster utan <keycombo
+>&Alt;<keycap
+>Tabulator</keycap
+></keycombo
+> går det att definiera skärmkantsåtgärder med modulen i systeminställningarna <ulink url="help:/kcontrol/kwinscreenedges/index.html"
+><guilabel
+>Skärmkanter</guilabel
+></ulink
+>. </para
+></note>
+
+<para
+>Följande dokumentation av alternativ gäller för de allmänna inställningarna samt dessutom för de alternativa inställningarna.</para>
+
+<sect2 id="visualization">
+<title
+>Visualisering</title>
+<para
+>Det finns flera effekter som kan användas istället för den normala fönsterlistan när sammansättning är aktiverad. Normalt används effekten <guilabel
+>Breeze</guilabel
+>. Effekten visar en liten miniatyrbild av varje fönster till vänster på skärmen med fönstret som för närvarande är valt markerat. Det finns flera ytterligare fördefinierade layouter som tillhandahåller en informativ eller kompakt visning, små eller stora ikoner, ett rutmönster och bara fönsterrubrik.</para>
+<para
+>Genom att markera en av dessa layouter får du en knapp för att visa en förhandsgranskning.</para
+> 
+<para
+>Om <guilabel
+>Visa valt fönster</guilabel
+> markeras fönstret som för närvarande är valt genom att tona bort alla andra fönster. Alternativet kräver att skrivbordseffekter är aktiva.</para>
+
+<para
+>Effekterna <guilabel
+>Omslagsbyte</guilabel
+> och <guilabel
+>Blädderbyte</guilabel
+> är  med avancerade effekter som kräver OpenGL. <guilabel
+>Omslagsbyte</guilabel
+> visar fönstren i ett galleri, med en stor miniatyrbild av fönstret som för närvarande är aktivt mitt på skärmen, medan alla andra fönster är roterade till vänster och höger. <guilabel
+>Blädderbyte</guilabel
+> visar alla fönster i en tredimensionell stapel. Det aktiva fönstret är överst i stapeln, och navigering mellan fönstren flyttar stapeln så att det nya aktiva fönstret är överst. </para>
+<para
+>Om effekten tillhandahåller ytterligare inställningar aktiveras inställningsknappen. Genom att klicka på knappen visas inställningsdialogrutan. </para>
+<note
+><para
+>När sammansättning inte är aktiv, eller inaktiveras, visas den normala fönsterlistan. Ingen funktionsförlust uppstår om en effekt är vald och sammansättning inte är aktiverad.</para
+></note>
+</sect2>
+
+<sect2 id="shortcuts">
+<title
+>Genvägar</title>
+<para
+>Snabbtangenteditorn  tillhandahåller inställningsgränssnittet för tangentbordets genvägar för att navigera mellan fönster. Var och en av de två möjliga uppsättningarna med effekter har två snabbtangenter: en för framåtriktningen och en för bakåtriktningen. Observera att fönsterlistan bara kan visas om du väljer en snabbtangent med en väljartangent, som tangenten &Alt; eller &Ctrl;. Väljartangenten måste hållas nere under bytet. Att välja en snabbtangent utan väljartangent kan förstöra beteendet vid navigering mellan fönster. </para>
+</sect2>
+
+<sect2 id="content-and-sort-order">
+<title
+>Innehåll</title>
+<para
+>Det är möjligt att påverka sorteringsordningen. Du kan antingen använda en sorteringsordning baserat på senaste användning av fönstren, eller fönstrens lagringsordning. </para>
+<para
+>Om du markerar <guilabel
+>Inkludera ikonen "Visa skrivbord"</guilabel
+> läggs en post för skrivbordet till i listan med programfönster. Därefter kan du välja posten i listan för att minimera alla fönster.</para>
+<para
+>Om <guilabel
+>Bara ett fönster per program</guilabel
+> är markerat innehåller listan bara den senast använda instansen av ett program. Att byta till andra instanser är då bara möjligt via panelen.</para>
+</sect2>
+
+<sect2 id="filter">
+<title
+>Filtrera fönster</title>
+<para
+>Du kan ställa in vilka fönster som ska visas i listan som aktiveras genom att trycka på <keycombo
+>&Alt;<keycap
+>Tabulator</keycap
+></keycombo
+> (fördefinierad för inställningarna under fliken <guilabel
+>Huvudmetod</guilabel
+>) eller den användardefinierade genvägen för de alternativa inställningarna. </para>
+<para
+>Det är alltså möjligt att bara visa fönster på det nuvarande skrivbordet eller fönster från alla skrivbord. Dessutom går det att använda liknade regler för fönster i aktiviteter eller på skärmar i en konfiguration med flera bildskärmar. </para>
+<para
+>Det sista alternativet låter dig filtrera enligt fönstrens minimeringsstatus. </para>
+</sect2>
+
+</sect1>
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
+

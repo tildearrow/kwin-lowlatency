@@ -1,0 +1,89 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kwin package.
+# Vit Pelcak <vit@pelcak.org>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"PO-Revision-Date: 2019-04-30 10:39+0200\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 18.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Vít Pelčák"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "vit@pelcak.org"
+
+#: kcm.cpp:44
+#, kde-format
+msgid "Configure Desktop Effects"
+msgstr "Nastavení efektů pra&covní plochy"
+
+#: kcm.cpp:49
+#, kde-format
+msgid "Vlad Zagorodniy"
+msgstr "Vlad Zagorodniy"
+
+#: kcm.cpp:87
+#, kde-format
+msgid "Download New Desktop Effects"
+msgstr "Stáhnout nové efekty pracovní plochy"
+
+#: package/contents/ui/Effect.qml:88
+#, kde-format
+msgid ""
+"Author: %1\n"
+"License: %2"
+msgstr ""
+"Autor: %1\n"
+"Licence: %2"
+
+#: package/contents/ui/main.qml:28
+#, kde-format
+msgid "This module lets you configure desktop effects."
+msgstr "Tento modul vám umožní nastavit efekty pracovní plochy."
+
+#: package/contents/ui/main.qml:35
+#, kde-format
+msgid ""
+"Hint: To find out or configure how to activate an effect, look at the "
+"effect's settings."
+msgstr "Rada: více informací o efektu najdete v jeho nastavení."
+
+#: package/contents/ui/main.qml:45
+#, kde-format
+msgid "Search..."
+msgstr "Hledat..."
+
+#: package/contents/ui/main.qml:52
+#, kde-format
+msgid "Configure filter"
+msgstr "Nastavení filtru"
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgid "Exclude Desktop Effects not supported by the Compositor"
+msgstr "Vyjmout efekty na ploše nepodporované kompozitorem"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgid "Exclude internal Desktop Effects"
+msgstr "Vyjmout interní efekty na ploše"
+
+#: package/contents/ui/main.qml:147
+#, kde-format
+msgid "Get New Desktop Effects..."
+msgstr "Získat nové efekty pracovní plochy..."
