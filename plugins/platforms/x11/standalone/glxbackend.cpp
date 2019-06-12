@@ -212,6 +212,10 @@ void GlxBackend::init()
     if (GLPlatform::instance()->driver() == Driver_Intel) {
       useHorribleHack=true; // issue #13
     }
+    // NVIDIA doesn't freeze on that wait sync function
+    if (GLPlatform::instance()->driver() == Driver_NVidia) {
+      useWaitSync=true; // issue #17
+    }
     options->setGlPreferBufferSwap(options->glPreferBufferSwap()); // resolve autosetting
     if (options->glPreferBufferSwap() == Options::AutoSwapStrategy)
         options->setGlPreferBufferSwap('e'); // for unknown drivers - should not happen
@@ -708,7 +712,7 @@ void GlxBackend::present()
                 }
             }
         } else {
-            //waitSync();
+            if (useWaitSync) waitSync();
             glXSwapBuffers(display(), glxWindow);
         }
         if (supportsBufferAge()) {
@@ -736,7 +740,11 @@ void GlxBackend::present()
         usleep(1000);
       }
     } else {
-      glFinish();
+      if (useWaitSync) {
+        waitSync();
+      } else {
+        glFinish();
+      }
     }
 
     setLastDamage(QRegion());
