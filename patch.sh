@@ -2,6 +2,7 @@
 
 klpath=${PWD##*/}
 actualVer=5.15.5
+minorVer=2
 version=$(sed -rn "s/^set\(PROJECT_VERSION \"([0-9.]+)\"\)$/\1/p" CMakeLists.txt)
 
 cd ..
@@ -10,4 +11,4 @@ if [ ! -e kwin-$actualVer.tar.xz ]
 fi
 
 tar -xf kwin-$actualVer.tar.xz
-diff -ruNx .git -x build -x .kdev4 -x po kwin-$actualVer $klpath > kwin-lowlatency-$version.patch
+diff -ruNx .git -x build -x .kdev4 -x po kwin-$actualVer $klpath > kwin-lowlatency-$version-$minorVer.patch
