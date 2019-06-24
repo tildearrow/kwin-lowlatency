@@ -29,7 +29,7 @@ QT_PLUGIN_PATH="$PWD/bin" dbus-run-session ./bin/kwin_wayland --xwayland --socke
 The socket option is not required if KWin is started from an X11 session. On Wayland of course a socket not matching the session's socket must be chosen. To show windows in the nested KWin adjust the environment variables DISPLAY (for X11 windows) and WAYLAND_DISPLAY (for Wayland windows). Alternatively it's possible to pass applications to launch as command line arguments to kwin_wayland command. E.g.
 
 ```
-QT_PLUGIN_PATH="$PWD/bin" dbus-run-session ./bin/kwin_wayland --xwayland --socket=wayland-1
+QT_PLUGIN_PATH="$PWD/bin" dbus-run-session ./bin/kwin_wayland --xwayland --socket=wayland-1 konsole
 ```
 
 Will start a konsole in the nested KWin.
