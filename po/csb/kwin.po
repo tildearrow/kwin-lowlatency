@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2009-12-15 22:22+0100\n"
 "Last-Translator: Mark Kwidzińśczi <mark@linuxcsb.org>\n"
 "Language-Team: Kaszëbsczi <i18n-csb@linuxcsb.org>\n"
@@ -1542,7 +1542,7 @@ msgstr ""
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr ""
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1553,7 +1553,7 @@ msgstr ""
 "Wëzdrzi za tim, że sã slédnno czile razë załamôł.\n"
 "Mòżesz ùżëc jinszegò menadżera òknów:"
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1562,7 +1562,7 @@ msgstr ""
 "kwin nie mòże przejimnąc sprôwianiô òknama. Czë dzejô ju jiny menedżera "
 "òknów? (proszã spróbòwac òptacëji --replace)\n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, fuzzy, kde-format
 #| msgid ""
 #| "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1572,12 +1572,12 @@ msgstr ""
 "kwin nie mòże przejimnąc sprôwianiô òknama. Czë dzejô ju jiny menedżera "
 "òknów? (proszã spróbòwac òptacëji --replace)\n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr "Zastãpi ju dzejającegò menedżerã òknów zgódnegò z ICCCM2.0"
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr ""

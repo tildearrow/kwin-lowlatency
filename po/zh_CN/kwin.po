@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2019-06-02 13:14\n"
 "Last-Translator: Guo Yunhe (guoyunhe)\n"
 "Language-Team: Chinese Simplified\n"
@@ -1530,7 +1530,7 @@ msgstr "在由 KWin 启动会话应用程序关闭之后退出。"
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr "Wayland 和 Xwayland 服务器启动后要启动的应用程序"
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1541,7 +1541,7 @@ msgstr ""
 "似乎它已在短时间内发生过多次崩溃。\n"
 "您可以选用其它窗口管理器："
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1550,17 +1550,17 @@ msgstr ""
 "kwin：无法声明窗口管理器选择，是否正在运行另外一种窗口管理器？(试着使用 --"
 "replace)\n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, kde-format
 msgid "kwin: another window manager is running (try using --replace)\n"
 msgstr "kwin：其他窗口管理器正在运行 (试着使用 --replace)\n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr "替换已经运行的 ICCCM2.0 兼容的窗口管理器"
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr "禁用 KActivities 集成。"

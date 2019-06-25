@@ -5,21 +5,22 @@
 # Kurose Shushi <md81@bird.email.ne.jp>, 2004.
 # AWASHIRO Ikuya <ikuya@oooug.jp>, 2004.
 # Yukiko Bando <ybando@k6.dion.ne.jp>, 2006, 2008, 2010.
-# Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2005, 2010, 2015.
+# Tomohiro Hyakutake <tomhioo@outlook.jp>, 2019.
+# Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2005, 2010, 2015, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2015-05-22 22:20-0700\n"
+"PO-Revision-Date: 2019-06-08 14:01-0700\n"
 "Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 19.04.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -42,7 +43,7 @@ msgstr "メニュー"
 #: declarative-plugin/buttonsmodel.cpp:70
 #, kde-format
 msgid "Application menu"
-msgstr ""
+msgstr "アプリケーションメニュー"
 
 #: declarative-plugin/buttonsmodel.cpp:72
 #, kde-format
@@ -67,7 +68,7 @@ msgstr "閉じる"
 #: declarative-plugin/buttonsmodel.cpp:80
 #, kde-format
 msgid "Context help"
-msgstr ""
+msgstr "コンテキストヘルプ"
 
 #: declarative-plugin/buttonsmodel.cpp:82
 #, kde-format
@@ -85,10 +86,9 @@ msgid "Keep above"
 msgstr "常に最前面に表示"
 
 #: kcm.cpp:92
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgid "Window Decorations"
-msgstr "新しい装飾を取得..."
+msgstr "ウィンドウの装飾"
 
 #: kcm.cpp:96
 #, kde-format
@@ -109,7 +109,7 @@ msgstr "新しい装飾を取得..."
 #: package/contents/ui/Buttons.qml:85
 #, kde-format
 msgid "Titlebar"
-msgstr ""
+msgstr "タイトルバー"
 
 #: package/contents/ui/Buttons.qml:224
 #, kde-format
@@ -130,34 +130,31 @@ msgstr ""
 #, kde-format
 msgctxt "tab label"
 msgid "Theme"
-msgstr ""
+msgstr "テーマ"
 
 #: package/contents/ui/main.qml:58
-#, fuzzy, kde-format
-#| msgid "Buttons"
+#, kde-format
 msgctxt "tab label"
 msgid "Titlebar Buttons"
-msgstr "ボタン"
+msgstr "タイトルバーのボタン"
 
 #: package/contents/ui/main.qml:79
-#, fuzzy, kde-format
-#| msgid "Border si&ze:"
+#, kde-format
 msgctxt "combobox label"
 msgid "Window border size:"
-msgstr "枠のサイズ(&Z):"
+msgstr "ウィンドウの枠のサイズ:"
 
 #: package/contents/ui/main.qml:94
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgctxt "button text"
 msgid "Get New Window Decorations..."
-msgstr "新しい装飾を取得..."
+msgstr "新しいウィンドウの装飾を取得..."
 
 #: package/contents/ui/main.qml:110
 #, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
-msgstr ""
+msgstr "メニューボタンをダブルクリックしてウィンドウを閉じる"
 
 #: package/contents/ui/main.qml:122
 #, kde-format
@@ -168,16 +165,15 @@ msgid ""
 msgstr ""
 
 #: package/contents/ui/main.qml:129
-#, fuzzy, kde-format
-#| msgid "Buttons"
+#, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
-msgstr "ボタン"
+msgstr "タイトルバーのボタンにツールチップを表示"
 
 #: package/contents/ui/Themes.qml:97
 #, kde-format
 msgid "Edit %1 Theme"
-msgstr ""
+msgstr "テーマ %1 を編集"
 
 #: utils.cpp:38
 #, fuzzy, kde-format

@@ -1,20 +1,23 @@
 # Translation of kcmkwinrules.po to Euskara/Basque (eu).
 # Copyright (C) 2004-2018 Free Software Foundation.
-# This file is distributed under the same license as the kde-workspace package.
+# Copyright (C) 2019, This file is copyright:
+# This file is distributed under the same license as the kwin package.
+# KDE euskaratzeko proiektuaren arduraduna <xalba@euskalnet.net>.
 #
+# Translators:
 # Marcos  <marcos@euskalgnu.org>, 2004, 2005, 2006, 2007.
 # Juan Irigoien <juanirigoien@yahoo.es>, 2004.
 # Asier Urio Larrea <asieriko@gmail.com>, 2008.
-# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2011, 2014, 2018.
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2011, 2014, 2018, 2019.
 # Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: kcmkwinrules\n"
+"Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2018-07-11 21:21+0100\n"
+"PO-Revision-Date: 2019-06-06 19:51+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
-"Language-Team: Basque <kde-i18n-doc@kde.org>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -289,10 +292,9 @@ msgid "KWin helper utility"
 msgstr "KWin-en laguntza-utilitatea"
 
 #: main.cpp:248
-#, fuzzy, kde-format
-#| msgid "WId of the window for special window settings."
+#, kde-format
 msgid "KWin id of the window for special window settings."
-msgstr "Leiho-ezarpen berezietako leihoaren WIDa"
+msgstr "Leihoaren «Kwin» identifikatzailea leiho ezarpen berezietarako."
 
 #: main.cpp:249
 #, kde-format

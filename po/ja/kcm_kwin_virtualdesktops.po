@@ -1,10 +1,11 @@
+# Tomohiro Hyakutake <tomhioo@outlook.jp>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2018-12-22 12:38-0800\n"
-"Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
+"PO-Revision-Date: 2019-05-31 18:39+0900\n"
+"Last-Translator: Tomohiro Hyakutake <tomhioo@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -13,6 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
+"X-Generator: Lokalize 19.04.1\n"
 
 #, fuzzy, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -40,22 +42,21 @@ msgid "There was an error requesting information from the compositor."
 msgstr ""
 
 #: package/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Desktops"
+#, kde-format
 msgid "Virtual Desktops"
-msgstr "デスクトップ"
+msgstr "仮想デスクトップ"
 
 #: package/contents/ui/main.qml:78
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
-msgstr ""
+msgstr "名前変更"
 
 #: package/contents/ui/main.qml:88
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove"
-msgstr ""
+msgstr "削除"
 
 #: package/contents/ui/main.qml:114
 #, kde-format
@@ -67,45 +68,43 @@ msgstr ""
 #: package/contents/ui/main.qml:121
 #, kde-format
 msgid "Rows:"
-msgstr ""
+msgstr "列数:"
 
 #: package/contents/ui/main.qml:140
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
-msgstr ""
+msgstr "追加"
 
 #: package/contents/ui/main.qml:143
-#, fuzzy, kde-format
-#| msgid "Desktops"
+#, kde-format
 msgid "New Desktop"
-msgstr "デスクトップ"
+msgstr "新しいデスクトップ"
 
 #: package/contents/ui/main.qml:166
 #, kde-format
 msgid "Row %1"
-msgstr ""
+msgstr "%1 列目"
 
 #: package/contents/ui/main.qml:191
 #, kde-format
 msgid "Options:"
-msgstr ""
+msgstr "オプション:"
 
 #: package/contents/ui/main.qml:193
-#, fuzzy, kde-format
-#| msgid "Desktop navigation wraps around"
+#, kde-format
 msgid "Navigation wraps around"
-msgstr "デスクトップの循環"
+msgstr "ナビゲーションを循環"
 
 #: package/contents/ui/main.qml:206
 #, kde-format
 msgid "Show animation when switching:"
-msgstr ""
+msgstr "切り替え時にアニメーションを表示:"
 
 #: package/contents/ui/main.qml:249
 #, kde-format
 msgid "Show on-screen display when switching:"
-msgstr ""
+msgstr "切り替え時にオンスクリーンディスプレイを表示:"
 
 #: package/contents/ui/main.qml:265
 #, kde-format
@@ -113,11 +112,11 @@ msgid "%1 ms"
 msgstr ""
 
 #: package/contents/ui/main.qml:285
-#, fuzzy, kde-format
+#, kde-format
 msgid "Show desktop layout indicators"
 msgstr "デスクトップ配置インジケータを表示する"
 
 #: virtualdesktops.cpp:44
 #, kde-format
 msgid "Configure Virtual Desktops"
-msgstr ""
+msgstr "仮想デスクトップを設定"

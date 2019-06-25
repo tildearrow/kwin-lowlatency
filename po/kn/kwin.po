@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2011-07-11 12:17+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <kde-l10n-kn@kde.org>\n"
@@ -1543,7 +1543,7 @@ msgstr ""
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr ""
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1551,7 +1551,7 @@ msgid ""
 "You can select another window manager to run:"
 msgstr ""
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1560,7 +1560,7 @@ msgstr ""
 "kwin:ವ್ಯವಸ್ಥಾಪಕ ಆಯ್ಕೆಸಾಧಿಸಲಾಗಲಿಲ್ಲ. ಬೇರೆ wm ಚಾಲನೆಯಲ್ಲಿದೆಯೆ? ('ಬದಲಿಸು'--ಅನ್ನು "
 "ಪ್ರಯತ್ನಿಸಿ) \n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, fuzzy, kde-format
 #| msgid ""
 #| "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1570,12 +1570,12 @@ msgstr ""
 "kwin:ವ್ಯವಸ್ಥಾಪಕ ಆಯ್ಕೆಸಾಧಿಸಲಾಗಲಿಲ್ಲ. ಬೇರೆ wm ಚಾಲನೆಯಲ್ಲಿದೆಯೆ? ('ಬದಲಿಸು'--ಅನ್ನು "
 "ಪ್ರಯತ್ನಿಸಿ) \n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr "ಚಾಲನೆಯಲ್ಲಿರುವ  ICCCM2.0-ಅನುವರ್ತಿತ ಕಿಟಕಿ ವ್ಯವಸ್ಥಾಪಕವನ್ನು ಬದಲಾಯಿಸು "
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr ""

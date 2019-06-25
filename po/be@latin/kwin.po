@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2008-12-27 14:55+0200\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Language-Team: Belarusian Latin <i18n@mova.org>\n"
@@ -1546,7 +1546,7 @@ msgstr ""
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr ""
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1557,7 +1557,7 @@ msgstr ""
 "Jon złamaŭsia niekalki razoŭ zapar.\n"
 "Ty možaš vybrać inšaha akońnika sa śpisu:"
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1566,7 +1566,7 @@ msgstr ""
 "kwin: nie ŭdałosia aznačyć siabie, jak dziejnaha akońnika. Niaŭžo ŭklučany "
 "inšy akońnik? Tady pasprabuj opcyju „--replace”)\n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, fuzzy, kde-format
 #| msgid ""
 #| "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1576,12 +1576,12 @@ msgstr ""
 "kwin: nie ŭdałosia aznačyć siabie, jak dziejnaha akońnika. Niaŭžo ŭklučany "
 "inšy akońnik? Tady pasprabuj opcyju „--replace”)\n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr "Zamiani inšaha akońnika, jaki absłuhoŭvaje standart „ICCCM2.0”"
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr ""

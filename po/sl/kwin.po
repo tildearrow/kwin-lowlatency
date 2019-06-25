@@ -1,7 +1,7 @@
 # translation of kwin.po to
 # Translation of kwin.po to Slovenian
 # Copyright (C) 2001, 2003, 2004, 2005, 2007 Free Software Foundation, Inc.
-# $Id: kwin.po 1542253 2019-05-20 06:55:29Z scripty $
+# $Id: kwin.po 1544553 2019-06-20 06:39:46Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@hermes.si>, 2000.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2018-01-12 17:04+0100\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -1558,7 +1558,7 @@ msgstr "Končaj zatem, ko se program seje, ki ga zažene KWin, zapre."
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr "Programi, ki bodo zagnani po zagonu strežnikov Wayland in Xwayland"
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1569,7 +1569,7 @@ msgstr ""
 "Videti je, da se je sesul večkrat zaporedoma.\n"
 "Izberete lahko drugega upravljalnika oken:"
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1578,20 +1578,20 @@ msgstr ""
 "kwin: ni mogoče uveljaviti izbora upravljalnika, mogoče teče kakšen drug? "
 "(poskusite uporabiti --replace)\n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, kde-format
 msgid "kwin: another window manager is running (try using --replace)\n"
 msgstr ""
 "kwin: nek drug upravljalnik oken je že zagnan (poskusite uporabiti --"
 "replace)\n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr ""
 "Zamenjaj z že zagnanim upravljalnikom oken, ki je združljiv z ICCCM 2.0"
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr "Onemogoči podporo za KActivities."

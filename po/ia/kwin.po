@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2017-01-29 22:30+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-it@kde.org>\n"
@@ -1547,7 +1547,7 @@ msgstr "Exi post que le application de session, initiate per KWin, ha cessate."
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr "Programmas a initiar, quando servitores Wayland e Xwayland ha initiate"
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1558,7 +1558,7 @@ msgstr ""
 "Il sembla que il ruinava multe vices consecutivemente.\n"
 "Tu pote seliger un altere gestor de fenestra de executar:"
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1567,18 +1567,18 @@ msgstr ""
 "kwin: il non pote clamar selection de gestor, un altere gestor de fenestra "
 "(wm) es executante? (tu prova --replace)\n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, kde-format
 msgid "kwin: another window manager is running (try using --replace)\n"
 msgstr ""
 "kwin:  un altere gestor de fenestra  es executante (tu prova --replace)\n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr "Reimplacia gerente de fenestra con facente ICCCM2.0 ja executante"
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr "Disactiva integration de KActivities."

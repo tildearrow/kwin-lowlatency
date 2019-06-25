@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2017-05-22 05:42-0400\n"
 "Last-Translator: Elkana Bardugo <ttv200@gmail.com>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
@@ -1540,7 +1540,7 @@ msgstr ""
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr ""
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1551,7 +1551,7 @@ msgstr ""
 "נראה כי הוא קרס כמה פעמים ברציפות.\n"
 "ניתן לבחור מנהל חלונות אחר להפעלה:"
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1560,19 +1560,19 @@ msgstr ""
 "אין אפשרות לתפוס פיקוד על ניהול חלונות, אולי מנהל חלונות אחר מופעל במקביל? "
 "(נסה להשתמש ב־‎--replace‏‏).\n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, fuzzy, kde-format
 msgid "kwin: another window manager is running (try using --replace)\n"
 msgstr ""
 "אין אפשרות לתפוס פיקוד על ניהול חלונות, אולי מנהל חלונות אחר מופעל במקביל? "
 "(נסה להשתמש ב־‎--replace‏‏).\n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr "החלף מנהל חלונות תואם ICCCM2.0 קיים"
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr ""

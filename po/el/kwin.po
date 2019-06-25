@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2017-06-12 16:22+0200\n"
 "Last-Translator: Dimitris Kardarakos <dimkard@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -1570,7 +1570,7 @@ msgstr ""
 "Οι εφαρμογές που θα εκκινούν όταν οι διακομιστές Wayland και Xwayland "
 "ξεκινούν"
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1581,7 +1581,7 @@ msgstr ""
 "Φαίνεται να έχει καταρρεύσει αρκετές φορές στη σειρά.\n"
 "Μπορείτε να επιλέξετε κάποιον άλλο διαχειριστή παραθύρων:"
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1590,20 +1590,20 @@ msgstr ""
 "kwin: Αδυναμία ορισμού επιλογής διαχειριστή, κάποιος άλλος διαχειριστής "
 "παραθύρων εκτελείται; (δοκιμάστε χρησιμοποιώντας το --replace)\n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, kde-format
 msgid "kwin: another window manager is running (try using --replace)\n"
 msgstr ""
 "kwin: κάποιος άλλος διαχειριστής παραθύρων εκτελείται (δοκιμάστε με το --"
 "replace)\n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr ""
 "Αντικατάσταση ήδη εκτελούμενου συμβατού με ICCCM2.0 διαχειριστή παραθύρων"
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr "Απενεργοποίηση της ενσωμάτωσης KActivities."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2007-10-31 15:34+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
@@ -1551,7 +1551,7 @@ msgstr ""
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr ""
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1562,7 +1562,7 @@ msgstr ""
 "प्रतीत होता है कि यह बहुत बार लगातार क्रैश हो गया है.\n"
 "आप दूसरा विंडो प्रबंधक चुन सकते हैं:"
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1571,7 +1571,7 @@ msgstr ""
 "के-विनः प्रबंधक सत्र क्लेम करने में अक्षम, अन्य विंडो प्रबंधक चल रहा है? (आजमाएँ --replace "
 "का उपयोग)\n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, fuzzy, kde-format
 #| msgid ""
 #| "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1581,12 +1581,12 @@ msgstr ""
 "के-विनः प्रबंधक सत्र क्लेम करने में अक्षम, अन्य विंडो प्रबंधक चल रहा है? (आजमाएँ --replace "
 "का उपयोग)\n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr "पहले से ही चल रहे ICCCM2.0  कम्पलाएँट विंडो प्रबंधक को बदलें."
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr ""

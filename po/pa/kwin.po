@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2015-02-01 03:25-0600\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@list.sf.net>\n"
@@ -1535,7 +1535,7 @@ msgstr ""
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr ""
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1546,7 +1546,7 @@ msgstr ""
 "ਇੰਜ ਜਾਪਦਾ ਹੈ ਕਿ ਇਹ ਲਗਾਤਾਰ ਕਈ ਵਾਰ ਕਰੈਸ਼ ਹੋ ਗਈ ਹੈ।\n"
 "ਤੁਹਾਨੂੰ ਚਲਾਉਣ ਲਈ ਹੋਰ ਵਿੰਡੋ ਮੈਨੇਜਰ ਚੁਣਨਾ ਚਾਹੀਦਾ ਹੈ:"
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1555,7 +1555,7 @@ msgstr ""
 "kwin: ਕਲੇਮ ਮੈਨੇਜਰ ਚੁਣਨ ਵਿੱਚ ਅਸਫਲ, ਇੱਕ ਹੋਰ wm (ਵਿੰਡੋ ਮੈਨੇਜਰ) ਚੱਲ ਰਿਹਾ ਹੈ? (ਇਹ ਵਰਤ ਕੇ ਕੋਸ਼ਿਸ "
 "ਕਰੋ --replace)\n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, fuzzy, kde-format
 #| msgid ""
 #| "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1565,12 +1565,12 @@ msgstr ""
 "kwin: ਕਲੇਮ ਮੈਨੇਜਰ ਚੁਣਨ ਵਿੱਚ ਅਸਫਲ, ਇੱਕ ਹੋਰ wm (ਵਿੰਡੋ ਮੈਨੇਜਰ) ਚੱਲ ਰਿਹਾ ਹੈ? (ਇਹ ਵਰਤ ਕੇ ਕੋਸ਼ਿਸ "
 "ਕਰੋ --replace)\n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr "ਪਹਿਲਾਂ ਚੱਲ ਰਹੇ ICCCM2.0-compliant ਵਿੰਡੋ ਮੈਨੇਜਰ ਨਾਲ ਬਦਲਿਆ"
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr ""

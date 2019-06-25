@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2019-04-06 14:42+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -1534,7 +1534,7 @@ msgstr "Avslutt etter at øktprogrammet, som vert starta av KWin, vert lukka."
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr "Program som skal startast når Wayland og XWayland-tenar vert starta"
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1545,7 +1545,7 @@ msgstr ""
 "Det ser ut til at programmet har krasja fleire gongar på rad.\n"
 "Du kan velja ein annan vindaugshandsamar:"
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1554,19 +1554,19 @@ msgstr ""
 "KWin: Klarte ikkje ta over som vindaugshandsamar. Køyrer ein annan "
 "vindaugshandsamar? (Du kan prøva med kommandolinjevalet «--replace».)\n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, kde-format
 msgid "kwin: another window manager is running (try using --replace)\n"
 msgstr ""
 "KWin: Ein annan vindaugshandsamar køyrer. (Du kan prøva med "
 "kommandolinjevalet «--replace».)\n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr "Overta etter ein ICCCM2.0-vindaugshandsamar som køyrer"
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr "Slå av KActivities-integrasjon."

@@ -1,18 +1,19 @@
 # Translation of kwin_effects.po to Euskara/Basque (eu).
-# Copyright (C) 2007-2018, The Free Software Foundation.
-# This file is distributed under the same license as the kde-workspace package.
+# Copyright (C) 2007-2018, The Free Software Foundation, Inc.
+# Copyright (C) 2019, This file is copyright:
+# This file is distributed under the same license as the kwin package.
 # KDE Euskaratzeko proiektuaren arduraduna <xalba@euskalnet.net>.
 #
 # Translators:
 # marcos <marcos@euskalgnu.org>, 2007, 2010.
 # Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2013.
-# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2009, 2011, 2014, 2018.
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2009, 2011, 2014, 2018, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: kwin_effects\n"
+"Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-28 07:26+0200\n"
-"PO-Revision-Date: 2018-08-30 23:43+0100\n"
+"PO-Revision-Date: 2019-06-08 10:06+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -620,11 +621,9 @@ msgstr "Leiho taldearen arabera"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimFullScreen)
 #: diminactive/diminactive_config.ui:75
-#, fuzzy, kde-format
-#| msgctxt "Name of a KWin Effect"
-#| msgid "Present Windows"
+#, kde-format
 msgid "Fullscreen windows"
-msgstr "Aurkeztu leihoak"
+msgstr "Pantaila-beteko leihoak"
 
 #: effect_builtins.cpp:102
 #, kde-format
@@ -1726,11 +1725,9 @@ msgid "Text alpha:"
 msgstr "Testuaren alfa:"
 
 #: showpaint/showpaint.cpp:53 showpaint/showpaint_config.cpp:52
-#, fuzzy, kde-format
-#| msgctxt "Name of a KWin Effect"
-#| msgid "Show Paint"
+#, kde-format
 msgid "Toggle Show Paint"
-msgstr "Erakutsi margoa"
+msgstr "Txandakatu margoa erakustea"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_Gaps)
 #: slide/slide_config.ui:50
@@ -1803,20 +1800,19 @@ msgstr "Jarraitu saguari"
 #: trackmouse/trackmouse_config.ui:26
 #, kde-format
 msgid "Trigger effect with:"
-msgstr ""
+msgstr "Eragin efektua honekin:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_KeyboardShortcut)
 #: trackmouse/trackmouse_config.ui:33
 #, kde-format
 msgid "Keyboard shortcut:"
-msgstr ""
+msgstr "Teklatuko Laster-tekla:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_ModifierKeys)
 #: trackmouse/trackmouse_config.ui:43
-#, fuzzy, kde-format
-#| msgid "Modifiers"
+#, kde-format
 msgid "Modifier keys:"
-msgstr "Aldatzaileak"
+msgstr "Tekla aldatzaileak:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Alt)
 #: trackmouse/trackmouse_config.ui:65

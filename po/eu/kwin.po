@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-06-20 07:48+0200\n"
 "PO-Revision-Date: 2019-06-03 02:10+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -1544,7 +1544,7 @@ msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr ""
 "Wayland eta Xwayland zerbitzaria abiatu ondoren abiatu beharreko aplikazioak"
 
-#: main_x11.cpp:75
+#: main_x11.cpp:76
 #, kde-format
 msgid ""
 "KWin is unstable.\n"
@@ -1555,7 +1555,7 @@ msgstr ""
 "Zenbait alditan jarraian kraskatu dela dirudi.\n"
 "Beste leiho-kudeatzaile bat aukeratu dezakezu:"
 
-#: main_x11.cpp:227
+#: main_x11.cpp:228
 #, kde-format
 msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
@@ -1564,19 +1564,19 @@ msgstr ""
 "kwin: ezin da abiatu hautatutako kudeatzailea; beste leiho-kudeatzaileren "
 "bat dago martxan? (saiatu --replace erabiliz)\n"
 
-#: main_x11.cpp:244
+#: main_x11.cpp:245
 #, kde-format
 msgid "kwin: another window manager is running (try using --replace)\n"
 msgstr ""
 "kwin: beste leiho-kudeatzaile bat martxan dago (saiatu --replace erabiliz)\n"
 
-#: main_x11.cpp:420
+#: main_x11.cpp:426
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr ""
 "Ordeztu ICCCM2.0arekin bateragarri den eta martxan dagoen leiho-kudeatzailea."
 
-#: main_x11.cpp:427
+#: main_x11.cpp:433
 #, kde-format
 msgid "Disable KActivities integration."
 msgstr "Desgaitu KActivities bateratzea."

@@ -10,7 +10,7 @@
 # Pablo de Vicente <vicnte@oan.es>, 2003.
 # Pablo de Vicente <p.devicente@wanadoo.es>, 2004.
 # Juan Manuel Garcia Molina <juanma@superiodico.net>, 2005.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2005, 2006, 2009, 2010, 2012, 2013, 2015, %Y.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2005, 2006, 2009, 2010, 2012, 2013, 2015, 2019, %Y.
 # Pablo de Vicente <pablo.devicente@gmail.com>, 2006.
 # Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2007.
 # Cristina Yenyxe González García <the.blue.valkyrie@gmail.com>, 2010.
@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2017-10-05 18:10+0100\n"
+"PO-Revision-Date: 2019-06-19 20:11+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "First-Translator: Boris Wesslowski <Boris@Wesslowski.com>\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 19.04.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -666,7 +666,7 @@ msgstr "Ocultar la ventana de utilidades para aplicaciones inactivas"
 #: focus.ui:30
 #, kde-format
 msgid "Activating windows"
-msgstr "Activando ventanas"
+msgstr "Activación de ventanas"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: focus.ui:69
@@ -678,9 +678,9 @@ msgid ""
 "likely what you want."
 msgstr ""
 "<b>Pulsar para enfocar</b><br>\n"
-"Una ventana pasa a estar activa cuando se hace clic en ella.<br><br>\n"
+"Las ventanas pasan a estar activas al hacer clic sobre ellas.<br><br>\n"
 "Este comportamiento es común a otros sistemas operativos y <br>\n"
-"seguramente es el esperado."
+"seguramente es el que desea."
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: focus.ui:91
@@ -794,7 +794,7 @@ msgstr ""
 #: focus.ui:228
 #, kde-format
 msgid "&Delay focus by"
-msgstr "&Retrasar foco en:"
+msgstr "&Retrasar el foco durante:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, delayFocus)
 #: focus.ui:247
