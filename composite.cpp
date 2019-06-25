@@ -1359,20 +1359,20 @@ bool Client::shouldUnredirect() const
                 --pos) {
             Toplevel* c = stacking.at(pos);
             if (c == this) {   // is not covered by any other window, ok to unredirect
-                printf("yes.\n");
+                //printf("yes.\n");
                 return true;
             }
             if (c->geometry().intersects(geometry())) {
                 // check whether this is an invisible floating icon at the top left corner
                 if (c->geometry()==QRect(0,0,32,32)) {
-                  printf("yes via hack.\n");
+                  //printf("yes via hack.\n");
                   return true;
                 }
-                printf("no. this: %d %d %d %d. other: %d %d %d %d.\n",geometry().x(),geometry().y(),geometry().width(),geometry().height(),c->geometry().x(),c->geometry().y(),c->geometry().width(),c->geometry().height());
+                //printf("no. this: %d %d %d %d. other: %d %d %d %d.\n",geometry().x(),geometry().y(),geometry().width(),geometry().height(),c->geometry().x(),c->geometry().y(),c->geometry().width(),c->geometry().height());
                 return false;
             }
         }
-        printf("ABORT\n");
+        //printf("ABORT\n");
         abort();
     }
     return false;
