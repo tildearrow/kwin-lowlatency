@@ -121,6 +121,19 @@ $ patch -p1 < ../kwin-lowlatency-5.15.5.patch
 
 ### building
 
+#### Ubuntu
+
+Ubuntu uses a different library path, which means you'll have to tweak the library dir:
+
+```
+$ mkdir build
+$ cd build
+$ cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib/x86_64-linux-gnu -DCMAKE_INSTALL_LIBEXECDIR=lib/x86_64-linux-gnu -DBUILD_TESTING=OFF
+$ make
+```
+
+#### other distros
+
 ```
 $ mkdir build
 $ cd build
