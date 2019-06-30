@@ -1353,6 +1353,7 @@ void Client::finishCompositing(ReleaseReason releaseReason)
 bool Client::shouldUnredirect() const
 {
     if (isActiveFullScreen()) {
+        if (!rules()->checkAllowUnredirect(true)) return false;
         ToplevelList stacking = workspace()->xStackingOrder();
         for (int pos = stacking.count() - 1;
                 pos >= 0;

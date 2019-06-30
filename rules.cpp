@@ -73,6 +73,7 @@ Rules::Rules()
     , noborderrule(UnusedSetRule)
     , decocolorrule(UnusedForceRule)
     , blockcompositingrule(UnusedForceRule)
+    , allowunredirectrule(UnusedForceRule)
     , fsplevelrule(UnusedForceRule)
     , fpplevelrule(UnusedForceRule)
     , acceptfocusrule(UnusedForceRule)
@@ -184,6 +185,7 @@ void Rules::readFromCfg(const KConfigGroup& cfg)
     decocolor = readDecoColor(cfg);
     decocolorrule = decocolor.isEmpty() ? UnusedForceRule : readForceRule(cfg, QStringLiteral("decocolorrule"));
     READ_FORCE_RULE(blockcompositing, , false);
+    READ_FORCE_RULE(allowunredirect, , true);
     READ_FORCE_RULE(fsplevel, limit0to4, 0); // fsp is 0-4
     READ_FORCE_RULE(fpplevel, limit0to4, 0); // fpp is 0-4
     READ_FORCE_RULE(acceptfocus, , false);
@@ -283,6 +285,7 @@ void Rules::write(KConfigGroup& cfg) const
     };
     WRITE_FORCE_RULE(decocolor, colorToString);
     WRITE_FORCE_RULE(blockcompositing,);
+    WRITE_FORCE_RULE(allowunredirect,);
     WRITE_FORCE_RULE(fsplevel,);
     WRITE_FORCE_RULE(fpplevel,);
     WRITE_FORCE_RULE(acceptfocus,);
@@ -328,6 +331,7 @@ bool Rules::isEmpty() const
            && noborderrule == UnusedSetRule
            && decocolorrule == UnusedForceRule
            && blockcompositingrule == UnusedForceRule
+           && allowunredirectrule == UnusedForceRule
            && fsplevelrule == UnusedForceRule
            && fpplevelrule == UnusedForceRule
            && acceptfocusrule == UnusedForceRule
@@ -662,6 +666,7 @@ APPLY_RULE(fullscreen, FullScreen, bool)
 APPLY_RULE(noborder, NoBorder, bool)
 APPLY_FORCE_RULE(decocolor, DecoColor, QString)
 APPLY_FORCE_RULE(blockcompositing, BlockCompositing, bool)
+APPLY_FORCE_RULE(allowunredirect, AllowUnredirect, bool)
 APPLY_FORCE_RULE(fsplevel, FSP, int)
 APPLY_FORCE_RULE(fpplevel, FPP, int)
 APPLY_FORCE_RULE(acceptfocus, AcceptFocus, bool)
@@ -737,6 +742,7 @@ bool Rules::discardUsed(bool withdrawn)
     DISCARD_USED_SET_RULE(noborder);
     DISCARD_USED_FORCE_RULE(decocolor);
     DISCARD_USED_FORCE_RULE(blockcompositing);
+    DISCARD_USED_FORCE_RULE(allowunredirect);
     DISCARD_USED_FORCE_RULE(fsplevel);
     DISCARD_USED_FORCE_RULE(fpplevel);
     DISCARD_USED_FORCE_RULE(acceptfocus);
@@ -874,6 +880,7 @@ CHECK_RULE(FullScreen, bool)
 CHECK_RULE(NoBorder, bool)
 CHECK_FORCE_RULE(DecoColor, QString)
 CHECK_FORCE_RULE(BlockCompositing, bool)
+CHECK_FORCE_RULE(AllowUnredirect, bool)
 CHECK_FORCE_RULE(FSP, int)
 CHECK_FORCE_RULE(FPP, int)
 CHECK_FORCE_RULE(AcceptFocus, bool)
