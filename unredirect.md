@@ -21,10 +21,10 @@ none so far. please contact me if your setup causes KWin to crash with unredirec
 
 the following applications prevent unredirection from working:
 
-- calfjackhost
+- applications using the old tray mechanism (e.g. calfjackhost or Battle.net). they create a 32x32 invisible window at the top left corner, which becomes visible when you aren't using Plasma or some other desktop that doesn't support this mechanism.
+  - however, a workaround has been applied as of v5.16.2-2 but I am not sure whether it works well or not.
 - [latte-dock](https://github.com/tildearrow/kwin-lowlatency/issues/1#issuecomment-483403493) (sometimes)
-- [some Wine applications](https://github.com/tildearrow/kwin-lowlatency/issues/1#issuecomment-491345833). so far reproduces with Battle.net and taskmgr.
 
 the following applications may misbehave when unredirection is enabled:
 
-- some Wine applications. after switching windows they may turn black.
+- some Wine applications. after switching windows [they may turn black and hang](https://github.com/tildearrow/kwin-lowlatency/issues/25).

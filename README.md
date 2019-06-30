@@ -94,7 +94,7 @@ $ cd kwin-lowlatency
 you may want to check the current stable version out:
 
 ```
-$ git checkout v5.15.5
+$ git checkout v5.16.2-2
 ```
 
 #### patch format
@@ -102,21 +102,21 @@ $ git checkout v5.15.5
 download stock KWin source and patch file:
 
 ```
-$ wget https://download.kde.org/stable/plasma/5.15.5/kwin-5.15.5.tar.xz
-$ wget http://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.15.5.patch
+$ wget https://download.kde.org/stable/plasma/5.16.2/kwin-5.16.2.tar.xz
+$ wget http://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.16.2-2.patch
 ```
 
 extract:
 
 ```
-$ tar -xvf kwin-5.15.5.tar.xz
+$ tar -xvf kwin-5.16.2.tar.xz
 ```
 
 patch:
 
 ```
-$ cd kwin-5.15.5
-$ patch -p1 < ../kwin-lowlatency-5.15.5.patch
+$ cd kwin-5.16.2
+$ patch -p1 < ../kwin-lowlatency-5.16.2-2.patch
 ```
 
 ### building
@@ -174,10 +174,6 @@ it basically redraws the cursor. this may seem redundant, but actually is helpfu
 > will this work under Wayland?
 
 no, it won't, but I am working on it. so far using DRM VBlank only showed negative results, with applications running at half speed. now i'm trying again with glFinish and friends...
-
-> i'm using the `modesetting` driver (instead of the `amdgpu` DDX driver) under an AMD card, and can see some latency. how do I fix this?
-
-an option will come soon.
 
 > do you have any plans to upstream this?
 
