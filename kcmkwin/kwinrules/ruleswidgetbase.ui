@@ -2601,7 +2601,43 @@ while it's active!</string>
          </property>
         </widget>
        </item>
-       <item row="18" column="2">
+       <item row="18" column="1">
+        <widget class="QCheckBox" name="enable_allowunredirect">
+         <property name="text">
+          <string>Full-screen unredirection</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="2" colspan="3">
+        <widget class="QComboBox" name="rule_allowunredirect">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>Do Not Affect</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Force</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Force Temporarily</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="18" column="5">
+        <widget class="YesNoBox" name="allowunredirect" native="true">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="2">
         <spacer name="verticalSpacer_5">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
