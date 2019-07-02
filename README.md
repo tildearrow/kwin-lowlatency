@@ -177,12 +177,13 @@ no, it won't, but I am working on it. so far using DRM VBlank only showed negati
 
 > do you have any plans to upstream this?
 
-at this moment, not really:
+some. Daniel gets a chance to improve the GNOME side in mainline and reduce lag so I must fight to get our beloved KDE on par with GNOME! however:
 
 - i still can't ensure this will work everywhere (but it should).
 - this patchset brings full-screen unredirection back, which is a feature the KDE devs definitely [don't want to see in upstream](https://blog.martin-graesslin.com/blog/2016/08/opengl-changes-in-kwin-compositing/) since they have another "approach" (allow apps to block compositing).
   - the problem with their approach is that it means every app must support it in order to work, which is something not every app does. on the other hand, unredirection works for most apps, and doesn't require developers to change their code for it to work.
   - another problem is that instead of suspending compositing, it **disables** compositing. this means you get to see a few frames of an ugly desktop when the app quits. this doesn't happen with unredirection.
+  - I can try to upstream just the glFinish/notimer/something bits, and have this project for the rest of features.
 - furthermore, this also brings back "close" option in Present Windows, which once again the KDE devs despise.
 
 > unredirection is not working.
