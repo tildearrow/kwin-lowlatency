@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
 
 project(KWIN)
-set(PROJECT_VERSION "5.16.2")
+set(PROJECT_VERSION "5.16.3")
 set(PROJECT_VERSION_MAJOR 5)
 
 set(QT_MIN_VERSION "5.12.0")
@@ -352,7 +352,6 @@ add_feature_info("prctl/procctl tracing control"
                  "Required for disallowing ptrace on kwin_wayland process")
 
 check_include_file("sys/sysmacros.h" HAVE_SYS_SYSMACROS_H)
-configure_file(config-kwin.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kwin.h )
 
 check_include_file("linux/vt.h" HAVE_LINUX_VT_H)
 add_feature_info("linux/vt.h"
@@ -367,6 +366,8 @@ check_symbol_exists(SCHED_RESET_ON_FORK "sched.h" HAVE_SCHED_RESET_ON_FORK)
 add_feature_info("SCHED_RESET_ON_FORK"
                  HAVE_SCHED_RESET_ON_FORK
                  "Required for running kwin_wayland with real-time scheduling")
+
+configure_file(config-kwin.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kwin.h )
 
 ########### global ###############
 set(kwin_effects_dbus_xml ${CMAKE_CURRENT_SOURCE_DIR}/org.kde.kwin.Effects.xml)
