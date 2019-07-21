@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>497</width>
-    <height>552</height>
+    <height>566</height>
    </rect>
   </property>
   <layout class="QFormLayout" name="formLayout">
@@ -38,14 +38,11 @@ Alternatively, you might want to use the XRender backend instead.</string>
        <property name="visible">
         <bool>false</bool>
        </property>
-       <property name="text">
+       <property name="text" stdset="0">
         <string>Having full screen windows bypass the compositor is not supported on every hardware.</string>
        </property>
-       <property name="wordWrap">
+       <property name="wordWrap" stdset="0">
         <bool>true</bool>
-       </property>
-       <property name="messageType">
-        <enum>KMessageWidget::Information</enum>
        </property>
       </widget>
      </item>
@@ -348,7 +345,7 @@ Alternatively, you might want to use the XRender backend instead.</string>
     <widget class="QComboBox" name="latencyControl">
      <item>
       <property name="text">
-       <string>Favor responsiveness</string>
+       <string>Less stutter</string>
       </property>
      </item>
      <item>
@@ -358,12 +355,12 @@ Alternatively, you might want to use the XRender backend instead.</string>
      </item>
      <item>
       <property name="text">
-       <string>Favor low latency</string>
+       <string>Lower latency</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Aggressively favor low latency</string>
+       <string>Even lower latency</string>
       </property>
      </item>
     </widget>
