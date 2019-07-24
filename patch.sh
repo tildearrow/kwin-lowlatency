@@ -1,7 +1,7 @@
 #!/bin/bash
 
 klpath=${PWD##*/}
-minorVer=1
+minorVer=2
 version=$(sed -rn "s/^set\(PROJECT_VERSION \"([0-9.]+)\"\)$/\1/p" CMakeLists.txt)
 
 cd ..
