@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2019-04-16 07:54+0700\n"
+"PO-Revision-Date: 2019-07-20 07:43+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 18.12.3\n"
+"X-Generator: Lokalize 19.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -148,7 +148,7 @@ msgstr "Kurangi Opasitas"
 #: actions.ui:95 actions.ui:197 actions.ui:360
 #, kde-format
 msgid "Increase Opacity"
-msgstr "Tambah Opasitas"
+msgstr "Tambahi Opasitas"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
@@ -219,7 +219,7 @@ msgid ""
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
 "Di baris ini kamu bisa mengkustomisasikan perilaku klik tengah ketika klik "
-"di window bagian-dalam takaktif ('bagian-dalam' berarti: bukan bilah judul, "
+"di window bagian-dalam tak aktif ('bagian-dalam' berarti: bukan bilah judul, "
 "bukan bingkai)."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
@@ -276,7 +276,7 @@ msgid ""
 "window ('inner' means: not titlebar, not frame)."
 msgstr ""
 "Di baris ini kamu bisa mengkustomisasikan perilaku ketika menggulir di "
-"window bagian-dalam takaktif ('bagian-dalam' berarti: bukan bilah judul, "
+"window bagian-dalam tak aktif ('bagian-dalam' berarti: bukan bilah judul, "
 "bukan bingkai)."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coWinWheel)
@@ -375,7 +375,7 @@ msgid ""
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
 "Di baris ini kamu bisa mengkustomisasikan perilaku klik kiri ketika klik di "
-"window bagian-dalam takaktif ('bagian-dalam' berarti: bukan bilah judul, "
+"window bagian-dalam tak aktif ('bagian-dalam' berarti: bukan bilah judul, "
 "bukan bingkai)."
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coWin3)
@@ -386,7 +386,7 @@ msgid ""
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
 "Di baris ini kamu bisa mengkustomisasikan perilaku klik kanan ketika klik di "
-"window bagian-dalam takaktif ('bagian-dalam' berarti: bukan bilah judul, "
+"window bagian-dalam tak aktif ('bagian-dalam' berarti: bukan bilah judul, "
 "bukan bingkai)."
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -457,7 +457,7 @@ msgstr "Ketika diaktifkan sembunyikan semua tab yang tidak aktif dari taskbar."
 #: advanced.ui:55
 #, kde-format
 msgid "Hide inactive window tabs from the taskbar"
-msgstr "Sembunyikan tab window takaktif dari taskbar"
+msgstr "Sembunyikan tab window tak aktif dari taskbar"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, autogroupSimilarWindows)
 #: advanced.ui:62
@@ -635,7 +635,7 @@ msgid ""
 "with the proper window type for this feature to work."
 msgstr ""
 "Jika dinyalakan, utilitas window (alat window, menu cabik,...) dari aplikasi "
-"takaktif akan disembunyikan dan hanya akan ditampilkan ketika aplikasi "
+"tak aktif akan disembunyikan dan hanya akan ditampilkan ketika aplikasi "
 "menjadi aktif. Perlu dicatat bahwa aplikasi harus menandai window dengan "
 "tipe window yang benar agar fitur ini bekerja."
 
@@ -643,7 +643,7 @@ msgstr ""
 #: advanced.ui:251
 #, kde-format
 msgid "Hide utility windows for inactive applications"
-msgstr "Sembunyikan window utilitas untuk aplikasi-aplikasi takaktif"
+msgstr "Sembunyikan window utilitas untuk aplikasi-aplikasi tak aktif"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: focus.ui:30
@@ -935,7 +935,7 @@ msgid ""
 msgstr ""
 "Jika opsi ini difungsikan, window aktif akan dibawa ke depan ketika kamu "
 "klik di suatu tempat di dalam konten window. Untuk mengubahnya untuk window "
-"takaktif, kamu perlu mengubah setelan di tab Aksi."
+"tak aktif, kamu perlu mengubah pengaturan di tab Aksi."
 
 #. i18n: ectx: property (text), widget (QCheckBox, clickRaiseOn)
 #: focus.ui:497
@@ -1127,8 +1127,8 @@ msgstr "Perilaku di klik <em>ganda</em> masuk ke bilah judul."
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#: mouse.ui:75 mouse.ui:257 mouse.ui:330 mouse.ui:401 mouse.ui:474 mouse.ui:545
-#: mouse.ui:618
+#: mouse.ui:75 mouse.ui:257 mouse.ui:330 mouse.ui:401 mouse.ui:474
+#: mouse.ui:545 mouse.ui:618
 #, kde-format
 msgid "Shade"
 msgstr "Tiraikan"
@@ -1141,8 +1141,8 @@ msgstr "Tiraikan"
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#: mouse.ui:85 mouse.ui:262 mouse.ui:335 mouse.ui:406 mouse.ui:479 mouse.ui:550
-#: mouse.ui:623
+#: mouse.ui:85 mouse.ui:262 mouse.ui:335 mouse.ui:406 mouse.ui:479
+#: mouse.ui:550 mouse.ui:623
 #, kde-format
 msgid "Close"
 msgstr "Tutup"
@@ -1190,7 +1190,7 @@ msgid ""
 "of an inactive window."
 msgstr ""
 "Di kolom ini kamu bisa mengkustomisasikan klik mouse ke bilah judul atau "
-"bingkai dari window takaktif."
+"bingkai dari window tak aktif."
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: mouse.ui:204
@@ -1249,7 +1249,7 @@ msgid ""
 "<em>inactive</em> window."
 msgstr ""
 "Perilaku saat klik <em>kiri</em> di bilah judul atau bingkai dari window "
-"<em>takaktif</em>."
+"<em>tak aktif</em>."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)

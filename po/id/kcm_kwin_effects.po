@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2019-06-16 08:16+0700\n"
+"PO-Revision-Date: 2019-07-19 03:20+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 19.04.1\n"
+"X-Generator: Lokalize 19.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -63,7 +63,7 @@ msgid ""
 "effect's settings."
 msgstr ""
 "Petunjuk: Untuk menemukan atau mengkonfigurasi bagaimana cara mengaktifkan "
-"efek, silakan lihat di setelan efek."
+"efek, silakan lihat di pengaturan efek."
 
 #: package/contents/ui/main.qml:45
 #, kde-format

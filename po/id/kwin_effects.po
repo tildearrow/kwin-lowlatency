@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-28 07:26+0200\n"
-"PO-Revision-Date: 2019-06-21 21:13+0700\n"
+"PO-Revision-Date: 2019-07-29 16:23+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 19.04.1\n"
+"X-Generator: Lokalize 19.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -196,7 +196,7 @@ msgstr "Dasar"
 #, kde-format
 msgctxt "@title:tab Advanced Settings"
 msgid "Advanced"
-msgstr "Tingkatlanjut"
+msgstr "Tingkat-lanjut"
 
 #: cube/cube_config.cpp:65 desktopgrid/desktopgrid_config.cpp:63
 #: flipswitch/flipswitch_config.cpp:67 invert/invert_config.cpp:49
@@ -343,7 +343,7 @@ msgstr "Warna kap:"
 #: cube/cube_config.ui:321
 #, kde-format
 msgid "Display image on caps"
-msgstr "Displaikan image di kap"
+msgstr "Displaikan citra di kap"
 
 #. i18n: ectx: property (toolTip), widget (QSlider, kcfg_ZPosition)
 #: cube/cube_config.ui:367
@@ -946,7 +946,7 @@ msgstr "Show Paint"
 #, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Highlight areas of the desktop that have been recently updated"
-msgstr "Sorot area desktop yang baru-baru ini diupdate"
+msgstr "Sorot area desktop yang baru-baru ini diperbarui"
 
 #: effect_builtins.cpp:492
 #, kde-format
@@ -1012,13 +1012,13 @@ msgstr "Efek penunjang untuk feedback pemulaian"
 #, kde-format
 msgctxt "Name of a KWin Effect"
 msgid "Thumbnail Aside"
-msgstr "Thumbnail Aside"
+msgstr "Gambar-mini Aside"
 
 #: effect_builtins.cpp:568
 #, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Display window thumbnails on the edge of the screen"
-msgstr "Displaikan miniatur window di tepi layar"
+msgstr "Displaikan gambar-mini window di tepi layar"
 
 #: effect_builtins.cpp:582
 #, kde-format
@@ -1153,14 +1153,14 @@ msgstr "Animasi Pembukaan Window"
 #: glide/glide_config.ui:56 glide/glide_config.ui:154
 #, kde-format
 msgid "Rotation edge:"
-msgstr "Tepi perputaran:"
+msgstr "Tepi perotasian:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_InRotationAngle)
 #. i18n: ectx: property (text), widget (QLabel, label_OutRotationAngle)
 #: glide/glide_config.ui:93 glide/glide_config.ui:191
 #, kde-format
 msgid "Rotation angle:"
-msgstr "Sudutpandang perputaran:"
+msgstr "Sudutpandang perotasian:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_InDistance)
 #. i18n: ectx: property (text), widget (QLabel, label_OutDistance)
@@ -1255,7 +1255,7 @@ msgstr "Kanan"
 #: mouseclick/mouseclick_config.ui:21
 #, kde-format
 msgid "Basic Settings"
-msgstr "Setelan Dasar"
+msgstr "Pengaturan Dasar"
 
 #. i18n: ectx: property (text), widget (QLabel, button1_label)
 #: mouseclick/mouseclick_config.ui:37
@@ -1279,7 +1279,7 @@ msgstr "Warna Tombol Kanan Mouse:"
 #: mouseclick/mouseclick_config.ui:91
 #, kde-format
 msgid "Advanced Settings"
-msgstr "Setelan Tingkatlanjut"
+msgstr "Pengaturan Tingkat-lanjut"
 
 #. i18n: ectx: property (title), widget (QGroupBox, rings)
 #: mouseclick/mouseclick_config.ui:97
@@ -1406,7 +1406,7 @@ msgstr ""
 #: presentwindows/presentwindows_config.ui:39
 #, kde-format
 msgid "Natural Layout Settings"
-msgstr "Setelan Tata Letak Natural"
+msgstr "Pengaturan Tata Letak Natural"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FillGaps)
 #: presentwindows/presentwindows_config.ui:45
@@ -1757,7 +1757,7 @@ msgstr "Geser latarbelakang desktop"
 #: thumbnailaside/thumbnailaside_config.cpp:73
 #, kde-format
 msgid "Toggle Thumbnail for Current Window"
-msgstr "Jungkit Thumbnail untuk Window Saat Ini"
+msgstr "Jungkit Gambar-mini untuk Window Saat Ini"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: thumbnailaside/thumbnailaside_config.ui:23
@@ -1842,7 +1842,7 @@ msgstr "Translusens"
 #: translucency/package/contents/ui/config.ui:20
 #, kde-format
 msgid "General Translucency Settings"
-msgstr "Setelan Translusens Umum"
+msgstr "Pengaturan Translusens Umum"
 
 #. i18n: ectx: property (text), widget (QLabel, comboboxpopup_label)
 #: translucency/package/contents/ui/config.ui:64
@@ -1872,7 +1872,7 @@ msgstr "Pemindahan window:"
 #: translucency/package/contents/ui/config.ui:226
 #, kde-format
 msgid "Inactive windows:"
-msgstr "Window takaktif:"
+msgstr "Window tak aktif:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_IndividualMenuConfig)
 #: translucency/package/contents/ui/config.ui:267
@@ -1924,7 +1924,7 @@ msgstr "Displaikan untuk pengubahan-ukuran window"
 #: wobblywindows/wobblywindows_config.ui:20
 #, kde-format
 msgid "Advanced"
-msgstr "Tingkatlanjut"
+msgstr "Tingkat-lanjut"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: wobblywindows/wobblywindows_config.ui:26
@@ -2083,7 +2083,7 @@ msgstr "Penunjuk Mouse:"
 #: zoom/zoom_config.ui:102
 #, kde-format
 msgid "Visibility of the mouse-pointer."
-msgstr "Ketampakan penunjuk mouse."
+msgstr "Keterlihatan penunjuk mouse."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MousePointer)
 #: zoom/zoom_config.ui:106

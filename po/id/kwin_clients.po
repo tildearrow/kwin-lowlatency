@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kwin_clients\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2018-12-23 14:17+0700\n"
+"PO-Revision-Date: 2019-06-30 21:02+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 18.12.1\n"
+"X-Generator: Lokalize 19.04.2\n"
 
 #: aurorae/src/aurorae.cpp:722
 #, kde-format
@@ -139,8 +139,9 @@ msgid ""
 "Check this option if you want the buttons to fade in when the mouse pointer "
 "hovers over them and fade out again when it moves away."
 msgstr ""
-"Centang opsi ini jika anda ingin agar tombol melesap ketika penunjuk mouse "
-"melayang di atas tombol dan muncul lagi ketika penunjuk mouse pindah."
+"Centang opsi ini jika anda ingin agar tombol melesap-muncul ketika penunjuk "
+"mouse melayang di atas tombol dan melesap-hilang lagi ketika penunjuk mouse "
+"pindah."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_animateButtons)
 #: aurorae/themes/plastik/package/contents/ui/config.ui:79

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-06-20 07:48+0200\n"
-"PO-Revision-Date: 2019-04-20 22:45+0700\n"
+"PO-Revision-Date: 2019-07-20 07:43+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 18.12.3\n"
+"X-Generator: Lokalize 19.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -440,7 +440,7 @@ msgstr "Jumlah jari"
 #, kde-format
 msgctxt "A pinch gesture is updated"
 msgid "Pinch update"
-msgstr "Update cubitan"
+msgstr "Perbarui cubitan"
 
 #: debug_console.cpp:364
 #, kde-format
@@ -494,7 +494,7 @@ msgstr "Jumlah jari"
 #, kde-format
 msgctxt "A swipe gesture is updated"
 msgid "Swipe update"
-msgstr "Update usapan"
+msgstr "Perbarui usapan"
 
 #: debug_console.cpp:417
 #, kde-format
@@ -1163,7 +1163,7 @@ msgstr "Aktifkan Window Memerlukan Perhatian"
 #: kwinbindings.cpp:87
 #, kde-format
 msgid "Setup Window Shortcut"
-msgstr "Siapkan Pintasan Window"
+msgstr "Pengesetan Pintasan Window"
 
 #: kwinbindings.cpp:89
 #, kde-format
@@ -1268,12 +1268,12 @@ msgstr "Alihkan ke Window di Kiri"
 #: kwinbindings.cpp:129
 #, kde-format
 msgid "Increase Opacity of Active Window by 5 %"
-msgstr "Naikkan Opasitas Window Aktiv dengan 5 %"
+msgstr "Tambahi Opasitas Window Aktiv dengan 5 %"
 
 #: kwinbindings.cpp:131
 #, kde-format
 msgid "Decrease Opacity of Active Window by 5 %"
-msgstr "Turunkan Opasitas Window Aktiv dengan 5 %"
+msgstr "Kurangi Opasitas Window Aktiv dengan 5 %"
 
 #: kwinbindings.cpp:134
 #, kde-format
@@ -1573,17 +1573,17 @@ msgstr "Nonfungsikan integrasi KActivities."
 #: orientation_sensor.cpp:98
 #, kde-format
 msgid "Allow Rotation"
-msgstr "Memungkinkan Perputaran"
+msgstr "Memungkinkan Perotasian"
 
 #: orientation_sensor.cpp:99
 #, kde-format
 msgid "Automatic screen rotation is enabled"
-msgstr "Putar layar otomatis telah difungsikan"
+msgstr "Perotasian layar otomatis telah difungsikan"
 
 #: orientation_sensor.cpp:109
 #, kde-format
 msgid "Undefined"
-msgstr "Takditentukan"
+msgstr "Tak ditentukan"
 
 #: orientation_sensor.cpp:113
 #, kde-format
@@ -1600,7 +1600,7 @@ msgstr "Mendatar"
 #: orientation_sensor.cpp:121
 #, kde-format
 msgid "Automatic screen rotation is disabled"
-msgstr "Putar layar otomatis telah dinonfungsikan"
+msgstr "Perotasian layar otomatis telah dinonfungsikan"
 
 #: plugins/scenes/opengl/scene_opengl.cpp:577
 #, kde-format
@@ -1813,12 +1813,12 @@ msgstr "&Pintasan Window..."
 #: useractions.cpp:319
 #, kde-format
 msgid "Special &Window Settings..."
-msgstr "Setelan &Window Spesial..."
+msgstr "Pengaturan &Window Spesial..."
 
 #: useractions.cpp:324
 #, kde-format
 msgid "S&pecial Application Settings..."
-msgstr "Setelan Aplikasi S&pesial..."
+msgstr "Pengaturan Aplikasi S&pesial..."
 
 #: useractions.cpp:332
 #, kde-format
@@ -1826,7 +1826,7 @@ msgctxt ""
 "Entry in context menu of window decoration to open the configuration module "
 "of KWin"
 msgid "Window Manager S&ettings..."
-msgstr "S&etelan Pengelola Window..."
+msgstr "P&engaturan Pengelola Window..."
 
 #: useractions.cpp:362
 #, kde-format

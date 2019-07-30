@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2019-04-16 07:54+0700\n"
+"PO-Revision-Date: 2019-07-20 08:17+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 18.12.3\n"
+"X-Generator: Lokalize 19.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -210,7 +210,7 @@ msgstr "&Hapus"
 #: kcm.cpp:51
 #, kde-format
 msgid "Window-Specific Settings Configuration Module"
-msgstr "Modul Konfigurasi Setelan Window Spesifik"
+msgstr "Modul Konfigurasi Pengaturan Window Spesifik"
 
 #: kcm.cpp:52
 #, kde-format
@@ -231,8 +231,8 @@ msgid ""
 "manager. If you do use a different window manager, please refer to its "
 "documentation for how to customize window behavior.</p>"
 msgstr ""
-"<p><h1>Setelan Window Spesifik</h1> Di sini kamu bisa mengkustomisasikan "
-"setelan window secara spesifik hanya untuk beberapa window.</p> <p>Perlu "
+"<p><h1>Pengaturan Window Spesifik</h1> Di sini kamu bisa mengkustomisasikan "
+"pengaturan window secara spesifik hanya untuk beberapa window.</p> <p>Perlu "
 "dicatat bahwa konfigurasi ini tidak akan berpengaruh jika kamu tidak "
 "menggunakan KWin sebagai pengelola window kamu. Jika kamu menggunakan "
 "pengelola window yang berbeda, silakan merujuk ke dokumentasi pengelola "
@@ -242,12 +242,12 @@ msgstr ""
 #: kcm.cpp:100
 #, kde-format
 msgid "Remember settings separately for every window"
-msgstr "Ingat setelan secara terpisah untuk tiap window"
+msgstr "Ingat pengaturan secara terpisah untuk tiap window"
 
 #: kcm.cpp:101
 #, kde-format
 msgid "Show internal settings for remembering"
-msgstr "Tampilan setelan internal untuk mengingat"
+msgstr "Tampilan pengaturan internal untuk mengingat"
 
 #: kcm.cpp:102
 #, kde-format
@@ -257,18 +257,18 @@ msgstr "Setelan internal untuk mengingat"
 #: main.cpp:138
 #, kde-format
 msgid "Application settings for %1"
-msgstr "Setelan aplikasi untuk %1"
+msgstr "Pengesetan aplikasi untuk %1"
 
 #: main.cpp:158
 #, kde-format
 msgid "Window settings for %1"
-msgstr "Setelan window untuk %1"
+msgstr "Pengesetan window untuk %1"
 
 #: main.cpp:210
 #, kde-format
 msgctxt "Window caption for the application wide rules dialog"
 msgid "Edit Application-Specific Settings"
-msgstr "Edit Setelan Aplikasi Spesifik"
+msgstr "Edit Pengaturan Aplikasi Spesifik"
 
 #: main.cpp:240
 #, kde-format
@@ -283,12 +283,12 @@ msgstr "Utilitas penunjang KWin"
 #: main.cpp:248
 #, kde-format
 msgid "KWin id of the window for special window settings."
-msgstr "Id KWin pada window untuk setelan window spesial."
+msgstr "Id KWin pada window untuk pengaturan window spesial."
 
 #: main.cpp:249
 #, kde-format
 msgid "Whether the settings should affect all windows of the application."
-msgstr "Apakah setelan akan mempengaruhi semua window aplikasi."
+msgstr "Apakah pengaturan akan mempengaruhi semua window aplikasi."
 
 #: main.cpp:258
 #, kde-format
@@ -355,8 +355,8 @@ msgstr "&Ekspor"
 #: ruleswidget.cpp:67
 #, kde-format
 msgid ""
-"Enable this checkbox to alter this window property for the specified "
-"window(s)."
+"Enable this checkbox to alter this window property for the specified window"
+"(s)."
 msgstr ""
 "Fungsikan kotak centang ini untuk membedakan properti window ini untuk "
 "window yang ditentukan."
@@ -364,54 +364,56 @@ msgstr ""
 #: ruleswidget.cpp:69
 #, kde-format
 msgid ""
-"Specify how the window property should be affected:<ul><li><em>Do Not Affect:"
-"</em> The window property will not be affected and therefore the default "
-"handling for it will be used. Specifying this will block more generic window "
-"settings from taking effect.</li><li><em>Apply Initially:</em> The window "
-"property will be only set to the given value after the window is created. No "
-"further changes will be affected.</li><li><em>Remember:</em> The value of "
-"the window property will be remembered and every time the window is created, "
-"the last remembered value will be applied.</li><li><em>Force:</em> The "
-"window property will be always forced to the given value.</li><li><em>Apply "
-"Now:</em> The window property will be set to the given value immediately and "
-"will not be affected later (this action will be deleted afterwards).</"
-"li><li><em>Force temporarily:</em> The window property will be forced to the "
-"given value until it is hidden (this action will be deleted after the window "
-"is hidden).</li></ul>"
+"Specify how the window property should be affected:<ul><li><em>Do Not "
+"Affect:</em> The window property will not be affected and therefore the "
+"default handling for it will be used. Specifying this will block more "
+"generic window settings from taking effect.</li><li><em>Apply Initially:</"
+"em> The window property will be only set to the given value after the window "
+"is created. No further changes will be affected.</li><li><em>Remember:</em> "
+"The value of the window property will be remembered and every time the "
+"window is created, the last remembered value will be applied.</"
+"li><li><em>Force:</em> The window property will be always forced to the "
+"given value.</li><li><em>Apply Now:</em> The window property will be set to "
+"the given value immediately and will not be affected later (this action will "
+"be deleted afterwards).</li><li><em>Force temporarily:</em> The window "
+"property will be forced to the given value until it is hidden (this action "
+"will be deleted after the window is hidden).</li></ul>"
 msgstr ""
 "Tentukan bagaimana properti window akan dipengaruhi:<ul><li><em>Jangan "
 "pengaruhi:</em> Properti window tidak akan dipengaruhi sehingga penanganan "
-"baku untuknya yang akan digunakan. Menentukan ini akan menghalangi setelan "
-"window generik lainnya dari mempunyai dampak.</li><li><em>Terapkan Secara "
-"Awal:</em> Properti window hanya akan diatur ke nilai yang diberikan setelah "
-"window diciptakan. Tak ada perubahan lainnya yang akan dipengaruhi.</"
-"li><li><em>Ingat:</em> Nilai properti window akan diingat dan tiap kali "
-"window diciptakan, nilai yang diingat terakhir akan diterapkan.</"
-"li><li><em>Paksa:</em> Properti window akan selalu dipaksa ke nilai yang "
-"diberikan.</li><li><em>Terapkan Sekarang:</em> Properti window akan diatur "
-"ke nilai yang diberikan secepatnya dan tidak akan berdampak nantinya (aksi "
-"ini akan dihapus nantinya).</li><li><em>Paksa sementara:</em> Properti "
-"window akan dipaksa ke nilai yang diberikan sampai disembunyikan (aksi ini "
-"akan dihapus setelah window disembunyikan).</li></ul>"
+"baku untuknya yang akan digunakan. Menentukan ini akan menghalangi "
+"pengaturan window generik lainnya dari mempunyai dampak.</"
+"li><li><em>Terapkan Secara Awal:</em> Properti window hanya akan diatur ke "
+"nilai yang diberikan setelah window diciptakan. Tak ada perubahan lainnya "
+"yang akan dipengaruhi.</li><li><em>Ingat:</em> Nilai properti window akan "
+"diingat dan tiap kali window diciptakan, nilai yang diingat terakhir akan "
+"diterapkan.</li><li><em>Paksa:</em> Properti window akan selalu dipaksa ke "
+"nilai yang diberikan.</li><li><em>Terapkan Sekarang:</em> Properti window "
+"akan diatur ke nilai yang diberikan secepatnya dan tidak akan berdampak "
+"nantinya (aksi ini akan dihapus nantinya).</li><li><em>Paksa sementara:</em> "
+"Properti window akan dipaksa ke nilai yang diberikan sampai disembunyikan "
+"(aksi ini akan dihapus setelah window disembunyikan).</li></ul>"
 
 #: ruleswidget.cpp:84
 #, kde-format
 msgid ""
-"Specify how the window property should be affected:<ul><li><em>Do Not Affect:"
-"</em> The window property will not be affected and therefore the default "
-"handling for it will be used. Specifying this will block more generic window "
-"settings from taking effect.</li><li><em>Force:</em> The window property "
-"will be always forced to the given value.</li><li><em>Force temporarily:</"
-"em> The window property will be forced to the given value until it is hidden "
-"(this action will be deleted after the window is hidden).</li></ul>"
+"Specify how the window property should be affected:<ul><li><em>Do Not "
+"Affect:</em> The window property will not be affected and therefore the "
+"default handling for it will be used. Specifying this will block more "
+"generic window settings from taking effect.</li><li><em>Force:</em> The "
+"window property will be always forced to the given value.</li><li><em>Force "
+"temporarily:</em> The window property will be forced to the given value "
+"until it is hidden (this action will be deleted after the window is hidden)."
+"</li></ul>"
 msgstr ""
-"Tentukan bagaimana properti window dipengaruhi:<ul><li><em>Jangan Pengaruhi:"
-"</em> Properti window tidak akan dipengaruhi sehingga penanganan baku "
-"untuknya yang akan digunakan. Menentukan ini akan menghalagi setelan window "
-"generik lainnya dari mempunyai dampak.</li><li><em>Paksa:</em> Properti "
-"window akan selalu dipaksa ke nilai yang diberikan.</li><li><em>Paksa "
-"sementara:</em> Properti window akan dipaksa ke nilai yang diberikan sampai "
-"disembunyikan (aksi ini akan dihapus setelah window disembunyikan).</li></ul>"
+"Tentukan bagaimana properti window dipengaruhi:<ul><li><em>Jangan "
+"Pengaruhi:</em> Properti window tidak akan dipengaruhi sehingga penanganan "
+"baku untuknya yang akan digunakan. Menentukan ini akan menghalagi pengaturan "
+"window generik lainnya dari mempunyai dampak.</li><li><em>Paksa:</em> "
+"Properti window akan selalu dipaksa ke nilai yang diberikan.</"
+"li><li><em>Paksa sementara:</em> Properti window akan dipaksa ke nilai yang "
+"diberikan sampai disembunyikan (aksi ini akan dihapus setelah window "
+"disembunyikan).</li></ul>"
 
 #: ruleswidget.cpp:152
 #, kde-format
@@ -426,7 +428,7 @@ msgstr "Semua Activities"
 #: ruleswidget.cpp:791
 #, kde-format
 msgid "Settings for %1"
-msgstr "Setelan untuk %1"
+msgstr "Pengaturan untuk %1"
 
 #: ruleswidget.cpp:793
 #, kde-format
@@ -443,14 +445,15 @@ msgid ""
 "types."
 msgstr ""
 "Anda telah menentukan kelas window sebagai tidak penting.\n"
-"Ini berarti setelan mungkin akan diterapkan ke window dari semua aplikasi. "
-"Jika anda ingin menciptakan setelan generik, maka disarankan kepada anda "
-"untuk setidaknya membatasi tipe window untuk menghindari tipe window spesial."
+"Ini berarti pengaturan mungkin akan diterapkan ke window dari semua "
+"aplikasi. Jika anda ingin menciptakan pengaturan generik, maka disarankan "
+"kepada anda untuk setidaknya membatasi tipe window untuk menghindari tipe "
+"window spesial."
 
 #: ruleswidget.cpp:832
 #, kde-format
 msgid "Edit Window-Specific Settings"
-msgstr "Edit Setelan Window Spesifik"
+msgstr "Edit Pengaturan Window Spesifik"
 
 #: ruleswidget.cpp:864
 #, kde-format
@@ -460,10 +463,10 @@ msgid ""
 "setting using the checkbox, select in what way the setting should be "
 "affected and to which value."
 msgstr ""
-"Dialog konfigurasi ini memungkinkan pembedaan setelan hanya untuk window "
-"atau aplikasi terpilih. Temukan setelan yang ingin anda pengaruhi, fungsikan "
-"setelan menggunakan kotak centang, pilih dengan cara bagaimana setelan akan "
-"dipengaruhi dan ke nilai mana."
+"Dialog konfigurasi ini memungkinkan pembedaan pengaturan hanya untuk window "
+"atau aplikasi terpilih. Temukan pengaturan yang ingin anda pengaruhi, "
+"fungsikan pengaturan menggunakan kotak centang, pilih dengan cara bagaimana "
+"pengaturan akan dipengaruhi dan ke nilai mana."
 
 #: ruleswidget.cpp:868
 #, kde-format
@@ -1029,7 +1032,7 @@ msgid ""
 "This may be pointless and the restriction prevents arbitrary dimensions\n"
 "like your complete screen area."
 msgstr ""
-"Misalnya terminal atau player video dapat bertanya untuk tetap pada rasio\n"
+"Misalnya terminal atau pemutar video dapat bertanya untuk tetap pada rasio\n"
 "aspek tertentu atau hanya membesar dengan nilai lebih besar dari satu\n"
 "(misalnya dimensi satu karakter).\n"
 "Hal ini tampak sia-sia dan pembatasan mencegah dimensi yang seharusnya\n"

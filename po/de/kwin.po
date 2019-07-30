@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-06-20 07:48+0200\n"
-"PO-Revision-Date: 2019-01-18 12:27+0100\n"
+"PO-Revision-Date: 2019-07-17 18:04+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 18.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -1596,17 +1596,13 @@ msgid "Undefined"
 msgstr ""
 
 #: orientation_sensor.cpp:113
-#, fuzzy, kde-format
-#| msgctxt "An orientation of a pointer axis event"
-#| msgid "Vertical"
+#, kde-format
 msgctxt "Portrait oriented display"
 msgid "Vertical"
 msgstr "Senkrecht"
 
 #: orientation_sensor.cpp:117
-#, fuzzy, kde-format
-#| msgctxt "An orientation of a pointer axis event"
-#| msgid "Horizontal"
+#, kde-format
 msgctxt "Landscape oriented display"
 msgid "Horizontal"
 msgstr "Waagerecht"
@@ -2029,16 +2025,14 @@ msgid "Virtual Keyboard"
 msgstr "Virtuelle Tastatur"
 
 #: virtualkeyboard.cpp:230
-#, fuzzy, kde-format
-#| msgid "Virtual Keyboard is enabled."
+#, kde-format
 msgid "Virtual Keyboard: enabled"
-msgstr "Die virtuelle Tastatur ist aktiviert."
+msgstr "Virtuelle Tastatur: Aktiviert"
 
 #: virtualkeyboard.cpp:233
-#, fuzzy, kde-format
-#| msgid "Virtual Keyboard is disabled."
+#, kde-format
 msgid "Virtual Keyboard: disabled"
-msgstr "Die virtuelle Tastatur ist deaktiviert."
+msgstr "Virtuelle Tastatur: Deaktiviert"
 
 #: virtualkeyboard.cpp:235
 #, kde-format
@@ -2046,18 +2040,7 @@ msgid "Whether to show the virtual keyboard on demand."
 msgstr ""
 
 #: workspace.cpp:1329
-#, fuzzy, kde-format
-#| msgctxt "Introductory text shown in the support information."
-#| msgid ""
-#| "KWin Support Information:\n"
-#| "The following information should be used when requesting support on e.g. "
-#| "https://forum.kde.org.\n"
-#| "It provides information about the currently running instance, which "
-#| "options are used,\n"
-#| "what OpenGL driver and which effects are running.\n"
-#| "Please post the information provided underneath this introductory text to "
-#| "a paste bin service\n"
-#| "like http://paste.kde.org instead of pasting into support threads.\n"
+#, kde-format
 msgctxt "Introductory text shown in the support information."
 msgid ""
 "KWin Support Information:\n"
@@ -2077,8 +2060,8 @@ msgstr ""
 "Optionen verwendet werden,\n"
 "welcher OpenGL-Treiber verwendet wird und welche Effekte laufen.\n"
 "Bitte geben Sie die unten stehenden Informationen bei einem Pastebin-Dienst "
-"wie http://paste.kde.org ein, anstatt sie direkt in die Hilfediskussionen zu "
-"schreiben.\n"
+"wie https://paste.kde.org ein, anstatt sie direkt in die Hilfediskussionen "
+"zu schreiben.\n"
 
 
 
