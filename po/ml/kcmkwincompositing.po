@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE Malayalam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2008-07-11 15:31+0530\n"
-"Last-Translator: മണിലാല്‍ കെ.എം|Manilal K M <libregeek@gmail.com>\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-08-11 14:09+0530\n"
+"Last-Translator: Subin Siby <mail@subinsb.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് "
 "<smcdiscuss@googlegroups.com>\n"
 "Language: ml\n"
@@ -17,13 +17,11 @@ msgstr ""
 
 #: compositing.cpp:378
 #, fuzzy, kde-format
-#| msgid "OpenGL"
 msgid "OpenGL 3.1"
 msgstr "ഓപ്പണ്‍ജിഎല്‍"
 
 #: compositing.cpp:379
 #, fuzzy, kde-format
-#| msgid "OpenGL"
 msgid "OpenGL 2.0"
 msgstr "ഓപ്പണ്‍ജിഎല്‍"
 
@@ -75,7 +73,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, compositingEnabled)
 #: compositing.ui:77
 #, fuzzy, kde-format
-#| msgid "Enable desktop effects"
 msgid "Enable compositor on startup"
 msgstr "പണിയിട പ്രഭാവങ്ങള്‍ പ്രാവര്‍ത്തികമാക്കുക"
 
@@ -126,7 +123,6 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, xrScaleFilter)
 #: compositing.ui:181
 #, fuzzy, kde-format
-#| msgid "Smooth scaling (slower)"
 msgid "Smooth (slower)"
 msgstr "സ്വൂത്ത് സ്കേല്ങ് (പതുക്കെ)"
 

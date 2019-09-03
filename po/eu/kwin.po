@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-20 07:48+0200\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
 "PO-Revision-Date: 2019-06-03 02:10+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -1387,7 +1387,8 @@ msgid "KWin"
 msgstr "KWin"
 
 #: main.cpp:195
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "(c) 1999-2018, The KDE Developers"
 msgid "(c) 1999-2018, The KDE Developers"
 msgstr "(c) 1999-2018, KDEren garatzaileak"
 
@@ -2024,12 +2025,14 @@ msgid "Virtual Keyboard"
 msgstr "Alegiazko teklatua"
 
 #: virtualkeyboard.cpp:230
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Virtual Keyboard: enabled"
 msgid "Virtual Keyboard: enabled"
 msgstr "Alegiazko teklatua: gaituta"
 
 #: virtualkeyboard.cpp:233
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Virtual Keyboard: disabled"
 msgid "Virtual Keyboard: disabled"
 msgstr "Alegiazko teklatua: desgaituta"
 
@@ -2039,7 +2042,18 @@ msgid "Whether to show the virtual keyboard on demand."
 msgstr "Alegiazko teklatua nahieran erakutsi edo ez."
 
 #: workspace.cpp:1329
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Introductory text shown in the support information."
+#| msgid ""
+#| "KWin Support Information:\n"
+#| "The following information should be used when requesting support on e.g. "
+#| "https://forum.kde.org.\n"
+#| "It provides information about the currently running instance, which "
+#| "options are used,\n"
+#| "what OpenGL driver and which effects are running.\n"
+#| "Please post the information provided underneath this introductory text to "
+#| "a paste bin service\n"
+#| "like https://paste.kde.org instead of pasting into support threads.\n"
 msgctxt "Introductory text shown in the support information."
 msgid ""
 "KWin Support Information:\n"

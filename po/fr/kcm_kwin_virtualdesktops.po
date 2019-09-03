@@ -1,9 +1,10 @@
 # Maxime Corteel <mcorteel@gmail.com>, 2019.
+# Simon Depiets <sdepiets@gmail.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-07-31 07:58+0200\n"
 "PO-Revision-Date: 2019-02-22 13:59+0100\n"
 "Last-Translator: Maxime Corteel <mcorteel@gmail.com>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -12,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 18.12.2\n"
+"X-Generator: Lokalize 19.07.70\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -77,48 +78,48 @@ msgstr ""
 msgid "Rows:"
 msgstr "Lignes :"
 
-#: package/contents/ui/main.qml:140
+#: package/contents/ui/main.qml:141
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Ajouter"
 
-#: package/contents/ui/main.qml:143
+#: package/contents/ui/main.qml:144
 #, kde-format
 msgid "New Desktop"
 msgstr "Nouveau bureau"
 
-#: package/contents/ui/main.qml:166
+#: package/contents/ui/main.qml:167
 #, kde-format
 msgid "Row %1"
 msgstr "Ligne %1"
 
-#: package/contents/ui/main.qml:191
+#: package/contents/ui/main.qml:192
 #, kde-format
 msgid "Options:"
 msgstr "Options :"
 
-#: package/contents/ui/main.qml:193
+#: package/contents/ui/main.qml:194
 #, kde-format
 msgid "Navigation wraps around"
 msgstr "Navigation circulaire entre les bureaux"
 
-#: package/contents/ui/main.qml:206
+#: package/contents/ui/main.qml:207
 #, kde-format
 msgid "Show animation when switching:"
 msgstr "Afficher une animation au changement :"
 
-#: package/contents/ui/main.qml:249
+#: package/contents/ui/main.qml:250
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr "Affichage sur l'écran (OSD) indiquant le changement de bureau :"
 
-#: package/contents/ui/main.qml:265
+#: package/contents/ui/main.qml:266
 #, kde-format
 msgid "%1 ms"
 msgstr "%1 ms"
 
-#: package/contents/ui/main.qml:285
+#: package/contents/ui/main.qml:286
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "Afficher les indicateurs de disposition des bureaux"

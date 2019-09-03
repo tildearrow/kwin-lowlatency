@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwin_virtualdesktops\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-07-31 07:58+0200\n"
 "PO-Revision-Date: 2019-01-09 09:11+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -78,48 +78,48 @@ msgstr ""
 msgid "Rows:"
 msgstr "Рядків:"
 
-#: package/contents/ui/main.qml:140
+#: package/contents/ui/main.qml:141
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Додати"
 
-#: package/contents/ui/main.qml:143
+#: package/contents/ui/main.qml:144
 #, kde-format
 msgid "New Desktop"
 msgstr "Створити стільницю"
 
-#: package/contents/ui/main.qml:166
+#: package/contents/ui/main.qml:167
 #, kde-format
 msgid "Row %1"
 msgstr "Рядок %1"
 
-#: package/contents/ui/main.qml:191
+#: package/contents/ui/main.qml:192
 #, kde-format
 msgid "Options:"
 msgstr "Параметри:"
 
-#: package/contents/ui/main.qml:193
+#: package/contents/ui/main.qml:194
 #, kde-format
 msgid "Navigation wraps around"
 msgstr "Циклічна навігація"
 
-#: package/contents/ui/main.qml:206
+#: package/contents/ui/main.qml:207
 #, kde-format
 msgid "Show animation when switching:"
 msgstr "Показувати анімацію під час перемикання:"
 
-#: package/contents/ui/main.qml:249
+#: package/contents/ui/main.qml:250
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr "Показувати екранну панель під час перемикання:"
 
-#: package/contents/ui/main.qml:265
+#: package/contents/ui/main.qml:266
 #, kde-format
 msgid "%1 ms"
 msgstr "%1 мс"
 
-#: package/contents/ui/main.qml:285
+#: package/contents/ui/main.qml:286
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "Показувати компонування стільниці"

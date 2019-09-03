@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-28 07:26+0200\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
 "PO-Revision-Date: 2019-01-20 07:51+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -585,7 +585,8 @@ msgstr "Pokaż przyciski do zmiany liczby wirtualnych pulpitów"
 
 #. i18n: ectx: property (text), widget (QLabel, label_Strength)
 #: diminactive/diminactive_config.ui:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Strength:"
 msgid "Strength:"
 msgstr "Siła:"
 
@@ -962,7 +963,9 @@ msgid "Slide"
 msgstr "Przesuwanie"
 
 #: effect_builtins.cpp:493
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Comment describing the KWin Effect"
+#| msgid "Slide desktops when switching virtual desktops"
 msgctxt "Comment describing the KWin Effect"
 msgid "Slide desktops when switching virtual desktops"
 msgstr "Przesuwa pulpit przy podczas przełączania wirtualnych pulpitów"
@@ -1812,7 +1815,8 @@ msgstr "Skrót klawiszowy:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_ModifierKeys)
 #: trackmouse/trackmouse_config.ui:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Modifier keys:"
 msgid "Modifier keys:"
 msgstr "Klawisze odmieniające:"
 

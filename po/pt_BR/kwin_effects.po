@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-28 07:26+0200\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
 "PO-Revision-Date: 2018-10-21 16:44-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -585,7 +585,8 @@ msgstr "Mostrar os botões para alterar o número de áreas de trabalho virtuais
 
 #. i18n: ectx: property (text), widget (QLabel, label_Strength)
 #: diminactive/diminactive_config.ui:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Strength:"
 msgid "Strength:"
 msgstr "Força:"
 
@@ -609,9 +610,11 @@ msgstr "Área de trabalho"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimKeepAbove)
 #: diminactive/diminactive_config.ui:61
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Comment describing the KWin Effect"
+#| msgid "Darken inactive windows"
 msgid "Keep above windows"
-msgstr "Manter acima das janelas"
+msgstr "Escurece as janelas inativas"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimByGroup)
 #: diminactive/diminactive_config.ui:68
@@ -958,7 +961,9 @@ msgid "Slide"
 msgstr "Deslizar"
 
 #: effect_builtins.cpp:493
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Comment describing the KWin Effect"
+#| msgid "Slide desktops when switching virtual desktops"
 msgctxt "Comment describing the KWin Effect"
 msgid "Slide desktops when switching virtual desktops"
 msgstr ""
@@ -1142,7 +1147,9 @@ msgstr "Duração:"
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_Duration)
 #: glide/glide_config.ui:32 scale/package/contents/ui/config.ui:30
 #: slide/slide_config.ui:32
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Duration of rotation"
+#| msgid "Default"
 msgid "Default"
 msgstr "Padrão"
 
@@ -1808,7 +1815,8 @@ msgstr "Atalho de teclado:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_ModifierKeys)
 #: trackmouse/trackmouse_config.ui:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Modifier keys:"
 msgid "Modifier keys:"
 msgstr "Teclas modificadoras:"
 

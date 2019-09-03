@@ -1,23 +1,23 @@
 # Translation of kwin_effects.po to Catalan
-# Copyright (C) 2007-2018 This_file_is_part_of_KDE
+# Copyright (C) 2007-2019 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep Ma. Ferrer <txemaq@gmail.com>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018.
-# Antoni Bella Pérez <antonibella5@yahoo.com>, 2014, 2015, 2016, 2018.
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019.
+# Antoni Bella Pérez <antonibella5@yahoo.com>, 2014, 2015, 2016, 2018, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-28 07:26+0200\n"
-"PO-Revision-Date: 2018-10-31 19:04+0100\n"
-"Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-08-30 11:20+0200\n"
+"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 19.11.70\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 
@@ -800,7 +800,7 @@ msgstr "Kscreen"
 #, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Helper Effect for KScreen"
-msgstr "Efecte auxiliar pel KScreen"
+msgstr "Efecte auxiliar per al KScreen"
 
 #: effect_builtins.cpp:312
 #, kde-format
@@ -916,7 +916,7 @@ msgstr "Captura de pantalla"
 #, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Helper effect for KSnapshot"
-msgstr "Efecte auxiliar pel KSnapshot"
+msgstr "Efecte auxiliar per al KSnapshot"
 
 #: effect_builtins.cpp:447
 #, kde-format
@@ -1014,7 +1014,7 @@ msgstr "Reacció en iniciar"
 #, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Helper effect for startup feedback"
-msgstr "Efecte auxiliar de la reacció en iniciar"
+msgstr "Efecte auxiliar per a la reacció en iniciar"
 
 #: effect_builtins.cpp:567
 #, kde-format

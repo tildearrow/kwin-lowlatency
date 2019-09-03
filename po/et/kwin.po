@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-20 07:48+0200\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
 "PO-Revision-Date: 2016-08-20 02:16+0300\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-i18n-doc@kde.org>\n"
@@ -824,9 +824,10 @@ msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, driverInfoBox)
 #: debug_console.ui:130
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Extensions"
 msgid "OpenGL (ES) driver information"
-msgstr ""
+msgstr "Lai&endid"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: debug_console.ui:136
@@ -866,9 +867,10 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: debug_console.ui:178
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Extensions"
 msgid "OpenGL Version:"
-msgstr ""
+msgstr "Lai&endid"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: debug_console.ui:185

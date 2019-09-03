@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-28 07:26+0200\n"
-"PO-Revision-Date: 2008-11-30 14:57-0500\n"
-"Last-Translator: Manu S Madhav <manusmad@gmail.com>\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-08-11 14:09+0530\n"
+"Last-Translator: Subin Siby <mail@subinsb.com>\n"
 "Language-Team: Malayalam <smc-discuss@googlegroups.com>\n"
 "Language: ml\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, labelConstantBlurDescription)
 #: blur/blur_config.ui:17
 #, fuzzy, kde-format
-#| msgid "&Strength:"
 msgid "Blur strength:"
 msgstr "&ശക്തി:"
 
@@ -40,7 +39,6 @@ msgstr "&ശക്തി:"
 #. i18n: ectx: property (text), widget (QLabel, labelConstantNoiseLight)
 #: blur/blur_config.ui:42 blur/blur_config.ui:108
 #, fuzzy, kde-format
-#| msgid "Right"
 msgid "Light"
 msgstr "വലതു്"
 
@@ -48,14 +46,12 @@ msgstr "വലതു്"
 #. i18n: ectx: property (text), widget (QLabel, labelConstantNoiseStrong)
 #: blur/blur_config.ui:74 blur/blur_config.ui:137
 #, fuzzy, kde-format
-#| msgid "&Strength:"
 msgid "Strong"
 msgstr "&ശക്തി:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelConstantNoiseDescription)
 #: blur/blur_config.ui:83
 #, fuzzy, kde-format
-#| msgid "&Strength:"
 msgid "Noise strength:"
 msgstr "&ശക്തി:"
 
@@ -68,7 +64,6 @@ msgstr ""
 
 #: coverswitch/coverswitch.cpp:956 flipswitch/flipswitch.cpp:934
 #, fuzzy, kde-format
-#| msgid "Show Desktop Grid"
 msgctxt "Special entry in alt+tab list for minimizing all windows"
 msgid "Show Desktop"
 msgstr "പണിയിട വിതരണ ശ്രംഖല (ഗ്രിഡ്) കാണിക്കുക"
@@ -109,7 +104,6 @@ msgstr "ദൂരെ"
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: coverswitch/coverswitch_config.ui:110
 #, fuzzy, kde-format
-#| msgid "Activation"
 msgid "Animation"
 msgstr "പ്രാവര്‍ത്തികമാക്കല്‍"
 
@@ -143,7 +137,6 @@ msgstr "&ആനിമേഷന്‍ (സജീവമാക്കല്‍) ദ�
 #: coverswitch/coverswitch_config.ui:158 cube/cube_config.ui:149
 #: cubeslide/cubeslide_config.ui:49 magiclamp/magiclamp_config.ui:36
 #, fuzzy, kde-format
-#| msgid "Default"
 msgctxt "Duration of rotation"
 msgid "Default"
 msgstr "സഹജമായ"
@@ -152,7 +145,6 @@ msgstr "സഹജമായ"
 #: coverswitch/coverswitch_config.ui:161 glide/glide_config.ui:35
 #: scale/package/contents/ui/config.ui:33 slide/slide_config.ui:35
 #, fuzzy, kde-format
-#| msgid " msec"
 msgid " milliseconds"
 msgstr " മില്ലി-സെക്കന്റ്"
 
@@ -166,14 +158,12 @@ msgstr "&പ്രതിബിംബങ്ങള്‍"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: coverswitch/coverswitch_config.ui:195
 #, fuzzy, kde-format
-#| msgid "Cap color:"
 msgid "Rear color"
 msgstr "ക്യാപ്  നിറം:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: coverswitch/coverswitch_config.ui:205
 #, fuzzy, kde-format
-#| msgid "Background color:"
 msgid "Front color"
 msgstr "പശ്ചാത്തല നിറം:"
 
@@ -184,13 +174,11 @@ msgstr "പണിയിട ക്യൂബ്"
 
 #: cube/cube.cpp:195 cube/cube_config.cpp:76
 #, fuzzy, kde-format
-#| msgid "Desktop Cube"
 msgid "Desktop Cylinder"
 msgstr "പണിയിട ക്യൂബ്"
 
 #: cube/cube.cpp:201 cube/cube_config.cpp:80
 #, fuzzy, kde-format
-#| msgid "Desktop Cube"
 msgid "Desktop Sphere"
 msgstr "പണിയിട ക്യൂബ്"
 
@@ -403,7 +391,6 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, capDeformationGroupBox)
 #: cube/cube_config.ui:449
 #, fuzzy, kde-format
-#| msgid "Cap Deformation"
 msgid "Sphere Cap Deformation"
 msgstr "തൊപ്പി (കാപ്) മാറ്റങ്ങള്‍ "
 
@@ -422,7 +409,6 @@ msgstr "നിലം"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DontSlideStickyWindows)
 #: cubeslide/cubeslide_config.ui:17
 #, fuzzy, kde-format
-#| msgid "Toggle Present Windows (All desktops)"
 msgid "Do not animate windows on all desktops"
 msgstr "നിലവിലുള്ള ജാലകങ്ങള്‍ ടോഗിള്‍ ചെയ്യുക (എല്ലാ പണിയിടങ്ങള്‍ക്കുമായി)"
 
@@ -458,7 +444,6 @@ msgstr "പണിയിട വിതരണ ശ്രംഖല (ഗ്രിഡ�
 
 #: desktopgrid/desktopgrid_config.cpp:76
 #, fuzzy, kde-format
-#| msgid "Disabled"
 msgctxt "Desktop name alignment:"
 msgid "Disabled"
 msgstr "പ്രവര്‍ത്തനരഹിതമാക്കിയിരിയ്ക്കുന്നു"
@@ -533,7 +518,6 @@ msgstr "സൂം ചെയ്യേണ്ട (വലിപ്പം കൂട�
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_ZoomDuration)
 #: desktopgrid/desktopgrid_config.ui:42
 #, fuzzy, kde-format
-#| msgid "Default"
 msgctxt "Duration of zoom"
 msgid "Default"
 msgstr "സഹജമായ"
@@ -541,7 +525,6 @@ msgstr "സഹജമായ"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: desktopgrid/desktopgrid_config.ui:55
 #, fuzzy, kde-format
-#| msgid "&Border width:"
 msgid "Border wid&th:"
 msgstr "&പരിധി വീതി:"
 
@@ -578,7 +561,6 @@ msgstr "ഇഷ്ടപെട്ടതു്"
 #. i18n: ectx: property (text), widget (QLabel, layoutRowsLabel)
 #: desktopgrid/desktopgrid_config.ui:145
 #, fuzzy, kde-format
-#| msgid "Number of &rows:"
 msgid "N&umber of rows:"
 msgstr "&വരികളുടെ എണ്ണം:"
 
@@ -597,7 +579,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_Strength)
 #: diminactive/diminactive_config.ui:17
 #, fuzzy, kde-format
-#| msgid "&Strength:"
 msgid "Strength:"
 msgstr "&ശക്തി:"
 
@@ -616,14 +597,12 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimDesktop)
 #: diminactive/diminactive_config.ui:54
 #, fuzzy, kde-format
-#| msgid "Desktop Cube"
 msgid "Desktop"
 msgstr "പണിയിട ക്യൂബ്"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimKeepAbove)
 #: diminactive/diminactive_config.ui:61
 #, fuzzy, kde-format
-#| msgid "Inactive windows:"
 msgid "Keep above windows"
 msgstr "സജീവമല്ലാത്ത ജാലകങ്ങള്‍:"
 
@@ -636,7 +615,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimFullScreen)
 #: diminactive/diminactive_config.ui:75
 #, fuzzy, kde-format
-#| msgid "&Decorated windows"
 msgid "Fullscreen windows"
 msgstr "&അലങ്കരിച്ച ജാലകങ്ങള്‍"
 
@@ -654,7 +632,6 @@ msgstr ""
 
 #: effect_builtins.cpp:117
 #, fuzzy, kde-format
-#| msgid "&Color:"
 msgctxt "Name of a KWin Effect"
 msgid "Color Picker"
 msgstr "&നിറം:"
@@ -667,7 +644,6 @@ msgstr ""
 
 #: effect_builtins.cpp:132
 #, fuzzy, kde-format
-#| msgid "Background color:"
 msgctxt "Name of a KWin Effect"
 msgid "Background contrast"
 msgstr "പശ്ചാത്തല നിറം:"
@@ -692,7 +668,6 @@ msgstr ""
 
 #: effect_builtins.cpp:162
 #, fuzzy, kde-format
-#| msgid "Desktop Cube"
 msgctxt "Name of a KWin Effect"
 msgid "Desktop Cube"
 msgstr "പണിയിട ക്യൂബ്"
@@ -705,7 +680,6 @@ msgstr ""
 
 #: effect_builtins.cpp:177
 #, fuzzy, kde-format
-#| msgid "Desktop Cube"
 msgctxt "Name of a KWin Effect"
 msgid "Desktop Cube Animation"
 msgstr "പണിയിട ക്യൂബ്"
@@ -718,7 +692,6 @@ msgstr ""
 
 #: effect_builtins.cpp:192
 #, fuzzy, kde-format
-#| msgid "Show Desktop Grid"
 msgctxt "Name of a KWin Effect"
 msgid "Desktop Grid"
 msgstr "പണിയിട വിതരണ ശ്രംഖല (ഗ്രിഡ്) കാണിക്കുക"
@@ -737,7 +710,6 @@ msgstr ""
 
 #: effect_builtins.cpp:208
 #, fuzzy, kde-format
-#| msgid "Inactive windows:"
 msgctxt "Comment describing the KWin Effect"
 msgid "Darken inactive windows"
 msgstr "സജീവമല്ലാത്ത ജാലകങ്ങള്‍:"
@@ -750,7 +722,6 @@ msgstr ""
 
 #: effect_builtins.cpp:223
 #, fuzzy, kde-format
-#| msgid "Toggle Present Windows (All desktops)"
 msgctxt "Comment describing the KWin Effect"
 msgid "Closed windows fall into pieces"
 msgstr "നിലവിലുള്ള ജാലകങ്ങള്‍ ടോഗിള്‍ ചെയ്യുക (എല്ലാ പണിയിടങ്ങള്‍ക്കുമായി)"
@@ -854,7 +825,6 @@ msgstr ""
 
 #: effect_builtins.cpp:357
 #, fuzzy, kde-format
-#| msgid "Activation"
 msgctxt "Name of a KWin Effect"
 msgid "Mouse Click Animation"
 msgstr "പ്രാവര്‍ത്തികമാക്കല്‍"
@@ -869,7 +839,6 @@ msgstr ""
 
 #: effect_builtins.cpp:372
 #, fuzzy, kde-format
-#| msgid "Clear Mouse Marks"
 msgctxt "Name of a KWin Effect"
 msgid "Mouse Mark"
 msgstr "മൌസ് പാടുകള്‍ മായിച്ചു കളയുക"
@@ -894,7 +863,6 @@ msgstr ""
 
 #: effect_builtins.cpp:402
 #, fuzzy, kde-format
-#| msgid "All &other windows"
 msgctxt "Name of a KWin Effect"
 msgid "Resize Window"
 msgstr "&മറ്റുള്ള എല്ലാ ജാലകങ്ങളും"
@@ -956,7 +924,6 @@ msgstr ""
 
 #: effect_builtins.cpp:477
 #, fuzzy, kde-format
-#| msgid "Show caps"
 msgctxt "Name of a KWin Effect"
 msgid "Show Paint"
 msgstr "ക്യാപ്സ് (വലിയ അക്ഷരങ്ങള്‍) കാണിക്കുക"
@@ -975,7 +942,6 @@ msgstr ""
 
 #: effect_builtins.cpp:493
 #, fuzzy, kde-format
-#| msgid "Display the cube when switching desktops"
 msgctxt "Comment describing the KWin Effect"
 msgid "Slide desktops when switching virtual desktops"
 msgstr "പണിയിടങ്ങള്‍ മാറുമ്പോള്‍ ക്യൂബ് കാണിക്കുക"
@@ -1030,7 +996,6 @@ msgstr ""
 
 #: effect_builtins.cpp:567
 #, fuzzy, kde-format
-#| msgid "Thumbnail Bar"
 msgctxt "Name of a KWin Effect"
 msgid "Thumbnail Aside"
 msgstr "നഖചിത്രം പട്ട"
@@ -1073,28 +1038,24 @@ msgstr ""
 
 #: effect_builtins.cpp:613
 #, fuzzy, kde-format
-#| msgid "Display window &icons"
 msgctxt "Comment describing the KWin Effect"
 msgid "Display window geometries on move/resize"
 msgstr "ജാലക &ചിഹ്നങ്ങള്‍ കാണിക്കുക"
 
 #: effect_builtins.cpp:627
 #, fuzzy, kde-format
-#| msgid "&Wobbliness"
 msgctxt "Name of a KWin Effect"
 msgid "Wobbly Windows"
 msgstr "&കുലുക്കം"
 
 #: effect_builtins.cpp:628
 #, fuzzy, kde-format
-#| msgid "Use for window &switching"
 msgctxt "Comment describing the KWin Effect"
 msgid "Deform windows while they are moving"
 msgstr "ജാലകം &മാറാന്‍ ഉപയോഗിക്കുക"
 
 #: effect_builtins.cpp:642
 #, fuzzy, kde-format
-#| msgid "Zoom"
 msgctxt "Name of a KWin Effect"
 msgid "Zoom"
 msgstr "വലുതാക്കുക"
@@ -1107,27 +1068,23 @@ msgstr ""
 
 #: flipswitch/flipswitch.cpp:59 flipswitch/flipswitch_config.cpp:61
 #, fuzzy, kde-format
-#| msgid "Toggle Present Windows (Current desktop)"
 msgid "Toggle Flip Switch (Current desktop)"
 msgstr "നിലവിലുള്ള ജാലകങ്ങള്‍ ടോഗിള്‍ ചെയ്യുക (നിലവിലുള്ള പണിയിടത്തിനായി)"
 
 #: flipswitch/flipswitch.cpp:66 flipswitch/flipswitch_config.cpp:64
 #, fuzzy, kde-format
-#| msgid "Toggle Present Windows (All desktops)"
 msgid "Toggle Flip Switch (All desktops)"
 msgstr "നിലവിലുള്ള ജാലകങ്ങള്‍ ടോഗിള്‍ ചെയ്യുക (എല്ലാ പണിയിടങ്ങള്‍ക്കുമായി)"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: flipswitch/flipswitch_config.ui:23
 #, fuzzy, kde-format
-#| msgid "F&lip animation duration:"
 msgid "Flip animation duration:"
 msgstr "ഫ്ലി&പ്പ് അനിമേഷന്‍ (ജീവിപ്പിക്കേണ്ട) സമയം:"
 
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_Duration)
 #: flipswitch/flipswitch_config.ui:42
 #, fuzzy, kde-format
-#| msgid "Default"
 msgctxt "Duration of flip animation"
 msgid "Default"
 msgstr "സഹജമായ"
@@ -1160,7 +1117,6 @@ msgstr ""
 #: glide/glide_config.ui:19 scale/package/contents/ui/config.ui:17
 #: slide/slide_config.ui:19
 #, fuzzy, kde-format
-#| msgid "Decorations:"
 msgid "Duration:"
 msgstr "അലങ്കാരങ്ങള്‍:"
 
@@ -1169,14 +1125,12 @@ msgstr "അലങ്കാരങ്ങള്‍:"
 #: glide/glide_config.ui:32 scale/package/contents/ui/config.ui:30
 #: slide/slide_config.ui:32
 #, fuzzy, kde-format
-#| msgid "Default"
 msgid "Default"
 msgstr "സഹജമായ"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_InAnimation)
 #: glide/glide_config.ui:50
 #, fuzzy, kde-format
-#| msgid "Activation"
 msgid "Window Open Animation"
 msgstr "പ്രാവര്‍ത്തികമാക്കല്‍"
 
@@ -1184,7 +1138,6 @@ msgstr "പ്രാവര്‍ത്തികമാക്കല്‍"
 #. i18n: ectx: property (text), widget (QLabel, label_OutRotationEdge)
 #: glide/glide_config.ui:56 glide/glide_config.ui:154
 #, fuzzy, kde-format
-#| msgid "Rotation duration:"
 msgid "Rotation edge:"
 msgstr "കറക്കേണ്ട സമയം:"
 
@@ -1192,7 +1145,6 @@ msgstr "കറക്കേണ്ട സമയം:"
 #. i18n: ectx: property (text), widget (QLabel, label_OutRotationAngle)
 #: glide/glide_config.ui:93 glide/glide_config.ui:191
 #, fuzzy, kde-format
-#| msgid "Rotation duration:"
 msgid "Rotation angle:"
 msgstr "കറക്കേണ്ട സമയം:"
 
@@ -1206,7 +1158,6 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_OutAnimation)
 #: glide/glide_config.ui:148
 #, fuzzy, kde-format
-#| msgid "Activation"
 msgid "Window Close Animation"
 msgstr "പ്രാവര്‍ത്തികമാക്കല്‍"
 
@@ -1235,7 +1186,6 @@ msgstr "&റേഡിയസ് (വ്യാസാര്‍ദ്ധം):"
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_AnimationDuration)
 #: magiclamp/magiclamp_config.ui:39
 #, fuzzy, kde-format
-#| msgid " msec"
 msgid "milliseconds"
 msgstr " മില്ലി-സെക്കന്റ്"
 
@@ -1266,13 +1216,11 @@ msgstr "&പൊക്കം:"
 
 #: mouseclick/mouseclick.cpp:51 mouseclick/mouseclick_config.cpp:64
 #, fuzzy, kde-format
-#| msgid "Toggle Invert Effect"
 msgid "Toggle Mouse Click Effect"
 msgstr "മറിക്കല്‍ പ്രഭാവം ടോഗിള്‍ ചെയ്യുക"
 
 #: mouseclick/mouseclick.cpp:59
 #, fuzzy, kde-format
-#| msgid "Left"
 msgctxt "Left mouse button"
 msgid "Left"
 msgstr "ഇടത്"
@@ -1285,7 +1233,6 @@ msgstr ""
 
 #: mouseclick/mouseclick.cpp:61
 #, fuzzy, kde-format
-#| msgid "Right"
 msgctxt "Right mouse button"
 msgid "Right"
 msgstr "വലതു്"
@@ -1317,7 +1264,6 @@ msgstr ""
 #. i18n: ectx: attribute (title), widget (QWidget, advanced_tab)
 #: mouseclick/mouseclick_config.ui:91
 #, fuzzy, kde-format
-#| msgid "Advanced"
 msgid "Advanced Settings"
 msgstr "സങ്കീര്‍ണമായ"
 
@@ -1330,7 +1276,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, ring_line_width_label)
 #: mouseclick/mouseclick_config.ui:103
 #, fuzzy, kde-format
-#| msgid "&Width:"
 msgid "Line Width:"
 msgstr "&വീതി:"
 
@@ -1339,7 +1284,6 @@ msgstr "&വീതി:"
 #: mouseclick/mouseclick_config.ui:119 mouseclick/mouseclick_config.ui:171
 #: mousemark/mousemark_config.cpp:56
 #, fuzzy, kde-format
-#| msgid " pixels"
 msgid " pixel"
 msgid_plural " pixels"
 msgstr[0] " പിക്സെലുകള്‍"
@@ -1348,14 +1292,12 @@ msgstr[1] " പിക്സെലുകള്‍"
 #. i18n: ectx: property (text), widget (QLabel, ring_duration_label)
 #: mouseclick/mouseclick_config.ui:145
 #, fuzzy, kde-format
-#| msgid "Fading duration:"
 msgid "Ring Duration:"
 msgstr "മായല്‍ ദൈര്‍ഘ്യം:"
 
 #. i18n: ectx: property (text), widget (QLabel, ring_radius_label)
 #: mouseclick/mouseclick_config.ui:155
 #, fuzzy, kde-format
-#| msgid "&Radius:"
 msgid "Ring Radius:"
 msgstr "&റേഡിയസ് (വ്യാസാര്‍ദ്ധം):"
 
@@ -1381,7 +1323,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, showtext_label)
 #: mouseclick/mouseclick_config.ui:233
 #, fuzzy, kde-format
-#| msgid "Show Desktop Grid"
 msgid "Show Text:"
 msgstr "പണിയിട വിതരണ ശ്രംഖല (ഗ്രിഡ്) കാണിക്കുക"
 
@@ -1433,7 +1374,6 @@ msgstr "നിലവിലുള്ള ജാലകങ്ങള്‍ ടോഗ�
 #: presentwindows/presentwindows.cpp:95
 #: presentwindows/presentwindows_config.cpp:79
 #, fuzzy, kde-format
-#| msgid "Toggle Present Windows (All desktops)"
 msgid "Toggle Present Windows (Window class)"
 msgstr "നിലവിലുള്ള ജാലകങ്ങള്‍ ടോഗിള്‍ ചെയ്യുക (എല്ലാ പണിയിടങ്ങള്‍ക്കുമായി)"
 
@@ -1513,7 +1453,6 @@ msgstr ""
 #: presentwindows/presentwindows_config.ui:322
 #: presentwindows/presentwindows_config.ui:356
 #, fuzzy, kde-format
-#| msgid "Inactive windows:"
 msgid "Activate window"
 msgstr "സജീവമല്ലാത്ത ജാലകങ്ങള്‍:"
 
@@ -1540,7 +1479,6 @@ msgstr ""
 #: presentwindows/presentwindows_config.ui:198
 #: presentwindows/presentwindows_config.ui:242
 #, fuzzy, kde-format
-#| msgid "Toggle Present Windows (Current desktop)"
 msgid "Bring window to current desktop"
 msgstr "നിലവിലുള്ള ജാലകങ്ങള്‍ ടോഗിള്‍ ചെയ്യുക (നിലവിലുള്ള പണിയിടത്തിനായി)"
 
@@ -1551,7 +1489,6 @@ msgstr "നിലവിലുള്ള ജാലകങ്ങള്‍ ടോഗ�
 #: presentwindows/presentwindows_config.ui:203
 #: presentwindows/presentwindows_config.ui:247
 #, fuzzy, kde-format
-#| msgid "Toggle Present Windows (All desktops)"
 msgid "Send window to all desktops"
 msgstr "നിലവിലുള്ള ജാലകങ്ങള്‍ ടോഗിള്‍ ചെയ്യുക (എല്ലാ പണിയിടങ്ങള്‍ക്കുമായി)"
 
@@ -1562,7 +1499,6 @@ msgstr "നിലവിലുള്ള ജാലകങ്ങള്‍ ടോഗ�
 #: presentwindows/presentwindows_config.ui:208
 #: presentwindows/presentwindows_config.ui:252
 #, fuzzy, kde-format
-#| msgid "Ignore &minimized windows"
 msgid "(Un-)Minimize window"
 msgstr "&മിനിമൈസ് ചെയ്തിരിക്കുന്ന ജാലകങ്ങള്‍ അവഗണിക്കുക"
 
@@ -1585,7 +1521,6 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
 #: presentwindows/presentwindows_config.ui:263
 #, fuzzy, kde-format
-#| msgid "Desktop Cube"
 msgctxt "@title:group actions when clicking on desktop"
 msgid "Desktop"
 msgstr "പണിയിട ക്യൂബ്"
@@ -1597,7 +1532,6 @@ msgstr "പണിയിട ക്യൂബ്"
 #: presentwindows/presentwindows_config.ui:332
 #: presentwindows/presentwindows_config.ui:366
 #, fuzzy, kde-format
-#| msgid "Show Desktop Grid"
 msgid "Show desktop"
 msgstr "പണിയിട വിതരണ ശ്രംഖല (ഗ്രിഡ്) കാണിക്കുക"
 
@@ -1622,7 +1556,6 @@ msgstr "&മിനിമൈസ് ചെയ്തിരിക്കുന്ന 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowPanel)
 #: presentwindows/presentwindows_config.ui:417
 #, fuzzy, kde-format
-#| msgid "Show caps"
 msgid "Show &panels"
 msgstr "ക്യാപ്സ് (വലിയ അക്ഷരങ്ങള്‍) കാണിക്കുക"
 
@@ -1653,7 +1586,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TextureScale)
 #: resize/resize_config.ui:17
 #, fuzzy, kde-format
-#| msgid "All &other windows"
 msgid "Scale window"
 msgstr "&മറ്റുള്ള എല്ലാ ജാലകങ്ങളും"
 
@@ -1666,14 +1598,12 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_InScale)
 #: scale/package/contents/ui/config.ui:46
 #, fuzzy, kde-format
-#| msgid "Activation"
 msgid "Window open scale:"
 msgstr "പ്രാവര്‍ത്തികമാക്കല്‍"
 
 #. i18n: ectx: property (text), widget (QLabel, label_OutScale)
 #: scale/package/contents/ui/config.ui:53
 #, fuzzy, kde-format
-#| msgid "Activation"
 msgid "Window close scale:"
 msgstr "പ്രാവര്‍ത്തികമാക്കല്‍"
 
@@ -1770,7 +1700,6 @@ msgstr "പദാവലിയുടെ ആല്‍ഫ:"
 
 #: showpaint/showpaint.cpp:53 showpaint/showpaint_config.cpp:52
 #, fuzzy, kde-format
-#| msgid "Show caps"
 msgid "Toggle Show Paint"
 msgstr "ക്യാപ്സ് (വലിയ അക്ഷരങ്ങള്‍) കാണിക്കുക"
 
@@ -1801,7 +1730,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlideBackground)
 #: slide/slide_config.ui:112
 #, fuzzy, kde-format
-#| msgid "Wo&bble when moving"
 msgid "Slide desktop background"
 msgstr "അനക്കുമ്പോള്‍ &കുലുക്കുക"
 
@@ -1828,7 +1756,6 @@ msgstr "&സ്പെയ്സിങ്ങ് (നടുക്കുള്ള �
 #: thumbnailaside/thumbnailaside_config.ui:55
 #: thumbnailaside/thumbnailaside_config.ui:106
 #, fuzzy, kde-format
-#| msgid " pixels"
 msgid " pixels"
 msgstr " പിക്സെലുകള്‍"
 
@@ -1870,7 +1797,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Control)
 #: trackmouse/trackmouse_config.ui:72
 #, fuzzy, kde-format
-#| msgid "Center"
 msgid "Ctrl"
 msgstr "നടുക്കു്"
 
@@ -1965,14 +1891,12 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Move)
 #: windowgeometry/windowgeometry_config.ui:17
 #, fuzzy, kde-format
-#| msgid "Display window &icons"
 msgid "Display for moving windows"
 msgstr "ജാലക &ചിഹ്നങ്ങള്‍ കാണിക്കുക"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Resize)
 #: windowgeometry/windowgeometry_config.ui:24
 #, fuzzy, kde-format
-#| msgid "Display window &icons"
 msgid "Display for resizing windows"
 msgstr "ജാലക &ചിഹ്നങ്ങള്‍ കാണിക്കുക"
 
@@ -2068,13 +1992,11 @@ msgstr ""
 
 #: zoom/zoom_config.cpp:87
 #, fuzzy, kde-format
-#| msgid "Top Left"
 msgid "Move Left"
 msgstr "മുകള്‍ ഇടത്തു"
 
 #: zoom/zoom_config.cpp:94
 #, fuzzy, kde-format
-#| msgid "Top Right"
 msgid "Move Right"
 msgstr "മുകള്‍ വലതു"
 
@@ -2098,7 +2020,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: zoom/zoom_config.ui:28
 #, fuzzy, kde-format
-#| msgid "Zoom &duration:"
 msgid "Zoom Factor:"
 msgstr "സൂം ചെയ്യേണ്ട (വലിപ്പം കൂട്ടേണ്ട) ദൈര്‍ഘ്യം"
 
@@ -2173,7 +2094,6 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MouseTracking)
 #: zoom/zoom_config.ui:133
 #, fuzzy, kde-format
-#| msgid "Center"
 msgid "Centered"
 msgstr "നടുക്കു്"
 
@@ -2186,7 +2106,6 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MouseTracking)
 #: zoom/zoom_config.ui:143
 #, fuzzy, kde-format
-#| msgid "Disabled"
 msgid "Disabled"
 msgstr "പ്രവര്‍ത്തനരഹിതമാക്കിയിരിയ്ക്കുന്നു"
 

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-28 07:26+0200\n"
-"PO-Revision-Date: 2019-07-29 16:23+0700\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-08-15 21:08+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -518,7 +518,7 @@ msgstr "Tengah"
 #: desktopgrid/desktopgrid_config.ui:23
 #, kde-format
 msgid "Zoom &duration:"
-msgstr "&Durasi zum :"
+msgstr "&Durasi zoom :"
 
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_ZoomDuration)
 #: desktopgrid/desktopgrid_config.ui:42
@@ -583,9 +583,10 @@ msgstr "Tampilkan tombol untuk mengubah cacah desktop virtual"
 
 #. i18n: ectx: property (text), widget (QLabel, label_Strength)
 #: diminactive/diminactive_config.ui:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Strength:"
 msgid "Strength:"
-msgstr "Kekuatan:"
+msgstr "&Kekuatan:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_Dim)
 #: diminactive/diminactive_config.ui:40
@@ -955,10 +956,12 @@ msgid "Slide"
 msgstr "Slide"
 
 #: effect_builtins.cpp:493
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Comment describing the KWin Effect"
+#| msgid "Slide windows across the screen when switching virtual desktops"
 msgctxt "Comment describing the KWin Effect"
 msgid "Slide desktops when switching virtual desktops"
-msgstr "Desktop geser ketika beralih desktop virtual"
+msgstr "Jendela geser melintasi layar ketika beralih desktop virtual"
 
 #: effect_builtins.cpp:507
 #, kde-format
@@ -1804,9 +1807,10 @@ msgstr "Pintasan keyboard:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_ModifierKeys)
 #: trackmouse/trackmouse_config.ui:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Modifiers"
 msgid "Modifier keys:"
-msgstr "Pemodif tuts:"
+msgstr "Pemodif"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Alt)
 #: trackmouse/trackmouse_config.ui:65

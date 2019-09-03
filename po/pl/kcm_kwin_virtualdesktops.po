@@ -10,15 +10,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwindesktop\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2019-01-13 10:23+0100\n"
+"POT-Creation-Date: 2019-07-31 07:58+0200\n"
+"PO-Revision-Date: 2019-08-15 06:40+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.03.70\n"
+"X-Generator: Lokalize 19.07.70\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
@@ -56,7 +56,7 @@ msgstr "Pulpity wirtualne"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
-msgstr "Zmień nazwę"
+msgstr "Przemianuj"
 
 #: package/contents/ui/main.qml:88
 #, kde-format
@@ -78,48 +78,48 @@ msgstr ""
 msgid "Rows:"
 msgstr "Wiersze:"
 
-#: package/contents/ui/main.qml:140
+#: package/contents/ui/main.qml:141
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Dodaj"
 
-#: package/contents/ui/main.qml:143
+#: package/contents/ui/main.qml:144
 #, kde-format
 msgid "New Desktop"
 msgstr "Nowy pulpit"
 
-#: package/contents/ui/main.qml:166
+#: package/contents/ui/main.qml:167
 #, kde-format
 msgid "Row %1"
 msgstr "Wiersz %1"
 
-#: package/contents/ui/main.qml:191
+#: package/contents/ui/main.qml:192
 #, kde-format
 msgid "Options:"
 msgstr "Opcje:"
 
-#: package/contents/ui/main.qml:193
+#: package/contents/ui/main.qml:194
 #, kde-format
 msgid "Navigation wraps around"
 msgstr "Zapętlij przełączanie pulpitów"
 
-#: package/contents/ui/main.qml:206
+#: package/contents/ui/main.qml:207
 #, kde-format
 msgid "Show animation when switching:"
-msgstr "Pokaż animację przy przełączaniu:"
+msgstr "Animuj przełączanie:"
 
-#: package/contents/ui/main.qml:249
+#: package/contents/ui/main.qml:250
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr "Pokaż wyświetlacz na ekranie przy przełączaniu:"
 
-#: package/contents/ui/main.qml:265
+#: package/contents/ui/main.qml:266
 #, kde-format
 msgid "%1 ms"
 msgstr "%1 ms"
 
-#: package/contents/ui/main.qml:285
+#: package/contents/ui/main.qml:286
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "Pokaż wskaźniki układu pulpitów"

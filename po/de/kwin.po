@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-20 07:48+0200\n"
-"PO-Revision-Date: 2019-07-17 18:04+0200\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-09-03 06:30+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -315,7 +315,7 @@ msgstr "Senkrecht"
 #, kde-format
 msgctxt "The angle delta of a pointer axis event"
 msgid "Delta"
-msgstr ""
+msgstr "Delta"
 
 #: debug_console.cpp:252
 #, kde-format
@@ -447,7 +447,7 @@ msgstr ""
 #, kde-format
 msgctxt "Current scale in pinch gesture"
 msgid "Scale"
-msgstr ""
+msgstr "Skalierung"
 
 #: debug_console.cpp:365
 #, kde-format
@@ -459,13 +459,13 @@ msgstr ""
 #, kde-format
 msgctxt "Current delta in pinch gesture"
 msgid "Delta x"
-msgstr ""
+msgstr "Delta x"
 
 #: debug_console.cpp:367
 #, kde-format
 msgctxt "Current delta in pinch gesture"
 msgid "Delta y"
-msgstr ""
+msgstr "Delta y"
 
 #: debug_console.cpp:378
 #, kde-format
@@ -501,13 +501,13 @@ msgstr ""
 #, kde-format
 msgctxt "Current delta in swipe gesture"
 msgid "Delta x"
-msgstr ""
+msgstr "Delta x"
 
 #: debug_console.cpp:418
 #, kde-format
 msgctxt "Current delta in swipe gesture"
 msgid "Delta y"
-msgstr ""
+msgstr "Delta y"
 
 #: debug_console.cpp:429
 #, kde-format
@@ -1583,7 +1583,7 @@ msgstr "KActivities-Integration deaktivieren."
 #: orientation_sensor.cpp:98
 #, kde-format
 msgid "Allow Rotation"
-msgstr ""
+msgstr "Drehung erlauben"
 
 #: orientation_sensor.cpp:99
 #, kde-format
@@ -1593,7 +1593,7 @@ msgstr "Automatische Bildschirmdrehung ist eingeschaltet"
 #: orientation_sensor.cpp:109
 #, kde-format
 msgid "Undefined"
-msgstr ""
+msgstr "Nicht definiert"
 
 #: orientation_sensor.cpp:113
 #, kde-format

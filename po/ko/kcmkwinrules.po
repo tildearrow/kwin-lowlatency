@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
 "PO-Revision-Date: 2019-04-29 20:52+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -273,7 +273,8 @@ msgid "KWin helper utility"
 msgstr "KWin 도우미 유틸리티"
 
 #: main.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "KWin id of the window for special window settings."
 msgid "KWin id of the window for special window settings."
 msgstr "창 지정 설정을 위한 창의 KWin ID."
 

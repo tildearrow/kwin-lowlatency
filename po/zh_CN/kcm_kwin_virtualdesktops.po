@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2019-07-18 15:09\n"
+"POT-Creation-Date: 2019-07-31 07:58+0200\n"
+"PO-Revision-Date: 2019-08-16 17:06\n"
 "Last-Translator: Guo Yunhe (guoyunhe)\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -81,48 +81,48 @@ msgstr "虚拟桌面已在此设置应用程序之外进行了更改。立即保
 msgid "Rows:"
 msgstr "行数："
 
-#: package/contents/ui/main.qml:140
+#: package/contents/ui/main.qml:141
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "添加"
 
-#: package/contents/ui/main.qml:143
+#: package/contents/ui/main.qml:144
 #, kde-format
 msgid "New Desktop"
 msgstr "新建桌面"
 
-#: package/contents/ui/main.qml:166
+#: package/contents/ui/main.qml:167
 #, kde-format
 msgid "Row %1"
 msgstr "行 %1"
 
-#: package/contents/ui/main.qml:191
+#: package/contents/ui/main.qml:192
 #, kde-format
 msgid "Options:"
 msgstr "选项："
 
-#: package/contents/ui/main.qml:193
+#: package/contents/ui/main.qml:194
 #, kde-format
 msgid "Navigation wraps around"
 msgstr "循环切换"
 
-#: package/contents/ui/main.qml:206
+#: package/contents/ui/main.qml:207
 #, kde-format
 msgid "Show animation when switching:"
 msgstr "切换时显示动画："
 
-#: package/contents/ui/main.qml:249
+#: package/contents/ui/main.qml:250
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr "切换时显示屏幕提示："
 
-#: package/contents/ui/main.qml:265
+#: package/contents/ui/main.qml:266
 #, kde-format
 msgid "%1 ms"
 msgstr "%1 毫秒"
 
-#: package/contents/ui/main.qml:285
+#: package/contents/ui/main.qml:286
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "显示桌面布局符"

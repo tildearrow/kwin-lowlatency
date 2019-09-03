@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
 "PO-Revision-Date: 2019-03-24 19:31+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English <kde-i18n-doc@kde.org>\n"
@@ -276,7 +276,8 @@ msgid "KWin helper utility"
 msgstr "KWin helper utility"
 
 #: main.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "KWin id of the window for special window settings."
 msgid "KWin id of the window for special window settings."
 msgstr "KWin ID of the window for special window settings."
 

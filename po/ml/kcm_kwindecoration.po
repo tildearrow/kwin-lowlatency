@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: kcmkwindecoration trunk\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2010-06-25 13:41+0530\n"
-"Last-Translator: Ershad K <ershad92@gmail.com>\n"
+"PO-Revision-Date: 2019-08-11 14:09+0530\n"
+"Last-Translator: Subin Siby <mail@subinsb.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
 "discuss@googlegroups.com>\n"
 "Language: ml\n"
@@ -41,7 +41,6 @@ msgstr ""
 
 #: declarative-plugin/buttonsmodel.cpp:72
 #, fuzzy, kde-format
-#| msgid "On All Desktops"
 msgid "On all desktops"
 msgstr "എല്ലാ പണിയിടങ്ങളിലും"
 
@@ -72,19 +71,16 @@ msgstr "മറയ്ക്കുക"
 
 #: declarative-plugin/buttonsmodel.cpp:84
 #, fuzzy, kde-format
-#| msgid "Keep Below Others"
 msgid "Keep below"
 msgstr "മറ്റുള്ളവയുടെ താഴെ വെക്കുക"
 
 #: declarative-plugin/buttonsmodel.cpp:86
 #, fuzzy, kde-format
-#| msgid "Keep Above Others"
 msgid "Keep above"
 msgstr "മറ്റുള്ളവയ്ക്കു മുകളില്‍ വെക്കുക"
 
 #: kcm.cpp:92
 #, fuzzy, kde-format
-#| msgid "Get New Decorations..."
 msgid "Window Decorations"
 msgstr "പുതിയ അലങ്കാരങ്ങള്‍ നേടുക"
 
@@ -100,7 +96,6 @@ msgstr ""
 
 #: kcm.cpp:135
 #, fuzzy, kde-format
-#| msgid "Get New Decorations..."
 msgid "Download New Window Decorations"
 msgstr "പുതിയ അലങ്കാരങ്ങള്‍ നേടുക"
 
@@ -132,21 +127,18 @@ msgstr ""
 
 #: package/contents/ui/main.qml:58
 #, fuzzy, kde-format
-#| msgid "Buttons"
 msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "ബട്ടണുകള്‍"
 
 #: package/contents/ui/main.qml:79
 #, fuzzy, kde-format
-#| msgid "Border size:"
 msgctxt "combobox label"
 msgid "Window border size:"
 msgstr "വക്കിന്റെ വലുപ്പം:"
 
 #: package/contents/ui/main.qml:94
 #, fuzzy, kde-format
-#| msgid "Get New Decorations..."
 msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr "പുതിയ അലങ്കാരങ്ങള്‍ നേടുക"
@@ -167,7 +159,6 @@ msgstr ""
 
 #: package/contents/ui/main.qml:129
 #, fuzzy, kde-format
-#| msgid "&Show window button tooltips"
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
 msgstr "ജാലകത്തിന്റെ ബട്ടണുകളെക്കുറിച്ചുള്ള സൂചനകള്‍ &കാണിയ്ക്കുക"
@@ -179,61 +170,45 @@ msgstr ""
 
 #: utils.cpp:38
 #, fuzzy, kde-format
-#| msgid "Border size:"
 msgid "No Borders"
 msgstr "വക്കിന്റെ വലുപ്പം:"
 
 #: utils.cpp:39
 #, fuzzy, kde-format
-#| msgid "Border size:"
 msgid "No Side Borders"
 msgstr "വക്കിന്റെ വലുപ്പം:"
 
 #: utils.cpp:40
 #, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Tiny"
 msgid "Tiny"
 msgstr "ചെറുത്"
 
 #: utils.cpp:41
 #, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Normal"
 msgid "Normal"
 msgstr "സാധാരണമായത്"
 
 #: utils.cpp:42
 #, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Large"
 msgid "Large"
 msgstr "വലിയത്"
 
 #: utils.cpp:43
 #, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Very Large"
 msgid "Very Large"
 msgstr "വളരെ വലുത്"
 
 #: utils.cpp:44
 #, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Huge"
 msgid "Huge"
 msgstr "ഭീമമായത്"
 
 #: utils.cpp:45
 #, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Very Huge"
 msgid "Very Huge"
 msgstr "അതിഭീമമായത് "
 
 #: utils.cpp:46
 #, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Oversized"
 msgid "Oversized"
 msgstr "ബൃഹത്തായ"

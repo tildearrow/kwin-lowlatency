@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-28 07:26+0200\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
 "PO-Revision-Date: 2019-06-08 10:06+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -585,7 +585,8 @@ msgstr "Erakutsi alegiazko-mahaigainen kopurua aldatzeko botoiak"
 
 #. i18n: ectx: property (text), widget (QLabel, label_Strength)
 #: diminactive/diminactive_config.ui:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Strength:"
 msgid "Strength:"
 msgstr "Sendotasuna:"
 
@@ -961,7 +962,9 @@ msgid "Slide"
 msgstr "Irristatu"
 
 #: effect_builtins.cpp:493
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Comment describing the KWin Effect"
+#| msgid "Slide desktops when switching virtual desktops"
 msgctxt "Comment describing the KWin Effect"
 msgid "Slide desktops when switching virtual desktops"
 msgstr "Irristatu mahaigainak alegiazko mahaigaina aldatzean"
@@ -1810,7 +1813,8 @@ msgstr "Teklatuko Laster-tekla:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_ModifierKeys)
 #: trackmouse/trackmouse_config.ui:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Modifier keys:"
 msgid "Modifier keys:"
 msgstr "Tekla aldatzaileak:"
 

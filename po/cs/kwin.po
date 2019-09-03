@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-20 07:48+0200\n"
-"PO-Revision-Date: 2019-01-14 17:02+0100\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-08-29 15:38+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 18.12.0\n"
+"X-Generator: Lokalize 19.08.0\n"
 "X-Language: cs_CZ\n"
 "X-Source-Language: en_US\n"
 
@@ -38,9 +38,11 @@ msgid "(Not Responding)"
 msgstr "(Neodpovídá)"
 
 #: abstract_output.cpp:50 abstract_output.cpp:240
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "The input device of the event is not known"
+#| msgid "Unknown"
 msgid "unknown"
-msgstr "neznámý"
+msgstr "Neznámý"
 
 #: composite.cpp:569
 #, kde-format
@@ -313,7 +315,9 @@ msgid "Vertical"
 msgstr "Svisle"
 
 #: debug_console.cpp:237
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "The relative mouse movement"
+#| msgid "Delta"
 msgctxt "The angle delta of a pointer axis event"
 msgid "Delta"
 msgstr "Rozdíl"
@@ -773,29 +777,32 @@ msgstr "Vnitřní okna"
 #: debug_console.ui:32
 #, kde-format
 msgid "Quit Debug Console"
-msgstr "Ukončit ladicí konzoli"
+msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, windows)
 #: debug_console.ui:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Move Window"
 msgid "Windows"
-msgstr "Okna"
+msgstr "Přesunout okno"
 
 #. i18n: ectx: attribute (title), widget (QWidget, surfaces)
 #: debug_console.ui:59
 #, kde-format
 msgid "Surfaces"
-msgstr "Povrchy"
+msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, input)
 #: debug_console.ui:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Input Device"
 msgid "Input Events"
-msgstr "Vstupní události"
+msgstr "Vstupní zařízení"
 
 #. i18n: ectx: attribute (title), widget (QWidget, inputDevices)
 #: debug_console.ui:86
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Input Device"
 msgid "Input Devices"
 msgstr "Vstupní zařízení"
 
@@ -803,37 +810,37 @@ msgstr "Vstupní zařízení"
 #: debug_console.ui:96
 #, kde-format
 msgid "OpenGL"
-msgstr "OpenGL"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, noOpenGLLabel)
 #: debug_console.ui:102
 #, kde-format
 msgid "No OpenGL compositor running"
-msgstr "Běží kompozitor OpenGL"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, driverInfoBox)
 #: debug_console.ui:130
 #, kde-format
 msgid "OpenGL (ES) driver information"
-msgstr "Informace o ovladači OpenGL (ES)"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: debug_console.ui:136
 #, kde-format
 msgid "Vendor:"
-msgstr "Dodavatel:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: debug_console.ui:143
 #, kde-format
 msgid "Renderer:"
-msgstr "Renderer:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: debug_console.ui:150
 #, kde-format
 msgid "Version:"
-msgstr "Verze:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: debug_console.ui:157
@@ -845,67 +852,78 @@ msgstr ""
 #: debug_console.ui:164
 #, kde-format
 msgid "Driver:"
-msgstr "Ovladač:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: debug_console.ui:171
 #, kde-format
 msgid "GPU class:"
-msgstr "Třída GPU:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: debug_console.ui:178
 #, kde-format
 msgid "OpenGL Version:"
-msgstr "Verze OpenGL:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: debug_console.ui:185
 #, kde-format
 msgid "GLSL Version:"
-msgstr "Verze GLSL:"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, platformExtensionsBox)
 #: debug_console.ui:251
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Extensions"
 msgid "Platform Extensions"
-msgstr ""
+msgstr "Rozšíř&ení"
 
 #. i18n: ectx: property (title), widget (QGroupBox, glExtensionsBox)
 #: debug_console.ui:267
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Extensions"
 msgid "OpenGL (ES) Extensions"
-msgstr "Rozšíření OpenGL (ES)"
+msgstr "Rozšíř&ení"
 
 #. i18n: ectx: attribute (title), widget (QWidget, keyboard)
 #: debug_console.ui:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "tooltip title"
+#| msgid "Keyboard Layout"
 msgid "Keyboard"
-msgstr "Klávesnice"
+msgstr "Rozvržení klávesnice"
 
 #. i18n: ectx: property (title), widget (QGroupBox, layoutBox)
 #: debug_console.ui:315
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "tooltip title"
+#| msgid "Keyboard Layout"
 msgid "Keymap Layouts"
-msgstr "Rozložení kláves"
+msgstr "Rozvržení klávesnice"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: debug_console.ui:337
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Configure Layouts..."
 msgid "Current Layout:"
-msgstr "Současné rozložení:"
+msgstr "Nastavit rozvržení..."
 
 #. i18n: ectx: property (title), widget (QGroupBox, modifiersBox)
 #: debug_console.ui:356
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "The currently active modifiers"
+#| msgid "Modifiers"
 msgid "Modifiers"
 msgstr "Modifikátory"
 
 #. i18n: ectx: property (title), widget (QGroupBox, activeModifiersBox)
 #: debug_console.ui:372
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "The currently active modifiers"
+#| msgid "Modifiers"
 msgid "Active Modifiers"
-msgstr "Aktivní modifikátory"
+msgstr "Modifikátory"
 
 #. i18n: ectx: property (title), widget (QGroupBox, ledsBox)
 #: debug_console.ui:388
@@ -917,7 +935,7 @@ msgstr ""
 #: debug_console.ui:404
 #, kde-format
 msgid "Active LEDs"
-msgstr "Aktivní LEDky"
+msgstr ""
 
 #: helpers/killer/killer.cpp:45
 #, kde-format
@@ -1376,9 +1394,10 @@ msgid "KWin"
 msgstr "KWin"
 
 #: main.cpp:195
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "(c) 1999-2013, The KDE Developers"
 msgid "(c) 1999-2018, The KDE Developers"
-msgstr "(c) 1999-2018, Vývojáři KDE"
+msgstr "(c) 1999-2013, Vývojáři KDE"
 
 #: main.cpp:197
 #, kde-format
@@ -1403,7 +1422,7 @@ msgstr "Luboš Luňák"
 #: main.cpp:201
 #, kde-format
 msgid "Martin Flöser"
-msgstr "Martin Flöser"
+msgstr ""
 
 #: main.cpp:210
 #, kde-format
@@ -1505,14 +1524,16 @@ msgid "Starts the session in locked mode."
 msgstr "Spustí sezení v uzamčeném režimu."
 
 #: main_wayland.cpp:511
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Starts the session in locked mode."
 msgid "Starts the session without lock screen support."
-msgstr ""
+msgstr "Spustí sezení v uzamčeném režimu."
 
 #: main_wayland.cpp:515
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Starts the session in locked mode."
 msgid "Starts the session without global shortcuts support."
-msgstr ""
+msgstr "Spustí sezení v uzamčeném režimu."
 
 #: main_wayland.cpp:519
 #, kde-format
@@ -1562,7 +1583,7 @@ msgstr ""
 #: orientation_sensor.cpp:98
 #, kde-format
 msgid "Allow Rotation"
-msgstr "Povolit rotaci"
+msgstr ""
 
 #: orientation_sensor.cpp:99
 #, kde-format
@@ -1572,19 +1593,23 @@ msgstr "Automatické otáčení obrazovky je povoleno"
 #: orientation_sensor.cpp:109
 #, kde-format
 msgid "Undefined"
-msgstr "Nedefinovaný"
+msgstr ""
 
 #: orientation_sensor.cpp:113
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "An orientation of a pointer axis event"
+#| msgid "Vertical"
 msgctxt "Portrait oriented display"
 msgid "Vertical"
-msgstr ""
+msgstr "Svisle"
 
 #: orientation_sensor.cpp:117
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "An orientation of a pointer axis event"
+#| msgid "Horizontal"
 msgctxt "Landscape oriented display"
 msgid "Horizontal"
-msgstr ""
+msgstr "Vodorovně"
 
 #: orientation_sensor.cpp:121
 #, kde-format
@@ -1594,7 +1619,7 @@ msgstr "Automatické otáčení obrazovky je zakázáno"
 #: plugins/scenes/opengl/scene_opengl.cpp:577
 #, kde-format
 msgid "Desktop effects were restarted due to a graphics reset"
-msgstr "Grafické efekty byly restartovány kvůli restartu grafiky"
+msgstr ""
 
 #: scripting/genericscriptedconfig.cpp:81
 #, kde-format
@@ -1647,13 +1672,13 @@ msgstr "%1 není typ varianty"
 #: shortcutdialog.ui:14
 #, kde-format
 msgid "Dialog"
-msgstr "Dialog"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QToolButton, clearButton)
 #: shortcutdialog.ui:25
 #, kde-format
 msgid "..."
-msgstr "..."
+msgstr ""
 
 #: tabbox/tabbox.cpp:387
 #, kde-format
@@ -1877,9 +1902,10 @@ msgid "&Attach as tab to"
 msgstr "Připojit j&ako kartu k"
 
 #: useractions.cpp:617
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&All Desktops"
 msgid "&Desktops"
-msgstr "&Plochy"
+msgstr "&Všechny pracovní plochy"
 
 #: useractions.cpp:630
 #, kde-format
@@ -1991,14 +2017,16 @@ msgid "Virtual Keyboard"
 msgstr "Virtuální klávesnice"
 
 #: virtualkeyboard.cpp:230
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Virtual Keyboard is enabled."
 msgid "Virtual Keyboard: enabled"
-msgstr ""
+msgstr "Virtuální klávesnice je povolena."
 
 #: virtualkeyboard.cpp:233
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Virtual Keyboard is disabled."
 msgid "Virtual Keyboard: disabled"
-msgstr ""
+msgstr "Virtuální klávesnice je zakázána."
 
 #: virtualkeyboard.cpp:235
 #, kde-format

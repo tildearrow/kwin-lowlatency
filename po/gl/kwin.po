@@ -21,19 +21,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-20 07:48+0200\n"
-"PO-Revision-Date: 2019-03-26 19:54+0100\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-07-28 12:35+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
-"Language-Team: Galician <kde-i18n-doc@kde.org>\n"
+"Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 18.12.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Environment: kde\n"
-"X-Accelerator-Marker: &\n"
-"X-Text-Markup: kde4\n"
+"X-Generator: Lokalize 19.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -1008,7 +1005,8 @@ msgstr "Utilidade auxiliar de KWin"
 #: helpers/killer/killer.cpp:86
 #, kde-format
 msgid "This helper utility is not supposed to be called directly."
-msgstr "Esta utilidade auxiliar non está concibida para chamarse directamente."
+msgstr ""
+"Esta utilidade auxiliar non está concibida para ser chamada directamente."
 
 #: helpers/killer/killer.cpp:96
 #, kde-format
@@ -1567,8 +1565,8 @@ msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
 "replace)\n"
 msgstr ""
-"kwin: non se pode afirmar a selección do xestor, haberá outro xestor aberto? "
-"(intente empregando --replace)\n"
+"kwin: non foi posíbel afirmar a selección do xestor, haberá outro xestor "
+"aberto? (intente empregando --replace)\n"
 
 #: main_x11.cpp:245
 #, kde-format
@@ -1759,8 +1757,8 @@ msgid ""
 "The Window Switcher installation is broken, resources are missing.\n"
 "Contact your distribution about this."
 msgstr ""
-"A instalación do selector de xanelas está estragada, faltan recursos.\n"
-"Contacte coa súa distribución sobre isto."
+"A instalación do Selector de xanelas está estragada, faltan recursos.\n"
+"Contacte co distribuidor."
 
 #: useractions.cpp:204
 #, kde-format
@@ -1801,7 +1799,7 @@ msgstr "Cambia&r o tamaño"
 #: useractions.cpp:284
 #, kde-format
 msgid "Keep &Above Others"
-msgstr "Manter enrib&a das outras"
+msgstr "Manter por &riba das outras"
 
 #: useractions.cpp:290
 #, kde-format
@@ -1902,7 +1900,7 @@ msgstr "Ningunha dispoñíbel"
 #: useractions.cpp:580
 #, kde-format
 msgid "Switch to Tab"
-msgstr "Ir á lapela"
+msgstr "Ir á lapela de xanela"
 
 #: useractions.cpp:591
 #, kde-format
@@ -1957,7 +1955,7 @@ msgstr "&Todas as actividades"
 #, kde-format
 msgctxt "'%1' is a keyboard shortcut like 'ctrl+w'"
 msgid "<b>%1</b> is already in use"
-msgstr "<b>%1</b> xa está a usarse"
+msgstr "<b>%1</b> xa está a ser usado"
 
 #: useractions.cpp:1039
 #, kde-format

@@ -15,17 +15,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 2.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Adrian Chaves (Gallaecio)"
+msgstr "Marce Villarino"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "adrian@chaves.io"
+msgstr "mvillarino@users.sourceforge.net"
 
 #: effectsmodel.cpp:63
 #, kde-format
@@ -61,7 +60,7 @@ msgstr "Mostrar unha animación de escritorio"
 #, kde-format
 msgctxt "Category of Desktop Effects, used as section header"
 msgid "Tools"
-msgstr "Ferramentas"
+msgstr "Utilidades"
 
 #: effectsmodel.cpp:69
 #, kde-format
@@ -84,4 +83,4 @@ msgstr "Animación de apertura e peche de xanela"
 #: effectsmodel.cpp:239
 #, kde-format
 msgid "KWin development team"
-msgstr "Equipo de desenvolvemento de KWin"
+msgstr "O equipo de desenvolvemento de KWin"

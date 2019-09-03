@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-28 07:26+0200\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
 "PO-Revision-Date: 2018-10-31 00:21+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
@@ -584,7 +584,8 @@ msgstr "顯示用來改變虛擬桌面數量的按鍵"
 
 #. i18n: ectx: property (text), widget (QLabel, label_Strength)
 #: diminactive/diminactive_config.ui:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Strength:"
 msgid "Strength:"
 msgstr "強度："
 
@@ -608,9 +609,11 @@ msgstr "桌面"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimKeepAbove)
 #: diminactive/diminactive_config.ui:61
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Comment describing the KWin Effect"
+#| msgid "Darken inactive windows"
 msgid "Keep above windows"
-msgstr "保持在視窗上"
+msgstr "將不使用的視窗變暗"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimByGroup)
 #: diminactive/diminactive_config.ui:68
@@ -947,7 +950,9 @@ msgid "Slide"
 msgstr "投影片"
 
 #: effect_builtins.cpp:493
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Comment describing the KWin Effect"
+#| msgid "Slide desktops when switching virtual desktops"
 msgctxt "Comment describing the KWin Effect"
 msgid "Slide desktops when switching virtual desktops"
 msgstr "切換虛擬桌面時滑過桌面"
@@ -1130,15 +1135,18 @@ msgstr "期間："
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_Duration)
 #: glide/glide_config.ui:32 scale/package/contents/ui/config.ui:30
 #: slide/slide_config.ui:32
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Duration of rotation"
+#| msgid "Default"
 msgid "Default"
 msgstr "預設"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_InAnimation)
 #: glide/glide_config.ui:50
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Window Close Animation"
 msgid "Window Open Animation"
-msgstr "視窗開啟動畫"
+msgstr "視窗關閉動畫"
 
 #. i18n: ectx: property (text), widget (QLabel, label_InRotationEdge)
 #. i18n: ectx: property (text), widget (QLabel, label_OutRotationEdge)
@@ -1791,7 +1799,8 @@ msgstr "鍵盤快捷鍵："
 
 #. i18n: ectx: property (text), widget (QLabel, label_ModifierKeys)
 #: trackmouse/trackmouse_config.ui:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Modifier keys:"
 msgid "Modifier keys:"
 msgstr "修飾鍵："
 

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2019-07-20 07:43+0700\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-08-24 17:51+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -351,7 +351,7 @@ msgstr "Jaga di Atas/Bawah"
 #: actions.ui:403 mouse.ui:146
 #, kde-format
 msgid "Move to Previous/Next Desktop"
-msgstr "Pindah ke Desktop Sebelumnya/Berikutnya"
+msgstr "Pindah ke Desktop Sebelumnya/Selanjutnya"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
@@ -1127,8 +1127,8 @@ msgstr "Perilaku di klik <em>ganda</em> masuk ke bilah judul."
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#: mouse.ui:75 mouse.ui:257 mouse.ui:330 mouse.ui:401 mouse.ui:474
-#: mouse.ui:545 mouse.ui:618
+#: mouse.ui:75 mouse.ui:257 mouse.ui:330 mouse.ui:401 mouse.ui:474 mouse.ui:545
+#: mouse.ui:618
 #, kde-format
 msgid "Shade"
 msgstr "Tiraikan"
@@ -1141,8 +1141,8 @@ msgstr "Tiraikan"
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#: mouse.ui:85 mouse.ui:262 mouse.ui:335 mouse.ui:406 mouse.ui:479
-#: mouse.ui:550 mouse.ui:623
+#: mouse.ui:85 mouse.ui:262 mouse.ui:335 mouse.ui:406 mouse.ui:479 mouse.ui:550
+#: mouse.ui:623
 #, kde-format
 msgid "Close"
 msgstr "Tutup"

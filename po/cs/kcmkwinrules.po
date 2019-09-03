@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
 "PO-Revision-Date: 2019-01-14 16:55+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -281,9 +281,10 @@ msgid "KWin helper utility"
 msgstr "Pomocný nástroj pro KWin"
 
 #: main.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "WId of the window for special window settings."
 msgid "KWin id of the window for special window settings."
-msgstr "KWin Id okna pro speciální nastavení oken."
+msgstr "WId okna pro speciální nastavení."
 
 #: main.cpp:249
 #, kde-format
@@ -1301,13 +1302,13 @@ msgstr "&Typ okna"
 #: ruleswidgetbase.ui:2507
 #, kde-format
 msgid "Desktop file name"
-msgstr "Název souboru plochy"
+msgstr ""
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, desktopfile)
 #: ruleswidgetbase.ui:2557
 #, kde-format
 msgid "org.kde.kwin"
-msgstr "org.kde.kwin"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_blockcompositing)
 #: ruleswidgetbase.ui:2571

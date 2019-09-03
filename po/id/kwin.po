@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-20 07:48+0200\n"
-"PO-Revision-Date: 2019-07-20 07:43+0700\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-08-24 17:51+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -1028,7 +1028,7 @@ msgid ""
 msgstr ""
 "<p>Apakah kamu ingin mengakhiri aplikasi ini?</p><p><warning>Mengakhiri "
 "aplikasi akan menutup semua window serta anaknya. Data apa pun yang tak "
-"disimpan akan hilang.</warning></p>"
+"tersimpan akan hilang.</warning></p>"
 
 #: helpers/killer/killer.cpp:107
 #, kde-format
@@ -1288,7 +1288,7 @@ msgstr "Window ke Desktop %1"
 #: kwinbindings.cpp:140
 #, kde-format
 msgid "Window to Next Desktop"
-msgstr "Window ke Desktop Berikutnya"
+msgstr "Window ke Desktop Selanjutnya"
 
 #: kwinbindings.cpp:141
 #, kde-format
@@ -1323,7 +1323,7 @@ msgstr "Window ke Layar %1"
 #: kwinbindings.cpp:150
 #, kde-format
 msgid "Window to Next Screen"
-msgstr "Window ke Layar Berikutnya"
+msgstr "Window ke Layar Selanjutnya"
 
 #: kwinbindings.cpp:151
 #, kde-format
@@ -1343,7 +1343,7 @@ msgstr "Alihkan ke Layar %1"
 #: kwinbindings.cpp:158
 #, kde-format
 msgid "Switch to Next Screen"
-msgstr "Alihkan ke Layar Berikutnya"
+msgstr "Alihkan ke Layar Selanjutnya"
 
 #: kwinbindings.cpp:159
 #, kde-format
@@ -1376,9 +1376,10 @@ msgid "KWin"
 msgstr "KWin"
 
 #: main.cpp:195
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "(c) 1999-2013, The KDE Developers"
 msgid "(c) 1999-2018, The KDE Developers"
-msgstr "(c) 1999-2018, Pengembang KDE"
+msgstr "(c) 1999-2013, Pengembang KDE"
 
 #: main.cpp:197
 #, kde-format
@@ -1873,7 +1874,7 @@ msgstr "Sebelumnya"
 #, kde-format
 msgctxt "Switch to tab -> Next"
 msgid "Next"
-msgstr "Berikutnya"
+msgstr "Selanjutnya"
 
 #: useractions.cpp:571
 #, kde-format
@@ -1971,7 +1972,7 @@ msgstr "Desktop %1"
 #: virtualdesktops.cpp:829
 #, kde-format
 msgid "Switch to Next Desktop"
-msgstr "Alihkan ke Desktop Berikutnya"
+msgstr "Alihkan ke Desktop Selanjutnya"
 
 #: virtualdesktops.cpp:831
 #, kde-format
@@ -2009,14 +2010,16 @@ msgid "Virtual Keyboard"
 msgstr "Keyboard Virtual"
 
 #: virtualkeyboard.cpp:230
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Virtual Keyboard is enabled."
 msgid "Virtual Keyboard: enabled"
-msgstr "Keyboard Virtual: difungsikan"
+msgstr "Keyboard Virtual telah difungsikan."
 
 #: virtualkeyboard.cpp:233
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Virtual Keyboard is disabled."
 msgid "Virtual Keyboard: disabled"
-msgstr "Keyboard Virtual: dinonfungsikan"
+msgstr "Keyboard Virtual telah dinonfungsikan."
 
 #: virtualkeyboard.cpp:235
 #, kde-format
@@ -2024,7 +2027,18 @@ msgid "Whether to show the virtual keyboard on demand."
 msgstr "Apakah iya atau tidak untuk menampilkan keyboard virtual saat diminta."
 
 #: workspace.cpp:1329
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Introductory text shown in the support information."
+#| msgid ""
+#| "KWin Support Information:\n"
+#| "The following information should be used when requesting support on e.g. "
+#| "http://forum.kde.org.\n"
+#| "It provides information about the currently running instance, which "
+#| "options are used,\n"
+#| "what OpenGL driver and which effects are running.\n"
+#| "Please post the information provided underneath this introductory text to "
+#| "a paste bin service\n"
+#| "like http://paste.kde.org instead of pasting into support threads.\n"
 msgctxt "Introductory text shown in the support information."
 msgid ""
 "KWin Support Information:\n"
@@ -2038,12 +2052,12 @@ msgid ""
 "like https://paste.kde.org instead of pasting into support threads.\n"
 msgstr ""
 "Informasi Dukungan KWin:\n"
-"Informasi berikut harus digunakan ketika meminta dukungan misalnya di "
-"https://forum.kde.org.\n"
+"Informasi berikut harus digunakan ketika meminta dukungan misalnya di http://"
+"forum.kde.org.\n"
 "Hal itu memberikan informasi tentang instansi yang saat ini berjalan, opsi "
 "apa yang digunakan,\n"
 "penggerak OpenGL apa dan efek apa yang berjalan.\n"
 "Silakan pos informasi yang disediakan di bawah teks pendahuluan ini ke "
 "layanan tempel\n"
-"seperti https://paste.kde.org ketimbang menempelkannya di pembicaraan "
+"seperti http://paste.kde.org ketimbang menempelkannya di pembicaraan "
 "dukungan.\n"

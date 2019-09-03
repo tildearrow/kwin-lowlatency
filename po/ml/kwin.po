@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-20 07:48+0200\n"
-"PO-Revision-Date: 2008-07-08 18:58+0530\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-08-11 14:09+0530\n"
+"Last-Translator: Subin Siby <mail@subinsb.com>\n"
 "Language-Team:  <en@li.org>\n"
 "Language: ml\n"
 "MIME-Version: 1.0\n"
@@ -57,14 +57,12 @@ msgstr ""
 
 #: debug_console.cpp:86
 #, fuzzy, kde-format
-#| msgid "Top-left"
 msgctxt "A mouse button"
 msgid "Left"
 msgstr "മുകളില്‍-ഇടതു്"
 
 #: debug_console.cpp:88
 #, fuzzy, kde-format
-#| msgid "Top-right"
 msgctxt "A mouse button"
 msgid "Right"
 msgstr "മുകളില്‍-വലതു്"
@@ -520,7 +518,6 @@ msgstr ""
 
 #: debug_console.cpp:453
 #, fuzzy, kde-format
-#| msgid "Switch to Screen 0"
 msgctxt "A hardware switch (e.g. notebook lid) got toggled"
 msgid "Switch toggled"
 msgstr "സ്ക്രീന്‍ 0-ത്തിലേക്കു് മാറുക"
@@ -539,7 +536,6 @@ msgstr ""
 
 #: debug_console.cpp:465
 #, fuzzy, kde-format
-#| msgid "Switch to Screen 0"
 msgctxt "A hardware switch"
 msgid "Switch"
 msgstr "സ്ക്രീന്‍ 0-ത്തിലേക്കു് മാറുക"
@@ -575,7 +571,6 @@ msgstr ""
 
 #: debug_console.cpp:669
 #, fuzzy, kde-format
-#| msgid "Top-right"
 msgctxt "Mouse Button"
 msgid "right"
 msgstr "മുകളില്‍-വലതു്"
@@ -750,7 +745,6 @@ msgstr ""
 
 #: debug_console.cpp:1096
 #, fuzzy, kde-format
-#| msgid "Close Window"
 msgid "X11 Client Windows"
 msgstr "ജാലകം അടയ്ക്കുക"
 
@@ -761,13 +755,11 @@ msgstr ""
 
 #: debug_console.cpp:1100
 #, fuzzy, kde-format
-#| msgid "Shade Window"
 msgid "Wayland Windows"
 msgstr "ജാലകം മറയ്ക്കുക"
 
 #: debug_console.cpp:1102
 #, fuzzy, kde-format
-#| msgid "Windows"
 msgid "Internal Windows"
 msgstr "ജാലകങ്ങള്‍"
 
@@ -780,7 +772,6 @@ msgstr ""
 #. i18n: ectx: attribute (title), widget (QWidget, windows)
 #: debug_console.ui:45
 #, fuzzy, kde-format
-#| msgid "Move Window"
 msgid "Windows"
 msgstr "ജാലകം നീക്കുക"
 
@@ -895,7 +886,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: debug_console.ui:337
 #, fuzzy, kde-format
-#| msgid "Configur&e Window Behavior..."
 msgid "Current Layout:"
 msgstr "ജാലകത്തിനുള്ള വിശേഷതകള്‍ ക്രമീ&കരിക്കുക..."
 
@@ -925,7 +915,6 @@ msgstr ""
 
 #: helpers/killer/killer.cpp:45
 #, fuzzy, kde-format
-#| msgid "KDE window manager"
 msgid "Window Manager"
 msgstr "കെഡിഇ ജാലക കാര്യസ്ഥന്‍"
 
@@ -1048,7 +1037,6 @@ msgstr ""
 
 #: keyboard_layout.cpp:264
 #, fuzzy, kde-format
-#| msgid "Configur&e Window Behavior..."
 msgid "Configure Layouts..."
 msgstr "ജാലകത്തിനുള്ള വിശേഷതകള്‍ ക്രമീ&കരിക്കുക..."
 
@@ -1206,73 +1194,61 @@ msgstr ""
 
 #: kwinbindings.cpp:105
 #, fuzzy, kde-format
-#| msgid "Pack Window to the Left"
 msgid "Quick Tile Window to the Left"
 msgstr "ഇടതു് വശത്തേക്ക് ജാലകം നീക്കുക"
 
 #: kwinbindings.cpp:107
 #, fuzzy, kde-format
-#| msgid "Pack Window to the Right"
 msgid "Quick Tile Window to the Right"
 msgstr "വലതു് വശത്തേക്ക് ജാലകം നീക്കുക"
 
 #: kwinbindings.cpp:109
 #, fuzzy, kde-format
-#| msgid "Pack Window to the Left"
 msgid "Quick Tile Window to the Top"
 msgstr "ഇടതു് വശത്തേക്ക് ജാലകം നീക്കുക"
 
 #: kwinbindings.cpp:111
 #, fuzzy, kde-format
-#| msgid "Pack Window to the Left"
 msgid "Quick Tile Window to the Bottom"
 msgstr "ഇടതു് വശത്തേക്ക് ജാലകം നീക്കുക"
 
 #: kwinbindings.cpp:113
 #, fuzzy, kde-format
-#| msgid "Pack Window to the Left"
 msgid "Quick Tile Window to the Top Left"
 msgstr "ഇടതു് വശത്തേക്ക് ജാലകം നീക്കുക"
 
 #: kwinbindings.cpp:115
 #, fuzzy, kde-format
-#| msgid "Pack Window to the Left"
 msgid "Quick Tile Window to the Bottom Left"
 msgstr "ഇടതു് വശത്തേക്ക് ജാലകം നീക്കുക"
 
 #: kwinbindings.cpp:117
 #, fuzzy, kde-format
-#| msgid "Pack Window to the Right"
 msgid "Quick Tile Window to the Top Right"
 msgstr "വലതു് വശത്തേക്ക് ജാലകം നീക്കുക"
 
 #: kwinbindings.cpp:119
 #, fuzzy, kde-format
-#| msgid "Pack Window to the Right"
 msgid "Quick Tile Window to the Bottom Right"
 msgstr "വലതു് വശത്തേക്ക് ജാലകം നീക്കുക"
 
 #: kwinbindings.cpp:121
 #, fuzzy, kde-format
-#| msgid "Switch to Screen 0"
 msgid "Switch to Window Above"
 msgstr "സ്ക്രീന്‍ 0-ത്തിലേക്കു് മാറുക"
 
 #: kwinbindings.cpp:123
 #, fuzzy, kde-format
-#| msgid "Switch to Previous Desktop"
 msgid "Switch to Window Below"
 msgstr "മുമ്പുള്ള പണിയിടത്തിലേയ്ക്ക് മാറുക"
 
 #: kwinbindings.cpp:125
 #, fuzzy, kde-format
-#| msgid "Pack Window to the Right"
 msgid "Switch to Window to the Right"
 msgstr "വലതു് വശത്തേക്ക് ജാലകം നീക്കുക"
 
 #: kwinbindings.cpp:127
 #, fuzzy, kde-format
-#| msgid "Pack Window to the Left"
 msgid "Switch to Window to the Left"
 msgstr "ഇടതു് വശത്തേക്ക് ജാലകം നീക്കുക"
 
@@ -1293,7 +1269,6 @@ msgstr "എല്ലാ പണിയിടത്തിലും ജാലകം 
 
 #: kwinbindings.cpp:138
 #, fuzzy, kde-format
-#| msgid "Window to Desktop 1"
 msgid "Window to Desktop %1"
 msgstr "ജാലകത്തില്‍ നിന്നും പണിയിടം 1-ലേക്കു്"
 
@@ -1329,7 +1304,6 @@ msgstr "ഒരു പണിയിടം താഴേയ്ക്കു് മാ
 
 #: kwinbindings.cpp:148
 #, fuzzy, kde-format
-#| msgid "Window to Screen 1"
 msgid "Window to Screen %1"
 msgstr "ജാലകത്തില്‍ നിന്നും സ്ക്രീന്‍ 1-ലേക്കു്"
 
@@ -1340,19 +1314,16 @@ msgstr "ജാലകത്തില്‍ നിന്നും അടുത്�
 
 #: kwinbindings.cpp:151
 #, fuzzy, kde-format
-#| msgid "Window to Previous Desktop"
 msgid "Window to Previous Screen"
 msgstr "മുമ്പോള്ള പണിയിടത്തിലേയ്ക്കു് മാറുക"
 
 #: kwinbindings.cpp:152
 #, fuzzy, kde-format
-#| msgid "Show Desktop Grid"
 msgid "Show Desktop"
 msgstr "പണിയിടം ഗ്രിഡ് കാണിക്കുക"
 
 #: kwinbindings.cpp:155
 #, fuzzy, kde-format
-#| msgid "Switch to Screen 1"
 msgid "Switch to Screen %1"
 msgstr "സ്ക്രീന്‍ 1-ലേക്കു് മാറുക"
 
@@ -1363,7 +1334,6 @@ msgstr "അടുത്ത സ്ക്രീനിലേക്കു് മാ�
 
 #: kwinbindings.cpp:159
 #, fuzzy, kde-format
-#| msgid "Switch to Previous Desktop"
 msgid "Switch to Previous Screen"
 msgstr "മുമ്പുള്ള പണിയിടത്തിലേയ്ക്ക് മാറുക"
 
@@ -1394,7 +1364,6 @@ msgstr "ക്വിന്‍"
 
 #: main.cpp:195
 #, fuzzy, kde-format
-#| msgid "(c) 1999-2005, The KDE Developers"
 msgid "(c) 1999-2018, The KDE Developers"
 msgstr "(c) 1999-2005, കെഡിഇ ഡവലപ്പര്‍മാര്‍"
 
@@ -1670,7 +1639,6 @@ msgstr ""
 
 #: tabbox/tabbox.cpp:387
 #, fuzzy, kde-format
-#| msgid "Show Desktop Grid"
 msgctxt "Special entry in alt+tab list for minimizing all windows"
 msgid "Show Desktop"
 msgstr "പണിയിടം ഗ്രിഡ് കാണിക്കുക"
@@ -1767,7 +1735,6 @@ msgstr "&നീക്കുക"
 
 #: useractions.cpp:280
 #, fuzzy, kde-format
-#| msgid "Re&size"
 msgid "&Resize"
 msgstr "വലിപ്പം &മാറ്റുക"
 
@@ -1788,7 +1755,6 @@ msgstr "&സ്ക്രീന്‍ പൂര്‍ണ്ണവലിപ്പ�
 
 #: useractions.cpp:302
 #, fuzzy, kde-format
-#| msgid "Shade"
 msgid "&Shade"
 msgstr "മറയ്ക്കുക"
 
@@ -1799,25 +1765,21 @@ msgstr "&അതിരില്ല"
 
 #: useractions.cpp:314
 #, fuzzy, kde-format
-#| msgid "Window &Shortcut..."
 msgid "Window Short&cut..."
 msgstr "ജാലകത്തിനുള്ള &കുറുക്കുവഴി..."
 
 #: useractions.cpp:319
 #, fuzzy, kde-format
-#| msgid "&Special Window Settings..."
 msgid "Special &Window Settings..."
 msgstr "ജാലകത്തിനുള്ള &പ്രത്യേക സജ്ജീകരണങ്ങള്‍..."
 
 #: useractions.cpp:324
 #, fuzzy, kde-format
-#| msgid "&Special Application Settings..."
 msgid "S&pecial Application Settings..."
 msgstr "പ്രയോഗത്തിനുള്ള &പ്രത്യേക സജ്ജീകരണങ്ങള്‍..."
 
 #: useractions.cpp:332
 #, fuzzy, kde-format
-#| msgid "&Special Window Settings..."
 msgctxt ""
 "Entry in context menu of window decoration to open the configuration module "
 "of KWin"
@@ -1879,7 +1841,6 @@ msgstr ""
 
 #: useractions.cpp:580
 #, fuzzy, kde-format
-#| msgid "Switch to Screen 0"
 msgid "Switch to Tab"
 msgstr "സ്ക്രീന്‍ 0-ത്തിലേക്കു് മാറുക"
 
@@ -1890,19 +1851,16 @@ msgstr ""
 
 #: useractions.cpp:617
 #, fuzzy, kde-format
-#| msgid "&All Desktops"
 msgid "&Desktops"
 msgstr "&എല്ലാ ഡസ്ക്ടോപ്പുകളും"
 
 #: useractions.cpp:630
 #, fuzzy, kde-format
-#| msgid "To &Desktop"
 msgid "Move To &Desktop"
 msgstr "&പണിയിടത്തിലേയ്ക്കു്"
 
 #: useractions.cpp:647
 #, fuzzy, kde-format
-#| msgid "To &Desktop"
 msgid "Move To &Screen"
 msgstr "&പണിയിടത്തിലേയ്ക്കു്"
 
@@ -1918,14 +1876,12 @@ msgstr "&എല്ലാ ഡസ്ക്ടോപ്പുകളും"
 
 #: useractions.cpp:701 useractions.cpp:753
 #, fuzzy, kde-format
-#| msgid "Show Desktop Grid"
 msgctxt "Create a new desktop and move there the window"
 msgid "&New Desktop"
 msgstr "പണിയിടം ഗ്രിഡ് കാണിക്കുക"
 
 #: useractions.cpp:773
 #, fuzzy, kde-format
-#| msgid "Window to Screen 1"
 msgctxt ""
 "@item:inmenu List of all Screens to send a window to. First argument is a "
 "number, second the output identifier. E.g. Screen 1 (HDMI1)"
@@ -1999,7 +1955,6 @@ msgstr "ഒരു പണിയിടം താഴോട്ടു് മാറു
 
 #: virtualdesktops.cpp:848
 #, fuzzy, kde-format
-#| msgid "Switch to Desktop 1"
 msgid "Switch to Desktop %1"
 msgstr "പണിയിടം 1-ലേക്കു് മാറുക"
 

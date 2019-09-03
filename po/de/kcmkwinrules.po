@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2019-03-22 06:14+0100\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-09-03 06:18+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 18.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -1253,7 +1253,7 @@ msgstr ""
 #: ruleswidgetbase.ui:2232
 #, kde-format
 msgid "Focus protection"
-msgstr "Vorbeugung gegen Übernahme der Aktivierung"
+msgstr "Fokusschutz"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_acceptfocus)
 #: ruleswidgetbase.ui:2295

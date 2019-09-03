@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 07:46+0200\n"
-"PO-Revision-Date: 2010-02-02 21:44+0530\n"
-"Last-Translator: Manilal K M|മണിലാല്‍ കെ എം <libregeek@gmail.com>\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
+"PO-Revision-Date: 2019-08-11 14:09+0530\n"
+"Last-Translator: Subin Siby <mail@subinsb.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ്  <smc-"
 "discuss@googlegroups.com>\n"
 "Language: ml\n"
@@ -249,7 +249,6 @@ msgstr "%1 ന്റെ ജാലക സജ്ജീകരണങ്ങള്‍"
 
 #: main.cpp:210
 #, fuzzy, kde-format
-#| msgid "Edit Window-Specific Settings"
 msgctxt "Window caption for the application wide rules dialog"
 msgid "Edit Application-Specific Settings"
 msgstr "ജാലകത്തിനു പ്രസക്തമായ സജ്ജീകരണങ്ങള്‍ ചിട്ടപ്പെടുത്തുക"
@@ -431,14 +430,12 @@ msgstr "കുറുക്കുവഴി ചിട്ടപ്പെടുത�
 #. i18n: ectx: attribute (title), widget (QWidget, TabPage1)
 #: ruleswidgetbase.ui:21
 #, fuzzy, kde-format
-#| msgid "&Window"
 msgid "&Window matching"
 msgstr "ജാലകം"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: ruleswidgetbase.ui:27
 #, fuzzy, kde-format
-#| msgid "De&scription:"
 msgid "&Description:"
 msgstr "വിവരണം"
 
@@ -507,7 +504,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: ruleswidgetbase.ui:109
 #, fuzzy, kde-format
-#| msgid "Window t&itle:"
 msgid "Window ro&le:"
 msgstr "ജാലകത്തിന്റെ &തലക്കെട്ട്:"
 
@@ -544,14 +540,12 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #: ruleswidgetbase.ui:468
 #, fuzzy, kde-format
-#| msgid "On Main Window"
 msgid "Unmanaged Window"
 msgstr "പ്രധാന ജാലകത്തില്‍"
 
 #. i18n: ectx: attribute (title), widget (QWidget, TabPage3)
 #: ruleswidgetbase.ui:489
 #, fuzzy, kde-format
-#| msgid "&Position"
 msgid "&Size && Position"
 msgstr "&സ്ഥാനം"
 
@@ -993,7 +987,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, enable_screen)
 #: ruleswidgetbase.ui:1369
 #, fuzzy, kde-format
-#| msgid "Splash Screen"
 msgid "Screen"
 msgstr "മിന്നല്‍ ജാലകം"
 
@@ -1220,7 +1213,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, enable_disableglobalshortcuts)
 #: ruleswidgetbase.ui:2344
 #, fuzzy, kde-format
-#| msgid "Block global shortcuts"
 msgid "Ignore global shortcuts"
 msgstr "ഗ്ലോബലായ കുറുക്കുവഴികള്‍ ബ്ലോക്കു് ചെയ്യുക"
 
@@ -1261,7 +1253,5 @@ msgstr ""
 
 #: yesnobox.h:36
 #, fuzzy, kde-format
-#| msgctxt "no focus stealing prevention"
-#| msgid "None"
 msgid "No"
 msgstr "ഒന്നുമില്ല"
