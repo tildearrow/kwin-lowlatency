@@ -161,6 +161,12 @@ AnimationSettings animationSettingsFromObject(QScriptValue &object)
         case 2:
           settings.curve = QEasingCurve::InOutSine;
           break;
+        case 3:
+          settings.curve = QEasingCurve::InOutCubic;
+          break;
+        case 4:
+          settings.curve = QEasingCurve::InOutQuart;
+          break;
         default:
           settings.curve = QEasingCurve::Linear;
           break;

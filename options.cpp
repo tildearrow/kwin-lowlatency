@@ -74,8 +74,13 @@ int Options::currentRefreshRate()
     }
 
     // 0Hz or less is invalid, so we fallback to a default rate
-    if (rate <= 0)
-        rate = 60; // and not shitty 50Hz for sure! *grrr*
+    if (rate <= 0) {
+        rate = 60; // and not shitty 50Hz for- HEY! DON'T YOU INSULT MY 50Hz!!! I play European games often so what the heck!
+
+
+
+        rate = 300; // there. a compromise!
+    }
 
     // QTimer gives us 1msec (1000Hz) at best, so we ignore anything higher;
     // however, additional throttling prevents very high rates from taking place anyway
@@ -130,6 +135,7 @@ Options::Options(QObject *parent)
     , m_latencyControl(Options::defaultLatencyControl())
     , m_maxLatency(Options::defaultMaxLatency())
     , m_minLatency(Options::defaultMinLatency())
+    , m_vsyncMechanism(Options::defaultVsyncMechanism())
     , OpTitlebarDblClick(Options::defaultOperationTitlebarDblClick())
     , CmdActiveTitlebar1(Options::defaultCommandActiveTitlebar1())
     , CmdActiveTitlebar2(Options::defaultCommandActiveTitlebar2())
@@ -765,6 +771,14 @@ void Options::setMinLatency(int val) {
   emit minLatencyChanged();
 }
 
+void Options::setVsyncMechanism(int val) {
+  if (m_vsyncMechanism == val) {
+    return;
+  }
+  m_vsyncMechanism = val;
+  emit vsyncMechanismChanged();
+}
+
 void Options::setGlPreferBufferSwap(char glPreferBufferSwap)
 {
     if (glPreferBufferSwap == 'a') {
@@ -943,6 +957,7 @@ void Options::syncFromKcfgc()
     setLatencyControl(m_settings->latencyControl());
     setMaxLatency(m_settings->maxLatency());
     setMinLatency(m_settings->minLatency());
+    setVsyncMechanism(m_settings->vSyncMechanism());
 }
 
 bool Options::loadCompositingConfig (bool force)

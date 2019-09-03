@@ -156,9 +156,31 @@ $ sudo make install
 
 KWin-lowlatency introduces few extra options in System Settings > Display and Monitor > Compositor. these are:
 
-- animation curve: allows you to make animations look smoother. I have a gripe with linear animations, hence this option. i'll post a video about this later.
+- animation curve: allows you to make animations look smoother. I have a gripe with linear animations, hence this option. the following options are available:
+  - Linear: default and only option in stock KWin. ugly.
+  - Quadratic: smooth curve. may cause a nuisance if your animation speed is high.
+  - Sine: smooth curve. default in KWin-lowlatency.
+  - Cubic: smooth curve. may cause an annoyance if your animation speed is high.
+  - Quartic: smoothest curve. you definitely need to lower the animation speed for this one, though.
 - latency/stutter control: use if you have a high-end system and want lower latency, or if you're having stuttering and want to reduce it.
 - maximum/minimum latency reduction: allows you to configure the latency reduction window. examples (min/max): 8/0 default, 0/0 disable latency reduction, and 8/8 lowest latency possible. this is limited to 8ms, since any further would cause major stuttering and slowdowns.
+- VSync mechanism: **use this if you have latency problems or frame rate halving.** allows you to set the mechanism used to detect VSync. the following options are available:
+  - Automatic: auto-detect the VSync mechanism. **default, and recommended.**
+  - None and just hope for the best:
+    - NVIDIA drivers since version 435 wait for VSync on glXSwapBuffers if `__GL_MaxFramesAllowed` is set to 1.
+    - this may also work on AMDGPU-PRO but I am not sure.
+    - **other drivers may cause latency problems.**
+  - SGI video sync: use `GLX_SGI_video_sync` to wait for VBlank.
+    - not recommended on recent Mesa drivers. I've had hangs using it.
+    - not recommended on NVIDIA drivers 435+. causes frame rate halving. see above.
+  - glFinish: use `glFinish` to force waiting for VBlank.
+    - according to this [bug report](https://github.com/tildearrow/kwin-lowlatency/issues/17) this may actually increase latency on NVIDIA cards.
+    - this is more of a workaround to the Mesa hang problem.
+  - SGI video sync with horrible hack: use `GLX_SGI_video_sync` to partially busy-wait for VBlank.
+    - for some reason glFinish doesn't work on Intel cards, and is just skipped without any VBlank waiting.
+    - hence I had to write this dirty hack for such systems because SGI video sync hangs there too.
+    - uses around ~10-20% CPU in my laptop when playing games or some other render activity because it has to poll the current frame number 10-20 times a second.
+  - if none of these options solve any problems, please open a bug report. thanks.
 
 # misc/FAQ
 

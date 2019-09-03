@@ -624,6 +624,9 @@ public:
     int minLatency() const {
       return m_minLatency;
     }
+    int vsyncMechanism() const {
+      return m_vsyncMechanism;
+    }
 
     QStringList modifierOnlyDBusShortcut(Qt::KeyboardModifier mod) const;
 
@@ -694,6 +697,7 @@ public:
     void setLatencyControl(int index);
     void setMaxLatency(int val);
     void setMinLatency(int val);
+    void setVsyncMechanism(int val);
 
     // default values
     static WindowOperation defaultOperationTitlebarDblClick() {
@@ -822,6 +826,9 @@ public:
     static int defaultMinLatency() {
       return 0;
     }
+    static int defaultVsyncMechanism() {
+      return 0;
+    }
 
     /**
      * Performs loading all settings except compositing related.
@@ -905,6 +912,7 @@ Q_SIGNALS:
     void latencyControlChanged();
     void maxLatencyChanged();
     void minLatencyChanged();
+    void vsyncMechanismChanged();
 
     void configChanged();
 
@@ -956,6 +964,7 @@ private:
     int m_latencyControl;
     int m_maxLatency;
     int m_minLatency;
+    int m_vsyncMechanism;
 
     WindowOperation OpTitlebarDblClick;
     WindowOperation opMaxButtonRightClick = defaultOperationMaxButtonRightClick();
