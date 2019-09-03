@@ -10,4 +10,9 @@ if [ ! -e kwin-$version.tar.xz ]
 fi
 
 tar -xf kwin-$version.tar.xz
-diff -ruNx .git -x build -x .kdev4 -x po kwin-$version $klpath > kwin-lowlatency-$version-$minorVer.patch
+
+if [ $minorVer -eq 1 ]
+  then filename="kwin-lowlatency-$version.patch"
+  else filename="kwin-lowlatency-$version-$minorVer.patch"
+fi
+diff -ruNx .git -x build -x .kdev4 -x po kwin-$version $klpath > $filename
