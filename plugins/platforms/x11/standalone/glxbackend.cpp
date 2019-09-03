@@ -214,7 +214,19 @@ void GlxBackend::init()
     }
     // NVIDIA doesn't freeze on that wait sync function
     if (GLPlatform::instance()->driver() == Driver_NVidia) {
-      useWaitSync=true; // issue #17
+      int nvidiaVerMaj=0;
+      int nvidiaVerMin=0;
+      // version 435 blocks without having to wait for sync, issues #36, #39
+      // if the latency increases (it hasn't been the case so far), please open
+      // another bug report. thanks.
+      sscanf(GLPlatform::instance()->glVersionString().data(),"%*s NVIDIA %d.%d",&nvidiaVerMaj,&nvidiaVerMin);
+      if (nvidiaVerMaj>=435) {
+        // we don't need to wait for sync anymore. whoop!
+        useWaitSync=false;
+      } else {
+        // for old or unknown NVIDIA driver
+        useWaitSync=true; // issue #17
+      }
     }
     options->setGlPreferBufferSwap(options->glPreferBufferSwap()); // resolve autosetting
     if (options->glPreferBufferSwap() == Options::AutoSwapStrategy)
