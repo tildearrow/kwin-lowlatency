@@ -320,6 +320,10 @@ void ApplicationX11::crashHandler(int signal)
 {
     crashes++;
 
+    fprintf(stderr, "sorry, somebody made a mistake in the code.\n");
+    fprintf(stderr, "mistake is NOT computer's. it's human's.\n");
+    fprintf(stderr, "mistake SHALL NOT exist in humans, because it leads to crashes like this one.\n");
+    fprintf(stderr, "please open a bug report now, as mistake shall not exist.\n");
     fprintf(stderr, "Application::crashHandler() called with signal %d; recent crashes: %d\n", signal, crashes);
     char cmd[1024];
     sprintf(cmd, "%s --crashes %d &",
