@@ -51,6 +51,7 @@ class Compositing : public QObject
     Q_PROPERTY(int latencyControl READ latencyControl WRITE setLatencyControl NOTIFY latencyControlChanged)
     Q_PROPERTY(int maxLatency READ maxLatency WRITE setMaxLatency NOTIFY maxLatencyChanged)
     Q_PROPERTY(int minLatency READ minLatency WRITE setMinLatency NOTIFY minLatencyChanged)
+    Q_PROPERTY(int vsyncMechanism READ vsyncMechanism WRITE setVsyncMechanism NOTIFY vsyncMechanismChanged)
     Q_PROPERTY(bool compositingRequired READ compositingRequired CONSTANT)
 public:
     explicit Compositing(QObject *parent = 0);
@@ -72,6 +73,7 @@ public:
     int latencyControl() const;
     int maxLatency() const;
     int minLatency() const;
+    int vsyncMechanism() const;
     bool compositingRequired() const;
 
     OpenGLPlatformInterfaceModel *openGLPlatformInterfaceModel() const;
@@ -90,6 +92,7 @@ public:
     void setLatencyControl(int index);
     void setMaxLatency(int val);
     void setMinLatency(int val);
+    void setVsyncMechanism(int index);
     void save();
 
 public Q_SLOTS:
@@ -112,6 +115,7 @@ Q_SIGNALS:
     void latencyControlChanged(int);
     void maxLatencyChanged(int);
     void minLatencyChanged(int);
+    void vsyncMechanismChanged(int);
 
 private:
     int m_animationSpeed;
@@ -130,6 +134,7 @@ private:
     int m_latencyControl;
     int m_maxLatency;
     int m_minLatency;
+    int m_vsyncMechanism;
     bool m_windowsBlockingCompositing;
     OrgKdeKwinCompositingInterface *m_compositingInterface;
 };

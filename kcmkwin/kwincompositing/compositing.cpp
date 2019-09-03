@@ -53,6 +53,7 @@ Compositing::Compositing(QObject *parent)
     , m_latencyControl(1)
     , m_maxLatency(8)
     , m_minLatency(0)
+    , m_vsyncMechanism(0)
     , m_compositingInterface(new OrgKdeKwinCompositingInterface(QStringLiteral("org.kde.KWin"), QStringLiteral("/Compositor"), QDBusConnection::sessionBus(), this))
 {
     reset();
@@ -70,6 +71,7 @@ Compositing::Compositing(QObject *parent)
     connect(this, &Compositing::latencyControlChanged,          this, &Compositing::changed);
     connect(this, &Compositing::maxLatencyChanged,              this, &Compositing::changed);
     connect(this, &Compositing::minLatencyChanged,              this, &Compositing::changed);
+    connect(this, &Compositing::vsyncMechanismChanged,          this, &Compositing::changed);
 
     connect(this, &Compositing::changed, [this]{
         m_changed = true;
@@ -129,6 +131,7 @@ void Compositing::reset()
     setLatencyControl(kwinConfig.readEntry("LatencyControl",1));
     setMaxLatency(kwinConfig.readEntry("MaxLatency",8));
     setMinLatency(kwinConfig.readEntry("MinLatency",0));
+    setVsyncMechanism(kwinConfig.readEntry("VSyncMechanism",0));
 
     m_changed = false;
 }
@@ -149,6 +152,7 @@ void Compositing::defaults()
     setLatencyControl(1);
     setMaxLatency(8);
     setMinLatency(0);
+    setVsyncMechanism(0);
     m_changed = true;
 }
 
@@ -352,6 +356,7 @@ void Compositing::save()
     kwinConfig.writeEntry("LatencyControl",latencyControl());
     kwinConfig.writeEntry("MaxLatency",maxLatency());
     kwinConfig.writeEntry("MinLatency",minLatency());
+    kwinConfig.writeEntry("VSyncMechanism",vsyncMechanism());
     kwinConfig.sync();
 
     if (m_changed) {
@@ -420,6 +425,11 @@ int Compositing::minLatency() const
     return m_minLatency;
 }
 
+int Compositing::vsyncMechanism() const
+{
+    return m_vsyncMechanism;
+}
+
 void Compositing::setAnimationCurve(int val)
 {
     if (m_animationCurve == val) {
@@ -454,6 +464,15 @@ void Compositing::setMinLatency(int val)
     }
     m_minLatency = val;
     emit minLatencyChanged(val);
+}
+
+void Compositing::setVsyncMechanism(int val)
+{
+    if (m_vsyncMechanism == val) {
+        return;
+    }
+    m_vsyncMechanism = val;
+    emit vsyncMechanismChanged(val);
 }
 
 bool Compositing::compositingRequired() const

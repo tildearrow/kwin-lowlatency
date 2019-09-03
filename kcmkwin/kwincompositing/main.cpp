@@ -189,6 +189,11 @@ void KWinCompositingSettings::init()
     connect(m_compositing, &Compositing::minLatencyChanged, m_form.minLatency, &QSpinBox::setValue);
     connect(m_form.minLatency, valueChangedSignal, m_compositing, &Compositing::setMinLatency);
 
+    // vsync mechanism
+    m_form.vsyncMechanism->setCurrentIndex(m_compositing->vsyncMechanism());
+    connect(m_compositing, &Compositing::vsyncMechanismChanged, m_form.vsyncMechanism, &QComboBox::setCurrentIndex);
+    connect(m_form.vsyncMechanism, currentIndexChangedSignal, m_compositing, &Compositing::setVsyncMechanism);
+
     // compositing type
     CompositingType *type = new CompositingType(this);
     m_form.type->setModel(type);
