@@ -39,7 +39,7 @@ f_scale[3]=vec4(0.0,0.0,0.0,1.0);
 f_scale[1]=vec4(0.0,1.0,0.0,0.0);
 f_scale[2]=vec4(0.0,0.0,1.0,0.0);
 f_scale[3]=vec4(0.0,0.0,0.0,1.0);*/
-gl_Position = modelViewProjectionMatrix * vec4(gl_Vertex.xyzw*f_scale);
+gl_Position = modelViewProjectionMatrix * vec4(position.xyzw*f_scale);
 f_sceneCoord = vec2( texcoord)*(1+abs(in_vel.xy))-max(vec2(0.0,0.0),in_vel.xy);
 f_center = ((modelViewProjectionMatrix * vec4(in_center,0.0,1.0)).xy
 + vec2(1.0,1.0))*0.5; // transform the center to clip space
