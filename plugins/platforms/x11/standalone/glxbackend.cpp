@@ -228,6 +228,24 @@ void GlxBackend::init()
         useWaitSync=true; // issue #17
       }
     }
+    // force VSync mechanism code
+    switch (options->vsyncMechanism()) {
+      case 1:
+        useWaitSync=false;
+        break;
+      case 2:
+        useWaitSync=true;
+        break;
+      case 3:
+        useWaitSync=false;
+        break;
+      case 4:
+        useWaitSync=true;
+        useHorribleHack=true;
+        break;
+      default:
+        break;
+    }
     options->setGlPreferBufferSwap(options->glPreferBufferSwap()); // resolve autosetting
     if (options->glPreferBufferSwap() == Options::AutoSwapStrategy)
         options->setGlPreferBufferSwap('e'); // for unknown drivers - should not happen
