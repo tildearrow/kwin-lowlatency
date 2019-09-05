@@ -332,6 +332,16 @@ Alternatively, you might want to use the XRender backend instead.</string>
        <string>Sine</string>
       </property>
      </item>
+     <item>
+      <property name="text">
+       <string>Cubic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Quartic</string>
+      </property>
+     </item>
     </widget>
    </item>
    <item row="16" column="0">
