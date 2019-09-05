@@ -232,12 +232,14 @@ void GlxBackend::init()
     switch (options->vsyncMechanism()) {
       case 1:
         useWaitSync=false;
+        hopeBest=true;
         break;
       case 2:
         useWaitSync=true;
         break;
       case 3:
         useWaitSync=false;
+        hopeBest=false;
         break;
       case 4:
         useWaitSync=true;
@@ -794,7 +796,9 @@ void GlxBackend::present()
       if (useWaitSync) {
         waitSync();
       } else {
-        glFinish();
+        if (!hopeBest) {
+          glFinish();
+        }
       }
     }
 
