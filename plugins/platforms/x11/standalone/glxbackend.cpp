@@ -223,6 +223,7 @@ void GlxBackend::init()
       if (nvidiaVerMaj>=435) {
         // we don't need to wait for sync anymore. whoop!
         useWaitSync=false;
+        hopeBest=true;
       } else {
         // for old or unknown NVIDIA driver
         useWaitSync=true; // issue #17
