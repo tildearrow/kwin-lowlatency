@@ -508,6 +508,7 @@ SceneOpenGL *SceneOpenGL::createScene(QObject *parent)
         }
     }
     if (!scene) {
+        printf("EMERGENCY: ...? how did we reach here?\n");
         if (GLPlatform::instance()->recommendedCompositor() == XRenderCompositing) {
             qCCritical(KWIN_OPENGL) << "OpenGL driver recommends XRender based compositing. Falling back to XRender.";
             qCCritical(KWIN_OPENGL) << "To overwrite the detection use the environment variable KWIN_COMPOSE";
