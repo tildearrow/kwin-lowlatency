@@ -815,15 +815,7 @@ void GlxBackend::endRenderingFrame(const QRegion &renderedRegion, const QRegion 
 
     setLastDamage(renderedRegion);
 
-    if (!blocksForRetrace()) {
-        // This also sets lastDamage to empty which prevents the frame from
-        // being posted again when prepareRenderingFrame() is called.
-        present();
-    } else {
-        // Make sure that the GPU begins processing the command stream
-        // now and not the next time prepareRenderingFrame() is called.
-        glFlush();
-    }
+    present();
 
     if (overlayWindow()->window())  // show the window only after the first pass,
         overlayWindow()->show();   // since that pass may take long

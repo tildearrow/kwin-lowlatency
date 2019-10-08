@@ -837,6 +837,7 @@ void Compositor::setCompositeTimer()
         }
     }
     // Force 4fps minimum:
+    waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this);
 }
 
