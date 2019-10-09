@@ -728,6 +728,7 @@ void GlxBackend::present()
             waitSync();
             glXSwapBuffers(display(), glxWindow);
         }
+        glFinish();
         if (supportsBufferAge()) {
             glXQueryDrawable(display(), glxWindow, GLX_BACK_BUFFER_AGE_EXT, (GLuint *) &m_bufferAge);
         }
