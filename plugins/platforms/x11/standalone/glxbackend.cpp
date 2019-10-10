@@ -230,6 +230,7 @@ void GlxBackend::init()
       }
     }
     // force VSync mechanism code
+    // TODO: enable
     /*
     switch (options->vsyncMechanism()) {
       case 1:
