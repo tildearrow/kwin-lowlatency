@@ -125,6 +125,7 @@ Compositor::Compositor(QObject* workspace)
     , m_selectionOwner(nullptr)
     , vBlankInterval(0)
     , fpsInterval(0)
+    , forceUnredirectCheck(false)
     , m_timeSinceLastVBlank(0)
     , m_scene(nullptr)
     , m_bufferSwapPending(false)
@@ -132,6 +133,10 @@ Compositor::Compositor(QObject* workspace)
 {
     connect(options, &Options::configChanged, this, &Compositor::configChanged);
 
+    connect(&unredirectTimer, &QTimer::timeout, this, &Compositor::delayedCheckUnredirect);
+    connect(options, &Options::unredirectFullscreenChanged, this, &Compositor::delayedCheckUnredirect);
+    unredirectTimer.setSingleShot(true);
+    
     m_monotonicClock.start();
 
     // 2 sec which should be enough to restart the compositor.
@@ -907,6 +912,54 @@ void Compositor::setCompositeTimer()
 bool Compositor::isActive()
 {
     return m_state == State::On;
+}
+
+void Compositor::checkUnredirect()
+{
+    checkUnredirect(false);
+}
+
+// force is needed when the list of windows changes (e.g. a window goes away)
+void Compositor::checkUnredirect(bool force)
+{
+    if (!isActive() || !m_scene->overlayWindow() || m_scene->overlayWindow()->window() == None || !options->isUnredirectFullscreen())
+        return;
+    if (force)
+        forceUnredirectCheck = true;
+    if (!unredirectTimer.isActive())
+        unredirectTimer.start(0);
+}
+
+void Compositor::delayedCheckUnredirect()
+{
+    if (!isActive() || !m_scene->overlayWindow() || m_scene->overlayWindow()->window() == None || !(options->isUnredirectFullscreen() || sender() == options))
+        return;
+    ToplevelList list;
+    bool changed = forceUnredirectCheck;
+    foreach (Client * c, Workspace::self()->clientList())
+        list.append(c);
+    foreach (Unmanaged * c, Workspace::self()->unmanagedList())
+        list.append(c);
+    foreach (Toplevel * c, list) {
+        if (c->updateUnredirectedState()) {
+            changed = true;
+            break;
+        }
+    }
+    // no desktops, no Deleted ones
+    if (!changed)
+        return;
+    forceUnredirectCheck = false;
+    // Cut out parts from the overlay window where unredirected windows are,
+    // so that they are actually visible.
+    const QSize &s = screens()->size();
+    QRegion reg(0, 0, s.width(), s.height());
+    foreach (Toplevel * c, list) {
+        if (c->unredirected())
+            reg -= c->geometry();
+    }
+    m_scene->overlayWindow()->setShape(reg);
+    addRepaint(reg);
 }
 
 WaylandCompositor::WaylandCompositor(QObject *parent)

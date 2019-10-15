@@ -1,6 +1,6 @@
 # TODO
 
-- Unredirect
+- Unredirect (IN PROGRESS)
   - maybe think of Wayland or something like that
 - Options GUI
 - Present Windows Close

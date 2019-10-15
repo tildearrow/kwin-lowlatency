@@ -59,6 +59,13 @@ public:
      * Schedules a new repaint if no repaint is currently scheduled.
      */
     void scheduleRepaint();
+    
+    /**
+     * Checks for possibly unredirectable windows.
+     */
+    void checkUnredirect();
+    void checkUnredirect(bool force);
+    void delayedCheckUnredirect();
 
     /**
      * Notifies the compositor that SwapBuffers() is about to be called.
@@ -161,6 +168,9 @@ private:
     qint64 vBlankInterval, fpsInterval;
     QRegion repaints_region;
 
+    QTimer unredirectTimer;
+    bool forceUnredirectCheck;
+    
     qint64 m_timeSinceLastVBlank;
 
     Scene *m_scene;

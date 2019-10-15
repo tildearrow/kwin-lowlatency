@@ -982,6 +982,9 @@ void Client::internalShow()
         m_decoInputExtent.map();
         updateHiddenPreview();
     }
+    if (Compositor::self()->isActive()) {
+        Compositor::self()->checkUnredirect();
+    }
     emit windowShown(this);
 }
 
@@ -997,6 +1000,9 @@ void Client::internalHide()
         updateHiddenPreview();
     addWorkspaceRepaint(visibleRect());
     workspace()->clientHidden(this);
+    if (Compositor::self()->isActive()) {
+        Compositor::self()->checkUnredirect();
+    }
     emit windowHidden(this);
 }
 
@@ -1015,6 +1021,9 @@ void Client::internalKeep()
     updateHiddenPreview();
     addWorkspaceRepaint(visibleRect());
     workspace()->clientHidden(this);
+    if (Compositor::self()->isActive()) {
+        Compositor::self()->checkUnredirect();
+    }
 }
 
 /**
@@ -2123,6 +2132,36 @@ void Client::handleSync()
         performMoveResize();
     } else // setReadyForPainting does as well, but there's a small chance for resize syncs after the resize ended
         addRepaintFull();
+}
+
+// TODO THIS
+bool Client::shouldUnredirect() const
+{
+    if (isActiveFullScreen()) {
+        //if (!rules()->checkAllowUnredirect(true)) return false;
+        ToplevelList stacking = workspace()->xStackingOrder();
+        for (int pos = stacking.count() - 1;
+                pos >= 0;
+                --pos) {
+            Toplevel* c = stacking.at(pos);
+            if (c == this) {   // is not covered by any other window, ok to unredirect
+                //printf("yes.\n");
+                return true;
+            }
+            if (c->geometry().intersects(geometry())) {
+                // check whether this is an invisible floating icon at the top left corner
+                if (c->geometry()==QRect(0,0,32,32)) {
+                  //printf("yes via hack.\n");
+                  return true;
+                }
+                //printf("no. this: %d %d %d %d. other: %d %d %d %d.\n",geometry().x(),geometry().y(),geometry().width(),geometry().height(),c->geometry().x(),c->geometry().y(),c->geometry().width(),c->geometry().height());
+                return false;
+            }
+        }
+        //printf("ABORT\n");
+        abort();
+    }
+    return false;
 }
 
 } // namespace

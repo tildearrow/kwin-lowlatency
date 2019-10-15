@@ -183,6 +183,7 @@ public:
 
 protected:
     void debug(QDebug& stream) const override;
+    bool shouldUnredirect() const override;
 
 private Q_SLOTS:
     void mainClientClosed(KWin::Toplevel *client);

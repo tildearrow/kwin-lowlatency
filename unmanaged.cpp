@@ -200,5 +200,33 @@ bool Unmanaged::setupCompositing()
     return true;
 }
 
+bool Unmanaged::shouldUnredirect() const
+{
+    // the pixmap is needed for the login effect, a nicer solution would be the login effect increasing
+    // refcount for the window pixmap (which would prevent unredirect), avoiding this hack
+    if (resourceClass() == "ksplashx"
+            || resourceClass() == "ksplashsimple"
+            || resourceClass() == "ksplashqml"
+            )
+        return false;
+    // it must cover whole display or one xinerama screen, and be the topmost there
+    const int desktop = VirtualDesktopManager::self()->current();
+    if (geometry() == workspace()->clientArea(FullArea, geometry().center(), desktop)
+            || geometry() == workspace()->clientArea(ScreenArea, geometry().center(), desktop)) {
+        ToplevelList stacking = workspace()->xStackingOrder();
+        for (int pos = stacking.count() - 1;
+                pos >= 0;
+                --pos) {
+            Toplevel* c = stacking.at(pos);
+            if (c == this)   // is not covered by any other window, ok to unredirect
+                return true;
+            if (c->geometry().intersects(geometry()))
+                return false;
+        }
+        abort();
+    }
+    return false;
+}
+
 } // namespace
 

@@ -333,6 +333,7 @@ KWIN_EXPORT int kdemain(int argc, char * argv[])
 {
     KWin::Application::setupMalloc();
     KWin::Application::setupLocalizedString();
+    KCrash::setDrKonqiEnabled(false);
 
     int primaryScreen = 0;
     xcb_connection_t *c = xcb_connect(nullptr, &primaryScreen);

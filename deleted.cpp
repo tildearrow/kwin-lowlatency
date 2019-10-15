@@ -294,5 +294,10 @@ void Deleted::removeTransientFor(Deleted *parent)
     m_transientFor.removeAll(parent);
 }
 
+bool Deleted::shouldUnredirect() const
+{
+    return false;
+}
+
 } // namespace
 

@@ -534,6 +534,12 @@ QRect ShellClient::transparentRect() const
     return QRect();
 }
 
+bool ShellClient::shouldUnredirect() const
+{
+    // TODO: unredirect for fullscreen
+    return false;
+}
+
 NET::WindowType ShellClient::windowType(bool direct, int supported_types) const
 {
     // TODO: implement
