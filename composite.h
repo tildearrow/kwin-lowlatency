@@ -170,6 +170,11 @@ private:
 
     int m_framesToTestForSafety = 3;
     QElapsedTimer m_monotonicClock;
+    
+    // low-latency stuff
+    int m_lastPaintFree=8000;
+    float m_totalSkips=0;
+    bool m_idle;
 };
 
 class KWIN_EXPORT WaylandCompositor : public Compositor

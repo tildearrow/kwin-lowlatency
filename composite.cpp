@@ -61,6 +61,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <xcb/damage.h>
 
 #include <cstdio>
+#include <unistd.h>
 
 Q_DECLARE_METATYPE(KWin::X11Compositor::SuspendReason)
 
@@ -721,7 +722,19 @@ void Compositor::performCompositing()
     if (m_bufferSwapPending && m_scene->syncsToVBlank()) {
         m_composeAtSwapCompletion = true;
     } else {
-        scheduleRepaint();
+        if (m_bufferSwapPending && m_scene->syncsToVBlank()) {
+          m_composeAtSwapCompletion = true;
+        } else {
+          if (m_idle) {
+            m_idle=false;
+            m_totalSkips--;
+            if (m_totalSkips<0) m_totalSkips=0;
+            // TODO: improve this thing
+            m_lastPaintFree=2000;
+          }
+          usleep(m_lastPaintFree);
+          scheduleRepaint();
+        }
     }
 }
 
@@ -837,6 +850,56 @@ void Compositor::setCompositeTimer()
         }
     }
     // Force 4fps minimum:
+    if (waitTime<4) waitTime=4;
+    m_totalSkips-=0.004;
+    if (m_totalSkips<0) {
+      m_totalSkips=0;
+    }
+    if ((signed)(m_lastPaintFree-2000)>(signed)((waitTime*1000)-4000)) {
+      m_totalSkips++;
+      switch (options->latencyControl()) {
+        case 0: // favor responsive
+          m_lastPaintFree=(waitTime*1000)-4000;
+          break;
+        case 2: // favor low-latency
+          m_lastPaintFree-=500;
+          break;
+        case 3: // aggressive
+          m_lastPaintFree-=300;
+          break;
+        case 1: default: // balanced
+          m_lastPaintFree-=500;
+          break;
+      }
+      //printf("\x1b[1;31mstutter\x1b[m\n");
+    } else {
+      switch (options->latencyControl()) {
+        case 0: // favor responsive
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(50-m_totalSkips*5));
+          break;
+        case 2: // favor low-latency
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(500-m_totalSkips*30));
+          break;
+        case 3: // aggressive
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(1000-m_totalSkips*30));
+          break;
+        case 1: default: // balanced
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(200-m_totalSkips*20));
+          break;
+      }
+    }
+    if (m_lastPaintFree<options->minLatency()*1000) {
+      m_lastPaintFree=options->minLatency()*1000;
+    }
+    if (m_lastPaintFree<1) {
+      m_lastPaintFree=1;
+    }
+    if (m_lastPaintFree>options->maxLatency()*1000) {
+      m_lastPaintFree=options->maxLatency()*1000;
+    }
+    if (m_totalSkips>10) {
+      m_totalSkips=10;
+    }
     waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this);
 }

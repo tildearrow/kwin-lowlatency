@@ -230,8 +230,6 @@ void GlxBackend::init()
       }
     }
     // force VSync mechanism code
-    // TODO: enable
-    /*
     switch (options->vsyncMechanism()) {
       case 1:
         useWaitSync=false;
@@ -251,7 +249,6 @@ void GlxBackend::init()
       default:
         break;
     }
-    */
     
     options->setGlPreferBufferSwap(options->glPreferBufferSwap()); // resolve autosetting
     if (options->glPreferBufferSwap() == Options::AutoSwapStrategy)
