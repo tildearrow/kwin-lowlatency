@@ -182,6 +182,7 @@ kconfig_add_kcfg_files(testScriptedEffectLoader_SRCS ../settings.kcfgc)
 qt5_add_dbus_adaptor(testScriptedEffectLoader_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/../org.kde.kwin.OrientationSensor.xml ${CMAKE_CURRENT_SOURCE_DIR}/../orientation_sensor.h KWin::OrientationSensor)
 add_executable(testScriptedEffectLoader ${testScriptedEffectLoader_SRCS})
 
+target_compile_definitions(testScriptedEffectLoader PUBLIC KWINLL_NO_OPTIONS)
 target_link_libraries(testScriptedEffectLoader
     Qt5::Concurrent
     Qt5::Qml
