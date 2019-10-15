@@ -2,9 +2,9 @@
 
 KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
 
-# rewritten code!
+# ported code!
 
-since KWin 5.17 basically makes most of the code unportable to that version I had to rewrite most of the low-latency engine. this means the code is fresh and clean now.
+since KWin 5.17 basically makes most of the code unportable to that version I had to port most of the low-latency engine. this is why it took a while...
 
 ## old background
 
