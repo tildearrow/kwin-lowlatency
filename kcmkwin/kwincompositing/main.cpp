@@ -25,6 +25,7 @@
 #include <QAction>
 #include <QApplication>
 #include <QLayout>
+#include <QSpinBox>
 
 #include <kcmodule.h>
 #include <kservice.h>
@@ -59,6 +60,7 @@ KWinCompositingSettings::KWinCompositingSettings(QWidget *parent, const QVariant
     m_form.scaleWarning->setIcon(QIcon::fromTheme(QStringLiteral("dialog-warning")));
     m_form.tearingWarning->setIcon(QIcon::fromTheme(QStringLiteral("dialog-warning")));
     m_form.windowThumbnailWarning->setIcon(QIcon::fromTheme(QStringLiteral("dialog-warning")));
+    m_form.unredirectInformation->setIcon(QIcon::fromTheme(QStringLiteral("dialog-information")));
 
     m_form.compositingEnabled->setVisible(!m_compositing->compositingRequired());
     m_form.windowsBlockCompositing->setVisible(!m_compositing->compositingRequired());
@@ -70,6 +72,7 @@ void KWinCompositingSettings::init()
 {
     using namespace KWin::Compositing;
     auto currentIndexChangedSignal = static_cast<void(QComboBox::*)(int)>(&QComboBox::currentIndexChanged);
+    auto valueChangedSignal = static_cast<void(QSpinBox::*)(int)>(&QSpinBox::valueChanged);
 
     connect(m_compositing, &Compositing::changed, this, static_cast<void(KCModule::*)()>(&KWinCompositingSettings::changed));
 
@@ -151,6 +154,45 @@ void KWinCompositingSettings::init()
     m_form.windowsBlockCompositing->setChecked(m_compositing->windowsBlockCompositing());
     connect(m_compositing, &Compositing::windowsBlockCompositingChanged, m_form.windowsBlockCompositing, &QCheckBox::setChecked);
     connect(m_form.windowsBlockCompositing, &QCheckBox::toggled, m_compositing, &Compositing::setWindowsBlockCompositing);
+
+    // unredirect fullscreen
+    m_form.unredirectFullscreen->setChecked(m_compositing->unredirectFullscreen());
+    connect(m_compositing, &Compositing::unredirectFullscreenChanged, m_form.unredirectFullscreen, &QCheckBox::setChecked);
+    connect(m_form.unredirectFullscreen, &QCheckBox::toggled, m_compositing, &Compositing::setUnredirectFullscreen);
+    connect(m_form.unredirectFullscreen, &QCheckBox::toggled,
+        [this](bool enabled) {
+            if (enabled) {
+                m_form.unredirectInformation->animatedShow();
+            } else {
+                m_form.unredirectInformation->animatedHide();
+            }
+        }
+    );
+
+    // animation curve
+    m_form.animationCurve->setCurrentIndex(m_compositing->animationCurve());
+    connect(m_compositing, &Compositing::animationCurveChanged, m_form.animationCurve, &QComboBox::setCurrentIndex);
+    connect(m_form.animationCurve, currentIndexChangedSignal, m_compositing, &Compositing::setAnimationCurve);
+
+    // latency control
+    m_form.latencyControl->setCurrentIndex(m_compositing->latencyControl());
+    connect(m_compositing, &Compositing::latencyControlChanged, m_form.latencyControl, &QComboBox::setCurrentIndex);
+    connect(m_form.latencyControl, currentIndexChangedSignal, m_compositing, &Compositing::setLatencyControl);
+
+    // max latency
+    m_form.maxLatency->setValue(m_compositing->maxLatency());
+    connect(m_compositing, &Compositing::maxLatencyChanged, m_form.maxLatency, &QSpinBox::setValue);
+    connect(m_form.maxLatency, valueChangedSignal, m_compositing, &Compositing::setMaxLatency);
+
+    // min latency
+    m_form.minLatency->setValue(m_compositing->minLatency());
+    connect(m_compositing, &Compositing::minLatencyChanged, m_form.minLatency, &QSpinBox::setValue);
+    connect(m_form.minLatency, valueChangedSignal, m_compositing, &Compositing::setMinLatency);
+
+    // vsync mechanism
+    m_form.vsyncMechanism->setCurrentIndex(m_compositing->vsyncMechanism());
+    connect(m_compositing, &Compositing::vsyncMechanismChanged, m_form.vsyncMechanism, &QComboBox::setCurrentIndex);
+    connect(m_form.vsyncMechanism, currentIndexChangedSignal, m_compositing, &Compositing::setVsyncMechanism);
 
     // compositing type
     CompositingType *type = new CompositingType(this);

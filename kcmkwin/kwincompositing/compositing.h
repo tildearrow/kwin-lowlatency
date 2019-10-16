@@ -40,12 +40,18 @@ class Compositing : public QObject
     Q_PROPERTY(int windowThumbnail READ windowThumbnail WRITE setWindowThumbnail NOTIFY windowThumbnailChanged)
     Q_PROPERTY(int glScaleFilter READ glScaleFilter WRITE setGlScaleFilter NOTIFY glScaleFilterChanged)
     Q_PROPERTY(bool xrScaleFilter READ xrScaleFilter WRITE setXrScaleFilter NOTIFY xrScaleFilterChanged)
+    Q_PROPERTY(bool unredirectFullscreen READ unredirectFullscreen WRITE setUnredirectFullscreen NOTIFY unredirectFullscreenChanged)
     Q_PROPERTY(int glSwapStrategy READ glSwapStrategy WRITE setGlSwapStrategy NOTIFY glSwapStrategyChanged)
     Q_PROPERTY(int compositingType READ compositingType WRITE setCompositingType NOTIFY compositingTypeChanged)
     Q_PROPERTY(bool compositingEnabled READ compositingEnabled WRITE setCompositingEnabled NOTIFY compositingEnabledChanged)
     Q_PROPERTY(KWin::Compositing::OpenGLPlatformInterfaceModel *openGLPlatformInterfaceModel READ openGLPlatformInterfaceModel CONSTANT)
     Q_PROPERTY(int openGLPlatformInterface READ openGLPlatformInterface WRITE setOpenGLPlatformInterface NOTIFY openGLPlatformInterfaceChanged)
     Q_PROPERTY(bool windowsBlockCompositing READ windowsBlockCompositing WRITE setWindowsBlockCompositing NOTIFY windowsBlockCompositingChanged)
+    Q_PROPERTY(int animationCurve READ animationCurve WRITE setAnimationCurve NOTIFY animationCurveChanged)
+    Q_PROPERTY(int latencyControl READ latencyControl WRITE setLatencyControl NOTIFY latencyControlChanged)
+    Q_PROPERTY(int maxLatency READ maxLatency WRITE setMaxLatency NOTIFY maxLatencyChanged)
+    Q_PROPERTY(int minLatency READ minLatency WRITE setMinLatency NOTIFY minLatencyChanged)
+    Q_PROPERTY(int vsyncMechanism READ vsyncMechanism WRITE setVsyncMechanism NOTIFY vsyncMechanismChanged)
     Q_PROPERTY(bool compositingRequired READ compositingRequired CONSTANT)
 public:
     explicit Compositing(QObject *parent = nullptr);
@@ -57,11 +63,17 @@ public:
     int windowThumbnail() const;
     int glScaleFilter() const;
     bool xrScaleFilter() const;
+    bool unredirectFullscreen() const;
     int glSwapStrategy() const;
     int compositingType() const;
     bool compositingEnabled() const;
     int openGLPlatformInterface() const;
     bool windowsBlockCompositing() const;
+    int animationCurve() const;
+    int latencyControl() const;
+    int maxLatency() const;
+    int minLatency() const;
+    int vsyncMechanism() const;
     bool compositingRequired() const;
 
     OpenGLPlatformInterfaceModel *openGLPlatformInterfaceModel() const;
@@ -70,12 +82,17 @@ public:
     void setWindowThumbnail(int index);
     void setGlScaleFilter(int index);
     void setXrScaleFilter(bool filter);
+    void setUnredirectFullscreen(bool unredirect);
     void setGlSwapStrategy(int strategy);
     void setCompositingType(int index);
-    void setCompositingEnabled(bool enalbed);
+    void setCompositingEnabled(bool enabled);
     void setOpenGLPlatformInterface(int interface);
     void setWindowsBlockCompositing(bool set);
-
+    void setAnimationCurve(int curve);
+    void setLatencyControl(int index);
+    void setMaxLatency(int val);
+    void setMinLatency(int val);
+    void setVsyncMechanism(int index);
     void save();
 
 public Q_SLOTS:
@@ -88,17 +105,24 @@ Q_SIGNALS:
     void windowThumbnailChanged(int);
     void glScaleFilterChanged(int);
     void xrScaleFilterChanged(int);
+    void unredirectFullscreenChanged(bool);
     void glSwapStrategyChanged(int);
     void compositingTypeChanged(int);
     void compositingEnabledChanged(bool);
     void openGLPlatformInterfaceChanged(int);
     void windowsBlockCompositingChanged(bool);
+    void animationCurveChanged(int);
+    void latencyControlChanged(int);
+    void maxLatencyChanged(int);
+    void minLatencyChanged(int);
+    void vsyncMechanismChanged(int);
 
 private:
     int m_animationSpeed;
     int m_windowThumbnail;
     int m_glScaleFilter;
     bool m_xrScaleFilter;
+    bool m_unredirectFullscreen;
     int m_glSwapStrategy;
     int m_compositingType;
     bool m_compositingEnabled;
@@ -106,6 +130,11 @@ private:
     OpenGLPlatformInterfaceModel *m_openGLPlatformInterfaceModel;
     int m_openGLPlatformInterface;
     bool m_windowsBlockCompositing;
+    int m_animationCurve;
+    int m_latencyControl;
+    int m_maxLatency;
+    int m_minLatency;
+    int m_vsyncMechanism;
     bool m_windowsBlockingCompositing;
     OrgKdeKwinCompositingInterface *m_compositingInterface;
 };

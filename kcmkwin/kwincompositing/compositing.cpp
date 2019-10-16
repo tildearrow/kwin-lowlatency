@@ -41,6 +41,7 @@ Compositing::Compositing(QObject *parent)
     , m_windowThumbnail(0)
     , m_glScaleFilter(0)
     , m_xrScaleFilter(false)
+    , m_unredirectFullscreen(false)
     , m_glSwapStrategy(0)
     , m_compositingType(0)
     , m_compositingEnabled(true)
@@ -48,6 +49,11 @@ Compositing::Compositing(QObject *parent)
     , m_openGLPlatformInterfaceModel(new OpenGLPlatformInterfaceModel(this))
     , m_openGLPlatformInterface(0)
     , m_windowsBlockCompositing(true)
+    , m_animationCurve(2)
+    , m_latencyControl(1)
+    , m_maxLatency(8)
+    , m_minLatency(0)
+    , m_vsyncMechanism(0)
     , m_compositingInterface(new OrgKdeKwinCompositingInterface(QStringLiteral("org.kde.KWin"), QStringLiteral("/Compositor"), QDBusConnection::sessionBus(), this))
 {
     reset();
@@ -55,11 +61,17 @@ Compositing::Compositing(QObject *parent)
     connect(this, &Compositing::windowThumbnailChanged,      this, &Compositing::changed);
     connect(this, &Compositing::glScaleFilterChanged,        this, &Compositing::changed);
     connect(this, &Compositing::xrScaleFilterChanged,        this, &Compositing::changed);
+    connect(this, &Compositing::unredirectFullscreenChanged, this, &Compositing::changed);
     connect(this, &Compositing::glSwapStrategyChanged,       this, &Compositing::changed);
     connect(this, &Compositing::compositingTypeChanged,      this, &Compositing::changed);
     connect(this, &Compositing::compositingEnabledChanged,   this, &Compositing::changed);
     connect(this, &Compositing::openGLPlatformInterfaceChanged, this, &Compositing::changed);
     connect(this, &Compositing::windowsBlockCompositingChanged, this, &Compositing::changed);
+    connect(this, &Compositing::animationCurveChanged,          this, &Compositing::changed);
+    connect(this, &Compositing::latencyControlChanged,          this, &Compositing::changed);
+    connect(this, &Compositing::maxLatencyChanged,              this, &Compositing::changed);
+    connect(this, &Compositing::minLatencyChanged,              this, &Compositing::changed);
+    connect(this, &Compositing::vsyncMechanismChanged,          this, &Compositing::changed);
 
     connect(this, &Compositing::changed, [this]{
         m_changed = true;
@@ -73,6 +85,7 @@ void Compositing::reset()
     setWindowThumbnail(kwinConfig.readEntry("HiddenPreviews", 5) - 4);
     setGlScaleFilter(kwinConfig.readEntry("GLTextureFilter", 2));
     setXrScaleFilter(kwinConfig.readEntry("XRenderSmoothScale", false));
+    setUnredirectFullscreen(kwinConfig.readEntry("UnredirectFullscreen", false));
     setCompositingEnabled(kwinConfig.readEntry("Enabled", true));
 
     auto swapStrategy = [&kwinConfig]() {
@@ -114,6 +127,12 @@ void Compositing::reset()
 
     setWindowsBlockCompositing(kwinConfig.readEntry("WindowsBlockCompositing", true));
 
+    setAnimationCurve(kwinConfig.readEntry("AnimationCurve",2));
+    setLatencyControl(kwinConfig.readEntry("LatencyControl",1));
+    setMaxLatency(kwinConfig.readEntry("MaxLatency",8));
+    setMinLatency(kwinConfig.readEntry("MinLatency",0));
+    setVsyncMechanism(kwinConfig.readEntry("VSyncMechanism",0));
+
     m_changed = false;
 }
 
@@ -123,11 +142,17 @@ void Compositing::defaults()
     setWindowThumbnail(1);
     setGlScaleFilter(2);
     setXrScaleFilter(false);
+    setUnredirectFullscreen(false);
     setGlSwapStrategy(1);
     setCompositingType(CompositingType::OPENGL20_INDEX);
     const QModelIndex index = m_openGLPlatformInterfaceModel->indexForKey(QStringLiteral("glx"));
     setOpenGLPlatformInterface(index.isValid() ? index.row() : 0);
     setWindowsBlockCompositing(true);
+    setAnimationCurve(2);
+    setLatencyControl(1);
+    setMaxLatency(8);
+    setMinLatency(0);
+    setVsyncMechanism(0);
     m_changed = true;
 }
 
@@ -183,6 +208,11 @@ bool Compositing::xrScaleFilter() const
     return m_xrScaleFilter;
 }
 
+bool Compositing::unredirectFullscreen() const
+{
+    return m_unredirectFullscreen;
+}
+
 int Compositing::glSwapStrategy() const
 {
     return m_glSwapStrategy;
@@ -223,6 +253,15 @@ void Compositing::setGlSwapStrategy(int strategy)
     }
     m_glSwapStrategy = strategy;
     emit glSwapStrategyChanged(strategy);
+}
+
+void Compositing::setUnredirectFullscreen(bool unredirect)
+{
+    if (unredirect == m_unredirectFullscreen) {
+        return;
+    }
+    m_unredirectFullscreen = unredirect;
+    emit unredirectFullscreenChanged(unredirect);
 }
 
 void Compositing::setWindowThumbnail(int index)
@@ -272,6 +311,7 @@ void Compositing::save()
     kwinConfig.writeEntry("HiddenPreviews", windowThumbnail() + 4);
     kwinConfig.writeEntry("GLTextureFilter", glScaleFilter());
     kwinConfig.writeEntry("XRenderSmoothScale", xrScaleFilter());
+    kwinConfig.writeEntry("UnredirectFullscreen", unredirectFullscreen());
     if (!compositingRequired()) {
         kwinConfig.writeEntry("Enabled", compositingEnabled());
     }
@@ -312,6 +352,11 @@ void Compositing::save()
     if (!compositingRequired()) {
         kwinConfig.writeEntry("WindowsBlockCompositing", windowsBlockCompositing());
     }
+    kwinConfig.writeEntry("AnimationCurve",animationCurve());
+    kwinConfig.writeEntry("LatencyControl",latencyControl());
+    kwinConfig.writeEntry("MaxLatency",maxLatency());
+    kwinConfig.writeEntry("MinLatency",minLatency());
+    kwinConfig.writeEntry("VSyncMechanism",vsyncMechanism());
     kwinConfig.sync();
 
     if (m_changed) {
@@ -358,6 +403,76 @@ void Compositing::setWindowsBlockCompositing(bool set)
     }
     m_windowsBlockCompositing = set;
     emit windowsBlockCompositingChanged(set);
+}
+
+int Compositing::animationCurve() const
+{
+    return m_animationCurve;
+}
+
+int Compositing::latencyControl() const
+{
+    return m_latencyControl;
+}
+
+int Compositing::maxLatency() const
+{
+    return m_maxLatency;
+}
+
+int Compositing::minLatency() const
+{
+    return m_minLatency;
+}
+
+int Compositing::vsyncMechanism() const
+{
+    return m_vsyncMechanism;
+}
+
+void Compositing::setAnimationCurve(int val)
+{
+    if (m_animationCurve == val) {
+        return;
+    }
+    m_animationCurve = val;
+    emit animationCurveChanged(val);
+}
+
+void Compositing::setLatencyControl(int val)
+{
+    if (m_latencyControl == val) {
+        return;
+    }
+    m_latencyControl = val;
+    emit latencyControlChanged(val);
+}
+
+void Compositing::setMaxLatency(int val)
+{
+    if (m_maxLatency == val) {
+        return;
+    }
+    m_maxLatency = val;
+    emit maxLatencyChanged(val);
+}
+
+void Compositing::setMinLatency(int val)
+{
+    if (m_minLatency == val) {
+        return;
+    }
+    m_minLatency = val;
+    emit minLatencyChanged(val);
+}
+
+void Compositing::setVsyncMechanism(int val)
+{
+    if (m_vsyncMechanism == val) {
+        return;
+    }
+    m_vsyncMechanism = val;
+    emit vsyncMechanismChanged(val);
 }
 
 bool Compositing::compositingRequired() const
