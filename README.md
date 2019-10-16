@@ -84,6 +84,10 @@ kwin-lowlatency can be found at [home:KAMiKAZOW:KDE](https://software.opensuse.o
 
 you can compile/install this yourself if your distro isn't listed here (yes, I know Ubuntu is missing) or if you want to.
 
+### installing dependencies
+
+you may need to install specific dependencies before compiling. [here](https://community.kde.org/Guidelines_and_HOWTOs/Build_from_source/Install_the_dependencies) you can find a list.
+
 ### acquiring the source
 
 you can get the source code by using any of the following 2 methods:
@@ -95,10 +99,16 @@ $ git clone https://github.com/tildearrow/kwin-lowlatency.git
 $ cd kwin-lowlatency
 ```
 
+if you are not using the latest major version of Plasma (you can check by doing `kwin_x11 --version`), you may want to check out the branch for your version, e.g.:
+
+```
+$ git checkout Plasma/5.16
+```
+
 you may want to check the current stable version out:
 
 ```
-$ git checkout v5.16.2-2
+$ git checkout v5.17.0
 ```
 
 #### patch format
@@ -106,21 +116,21 @@ $ git checkout v5.16.2-2
 download stock KWin source and patch file:
 
 ```
-$ wget https://download.kde.org/stable/plasma/5.16.2/kwin-5.16.2.tar.xz
-$ wget http://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.16.2-2.patch
+$ wget https://download.kde.org/stable/plasma/5.17.0/kwin-5.17.0.tar.xz
+$ wget http://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.17.0.patch
 ```
 
 extract:
 
 ```
-$ tar -xvf kwin-5.16.2.tar.xz
+$ tar -xvf kwin-5.17.0.tar.xz
 ```
 
 patch:
 
 ```
-$ cd kwin-5.16.2
-$ patch -p1 < ../kwin-lowlatency-5.16.2-2.patch
+$ cd kwin-5.17.0
+$ patch -p1 < ../kwin-lowlatency-5.17.0.patch
 ```
 
 ### building
