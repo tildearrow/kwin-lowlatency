@@ -820,7 +820,7 @@ bool Toplevel::updateUnredirectedState()
     static QElapsedTimer lastUnredirect;
     static const qint64 msecRedirectInterval = 100;
     if (!lastUnredirect.hasExpired(msecRedirectInterval)) {
-        QTimer::singleShot(msecRedirectInterval, Compositor::self(), SLOT(checkUnredirect()));
+        QTimer::singleShot(msecRedirectInterval, Compositor::self(), static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
         return false;
     }
     lastUnredirect.start();

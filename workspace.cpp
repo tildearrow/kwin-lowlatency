@@ -614,16 +614,11 @@ Client* Workspace::createClient(xcb_window_t w, bool is_mapped)
     }
     connect(c, SIGNAL(clientFullScreenSet(KWin::Client*,bool,bool)), ScreenEdges::self(), SIGNAL(checkBlocking()));
     
-    // TODO: sorry.
-    // I don't have time to deal with this right now.
-    // I will not work on this for some hours or even days.
-    // forgive me. this 5.17 release will be delayed.
-    // I have some other important things to do, so I need to finish
-    // these. thank you for understanding.
     connect(c, &Client::activeChanged, m_compositor, static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
-    connect(c, &Client::fullScreenChanged, m_compositor, SLOT(checkUnredirect()));
-    connect(c, &Client::geometryChanged, m_compositor, SLOT(checkUnredirect()));
-    connect(c, SIGNAL(geometryShapeChanged(KWin::Toplevel*,QRect)), m_compositor, SLOT(checkUnredirect()));
+    // THIS ONE PLEASE
+    connect(c, &Client::fullScreenChanged, m_compositor, static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
+    connect(c, &Client::geometryChanged, m_compositor, static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
+    connect(c, &Client::geometryShapeChanged, m_compositor, static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
     
     if (!c->manage(w, is_mapped)) {
         Client::deleteClient(c);
