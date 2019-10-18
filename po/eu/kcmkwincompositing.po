@@ -1,0 +1,253 @@
+# Translation of kcmkwincompositing.po to Euskara/Basque (eu)
+# Copyright (C) 2007-2018, Free Software Foundation, Inc.
+# This file is distributed under the same license as the kde-workspace package.
+# KDE Euskaratzeko proiektuaren arduraduna <xalba@euskalnet.net>.
+#
+# Translators:
+# marcos <marcos@euskalgnu.org>, 2007.
+# Asier Urio Larrea <asieriko@gmail.com>, 2008.
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2011, 2014, 2018.
+# Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwincompositing\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:25+0200\n"
+"PO-Revision-Date: 2018-08-05 09:22+0100\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
+"Language-Team: Basque <kde-i18n-doc@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: compositing.cpp:378
+#, kde-format
+msgid "OpenGL 3.1"
+msgstr "OpenGL 3.1"
+
+#: compositing.cpp:379
+#, kde-format
+msgid "OpenGL 2.0"
+msgstr "OpenGL 2.0"
+
+#: compositing.cpp:380
+#, kde-format
+msgid "XRender"
+msgstr "XRender"
+
+#: compositing.cpp:479
+#, kde-format
+msgctxt "OpenGL Platform Interface"
+msgid "EGL"
+msgstr "EGL"
+
+#: compositing.cpp:481
+#, kde-format
+msgctxt "OpenGL Platform Interface"
+msgid "GLX"
+msgstr "GLX"
+
+#. i18n: ectx: property (text), widget (KMessageWidget, glCrashedWarning)
+#: compositing.ui:29
+#, kde-format
+msgid ""
+"OpenGL compositing (the default) has crashed KWin in the past.\n"
+"This was most likely due to a driver bug.\n"
+"If you think that you have meanwhile upgraded to a stable driver,\n"
+"you can reset this protection but be aware that this might result in an "
+"immediate crash!\n"
+"Alternatively, you might want to use the XRender backend instead."
+msgstr ""
+"OpenGL konposatzeak (lehenetsia) KWin kraskatu du iraganean.\n"
+"Segur aski gidari baten akats batek eraginda.\n"
+"Uste baduzu ordutik hona gidari egonkor batera eguneratu duzula,\n"
+"babes hau berrezarri dezakezu, baino jakizu honek berehalako kraskadura "
+"batera eraman dezakeela!\n"
+"Bestela, horren ordez XRender bizkarraldekoa erabili dezakezu."
+
+#. i18n: ectx: property (text), widget (KMessageWidget, scaleWarning)
+#: compositing.ui:42
+#, kde-format
+msgid ""
+"Scale method \"Accurate\" is not supported by all hardware and can cause "
+"performance regressions and rendering artifacts."
+msgstr ""
+"Eskalatze metodo \"Zehatza\" ez dute hardware guztiek onartzen eta "
+"performatzian atzera pausua eta errendatzean arazoak eragin ditzake."
+
+#. i18n: ectx: property (text), widget (KMessageWidget, windowThumbnailWarning)
+#: compositing.ui:65
+#, kde-format
+msgid ""
+"Keeping the window thumbnail always interferes with the minimized state of "
+"windows. This can result in windows not suspending their work when minimized."
+msgstr ""
+"Leihoen koadro txikiak gordetzea beti sortzen du leihoen egoera "
+"ikonotuarekin interferentzia. Honen ondorioz izan daiteke leihoek beraien "
+"lana ez esekitzea ikonotuta daudenean."
+
+#. i18n: ectx: property (text), widget (QCheckBox, compositingEnabled)
+#: compositing.ui:77
+#, kde-format
+msgid "Enable compositor on startup"
+msgstr "Gaitu konposatzailea abioan"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: compositing.ui:84
+#, kde-format
+msgid "Animation speed:"
+msgstr "Animazioaren abiadura:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: compositing.ui:111
+#, kde-format
+msgid "Instant"
+msgstr "Berehalakoa"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: compositing.ui:131
+#, kde-format
+msgid "Very slow"
+msgstr "Oso motela"
+
+#. i18n: ectx: property (text), widget (QLabel, glScaleFilterLabel)
+#. i18n: ectx: property (text), widget (QLabel, xrScaleFilterLabel)
+#: compositing.ui:142 compositing.ui:168
+#, kde-format
+msgid "Scale method:"
+msgstr "Eskalatzeko metodoa:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, glScaleFilter)
+#. i18n: ectx: property (text), item, widget (QComboBox, xrScaleFilter)
+#: compositing.ui:150 compositing.ui:176
+#, kde-format
+msgid "Crisp"
+msgstr "Zurruna"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, glScaleFilter)
+#: compositing.ui:155
+#, kde-format
+msgid "Smooth"
+msgstr "Leuna"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, glScaleFilter)
+#: compositing.ui:160
+#, kde-format
+msgid "Accurate"
+msgstr "Zehatza"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, xrScaleFilter)
+#: compositing.ui:181
+#, kde-format
+msgid "Smooth (slower)"
+msgstr "Leuna (motelagoa)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: compositing.ui:196
+#, kde-format
+msgid "Rendering backend:"
+msgstr "Errendatzeko bizkarraldekoa:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: compositing.ui:213
+#, kde-format
+msgid "Tearing prevention (\"vsync\"):"
+msgstr "Urradura ekiditea (\"vsync\"):"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, tearingPrevention)
+#. i18n: ectx: property (text), item, widget (QComboBox, windowThumbnail)
+#: compositing.ui:221 compositing.ui:257
+#, kde-format
+msgid "Never"
+msgstr "Inoiz ez"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, tearingPrevention)
+#: compositing.ui:226
+#, kde-format
+msgid "Automatic"
+msgstr "Automatikoa"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, tearingPrevention)
+#: compositing.ui:231
+#, kde-format
+msgid "Only when cheap"
+msgstr "Solik merkea denean"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, tearingPrevention)
+#: compositing.ui:236
+#, kde-format
+msgid "Full screen repaints"
+msgstr "Pantaila osoa berriz margotzea"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, tearingPrevention)
+#: compositing.ui:241
+#, kde-format
+msgid "Re-use screen content"
+msgstr "Berrerabili pantailako edukia"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: compositing.ui:249
+#, kde-format
+msgid "Keep window thumbnails:"
+msgstr "Mantendu leihoen koadro txikiak:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, windowThumbnail)
+#: compositing.ui:262
+#, kde-format
+msgid "Only for Shown Windows"
+msgstr "Soilik bistaratutako leihoetarako"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, windowThumbnail)
+#: compositing.ui:267
+#, kde-format
+msgid "Always"
+msgstr "Beti"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, windowsBlockCompositing)
+#: compositing.ui:277
+#, kde-format
+msgid ""
+"Applications can set a hint to block compositing when the window is open.\n"
+" This brings performance improvements for e.g. games.\n"
+" The setting can be overruled by window-specific rules."
+msgstr ""
+"Aplikazioek argibide bat ezarri dezakete leihoa irekita dagoenean "
+"konposatzea eragozteko.\n"
+" Honek performantzian hobekuntzak dakartza, adib. jokoetan.\n"
+" Ezarpena leihoen berariazko arauek gainezarri dezakete."
+
+#. i18n: ectx: property (text), widget (QCheckBox, windowsBlockCompositing)
+#: compositing.ui:280
+#, kde-format
+msgid "Allow applications to block compositing"
+msgstr "Baimendu aplikazioek konposatzea eragoztea"
+
+#: main.cpp:55
+#, kde-format
+msgid "Re-enable OpenGL detection"
+msgstr "Birgaitu OpenGLren detekzioa"
+
+#: main.cpp:120
+#, kde-format
+msgid ""
+"\"Only when cheap\" only prevents tearing for full screen changes like a "
+"video."
+msgstr ""
+"\"Soilik merketa denean\" urradura ekiditen du soilik pantaila osoko "
+"aldaketentzako, bideo batena esaterako."
+
+#: main.cpp:124
+#, kde-format
+msgid "\"Full screen repaints\" can cause performance problems."
+msgstr "\"Pantaila osoa berriz margotzea\" performantzia arazoak sor ditzake."
+
+#: main.cpp:128
+#, kde-format
+msgid ""
+"\"Re-use screen content\" causes severe performance problems on MESA drivers."
+msgstr ""
+"\"Berrerabili pantailako edukia\" performantzia arazo larriak sor ditzake "
+"MESA gidariekin."

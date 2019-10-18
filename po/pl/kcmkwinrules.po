@@ -1,0 +1,1335 @@
+# translation of kcmkwinrules.po to
+# Mikolaj Machowski <mikmach@wp.pl>, 2004, 2005, 2007, 2010.
+# Krzysztof Lichota <lichota@mimuw.edu.pl>, 2005, 2006.
+# Marta Rybczyńska <kde-i18n@rybczynska.net>, 2008, 2010, 2013.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2017, 2018, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwinrules\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-09-17 03:28+0200\n"
+"PO-Revision-Date: 2019-01-23 19:49+0100\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.03.70\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Mikołaj Machowski, Łukasz Wojniłowicz"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "mikmach@wp.pl, lukasz.wojnilowicz@gmail.com"
+
+#. i18n: ectx: property (text), item, widget (QListWidget, types)
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: detectwidget.cpp:75 ruleswidgetbase.ui:428 ruleswidgetbase.ui:2459
+#, kde-format
+msgid "Normal Window"
+msgstr "Zwykłe okno"
+
+#. i18n: ectx: property (text), item, widget (QListWidget, types)
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: detectwidget.cpp:76 ruleswidgetbase.ui:463 ruleswidgetbase.ui:2494
+#, kde-format
+msgid "Desktop"
+msgstr "Pulpit"
+
+#. i18n: ectx: property (text), item, widget (QListWidget, types)
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: detectwidget.cpp:77 ruleswidgetbase.ui:443 ruleswidgetbase.ui:2474
+#, kde-format
+msgid "Dock (panel)"
+msgstr "Dok (panel)"
+
+#. i18n: ectx: property (text), item, widget (QListWidget, types)
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: detectwidget.cpp:78 ruleswidgetbase.ui:448 ruleswidgetbase.ui:2479
+#, kde-format
+msgid "Toolbar"
+msgstr "Pasek narzędzi"
+
+#. i18n: ectx: property (text), item, widget (QListWidget, types)
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: detectwidget.cpp:79 ruleswidgetbase.ui:453 ruleswidgetbase.ui:2484
+#, kde-format
+msgid "Torn-Off Menu"
+msgstr "Odrywane menu"
+
+#. i18n: ectx: property (text), item, widget (QListWidget, types)
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: detectwidget.cpp:80 ruleswidgetbase.ui:433 ruleswidgetbase.ui:2464
+#, kde-format
+msgid "Dialog Window"
+msgstr "Okno dialogowe"
+
+#: detectwidget.cpp:81
+#, kde-format
+msgid "Override Type"
+msgstr "Wymuś"
+
+#. i18n: ectx: property (text), item, widget (QListWidget, types)
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: detectwidget.cpp:82 ruleswidgetbase.ui:473 ruleswidgetbase.ui:2499
+#, kde-format
+msgid "Standalone Menubar"
+msgstr "Osobny pasek menu"
+
+#. i18n: ectx: property (text), item, widget (QListWidget, types)
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: detectwidget.cpp:83 ruleswidgetbase.ui:438 ruleswidgetbase.ui:2469
+#, kde-format
+msgid "Utility Window"
+msgstr "Okno pomocnicze"
+
+#. i18n: ectx: property (text), item, widget (QListWidget, types)
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: detectwidget.cpp:84 ruleswidgetbase.ui:458 ruleswidgetbase.ui:2489
+#, kde-format
+msgid "Splash Screen"
+msgstr "Ekran powitalny"
+
+#: detectwidget.cpp:90
+#, kde-format
+msgid "Unknown - will be treated as Normal Window"
+msgstr "Nieznany - będzie traktowany jako zwykłe okno"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: detectwidget.ui:17
+#, kde-format
+msgid "Information About Selected Window"
+msgstr "Szczegóły wybranego okna"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: detectwidget.ui:29
+#, kde-format
+msgid "Class:"
+msgstr "Klasa:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: detectwidget.ui:57
+#, kde-format
+msgid "Role:"
+msgstr "Rola:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: detectwidget.ui:85
+#, kde-format
+msgid "Type:"
+msgstr "Rodzaj:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel8)
+#: detectwidget.ui:113
+#, kde-format
+msgid "Title:"
+msgstr "Tytuł:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel13)
+#: detectwidget.ui:141
+#, kde-format
+msgid "Machine:"
+msgstr "Komputer:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: detectwidget.ui:172
+#, kde-format
+msgid "Match by primary class name and"
+msgstr "Dopasuj wg nazwy głównej klasy i"
+
+#. i18n: ectx: property (text), widget (QCheckBox, match_whole_class)
+#: detectwidget.ui:181
+#, kde-format
+msgid "Secondary class name  (resulting in term in brackets)"
+msgstr "Nazwie pobocznej klasy (wynikiem jest wyrażenie w nawiasach)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, match_role)
+#: detectwidget.ui:188
+#, kde-format
+msgid "Window role (can be used to select windows by function)"
+msgstr "Roli okna (może być użyte do zaznaczania okien przez funkcję)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, match_type)
+#: detectwidget.ui:195
+#, kde-format
+msgid "Window type (eg. all dialogs, but not the main windows)"
+msgstr "Rodzaju okna (np. wszystkie okna dialogowe, ale bez okien głównych)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, match_title)
+#: detectwidget.ui:202
+#, kde-format
+msgid ""
+"Window title (very specific, can fail due to content changes or translation)"
+msgstr ""
+"Tytule okna (bardzo specyficzne, może zawieść ze względu na zmiany treści "
+"lub tłumaczenia)"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: editshortcut.ui:18
+#, kde-format
+msgid ""
+"A single shortcut can be easily assigned or cleared using the two buttons. "
+"Only shortcuts with modifiers can be used.<p>\n"
+"It is possible to have several possible shortcuts, and the first available "
+"shortcut will be used. The shortcuts are specified using shortcut sets "
+"separated by \" - \". One set is specified as <i>base</i>+(<i>list</i>), "
+"where base are modifiers and list is a list of keys.<br>\n"
+"For example \"<b>Shift+Alt+(123) Shift+Ctrl+(ABC)</b>\" will first try "
+"<b>Shift+Alt+1</b>, then others with <b>Shift+Ctrl+C</b> as the last one."
+msgstr ""
+"Pojedynczy skrót może być łatwo przydzielony lub usunięty za pomocą tych "
+"dwóch przycisków. Tylko skróty z modyfikatorami mogą być używane.<p>\n"
+"Możliwe jest posiadanie kilku możliwych skrótów, użyty zostanie pierwszy "
+"dostępny skrót. Skróty są podawane w postaci zbiorów skrótów oddzielonych \"-"
+"\". Jeden zbiór jest podawany jako <i>baza</i>+(<i>lista</i>), gdzie baza to "
+"modyfikatory, a lista to lista klawiszy.<br>\n"
+"Na przykład \"<b>Shift+Alt+(123) Shift+Ctrl+(ABC)</b>\" powoduje "
+"wypróbowanie <b>Shift+Alt+1</b>, po czym innych, przy czym <b>Shift+Ctrl+C</"
+"b> będzie ostatnim."
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton1)
+#: editshortcut.ui:62
+#, kde-format
+msgid "&Single Shortcut"
+msgstr "&Pojedynczy skrót"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton2)
+#: editshortcut.ui:85
+#, kde-format
+msgid "C&lear"
+msgstr "W&yczyść"
+
+#: kcm.cpp:51
+#, kde-format
+msgid "Window-Specific Settings Configuration Module"
+msgstr "Moduł nadawania osobnych ustawień dla okien"
+
+#: kcm.cpp:52
+#, kde-format
+msgid "(c) 2004 KWin and KControl Authors"
+msgstr "(c) 2004 Autorzy KWin i KControl"
+
+#: kcm.cpp:53
+#, kde-format
+msgid "Lubos Lunak"
+msgstr "Lubos Lunak"
+
+#: kcm.cpp:84
+#, kde-format
+msgid ""
+"<p><h1>Window-specific Settings</h1> Here you can customize window settings "
+"specifically only for some windows.</p> <p>Please note that this "
+"configuration will not take effect if you do not use KWin as your window "
+"manager. If you do use a different window manager, please refer to its "
+"documentation for how to customize window behavior.</p>"
+msgstr ""
+"<p><h1>Ustawienia charakterystycznych okien</h1> Tutaj można dostosować do "
+"własnych potrzeb ustawienia okien.</p> <p>Pamiętaj, że ta konfiguracja "
+"będzie działać tylko jeśli używasz KWin jako programu do zarządzania oknami. "
+"Jeśli używasz innego programu, zajrzyj do jego dokumentacji jak przystosować "
+"zachowania okien.</p>"
+
+#: kcm.cpp:100
+#, kde-format
+msgid "Remember settings separately for every window"
+msgstr "Pamiętaj ustawienia osobno dla każdego okna"
+
+#: kcm.cpp:101
+#, kde-format
+msgid "Show internal settings for remembering"
+msgstr "Pokaż wewnętrzne ustawienia dla zapamiętywania"
+
+#: kcm.cpp:102
+#, kde-format
+msgid "Internal setting for remembering"
+msgstr "Wewnętrzne ustawienia dla zapamiętywania"
+
+#: main.cpp:138
+#, kde-format
+msgid "Application settings for %1"
+msgstr "Ustawienia programu dla %1"
+
+#: main.cpp:158
+#, kde-format
+msgid "Window settings for %1"
+msgstr "Ustawienia okna dla %1"
+
+#: main.cpp:210
+#, kde-format
+msgctxt "Window caption for the application wide rules dialog"
+msgid "Edit Application-Specific Settings"
+msgstr "Edytowanie ustawień wyjątkowych dla aplikacji"
+
+#: main.cpp:241
+#, kde-format
+msgid "KWin"
+msgstr "KWin"
+
+#: main.cpp:248
+#, kde-format
+msgid "KWin helper utility"
+msgstr "Narzędzie pomocnicze KWin"
+
+#: main.cpp:249
+#, kde-format
+msgid "KWin id of the window for special window settings."
+msgstr "Id okna KWin dla wyjątkowych ustawień okna."
+
+#: main.cpp:250
+#, kde-format
+msgid "Whether the settings should affect all windows of the application."
+msgstr "Czy ustawienia powinny dotyczyć wszystkich okien programu."
+
+#: main.cpp:259
+#, kde-format
+msgid "This helper utility is not supposed to be called directly."
+msgstr "To narzędzie pomocnicze nie powinno być wywoływane bezpośrednio."
+
+#: ruleslist.cpp:152
+#, kde-format
+msgid "Export Rules"
+msgstr "Eksportuj zasady"
+
+#: ruleslist.cpp:153 ruleslist.cpp:165
+#, kde-format
+msgid "KWin Rules (*.kwinrule)"
+msgstr "Zasada KWin (*.kwinrule)"
+
+#: ruleslist.cpp:164
+#, kde-format
+msgid "Import Rules"
+msgstr "Importuj zasady"
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: ruleslist.ui:32
+#, kde-format
+msgid "&New..."
+msgstr "&Nowa..."
+
+#. i18n: ectx: property (text), widget (QPushButton, modify_button)
+#: ruleslist.ui:39
+#, kde-format
+msgid "&Modify..."
+msgstr "Z&mień..."
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: ruleslist.ui:46
+#, kde-format
+msgid "Delete"
+msgstr "Usuń"
+
+#. i18n: ectx: property (text), widget (QPushButton, moveup_button)
+#: ruleslist.ui:56
+#, kde-format
+msgid "Move &Up"
+msgstr "Przesuń w &górę"
+
+#. i18n: ectx: property (text), widget (QPushButton, movedown_button)
+#: ruleslist.ui:63
+#, kde-format
+msgid "Move &Down"
+msgstr "Przesuń w &dół"
+
+#. i18n: ectx: property (text), widget (QPushButton, import_button)
+#: ruleslist.ui:100
+#, kde-format
+msgid "&Import"
+msgstr "&Importuj"
+
+#. i18n: ectx: property (text), widget (QPushButton, export_button)
+#: ruleslist.ui:107
+#, kde-format
+msgid "&Export"
+msgstr "&Eksportuj"
+
+#: ruleswidget.cpp:66
+#, kde-format
+msgid ""
+"Enable this checkbox to alter this window property for the specified "
+"window(s)."
+msgstr "Zaznacz, żeby zmienić właściwość okna dla określonego okna (okien)."
+
+#: ruleswidget.cpp:68
+#, kde-format
+msgid ""
+"Specify how the window property should be affected:<ul><li><em>Do Not Affect:"
+"</em> The window property will not be affected and therefore the default "
+"handling for it will be used. Specifying this will block more generic window "
+"settings from taking effect.</li><li><em>Apply Initially:</em> The window "
+"property will be only set to the given value after the window is created. No "
+"further changes will be affected.</li><li><em>Remember:</em> The value of "
+"the window property will be remembered and every time the window is created, "
+"the last remembered value will be applied.</li><li><em>Force:</em> The "
+"window property will be always forced to the given value.</li><li><em>Apply "
+"Now:</em> The window property will be set to the given value immediately and "
+"will not be affected later (this action will be deleted afterwards).</"
+"li><li><em>Force temporarily:</em> The window property will be forced to the "
+"given value until it is hidden (this action will be deleted after the window "
+"is hidden).</li></ul>"
+msgstr ""
+"Określa jak opcja powinna wpłynąć na właściwość okna:<ul><li><em>Nie stosuj:"
+"</em> Właściwość okna nie będzie zmieniona i zostanie zastosowane zachowanie "
+"domyślne. Ustawienie tego zablokuje również zastosowanie bardziej ogólnych "
+"ustawień okna.</li> <li><em>Stosuj początkowo:</em> Właściwość okna zostanie "
+"ustawiona na żądaną wartość tylko po utworzeniu okna. Nie dotyczy następnych "
+"zmian.</li><li><em>Pamiętaj:</em> Wartość właściwości okna będzie pamiętana "
+"i za każdym razem kiedy okno zostanie utworzone ostatnio zapamiętana wartość "
+"zostanie zastosowana.</li><li><em>Wymuś:</em> Właściwość okna zostanie "
+"zawsze ustawiona na podaną wartość.</li> <li><em>Zastosuj teraz:</em> "
+"Właściwość okna zostanie ustawiona na określoną wartość natychmiast i nie "
+"będzie zmieniona później (akcja zostanie później usunięta).</"
+"li><li><em>Wymuś tymczasowo:</em> Właściwość okna zostanie ustawiona na "
+"określoną wartość dopóki okno nie zostanie ukryte (działanie zostanie "
+"porzuconepo ukryciu okna).</li></ul>"
+
+#: ruleswidget.cpp:83
+#, kde-format
+msgid ""
+"Specify how the window property should be affected:<ul><li><em>Do Not Affect:"
+"</em> The window property will not be affected and therefore the default "
+"handling for it will be used. Specifying this will block more generic window "
+"settings from taking effect.</li><li><em>Force:</em> The window property "
+"will be always forced to the given value.</li><li><em>Force temporarily:</"
+"em> The window property will be forced to the given value until it is hidden "
+"(this action will be deleted after the window is hidden).</li></ul>"
+msgstr ""
+"Określa jak opcja powinna wpłynąć na właściwość okna:<ul><li><em>Nie stosuj:"
+"</em> Właściwość okna nie będzie zmieniona i zostanie zastosowane zachowanie "
+"domyślne. Ustawienie tego zablokuje również zastosowanie bardziej ogólnych "
+"ustawień okna.</li> <li><em>Wymuś:</em> Właściwość okna zostanie zawsze "
+"ustawiona na podaną wartość.</li> <li><em>Wymuś tymczasowo:</em> Właściwość "
+"okna zostanie ustawiona na określoną wartość dopóki okno nie zostanie ukryte "
+"(działanie zostanie porzucone po ukryciu okna).</li></ul>"
+
+#: ruleswidget.cpp:151
+#, kde-format
+msgid "All Desktops"
+msgstr "Wszystkie pulpity"
+
+#: ruleswidget.cpp:345
+#, kde-format
+msgid "All Activities"
+msgstr "Wszystkie aktywności"
+
+#: ruleswidget.cpp:790
+#, kde-format
+msgid "Settings for %1"
+msgstr "Ustawienia dla %1"
+
+#: ruleswidget.cpp:792
+#, kde-format
+msgid "Unnamed entry"
+msgstr "Wpis nienazwany"
+
+#: ruleswidget.cpp:802
+#, kde-format
+msgid ""
+"You have specified the window class as unimportant.\n"
+"This means the settings will possibly apply to windows from all "
+"applications. If you really want to create a generic setting, it is "
+"recommended you at least limit the window types to avoid special window "
+"types."
+msgstr ""
+"Określono klasę okna jako nieważną.\n"
+"Oznacza to, że ustawienia zostaną zastosowane dla okien wszystkich "
+"programów. Jeśli naprawdę chcesz stworzyć ustawienie ogólne, zaleca się "
+"przynajmniej ograniczyć rodzaje okien, żeby uniknąć specjalnych typów okien."
+
+#: ruleswidget.cpp:831
+#, kde-format
+msgid "Edit Window-Specific Settings"
+msgstr "Edytowanie ustawień wyjątkowych dla okna"
+
+#: ruleswidget.cpp:863
+#, kde-format
+msgid ""
+"This configuration dialog allows altering settings only for the selected "
+"window or application. Find the setting you want to affect, enable the "
+"setting using the checkbox, select in what way the setting should be "
+"affected and to which value."
+msgstr ""
+"To okno dialogowe umożliwia zmianę ustawień wyłącznie dla wybranego okna lub "
+"programu. Znajdź ustawienia, które chcesz zmienić, włącz je poprzez pole "
+"zaznaczane, wybierz sposób zastosowania ustawienia, a także jego wartość."
+
+#: ruleswidget.cpp:867
+#, kde-format
+msgid "Consult the documentation for more details."
+msgstr "Więcej szczegółów w dokumentacji."
+
+#: ruleswidget.cpp:906
+#, kde-format
+msgid "Edit Shortcut"
+msgstr "Edytuj skrót"
+
+#. i18n: ectx: attribute (title), widget (QWidget, TabPage1)
+#: ruleswidgetbase.ui:21
+#, kde-format
+msgid "&Window matching"
+msgstr "&Wybór okien"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: ruleswidgetbase.ui:27
+#, kde-format
+msgid "&Description:"
+msgstr "&Opis:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: ruleswidgetbase.ui:46
+#, kde-format
+msgid "Window &class (application):"
+msgstr "&Klasa okna (rodzaj programu):"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, wmclass_match)
+#. i18n: ectx: property (text), item, widget (KComboBox, role_match)
+#. i18n: ectx: property (text), item, widget (QComboBox, title_match)
+#. i18n: ectx: property (text), item, widget (KComboBox, machine_match)
+#: ruleswidgetbase.ui:63 ruleswidgetbase.ui:126 ruleswidgetbase.ui:195
+#: ruleswidgetbase.ui:248
+#, kde-format
+msgid "Unimportant"
+msgstr "Nieistotne"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, wmclass_match)
+#. i18n: ectx: property (text), item, widget (KComboBox, role_match)
+#. i18n: ectx: property (text), item, widget (QComboBox, title_match)
+#. i18n: ectx: property (text), item, widget (KComboBox, machine_match)
+#: ruleswidgetbase.ui:68 ruleswidgetbase.ui:131 ruleswidgetbase.ui:200
+#: ruleswidgetbase.ui:253
+#, kde-format
+msgid "Exact Match"
+msgstr "Pasuje dokładnie"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, wmclass_match)
+#. i18n: ectx: property (text), item, widget (KComboBox, role_match)
+#. i18n: ectx: property (text), item, widget (QComboBox, title_match)
+#. i18n: ectx: property (text), item, widget (KComboBox, machine_match)
+#: ruleswidgetbase.ui:73 ruleswidgetbase.ui:136 ruleswidgetbase.ui:205
+#: ruleswidgetbase.ui:258
+#, kde-format
+msgid "Substring Match"
+msgstr "Pasuje częściowo"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, wmclass_match)
+#. i18n: ectx: property (text), item, widget (KComboBox, role_match)
+#. i18n: ectx: property (text), item, widget (QComboBox, title_match)
+#. i18n: ectx: property (text), item, widget (KComboBox, machine_match)
+#: ruleswidgetbase.ui:78 ruleswidgetbase.ui:141 ruleswidgetbase.ui:210
+#: ruleswidgetbase.ui:263
+#, kde-format
+msgid "Regular Expression"
+msgstr "Wyrażenie regularne"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_reg_wmclass)
+#. i18n: ectx: property (text), widget (QPushButton, edit_reg_role)
+#. i18n: ectx: property (text), widget (QPushButton, edit_reg_title)
+#. i18n: ectx: property (text), widget (QPushButton, edit_reg_machine)
+#: ruleswidgetbase.ui:92 ruleswidgetbase.ui:155 ruleswidgetbase.ui:221
+#: ruleswidgetbase.ui:274
+#, kde-format
+msgid "Edit"
+msgstr "Edytuj"
+
+#. i18n: ectx: property (text), widget (QCheckBox, whole_wmclass)
+#: ruleswidgetbase.ui:102
+#, kde-format
+msgid "Match w&hole window class"
+msgstr "Dopasuj c&ałą klasę okien"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: ruleswidgetbase.ui:109
+#, kde-format
+msgid "Window ro&le:"
+msgstr "Ro&la okna:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: ruleswidgetbase.ui:162
+#, kde-format
+msgid "Window &types:"
+msgstr "R&odzaj okna:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel5)
+#: ruleswidgetbase.ui:178
+#, kde-format
+msgid "Window t&itle:"
+msgstr "T&ytuł okna:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel7)
+#: ruleswidgetbase.ui:231
+#, kde-format
+msgid "&Machine (hostname):"
+msgstr "Ko&mputer (nazwa gospodarza):"
+
+#. i18n: ectx: property (text), widget (QPushButton, detect)
+#: ruleswidgetbase.ui:318
+#, kde-format
+msgid "&Detect Window Properties"
+msgstr "&Wykryj właściwości okna"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, detection_delay)
+#: ruleswidgetbase.ui:325
+#, kde-format
+msgid "s delay"
+msgstr "sekund opóźnienia"
+
+#. i18n: ectx: property (text), item, widget (QListWidget, types)
+#: ruleswidgetbase.ui:468
+#, kde-format
+msgid "Unmanaged Window"
+msgstr "Niezarządzane okno"
+
+#. i18n: ectx: attribute (title), widget (QWidget, TabPage3)
+#: ruleswidgetbase.ui:489
+#, kde-format
+msgid "&Size && Position"
+msgstr "&Rozmiar i położenie"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_position)
+#: ruleswidgetbase.ui:495
+#, kde-format
+msgid "&Position"
+msgstr "&Położenie"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_position)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_size)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizehoriz)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizevert)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_activity)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fullscreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_minimize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shade)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_placement)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_ignoregeometry)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_minsize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maxsize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_strictgeometry)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_screen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_below)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shortcut)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_autogroup)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skippager)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skipswitcher)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skiptaskbar)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_autogroupfg)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_autogroupid)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_above)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_noborder)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_decocolor)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_opacityactive)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_opacityinactive)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fsplevel)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fpplevel)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_acceptfocus)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_disableglobalshortcuts)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_closeable)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_type)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktopfile)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_blockcompositing)
+#: ruleswidgetbase.ui:506 ruleswidgetbase.ui:563 ruleswidgetbase.ui:627
+#: ruleswidgetbase.ui:678 ruleswidgetbase.ui:749 ruleswidgetbase.ui:813
+#: ruleswidgetbase.ui:881 ruleswidgetbase.ui:932 ruleswidgetbase.ui:983
+#: ruleswidgetbase.ui:1034 ruleswidgetbase.ui:1136 ruleswidgetbase.ui:1187
+#: ruleswidgetbase.ui:1236 ruleswidgetbase.ui:1291 ruleswidgetbase.ui:1336
+#: ruleswidgetbase.ui:1387 ruleswidgetbase.ui:1434 ruleswidgetbase.ui:1535
+#: ruleswidgetbase.ui:1557 ruleswidgetbase.ui:1641 ruleswidgetbase.ui:1678
+#: ruleswidgetbase.ui:1756 ruleswidgetbase.ui:1812 ruleswidgetbase.ui:1861
+#: ruleswidgetbase.ui:1919 ruleswidgetbase.ui:1970 ruleswidgetbase.ui:2006
+#: ruleswidgetbase.ui:2058 ruleswidgetbase.ui:2162 ruleswidgetbase.ui:2243
+#: ruleswidgetbase.ui:2309 ruleswidgetbase.ui:2358 ruleswidgetbase.ui:2401
+#: ruleswidgetbase.ui:2437 ruleswidgetbase.ui:2521 ruleswidgetbase.ui:2582
+#, kde-format
+msgid "Do Not Affect"
+msgstr "Nie stosuj"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_position)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_size)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizehoriz)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizevert)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_activity)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fullscreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_minimize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shade)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_ignoregeometry)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_screen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_below)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shortcut)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skippager)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skipswitcher)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skiptaskbar)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_above)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_noborder)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktopfile)
+#: ruleswidgetbase.ui:511 ruleswidgetbase.ui:568 ruleswidgetbase.ui:632
+#: ruleswidgetbase.ui:683 ruleswidgetbase.ui:754 ruleswidgetbase.ui:818
+#: ruleswidgetbase.ui:886 ruleswidgetbase.ui:937 ruleswidgetbase.ui:988
+#: ruleswidgetbase.ui:1141 ruleswidgetbase.ui:1341 ruleswidgetbase.ui:1392
+#: ruleswidgetbase.ui:1439 ruleswidgetbase.ui:1562 ruleswidgetbase.ui:1646
+#: ruleswidgetbase.ui:1683 ruleswidgetbase.ui:1866 ruleswidgetbase.ui:1924
+#: ruleswidgetbase.ui:2526
+#, kde-format
+msgid "Apply Initially"
+msgstr "Zastosuj na początku"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_position)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_size)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizehoriz)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizevert)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_activity)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fullscreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_minimize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shade)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_ignoregeometry)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_screen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_below)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shortcut)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skippager)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skipswitcher)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skiptaskbar)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_above)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_noborder)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktopfile)
+#: ruleswidgetbase.ui:516 ruleswidgetbase.ui:573 ruleswidgetbase.ui:637
+#: ruleswidgetbase.ui:688 ruleswidgetbase.ui:759 ruleswidgetbase.ui:823
+#: ruleswidgetbase.ui:891 ruleswidgetbase.ui:942 ruleswidgetbase.ui:993
+#: ruleswidgetbase.ui:1146 ruleswidgetbase.ui:1346 ruleswidgetbase.ui:1397
+#: ruleswidgetbase.ui:1444 ruleswidgetbase.ui:1567 ruleswidgetbase.ui:1651
+#: ruleswidgetbase.ui:1688 ruleswidgetbase.ui:1871 ruleswidgetbase.ui:1929
+#: ruleswidgetbase.ui:2531
+#, kde-format
+msgid "Remember"
+msgstr "Zapamiętaj"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_position)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_size)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizehoriz)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizevert)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_activity)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fullscreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_minimize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shade)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_placement)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_ignoregeometry)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_minsize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maxsize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_strictgeometry)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_screen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_below)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shortcut)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_autogroup)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skippager)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skipswitcher)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skiptaskbar)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_autogroupfg)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_autogroupid)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_above)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_noborder)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_decocolor)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_opacityactive)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_opacityinactive)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fsplevel)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fpplevel)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_acceptfocus)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_disableglobalshortcuts)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_closeable)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_type)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktopfile)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_blockcompositing)
+#: ruleswidgetbase.ui:521 ruleswidgetbase.ui:578 ruleswidgetbase.ui:642
+#: ruleswidgetbase.ui:693 ruleswidgetbase.ui:764 ruleswidgetbase.ui:828
+#: ruleswidgetbase.ui:896 ruleswidgetbase.ui:947 ruleswidgetbase.ui:998
+#: ruleswidgetbase.ui:1039 ruleswidgetbase.ui:1151 ruleswidgetbase.ui:1192
+#: ruleswidgetbase.ui:1241 ruleswidgetbase.ui:1296 ruleswidgetbase.ui:1351
+#: ruleswidgetbase.ui:1402 ruleswidgetbase.ui:1449 ruleswidgetbase.ui:1540
+#: ruleswidgetbase.ui:1572 ruleswidgetbase.ui:1656 ruleswidgetbase.ui:1693
+#: ruleswidgetbase.ui:1761 ruleswidgetbase.ui:1817 ruleswidgetbase.ui:1876
+#: ruleswidgetbase.ui:1934 ruleswidgetbase.ui:1975 ruleswidgetbase.ui:2011
+#: ruleswidgetbase.ui:2063 ruleswidgetbase.ui:2167 ruleswidgetbase.ui:2248
+#: ruleswidgetbase.ui:2314 ruleswidgetbase.ui:2363 ruleswidgetbase.ui:2406
+#: ruleswidgetbase.ui:2442 ruleswidgetbase.ui:2536 ruleswidgetbase.ui:2587
+#, kde-format
+msgid "Force"
+msgstr "Wymuś"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_position)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_size)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizehoriz)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizevert)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_activity)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fullscreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_minimize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shade)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_ignoregeometry)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_screen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_below)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shortcut)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skippager)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skipswitcher)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skiptaskbar)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_above)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_noborder)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktopfile)
+#: ruleswidgetbase.ui:526 ruleswidgetbase.ui:583 ruleswidgetbase.ui:647
+#: ruleswidgetbase.ui:698 ruleswidgetbase.ui:769 ruleswidgetbase.ui:833
+#: ruleswidgetbase.ui:901 ruleswidgetbase.ui:952 ruleswidgetbase.ui:1003
+#: ruleswidgetbase.ui:1156 ruleswidgetbase.ui:1356 ruleswidgetbase.ui:1407
+#: ruleswidgetbase.ui:1454 ruleswidgetbase.ui:1577 ruleswidgetbase.ui:1661
+#: ruleswidgetbase.ui:1698 ruleswidgetbase.ui:1881 ruleswidgetbase.ui:1939
+#: ruleswidgetbase.ui:2541
+#, kde-format
+msgid "Apply Now"
+msgstr "Zastosuj teraz"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_position)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_size)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizehoriz)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maximizevert)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_activity)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fullscreen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_minimize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shade)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_placement)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_ignoregeometry)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_minsize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_maxsize)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_strictgeometry)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_screen)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_below)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_shortcut)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_autogroup)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skippager)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skipswitcher)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_skiptaskbar)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_autogroupfg)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_autogroupid)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_above)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_noborder)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_decocolor)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_opacityactive)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_opacityinactive)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fsplevel)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_fpplevel)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_acceptfocus)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_disableglobalshortcuts)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_closeable)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_type)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_desktopfile)
+#. i18n: ectx: property (text), item, widget (QComboBox, rule_blockcompositing)
+#: ruleswidgetbase.ui:531 ruleswidgetbase.ui:588 ruleswidgetbase.ui:652
+#: ruleswidgetbase.ui:703 ruleswidgetbase.ui:774 ruleswidgetbase.ui:838
+#: ruleswidgetbase.ui:906 ruleswidgetbase.ui:957 ruleswidgetbase.ui:1008
+#: ruleswidgetbase.ui:1044 ruleswidgetbase.ui:1161 ruleswidgetbase.ui:1197
+#: ruleswidgetbase.ui:1246 ruleswidgetbase.ui:1301 ruleswidgetbase.ui:1361
+#: ruleswidgetbase.ui:1412 ruleswidgetbase.ui:1459 ruleswidgetbase.ui:1545
+#: ruleswidgetbase.ui:1582 ruleswidgetbase.ui:1666 ruleswidgetbase.ui:1703
+#: ruleswidgetbase.ui:1766 ruleswidgetbase.ui:1822 ruleswidgetbase.ui:1886
+#: ruleswidgetbase.ui:1944 ruleswidgetbase.ui:1980 ruleswidgetbase.ui:2016
+#: ruleswidgetbase.ui:2068 ruleswidgetbase.ui:2172 ruleswidgetbase.ui:2253
+#: ruleswidgetbase.ui:2319 ruleswidgetbase.ui:2368 ruleswidgetbase.ui:2411
+#: ruleswidgetbase.ui:2447 ruleswidgetbase.ui:2546 ruleswidgetbase.ui:2592
+#, kde-format
+msgid "Force Temporarily"
+msgstr "Wymuś tymczasowo"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, position)
+#: ruleswidgetbase.ui:542
+#, kde-format
+msgid "x,y"
+msgstr "x,y"
+
+#. i18n: ectx: property (validChars), widget (QLineEdit, position)
+#. i18n: ectx: property (validChars), widget (QLineEdit, size)
+#. i18n: ectx: property (validChars), widget (QLineEdit, minsize)
+#. i18n: ectx: property (validChars), widget (QLineEdit, maxsize)
+#: ruleswidgetbase.ui:545 ruleswidgetbase.ui:602 ruleswidgetbase.ui:1218
+#: ruleswidgetbase.ui:1260
+#, kde-format
+msgid "0123456789-+,xX:"
+msgstr "0123456789-+,xX:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_size)
+#: ruleswidgetbase.ui:552
+#, kde-format
+msgid "&Size"
+msgstr "&Rozmiar"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, size)
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, minsize)
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, maxsize)
+#: ruleswidgetbase.ui:599 ruleswidgetbase.ui:1215 ruleswidgetbase.ui:1257
+#, kde-format
+msgid "width,height"
+msgstr "szerokość,wysokość"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_maximizehoriz)
+#: ruleswidgetbase.ui:616
+#, kde-format
+msgid "Maximized &horizontally"
+msgstr "Maksymalizuj w poz&iomie"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_maximizevert)
+#: ruleswidgetbase.ui:667
+#, kde-format
+msgid "Maximized &vertically"
+msgstr "Maksymalizuj w &pionie"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_desktop)
+#: ruleswidgetbase.ui:738
+#, kde-format
+msgid "&Desktop"
+msgstr "P&ulpit"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_activity)
+#: ruleswidgetbase.ui:802
+#, kde-format
+msgid "Activit&y"
+msgstr "Akt&ywność"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_fullscreen)
+#: ruleswidgetbase.ui:870
+#, kde-format
+msgid "&Fullscreen"
+msgstr "P&ełen ekran"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_minimize)
+#: ruleswidgetbase.ui:921
+#, kde-format
+msgid "M&inimized"
+msgstr "Mi&nimalizuj"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_shade)
+#: ruleswidgetbase.ui:972
+#, kde-format
+msgid "Sh&aded"
+msgstr "Z&wiń"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, placement)
+#: ruleswidgetbase.ui:1056
+#, kde-format
+msgid "Default"
+msgstr "Domyślne"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, placement)
+#: ruleswidgetbase.ui:1061
+#, kde-format
+msgid "No Placement"
+msgstr "Brak położenia"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, placement)
+#: ruleswidgetbase.ui:1066
+#, kde-format
+msgid "Smart"
+msgstr "Sprytnie"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, placement)
+#: ruleswidgetbase.ui:1071
+#, kde-format
+msgid "Maximizing"
+msgstr "Zmaksymalizowane"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, placement)
+#: ruleswidgetbase.ui:1076
+#, kde-format
+msgid "Cascade"
+msgstr "Kaskadowo"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, placement)
+#: ruleswidgetbase.ui:1081
+#, kde-format
+msgid "Centered"
+msgstr "Wyśrodkowane"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, placement)
+#: ruleswidgetbase.ui:1086
+#, kde-format
+msgid "Random"
+msgstr "Losowo"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, placement)
+#: ruleswidgetbase.ui:1091
+#, kde-format
+msgid "Top-Left Corner"
+msgstr "Górny, lewy narożnik"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, placement)
+#: ruleswidgetbase.ui:1096
+#, kde-format
+msgid "Under Mouse"
+msgstr "Pod wskaźnikiem myszy"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, placement)
+#: ruleswidgetbase.ui:1101
+#, kde-format
+msgid "On Main Window"
+msgstr "W głównym oknie"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_placement)
+#: ruleswidgetbase.ui:1112
+#, kde-format
+msgid "Initial p&lacement"
+msgstr "P&ołożenie początkowe"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enable_ignoregeometry)
+#: ruleswidgetbase.ui:1122
+#, kde-format
+msgid ""
+"Windows can ask to appear in a certain position.\n"
+"By default this overrides the placement strategy\n"
+"what might be nasty if the client abuses the feature\n"
+"to unconditionally popup in the middle of your screen."
+msgstr ""
+"Okna mogą pytać o ukazanie się w pewnej pozycji.\n"
+"Domyślnie nadpisuje to strategię rozmieszczania,\n"
+"co może być niepożądane, jeśli klient nadużywa tej możliwości,\n"
+"aby bezwarunkowo wyskoczyć w środku twojego ekranu."
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_ignoregeometry)
+#: ruleswidgetbase.ui:1125
+#, kde-format
+msgid "Ignore requested &geometry"
+msgstr "Pomiń żądanie &geometrii"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_minsize)
+#: ruleswidgetbase.ui:1205
+#, kde-format
+msgid "M&inimum size"
+msgstr "M&inimalny rozmiar"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_maxsize)
+#: ruleswidgetbase.ui:1225
+#, kde-format
+msgid "M&aximum size"
+msgstr "M&aksymalny rozmiar"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enable_strictgeometry)
+#: ruleswidgetbase.ui:1271
+#, kde-format
+msgid ""
+"Eg. terminals or video players can ask to keep a certain aspect ratio\n"
+"or only grow by values larger than one\n"
+"(eg. by the dimensions of one character).\n"
+"This may be pointless and the restriction prevents arbitrary dimensions\n"
+"like your complete screen area."
+msgstr ""
+"Na przykład terminale lub odtwarzacze wideo mogą pytać o zachowanie\n"
+"pewnego współczynnika kształtu lub zwiększenia się o wartości większe od "
+"jeden\n"
+"(np. o wymiary jednego znaku).\n"
+"Ograniczenie to może być bezcelowe i zapobiega dowolnym wymiarom,\n"
+"takim jak całkowity obszar twojego ekranu."
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_strictgeometry)
+#: ruleswidgetbase.ui:1277
+#, kde-format
+msgid "Obey geometry restrictions"
+msgstr "Pomiń ograniczenia geometryczne"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_screen)
+#: ruleswidgetbase.ui:1369
+#, kde-format
+msgid "Screen"
+msgstr "Ekran"
+
+#. i18n: ectx: attribute (title), widget (QWidget, TabPage4)
+#: ruleswidgetbase.ui:1377
+#, kde-format
+msgid "&Arrangement && Access"
+msgstr "&Rozmieszczenie i dostęp"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enable_skippager)
+#: ruleswidgetbase.ui:1420
+#, kde-format
+msgid "Window shall (not) appear in the manager for virtual desktops"
+msgstr "Okno (nie) powinno pojawiać się w zarządzaniu wirtualnymi pulpitami"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_skippager)
+#: ruleswidgetbase.ui:1423
+#, kde-format
+msgid "Skip pa&ger"
+msgstr "Pomiń pa&ger"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enable_skiptaskbar)
+#: ruleswidgetbase.ui:1481
+#, kde-format
+msgid "Window shall (not) appear in the taskbar."
+msgstr "Okno (nie) powinno pojawiać się na pasku zadań."
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_skiptaskbar)
+#: ruleswidgetbase.ui:1484
+#, kde-format
+msgid "Skip &taskbar"
+msgstr "Pomiń pasek &zadań"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enable_skipswitcher)
+#: ruleswidgetbase.ui:1498
+#, kde-format
+msgid "Window shall (not) appear in the Alt+Tab list"
+msgstr "Okno (nie) powinno pojawiać się na liście Alt+Tab"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_skipswitcher)
+#: ruleswidgetbase.ui:1501
+#, kde-format
+msgid "Skip &switcher"
+msgstr "Pomiń &przełącznik"
+
+#. i18n: ectx: property (text), widget (QPushButton, shortcut_edit)
+#: ruleswidgetbase.ui:1511
+#, kde-format
+msgid "Edit..."
+msgstr "Edytuj..."
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_shortcut)
+#: ruleswidgetbase.ui:1627
+#, kde-format
+msgid "Shortcut"
+msgstr "Skrót"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_above)
+#: ruleswidgetbase.ui:1725
+#, kde-format
+msgid "Keep &above"
+msgstr "Zawsze na &wierzchu"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_autogroupfg)
+#: ruleswidgetbase.ui:1745
+#, kde-format
+msgid "Autog&roup in foreground"
+msgstr "Pog&rupuj sam na pierwszym planie"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_below)
+#: ruleswidgetbase.ui:1788
+#, kde-format
+msgid "Keep &below"
+msgstr "Zawsze na &spodzie"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_autogroupid)
+#: ruleswidgetbase.ui:1843
+#, kde-format
+msgid "Autogroup by I&D"
+msgstr "Pogrupuj sam wg I&D"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_autogroup)
+#: ruleswidgetbase.ui:1850
+#, kde-format
+msgid "Autogroup with &identical"
+msgstr "Pogrupuj sam z &identycznymi"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: ruleswidgetbase.ui:1902
+#, kde-format
+msgid "Appearance && &Fixes"
+msgstr "Wygląd i &poprawki"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_noborder)
+#: ruleswidgetbase.ui:1908
+#, kde-format
+msgid "&No titlebar and frame"
+msgstr "&Brak paska tytułu i ramki"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_decocolor)
+#: ruleswidgetbase.ui:1959
+#, kde-format
+msgid "Titlebar color &scheme"
+msgstr "Zestaw kolorów pa&ska tytułu"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_opacityactive)
+#: ruleswidgetbase.ui:2024
+#, kde-format
+msgid "A&ctive opacity"
+msgstr "Przezroczystość a&ktywności"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, opacityactive)
+#. i18n: ectx: property (suffix), widget (QSpinBox, opacityinactive)
+#: ruleswidgetbase.ui:2034 ruleswidgetbase.ui:2079
+#, no-c-format, kde-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_opacityinactive)
+#: ruleswidgetbase.ui:2047
+#, kde-format
+msgid "I&nactive opacity"
+msgstr "Przezroczystość &nieaktywności"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enable_fsplevel)
+#: ruleswidgetbase.ui:2148
+#, kde-format
+msgid ""
+"KWin tries to prevent windows from taking the focus\n"
+"(\"activate\") while you're working in another window,\n"
+"but this may sometimes fail or superact.\n"
+"\"None\" will unconditionally allow this window to get the focus while\n"
+"\"Extreme\" will completely prevent it from taking the focus."
+msgstr ""
+"KWin próbuje powstrzymać okna przed przejęciem uaktywnienia\n"
+"(\"aktywowaniem\") podczas twojej pracy w innym oknie,\n"
+"lecz czasami może to zawodzić lub przesadzać.\n"
+"\"Brak\" bezwarunkowo pozwoli temu oknu przejąć uaktywnienie, podczas gdy\n"
+"\"Najwyższa\" całkowicie powstrzyma go przed przejęciem uaktywnienia."
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_fsplevel)
+#: ruleswidgetbase.ui:2151
+#, kde-format
+msgid "&Focus stealing prevention"
+msgstr "&Ochrona przed zmianą aktywnego okna"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fsplevel)
+#. i18n: ectx: property (text), item, widget (KComboBox, fpplevel)
+#: ruleswidgetbase.ui:2184 ruleswidgetbase.ui:2265
+#, kde-format
+msgctxt "no focus stealing prevention"
+msgid "None"
+msgstr "Brak"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fsplevel)
+#. i18n: ectx: property (text), item, widget (KComboBox, fpplevel)
+#: ruleswidgetbase.ui:2189 ruleswidgetbase.ui:2270
+#, kde-format
+msgid "Low"
+msgstr "Niska"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fsplevel)
+#. i18n: ectx: property (text), item, widget (KComboBox, fpplevel)
+#: ruleswidgetbase.ui:2194 ruleswidgetbase.ui:2275
+#, kde-format
+msgid "Normal"
+msgstr "Normalna"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fsplevel)
+#. i18n: ectx: property (text), item, widget (KComboBox, fpplevel)
+#: ruleswidgetbase.ui:2199 ruleswidgetbase.ui:2280
+#, kde-format
+msgid "High"
+msgstr "Wysoka"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, fsplevel)
+#. i18n: ectx: property (text), item, widget (KComboBox, fpplevel)
+#: ruleswidgetbase.ui:2204 ruleswidgetbase.ui:2285
+#, kde-format
+msgid "Extreme"
+msgstr "Najwyższa"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enable_fpplevel)
+#: ruleswidgetbase.ui:2229
+#, kde-format
+msgid ""
+"This controls the focus protection of the currently active window.\n"
+"None will always give the focus away,\n"
+"Extreme will keep it.\n"
+"Otherwise it's interleaved with the stealing prevention\n"
+"assigned to the window that wants the focus."
+msgstr ""
+"To określa ochronę uaktywnienia obecnie aktywnego okna.\n"
+"Brak zawsze odda uaktywnienie,\n"
+"Najwyższa zawsze je utrzyma.\n"
+"W przeciwnym przypadku jest to powiązane z zapobieganiem\n"
+"zmianie uaktywnienia przypisanego do okna, które chce to uaktywnienie "
+"uzyskać."
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_fpplevel)
+#: ruleswidgetbase.ui:2232
+#, kde-format
+msgid "Focus protection"
+msgstr "Ochrona uaktywnienia"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enable_acceptfocus)
+#: ruleswidgetbase.ui:2295
+#, kde-format
+msgid ""
+"Windows may prevent to get the focus (activate) when being clicked.\n"
+"On the other hand you might wish to prevent a window\n"
+"from getting focused on a mouse click."
+msgstr ""
+"Okna mogą powstrzymać przejęcie uaktywnienia (aktywowania) w chwili "
+"kliknięcia na nie.\n"
+"Z drugiej strony możesz chcieć powstrzymać okno\n"
+"przed przejęciem uaktywnienia przy użyciu kliknięcia myszą."
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_acceptfocus)
+#: ruleswidgetbase.ui:2298
+#, kde-format
+msgid "Accept &focus"
+msgstr "U&aktywniaj się"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enable_disableglobalshortcuts)
+#: ruleswidgetbase.ui:2341
+#, kde-format
+msgid ""
+"When used, a window will receive\n"
+"all keyboard inputs while it is active, including Alt+Tab etc.\n"
+"This is especially interesting for emulators or virtual machines.\n"
+"\n"
+"Be warned:\n"
+"you won't be able to Alt+Tab out of the window\n"
+"nor use any other global shortcut (such as Alt+F2 to show KRunner)\n"
+"while it's active!"
+msgstr ""
+"Po zaznaczeniu, to okno będzie\n"
+"otrzymywać wszystkie naciśnięcia klawiszy, będąc w stanie uaktywnienia, "
+"włączając w to Alt+Tab itp.\n"
+"Warto się tym zainteresować w przypadku użycia emulatorów lub maszyn "
+"wirtualnych.\n"
+"\n"
+"Pamiętaj że:\n"
+"z tego okna nie będzie możliwe przełączenie się przy użyciu Alt+Tab\n"
+", ani użycie jakiegokolwiek innego skrótu globalnego (takiego jak Alt+F2, "
+"aby pokazać KRunner)\n"
+"podczas jego stanu uaktywnienia!"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_disableglobalshortcuts)
+#: ruleswidgetbase.ui:2344
+#, kde-format
+msgid "Ignore global shortcuts"
+msgstr "Pomiń skróty globalne"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_closeable)
+#: ruleswidgetbase.ui:2390
+#, kde-format
+msgid "&Closeable"
+msgstr "Zamy&kalne"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_type)
+#: ruleswidgetbase.ui:2426
+#, kde-format
+msgid "Window &type"
+msgstr "&Rodzaj okna"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_desktopfile)
+#: ruleswidgetbase.ui:2507
+#, kde-format
+msgid "Desktop file name"
+msgstr "Nazwa plik pulpitu"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, desktopfile)
+#: ruleswidgetbase.ui:2557
+#, kde-format
+msgid "org.kde.kwin"
+msgstr "org.kde.kwin"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable_blockcompositing)
+#: ruleswidgetbase.ui:2571
+#, kde-format
+msgid "Block compositing"
+msgstr "Zablokuj kompozycje"
+
+#: yesnobox.h:35
+#, kde-format
+msgid "Yes"
+msgstr "Tak"
+
+#: yesnobox.h:36
+#, kde-format
+msgid "No"
+msgstr "Nie"

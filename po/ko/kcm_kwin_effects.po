@@ -1,0 +1,98 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kwin package.
+# Shinjo Park <kde@peremen.name>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-09-16 03:27+0200\n"
+"PO-Revision-Date: 2019-09-25 21:51+0200\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 18.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "박신조"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde@peremen.name"
+
+#: kcm.cpp:44
+#, kde-format
+msgid "Desktop Effects"
+msgstr "데스크톱 효과"
+
+#: kcm.cpp:49
+#, kde-format
+msgid "Vlad Zagorodniy"
+msgstr "Vlad Zagorodniy"
+
+#: kcm.cpp:87
+#, kde-format
+msgid "Download New Desktop Effects"
+msgstr "새 데스크톱 효과 다운로드"
+
+#: package/contents/ui/Effect.qml:88
+#, kde-format
+msgid ""
+"Author: %1\n"
+"License: %2"
+msgstr ""
+"작성자: %1\n"
+"라이선스: %2"
+
+#: package/contents/ui/Effect.qml:117
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Show/Hide Video"
+msgstr "비디오 보기/숨기기"
+
+#: package/contents/ui/Effect.qml:124
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Configure..."
+msgstr "설정..."
+
+#: package/contents/ui/main.qml:29
+#, kde-format
+msgid "This module lets you configure desktop effects."
+msgstr "이 모듈에서 데스크톱 효과를 설정할 수 있습니다."
+
+#: package/contents/ui/main.qml:36
+#, kde-format
+msgid ""
+"Hint: To find out or configure how to activate an effect, look at the "
+"effect's settings."
+msgstr ""
+"정보: 효과를 활성화시키고 설정하는 방법을 알아 보시려면 효과의 설정을 보십시"
+"오"
+
+#: package/contents/ui/main.qml:56
+#, kde-format
+msgid "Configure Filter"
+msgstr "필터 설정"
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgid "Exclude unsupported effects"
+msgstr "지원하지 않는 데스크톱 효과 제외"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgid "Exclude internal effects"
+msgstr "내부 효과 제외"
+
+#: package/contents/ui/main.qml:133
+#, kde-format
+msgid "Get New Desktop Effects..."
+msgstr "새 데스크톱 효과 다운로드..."

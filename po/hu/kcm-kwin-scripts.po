@@ -1,0 +1,89 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2012.
+# Balázs Úr <urbalazs@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:25+0200\n"
+"PO-Revision-Date: 2013-10-06 11:50+0200\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kiszel Kristóf"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ulysses@kubuntu.org"
+
+#: module.cpp:49
+#, kde-format
+msgid "KWin Scripts"
+msgstr "KWin szkriptek"
+
+#: module.cpp:51
+#, kde-format
+msgid "Configure KWin scripts"
+msgstr "A KWin szkriptek beállítása"
+
+#: module.cpp:54
+#, kde-format
+msgid "Tamás Krutki"
+msgstr "Krutki Tamás"
+
+#: module.cpp:83
+#, kde-format
+msgid "Import KWin Script"
+msgstr "KWin szkript importálása"
+
+#: module.cpp:84
+#, kde-format
+msgid "*.kwinscript|KWin scripts (*.kwinscript)"
+msgstr "*.kwinscript|KWin szkriptek (*.kwinscript)"
+
+#: module.cpp:103
+#, fuzzy, kde-format
+#| msgid "Export selected KWin script"
+msgctxt "Placeholder is error message returned from the install service"
+msgid ""
+"Cannot import selected script.\n"
+"%1"
+msgstr "A kijelölt KWin szkript exportálása"
+
+#: module.cpp:117
+#, fuzzy, kde-format
+#| msgid "The selected script was imported successfully."
+msgctxt "Placeholder is name of the script that was imported"
+msgid "The script \"%1\" was successfully imported."
+msgstr "A kijelölt szkript sikeresen importálva."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, Module)
+#: module.ui:14
+#, kde-format
+msgid "KWin script configuration"
+msgstr "KWin szkriptbeállítás"
+
+#. i18n: ectx: property (text), widget (QPushButton, importScriptButton)
+#: module.ui:55
+#, kde-format
+msgid "Install from File..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KNS3::Button, ghnsButton)
+#: module.ui:67
+#, fuzzy, kde-format
+#| msgid "Get New Script..."
+msgid "Get New Scripts..."
+msgstr "Új szkriptek letöltése…"

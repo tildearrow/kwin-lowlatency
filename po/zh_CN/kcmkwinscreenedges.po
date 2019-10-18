@@ -1,0 +1,239 @@
+# translation of kcmkwinscreenedges.po to 简体中文
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+#
+# Ni Hui <shuizhuyuanluo@126.com>, 2009, 2010.
+# Lie Ex <lilith.ex@gmail.com>, 2009.
+# Weng Xuetian <wengxt@gmail.com>, 2012, 2016.
+# Feng Chao <chaofeng111@gmail.com>, 2014.
+# Xuetian Weng <xweng@cs.stonybrook.edu>, 2014.
+# Guo Yunhe <guoyunhebrave@gmail.com>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-08-05 03:05+0200\n"
+"PO-Revision-Date: 2019-10-09 10:02\n"
+"Last-Translator: Guo Yunhe (guoyunhe)\n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-stable/messages/kde-workspace/kcmkwinscreenedges.pot\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KDE 中国, Feng Chao"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-china@kde.org, chaofeng111@gmail.com"
+
+#: main.cpp:190 touch.cpp:131
+#, kde-format
+msgid "No Action"
+msgstr "无动作"
+
+#: main.cpp:191 touch.cpp:132
+#, kde-format
+msgid "Show Desktop"
+msgstr "显示桌面"
+
+#: main.cpp:192 touch.cpp:133
+#, kde-format
+msgid "Lock Screen"
+msgstr "锁定屏幕"
+
+#: main.cpp:193 touch.cpp:134
+#, kde-format
+msgid "Show KRunner"
+msgstr "显示 KRunner"
+
+#: main.cpp:194 touch.cpp:135
+#, kde-format
+msgid "Activity Manager"
+msgstr "活动管理器"
+
+#: main.cpp:195 touch.cpp:136
+#, kde-format
+msgid "Application Launcher"
+msgstr "程序启动器"
+
+#: main.cpp:199 touch.cpp:140
+#, kde-format
+msgid "%1 - All Desktops"
+msgstr "%1 - 全部桌面"
+
+#: main.cpp:200 touch.cpp:141
+#, kde-format
+msgid "%1 - Current Desktop"
+msgstr "%1 - 当前桌面"
+
+#: main.cpp:201 touch.cpp:142
+#, kde-format
+msgid "%1 - Current Application"
+msgstr "%1 - 当前程序"
+
+#: main.cpp:204 touch.cpp:145
+#, kde-format
+msgid "%1 - Cube"
+msgstr "%1 - 立方"
+
+#: main.cpp:205 touch.cpp:146
+#, kde-format
+msgid "%1 - Cylinder"
+msgstr "%1 - 圆柱"
+
+#: main.cpp:206 touch.cpp:147
+#, kde-format
+msgid "%1 - Sphere"
+msgstr "%1 - 球体"
+
+#: main.cpp:208 touch.cpp:149
+#, kde-format
+msgid "Toggle window switching"
+msgstr "触发窗口切换"
+
+#: main.cpp:209 touch.cpp:150
+#, kde-format
+msgid "Toggle alternative window switching"
+msgstr "触发额外窗口切换"
+
+#. i18n: ectx: property (text), widget (QLabel, infoLabel)
+#: main.ui:23
+#, kde-format
+msgid ""
+"You can trigger an action by pushing the mouse cursor against the "
+"corresponding screen edge or corner."
+msgstr "您可以将鼠标指针推向屏幕边缘或者边角来触发动作。"
+
+#. i18n: ectx: property (text), widget (QLabel, quickMaximizeLabel)
+#: main.ui:67
+#, kde-format
+msgid "&Maximize:"
+msgstr "最大化(&M)："
+
+#. i18n: ectx: property (text), widget (QCheckBox, quickMaximizeBox)
+#: main.ui:77
+#, kde-format
+msgid "Windows dragged to top edge"
+msgstr "将窗口拖拽到上边缘"
+
+#. i18n: ectx: property (text), widget (QLabel, quickTileLabel)
+#: main.ui:84
+#, kde-format
+msgid "&Tile:"
+msgstr "拼接(&T)："
+
+#. i18n: ectx: property (text), widget (QCheckBox, quickTileBox)
+#: main.ui:94
+#, kde-format
+msgid "Windows dragged to left or right edge"
+msgstr "将窗口拖拽到左/右边缘"
+
+#. i18n: ectx: property (text), widget (QLabel, electricBorderCornerRatioLabel)
+#: main.ui:101
+#, kde-format
+msgid "Trigger &quarter tiling in:"
+msgstr "触发四分拼接(&Q)："
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, electricBorderCornerRatioSpin)
+#: main.ui:116
+#, no-c-format, kde-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (prefix), widget (QSpinBox, electricBorderCornerRatioSpin)
+#: main.ui:119
+#, kde-format
+msgid "Outer "
+msgstr "外侧向内"
+
+#. i18n: ectx: property (text), widget (QLabel, label_1)
+#: main.ui:135
+#, kde-format
+msgid "of the screen"
+msgstr "的部分"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, desktopSwitchLabel)
+#: main.ui:144
+#, kde-format
+msgid ""
+"Change desktop when the mouse cursor is pushed against the edge of the screen"
+msgstr "当鼠标光标放置在屏幕边缘时切换桌面"
+
+#. i18n: ectx: property (text), widget (QLabel, desktopSwitchLabel)
+#: main.ui:147
+#, kde-format
+msgid "&Switch desktop on edge:"
+msgstr "在屏幕边缘时切换桌面(&S)："
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:158
+#, kde-format
+msgctxt "Switch desktop on edge"
+msgid "Disabled"
+msgstr "已禁用"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:163
+#, kde-format
+msgid "Only When Moving Windows"
+msgstr "仅当移动窗口时"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, desktopSwitchCombo)
+#: main.ui:168
+#, kde-format
+msgid "Always Enabled"
+msgstr "总是启用"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, activationDelayLabel)
+#: main.ui:176
+#, kde-format
+msgid ""
+"Amount of time required for the mouse cursor to be pushed against the edge "
+"of the screen before the action is triggered"
+msgstr "当鼠标在屏幕边缘处驻留时，触发动作前应等待的时间"
+
+#. i18n: ectx: property (text), widget (QLabel, activationDelayLabel)
+#: main.ui:179
+#, kde-format
+msgid "Activation &delay:"
+msgstr "触发延迟(&D)："
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, activationDelaySpin)
+#. i18n: ectx: property (suffix), widget (QSpinBox, triggerCooldownSpin)
+#: main.ui:189 main.ui:224
+#, kde-format
+msgid " ms"
+msgstr " 毫秒"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, triggerCooldownLabel)
+#: main.ui:208
+#, kde-format
+msgid ""
+"Amount of time required after triggering an action until the next trigger "
+"can occur"
+msgstr "在一个动作被触发后，允许触发下一个动作前的等待时间"
+
+#. i18n: ectx: property (text), widget (QLabel, triggerCooldownLabel)
+#: main.ui:211
+#, kde-format
+msgid "&Reactivation delay:"
+msgstr "重新触发延迟(&R)："
+
+#. i18n: ectx: property (text), widget (QLabel, label_1)
+#: touch.ui:17
+#, kde-format
+msgid ""
+"You can trigger an action by swiping from the screen edge towards the center "
+"of the screen."
+msgstr "您可以从屏幕边缘向中心滑动触发动作。"

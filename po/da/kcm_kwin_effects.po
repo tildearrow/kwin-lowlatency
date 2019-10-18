@@ -1,0 +1,94 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kwin package.
+#
+# Martin Schlander <mschlander@opensuse.org>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-09-16 03:27+0200\n"
+"PO-Revision-Date: 2019-05-07 12:34+0100\n"
+"Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
+"Language-Team: Danish <kde-i18n-doc@kde.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 2.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Martin Schlander"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: kcm.cpp:44
+#, kde-format
+msgid "Desktop Effects"
+msgstr ""
+
+#: kcm.cpp:49
+#, kde-format
+msgid "Vlad Zagorodniy"
+msgstr ""
+
+#: kcm.cpp:87
+#, kde-format
+msgid "Download New Desktop Effects"
+msgstr ""
+
+#: package/contents/ui/Effect.qml:88
+#, kde-format
+msgid ""
+"Author: %1\n"
+"License: %2"
+msgstr ""
+
+#: package/contents/ui/Effect.qml:117
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Show/Hide Video"
+msgstr ""
+
+#: package/contents/ui/Effect.qml:124
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Configure..."
+msgstr ""
+
+#: package/contents/ui/main.qml:29
+#, kde-format
+msgid "This module lets you configure desktop effects."
+msgstr ""
+
+#: package/contents/ui/main.qml:36
+#, kde-format
+msgid ""
+"Hint: To find out or configure how to activate an effect, look at the "
+"effect's settings."
+msgstr ""
+
+#: package/contents/ui/main.qml:56
+#, kde-format
+msgid "Configure Filter"
+msgstr ""
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgid "Exclude unsupported effects"
+msgstr ""
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgid "Exclude internal effects"
+msgstr ""
+
+#: package/contents/ui/main.qml:133
+#, kde-format
+msgid "Get New Desktop Effects..."
+msgstr ""

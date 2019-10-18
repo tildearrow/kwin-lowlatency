@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kwin package.
+# scootergrisen, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:25+0200\n"
+"PO-Revision-Date: 2019-03-02 20:49+0200\n"
+"Last-Translator: scootergrisen\n"
+"Language-Team: Danish\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "scootergrisen"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: effectsmodel.cpp:63
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Accessibility"
+msgstr "Tilgængelighed"
+
+#: effectsmodel.cpp:64
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Appearance"
+msgstr "Udseende"
+
+#: effectsmodel.cpp:65
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Candy"
+msgstr "Øjeguf"
+
+#: effectsmodel.cpp:66
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Focus"
+msgstr "Fokus"
+
+#: effectsmodel.cpp:67
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Show Desktop Animation"
+msgstr "Animation for visning af skrivebord"
+
+#: effectsmodel.cpp:68
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Tools"
+msgstr "Værktøjer"
+
+#: effectsmodel.cpp:69
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Virtual Desktop Switching Animation"
+msgstr "Animation for skift af virtuelt skrivebord"
+
+#: effectsmodel.cpp:70
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Window Management"
+msgstr "Vindueshåndtering"
+
+#: effectsmodel.cpp:71
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Window Open/Close Animation"
+msgstr "Animation for åbning/lukning af vindue"
+
+#: effectsmodel.cpp:239
+#, kde-format
+msgid "KWin development team"
+msgstr "KWin-udviklingsteamet"

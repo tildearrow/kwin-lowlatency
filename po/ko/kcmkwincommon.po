@@ -1,0 +1,88 @@
+# translation of kcmkwincompositing.po to Korean.
+# Copyright (C) 2007 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kdebase package.
+# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwincompositing\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:25+0200\n"
+"PO-Revision-Date: 2019-04-12 00:10+0100\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 2.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "박신조"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde@peremen.name"
+
+#: effectsmodel.cpp:63
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Accessibility"
+msgstr "접근성"
+
+#: effectsmodel.cpp:64
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Appearance"
+msgstr "모양"
+
+#: effectsmodel.cpp:65
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Candy"
+msgstr "볼거리"
+
+#: effectsmodel.cpp:66
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Focus"
+msgstr "초점"
+
+#: effectsmodel.cpp:67
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Show Desktop Animation"
+msgstr "데스크톱 애니메이션 표시"
+
+#: effectsmodel.cpp:68
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Tools"
+msgstr "도구"
+
+#: effectsmodel.cpp:69
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Virtual Desktop Switching Animation"
+msgstr "가상 데스크톱 전환 애니메이션"
+
+#: effectsmodel.cpp:70
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Window Management"
+msgstr "창 관리"
+
+#: effectsmodel.cpp:71
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Window Open/Close Animation"
+msgstr "창 열기/닫기 애니메이션"
+
+#: effectsmodel.cpp:239
+#, kde-format
+msgid "KWin development team"
+msgstr "KWin 개발 팀"
