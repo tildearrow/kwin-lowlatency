@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-15 03:21+0200\n"
-"PO-Revision-Date: 2019-09-22 12:27+0200\n"
+"PO-Revision-Date: 2019-10-19 22:03+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -606,15 +606,15 @@ msgid ""
 "with the proper window type for this feature to work."
 msgstr ""
 "Cando se sinale, as xanelas de utilidade (xanelas de ferramentas, menús "
-"desprendíbeis …) dos aplicativos inactivos mostraranse só cando o aplicativo "
-"se torne activo. Lembre que os aplicativos deben etiquetar as xanelas co "
-"tipo axeitado para que esta característica funcione."
+"desprendíbeis …) das aplicacións inactivas mostraranse só cando a aplicación "
+"se active. Lembre que as aplicacións deben etiquetar as xanelas co tipo "
+"axeitado para que esta funcionalidade funcione."
 
 #. i18n: ectx: property (text), widget (QCheckBox, hideUtilityWindowsForInactive)
 #: advanced.ui:131
 #, kde-format
 msgid "Hide utility windows for inactive applications"
-msgstr "Agochar as xanelas de utilidades dos aplicativos inactivos"
+msgstr "Agochar as xanelas de utilidades das aplicacións inactivas"
 
 #. i18n: ectx: property (text), widget (QLabel, windowFocusPolicyLabel)
 #: focus.ui:22

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-29 03:10+0200\n"
+"POT-Creation-Date: 2019-10-16 07:57+0200\n"
 "PO-Revision-Date: 2019-10-09 10:02\n"
 "Last-Translator: Guo Yunhe (guoyunhe)\n"
 "Language-Team: Chinese Simplified\n"
@@ -22,49 +22,49 @@ msgstr ""
 "X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: /kf5-stable/messages/kde-workspace/kwin_clients.pot\n"
 
-#: aurorae/src/aurorae.cpp:740
+#: aurorae/src/aurorae.cpp:742
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Tiny"
 msgstr "小"
 
-#: aurorae/src/aurorae.cpp:741
+#: aurorae/src/aurorae.cpp:743
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Normal"
 msgstr "普通"
 
-#: aurorae/src/aurorae.cpp:742
+#: aurorae/src/aurorae.cpp:744
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Large"
 msgstr "大"
 
-#: aurorae/src/aurorae.cpp:743
+#: aurorae/src/aurorae.cpp:745
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Very Large"
 msgstr "非常大"
 
-#: aurorae/src/aurorae.cpp:744
+#: aurorae/src/aurorae.cpp:746
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Huge"
 msgstr "巨大"
 
-#: aurorae/src/aurorae.cpp:745
+#: aurorae/src/aurorae.cpp:747
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Very Huge"
 msgstr "超大"
 
-#: aurorae/src/aurorae.cpp:746
+#: aurorae/src/aurorae.cpp:748
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Oversized"
 msgstr "超特大"
 
-#: aurorae/src/aurorae.cpp:749
+#: aurorae/src/aurorae.cpp:751
 #, kde-format
 msgid "Button size:"
 msgstr "按钮大小："

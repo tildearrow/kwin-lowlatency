@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_clients\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-29 03:10+0200\n"
+"POT-Creation-Date: 2019-10-16 07:57+0200\n"
 "PO-Revision-Date: 2011-07-12 17:49+0200\n"
 "Last-Translator: Marko Dimjašević <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -25,7 +25,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: aurorae/src/aurorae.cpp:740
+#: aurorae/src/aurorae.cpp:742
 #, fuzzy, kde-format
 #| msgctxt "@item:inlistbox Border size:"
 #| msgid "Tiny"
@@ -33,31 +33,31 @@ msgctxt "@item:inlistbox Button size:"
 msgid "Tiny"
 msgstr "Sićušan"
 
-#: aurorae/src/aurorae.cpp:741
+#: aurorae/src/aurorae.cpp:743
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Normal"
 msgstr "Normalan"
 
-#: aurorae/src/aurorae.cpp:742
+#: aurorae/src/aurorae.cpp:744
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Large"
 msgstr "Velik"
 
-#: aurorae/src/aurorae.cpp:743
+#: aurorae/src/aurorae.cpp:745
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Very Large"
 msgstr "Vrlo velik"
 
-#: aurorae/src/aurorae.cpp:744
+#: aurorae/src/aurorae.cpp:746
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Huge"
 msgstr "Ogroman"
 
-#: aurorae/src/aurorae.cpp:745
+#: aurorae/src/aurorae.cpp:747
 #, fuzzy, kde-format
 #| msgctxt "@item:inlistbox Border size:"
 #| msgid "Very Huge"
@@ -65,7 +65,7 @@ msgctxt "@item:inlistbox Button size:"
 msgid "Very Huge"
 msgstr "Vrlo ogroman"
 
-#: aurorae/src/aurorae.cpp:746
+#: aurorae/src/aurorae.cpp:748
 #, fuzzy, kde-format
 #| msgctxt "@item:inlistbox Border size:"
 #| msgid "Oversized"
@@ -73,7 +73,7 @@ msgctxt "@item:inlistbox Button size:"
 msgid "Oversized"
 msgstr "Prekomjeran"
 
-#: aurorae/src/aurorae.cpp:749
+#: aurorae/src/aurorae.cpp:751
 #, kde-format
 msgid "Button size:"
 msgstr "Veličina gumba:"

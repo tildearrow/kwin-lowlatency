@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_clients\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-29 03:10+0200\n"
+"POT-Creation-Date: 2019-10-16 07:57+0200\n"
 "PO-Revision-Date: 2010-05-31 10:30+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
 "Language-Team: Icelandic <kde-isl@molar.is>\n"
@@ -23,52 +23,52 @@ msgstr ""
 "\n"
 "\n"
 
-#: aurorae/src/aurorae.cpp:740
+#: aurorae/src/aurorae.cpp:742
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Tiny"
 msgstr "Örsmátt"
 
-#: aurorae/src/aurorae.cpp:741
+#: aurorae/src/aurorae.cpp:743
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Normal"
 msgstr "Venjulegt"
 
-#: aurorae/src/aurorae.cpp:742
+#: aurorae/src/aurorae.cpp:744
 #, fuzzy, kde-format
 #| msgid "Large"
 msgctxt "@item:inlistbox Button size:"
 msgid "Large"
 msgstr "Stórt"
 
-#: aurorae/src/aurorae.cpp:743
+#: aurorae/src/aurorae.cpp:745
 #, fuzzy, kde-format
 #| msgid "Large"
 msgctxt "@item:inlistbox Button size:"
 msgid "Very Large"
 msgstr "Stórt"
 
-#: aurorae/src/aurorae.cpp:744
+#: aurorae/src/aurorae.cpp:746
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Huge"
 msgstr "Stór"
 
-#: aurorae/src/aurorae.cpp:745
+#: aurorae/src/aurorae.cpp:747
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Very Huge"
 msgstr "Hrikalega stórt"
 
-#: aurorae/src/aurorae.cpp:746
+#: aurorae/src/aurorae.cpp:748
 #, fuzzy, kde-format
 #| msgid "Resize"
 msgctxt "@item:inlistbox Button size:"
 msgid "Oversized"
 msgstr "Breyta stærð"
 
-#: aurorae/src/aurorae.cpp:749
+#: aurorae/src/aurorae.cpp:751
 #, fuzzy, kde-format
 #| msgid "Button size:"
 msgid "Button size:"

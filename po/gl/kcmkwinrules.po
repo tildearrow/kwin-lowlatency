@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-17 03:28+0200\n"
-"PO-Revision-Date: 2019-01-01 10:26+0100\n"
+"PO-Revision-Date: 2019-10-19 22:04+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -258,7 +258,7 @@ msgstr "Preferencia interna para lembrar"
 #: main.cpp:138
 #, kde-format
 msgid "Application settings for %1"
-msgstr "Configuración do aplicativo para %1"
+msgstr "Configuración da aplicación para %1"
 
 #: main.cpp:158
 #, kde-format
@@ -269,7 +269,7 @@ msgstr "Configuración da xanela %1"
 #, kde-format
 msgctxt "Window caption for the application wide rules dialog"
 msgid "Edit Application-Specific Settings"
-msgstr "Editar as opcións específicas do aplicativo"
+msgstr "Editar as opcións específicas da aplicación"
 
 #: main.cpp:241
 #, kde-format
@@ -290,7 +290,7 @@ msgstr "Identificador de KWin da xanela para configuración especial da xanela."
 #, kde-format
 msgid "Whether the settings should affect all windows of the application."
 msgstr ""
-"Indica se a configuración debe afectar a todas as xanelas do aplicativo."
+"Indica se a configuración debe afectar a todas as xanelas da aplicación."
 
 #: main.cpp:259
 #, kde-format
@@ -446,7 +446,7 @@ msgid ""
 msgstr ""
 "Especificou a clase da xanela como sen importancia.\n"
 "Isto significa que posibelmente se aplicará a configuración a xanelas de "
-"todos os aplicativos. Se realmente quere crear un configuración xenérica, é "
+"todas as aplicacións. Se realmente quere crear un configuración xenérica, é "
 "recomendábel que polo menos limite os tipos de xanelas para evitar tipos "
 "especiais de xanelas."
 
@@ -464,7 +464,7 @@ msgid ""
 "affected and to which value."
 msgstr ""
 "Este diálogo de configuración permítelle alterar a configuración só para a "
-"xanela ou aplicativo escollido. Atope o parámetro que queira alterar, active "
+"xanela ou aplicación escollida. Atope o parámetro que queira alterar, active "
 "a opción usando a caixa para marcar, escolla de que xeito afectará á opción "
 "e con que valor."
 
@@ -494,7 +494,7 @@ msgstr "&Descrición:"
 #: ruleswidgetbase.ui:46
 #, kde-format
 msgid "Window &class (application):"
-msgstr "C&lase da xanela (aplicativo):"
+msgstr "C&lase da xanela (aplicación):"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, wmclass_match)
 #. i18n: ectx: property (text), item, widget (KComboBox, role_match)

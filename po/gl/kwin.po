@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-27 07:54+0200\n"
-"PO-Revision-Date: 2019-09-22 11:42+0200\n"
+"PO-Revision-Date: 2019-10-19 21:58+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -59,7 +59,7 @@ msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "
 "resume using the '%1' shortcut."
 msgstr ""
-"Outro aplicativo suspendeu os efectos do escritorio.<br/>Pode continuar "
+"Outra aplicación suspendeu os efectos do escritorio.<br/>Pode continuar "
 "empregando o atallo «%1»."
 
 #: debug_console.cpp:74
@@ -938,7 +938,7 @@ msgstr "Xestor de xanelas"
 #: helpers/killer/killer.cpp:52
 #, kde-format
 msgid "PID of the application to terminate"
-msgstr "Identificador do proceso do aplicativo para terminar."
+msgstr "Identificador do proceso da aplicación para terminar"
 
 #: helpers/killer/killer.cpp:52
 #, kde-format
@@ -948,7 +948,7 @@ msgstr "pid"
 #: helpers/killer/killer.cpp:54
 #, kde-format
 msgid "Hostname on which the application is running"
-msgstr "Nome do servidor onde se está a executar o aplicativo"
+msgstr "Nome do servidor onde se está a executar a aplicación"
 
 #: helpers/killer/killer.cpp:54
 #, kde-format
@@ -968,7 +968,7 @@ msgstr "título"
 #: helpers/killer/killer.cpp:58
 #, kde-format
 msgid "Name of the application to be terminated"
-msgstr "Nome do aplicativo para terminar."
+msgstr "Nome da aplicación para terminar"
 
 #: helpers/killer/killer.cpp:58
 #, kde-format
@@ -978,7 +978,7 @@ msgstr "nome"
 #: helpers/killer/killer.cpp:60
 #, kde-format
 msgid "ID of resource belonging to the application"
-msgstr "Identificador do recurso que pertence ao aplicativo."
+msgstr "Identificador do recurso que pertence á aplicación."
 
 #: helpers/killer/killer.cpp:60
 #, kde-format
@@ -1012,7 +1012,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid "<b>Application \"%1\" is not responding</b>"
-msgstr "<b>O aplicativo «%1» non reacciona</b>"
+msgstr "<b>A aplicación «%1» non reacciona</b>"
 
 #: helpers/killer/killer.cpp:100
 #, kde-kuit-format
@@ -1021,8 +1021,8 @@ msgid ""
 "<p>You tried to close window \"%1\" from application \"%2\" (Process ID: %3) "
 "but the application is not responding.</p>"
 msgstr ""
-"<p>Intentou pechar a xanela «%1» do aplicativo «%2» (identificador do "
-"proceso: %3) pero o aplicativo non está a reaccionar.</p>"
+"<p>Intentou pechar a xanela «%1» da aplicación «%2» (identificador do "
+"proceso: %3) pero a aplicación non está a reaccionar.</p>"
 
 #: helpers/killer/killer.cpp:102
 #, kde-kuit-format
@@ -1031,8 +1031,8 @@ msgid ""
 "<p>You tried to close window \"%1\" from application \"%2\" (Process ID: "
 "%3), running on host \"%4\", but the application is not responding.</p>"
 msgstr ""
-"<p>Intentou pechar a xanela «%1» do aplicativo «%2» (identificador do "
-"proceso: %3), que se está a executar na máquina «%4», pero o aplicativo non "
+"<p>Intentou pechar a xanela «%1» da aplicación «%2» (identificador do "
+"proceso: %3), que se está a executar na máquina «%4», pero a aplicación non "
 "está a reaccionar.</p>"
 
 #: helpers/killer/killer.cpp:105
@@ -1043,14 +1043,14 @@ msgid ""
 "application will close all of its child windows. Any unsaved data will be "
 "lost.</warning></p>"
 msgstr ""
-"<p>Quere terminar o aplicativo?</p> <p><warning>Terminar o aplicativo ha "
-"pechar todas as xanelas que formen parte del. Ha perder calquera dato que "
+"<p>Quere terminar a aplicación?</p> <p><warning>Terminar a aplicación ha "
+"pechar todas as xanelas que formen parte dela. Ha perder calquera dato que "
 "non gardase previamente.</warning></p>"
 
 #: helpers/killer/killer.cpp:109
 #, kde-format
 msgid "&Terminate Application %1"
-msgstr "&Terminar o aplicativo %1"
+msgstr "&Terminar a aplicación %1"
 
 #: helpers/killer/killer.cpp:110
 #, kde-format
@@ -1526,12 +1526,12 @@ msgstr "Iniciar a sesión sen funcionalidade de atallos globais."
 #: main_wayland.cpp:532
 #, kde-format
 msgid "Exit after the session application, which is started by KWin, closed."
-msgstr "Saír cando peche o aplicativo de sesións que KWin inicia."
+msgstr "Saír cando peche a aplicación de sesións que KWin inicia."
 
 #: main_wayland.cpp:537
 #, kde-format
 msgid "Applications to start once Wayland and Xwayland server are started"
-msgstr "Aplicativos que iniciar despois dos servidores de Wayland e Xwayland."
+msgstr "Aplicacións que iniciar despois dos servidores de Wayland e Xwayland"
 
 #: main_x11.cpp:75
 #, kde-format
@@ -1699,22 +1699,22 @@ msgstr "Percorrer as xanelas alternativo (Inverso)"
 #: tabbox/tabbox.cpp:545
 #, kde-format
 msgid "Walk Through Windows of Current Application"
-msgstr "Percorrer as xanelas do aplicativo actual"
+msgstr "Percorrer as xanelas da aplicación actual"
 
 #: tabbox/tabbox.cpp:546
 #, kde-format
 msgid "Walk Through Windows of Current Application (Reverse)"
-msgstr "Percorrer as xanelas do aplicativo actual (Inverso)"
+msgstr "Percorrer as xanelas da aplicación actual (Inverso)"
 
 #: tabbox/tabbox.cpp:547
 #, kde-format
 msgid "Walk Through Windows of Current Application Alternative"
-msgstr "Percorrer as xanelas do aplicativo actual, alternativo"
+msgstr "Percorrer as xanelas da aplicación actual, alternativo"
 
 #: tabbox/tabbox.cpp:548
 #, kde-format
 msgid "Walk Through Windows of Current Application Alternative (Reverse)"
-msgstr "Percorrer as xanelas do aplicativo actual, alternativo (Inverso)"
+msgstr "Percorrer as xanelas da aplicación actual, alternativo (Inverso)"
 
 #: tabbox/tabbox.cpp:549
 #, kde-format
@@ -1767,7 +1767,7 @@ msgid ""
 "window operations menu instead, activated using the %1 keyboard shortcut."
 msgstr ""
 "Escolleu mostrar unha xanela en modo pantalla completa.\n"
-"Se o aplicativo en si non ten unha opción para desactivar este modo, non "
+"Se a aplicación en si non ten unha opción para desactivar este modo, non "
 "será quen de desactivalo mediante o rato. Empregue o menú de operacións da "
 "xanela, mediante o atallo de teclado %1."
 

@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-27 07:54+0200\n"
-"PO-Revision-Date: 2019-05-12 18:33+0200\n"
+"PO-Revision-Date: 2019-10-14 19:27+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:22:29+0000\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 18.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -1808,31 +1808,27 @@ msgid "&No Border"
 msgstr "&Ei reunusta"
 
 #: useractions.cpp:294
-#, fuzzy, kde-format
-#| msgid "Window Short&cut..."
+#, kde-format
 msgid "Set Window Short&cut..."
-msgstr "Ikkunan &pikanäppäin…"
+msgstr "Aseta ikkunan &pikanäppäin…"
 
 #: useractions.cpp:299
-#, fuzzy, kde-format
-#| msgid "Special &Window Settings..."
+#, kde-format
 msgid "Configure Special &Window Settings..."
-msgstr "&Ikkunakohtaiset asetukset…"
+msgstr "&Ikkunakohtaiset erityisasetukset…"
 
 #: useractions.cpp:304
-#, fuzzy, kde-format
-#| msgid "S&pecial Application Settings..."
+#, kde-format
 msgid "Configure S&pecial Application Settings..."
-msgstr "&Sovelluskohtaiset asetukset…"
+msgstr "&Sovelluskohtaiset erityisasetukset…"
 
 #: useractions.cpp:312
-#, fuzzy, kde-format
-#| msgid "Window Manager"
+#, kde-format
 msgctxt ""
 "Entry in context menu of window decoration to open the configuration module "
 "of KWin"
 msgid "Configure W&indow Manager..."
-msgstr "Ikkunointiohjelma"
+msgstr "&Ikkunointiohjelman asetukset…"
 
 #: useractions.cpp:342
 #, kde-format
@@ -1865,22 +1861,19 @@ msgid "&Desktops"
 msgstr "&Työpöydät"
 
 #: useractions.cpp:479
-#, fuzzy, kde-format
-#| msgid "Move To &Desktop"
+#, kde-format
 msgid "Move to &Desktop"
-msgstr "Siirrä &työpöydälle"
+msgstr "Siirrä t&yöpöydälle"
 
 #: useractions.cpp:497
-#, fuzzy, kde-format
-#| msgid "Move To &Screen"
+#, kde-format
 msgid "Move to &Screen"
-msgstr "Siirrä &näytölle"
+msgstr "&Siirrä näytölle"
 
 #: useractions.cpp:513
-#, fuzzy, kde-format
-#| msgid "Ac&tivities"
+#, kde-format
 msgid "Show in &Activities"
-msgstr "&Aktiviteeteissa"
+msgstr "Näytä &aktiviteeteissa"
 
 #: useractions.cpp:528 useractions.cpp:573
 #, kde-format

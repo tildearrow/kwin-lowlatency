@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2013.
-# Tommi Nieminen <translator@legisign.org>, 2017.
+# Tommi Nieminen <translator@legisign.org>, 2017, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-20 03:25+0200\n"
-"PO-Revision-Date: 2017-06-08 21:04+0200\n"
+"PO-Revision-Date: 2019-10-16 12:04+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 18.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -53,8 +53,8 @@ msgid ""
 "Invalid number of arguments. At least service, path, interface and method "
 "need to be provided"
 msgstr ""
-"Virheellinen määrä parametreja. Ainakin palvelu, polku, rajapinta ja metodi "
-"tarvitsee antaa"
+"Virheellinen parametrien määrä. Ainakin palvelu, polku, rajapinta ja metodi "
+"on annettava"
 
 #: scripting.cpp:194
 #, kde-format
@@ -88,8 +88,7 @@ msgstr "%1 ei ole vaadittua tyyppiä"
 msgctxt "KWin Scripting error thrown due to incorrect argument"
 msgid "Second argument to registerScreenEdge needs to be a callback"
 msgstr ""
-"registerScreenEdge-kutsun toisen parametrin tarvitsee olla callback "
-"(palautekutsu)"
+"registerScreenEdge-kutsun toisen parametrin on oltava palautekutsu (callback)"
 
 #: scriptingutils.h:213
 #, kde-format
@@ -103,8 +102,8 @@ msgstr ""
 msgctxt "KWin Scripting error thrown due to incorrect argument"
 msgid "Argument for registerUserActionsMenu needs to be a callback"
 msgstr ""
-"registerUserActionsMenu-kutsun toisen parametrin tarvitsee olla callback "
-"(palautekutsu)"
+"registerUserActionsMenu-kutsun toisen parametrin on oltava palautekutsu "
+"(callback)"
 
 #: scriptingutils.h:305
 #, kde-format

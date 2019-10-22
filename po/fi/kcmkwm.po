@@ -8,7 +8,7 @@
 # Ilpo Kantonen <ilpo@iki.fi>, 2005.
 # Teemu Rytilahti <tpr@d5k.net>, 2005.
 # Niklas Laxström <niklas.laxstrom+kdetrans@gmail.com>, 2007.
-# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011, 2013, 2014.
+# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011, 2013, 2014, 2019.
 # Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016.
 #
@@ -19,8 +19,8 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-15 03:21+0200\n"
-"PO-Revision-Date: 2016-03-22 15:48+0200\n"
-"Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
+"PO-Revision-Date: 2019-10-14 19:22+0300\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:22:23+0000\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 18.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -47,18 +47,16 @@ msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
 #: actions.ui:17
-#, fuzzy, kde-format
-#| msgid "Inactive Inner Window"
+#, kde-format
 msgid "Inactive Inner Window Actions"
-msgstr "Passiivisen ikkunan sisus"
+msgstr "Passiivisen ikkunasisuksen toiminnot"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #: actions.ui:26 mouse.ui:177
-#, fuzzy, kde-format
-#| msgid "&Double-click:"
+#, kde-format
 msgid "&Left click:"
-msgstr "K&aksoisnapsautus:"
+msgstr "&Vasen napsautus:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coWin1)
 #: actions.ui:39
@@ -74,8 +72,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
 #: actions.ui:43 actions.ui:83 actions.ui:123
-#, fuzzy, kde-format
-#| msgid "Activate, Raise & Pass Click"
+#, kde-format
 msgid "Activate, raise and pass click"
 msgstr "Aktivoi, nosta ja välitä napsautus"
 
@@ -83,8 +80,7 @@ msgstr "Aktivoi, nosta ja välitä napsautus"
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
 #: actions.ui:48 actions.ui:88 actions.ui:128
-#, fuzzy, kde-format
-#| msgid "Activate & Pass Click"
+#, kde-format
 msgid "Activate and pass click"
 msgstr "Aktivoi ja välitä napsautus"
 
@@ -108,18 +104,16 @@ msgstr "Aktivoi"
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
 #: actions.ui:58 actions.ui:98 actions.ui:138 mouse.ui:283 mouse.ui:398
 #: mouse.ui:513
-#, fuzzy, kde-format
-#| msgid "Activate & Raise"
+#, kde-format
 msgid "Activate and raise"
 msgstr "Aktivoi ja nosta"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: actions.ui:66 mouse.ui:200
-#, fuzzy, kde-format
-#| msgid "&Double-click:"
+#, kde-format
 msgid "&Middle click:"
-msgstr "K&aksoisnapsautus:"
+msgstr "K&eskinapsautus:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coWin2)
 #: actions.ui:79
@@ -137,7 +131,7 @@ msgstr ""
 #: actions.ui:106 mouse.ui:213
 #, kde-format
 msgid "&Right click:"
-msgstr ""
+msgstr "&Oikea napsautus:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coWin3)
 #: actions.ui:119
@@ -152,8 +146,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: actions.ui:146 mouse.ui:88
-#, fuzzy, kde-format
-#| msgid "M&ouse wheel:"
+#, kde-format
 msgid "Mouse &wheel:"
 msgstr "&Hiiren rulla:"
 
@@ -175,31 +168,27 @@ msgstr "Vieritä"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coWinWheel)
 #: actions.ui:168
-#, fuzzy, kde-format
-#| msgid "Activate & Scroll"
+#, kde-format
 msgid "Activate and scroll"
 msgstr "Aktivoi ja vieritä"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coWinWheel)
 #: actions.ui:173
-#, fuzzy, kde-format
-#| msgid "Activate, Raise & Scroll"
+#, kde-format
 msgid "Activate, raise and scroll"
 msgstr "Aktivoi, nosta ja vieritä"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: actions.ui:184
-#, fuzzy, kde-format
-#| msgid "Inner Window, Titlebar & Frame"
+#, kde-format
 msgid "Inner Window, Titlebar and Frame Actions"
 msgstr "Ikkunan sisus, otsikkopalkki ja kehys"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: actions.ui:195
-#, fuzzy, kde-format
-#| msgid "Modifier &key:"
+#, kde-format
 msgid "Mo&difier key:"
-msgstr "&Muuntonäppäin:"
+msgstr "M&uuntonäppäin:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coAllKey)
 #: actions.ui:205
@@ -223,18 +212,16 @@ msgstr "Meta"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: actions.ui:236
-#, fuzzy, kde-format
-#| msgid "   + "
+#, kde-format
 msgid "  + "
 msgstr "   + "
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: actions.ui:248 mouse.ui:601
-#, fuzzy, kde-format
-#| msgid "&Double-click:"
+#, kde-format
 msgid "L&eft click:"
-msgstr "K&aksoisnapsautus:"
+msgstr "&Vasen napsautus:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coAll1)
 #: actions.ui:261
@@ -258,8 +245,7 @@ msgstr "Siirrä"
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:270 actions.ui:340 actions.ui:410
-#, fuzzy, kde-format
-#| msgid "Activate, Raise & Move"
+#, kde-format
 msgid "Activate, raise and move"
 msgstr "Aktivoi, nosta ja siirrä"
 
@@ -274,8 +260,7 @@ msgstr "Aktivoi, nosta ja siirrä"
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:275 actions.ui:345 actions.ui:415 mouse.ui:246 mouse.ui:308
 #: mouse.ui:361 mouse.ui:423 mouse.ui:476 mouse.ui:538
-#, fuzzy, kde-format
-#| msgid "Toggle Raise & Lower"
+#, kde-format
 msgid "Toggle raise and lower"
 msgstr "Nosta tai laske"
 
@@ -340,8 +325,7 @@ msgstr "Pienennä"
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:300 actions.ui:370 actions.ui:440
-#, fuzzy, kde-format
-#| msgid "Decrease Opacity"
+#, kde-format
 msgid "Decrease opacity"
 msgstr "Vähennä peittävyyttä"
 
@@ -349,10 +333,9 @@ msgstr "Vähennä peittävyyttä"
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:305 actions.ui:375 actions.ui:445
-#, fuzzy, kde-format
-#| msgid "Increase Opacity"
+#, kde-format
 msgid "Increase opacity"
-msgstr "Kasvata peittävyyttä"
+msgstr "Lisää peittävyyttä"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
@@ -370,17 +353,15 @@ msgstr "Kasvata peittävyyttä"
 #: actions.ui:310 actions.ui:380 actions.ui:450 actions.ui:505 mouse.ui:80
 #: mouse.ui:132 mouse.ui:271 mouse.ui:333 mouse.ui:386 mouse.ui:448
 #: mouse.ui:501 mouse.ui:563
-#, fuzzy, kde-format
-#| msgid "Nothing"
+#, kde-format
 msgid "Do nothing"
-msgstr "Ei mitään"
+msgstr "Älä tee mitään"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: actions.ui:318
-#, fuzzy, kde-format
-#| msgid "Middle b&utton:"
+#, kde-format
 msgid "Middle &click:"
-msgstr "&Keskipainike:"
+msgstr "&Keskinapsautus:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coAll2)
 #: actions.ui:331
@@ -397,7 +378,7 @@ msgstr ""
 #: actions.ui:388 mouse.ui:653
 #, kde-format
 msgid "Right clic&k:"
-msgstr ""
+msgstr "&Oikea napsautus:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coAll3)
 #: actions.ui:401
@@ -411,8 +392,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: actions.ui:458
-#, fuzzy, kde-format
-#| msgid "M&ouse wheel:"
+#, kde-format
 msgid "Mo&use wheel:"
 msgstr "&Hiiren rulla:"
 
@@ -429,77 +409,68 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #: actions.ui:475 mouse.ui:102
-#, fuzzy, kde-format
-#| msgid "Raise/Lower"
+#, kde-format
 msgid "Raise/lower"
 msgstr "Nosta tai laske"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #: actions.ui:480 mouse.ui:107
-#, fuzzy, kde-format
-#| msgid "Shade/Unshade"
+#, kde-format
 msgid "Shade/unshade"
 msgstr "Rullaa kiinni tai auki"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #: actions.ui:485 mouse.ui:112
-#, fuzzy, kde-format
-#| msgid "Maximize/Restore"
+#, kde-format
 msgid "Maximize/restore"
 msgstr "Suurenna tai palauta"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #: actions.ui:490 mouse.ui:117
-#, fuzzy, kde-format
-#| msgid "Keep Above/Below"
+#, kde-format
 msgid "Keep above/below"
-msgstr "Pidä päällimmäisenä tai alimmaisena"
+msgstr "Pidä ylinnä tai alinna"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #: actions.ui:495 mouse.ui:122
-#, fuzzy, kde-format
-#| msgid "Move to Previous/Next Desktop"
+#, kde-format
 msgid "Move to previous/next desktop"
-msgstr "Vaihda edelliselle tai seuraavalle työpöydälle"
+msgstr "Siirrä edelliselle tai seuraavalle työpöydälle"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #: actions.ui:500 mouse.ui:127
-#, fuzzy, kde-format
-#| msgid "Change Opacity"
+#, kde-format
 msgid "Change opacity"
-msgstr "Vaihda peittävyyttä"
+msgstr "Muuta peittävyyttä"
 
 #. i18n: ectx: property (text), widget (QLabel, shadeHoverLabel)
 #: advanced.ui:20
-#, fuzzy, kde-format
-#| msgid "Window Tabbing"
+#, kde-format
 msgid "Window &unshading:"
-msgstr "Ikkunavälilehdet"
+msgstr "Ikkuna&rullauksen avaus:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, shadeHoverOn)
 #: advanced.ui:32
-#, fuzzy, kde-format
-#| msgid ""
-#| "If Shade Hover is enabled, a shaded window will un-shade automatically "
-#| "when the mouse pointer has been over the title bar for some time."
+#, kde-format
 msgid ""
 "<html><head/><body><p>If this option is enabled, a shaded window will "
 "unshade automatically when the mouse pointer has been over the titlebar for "
 "some time.</p></body></html>"
 msgstr ""
-"Kun tämä asetus on käytössä, kiinni rullattu ikkuna avautuu automaattisesti "
-"hiiriosoittimen oltua sen otsikkopalkin yllä jonkin aikaa."
+"<html><head/><body><p>Jos tämä asetus on käytössä, kiinni rullattu ikkuna "
+"avataan automaattisesti hiiriosoittimen oltua otsikkopalkin yllä jonkin "
+"aikaa.</p></body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, shadeHoverOn)
 #: advanced.ui:35
 #, kde-format
 msgid "On titlebar hover after:"
-msgstr ""
+msgstr "Leijunta otsikkopalkin yllä:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, shadeHover)
 #: advanced.ui:42
@@ -521,10 +492,9 @@ msgstr " ms"
 
 #. i18n: ectx: property (text), widget (QLabel, windowPlacementLabel)
 #: advanced.ui:66
-#, fuzzy, kde-format
-#| msgid "&Placement:"
+#, kde-format
 msgid "Window &placement:"
-msgstr "&Sijoitustyyli:"
+msgstr "Sijoitust&yyli:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, placementCombo)
 #: advanced.ui:76
@@ -557,6 +527,31 @@ msgid ""
 "\"><span style=\" font-style:italic;\">Under mouse</span> will place the "
 "window under the pointer</li></ul></body></html>"
 msgstr ""
+"<html><head/><body><p>Sijoituskäytäntö määrittää, mihin uusi ikkuna "
+"työpöydällä asetetaan.</p><ul style=\"margin-top: 0px; margin-bottom: 0px; "
+"margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\"><li style=\" "
+"margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Älykäs</span> yrittää lomittaa ikkunoita mahdollisimman vähän</li><li "
+"style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Suurentaminen</span> yrittää suurentaa kunkin ikkunan koko "
+"ruudulle. Tiettyjä ikkunoita kannattanee ohjata ikkunakohtaisin asetuksin.</"
+"li><li style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Porrastus</span> porrastaa ikkunat</li><li style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Satunnainen</span> käyttää satunnaista sijaintia</li><li style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Keskitetty</"
+"span> sijoittaa ikkunan näytön keskelle</li><li style=\" margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-style:italic;\">Yläkulma</span> "
+"sijoittaa ikkunan vasempaan yläkulmaan</li><li style=\" margin-top:0px; "
+"margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-style:italic;\">Osoittimen alle</"
+"span> sijoittaa ikkunan hiiriosoittimen alle</li></ul></body></html>"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:80
@@ -590,24 +585,21 @@ msgstr "Keskitetty"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:105
-#, fuzzy, kde-format
-#| msgid "Zero-Cornered"
+#, kde-format
 msgid "Zero-cornered"
 msgstr "Yläkulma"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:110
-#, fuzzy, kde-format
-#| msgid "Under Mouse"
+#, kde-format
 msgid "Under mouse"
 msgstr "Osoittimen alle"
 
 #. i18n: ectx: property (text), widget (QLabel, specialWindowsLabel)
 #: advanced.ui:118
-#, fuzzy, kde-format
-#| msgid "Special Windows"
+#, kde-format
 msgid "&Special windows:"
-msgstr "Erikoisikkunat"
+msgstr "&Erikoisikkunat:"
 
 # ”Apuikkuna” yhtenäisyyden vuoksi: seuraavassa id:ssä oli jo näin
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, hideUtilityWindowsForInactive)
@@ -634,61 +626,57 @@ msgstr "Piilota passiivisten sovellusten apuikkunat"
 #: focus.ui:22
 #, kde-format
 msgid "Window &activation policy:"
-msgstr ""
+msgstr "Ikkunoiden &aktivointikäytäntö:"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:32
 #, kde-format
 msgid "With this option you can specify how and when windows will be focused."
 msgstr ""
+"Tällä asetuksella voit asettaa, kuinka ja milloin ikkunoihin kohdistetaan."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:36
-#, fuzzy, kde-format
-#| msgid "Click to Focus"
+#, kde-format
 msgctxt "sassa asas"
 msgid "Click to focus"
-msgstr "Kohdista hiiren painikkeella"
+msgstr "Kohdista napsauttamalla"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:41
 #, kde-format
 msgid "Click to focus (mouse precedence)"
-msgstr ""
+msgstr "Kohdista napsauttamalla (hiiren etusija)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:46
-#, fuzzy, kde-format
-#| msgid "Focus Follows Mouse"
+#, kde-format
 msgid "Focus follows mouse"
-msgstr "Kohdistus seuraa hiirtä"
+msgstr "Kohdistus seuraa hiiriosoitinta"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:51
 #, kde-format
 msgid "Focus follows mouse (mouse precedence)"
-msgstr ""
+msgstr "Kohdistus seuraa hiirtä (hiiren etusija)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:56
-#, fuzzy, kde-format
-#| msgid "Focus Under Mouse"
+#, kde-format
 msgid "Focus under mouse"
-msgstr "Kohdistus osoittimen alle"
+msgstr "Kohdistus aina hiiriosoittimen alle"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:61
-#, fuzzy, kde-format
-#| msgid "Focus Strictly Under Mouse"
+#, kde-format
 msgid "Focus strictly under mouse"
-msgstr "Kohdistus tiukasti osoittimen alle"
+msgstr "Kohdistus tiukasti hiiren alla"
 
 #. i18n: ectx: property (text), widget (QLabel, delayFocusOnLabel)
 #: focus.ui:69
-#, fuzzy, kde-format
-#| msgid "&Delay focus by"
+#, kde-format
 msgid "&Delay focus by:"
-msgstr "&Viivytä kohdistusta"
+msgstr "&Viivytä kohdistusta:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, delayFocus)
 #: focus.ui:82
@@ -702,38 +690,13 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, focusStealingLabel)
 #: focus.ui:101
-#, fuzzy, kde-format
-#| msgid "Focus &stealing prevention"
+#, kde-format
 msgid "Focus &stealing prevention:"
 msgstr "Kohdistuksen &varastamisen esto:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, focusStealing)
 #: focus.ui:114
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p>This option specifies how much KWin will try to prevent unwanted focus "
-#| "stealing caused by unexpected activation of new windows. (Note: This "
-#| "feature does not work with the Focus Under Mouse or Focus Strictly Under "
-#| "Mouse focus policies.)\n"
-#| "<ul>\n"
-#| "<li><em>None:</em> Prevention is turned off and new windows always become "
-#| "activated.</li>\n"
-#| "<li><em>Low:</em> Prevention is enabled; when some window does not have "
-#| "support for the underlying mechanism and KWin cannot reliably decide "
-#| "whether to activate the window or not, it will be activated. This setting "
-#| "may have both worse and better results than the medium level, depending "
-#| "on the applications.</li>\n"
-#| "<li><em>Medium:</em> Prevention is enabled.</li>\n"
-#| "<li><em>High:</em> New windows get activated only if no window is "
-#| "currently active or if they belong to the currently active application. "
-#| "This setting is probably not really usable when not using mouse focus "
-#| "policy.</li>\n"
-#| "<li><em>Extreme:</em> All windows must be explicitly activated by the "
-#| "user.</li>\n"
-#| "</ul></p>\n"
-#| "<p>Windows that are prevented from stealing focus are marked as demanding "
-#| "attention, which by default means their taskbar entry will be "
-#| "highlighted. This can be changed in the Notifications control module.</p>"
+#, kde-format
 msgid ""
 "<html><head/><body><p>This option specifies how much KWin will try to "
 "prevent unwanted focus stealing caused by unexpected activation of new "
@@ -766,27 +729,36 @@ msgid ""
 "by default means their taskbar entry will be highlighted. This can be "
 "changed in the Notifications control module.</p></body></html>"
 msgstr ""
-"<p>Tämä asetus määrittää, paljonko KWin yrittää estää uusia ikkunoita "
-"varastamasta kohdistusta. (Huom: tätä ei voi käyttää, jos käytäntönä on "
-"Kohdistus osoittimen alle tai Kohdistus tiukasti osoittimen alle.)\n"
-"<ul>\n"
-"<li><em>Ei mitään:</em> Estoa ei käytetä ja uudet ikkunat aktivoituvat aina."
-"</li> \n"
-"<li><em>Vähäinen:</em> Esto on käytössä: jos jokin ikkuna ei tue menetelmää "
-"eikä KWin voi luotettavasti selvittää, aktivoidako ikkuna, se aktivoidaan. "
-"Asetus voi johtaa huonompiin tai paremiin tuloksiin kuin keskinkertainen "
-"tapa, sovelluksesta riippuen.</li> \n"
-"<li><em> Keskinkertainen:</em> Esto on käytössä.</li> \n"
-"<li><em>Suuri:</em> Uudet ikkunat aktivoidaan vain, jos yksikään ikkuna ei "
-"ole juuri nyt aktiivinen tai uusi ikkuna kuuluu aktiiviseen sovellukseen. "
-"Asetusta kannattaa käyttää vain, jos kohdistus seuraa osoitinta.</li> \n"
-"<li><em>Äärimmäinen:</em> Käyttäjän täytyy itse aktivoida jokainen ikkuna.</"
-"li> \n"
-"</ul> </p> \n"
-"<p>Ikkunat, joita on estetty varastamasta kohdistusta, merkitään huomiota "
-"vaativiksi, mikä oletusarvoisesti tarkoittaa, että ne korostetaan "
-"tehtäväpalkissa. Tätä asetusta voi muuttaa Järjestelmän ilmoitukset -osiossa."
-"</p>"
+"<html><head/><body><p>Tämä asetus määrittää, paljonko KWin yrittää estää "
+"uusien ikkunoiden aktivoinnin aiheuttamaa epätoivottua kohdistuksen "
+"varastamista. (Huomaa: asetus ei toimi <span style=\" font-style:italic;"
+"\">Kohdistus seuraa hiirtä</span>- tai <span style=\" font-style:italic;"
+"\">Kohdistus hiiriosoittimen alle</span> -käytäntöjen kanssa.) </p><ul style="
+"\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -"
+"qt-list-indent: 1;\"><li style=\" margin-top:12px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Ei lainkaan:</span> Esto poistetaan käytöstä "
+"ja uudet ikkunat aktivoidaan aina.</li><li style=\" margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">Vähäinen:</span> Esto on "
+"käytössä. Ellei ikkuna tue käytettyä menetelmää eikä KWin voi luotettavasti "
+"päätellä, aktivoidaanko ikkuna vai ei, se aktivoidaan. Asetus voi tuottaa "
+"sekä parempia että huonompia tuloksia kuin keskitaso sovelluksen mukaan.</"
+"li><li style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Keskitaso:</span> Esto on käytössä.</li><li style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Suuri:</"
+"span> Uudet ikkunat aktivoidaan vain, jos yksikään ikkuna ei ole aktiivinen "
+"tai uusi ikkuna kuuluu aktiiviselle sovellukselle. Tämä asetus ei "
+"luultavasti ole järkevä, ellei peruskohdistuskäytäntö perustu "
+"hiiriosoittimeen.</li><li style=\" margin-top:0px; margin-bottom:12px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span style=\" font-style:italic;\">Äärimmäinen:</span> Käyttäjän on aina "
+"itse aktivoitava kaikki ikkunat.</li></ul><p>Ikkunat, joita on estetty "
+"varastamasta kohdistusta, merkitään huomiota vaativiksi, mikä "
+"oletusarvoisesti tarkoittaa niiden korostamista tehtäväpalkissa. Tätä voi "
+"muuttaa asetusten Ilmoitukset-osiosta.</p></body></html>"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
@@ -828,10 +800,9 @@ msgstr "Äärimmäinen"
 
 #. i18n: ectx: property (text), widget (QLabel, raisingWindowsLabel)
 #: focus.ui:146
-#, fuzzy, kde-format
-#| msgid "Raising windows"
+#, kde-format
 msgid "Raising windows:"
-msgstr "Ikkunoiden nostaminen"
+msgstr "Ikkunoiden nostaminen:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, clickRaiseOn)
 #: focus.ui:153
@@ -847,10 +818,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, clickRaiseOn)
 #: focus.ui:156
-#, fuzzy, kde-format
-#| msgid "C&lick raises active window"
+#, kde-format
 msgid "&Click raises active window"
-msgstr "Nosta &napsauttamalla"
+msgstr "&Napsautus nostaa aktiivisen ikkunan"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, autoRaiseOn)
 #: focus.ui:165
@@ -864,10 +834,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoRaiseOn)
 #: focus.ui:168
-#, fuzzy, kde-format
-#| msgid "&Raise on hover, delayed by"
+#, kde-format
 msgid "&Raise on hover, delayed by:"
-msgstr "No&sta osoittamalla, viiveellä"
+msgstr "N&osta osoittamalla, viive:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, autoRaise)
 #: focus.ui:175
@@ -881,10 +850,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, multiscreenBehaviorLabel)
 #: focus.ui:196
-#, fuzzy, kde-format
-#| msgid "Multiscreen behaviour"
+#, kde-format
 msgid "Multiscreen behavior:"
-msgstr "Usean näytön toiminta"
+msgstr "Useamman näytön toiminta:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, activeMouseScreen)
 #: focus.ui:203
@@ -920,8 +888,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, separateScreenFocus)
 #: focus.ui:216
-#, fuzzy, kde-format
-#| msgid "S&eparate screen focus"
+#, kde-format
 msgid "&Separate screen focus"
 msgstr "&Erillinen näytön kohdistus"
 
@@ -931,28 +898,24 @@ msgid "&Focus"
 msgstr "&Kohdistus"
 
 #: main.cpp:83
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar A&ctions"
-msgstr "&Otsikkopalkin toiminnot"
+msgstr "O&tsikkopalkin toiminnot"
 
 #: main.cpp:88
-#, fuzzy, kde-format
-#| msgid "Window Actio&ns"
+#, kde-format
 msgid "W&indow Actions"
 msgstr "&Ikkunan toiminnot"
 
 #: main.cpp:93
-#, fuzzy, kde-format
-#| msgid "&Placement:"
+#, kde-format
 msgid "Mo&vement"
-msgstr "&Sijoitustyyli:"
+msgstr "S&iirtäminen"
 
 #: main.cpp:98
-#, fuzzy, kde-format
-#| msgid "Ad&vanced"
+#, kde-format
 msgid "Adva&nced"
-msgstr "L&isäasetukset"
+msgstr "&Lisäasetukset"
 
 #: main.cpp:102
 #, kde-format
@@ -1059,10 +1022,9 @@ msgstr "Suurenna (vain vaakasuunnassa)"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
 #: mouse.ui:17
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar Actions"
-msgstr "&Otsikkopalkin toiminnot"
+msgstr "Otsikko&palkin toiminnot"
 
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #: mouse.ui:26
@@ -1107,24 +1069,21 @@ msgstr "Sulje"
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
 #: mouse.ui:75
-#, fuzzy, kde-format
-#| msgid "On All Desktops"
+#, kde-format
 msgid "Show on all desktops"
-msgstr "Kaikilla työpöydillä"
+msgstr "Näytä kaikilla työpöydillä"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coTiAct4)
 #: mouse.ui:98
-#, fuzzy, kde-format
-#| msgid "Behavior on <em>double</em> click into the titlebar."
+#, kde-format
 msgid "Behavior on <em>mouse wheel</em> scroll over the titlebar."
-msgstr "Toiminta, kun otsikkopalkkia <em>kaksoisnapsautetaan</em>."
+msgstr "Toiminta <em>rullattaessa hiirtä</em> otsikkopalkin yllä."
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: mouse.ui:143
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar and Frame Actions"
-msgstr "&Otsikkopalkin toiminnot"
+msgstr "Otsikkopalkin ja ikkunakehyksen toiminnot"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: mouse.ui:167
@@ -1158,10 +1117,9 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #: mouse.ui:266 mouse.ui:328 mouse.ui:381 mouse.ui:443 mouse.ui:496
 #: mouse.ui:558
-#, fuzzy, kde-format
-#| msgid "Operations Menu"
+#, kde-format
 msgid "Show actions menu"
-msgstr "Toimintovalikko"
+msgstr "Näytä toimintovalikko"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coTiInAct1)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coTiInAct2)
@@ -1179,17 +1137,15 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #: mouse.ui:288 mouse.ui:403 mouse.ui:518
-#, fuzzy, kde-format
-#| msgid "Activate & Lower"
+#, kde-format
 msgid "Activate and lower"
 msgstr "Aktivoi ja laske"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: mouse.ui:589
-#, fuzzy, kde-format
-#| msgid "Maximize Button"
+#, kde-format
 msgid "Maximize Button Actions"
-msgstr "Suurennuspainike"
+msgstr "Suurennuspainikkeen toiminnot"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_8)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, leftClickMaximizeButton)
@@ -1210,10 +1166,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: mouse.ui:627
-#, fuzzy, kde-format
-#| msgid "Middle b&utton:"
+#, kde-format
 msgid "Middle c&lick:"
-msgstr "&Keskipainike:"
+msgstr "&Keskinapsautus:"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_10)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, rightClickMaximizeButton)
@@ -1228,7 +1183,7 @@ msgstr ""
 #: moving.ui:20
 #, kde-format
 msgid "Window &geometry:"
-msgstr ""
+msgstr "Ikkuna&geometria:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, geometryTipOn)
 #: moving.ui:30
@@ -1244,39 +1199,31 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, geometryTipOn)
 #: moving.ui:33
-#, fuzzy, kde-format
-#| msgid "Display window &geometry when moving or resizing"
+#, kde-format
 msgid "Display when moving or resizing"
-msgstr ""
-"Näytä ikkunan &geometria liikutettaessa ikkunaa tai muutettaessa sen kokoa"
+msgstr "Näytä liikutettaessa tai kokoa muutettaessa"
 
 #. i18n: ectx: property (text), widget (QLabel, borderSnapLabel)
 #: moving.ui:40
-#, fuzzy, kde-format
-#| msgid "&Border snap zone:"
+#, kde-format
 msgid "Screen &edge snap zone:"
 msgstr "&Reunojen tartunta-alue:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, borderSnap)
 #: moving.ui:50
-#, fuzzy, kde-format
-#| msgid ""
-#| "Here you can set the snap zone for screen borders, i.e. the 'strength' of "
-#| "the magnetic field which will make windows snap to the border when moved "
-#| "near it."
+#, kde-format
 msgid ""
 "Here you can set the snap zone for screen edges, i.e. the 'strength' of the "
 "magnetic field which will make windows snap to the border when moved near it."
 msgstr ""
-"Tässä voit asettaa näytön reunusten tartunta-alueen, eli ”magneettikentän "
-"voiman”, jola ikkunat kiinnittyvät reunaan sitä lähestyessään."
+"Tässä voit asettaa näytön reunusten tartunta-alueen, eli ”magneettivoiman”, "
+"jolla ikkunat kiinnittyvät reunaan sitä lähestyessään."
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, borderSnap)
 #. i18n: ectx: property (suffix), widget (QSpinBox, windowSnap)
 #. i18n: ectx: property (suffix), widget (QSpinBox, centerSnap)
 #: moving.ui:56 moving.ui:78 moving.ui:100
-#, fuzzy, kde-format
-#| msgid " pixel"
+#, kde-format
 msgid " px"
 msgstr " kuvapistettä"
 
@@ -1315,10 +1262,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, OverlapSnap)
 #: moving.ui:116
-#, fuzzy, kde-format
-#| msgid "Snap windows onl&y when overlapping"
+#, kde-format
 msgid "Only when overlapping"
-msgstr "Kiinnitä vain ikkunoiden &lomittuessa"
+msgstr "Vain lomittuessa"
 
 #. i18n: ectx: property (text), widget (QLabel, windowSnapLabel)
 #: moving.ui:123
@@ -1334,37 +1280,23 @@ msgstr "&Keskustan tartunta-alue:"
 
 #. i18n: ectx: property (text), widget (QLabel, OverlapSnapLabel)
 #: moving.ui:143
-#, fuzzy, kde-format
-#| msgid "Raising windows"
+#, kde-format
 msgid "&Snap windows:"
-msgstr "Ikkunoiden nostaminen"
+msgstr "Ikkunoiden &kiinnitys:"
 
 #: windows.cpp:172
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Click To Focus</b><br>\n"
-#| "A window becomes active when you click into it.<br><br>\n"
-#| "This behaviour is common on other operating systems and<br>\n"
-#| "likely what you want."
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus:</"
 "span> A window becomes active when you click into it. This behavior is "
 "common on other operating systems and likely what you want.</p></body></html>"
 msgstr ""
-"<b>Kohdistus hiiren painikkeella</b><br>\n"
-"Ikkuna aktivoituu, kun napsautat sitä.<br><br>\n"
-"Tämä toiminta on yleinen muissa käyttöjärjestelmissä sekä<br>\n"
-"todennäköisesti haluamasi."
+"<html><head/><body><p><span style=\" font-style:italic;\">Kohdista "
+"napsauttamalla:</span> Ikkuna aktivoituu, kun napsautat sitä. Tämä on muista "
+"järjestelmistä tuttu tapa ja luultavasti tutuin.</p></body></html>"
 
 #: windows.cpp:175
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Click To Focus - Mouse Precedence</b><br>\n"
-#| "This is mostly the same as <i>Click To Focus</i><br><br>\n"
-#| "If an active window has to be chosen by the system<br>\n"
-#| "(eg. because the currently active one was closed) <br>\n"
-#| "the window under the mouse is the preferred candidate.<br><br>\n"
-#| "Unusual, but possible variant of <i>Click To Focus</i>."
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus "
 "(mouse precedence):</span> Mostly the same as <span style=\" font-style:"
@@ -1373,23 +1305,16 @@ msgid ""
 "the mouse is the preferred candidate. Unusual, but possible variant of <span "
 "style=\" font-style:italic;\">Click to focus</span>.</p></body></html>"
 msgstr ""
-"<b>Kohdistus hiiren painikkeella – hiiren ensisijaisuus</b><br>\n"
-"Tämä on suunnilleen sama kuin <i>kohdistus hiiren painikkeella</i>.<br><br>\n"
-"Jos järjestelmän tarvitsee valita aktiivinen ikkuna,<br>\n"
-"esimerkiksi koska parhaillaan aktiivinen ikkuna suljettiin, <br>\n"
-"hiiren alla oleva ikkuna on ensisijainen ehdokas.<br><br>\n"
-"Epätavallinen, mutta mahdollinen muunnelma <br><i>kohdistuksesta hiiren "
-"painikkeella</i>."
+"<html><head/><body><p><span style=\" font-style:italic;\">Kohdista "
+"napsauttamalla (hiiren etusija):</span> Paljolti sama kuin <span style=\" "
+"font-style:italic;\">Kohdista napsauttamalla</span>. Jos järjestelmä joutuu "
+"valitsemaan aktiivisen ikkunan (esim. koska aiemmin aktiivinen on suljettu), "
+"suositaan hiiriosoittimen alla olevaa ikkunaa. Epätavallinen mutta "
+"mahdollinen muunnelma <span style=\" font-style:italic;\">Kohdista "
+"napsauttamalla</span> -käytännöstä.</p></body></html>"
 
 #: windows.cpp:178
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Follows Mouse</b><br>\n"
-#| "Moving the mouse onto a window will activate it.<br><br>\n"
-#| "Eg. windows randomly appearing under the mouse will not gain the focus."
-#| "<br>\n"
-#| "Focus stealing prevention takes place as usual.<br><br>\n"
-#| "Think as <i>Click To Focus</i> just without having to actually click."
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Focus follows "
 "mouse:</span> Moving the mouse onto a window will activate it. Eg. windows "
@@ -1398,22 +1323,16 @@ msgid ""
 "Think as <span style=\" font-style:italic;\">Click to focus</span> just "
 "without having to actually click.</p></body></html>"
 msgstr ""
-"<b>Kohdistus seuraa osoitinta</b><br>\n"
-"Hiiriosoittimen siirtäminen ikkunaan aktivoi kyseisen ikkunan.<br><br>\n"
-"Esimerkiksi satunnaisesti osoittimen alle ilmestyvät ikkunat eivät saa "
-"kohdistusta.<br>\n"
-"Kohdistuksen varastamisen esto toimii tavanomaisesti.<br><br>\n"
-"Kuin <i>kohdistus hiiren painikkeella</i> ilman tarvetta napsauttaa ikkunaa."
+"<html><head/><body><p><span style=\" font-style:italic;\">Kohdistus seuraa "
+"hiiriosoitinta:</span> Ikkuna aktivoidaan osoittamalla sitä "
+"hiiriosoittimella. Satunnaisesti hiiriosoittimen kohdalle avautuvia "
+"ikkunoita ei kohdisteta. <span style=\" font-style:italic;\">Kohdistuksen "
+"varastamisen esto</span> toteutuu tavalliseen tapaan. Tämä on kuin <span "
+"style=\" font-style:italic;\">Kohdista napsauttamalla</span> ilman "
+"varsinaista napsautusta.</p></body></html>"
 
 #: windows.cpp:181
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Follows Mouse - Mouse Precedence</b><br>\n"
-#| "This is mostly the same as <i>Focus Follows Mouse</i><br><br>\n"
-#| "If an active window has to be chosen by the system<br>\n"
-#| "(eg. because the currently active one was closed) <br>\n"
-#| "the window under the mouse is the preferred candidate.<br><br>\n"
-#| "Choose this, if you want a hover controlled focus."
+#, kde-format
 msgid ""
 "<html><head/><body><p>This is mostly the same as <span style=\" font-style:"
 "italic;\">Focus follows mouse</span>. If an active window has to be chosen "
@@ -1421,24 +1340,14 @@ msgid ""
 "under the mouse is the preferred candidate. Choose this, if you want a hover "
 "controlled focus.</p></body></html>"
 msgstr ""
-"<b>Kohdistus seuraa osoitinta – hiiren ensisijaisuus</b><br>\n"
-"Tämä on pääosin sama kuin <i>kohdistus seuraa osoitinta</i>.<br><br>\n"
-"Jos järjestelmän täytyy valita aktiivinen ikkuna<br>\n"
-"(esimerkiksi koska sillä hetkellä aktiivinen ikkuna suljettiin)<br>\n"
-"hiiren alla oleva ikkuna on ensisijainen ehdokas.<br><br>\n"
-"Valitse tämä, jos haluat osoittamalla toimivan kohdistuksen."
+"<html><head/><body><p>Tämä on enimmäkseen kuin <span style=\" font-style:"
+"italic;\">Kohdistus seuraa hiiriosoitinta</span>. Jos järjestelmän on "
+"valittava aktiivinen ikkuna (esim. koska aiemmin aktiivinen on suljettu), "
+"suositaan hiiriosoittimen alla olevaa ikkunaa. Valitse tämä, jos haluat "
+"osoittamalla toimivan kohdistuksen.</p></body></html>"
 
 #: windows.cpp:184
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Under Mouse</b><br>\n"
-#| "The focus always remains on the window under the mouse.<br><br>\n"
-#| "\n"
-#| "Notice:<br>\n"
-#| "<b>Focus stealing prevention</b> and the <b>tabbox (\"Alt+Tab\")</b><br>\n"
-#| "contradict the policy and <b>will not work</b>.<br><br>\n"
-#| "You very likely want to use<br>\n"
-#| "<i>Focus Follows Mouse - Mouse Precedence</i> instead!"
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Focus under mouse:"
 "</span> The focus always remains on the window under the mouse.<br/><span "
@@ -1448,30 +1357,17 @@ msgid ""
 "work. You very likely want to use <span style=\" font-style:italic;\">Focus "
 "follows mouse (mouse precedence)</span> instead!</p></body></html>"
 msgstr ""
-"<b>Kohdistus osoittimen alle</b><br>\n"
-"Kohdistus pysyy aina hiiriosoittimen alla olevassa ikkunassa.<br><br>\n"
-"\n"
-"Huomio:<br>\n"
-"<b>Kohdistuksen varastamisen esto</b> ja <b>ikkunanvalitsin (”Alt+Sarkain”)</"
-"b><br>\n"
-"ovat ristiriidassa tämän käytännön kanssa <b>eivätkä toimi</b>.<br><br>\n"
-"Haluat erittäin todennäköisesti käyttää mieluummin käytäntöä<br>\n"
-"<i>kohdistus seuraa osoitinta – hiiren ensisijaisuus</i>!"
+"<html><head/><body><p><span style=\" font-style:italic;\">Kohdistus aina "
+"hiiriosoittimen alle:</span> Kohdistus pystyy hiiriosoittimen osoittamassa "
+"ikkunassa.<br/><span style=\" font-weight:600;\">Varoitus: </span><span "
+"style=\" font-style:italic;\">Kohdistuksen varastamisen esto</span> ja <span "
+"style=\" font-style:italic;\">sarkausvaihto (Alt+Sarkain)</span> ovat tämän "
+"kanssa ristiriidassa eivätkä toimi. Haluat todennäköisimmin asetuksen <span "
+"style=\" font-style:italic;\">Kohdistus seuraa hiiriosoitinta</span>!</p></"
+"body></html>"
 
 #: windows.cpp:187
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Strictly Under Mouse</b><br>\n"
-#| "The focus is always on the window under the mouse - in doubt nowhere -"
-#| "<br>\n"
-#| "very much like the focus behaviour in an unmanaged legacy X11 environment."
-#| "<br><br>\n"
-#| "\n"
-#| "Notice:<br>\n"
-#| "<b>Focus stealing prevention</b> and the <b>tabbox (\"Alt+Tab\")</b><br>\n"
-#| "contradict the policy and <b>will not work</b>.<br><br>\n"
-#| "You very likely want to use<br>\n"
-#| "<i>Focus Follows Mouse - Mouse Precedence</i> instead!"
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Focus strictly "
 "under mouse:</span> The focus is always on the window under the mouse (in "
@@ -1483,14 +1379,11 @@ msgid ""
 "\" font-style:italic;\">Focus follows mouse (mouse precedence)</span> "
 "instead!</p></body></html>"
 msgstr ""
-"<b>Kohdistus tiukasti osoittimen alle</b><br>\n"
-"Kohdistus on aina hiiriosoittimen alla olevassa ikkunassa,<br>epäselvissä "
-"tapauksissa ei missään. Toimii vähän samoin kuin<br>kohdistus vanhassa X11-"
-"ympäristössä ilman ikkunointiohjelmaa.<br><br>\n"
-"\n"
-"Huomio:<br>\n"
-"<b>Kohdistuksen varastamisen esto</b> ja <b>ikkunanvalitsin (”Alt+Sarkain”)</"
-"b><br>\n"
-"ovat ristiriidassa tämän käytännön kanssa <b>eivätkä toimi</b>.<br><br>\n"
-"Haluat erittäin todennäköisesti käyttää mieluummin käytäntöä<br>\n"
-"<i>kohdistus seuraa osoitinta – hiiren ensisijaisuus</i>!"
+"<html><head/><body><p><span style=\" font-style:italic;\">Kohdistus aina "
+"hiiriosoittimen alle:</span> Kohdistus on aina hiiriosoittimen alla olevassa "
+"ikkunassa (tai ei missään) kuten vanhassa X11-ympäristössä.<br/><span style="
+"\" font-weight:600;\">Varoitus: </span><span style=\" font-style:italic;"
+"\">Kohdistuksen varastamisen esto</span> ja <span style=\" font-style:italic;"
+"\">sarkausvaihto (Alt+Sarkain)</span> ovat tämän kanssa ristiriidassa "
+"eivätkä toimi. Haluat todennäköisimmin asetuksen <span style=\" font-style:"
+"italic;\">Kohdistus seuraa hiirtä</span>!</p></body></html>"
