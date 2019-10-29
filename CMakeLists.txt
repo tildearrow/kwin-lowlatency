@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
 
 project(KWIN)
-set(PROJECT_VERSION "5.17.1")
+set(PROJECT_VERSION "5.17.2")
 set(PROJECT_VERSION_MAJOR 5)
 
 set(QT_MIN_VERSION "5.12.0")
@@ -441,6 +441,7 @@ set(kwin_KDEINIT_SRCS
     libinput/device.cpp
     libinput/events.cpp
     libinput/libinput_logging.cpp
+    linux_dmabuf.cpp
     logind.cpp
     main.cpp
     manage.cpp

@@ -41,6 +41,8 @@ ScrollViewKCM {
             rowsSpinBox.value = kcm.desktopsModel.rows;
         }
     }
+    implicitWidth: Kirigami.Units.gridUnit * 35
+    implicitHeight: Kirigami.Units.gridUnit * 30
 
     Component {
         id: desktopsListItemComponent
@@ -190,6 +192,9 @@ ScrollViewKCM {
 
                 QQC2.CheckBox {
                     id: animationEnabled
+                    // Let it elide but don't make it push the ComboBox away from it
+                    Layout.fillWidth: true
+                    Layout.maximumWidth: implicitWidth
 
                     text: i18n("Show animation when switching:")
 
