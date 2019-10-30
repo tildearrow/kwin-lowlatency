@@ -221,6 +221,7 @@ some. Daniel gets a chance to improve the GNOME side in mainline and reduce lag 
   - another problem is that instead of suspending compositing, it **disables** compositing. this means you get to see a few frames of an ugly desktop when the app quits. this doesn't happen with unredirection.
   - I can try to upstream just the glFinish/notimer/something bits, and have this project for the rest of features.
 - furthermore, this also brings back "close" option in Present Windows, which once again the KDE devs despise.
+  - apparently they officially brought the feature back in Plasma 5.17, but not for left click :(
 
 > unredirection is not working.
 
