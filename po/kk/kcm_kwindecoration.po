@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-02 03:10+0200\n"
+"POT-Creation-Date: 2019-10-24 08:00+0200\n"
 "PO-Revision-Date: 2013-06-10 04:45+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -139,27 +139,27 @@ msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "Батырмалар"
 
-#: package/contents/ui/main.qml:87
+#: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
 msgstr ""
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:121
 #, fuzzy, kde-format
 #| msgid "Get New Decorations..."
 msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr "Жаңа безендірулерін алу..."
 
-#: package/contents/ui/main.qml:134
+#: package/contents/ui/main.qml:137
 #, fuzzy, kde-format
 #| msgid "Close windows by double clicking the menu button"
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "Мәзір батырмасын қос шерткенде терезе жабылсын"
 
-#: package/contents/ui/main.qml:146
+#: package/contents/ui/main.qml:149
 #, fuzzy, kde-format
 #| msgid "Close windows by double clicking the menu button"
 msgctxt "popup tip"
@@ -168,7 +168,7 @@ msgid ""
 "appears."
 msgstr "Мәзір батырмасын қос шерткенде терезе жабылсын"
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:156
 #, fuzzy, kde-format
 #| msgid "&Show window button tooltips"
 msgctxt "checkbox label"

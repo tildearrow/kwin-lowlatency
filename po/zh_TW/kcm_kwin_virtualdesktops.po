@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwindesktop\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-13 03:23+0200\n"
+"POT-Creation-Date: 2019-10-29 07:53+0100\n"
 "PO-Revision-Date: 2019-08-06 23:03+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
@@ -53,73 +53,73 @@ msgid ""
 "desktops."
 msgstr "這個模組讓你能設定虛擬桌面的瀏覽方式、數量及配置。"
 
-#: package/contents/ui/main.qml:79
+#: package/contents/ui/main.qml:81
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "重命名"
 
-#: package/contents/ui/main.qml:89
+#: package/contents/ui/main.qml:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove"
 msgstr "移除"
 
-#: package/contents/ui/main.qml:115
+#: package/contents/ui/main.qml:117
 #, kde-format
 msgid ""
 "Virtual desktops have been changed outside this settings application. Saving "
 "now will overwrite the changes."
 msgstr "虛擬桌面已在設定程式之外的地方變更過。現在儲存會覆寫那些變更。"
 
-#: package/contents/ui/main.qml:129
+#: package/contents/ui/main.qml:131
 #, kde-format
 msgid "Row %1"
 msgstr "第 %1 行"
 
-#: package/contents/ui/main.qml:142
+#: package/contents/ui/main.qml:144
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "新增"
 
-#: package/contents/ui/main.qml:145
+#: package/contents/ui/main.qml:147
 #, kde-format
 msgid "New Desktop"
 msgstr "新桌面"
 
-#: package/contents/ui/main.qml:159
+#: package/contents/ui/main.qml:161
 #, kde-format
 msgid "1 Row"
 msgid_plural "%1 Rows"
 msgstr[0] "%1 行"
 
-#: package/contents/ui/main.qml:179
+#: package/contents/ui/main.qml:181
 #, kde-format
 msgid "Options:"
 msgstr "選項："
 
-#: package/contents/ui/main.qml:181
+#: package/contents/ui/main.qml:183
 #, kde-format
 msgid "Navigation wraps around"
 msgstr "環繞式瀏覽"
 
-#: package/contents/ui/main.qml:194
+#: package/contents/ui/main.qml:199
 #, kde-format
 msgid "Show animation when switching:"
 msgstr "切換時顯示動畫："
 
-#: package/contents/ui/main.qml:237
+#: package/contents/ui/main.qml:242
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr "切換時顯示螢幕上的顯示內容："
 
-#: package/contents/ui/main.qml:253
+#: package/contents/ui/main.qml:258
 #, kde-format
 msgid "%1 ms"
 msgstr "%1 毫秒"
 
-#: package/contents/ui/main.qml:273
+#: package/contents/ui/main.qml:278
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "顯示桌面佈局指示器"

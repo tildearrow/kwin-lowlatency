@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwindesktop\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-13 03:23+0200\n"
+"POT-Creation-Date: 2019-10-29 07:53+0100\n"
 "PO-Revision-Date: 2019-08-10 00:32+0300\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -55,19 +55,19 @@ msgstr ""
 "Šis modulis leidžia jums konfigūruoti virtualių darbalaukių naršymą, skaičių "
 "ir išdėstymą."
 
-#: package/contents/ui/main.qml:79
+#: package/contents/ui/main.qml:81
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Pervadinti"
 
-#: package/contents/ui/main.qml:89
+#: package/contents/ui/main.qml:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove"
 msgstr "Šalinti"
 
-#: package/contents/ui/main.qml:115
+#: package/contents/ui/main.qml:117
 #, kde-format
 msgid ""
 "Virtual desktops have been changed outside this settings application. Saving "
@@ -76,23 +76,23 @@ msgstr ""
 "Virtualūs darbalaukiai buvo pakeisti už šios nuostatų programos ribų. "
 "Įrašius dabar, pakeitimai bus nustelbti."
 
-#: package/contents/ui/main.qml:129
+#: package/contents/ui/main.qml:131
 #, kde-format
 msgid "Row %1"
 msgstr "Eilutė %1"
 
-#: package/contents/ui/main.qml:142
+#: package/contents/ui/main.qml:144
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Pridėti"
 
-#: package/contents/ui/main.qml:145
+#: package/contents/ui/main.qml:147
 #, kde-format
 msgid "New Desktop"
 msgstr "Naujas darbalaukis"
 
-#: package/contents/ui/main.qml:159
+#: package/contents/ui/main.qml:161
 #, kde-format
 msgid "1 Row"
 msgid_plural "%1 Rows"
@@ -101,32 +101,32 @@ msgstr[1] "%1 eilutės"
 msgstr[2] "%1 eilučių"
 msgstr[3] "%1 eilutė"
 
-#: package/contents/ui/main.qml:179
+#: package/contents/ui/main.qml:181
 #, kde-format
 msgid "Options:"
 msgstr "Parinktys:"
 
-#: package/contents/ui/main.qml:181
+#: package/contents/ui/main.qml:183
 #, kde-format
 msgid "Navigation wraps around"
 msgstr "Naršymas sukasi ratu"
 
-#: package/contents/ui/main.qml:194
+#: package/contents/ui/main.qml:199
 #, kde-format
 msgid "Show animation when switching:"
 msgstr "Perjungiant, rodyti animaciją:"
 
-#: package/contents/ui/main.qml:237
+#: package/contents/ui/main.qml:242
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr "Perjungiant, rodyti į kurį ekraną perjungiama:"
 
-#: package/contents/ui/main.qml:253
+#: package/contents/ui/main.qml:258
 #, kde-format
 msgid "%1 ms"
 msgstr "%1 ms"
 
-#: package/contents/ui/main.qml:273
+#: package/contents/ui/main.qml:278
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "Rodyti darbalaukio išdėstymo indikatorius"

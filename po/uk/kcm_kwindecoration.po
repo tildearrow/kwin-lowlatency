@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-02 03:10+0200\n"
+"POT-Creation-Date: 2019-10-24 08:00+0200\n"
 "PO-Revision-Date: 2019-06-07 08:15+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -135,25 +135,25 @@ msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "Кнопки смужки заголовка"
 
-#: package/contents/ui/main.qml:87
+#: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
 msgstr "Типовий для теми розмір рамки вікна"
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:121
 #, kde-format
 msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr "Отримати нові обрамлення вікон…"
 
-#: package/contents/ui/main.qml:134
+#: package/contents/ui/main.qml:137
 #, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "Закривати вікна у відповідь на подвійне клацання на кнопці меню"
 
-#: package/contents/ui/main.qml:146
+#: package/contents/ui/main.qml:149
 #, kde-format
 msgctxt "popup tip"
 msgid ""
@@ -163,7 +163,7 @@ msgstr ""
 "Закрити можна подвійним клацанням лівою кнопкою миші. Утримуйте кнопку меню "
 "вікна натиснутою, аж доки меню не буде показано."
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:156
 #, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"

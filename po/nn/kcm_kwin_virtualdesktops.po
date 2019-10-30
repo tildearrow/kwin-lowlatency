@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-13 03:23+0200\n"
+"POT-Creation-Date: 2019-10-28 07:53+0100\n"
 "PO-Revision-Date: 2019-08-06 22:05+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -54,19 +54,19 @@ msgstr ""
 "Med denne modulen kan du setja opp navigering, nummer og vising av virtuelle "
 "skrivebord."
 
-#: package/contents/ui/main.qml:79
+#: package/contents/ui/main.qml:81
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Endra namn"
 
-#: package/contents/ui/main.qml:89
+#: package/contents/ui/main.qml:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove"
 msgstr "Fjern"
 
-#: package/contents/ui/main.qml:115
+#: package/contents/ui/main.qml:117
 #, kde-format
 msgid ""
 "Virtual desktops have been changed outside this settings application. Saving "
@@ -75,55 +75,55 @@ msgstr ""
 "Virtuelle skrivebord er endra utanfrå (utanfor dette "
 "innstillingsprogrammet). Viss du lagrar, vil du overskriva desse endringane."
 
-#: package/contents/ui/main.qml:129
+#: package/contents/ui/main.qml:131
 #, kde-format
 msgid "Row %1"
 msgstr "Rad %1"
 
-#: package/contents/ui/main.qml:142
+#: package/contents/ui/main.qml:144
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Legg til"
 
-#: package/contents/ui/main.qml:145
+#: package/contents/ui/main.qml:147
 #, kde-format
 msgid "New Desktop"
 msgstr "Nytt skrivebord"
 
-#: package/contents/ui/main.qml:159
+#: package/contents/ui/main.qml:161
 #, kde-format
 msgid "1 Row"
 msgid_plural "%1 Rows"
 msgstr[0] "1 rad"
 msgstr[1] "%1 rader"
 
-#: package/contents/ui/main.qml:179
+#: package/contents/ui/main.qml:181
 #, kde-format
 msgid "Options:"
 msgstr "Val:"
 
-#: package/contents/ui/main.qml:181
+#: package/contents/ui/main.qml:183
 #, kde-format
 msgid "Navigation wraps around"
 msgstr "Navigering går rundt"
 
-#: package/contents/ui/main.qml:194
+#: package/contents/ui/main.qml:196
 #, kde-format
 msgid "Show animation when switching:"
 msgstr "Vis animasjon ved byte:"
 
-#: package/contents/ui/main.qml:237
+#: package/contents/ui/main.qml:239
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr "Vis skjermmeldingar ved byte:"
 
-#: package/contents/ui/main.qml:253
+#: package/contents/ui/main.qml:255
 #, kde-format
 msgid "%1 ms"
 msgstr "%1 ms"
 
-#: package/contents/ui/main.qml:273
+#: package/contents/ui/main.qml:275
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "Vis skrivebordoppsett-indikatorar"

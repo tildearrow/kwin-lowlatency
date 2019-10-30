@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-02 03:10+0200\n"
+"POT-Creation-Date: 2019-10-24 08:00+0200\n"
 "PO-Revision-Date: 2019-06-15 22:59+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -130,25 +130,25 @@ msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "제목 표시줄 단추"
 
-#: package/contents/ui/main.qml:87
+#: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
 msgstr "테마의 기본 창 테두리 크기 사용"
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:121
 #, kde-format
 msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr "새 장식 가져오기..."
 
-#: package/contents/ui/main.qml:134
+#: package/contents/ui/main.qml:137
 #, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "메뉴 단추를 두 번 눌러서 창 닫기"
 
-#: package/contents/ui/main.qml:146
+#: package/contents/ui/main.qml:149
 #, kde-format
 msgctxt "popup tip"
 msgid ""
@@ -157,7 +157,7 @@ msgid ""
 msgstr ""
 "두 번 눌러서 닫기:  메뉴를 열려면 메뉴가 나타날 때까지 단추를 누르십시오."
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:156
 #, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-02 03:10+0200\n"
+"POT-Creation-Date: 2019-10-24 08:00+0200\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -134,25 +134,25 @@ msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "Botons"
 
-#: package/contents/ui/main.qml:87
+#: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
 msgstr ""
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:121
 #, kde-format
 msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr ""
 
-#: package/contents/ui/main.qml:134
+#: package/contents/ui/main.qml:137
 #, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr ""
 
-#: package/contents/ui/main.qml:146
+#: package/contents/ui/main.qml:149
 #, kde-format
 msgctxt "popup tip"
 msgid ""
@@ -160,7 +160,7 @@ msgid ""
 "appears."
 msgstr ""
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:156
 #, fuzzy, kde-format
 #| msgid "Buttons"
 msgctxt "checkbox label"

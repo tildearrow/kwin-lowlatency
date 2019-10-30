@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-02 03:10+0200\n"
+"POT-Creation-Date: 2019-10-24 08:00+0200\n"
 "PO-Revision-Date: 2019-06-08 14:01-0700\n"
 "Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -138,25 +138,25 @@ msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "タイトルバーのボタン"
 
-#: package/contents/ui/main.qml:87
+#: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
 msgstr ""
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:121
 #, kde-format
 msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr "新しいウィンドウの装飾を取得..."
 
-#: package/contents/ui/main.qml:134
+#: package/contents/ui/main.qml:137
 #, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "メニューボタンをダブルクリックしてウィンドウを閉じる"
 
-#: package/contents/ui/main.qml:146
+#: package/contents/ui/main.qml:149
 #, kde-format
 msgctxt "popup tip"
 msgid ""
@@ -164,7 +164,7 @@ msgid ""
 "appears."
 msgstr ""
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:156
 #, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"

@@ -1,5 +1,5 @@
 # translation of kcmkwindecoration.po to Polish
-# Version: $Revision: 1548250 $
+# Version: $Revision: 1554375 $
 # translation of kcmkwindecoration.po to
 # Norbert Popiołek <norbert@kde.com.pl>\n"
 # Michał Rudolf <mrudolf@kdewebdev.org>, 2002.
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-02 03:10+0200\n"
+"POT-Creation-Date: 2019-10-24 08:00+0200\n"
 "PO-Revision-Date: 2019-06-22 06:46+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -137,25 +137,25 @@ msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "Przyciski paska tytułu"
 
-#: package/contents/ui/main.qml:87
+#: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
 msgstr "Zastosuj domyślny rozmiar obramowania okna dla wyglądu"
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:121
 #, kde-format
 msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr "Pobierz nowe wyglądy okien..."
 
-#: package/contents/ui/main.qml:134
+#: package/contents/ui/main.qml:137
 #, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "Zamykanie okien przez dwukrotne naciśnięcie na przycisk menu"
 
-#: package/contents/ui/main.qml:146
+#: package/contents/ui/main.qml:149
 #, kde-format
 msgctxt "popup tip"
 msgid ""
@@ -165,7 +165,7 @@ msgstr ""
 "Zamykanie po dwukrotnym kliknięciu: Aby otworzyć menu, przytrzymaj przycisk "
 "naciśniętym na menu do chwili jego pokazania się."
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:156
 #, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"

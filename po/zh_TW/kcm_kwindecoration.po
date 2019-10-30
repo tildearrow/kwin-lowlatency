@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-02 03:10+0200\n"
+"POT-Creation-Date: 2019-10-24 08:00+0200\n"
 "PO-Revision-Date: 2019-06-11 00:38+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
@@ -133,25 +133,25 @@ msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "標題列按鈕"
 
-#: package/contents/ui/main.qml:87
+#: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
 msgstr "使用主題的預設視窗外框大小"
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:121
 #, kde-format
 msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr "取得新桌面裝飾..."
 
-#: package/contents/ui/main.qml:134
+#: package/contents/ui/main.qml:137
 #, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "雙擊視窗選單按鈕時關閉視窗"
 
-#: package/contents/ui/main.qml:146
+#: package/contents/ui/main.qml:149
 #, kde-format
 msgctxt "popup tip"
 msgid ""
@@ -159,7 +159,7 @@ msgid ""
 "appears."
 msgstr "點兩下關閉：請長按視窗選單按鈕，直到選單出現。"
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:156
 #, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"

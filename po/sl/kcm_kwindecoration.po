@@ -1,7 +1,7 @@
 # translation of kcmkwindecoration.po to
 # Translation of kcmkwindecoration.po to Slovenian
 # SLOVENIAN TRANSLATION OF K DESKTOP ENVIRONMENT.
-# $Id: kcm_kwindecoration.po 1548250 2019-08-02 02:35:22Z scripty $
+# $Id: kcm_kwindecoration.po 1554375 2019-10-24 06:54:10Z scripty $
 # $Source$
 #
 # Copyright (C) 2001, 2003, 2004, 2005, 2007 Free Software Foundation, Inc.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-02 03:10+0200\n"
+"POT-Creation-Date: 2019-10-24 08:00+0200\n"
 "PO-Revision-Date: 2015-11-10 14:30+0100\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -144,27 +144,27 @@ msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "Naslovna vrstica"
 
-#: package/contents/ui/main.qml:87
+#: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
 msgstr ""
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:121
 #, fuzzy, kde-format
 #| msgid "Get New Decorations..."
 msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr "Dobi nove okraske ..."
 
-#: package/contents/ui/main.qml:134
+#: package/contents/ui/main.qml:137
 #, fuzzy, kde-format
 #| msgid "Close windows by double clicking the menu button"
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "Zapri okna z dvojnim klikom na menijski gumb"
 
-#: package/contents/ui/main.qml:146
+#: package/contents/ui/main.qml:149
 #, fuzzy, kde-format
 #| msgid ""
 #| "Close by double clicking:\n"
@@ -177,7 +177,7 @@ msgstr ""
 "Zaprite z dvoklikom:\n"
 " Da odprete meni, držite gumb, dokler se meni ne pojavi."
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:156
 #, fuzzy, kde-format
 #| msgid "&Show window button tooltips"
 msgctxt "checkbox label"

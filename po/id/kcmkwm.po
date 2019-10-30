@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-15 03:21+0200\n"
-"PO-Revision-Date: 2019-10-11 21:56+0700\n"
+"PO-Revision-Date: 2019-10-22 22:53+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 19.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -115,7 +116,7 @@ msgstr ""
 #: actions.ui:106 mouse.ui:213
 #, kde-format
 msgid "&Right click:"
-msgstr ""
+msgstr "Klik-kana&n:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coWin3)
 #: actions.ui:119
@@ -366,7 +367,7 @@ msgstr ""
 #: actions.ui:388 mouse.ui:653
 #, kde-format
 msgid "Right clic&k:"
-msgstr ""
+msgstr "Kli&k-kanan:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coAll3)
 #: actions.ui:401
@@ -458,7 +459,7 @@ msgstr ""
 #: advanced.ui:35
 #, kde-format
 msgid "On titlebar hover after:"
-msgstr ""
+msgstr "Di bilah-judul melayang setelah:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, shadeHover)
 #: advanced.ui:42
@@ -515,6 +516,32 @@ msgid ""
 "\"><span style=\" font-style:italic;\">Under mouse</span> will place the "
 "window under the pointer</li></ul></body></html>"
 msgstr ""
+"<html><head/><body><p>Kebijakan penempatan menentukan tempat di mana window "
+"baru akan muncul di desktop.</p><ul style=\"margin-top: 0px; margin-bottom: "
+"0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\"><li style=\" "
+"margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Cerdas</span> akan mencoba untuk mencapai tindih minimum window</li><li "
+"style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Pemaksimalan</span> akan coba untuk memaksimalkan setiap window "
+"untuk mengisi seluruh layar. Hal itu mungkin berguna untuk secara selektif "
+"mempengaruhi penempatan beberapa window menggunakan pengaturan spesifik "
+"window.</li><li style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"style:italic;\">Kaskade</span> akan mengkaskade window</li><li style=\" "
+"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Acak</"
+"span> akan menggunakan posisi acak</li><li style=\" margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">Ditengahkan</span> window "
+"akan ditempatkan di tengah</li><li style=\" margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">Disudutkan</span> akan "
+"menempatkan window di sudut kiri atas</li><li style=\" margin-top:0px; "
+"margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-style:italic;\">Di bawah mouse</span> "
+"akan menempatkan window di bawah pointer</li></ul></body></html>"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:80
@@ -588,27 +615,28 @@ msgstr "Sembunyikan window utilitas untuk aplikasi-aplikasi tak aktif"
 #: focus.ui:22
 #, kde-format
 msgid "Window &activation policy:"
-msgstr ""
+msgstr "Kebijakan peng&aktifan window:"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:32
 #, kde-format
 msgid "With this option you can specify how and when windows will be focused."
 msgstr ""
+"Dengan opsi ini kamu bisa menentukan bagaimana dan kapan window akan "
+"difokuskan."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:36
-#, fuzzy, kde-format
-#| msgid "Click to Focus"
+#, kde-format
 msgctxt "sassa asas"
 msgid "Click to focus"
-msgstr "Klik Untuk Fokus"
+msgstr "Klik fokus"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:41
 #, kde-format
 msgid "Click to focus (mouse precedence)"
-msgstr ""
+msgstr "Klik fokus (mengutamakan mouse)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:46
@@ -620,7 +648,7 @@ msgstr "Fokus mengikuti mouse"
 #: focus.ui:51
 #, kde-format
 msgid "Focus follows mouse (mouse precedence)"
-msgstr ""
+msgstr "Fokus mengikuti mouse (mengutamakan mouse)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:56
@@ -630,10 +658,9 @@ msgstr "Fokus di bawah mouse"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:61
-#, fuzzy, kde-format
-#| msgid "Focus Strictly Under Mouse"
+#, kde-format
 msgid "Focus strictly under mouse"
-msgstr "Fokus Ketat Mengikuti Tetikus"
+msgstr "Fokus ketat mengikuti mouse"
 
 #. i18n: ectx: property (text), widget (QLabel, delayFocusOnLabel)
 #: focus.ui:69
@@ -653,38 +680,13 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, focusStealingLabel)
 #: focus.ui:101
-#, fuzzy, kde-format
-#| msgid "Focus &stealing prevention"
+#, kde-format
 msgid "Focus &stealing prevention:"
-msgstr "Pencegahan &pencurian fokus"
+msgstr "Pencegahan &pencurian fokus:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, focusStealing)
 #: focus.ui:114
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p>This option specifies how much KWin will try to prevent unwanted focus "
-#| "stealing caused by unexpected activation of new windows. (Note: This "
-#| "feature does not work with the Focus Under Mouse or Focus Strictly Under "
-#| "Mouse focus policies.)\n"
-#| "<ul>\n"
-#| "<li><em>None:</em> Prevention is turned off and new windows always become "
-#| "activated.</li>\n"
-#| "<li><em>Low:</em> Prevention is enabled; when some window does not have "
-#| "support for the underlying mechanism and KWin cannot reliably decide "
-#| "whether to activate the window or not, it will be activated. This setting "
-#| "may have both worse and better results than the medium level, depending "
-#| "on the applications.</li>\n"
-#| "<li><em>Medium:</em> Prevention is enabled.</li>\n"
-#| "<li><em>High:</em> New windows get activated only if no window is "
-#| "currently active or if they belong to the currently active application. "
-#| "This setting is probably not really usable when not using mouse focus "
-#| "policy.</li>\n"
-#| "<li><em>Extreme:</em> All windows must be explicitly activated by the "
-#| "user.</li>\n"
-#| "</ul></p>\n"
-#| "<p>Windows that are prevented from stealing focus are marked as demanding "
-#| "attention, which by default means their taskbar entry will be "
-#| "highlighted. This can be changed in the Notifications control module.</p>"
+#, kde-format
 msgid ""
 "<html><head/><body><p>This option specifies how much KWin will try to "
 "prevent unwanted focus stealing caused by unexpected activation of new "
@@ -717,29 +719,38 @@ msgid ""
 "by default means their taskbar entry will be highlighted. This can be "
 "changed in the Notifications control module.</p></body></html>"
 msgstr ""
-"<p>Opsi ini menentukan seberapa banyak KWin akan mencoba untuk mencegah "
-"pencurian fokus yang tidak diinginkan yang disebabkan oleh aktivasi window "
-"baru yang tidak diharapkan. (Catatan: Fitur ini tidak bekerja dengan "
-"kebijakan fokus Fokus di Bawah Mouse atau Fokus Ketat di Bawah Mouse.)\n"
-"<ul>\n"
-"<li><em>Nihil:</em> Pencegahan dimatikan dan window baru selalu menjadi "
-"difungsikan.</li>\n"
-"<li><em>Rendah:</em> Pencegahan difungsikan; ketika beberapa window tidak "
-"memiliki dukungan untuk mekanisme penting dan KWin tidak dapat diharapkan "
-"untuk memutuskan apakah akan memfungsikan window atau tidak, maka pencegahan "
-"akan difungsikan. Setelan ini dapat memiliki hasil yang lebih buruk atau "
-"baik ketimbang level medium, tergantung dari aplikasi.</li>\n"
-"<li><em>Medium:</em> Pencegahan difungsikan.</li>\n"
-"<li><em>Tinggi:</em> Window baru difungsikan hanya jika tidak ada window "
-"yang saat ini aktif atau jika window milik aplikasi yang aktif saat ini. "
-"Setelan ini mungkin tidak terlalu berguna ketika tidak menggunakan kebijakan "
-"fokus mouse.</li>\n"
-"<li><em>Ekstrem:</em> Semua window harus secara gamblang difungsikan oleh "
-"pengguna.</li>\n"
-"</ul></p>\n"
-"<p>Window yang dicegah dari mencuri fokus ditandai sebagai meminta "
-"perhatian, yang secara baku berarti entri bilah tugasnya akan disorot. Ini "
-"dapat diubah dalam modul kendali Notifikasi.</p>"
+"<html><head/><body> <p>Opsi ini menentukan seberapa banyak KWin akan coba "
+"mencegah pencurian fokus yang tidak diinginkan yang disebabkan oleh "
+"pengaktifan window baru yang tidak diharapkan. (Catatan: Fitur ini tidak "
+"bekerja dengan kebijakan fokus <span style=\" font-style:italic;\">Fokus di "
+"bawah mouse</span> atau <span style=\" font-style:italic;\">Fokus ketat di "
+"bawah mouse</span>.)</p><ul style=\"margin-top: 0px; margin-bottom: 0px; "
+"margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\"><li style=\" "
+"margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Nihil:"
+"</span> Pencegahan dimatikan dan window baru selalu menjadi diaktifkan.</"
+"li><li style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Rendah:</span> Pencegahan difungsikan; ketika beberapa window "
+"tidak memiliki dukungan untuk mekanisme yang mendasari dan KWin tidak bisa "
+"diandalkan untuk memutuskan apakah mengaktifkan window atau tidak, maka "
+"pencegahan akan difungsikan. Pengaturan ini mungkin memiliki hasil yang "
+"lebih buruk atau baik daripada level medium, tergantung dari aplikasi.</"
+"li><li style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Medium:</span> Pencegahan difungsikan.</li><li style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Tinggi:</"
+"span> Window-window baru, mendapatkan peraktifan saja jika tidak adanya "
+"window saat ini yang aktif atau jika mereka milik aplikasi yang sedang "
+"aktif. Pengaturan ini mungkin tidak terlalu berguna ketika tidak menggunakan "
+"kebijakan fokus mouse.</li><li style=\" margin-top:0px; margin-bottom:12px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span style=\" font-style:italic;\">Ekstrem:</span> Semua window harus "
+"secara gamblang diaktifkan oleh pengguna.</li></ul><p>Window yang dicegah "
+"dari pencurian fokus ditandai sebagai siap-siaga, yang secara baku berarti "
+"entri bilah tugasnya akan disorot. Ini bisa diubah di dalam modul kendali "
+"Notifikasi.</p></body></html>"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
@@ -781,10 +792,9 @@ msgstr "Ekstrem"
 
 #. i18n: ectx: property (text), widget (QLabel, raisingWindowsLabel)
 #: focus.ui:146
-#, fuzzy, kde-format
-#| msgid "Raising windows"
+#, kde-format
 msgid "Raising windows:"
-msgstr "Penaikan window"
+msgstr "Penaikan window:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, clickRaiseOn)
 #: focus.ui:153
@@ -800,10 +810,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, clickRaiseOn)
 #: focus.ui:156
-#, fuzzy, kde-format
-#| msgid "C&lick raises active window"
+#, kde-format
 msgid "&Click raises active window"
-msgstr "K&lik menaikkan window yang aktif"
+msgstr "&Klik menaikkan window yang aktif"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, autoRaiseOn)
 #: focus.ui:165
@@ -818,10 +827,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoRaiseOn)
 #: focus.ui:168
-#, fuzzy, kde-format
-#| msgid "&Raise on hover, delayed by"
+#, kde-format
 msgid "&Raise on hover, delayed by:"
-msgstr "&Naikkan saat melayangi, ditunda hingga"
+msgstr "&Naikkan saat melayangi, ditunda hingga:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, autoRaise)
 #: focus.ui:175
@@ -835,10 +843,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, multiscreenBehaviorLabel)
 #: focus.ui:196
-#, fuzzy, kde-format
-#| msgid "Multiscreen behaviour"
+#, kde-format
 msgid "Multiscreen behavior:"
-msgstr "Perilaku layar banyak"
+msgstr "Perilaku multilayar:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, activeMouseScreen)
 #: focus.ui:203
@@ -874,10 +881,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, separateScreenFocus)
 #: focus.ui:216
-#, fuzzy, kde-format
-#| msgid "S&eparate screen focus"
+#, kde-format
 msgid "&Separate screen focus"
-msgstr "Pisahkan fokus la&yar"
+msgstr "Pi&sahkan fokus layar"
 
 #: main.cpp:78
 #, kde-format
@@ -885,26 +891,22 @@ msgid "&Focus"
 msgstr "&Fokus"
 
 #: main.cpp:83
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar A&ctions"
-msgstr "&Aksi Bilah Judul"
+msgstr "&Aksi BilahJudul"
 
 #: main.cpp:88
-#, fuzzy, kde-format
-#| msgid "Window Actio&ns"
+#, kde-format
 msgid "W&indow Actions"
-msgstr "Aksi Wi&ndow"
+msgstr "Aksi W&indow"
 
 #: main.cpp:93
-#, fuzzy, kde-format
-#| msgid "&Placement:"
+#, kde-format
 msgid "Mo&vement"
-msgstr "&Penempatan:"
+msgstr "Perpinda&han"
 
 #: main.cpp:98
-#, fuzzy, kde-format
-#| msgid "Ad&vanced"
+#, kde-format
 msgid "Adva&nced"
 msgstr "Tingkat lan&jut"
 
@@ -1015,10 +1017,9 @@ msgstr "Maksimalkan (hanya mendatar)"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
 #: mouse.ui:17
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar Actions"
-msgstr "&Aksi Bilah Judul"
+msgstr "Aksi BilahJudul"
 
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #: mouse.ui:26
@@ -1063,24 +1064,21 @@ msgstr "Tutup"
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
 #: mouse.ui:75
-#, fuzzy, kde-format
-#| msgid "On All Desktops"
+#, kde-format
 msgid "Show on all desktops"
-msgstr "Di Semua Desktop"
+msgstr "Tampilkan di semua desktop"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coTiAct4)
 #: mouse.ui:98
-#, fuzzy, kde-format
-#| msgid "Behavior on <em>double</em> click into the titlebar."
+#, kde-format
 msgid "Behavior on <em>mouse wheel</em> scroll over the titlebar."
-msgstr "Perilaku di klik <em>ganda</em> masuk ke bilah judul."
+msgstr "Perilaku saat menggulir <em>roda mouse</em> melintasi bilahjudul."
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: mouse.ui:143
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar and Frame Actions"
-msgstr "&Aksi Bilah Judul"
+msgstr "Aksi Kerangka dan BilahJudul"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: mouse.ui:167
@@ -1114,10 +1112,9 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #: mouse.ui:266 mouse.ui:328 mouse.ui:381 mouse.ui:443 mouse.ui:496
 #: mouse.ui:558
-#, fuzzy, kde-format
-#| msgid "Operations Menu"
+#, kde-format
 msgid "Show actions menu"
-msgstr "Menu Operasi"
+msgstr "Tampilkan menu aksi"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coTiInAct1)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coTiInAct2)
@@ -1135,17 +1132,15 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #: mouse.ui:288 mouse.ui:403 mouse.ui:518
-#, fuzzy, kde-format
-#| msgid "Activate & Lower"
+#, kde-format
 msgid "Activate and lower"
-msgstr "Aktifkan & Turunkan"
+msgstr "Aktifkan dan turunkan"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: mouse.ui:589
-#, fuzzy, kde-format
-#| msgid "Maximize Button"
+#, kde-format
 msgid "Maximize Button Actions"
-msgstr "Tombol Maksimalkan"
+msgstr "Aksi Tombol Maksimalkan"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_8)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, leftClickMaximizeButton)
@@ -1163,10 +1158,9 @@ msgstr "Perilaku saat klik <em>tengah</em> di tombol maksimalkan."
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: mouse.ui:627
-#, fuzzy, kde-format
-#| msgid "Middle b&utton:"
+#, kde-format
 msgid "Middle c&lick:"
-msgstr "Tombol t&engah:"
+msgstr "K&lik tengah:"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_10)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, rightClickMaximizeButton)
@@ -1179,7 +1173,7 @@ msgstr "Perilaku saat klik <em>kanan</em> di tombol maksimalkan."
 #: moving.ui:20
 #, kde-format
 msgid "Window &geometry:"
-msgstr ""
+msgstr "&Geometri window:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, geometryTipOn)
 #: moving.ui:30
@@ -1195,41 +1189,34 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, geometryTipOn)
 #: moving.ui:33
-#, fuzzy, kde-format
-#| msgid "Display window &geometry when moving or resizing"
+#, kde-format
 msgid "Display when moving or resizing"
-msgstr "Tampilkan &geometri window ketika memindahkan atau mengubah ukuran"
+msgstr "Displaikan ketika memindah atau mengubah-ukuran"
 
 #. i18n: ectx: property (text), widget (QLabel, borderSnapLabel)
 #: moving.ui:40
-#, fuzzy, kde-format
-#| msgid "&Border snap zone:"
+#, kde-format
 msgid "Screen &edge snap zone:"
-msgstr "&Zona jepret bingkai:"
+msgstr "Zona jepret tepi layar:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, borderSnap)
 #: moving.ui:50
-#, fuzzy, kde-format
-#| msgid ""
-#| "Here you can set the snap zone for screen borders, i.e. the 'strength' of "
-#| "the magnetic field which will make windows snap to the border when moved "
-#| "near it."
+#, kde-format
 msgid ""
 "Here you can set the snap zone for screen edges, i.e. the 'strength' of the "
 "magnetic field which will make windows snap to the border when moved near it."
 msgstr ""
-"Di sini kamu bisa mengeset zona jepret terhadap bingkai layar, misal "
-"'kekuatan' dari medan magnet yang akan membuat window jepret menempel ke "
-"bingkai ketika dipindahkan ke dekatnya."
+"Di sini kamu bisa mengatur zona jepret untuk tepi layar, misal 'kekuatan'-"
+"nya medan magnet yang akan membuat window jepret menempel ke bingkai ketika "
+"dipindahkan ke dekatnya."
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, borderSnap)
 #. i18n: ectx: property (suffix), widget (QSpinBox, windowSnap)
 #. i18n: ectx: property (suffix), widget (QSpinBox, centerSnap)
 #: moving.ui:56 moving.ui:78 moving.ui:100
-#, fuzzy, kde-format
-#| msgid " pixel"
+#, kde-format
 msgid " px"
-msgstr " pixel"
+msgstr " px"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, windowSnap)
 #: moving.ui:72
@@ -1269,10 +1256,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, OverlapSnap)
 #: moving.ui:116
-#, fuzzy, kde-format
-#| msgid "Snap windows onl&y when overlapping"
+#, kde-format
 msgid "Only when overlapping"
-msgstr "Jepret window han&ya ketika menindih"
+msgstr "Hanya ketika menindih"
 
 #. i18n: ectx: property (text), widget (QLabel, windowSnapLabel)
 #: moving.ui:123
@@ -1288,37 +1274,24 @@ msgstr "&Zona jepret tengah:"
 
 #. i18n: ectx: property (text), widget (QLabel, OverlapSnapLabel)
 #: moving.ui:143
-#, fuzzy, kde-format
-#| msgid "Raising windows"
+#, kde-format
 msgid "&Snap windows:"
-msgstr "Penaikan window"
+msgstr "&Jepret window:"
 
 #: windows.cpp:172
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Click To Focus</b><br>\n"
-#| "A window becomes active when you click into it.<br><br>\n"
-#| "This behaviour is common on other operating systems and<br>\n"
-#| "likely what you want."
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus:</"
 "span> A window becomes active when you click into it. This behavior is "
 "common on other operating systems and likely what you want.</p></body></html>"
 msgstr ""
-"<b>Klik Untuk Fokus</b><br>\n"
-"Jendela menjadi aktif jika kamu klik pada window tersebut.<br><br>\n"
-"Perilaku ini umum ditemui pada sistem operasi lain dan<br>\n"
-"kemungkinan juga menjadi keinginanmu."
+"<html><head/><body><p><span style=\" font-style:italic;\">Klik fokus:</span> "
+"Sebuah window menjadi aktif jika kamu mengekliknya. Perilaku ini umum "
+"ditemui pada sistem operasi lain dan mudah-mudahan seperti apa yang kamu "
+"inginkan.</p></body></html>"
 
 #: windows.cpp:175
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Click To Focus - Mouse Precedence</b><br>\n"
-#| "This is mostly the same as <i>Click To Focus</i><br><br>\n"
-#| "If an active window has to be chosen by the system<br>\n"
-#| "(eg. because the currently active one was closed) <br>\n"
-#| "the window under the mouse is the preferred candidate.<br><br>\n"
-#| "Unusual, but possible variant of <i>Click To Focus</i>."
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus "
 "(mouse precedence):</span> Mostly the same as <span style=\" font-style:"
@@ -1327,22 +1300,16 @@ msgid ""
 "the mouse is the preferred candidate. Unusual, but possible variant of <span "
 "style=\" font-style:italic;\">Click to focus</span>.</p></body></html>"
 msgstr ""
-"<b>Klik Untuk Fokus - Mengutamakan Mouse</b><br>\n"
-"Ini sebagian besar sama dengan <i>Klik Untuk Fokus</i><br><br>\n"
-"Jika sebuah window aktif harus dipilih oleh sistem<br>\n"
-"(misalnya karena window aktif telah ditutup) <br>\n"
-"window di bawah mouse adalah kandidat yang dipilih.<br><br>\n"
-"Tidak biasa, tapi variasi yang mungkin dari <i>Klik Untuk Fokus</i>."
+"<html><head/><body><p><span style=\" font-style:italic;\">Klik fokus "
+"(mengutamakan mouse):</span> Sebagian besar sama sebagai <span style=\" font-"
+"style:italic;\">Klik fokus</span>. Jika sebuah window aktif yang telah "
+"dipilih oleh sistem (mis. karena salahsatu yang aktif saat ini telah "
+"ditutup) window di bawah mouse adalah kandidat yang disukai. Tidak biasa, "
+"tetapi variasi yang mungkin dari <span style=\" font-style:italic;\">Klik "
+"fokus</span>.</p></body></html>"
 
 #: windows.cpp:178
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Follows Mouse</b><br>\n"
-#| "Moving the mouse onto a window will activate it.<br><br>\n"
-#| "Eg. windows randomly appearing under the mouse will not gain the focus."
-#| "<br>\n"
-#| "Focus stealing prevention takes place as usual.<br><br>\n"
-#| "Think as <i>Click To Focus</i> just without having to actually click."
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Focus follows "
 "mouse:</span> Moving the mouse onto a window will activate it. Eg. windows "
@@ -1351,22 +1318,15 @@ msgid ""
 "Think as <span style=\" font-style:italic;\">Click to focus</span> just "
 "without having to actually click.</p></body></html>"
 msgstr ""
-"<b>Fokus Mengikuti Mouse</b><br>\n"
-"Menggerakkan mouse di atas window akan mengaktifkannya.<br><br>\n"
+"<html><head/><body><p><span style=\" font-style:italic;\">Fokus mengikuti "
+"mouse:</span> Menggerakkan mouse di atas window akan mengaktifkannya. "
 "Misalnya window secara acak muncul di bawah mouse tidak akan mendapatkan "
-"fokus.<br>\n"
-"Pencegahan mencuri fokus akan tetap ada seperti biasa.<br><br>\n"
-"Anggap seperti <i>Klik Untuk Fokus</i> hanya tanpa klik sebenarnya."
+"fokus. <span style=\" font-style:italic;\">Pencegahan mencuri fokus</span> "
+"akan tetap ada seperti biasa. Anggap saja <span style=\" font-style:italic;"
+"\">Klik fokus</span> namun tanpa klik sebenarnya.</p></body></html>"
 
 #: windows.cpp:181
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Follows Mouse - Mouse Precedence</b><br>\n"
-#| "This is mostly the same as <i>Focus Follows Mouse</i><br><br>\n"
-#| "If an active window has to be chosen by the system<br>\n"
-#| "(eg. because the currently active one was closed) <br>\n"
-#| "the window under the mouse is the preferred candidate.<br><br>\n"
-#| "Choose this, if you want a hover controlled focus."
+#, kde-format
 msgid ""
 "<html><head/><body><p>This is mostly the same as <span style=\" font-style:"
 "italic;\">Focus follows mouse</span>. If an active window has to be chosen "
@@ -1374,24 +1334,14 @@ msgid ""
 "under the mouse is the preferred candidate. Choose this, if you want a hover "
 "controlled focus.</p></body></html>"
 msgstr ""
-"<b>Fokus Mengikuti Mouse - Mengutamakan Mouse</b><br>\n"
-"Ini sebagian besar sama dengan <i>Fokus Mengikuti Mouse</i><br><br>\n"
-"Jika sebuah window aktif harus dipilih oleh sistem<br>\n"
-"(misalnya karena window aktif telah ditutup) <br>\n"
-"window di bawah mouse adalah kandidat yang dipilih.<br><br>\n"
-"Pilih ini, jika kamu ingin fokus yang dikendalikan oleh pelayangan."
+"<html><head/><body><p>Ini adalah sebagian besar sama sebagai <span style=\" "
+"font-style:italic;\">Fokus mengikuti mouse</span>. Jika sebuah window aktif "
+"yang telah dipilih oleh sistem (misalnya karena salahsatu yang aktif saat "
+"ini telah ditutup) window di bawah mouse adalah kandidat yang disukai. Pilih "
+"ini, jika kamu ingin sebuah melayang fokus yang terkendali.</p></body></html>"
 
 #: windows.cpp:184
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Under Mouse</b><br>\n"
-#| "The focus always remains on the window under the mouse.<br><br>\n"
-#| "\n"
-#| "Notice:<br>\n"
-#| "<b>Focus stealing prevention</b> and the <b>tabbox (\"Alt+Tab\")</b><br>\n"
-#| "contradict the policy and <b>will not work</b>.<br><br>\n"
-#| "You very likely want to use<br>\n"
-#| "<i>Focus Follows Mouse - Mouse Precedence</i> instead!"
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Focus under mouse:"
 "</span> The focus always remains on the window under the mouse.<br/><span "
@@ -1401,14 +1351,14 @@ msgid ""
 "work. You very likely want to use <span style=\" font-style:italic;\">Focus "
 "follows mouse (mouse precedence)</span> instead!</p></body></html>"
 msgstr ""
-"<b>Fokus di Bawah Mouse</b><br>\n"
-"Fokus selalu tetap pada window yang di bawah mouse.<br><br>\n"
-"\n"
-"Perhatian:<br>\n"
-"<b>Pencegahan mencuri fokus</b> dan <b>kotak tab (\"Alt+Tab\")</b><br>\n"
-"bertentangan dengan kebijakan dan <b>tidak akan bekerja</b>.<br><br>\n"
-"Kamu kemungkinan ingin memilih untuk<br>\n"
-"menggunakan <i>Fokus Mengikuti Mouse - Mengutamakan Mouse</i>!"
+"<html><head/><body><p><span style=\" font-style:italic;\">Fokus di bawah "
+"mouse:</span> Fokus selalu tetap pada window yang di bawah mouse.<br/><span "
+"style=\" font-weight:600;\">Awas: </span><span style=\" font-style:italic;"
+"\">Pencegahan mencuri fokus</span> dan <span style=\" font-style:italic;"
+"\">kotak tab (\"Alt+Tab\") </span>bertentangan dengan kebijakan pengaktifan "
+"dan tidak akan bekerja. Kamu sangat ingin menggunakan <span style=\" font-"
+"style:italic;\">Fokus mengikuti mouse (mengutamakan mouse)</span> sebagai "
+"gantinya!</p></body></html>"
 
 #: windows.cpp:187
 #, kde-format

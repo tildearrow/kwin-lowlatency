@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-13 03:23+0200\n"
+"POT-Creation-Date: 2019-10-29 07:53+0100\n"
 "PO-Revision-Date: 2019-08-06 10:43+0200\n"
 "Last-Translator: Freek de Kruijf <f.de.kruijf@gmail.com>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -53,19 +53,19 @@ msgstr ""
 "Deze module laat u de navigatie, aantal en indeling van virtuele "
 "bureaubladen configureren."
 
-#: package/contents/ui/main.qml:79
+#: package/contents/ui/main.qml:81
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr "Hernoemen"
 
-#: package/contents/ui/main.qml:89
+#: package/contents/ui/main.qml:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove"
 msgstr "Verwijderen"
 
-#: package/contents/ui/main.qml:115
+#: package/contents/ui/main.qml:117
 #, kde-format
 msgid ""
 "Virtual desktops have been changed outside this settings application. Saving "
@@ -74,55 +74,55 @@ msgstr ""
 "Virtuele bureaubladen zijn gewijzigd buiten deze toepassing voor instellen. "
 "Nu opslaan zal de wijzigingen overschrijven."
 
-#: package/contents/ui/main.qml:129
+#: package/contents/ui/main.qml:131
 #, kde-format
 msgid "Row %1"
 msgstr "Rij %1"
 
-#: package/contents/ui/main.qml:142
+#: package/contents/ui/main.qml:144
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Toevoegen"
 
-#: package/contents/ui/main.qml:145
+#: package/contents/ui/main.qml:147
 #, kde-format
 msgid "New Desktop"
 msgstr "Nieuw bureaublad"
 
-#: package/contents/ui/main.qml:159
+#: package/contents/ui/main.qml:161
 #, kde-format
 msgid "1 Row"
 msgid_plural "%1 Rows"
 msgstr[0] "1 rij"
 msgstr[1] "%1 rijen"
 
-#: package/contents/ui/main.qml:179
+#: package/contents/ui/main.qml:181
 #, kde-format
 msgid "Options:"
 msgstr "Opties:"
 
-#: package/contents/ui/main.qml:181
+#: package/contents/ui/main.qml:183
 #, kde-format
 msgid "Navigation wraps around"
 msgstr "Doorlopende navigatie"
 
-#: package/contents/ui/main.qml:194
+#: package/contents/ui/main.qml:199
 #, kde-format
 msgid "Show animation when switching:"
 msgstr "Animatie tonen bij omschakelen:"
 
-#: package/contents/ui/main.qml:237
+#: package/contents/ui/main.qml:242
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr "On-screen-display tonen bij omschakelen:"
 
-#: package/contents/ui/main.qml:253
+#: package/contents/ui/main.qml:258
 #, kde-format
 msgid "%1 ms"
 msgstr "%1 ms"
 
-#: package/contents/ui/main.qml:273
+#: package/contents/ui/main.qml:278
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "Indicatoren voor bureaubladindeling tonen"

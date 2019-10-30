@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-02 03:10+0200\n"
+"POT-Creation-Date: 2019-10-24 08:00+0200\n"
 "PO-Revision-Date: 2015-02-03 11:42+0100\n"
 "Last-Translator: Samir Ribic <sribic@etf.unsa.ba>\n"
 "Language-Team: Bosnian <kde-i18n-doc@kde.org>\n"
@@ -138,13 +138,13 @@ msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "Dugmad"
 
-#: package/contents/ui/main.qml:87
+#: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
 msgstr ""
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:121
 #, fuzzy, kde-format
 #| msgid "Get New Decorations..."
 msgctxt "button text"
@@ -152,13 +152,13 @@ msgid "Get New Window Decorations..."
 msgstr "Dobavi nove dekoracije..."
 
 # >> @option:check
-#: package/contents/ui/main.qml:134
+#: package/contents/ui/main.qml:137
 #, fuzzy, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "Dvoklik na dugme menija zatvara prozor"
 
-#: package/contents/ui/main.qml:146
+#: package/contents/ui/main.qml:149
 #, fuzzy, kde-format
 #| msgid ""
 #| "Close by double clicking:\n"
@@ -171,7 +171,7 @@ msgstr ""
 "Zatvorite na dvostruki klok:\n"
 " Da otvorite meni, držite dugme pritisnutim dok se ne pojavi."
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:156
 #, fuzzy, kde-format
 #| msgid "&Show window button tooltips"
 msgctxt "checkbox label"

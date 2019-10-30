@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-02 03:10+0200\n"
+"POT-Creation-Date: 2019-10-24 08:00+0200\n"
 "PO-Revision-Date: 2014-03-13 15:22+0100\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -139,27 +139,27 @@ msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "Knööp"
 
-#: package/contents/ui/main.qml:87
+#: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
 msgstr ""
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:121
 #, fuzzy, kde-format
 #| msgid "Get New Decorations..."
 msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr "Nieg Dekoratschonen halen..."
 
-#: package/contents/ui/main.qml:134
+#: package/contents/ui/main.qml:137
 #, fuzzy, kde-format
 #| msgid "Close windows by double clicking the menu button"
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "Finster bi Dubbelklick op Menüknoop tomaken"
 
-#: package/contents/ui/main.qml:146
+#: package/contents/ui/main.qml:149
 #, fuzzy, kde-format
 #| msgid ""
 #| "Close by double clicking:\n"
@@ -172,7 +172,7 @@ msgstr ""
 "Mit Dubbelklick tomaken:\n"
 " Du maakst dat Menü op, wenn Du den Knoop daalhöllst."
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:156
 #, fuzzy, kde-format
 #| msgid "&Show window button tooltips"
 msgctxt "checkbox label"
