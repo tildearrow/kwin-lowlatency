@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-27 07:54+0200\n"
-"PO-Revision-Date: 2019-08-07 05:19+0200\n"
+"PO-Revision-Date: 2019-11-05 07:04+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -1825,13 +1825,12 @@ msgid "Configure S&pecial Application Settings..."
 msgstr "Spezielle Einstellungen für dieses &Programm ..."
 
 #: useractions.cpp:312
-#, fuzzy, kde-format
-#| msgid "Window Manager"
+#, kde-format
 msgctxt ""
 "Entry in context menu of window decoration to open the configuration module "
 "of KWin"
 msgid "Configure W&indow Manager..."
-msgstr "Fensterverwaltung"
+msgstr "Fensterverwaltung einr&ichten ..."
 
 #: useractions.cpp:342
 #, kde-format
@@ -1864,22 +1863,19 @@ msgid "&Desktops"
 msgstr "&Arbeitsflächen"
 
 #: useractions.cpp:479
-#, fuzzy, kde-format
-#| msgid "Move To &Desktop"
+#, kde-format
 msgid "Move to &Desktop"
 msgstr "Auf &Arbeitsfläche verschieben"
 
 #: useractions.cpp:497
-#, fuzzy, kde-format
-#| msgid "Move To &Screen"
+#, kde-format
 msgid "Move to &Screen"
-msgstr "Verschieben auf Bild&schirm:"
+msgstr "Auf Bild&schirm verschieben"
 
 #: useractions.cpp:513
-#, fuzzy, kde-format
-#| msgid "Ac&tivities"
+#, kde-format
 msgid "Show in &Activities"
-msgstr "A&ktivitäten"
+msgstr "In &Aktivitäten anzeigen"
 
 #: useractions.cpp:528 useractions.cpp:573
 #, kde-format

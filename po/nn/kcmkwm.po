@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-15 03:21+0200\n"
-"PO-Revision-Date: 2019-09-14 09:45+0200\n"
+"PO-Revision-Date: 2019-11-08 22:17+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
@@ -439,7 +439,7 @@ msgstr "Endra gjennomsikt"
 #: advanced.ui:20
 #, kde-format
 msgid "Window &unshading:"
-msgstr ""
+msgstr "Vindaugs&nedrulling:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, shadeHoverOn)
 #: advanced.ui:32

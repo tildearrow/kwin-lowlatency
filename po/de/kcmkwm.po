@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-15 03:21+0200\n"
-"PO-Revision-Date: 2019-10-07 18:27+0200\n"
+"PO-Revision-Date: 2019-11-05 12:03+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -58,19 +58,17 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
 #: actions.ui:43 actions.ui:83 actions.ui:123
-#, fuzzy, kde-format
-#| msgid "Activate, Raise & Pass Click"
+#, kde-format
 msgid "Activate, raise and pass click"
-msgstr "Aktivieren, nach vorn & mit Klick ansprechen"
+msgstr "Aktivieren, nach vorn und mit Klick ansprechen"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
 #: actions.ui:48 actions.ui:88 actions.ui:128
-#, fuzzy, kde-format
-#| msgid "Activate & Pass Click"
+#, kde-format
 msgid "Activate and pass click"
-msgstr "Aktivieren & mit Klick ansprechen"
+msgstr "Aktivieren und mit Klick ansprechen"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
@@ -146,9 +144,8 @@ msgid ""
 "In this row you can customize behavior when scrolling into an inactive inner "
 "window ('inner' means: not titlebar, not frame)."
 msgstr ""
-"Hier können Sie das Verhalten von KDE einstellen, wenn in einem inaktiven "
-"Fenster innen (nicht auf der Titelleiste oder dem Rahmen) das Mausrad "
-"betätigt wird."
+"Hier können Sie das Verhalten einstellen, wenn in einem inaktiven Fenster "
+"innen (nicht auf der Titelleiste oder dem Rahmen) das Mausrad betätigt wird."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coWinWheel)
 #: actions.ui:163
@@ -170,10 +167,9 @@ msgstr "Aktivieren, nach vorne und blättern"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: actions.ui:184
-#, fuzzy, kde-format
-#| msgid "Inner Window, Titlebar & Frame"
+#, kde-format
 msgid "Inner Window, Titlebar and Frame Actions"
-msgstr "Inneres Fenster, Titelleiste & Rahmen"
+msgstr "Aktionen für inneres Fenster, Titelleiste und Rahmen"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: actions.ui:195
@@ -1085,10 +1081,9 @@ msgstr "Verhalten nach <em>Doppelklick</em> auf die Titelleiste."
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: mouse.ui:143
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar and Frame Actions"
-msgstr "&Titelleiste"
+msgstr "Aktionen für Titelleiste und Rahmen"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: mouse.ui:167
@@ -1207,11 +1202,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, geometryTipOn)
 #: moving.ui:33
-#, fuzzy, kde-format
-#| msgid "Display window &geometry when moving or resizing"
+#, kde-format
 msgid "Display when moving or resizing"
-msgstr ""
-"Bei Verschiebungen oder &Größenänderungen die Fenstergeometrie anzeigen"
+msgstr "Bei Verschiebungen oder Größenänderungen anzeigen"
 
 #. i18n: ectx: property (text), widget (QLabel, borderSnapLabel)
 #: moving.ui:40
@@ -1222,11 +1215,7 @@ msgstr "&Rand-Einrastzone:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, borderSnap)
 #: moving.ui:50
-#, fuzzy, kde-format
-#| msgid ""
-#| "Here you can set the snap zone for screen borders, i.e. the 'strength' of "
-#| "the magnetic field which will make windows snap to the border when moved "
-#| "near it."
+#, kde-format
 msgid ""
 "Here you can set the snap zone for screen edges, i.e. the 'strength' of the "
 "magnetic field which will make windows snap to the border when moved near it."
@@ -1281,10 +1270,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, OverlapSnap)
 #: moving.ui:116
-#, fuzzy, kde-format
-#| msgid "Snap windows onl&y when overlapping"
+#, kde-format
 msgid "Only when overlapping"
-msgstr "Fenster nur einrasten lassen, wenn sie sich ü&berlappen"
+msgstr "Nur wenn sie sich überlappen"
 
 #. i18n: ectx: property (text), widget (QLabel, windowSnapLabel)
 #: moving.ui:123
