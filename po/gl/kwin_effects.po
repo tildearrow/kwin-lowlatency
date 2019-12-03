@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-15 03:21+0200\n"
-"PO-Revision-Date: 2019-10-19 21:56+0200\n"
+"PO-Revision-Date: 2019-11-17 09:34+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.11.70\n"
+"X-Generator: Lokalize 20.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -1332,7 +1332,7 @@ msgstr "Texto"
 #: mouseclick/mouseclick_config.ui:216
 #, kde-format
 msgid "Font:"
-msgstr "Tipo de letra:"
+msgstr "Fonte:"
 
 #. i18n: ectx: property (text), widget (QLabel, showtext_label)
 #: mouseclick/mouseclick_config.ui:233
@@ -1711,7 +1711,7 @@ msgstr "En baixo á dereita"
 #: showfps/showfps_config.ui:76
 #, kde-format
 msgid "Text font:"
-msgstr "Tipo de letra do texto:"
+msgstr "Fonte do texto:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: showfps/showfps_config.ui:96

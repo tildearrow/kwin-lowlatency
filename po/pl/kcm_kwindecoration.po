@@ -1,5 +1,5 @@
 # translation of kcmkwindecoration.po to Polish
-# Version: $Revision: 1554375 $
+# Version: $Revision: 1557555 $
 # translation of kcmkwindecoration.po to
 # Norbert Popiołek <norbert@kde.com.pl>\n"
 # Michał Rudolf <mrudolf@kdewebdev.org>, 2002.
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-10-24 08:00+0200\n"
-"PO-Revision-Date: 2019-06-22 06:46+0200\n"
+"PO-Revision-Date: 2019-12-02 10:35+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -103,7 +103,7 @@ msgstr "Autor"
 #: kcm.cpp:138
 #, kde-format
 msgid "Download New Window Decorations"
-msgstr "Pobierz nowe wyglądy okien"
+msgstr "Pobierz nowy wygląd dla okien"
 
 #: package/contents/ui/Buttons.qml:85
 #, kde-format
@@ -118,7 +118,7 @@ msgstr "Upuść tutaj przycisk, aby go usunąć"
 #: package/contents/ui/Buttons.qml:241
 #, kde-format
 msgid "Drag buttons between here and the titlebar"
-msgstr "Przeciągnij przyciski pomiędzy tutaj, a paskiem tytułu"
+msgstr "Przeciągnij przycisk stąd na pasek tytułu"
 
 #: package/contents/ui/main.qml:27
 #, kde-format
@@ -147,13 +147,13 @@ msgstr "Zastosuj domyślny rozmiar obramowania okna dla wyglądu"
 #, kde-format
 msgctxt "button text"
 msgid "Get New Window Decorations..."
-msgstr "Pobierz nowe wyglądy okien..."
+msgstr "Pobierz nowy wygląd dla okien..."
 
 #: package/contents/ui/main.qml:137
 #, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
-msgstr "Zamykanie okien przez dwukrotne naciśnięcie na przycisk menu"
+msgstr "Zamknij okno po dwukrotnym naciśnięciu na przycisk menu"
 
 #: package/contents/ui/main.qml:149
 #, kde-format
@@ -169,7 +169,7 @@ msgstr ""
 #, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
-msgstr "Pokaż podpowiedzi do przycisków paska tytułu"
+msgstr "Pokaż podpowiedź po najechaniu na przycisk paska tytułu"
 
 #: package/contents/ui/Themes.qml:97
 #, kde-format

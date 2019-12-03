@@ -1,6 +1,6 @@
 # translation of kcmkwm.po to Polish
 # translation of kcmkwm.po to
-# Version: $Revision: 1552368 $
+# Version: $Revision: 1557555 $
 # Previous translations Piotr Roszatycki <dexter@debian.org>
 # Michał Rudolf <mrudolf@kdewebdev.org>, 2002.
 # Michal Rudolf <mrudolf@kdewebdev.org>, 2002, 2003, 2004.
@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-15 03:21+0200\n"
-"PO-Revision-Date: 2019-09-21 07:53+0200\n"
+"PO-Revision-Date: 2019-12-02 09:51+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -631,13 +631,13 @@ msgstr "Dzięki tej opcji można określić jak i kiedy nastąpi uaktywnienie ok
 #, kde-format
 msgctxt "sassa asas"
 msgid "Click to focus"
-msgstr "Kliknij, aby uaktywnić"
+msgstr "Kliknięcie uaktywnia"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:41
 #, kde-format
 msgid "Click to focus (mouse precedence)"
-msgstr "Kliknij, aby uaktywnić (pierwszeństwo myszy)"
+msgstr "Kliknięcie uaktywnia (mysz ma pierwszeństwo)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:46
@@ -649,7 +649,7 @@ msgstr "Uaktywnienie podąża za myszą"
 #: focus.ui:51
 #, kde-format
 msgid "Focus follows mouse (mouse precedence)"
-msgstr "Uaktywnienie podąża za myszą (pierwszeństwo myszy)"
+msgstr "Uaktywnienie podąża za myszą (mysz ma pierwszeństwo)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:56
@@ -1288,10 +1288,10 @@ msgid ""
 "span> A window becomes active when you click into it. This behavior is "
 "common on other operating systems and likely what you want.</p></body></html>"
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Kliknij, aby "
-"uaktywnić</span>Okno staje się aktywne, kiedy na nie klikniesz. Zachowanie "
-"to jest powszechne na innych systemach operacyjnych i jest prawdopodobnie "
-"tym czego chcesz.</p></body></html>"
+"<html><head/><body><p><span style=\" font-style:italic;\">Kliknięcie "
+"uaktywnia</span>Okno uaktywnia się, po kliknięciu na nim. Zachowanie to jest "
+"powszechne na innych systemach operacyjnych i jest prawdopodobnie tym czego "
+"chcesz.</p></body></html>"
 
 #: windows.cpp:175
 #, kde-format
@@ -1303,13 +1303,13 @@ msgid ""
 "the mouse is the preferred candidate. Unusual, but possible variant of <span "
 "style=\" font-style:italic;\">Click to focus</span>.</p></body></html>"
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Kliknij, aby "
-"uaktywnić (pierwszeństwo myszy)</span>Jest to w większości to samo co <span "
-"style=\" font-style:italic;\">Kliknij, aby uaktywnić</span>. Gdy przychodzi "
-"do wyboru aktywnego okna przez system (bo np. bieżące aktywne okno zostało "
-"zamknięte) to okno pod wskaźnikiem myszy ma pierwszeństwo. Niezbyt "
-"powszechna, ale możliwa odmiana <span style=\" font-style:italic;\">Kliknij, "
-"aby uaktywnić</span>.</p></body></html>"
+"<html><head/><body><p><span style=\" font-style:italic;\">Kliknięcie "
+"uaktywnia (mysz ma pierwszeństwo)</span>Jest to odmiana trybu <span style=\" "
+"font-style:italic;\">Kliknięcie uaktywnia</span>. Gdy system wybiera okno, "
+"które uaktywnić (bo np. poprzednie zostało zamknięte), to okno pod "
+"wskaźnikiem myszy ma pierwszeństwo. Niezbyt powszechna, ale możliwa odmiana "
+"trybu <span style=\" font-style:italic;\">Kliknięcie uaktywnia</span>.</p></"
+"body></html>"
 
 #: windows.cpp:178
 #, kde-format
@@ -1322,12 +1322,12 @@ msgid ""
 "without having to actually click.</p></body></html>"
 msgstr ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Uaktywnienie "
-"podąża za myszą:</span>Przesunięcie wskaźnika myszy na okno, aktywuje je. "
-"np. okna losowo ukazujące się pod myszą nie zostaną uaktywnione.Jak zwykle "
+"podąża za myszą:</span>Najechanie wskaźnikiem myszy na okno, uaktywnia je. "
+"Okna losowo ukazujące się pod myszą nie zostaną uaktywnione. Jak zwykle "
 "<span style=\" font-style:italic;\">Zapobieganie przechwyceniu uaktywnienia</"
-"span> wchodzi w grę.Myśl o tym jako o <span style=\" font-style:italic;"
-"\">Kliknij, aby uaktywnić</span>, lecz bez konieczności klikania.</p></"
-"body></html>"
+"span> także jest brane pod uwagę. Jest to odmiana trybu <span style=\" font-"
+"style:italic;\">Kliknięcie uaktywnia</span>, lecz bez konieczności klikania."
+"</p></body></html>"
 
 #: windows.cpp:181
 #, kde-format
@@ -1338,11 +1338,11 @@ msgid ""
 "under the mouse is the preferred candidate. Choose this, if you want a hover "
 "controlled focus.</p></body></html>"
 msgstr ""
-"<html><head/><body><p>Jest to w większości to samo co <span style=\" font-"
-"style:italic;\">Uaktywnienie podąża za myszą</span>Gdy przychodzi do wyboru "
-"aktywnego okna przez system(bo np. bieżące aktywne okno zostało zamknięte)to "
-"okno pod wskaźnikiem myszy ma pierwszeństwo.Wybierz to, jeśli chcesz "
-"uaktywnienie zależne od najechania wskaźnikiem myszy.</p></body></html>"
+"<html><head/><body><p>Jest to odmiana trybu <span style=\" font-style:italic;"
+"\">Uaktywnienie podąża za myszą</span>Gdy system wybiera okno, które "
+"uaktywnić (bo np. poprzednie zostało zamknięte), to okno pod wskaźnikiem "
+"myszy ma pierwszeństwo. Wybierz, aby uaktywniać po najechaniu myszą.</p></"
+"body></html>"
 
 #: windows.cpp:184
 #, kde-format
@@ -1360,9 +1360,9 @@ msgstr ""
 "myszy.<span style=\" font-weight:600;\">Uwaga:</span><span style=\" font-"
 "style:italic;\">Ochrona przed zmianą aktywnego okna</span> i <span style=\" "
 "font-style:italic;\">pole kart (\"Alt+Tab\")</span> zaprzecza tej zasadzie i "
-"nie zadziałaW tym przypadku prawdopodobnie chcesz użyć <span style=\" font-"
-"style:italic;\">Uaktywnienie podąża za myszą (pierwszeństwo myszy)</span>!</"
-"p></body></html>"
+"nie zadziała. W tym przypadku lepiej wybrać <span style=\" font-style:italic;"
+"\">Uaktywnienie podąża za myszą (pierwszeństwo myszy)</span>!</p></body></"
+"html>"
 
 #: windows.cpp:187
 #, kde-format
@@ -1385,5 +1385,5 @@ msgstr ""
 "style:italic;\">Ochrona przed zmianą aktywnego okna</span> i <span style=\" "
 "font-style:italic;\">pole kart (\"Alt+Tab\")</span>zaprzecza tej zasadzie i "
 "nie zadziała. W tym przypadku prawdopodobnie chcesz użyć <span style=\" font-"
-"style:italic;\">Uaktywnienie podąża za myszą (pierwszeństwo myszy)</span>!</"
-"p></body></html>"
+"style:italic;\">Uaktywnienie podąża za myszą (mysz ma pierwszeństwo)</span>!"
+"</p></body></html>"

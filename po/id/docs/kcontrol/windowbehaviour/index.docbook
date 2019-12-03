@@ -77,11 +77,9 @@
 >Aksi Window</guilabel
 > kamu bisa mengkonfigurasi bagaimana reaksi window dan bilah judul terhadap klik mouse. <guilabel
 >Pemindahan</guilabel
-> memungkinkanmu untuk mengkonfigurasikan bagaimana memindah dan menempatkan window itu sendiri ketika dimulai. Opsi <guilabel
+> memungkinkan kamu untuk mengkonfigurasi bagaimana memindah dan menempatkan window itu sendiri ketika dimulai. Opsi <guilabel
 >Tingkat lanjut</guilabel
 > menangani beberapa opsi-opsi khusus seperti <quote
->pengetaban window</quote
-> dan <quote
 >pembayangan window</quote
 >. </para>
 
@@ -359,7 +357,7 @@
 >Opsi-opsi yang serupa telah tersedia untuk <guilabel
 >Peristiwa roda</guilabel
 >. </para>
-<!--FIXME Raise/Lower Shade/Unshade Maximize/Restore Keep Above/Below Move to Previous/Next Desktop Change Opacity  Switch to Window Tab to the Left/Reght -->
+<!--FIXME Raise/Lower Shade/Unshade Maximize/Restore Keep Above/Below Move to Previous/Next Desktop Change Opacity -->
 
 <tip>
 <para
@@ -422,7 +420,7 @@
 </varlistentry>
 
 <!--FIXME missing:
-Minimize, Shade, Close, Start Window Tab Drag
+Minimize, Shade, Close
 -->
 
 <varlistentry>
@@ -638,7 +636,7 @@ Increase Opacity + Decrease Opacity
 <!--FIXME
 Mouse Wheel has different choices:
 Raise/Lower, Shade/Unshade, Maximize/Restore, Keep Above/Below, 
-Move to Previous/Next Desktop, Change Opacity, Switch to Window Tab to the Left/Right
+Move to Previous/Next Desktop, Change Opacity
 Nothing
 -->
 
@@ -766,30 +764,6 @@ Nothing
 </variablelist>
 
 <variablelist>
-<title
->Pengetaban Window</title>
-
-<varlistentry>
-<term
-><guilabel
->Kelompokkan secara otomatis window-window yang mirip</guilabel
-></term>
-<listitem
-><para
->Ketika dinyalakan mencoba untuk mendeteksi secara otomatis ketika window yang baru dibuka adalah berhubungan ke salah satu yang ada dan menempatkan mereka di dalam kelompok window yang sama.</para
-></listitem>
-</varlistentry>
-
-<varlistentry>
-<term
-><guilabel
->Beralih ke window-window yang dikelompokkan secara otomatis segera</guilabel
-></term>
-<listitem
-><para
->Ketika dinyalakan segera beralih ke tab-tab window baru yang ditambahkan secara otomatis ke kelompok saat ini.</para
-></listitem>
-</varlistentry>
 
 <varlistentry>
 <term

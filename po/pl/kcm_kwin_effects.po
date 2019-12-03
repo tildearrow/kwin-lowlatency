@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-16 03:27+0200\n"
-"PO-Revision-Date: 2019-09-20 15:47+0200\n"
+"PO-Revision-Date: 2019-12-02 11:02+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -41,7 +41,7 @@ msgstr "Vlad Zagorodniy"
 #: kcm.cpp:87
 #, kde-format
 msgid "Download New Desktop Effects"
-msgstr "Pobierz nowe efekty pulpitu"
+msgstr "Pobieranie efektów pulpitu"
 
 #: package/contents/ui/Effect.qml:88
 #, kde-format
@@ -56,7 +56,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show/Hide Video"
-msgstr "Pokaż/Ukryj wideo"
+msgstr "Pokaż/Ukryj film"
 
 #: package/contents/ui/Effect.qml:124
 #, kde-format
@@ -74,9 +74,7 @@ msgstr "Ten moduł umożliwia ustawienie efektów pulpitu."
 msgid ""
 "Hint: To find out or configure how to activate an effect, look at the "
 "effect's settings."
-msgstr ""
-"Wskazówka: Ustawienia efektu zwierają informacje o efekcie i sposobach jego "
-"wyzwolenia."
+msgstr "Wskazówka: Sposób wywołania efektu znajduje się w jego ustawieniach."
 
 #: package/contents/ui/main.qml:56
 #, kde-format
@@ -96,4 +94,4 @@ msgstr "Wyklucz wewnętrzne efekty"
 #: package/contents/ui/main.qml:133
 #, kde-format
 msgid "Get New Desktop Effects..."
-msgstr "Pobierz nowe efekty pulpitu..."
+msgstr "Pobierz efekty pulpitu..."
