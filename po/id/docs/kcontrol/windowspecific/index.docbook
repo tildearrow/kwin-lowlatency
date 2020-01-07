@@ -735,7 +735,7 @@
   <varlistentry
 ><term
 ><emphasis role="bold"
->Dimaksimalkan secara mendatar, Diminimalkan secara tegak</emphasis
+>Dimaksimalkan secara mendatar, Diminimalkan secara menegak</emphasis
 ></term>
     <listitem>
     <para
@@ -779,7 +779,7 @@
 >Atribut Diminimalkan adalah diemulasikan dengan menggunakan kedua <guilabel
 >Dimaksimalkan secara mendatar</guilabel
 > dan <guilabel
->Dimaksimalkan secara tegak</guilabel
+>Dimaksimalkan secara menegak</guilabel
 > atau <guilabel
 >Penempatan awal</guilabel
 > dengan argumen <guilabel

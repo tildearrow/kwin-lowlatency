@@ -1,20 +1,20 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# g.sora <g.sora@tiscali.it>, 2010, 2012, 2013, 2014.
+# g.sora <g.sora@tiscali.it>, 2010, 2012, 2013, 2014, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-10-24 08:00+0200\n"
-"PO-Revision-Date: 2014-03-17 14:03+0100\n"
-"Last-Translator: G.Sora <g.sora@tiscali.it>\n"
-"Language-Team: Interlingua <kde-l10n-ia@kde.org>\n"
+"PO-Revision-Date: 2020-01-05 23:13+0100\n"
+"Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
+"Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -33,15 +33,12 @@ msgid "Menu"
 msgstr "Menu"
 
 #: declarative-plugin/buttonsmodel.cpp:70
-#, fuzzy, kde-format
-#| msgctxt "Button showing application menu imported from dbusmenu"
-#| msgid "Application Menu"
+#, kde-format
 msgid "Application menu"
 msgstr "Menu de application"
 
 #: declarative-plugin/buttonsmodel.cpp:72
-#, fuzzy, kde-format
-#| msgid "On All Desktops"
+#, kde-format
 msgid "On all desktops"
 msgstr "Super omne scriptorios"
 
@@ -63,7 +60,7 @@ msgstr "Claude"
 #: declarative-plugin/buttonsmodel.cpp:80
 #, kde-format
 msgid "Context help"
-msgstr ""
+msgstr "Adjuta de contexto"
 
 #: declarative-plugin/buttonsmodel.cpp:82
 #, kde-format
@@ -71,43 +68,39 @@ msgid "Shade"
 msgstr "Umbra"
 
 #: declarative-plugin/buttonsmodel.cpp:84
-#, fuzzy, kde-format
-#| msgid "Keep Below Others"
+#, kde-format
 msgid "Keep below"
-msgstr "Mantene sub alteres"
+msgstr "Mantene infra"
 
 #: declarative-plugin/buttonsmodel.cpp:86
-#, fuzzy, kde-format
-#| msgid "Keep Above Others"
+#, kde-format
 msgid "Keep above"
-msgstr "Mantene super alteres"
+msgstr "Mantene supra"
 
 #: kcm.cpp:95
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgid "Window Decorations"
-msgstr "Obtene nove decorationes..."
+msgstr "Decorationes de fenestra"
 
 #: kcm.cpp:99
 #, kde-format
 msgid "Valerio Pilo"
-msgstr ""
+msgstr "Valerio Pilo"
 
 #: kcm.cpp:100
 #, kde-format
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: kcm.cpp:138
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgid "Download New Window Decorations"
-msgstr "Obtene nove decorationes..."
+msgstr "Discarga nove decorationes de fenestra"
 
 #: package/contents/ui/Buttons.qml:85
 #, kde-format
 msgid "Titlebar"
-msgstr ""
+msgstr "Barra de titulo"
 
 #: package/contents/ui/Buttons.qml:224
 #, kde-format
@@ -128,14 +121,13 @@ msgstr ""
 #, kde-format
 msgctxt "tab label"
 msgid "Theme"
-msgstr ""
+msgstr "Thema"
 
 #: package/contents/ui/main.qml:66
-#, fuzzy, kde-format
-#| msgid "Buttons"
+#, kde-format
 msgctxt "tab label"
 msgid "Titlebar Buttons"
-msgstr "Buttones"
+msgstr "Buttones de barra de titulo"
 
 #: package/contents/ui/main.qml:90
 #, kde-format
@@ -144,103 +136,79 @@ msgid "Use theme's default window border size"
 msgstr ""
 
 #: package/contents/ui/main.qml:121
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgctxt "button text"
 msgid "Get New Window Decorations..."
-msgstr "Obtene nove decorationes..."
+msgstr "Obtene nove decorationes de fenestra..."
 
 #: package/contents/ui/main.qml:137
-#, fuzzy, kde-format
-#| msgid "Close windows by double clicking the menu button"
+#, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "Claude fenestras per duple pulsar sur le button de menu"
 
 #: package/contents/ui/main.qml:149
-#, fuzzy, kde-format
-#| msgid ""
-#| "Close by double clicking:\n"
-#| " To open the menu, keep the button pressed until it appears."
+#, kde-format
 msgctxt "popup tip"
 msgid ""
 "Close by double clicking: Keep the window's Menu button pressed until it "
 "appears."
 msgstr ""
-"Claude per un duple cliccar:\n"
-" Pro aperir le menu, mantene le button pressate usque il appare."
+"Claude per un duple cliccar: mantene le buttonde Menu de fenetra  pressate "
+"usque il appare."
 
 #: package/contents/ui/main.qml:156
-#, fuzzy, kde-format
-#| msgid "&Show window button tooltips"
+#, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
-msgstr "Mon&stra button de fenestra de consilios"
+msgstr "Monstra consilios de button de fenestra de barra de titulo"
 
 #: package/contents/ui/Themes.qml:97
 #, kde-format
 msgid "Edit %1 Theme"
-msgstr ""
+msgstr "Edita Thema %1"
 
 #: utils.cpp:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "No Border"
+#, kde-format
 msgid "No Borders"
-msgstr "Necun Bordo"
+msgstr "Necun Bordos"
 
 #: utils.cpp:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "No Side Border"
+#, kde-format
 msgid "No Side Borders"
-msgstr "Necun Bordo Lateral "
+msgstr "Necun boordos lateral"
 
 #: utils.cpp:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Tiny"
+#, kde-format
 msgid "Tiny"
 msgstr "Minuscule"
 
 #: utils.cpp:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Normal"
+#, kde-format
 msgid "Normal"
 msgstr "Normal"
 
 #: utils.cpp:42
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Large"
+#, kde-format
 msgid "Large"
 msgstr "Grande (Large)"
 
 #: utils.cpp:43
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Very Large"
+#, kde-format
 msgid "Very Large"
 msgstr "Multe Grande"
 
 #: utils.cpp:44
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Huge"
+#, kde-format
 msgid "Huge"
 msgstr "Ponderose (Huge)"
 
 #: utils.cpp:45
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Very Huge"
+#, kde-format
 msgid "Very Huge"
 msgstr "Multe Ponderose"
 
 #: utils.cpp:46
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Oversized"
+#, kde-format
 msgid "Oversized"
 msgstr "Super dimensionate"

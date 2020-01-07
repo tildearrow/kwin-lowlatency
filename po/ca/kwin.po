@@ -12,14 +12,14 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-27 07:54+0200\n"
-"PO-Revision-Date: 2019-09-09 07:53+0200\n"
+"PO-Revision-Date: 2019-12-20 14:14+0100\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.11.70\n"
+"X-Generator: Lokalize 20.03.70\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 
@@ -949,12 +949,12 @@ msgstr "nom de la màquina"
 #: helpers/killer/killer.cpp:56
 #, kde-format
 msgid "Caption of the window to be terminated"
-msgstr "Títol de la finestra que es finalitzarà"
+msgstr "Llegenda de la finestra que es finalitzarà"
 
 #: helpers/killer/killer.cpp:56
 #, kde-format
 msgid "caption"
-msgstr "títol"
+msgstr "llegenda"
 
 #: helpers/killer/killer.cpp:58
 #, kde-format

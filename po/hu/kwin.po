@@ -1,13 +1,13 @@
 #
 # Marcell Lengyel <miketkf@yahoo.com>, 1999.
-# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012, 2014.
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012, 2014, 2019.
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-27 07:54+0200\n"
-"PO-Revision-Date: 2014-09-06 12:10+0200\n"
+"PO-Revision-Date: 2019-12-09 00:31+0100\n"
 "Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 20.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -838,7 +838,7 @@ msgstr ""
 #: debug_console.ui:150
 #, kde-format
 msgid "Version:"
-msgstr ""
+msgstr "Verzió:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: debug_console.ui:157
@@ -850,7 +850,7 @@ msgstr ""
 #: debug_console.ui:164
 #, kde-format
 msgid "Driver:"
-msgstr ""
+msgstr "Illesztőprogram:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: debug_console.ui:171
@@ -862,72 +862,67 @@ msgstr ""
 #: debug_console.ui:178
 #, kde-format
 msgid "OpenGL Version:"
-msgstr ""
+msgstr "OpenGL verzió:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: debug_console.ui:185
 #, kde-format
 msgid "GLSL Version:"
-msgstr ""
+msgstr "GLSL verzió:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, platformExtensionsBox)
 #: debug_console.ui:251
-#, fuzzy, kde-format
-#| msgid "&Extensions"
+#, kde-format
 msgid "Platform Extensions"
-msgstr "&Kiterjesztések"
+msgstr "Platformkiterjesztések"
 
 #. i18n: ectx: property (title), widget (QGroupBox, glExtensionsBox)
 #: debug_console.ui:267
-#, fuzzy, kde-format
-#| msgid "&Extensions"
+#, kde-format
 msgid "OpenGL (ES) Extensions"
-msgstr "&Kiterjesztések"
+msgstr "OpenGL (ES) kiterjesztések"
 
 #. i18n: ectx: attribute (title), widget (QWidget, keyboard)
 #: debug_console.ui:288
-#, fuzzy, kde-format
-#| msgid "Next Layout"
+#, kde-format
 msgid "Keyboard"
-msgstr "Következő elrendezés"
+msgstr "Billentyűzet"
 
 #. i18n: ectx: property (title), widget (QGroupBox, layoutBox)
 #: debug_console.ui:315
-#, fuzzy, kde-format
-#| msgid "Next Layout"
+#, kde-format
 msgid "Keymap Layouts"
-msgstr "Következő elrendezés"
+msgstr "Billentyűzetkiosztások"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: debug_console.ui:337
-#, fuzzy, kde-format
-#| msgid "Configur&e Window Behavior..."
+#, kde-format
 msgid "Current Layout:"
-msgstr "Beá&llítás…"
+msgstr "Jelenlegi kiosztás:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, modifiersBox)
 #: debug_console.ui:356
 #, kde-format
 msgid "Modifiers"
-msgstr ""
+msgstr "Módosítók"
 
 #. i18n: ectx: property (title), widget (QGroupBox, activeModifiersBox)
 #: debug_console.ui:372
 #, kde-format
 msgid "Active Modifiers"
-msgstr ""
+msgstr "Aktív módosítók"
 
 #. i18n: ectx: property (title), widget (QGroupBox, ledsBox)
 #: debug_console.ui:388
 #, kde-format
 msgid "LEDs"
-msgstr ""
+msgstr "LED-ek"
 
 #. i18n: ectx: property (title), widget (QGroupBox, activeLedsBox)
 #: debug_console.ui:404
 #, kde-format
 msgid "Active LEDs"
-msgstr ""
+msgstr "Aktív LED-ek"
 
 #: helpers/killer/killer.cpp:47
 #, kde-format
@@ -1418,7 +1413,7 @@ msgstr "Luboš Luňák"
 #: main.cpp:201
 #, kde-format
 msgid "Martin Flöser"
-msgstr ""
+msgstr "Martin Flöser"
 
 #: main.cpp:210
 #, kde-format
@@ -1589,19 +1584,19 @@ msgstr ""
 #: orientation_sensor.cpp:111
 #, kde-format
 msgid "Undefined"
-msgstr ""
+msgstr "Nem definiált"
 
 #: orientation_sensor.cpp:115
 #, kde-format
 msgctxt "Portrait oriented display"
 msgid "Vertical"
-msgstr ""
+msgstr "Függőleges"
 
 #: orientation_sensor.cpp:119
 #, kde-format
 msgctxt "Landscape oriented display"
 msgid "Horizontal"
-msgstr ""
+msgstr "Vízszintes"
 
 #: orientation_sensor.cpp:123
 #, kde-format
@@ -1667,13 +1662,13 @@ msgstr "%1 nem egy változat típus"
 #: shortcutdialog.ui:14
 #, kde-format
 msgid "Dialog"
-msgstr ""
+msgstr "Párbeszédablak"
 
 #. i18n: ectx: property (text), widget (QToolButton, clearButton)
 #: shortcutdialog.ui:25
 #, kde-format
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: tabbox/tabbox.cpp:387
 #, kde-format
@@ -1990,17 +1985,17 @@ msgstr "Váltás a(z) %1. asztalra"
 #: virtualkeyboard.cpp:106
 #, kde-format
 msgid "Virtual Keyboard"
-msgstr ""
+msgstr "Virtuális billentyűzet"
 
 #: virtualkeyboard.cpp:230
 #, kde-format
 msgid "Virtual Keyboard: enabled"
-msgstr ""
+msgstr "Virtuális billentyűzet: bekapcsolva"
 
 #: virtualkeyboard.cpp:233
 #, kde-format
 msgid "Virtual Keyboard: disabled"
-msgstr ""
+msgstr "Virtuális billentyűzet: kikapcsolva"
 
 #: virtualkeyboard.cpp:235
 #, kde-format

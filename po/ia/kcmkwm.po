@@ -1,21 +1,21 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# g.sora <g.sora@tiscali.it>, 2010, 2011, 2012, 2013.
+# g.sora <g.sora@tiscali.it>, 2010, 2011, 2012, 2013, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-15 03:21+0200\n"
-"PO-Revision-Date: 2013-05-24 14:35+0200\n"
+"PO-Revision-Date: 2020-01-06 19:24+0100\n"
 "Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
-"Language-Team: Interlingua <kde-i18n-ia@kde.org>\n"
+"Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -120,7 +120,7 @@ msgstr ""
 #: actions.ui:106 mouse.ui:213
 #, kde-format
 msgid "&Right click:"
-msgstr ""
+msgstr "&Pulsa a dextera:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coWin3)
 #: actions.ui:119
@@ -139,7 +139,7 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgid "M&ouse wheel:"
 msgid "Mouse &wheel:"
-msgstr "R&ota de mus:"
+msgstr "Rota de mus"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coWinWheel)
 #: actions.ui:159
@@ -326,8 +326,7 @@ msgstr "Minimisa"
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:300 actions.ui:370 actions.ui:440
-#, fuzzy, kde-format
-#| msgid "Decrease Opacity"
+#, kde-format
 msgid "Decrease opacity"
 msgstr "Diminue opacitate"
 
@@ -335,8 +334,7 @@ msgstr "Diminue opacitate"
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:305 actions.ui:375 actions.ui:445
-#, fuzzy, kde-format
-#| msgid "Increase Opacity"
+#, kde-format
 msgid "Increase opacity"
 msgstr "Augmenta opacitate"
 
@@ -359,7 +357,7 @@ msgstr "Augmenta opacitate"
 #, fuzzy, kde-format
 #| msgid "Nothing"
 msgid "Do nothing"
-msgstr "Nihil"
+msgstr "Nihil Face"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: actions.ui:318
@@ -383,7 +381,7 @@ msgstr ""
 #: actions.ui:388 mouse.ui:653
 #, kde-format
 msgid "Right clic&k:"
-msgstr ""
+msgstr "Pulsa a de&xtera:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coAll3)
 #: actions.ui:401
@@ -400,7 +398,7 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgid "M&ouse wheel:"
 msgid "Mo&use wheel:"
-msgstr "R&ota de mus:"
+msgstr "Rota de mus"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coAllW)
 #: actions.ui:471
@@ -486,7 +484,7 @@ msgstr ""
 #: advanced.ui:35
 #, kde-format
 msgid "On titlebar hover after:"
-msgstr ""
+msgstr "Plana sur barra de titulo postea:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, shadeHover)
 #: advanced.ui:42
@@ -621,13 +619,14 @@ msgstr "Cela fenestras de utilitate pro inactive applicationes"
 #: focus.ui:22
 #, kde-format
 msgid "Window &activation policy:"
-msgstr ""
+msgstr "Politica de &activation de fenestra:"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:32
 #, kde-format
 msgid "With this option you can specify how and when windows will be focused."
 msgstr ""
+"Con iste optiontu pote specificar como e quando le fenestras essera focusate."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:36
@@ -635,13 +634,13 @@ msgstr ""
 #| msgid "Click to Focus"
 msgctxt "sassa asas"
 msgid "Click to focus"
-msgstr "Pulsa pro focalisar"
+msgstr "Pulsar (cliccar) pro Focalisar"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:41
 #, kde-format
 msgid "Click to focus (mouse precedence)"
-msgstr ""
+msgstr "Pulsar (cliccar) pro Focalisar (precedentia de mus)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:46
@@ -654,7 +653,7 @@ msgstr "Foco seque mus"
 #: focus.ui:51
 #, kde-format
 msgid "Focus follows mouse (mouse precedence)"
-msgstr ""
+msgstr "Foco seque mus (precedentia de mus)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:56
@@ -668,7 +667,7 @@ msgstr "Foco intra mus"
 #, fuzzy, kde-format
 #| msgid "Focus Strictly Under Mouse"
 msgid "Focus strictly under mouse"
-msgstr "Foco strictemente intra mus"
+msgstr "Foco Strictemente intra mus"
 
 #. i18n: ectx: property (text), widget (QLabel, delayFocusOnLabel)
 #: focus.ui:69
@@ -692,35 +691,11 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgid "Focus &stealing prevention"
 msgid "Focus &stealing prevention:"
-msgstr "Nivello de prevention de &robar foco"
+msgstr "Prevention de robar de &foco"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, focusStealing)
 #: focus.ui:114
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p>This option specifies how much KWin will try to prevent unwanted focus "
-#| "stealing caused by unexpected activation of new windows. (Note: This "
-#| "feature does not work with the Focus Under Mouse or Focus Strictly Under "
-#| "Mouse focus policies.)\n"
-#| "<ul>\n"
-#| "<li><em>None:</em> Prevention is turned off and new windows always become "
-#| "activated.</li>\n"
-#| "<li><em>Low:</em> Prevention is enabled; when some window does not have "
-#| "support for the underlying mechanism and KWin cannot reliably decide "
-#| "whether to activate the window or not, it will be activated. This setting "
-#| "may have both worse and better results than the medium level, depending "
-#| "on the applications.</li>\n"
-#| "<li><em>Medium:</em> Prevention is enabled.</li>\n"
-#| "<li><em>High:</em> New windows get activated only if no window is "
-#| "currently active or if they belong to the currently active application. "
-#| "This setting is probably not really usable when not using mouse focus "
-#| "policy.</li>\n"
-#| "<li><em>Extreme:</em> All windows must be explicitly activated by the "
-#| "user.</li>\n"
-#| "</ul></p>\n"
-#| "<p>Windows that are prevented from stealing focus are marked as demanding "
-#| "attention, which by default means their taskbar entry will be "
-#| "highlighted. This can be changed in the Notifications control module.</p>"
+#, kde-format
 msgid ""
 "<html><head/><body><p>This option specifies how much KWin will try to "
 "prevent unwanted focus stealing caused by unexpected activation of new "
@@ -753,30 +728,37 @@ msgid ""
 "by default means their taskbar entry will be highlighted. This can be "
 "changed in the Notifications control module.</p></body></html>"
 msgstr ""
-"<p>Iste option specifica como KWin tentara de prevenir le furto de foco non "
-"desirate causate per activation non expectate de nove fenestras. (Nota: iste "
-"characteristica non functiona con le politicas de Foco Intra Mus o de Foco "
-"Strictemente Intra Mus.)\n"
-" <ul>\n"
-"<li><em>Necun:</em> Prevention es de-activate e nove fenestras sempre deveni "
-"activate.</li>\n"
-"<li><em>Basse:</em> Prevention es habilitate; quando alcun fenestra non ha "
-"supporto pro le sub stante mechanismo e KWin non pote decider con "
-"confidentia si activar le fenestra o non, il essera activate. Iste "
-"preferentia pote obtener resultatos plus bon o plus mal que le nivello "
-"medie, dependente per le applicationes.</li>\n"
-"<li><em>Medie:</em> Prevention es habilitate.</li>\n"
-"<li><em>Alte:</em> Nove fenestras es activate solmente si necun fenestra es "
-"currentemente active o si los appertine a le application currentemente "
-"active. Iste  preferentia probabilemente non es usabile quando on non usa le "
-"politica de focus de mus.</li>\n"
-"<li><em>Extreme:</em> Omne fenestras debe esser explicitemente activate per "
-"le usator.</li>\n"
-"</ul></p>\n"
-"<p>Fenestras que es prevenite ex robar focus es marcate como demandante "
-"attention, que pro definition significa que lor entrata de barra de "
-"instrumento essera evidentiate. Isto pote esser modificate in le modulo de "
-"controlo de notificationes.</p>"
+"<html><head/><body><p>Iste option specifica como Kwin tentara prevenir "
+"furtos de foco non desiderate causate per le activation de nove fenestras. "
+"(Nota: iste characteristica non functiona con le politicas de foco  <span "
+"style=\" font-style:italic;\">Foco infra mus</span> o <span style=\" font-"
+"style:italic;\">Foco strictemente infra mus</span>.) </p><ul style=\"margin-"
+"top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-"
+"indent: 1;\"><li style=\" margin-top:12px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Necun:</span> Prevention es deactivate e nove "
+"fenestras sempre es activate.</li><li style=\" margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">Basse:</span> Prevention "
+"es habilitate; quando alcun fenestra non ha supporto per le mechanismo "
+"substanteand KWin non pote fidelmente decider si activar o non activar le "
+"fenestra, illoessera activated. Iste preferentia poterea haber exitos melior "
+"o pejor del medie nivello, dependente del applicationes.</li><li style=\" "
+"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Medie:"
+"</span> Prevention es habilitate.</li><li style=\" margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">Alte:</span> Npve "
+"fenestras deveni  activate solo si necun fenestra es currentemente active o "
+"si illos pertine al application currentemente active. Iste preferentia "
+"probabilemente snon es vermente usabile quando le politica de foco non es "
+"usate.</li><li style=\" margin-top:0px; margin-bottom:12px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"style:italic;\">Extreme:</span> Omnefenestra debe esser explicitemente "
+"activate per le usator.</li></ul><p>Fenestras que es impedite ab robar foco "
+"es marcate como attention demandante, que per definitione significa que lor "
+"ingresso de barra de carga essara evidentiate. Isto  pote esser modificate "
+"in le modulo de controlo notificationes .</p></body></html>"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
@@ -942,10 +924,9 @@ msgid "Mo&vement"
 msgstr "&Placiamento:"
 
 #: main.cpp:98
-#, fuzzy, kde-format
-#| msgid "Ad&vanced"
+#, kde-format
 msgid "Adva&nced"
-msgstr "A&vantiate"
+msgstr "Ava&ntiate"
 
 #: main.cpp:102
 #, kde-format
@@ -1217,7 +1198,7 @@ msgstr "Comportamento al pulsar <em>dextere</em> sur le button de maximisar."
 #: moving.ui:20
 #, kde-format
 msgid "Window &geometry:"
-msgstr ""
+msgstr "&Geometria de fenestra:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, geometryTipOn)
 #: moving.ui:30
@@ -1268,7 +1249,7 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgid " pixel"
 msgid " px"
-msgstr " pixel"
+msgstr "px"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, windowSnap)
 #: moving.ui:72
@@ -1333,21 +1314,16 @@ msgid "&Snap windows:"
 msgstr "Altiar fenestras"
 
 #: windows.cpp:172
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Click To Focus</b><br>\n"
-#| "A window becomes active when you click into it.<br><br>\n"
-#| "This behaviour is common on other operating systems and<br>\n"
-#| "likely what you want."
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus:</"
 "span> A window becomes active when you click into it. This behavior is "
 "common on other operating systems and likely what you want.</p></body></html>"
 msgstr ""
-"<b>Pulsa pro focalisar</b><br>\n"
-"Un fenestra deveni active quando tu pulsa sur ille.<br><br>\n"
-"Iste comportamento es commun sur altere system operative e<br>\n"
-"probabilmente es lo que tu vole."
+"<html><head/><body><p><span style=\" font-style:italic;\">Pulsa pro "
+"focalisar:</span> Un fenestra deveni active quando tu pulsa sur ille. Iste "
+"comportamento es commun con altere systemas operative (systemas operational) "
+"e probabilemente illo es lo que tu vole.</p></body></html>"
 
 #: windows.cpp:175
 #, fuzzy, kde-format

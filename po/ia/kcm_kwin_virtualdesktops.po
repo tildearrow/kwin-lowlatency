@@ -1,20 +1,20 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# g.sora <g.sora@tiscali.it>, 2010, 2011, 2013, 2014.
+# g.sora <g.sora@tiscali.it>, 2010, 2011, 2013, 2014, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-10-29 07:53+0100\n"
-"PO-Revision-Date: 2014-04-29 15:33+0200\n"
-"Last-Translator: G.Sora <g.sora@tiscali.it>\n"
-"Language-Team: Interlingua <kde-l10n-ia@kde.org>\n"
+"PO-Revision-Date: 2020-01-05 23:12+0100\n"
+"Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
+"Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -53,13 +53,13 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
-msgstr ""
+msgstr "Renomina"
 
 #: package/contents/ui/main.qml:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove"
-msgstr ""
+msgstr "Remove"
 
 #: package/contents/ui/main.qml:117
 #, kde-format
@@ -71,37 +71,35 @@ msgstr ""
 #: package/contents/ui/main.qml:131
 #, kde-format
 msgid "Row %1"
-msgstr ""
+msgstr "Rango %1"
 
 #: package/contents/ui/main.qml:144
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
-msgstr ""
+msgstr "Adde"
 
 #: package/contents/ui/main.qml:147
-#, fuzzy, kde-format
-#| msgid "Desktops"
+#, kde-format
 msgid "New Desktop"
-msgstr "Scriptorios"
+msgstr "Nove scriptorio"
 
 #: package/contents/ui/main.qml:161
 #, kde-format
 msgid "1 Row"
 msgid_plural "%1 Rows"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 Rango "
+msgstr[1] "%1 Rangos"
 
 #: package/contents/ui/main.qml:181
 #, kde-format
 msgid "Options:"
-msgstr ""
+msgstr "Optiones:"
 
 #: package/contents/ui/main.qml:183
-#, fuzzy, kde-format
-#| msgid "Desktop navigation wraps around"
+#, kde-format
 msgid "Navigation wraps around"
-msgstr "Inveloppamento (wrap around) de navigation de scriptorio"
+msgstr "Inveloppamento (wrap around) de navigation"
 
 #: package/contents/ui/main.qml:199
 #, kde-format
@@ -116,7 +114,7 @@ msgstr ""
 #: package/contents/ui/main.qml:258
 #, kde-format
 msgid "%1 ms"
-msgstr ""
+msgstr "%1ms"
 
 #: package/contents/ui/main.qml:278
 #, kde-format
@@ -124,7 +122,6 @@ msgid "Show desktop layout indicators"
 msgstr "Monstra indicatores de disposition de scriptorio"
 
 #: virtualdesktops.cpp:44
-#, fuzzy, kde-format
-#| msgid "Desktops"
+#, kde-format
 msgid "Virtual Desktops"
-msgstr "Scriptorios"
+msgstr "Scriptorios virtual"

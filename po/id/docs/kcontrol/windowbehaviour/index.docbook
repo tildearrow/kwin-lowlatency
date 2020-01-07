@@ -346,7 +346,7 @@
 <para
 >Memilih <guilabel
 >Maksimalkan</guilabel
-> menyebabkan &kde; memaksimalkan window kapan pun kamu klik-ganda pada bilah judul. Kamu bisa lebih lanjut memilih memaksimalkan window secara mendatar saja atau secara tegak saja.</para>
+> menyebabkan &kde; memaksimalkan window kapan pun kamu klik-ganda pada bilah judul. Kamu bisa lebih lanjut memilih memaksimalkan window secara mendatar saja atau secara menegak saja.</para>
 
 <para
 ><guilabel
@@ -454,7 +454,7 @@ Minimize, Shade, Close
 >Tombol Maksimalkan</guilabel
 ></title>
 <para
->Bagian ini memungkinkanmu untuk menentukan perilaku ketiga tombol mouse ke dalam tombol maksimalkan. Kamu memiliki pilihan antara tegak saja, mendatar saja atau kedua-duanya. </para>
+>Bagian ini memungkinkanmu untuk menentukan perilaku ketiga tombol mouse ke dalam tombol maksimalkan. Kamu memiliki pilihan antara menegak saja, mendatar saja atau kedua-duanya. </para>
 </sect3>
 
 </sect2>

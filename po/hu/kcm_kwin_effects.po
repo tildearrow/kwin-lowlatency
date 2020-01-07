@@ -1,36 +1,36 @@
-# Simon Depiets <sdepiets@gmail.com>, 2019.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kwin package.
+#
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-16 03:27+0200\n"
-"PO-Revision-Date: 2019-11-10 19:58+0800\n"
-"Last-Translator: Simon Depiets <sdepiets@gmail.com>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
-"Language: fr\n"
+"PO-Revision-Date: 2019-12-08 18:30+0100\n"
+"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 19.07.70\n"
-"X-Environment: kde\n"
-"X-Accelerator-Marker: &\n"
-"X-Text-Markup: kde4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Simon Depiets"
+msgstr "Kiszel Kristóf"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sdepiets@gmail.com"
+msgstr "ulysses@kubuntu.org"
 
 #: kcm.cpp:44
 #, kde-format
 msgid "Desktop Effects"
-msgstr "Effets de bureau"
+msgstr "Asztali effektusok"
 
 #: kcm.cpp:49
 #, kde-format
@@ -40,7 +40,7 @@ msgstr "Vlad Zagorodniy"
 #: kcm.cpp:87
 #, kde-format
 msgid "Download New Desktop Effects"
-msgstr "Télécharger de nouveaux effets de bureau"
+msgstr "Új asztali effektusok letöltése"
 
 #: package/contents/ui/Effect.qml:88
 #, kde-format
@@ -48,25 +48,25 @@ msgid ""
 "Author: %1\n"
 "License: %2"
 msgstr ""
-"Auteur : %1\n"
-"Licence : %2"
+"Szerző: %1\n"
+"Licenc: %2"
 
 #: package/contents/ui/Effect.qml:117
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show/Hide Video"
-msgstr "Afficher / Masquer la vidéo"
+msgstr "Videó megjelenítése/elrejtése"
 
 #: package/contents/ui/Effect.qml:124
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Configure..."
-msgstr "Configurer..."
+msgstr "Beállítás…"
 
 #: package/contents/ui/main.qml:29
 #, kde-format
 msgid "This module lets you configure desktop effects."
-msgstr "Ce module vous permet de configurer les effets du bureau."
+msgstr "Ebben a modulban állíthatja be az asztali effektusokat."
 
 #: package/contents/ui/main.qml:36
 #, kde-format
@@ -74,25 +74,24 @@ msgid ""
 "Hint: To find out or configure how to activate an effect, look at the "
 "effect's settings."
 msgstr ""
-"Remarque : pour trouver ou pour savoir comment configurer un effet, veuillez "
-"regarder dans les paramètres de l'effet."
+"Tipp: egy effekt aktiválásának konfigurálásához nézze meg annak beállításait."
 
 #: package/contents/ui/main.qml:56
 #, kde-format
 msgid "Configure Filter"
-msgstr "Configurer le filtre"
+msgstr "Szűrőbeállítás"
 
 #: package/contents/ui/main.qml:68
 #, kde-format
 msgid "Exclude unsupported effects"
-msgstr "Exclure les effets non pris en charge"
+msgstr "Nem támogatott effektusok kizárása"
 
 #: package/contents/ui/main.qml:76
 #, kde-format
 msgid "Exclude internal effects"
-msgstr "Exclure les effets internes"
+msgstr "Belső effektusok kizárása"
 
 #: package/contents/ui/main.qml:133
 #, kde-format
 msgid "Get New Desktop Effects..."
-msgstr "Obtenir de nouveaux effets de bureau..."
+msgstr "Új asztali effektusok letöltése…"

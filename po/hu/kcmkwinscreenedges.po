@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2012, 2014.
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2012, 2014, 2019.
 # Balázs Úr <urbalazs@gmail.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-08-05 03:05+0200\n"
-"PO-Revision-Date: 2014-08-26 14:14+0200\n"
+"PO-Revision-Date: 2019-12-08 18:37+0100\n"
 "Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 20.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -46,17 +46,17 @@ msgstr "Képernyő zárolása"
 #: main.cpp:193 touch.cpp:134
 #, kde-format
 msgid "Show KRunner"
-msgstr ""
+msgstr "KRunner megjelenítése"
 
 #: main.cpp:194 touch.cpp:135
 #, kde-format
 msgid "Activity Manager"
-msgstr ""
+msgstr "Aktivitáskezelő"
 
 #: main.cpp:195 touch.cpp:136
 #, kde-format
 msgid "Application Launcher"
-msgstr ""
+msgstr "Alkalmazásindító"
 
 #: main.cpp:199 touch.cpp:140
 #, kde-format
@@ -100,47 +100,43 @@ msgstr "Alternatív ablakváltás ki-be kapcsolása"
 
 #. i18n: ectx: property (text), widget (QLabel, infoLabel)
 #: main.ui:23
-#, fuzzy, kde-format
-#| msgid ""
-#| "To trigger an action push your mouse cursor against the edge of the "
-#| "screen in the action's direction."
+#, kde-format
 msgid ""
 "You can trigger an action by pushing the mouse cursor against the "
 "corresponding screen edge or corner."
 msgstr ""
-"Egy művelet kiváltásához tolja az egérkurzort a a művelet irányában lévő "
-"képernyőszélhez."
+"Egy művelet aktiválásához tolja az egérkurzort a megfelelő képernyőszélhez "
+"vagy sarokhoz."
 
 #. i18n: ectx: property (text), widget (QLabel, quickMaximizeLabel)
 #: main.ui:67
 #, kde-format
 msgid "&Maximize:"
-msgstr ""
+msgstr "&Maximalizálás:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, quickMaximizeBox)
 #: main.ui:77
 #, kde-format
 msgid "Windows dragged to top edge"
-msgstr ""
+msgstr "Az ablakot a felső élhez húzták"
 
 #. i18n: ectx: property (text), widget (QLabel, quickTileLabel)
 #: main.ui:84
 #, kde-format
 msgid "&Tile:"
-msgstr ""
+msgstr "M&ozaik:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, quickTileBox)
 #: main.ui:94
-#, fuzzy, kde-format
-#| msgid "Tile windows by dragging them to the side of the screen"
+#, kde-format
 msgid "Windows dragged to left or right edge"
-msgstr "Ablakok mozaikozása a képernyő oldalához húzással"
+msgstr "Az ablakot a bal vagy jobb oldali élhez húzták"
 
 #. i18n: ectx: property (text), widget (QLabel, electricBorderCornerRatioLabel)
 #: main.ui:101
 #, kde-format
 msgid "Trigger &quarter tiling in:"
-msgstr ""
+msgstr "&Negyedméretű csempe aktiválása:"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, electricBorderCornerRatioSpin)
 #: main.ui:116
@@ -152,7 +148,7 @@ msgstr "%"
 #: main.ui:119
 #, kde-format
 msgid "Outer "
-msgstr ""
+msgstr "A külső "
 
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #: main.ui:135
@@ -229,13 +225,8 @@ msgstr "&Újraaktiválási késleltetés:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #: touch.ui:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "To trigger an action push your mouse cursor against the edge of the "
-#| "screen in the action's direction."
+#, kde-format
 msgid ""
 "You can trigger an action by swiping from the screen edge towards the center "
 "of the screen."
-msgstr ""
-"Egy művelet kiváltásához tolja az egérkurzort a a művelet irányában lévő "
-"képernyőszélhez."
+msgstr "Egy művelet kiváltásához pöccintsen a képernyő szélétől a közepe felé."

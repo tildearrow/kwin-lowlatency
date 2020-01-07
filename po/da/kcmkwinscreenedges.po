@@ -1,20 +1,20 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Martin Schlander <mschlander@opensuse.org>, 2009, 2010, 2012, 2013, 2014, 2016, 2017, 2018.
+# Martin Schlander <mschlander@opensuse.org>, 2009, 2010, 2012, 2013, 2014, 2016, 2017, 2018, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinscreenedges\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-08-05 03:05+0200\n"
-"PO-Revision-Date: 2018-07-12 10:27+0100\n"
+"PO-Revision-Date: 2020-01-05 15:39+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 18.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -45,7 +45,7 @@ msgstr "Lås skærmen"
 #: main.cpp:193 touch.cpp:134
 #, kde-format
 msgid "Show KRunner"
-msgstr ""
+msgstr "Vis KRunner"
 
 #: main.cpp:194 touch.cpp:135
 #, kde-format
@@ -99,50 +99,43 @@ msgstr "Slå alternativt vindueskift til/fra"
 
 #. i18n: ectx: property (text), widget (QLabel, infoLabel)
 #: main.ui:23
-#, fuzzy, kde-format
-#| msgid ""
-#| "Trigger an action by pushing the mouse cursor against the corresponding "
-#| "screen edge or corner"
+#, kde-format
 msgid ""
 "You can trigger an action by pushing the mouse cursor against the "
 "corresponding screen edge or corner."
 msgstr ""
-"Udløs en handling ved at presse musemarkøren mod pågældende kant eller "
-"hjørne af skærmen"
+"Du kan udløse en handling ved at presse musemarkøren mod pågældende kant "
+"eller hjørne af skærmen"
 
 #. i18n: ectx: property (text), widget (QLabel, quickMaximizeLabel)
 #: main.ui:67
 #, kde-format
 msgid "&Maximize:"
-msgstr ""
+msgstr "&Maksimér:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, quickMaximizeBox)
 #: main.ui:77
 #, kde-format
 msgid "Windows dragged to top edge"
-msgstr ""
+msgstr "Vinduer der trækkes til topkanten"
 
 #. i18n: ectx: property (text), widget (QLabel, quickTileLabel)
 #: main.ui:84
 #, kde-format
 msgid "&Tile:"
-msgstr ""
+msgstr "&Fliselæg:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, quickTileBox)
 #: main.ui:94
-#, fuzzy, kde-format
-#| msgid ""
-#| "Tile windows by dragging them to the left or right edges of the screen"
+#, kde-format
 msgid "Windows dragged to left or right edge"
-msgstr ""
-"Udlæg vinduer som fliser ved at trække dem højre eller venstre kant af "
-"skærmens"
+msgstr "Vinduer der trækkes til venstre eller højre kant"
 
 #. i18n: ectx: property (text), widget (QLabel, electricBorderCornerRatioLabel)
 #: main.ui:101
 #, kde-format
 msgid "Trigger &quarter tiling in:"
-msgstr ""
+msgstr "Udløs kvart fliseudlægning i:"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, electricBorderCornerRatioSpin)
 #: main.ui:116
@@ -154,7 +147,7 @@ msgstr "%"
 #: main.ui:119
 #, kde-format
 msgid "Outer "
-msgstr ""
+msgstr "Ydre"
 
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #: main.ui:135
@@ -235,12 +228,10 @@ msgstr "Forsinkelse på &genaktivering:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #: touch.ui:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Trigger an action by swiping from the screen edge towards the center of "
-#| "the screen"
+#, kde-format
 msgid ""
 "You can trigger an action by swiping from the screen edge towards the center "
 "of the screen."
 msgstr ""
-"Udløs en handling ved at stryge fra kanten af skærmen mod skærmens midte"
+"Du kan udløse en handling ved at stryge fra kanten af skærmen mod skærmens "
+"midte"

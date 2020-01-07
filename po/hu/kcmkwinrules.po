@@ -1,4 +1,4 @@
-# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2012.
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2012, 2019.
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013, 2014.
 # Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017.
 msgid ""
@@ -6,15 +6,15 @@ msgstr ""
 "Project-Id-Version: KDE 4.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-17 03:28+0200\n"
-"PO-Revision-Date: 2017-02-14 22:59+0100\n"
-"Last-Translator: Kiszel Kristóf <kiszel.kristof@gmail.com>\n"
+"PO-Revision-Date: 2019-12-08 18:37+0100\n"
+"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 20.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -277,10 +277,9 @@ msgid "KWin helper utility"
 msgstr "KWin-segédprogram"
 
 #: main.cpp:249
-#, fuzzy, kde-format
-#| msgid "WId of the window for special window settings."
+#, kde-format
 msgid "KWin id of the window for special window settings."
-msgstr "A beállítandó ablak azonosítója."
+msgstr "A beállítandó ablak KWin azonosítója."
 
 #: main.cpp:250
 #, kde-format
@@ -295,16 +294,14 @@ msgid "This helper utility is not supposed to be called directly."
 msgstr "Ezt a segédprogramot nem közvetlenül kell elindítani."
 
 #: ruleslist.cpp:152
-#, fuzzy, kde-format
-#| msgid "Export Rule"
+#, kde-format
 msgid "Export Rules"
-msgstr "Szabály exportálása"
+msgstr "Szabályok exportálása"
 
 #: ruleslist.cpp:153 ruleslist.cpp:165
-#, fuzzy, kde-format
-#| msgid "KWin Rule (*.kwinrule)"
+#, kde-format
 msgid "KWin Rules (*.kwinrule)"
-msgstr "KWin szabály (*.kwinrule)"
+msgstr "KWin szabályok (*.kwinrule)"
 
 #: ruleslist.cpp:164
 #, kde-format
@@ -1237,6 +1234,11 @@ msgid ""
 "Otherwise it's interleaved with the stealing prevention\n"
 "assigned to the window that wants the focus."
 msgstr ""
+"Ez vezérli a jelenleg aktív ablak fókuszvédelmét.\n"
+"A Nincs mindig átadja a fókuszt,\n"
+"A Rendkívüli mindig megtartja.\n"
+"Egyébként összeadódik a fókuszt kérp ablakhoz rendelt\n"
+"fókuszvédelemmel."
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_fpplevel)
 #: ruleswidgetbase.ui:2232
@@ -1306,13 +1308,13 @@ msgstr "Ablak&típus"
 #: ruleswidgetbase.ui:2507
 #, kde-format
 msgid "Desktop file name"
-msgstr ""
+msgstr "Asztali fájl neve"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, desktopfile)
 #: ruleswidgetbase.ui:2557
 #, kde-format
 msgid "org.kde.kwin"
-msgstr ""
+msgstr "org.kde.kwin"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_blockcompositing)
 #: ruleswidgetbase.ui:2571

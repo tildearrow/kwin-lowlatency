@@ -1,7 +1,7 @@
 # Copyright (C) 2010 Free Software Foundation, Inc.
 #
 # Tamas Szanto <tszanto@interware.hu>, 2001.
-# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012, 2014, 2015.
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012, 2014, 2015, 2019.
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013, 2014.
 # Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017, 2018.
 msgid ""
@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-10-24 08:00+0200\n"
-"PO-Revision-Date: 2018-10-23 19:35+0200\n"
-"Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
+"PO-Revision-Date: 2019-12-08 18:31+0100\n"
+"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 20.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -80,26 +80,24 @@ msgid "Keep above"
 msgstr "Mindig felül"
 
 #: kcm.cpp:95
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgid "Window Decorations"
-msgstr "Új dekorációk letöltése…"
+msgstr "Ablakdekorációk"
 
 #: kcm.cpp:99
 #, kde-format
 msgid "Valerio Pilo"
-msgstr ""
+msgstr "Valerio Pilo"
 
 #: kcm.cpp:100
 #, kde-format
 msgid "Author"
-msgstr ""
+msgstr "Szerző"
 
 #: kcm.cpp:138
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgid "Download New Window Decorations"
-msgstr "Új dekorációk letöltése…"
+msgstr "Új ablakdekorációk letöltése"
 
 #: package/contents/ui/Buttons.qml:85
 #, kde-format
@@ -107,10 +105,9 @@ msgid "Titlebar"
 msgstr "Címsor"
 
 #: package/contents/ui/Buttons.qml:224
-#, fuzzy, kde-format
-#| msgid "Drop here to remove button"
+#, kde-format
 msgid "Drop button here to remove it"
-msgstr "Ejtse ide a gomb eltávolításához"
+msgstr "Ejtse ide a gombot az eltávolításához"
 
 #: package/contents/ui/Buttons.qml:241
 #, kde-format
@@ -120,126 +117,100 @@ msgstr "Húzza a gombokat a itt és a címsor között"
 #: package/contents/ui/main.qml:27
 #, kde-format
 msgid "This module lets you configure the window decorations."
-msgstr ""
+msgstr "Ebben a modulban állíthatja be az ablakdekorációkat."
 
 #: package/contents/ui/main.qml:62
-#, fuzzy, kde-format
-#| msgid "Theme"
+#, kde-format
 msgctxt "tab label"
 msgid "Theme"
 msgstr "Téma"
 
 #: package/contents/ui/main.qml:66
-#, fuzzy, kde-format
-#| msgid "Titlebar"
+#, kde-format
 msgctxt "tab label"
 msgid "Titlebar Buttons"
-msgstr "Címsor"
+msgstr "Címsorgombok"
 
 #: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
-msgstr ""
+msgstr "Téma szegélyméretének használata"
 
 #: package/contents/ui/main.qml:121
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgctxt "button text"
 msgid "Get New Window Decorations..."
-msgstr "Új dekorációk letöltése…"
+msgstr "Új ablakdekorációk letöltése…"
 
 #: package/contents/ui/main.qml:137
-#, fuzzy, kde-format
-#| msgid "Close windows by double clicking the menu button"
+#, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "Az ablakok bezárhatók legyenek a menügombra történő dupla kattintással"
 
 #: package/contents/ui/main.qml:149
-#, fuzzy, kde-format
-#| msgid ""
-#| "Close by double clicking:\n"
-#| " To open the menu, keep the button pressed until it appears."
+#, kde-format
 msgctxt "popup tip"
 msgid ""
 "Close by double clicking: Keep the window's Menu button pressed until it "
 "appears."
 msgstr ""
-"Bezárás dupla kattintással:\n"
-" A menü megnyitásához tartsa nyomva a gombot, amíg megjelenik."
+"Bezárás dupla kattintással: A menü megnyitásához tartsa nyomva az ablak menü "
+"gombját, amíg megjelenik."
 
 #: package/contents/ui/main.qml:156
-#, fuzzy, kde-format
-#| msgid "&Show window button tooltips"
+#, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
-msgstr "&Tippek megjelenítése az ablakkezelő gomboknál"
+msgstr "Tippek megjelenítése a címsor gombjainál"
 
 #: package/contents/ui/Themes.qml:97
 #, kde-format
 msgid "Edit %1 Theme"
-msgstr ""
+msgstr "A(z) %1 téma szerkesztése"
 
 #: utils.cpp:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "No Borders"
+#, kde-format
 msgid "No Borders"
 msgstr "Nincsenek szegélyek"
 
 #: utils.cpp:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "No Side Borders"
+#, kde-format
 msgid "No Side Borders"
 msgstr "Nincsenek oldalszegélyek"
 
 #: utils.cpp:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Tiny"
+#, kde-format
 msgid "Tiny"
-msgstr "Kicsi"
+msgstr "Apró"
 
 #: utils.cpp:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Normal"
+#, kde-format
 msgid "Normal"
 msgstr "Normál"
 
 #: utils.cpp:42
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Large"
+#, kde-format
 msgid "Large"
 msgstr "Nagy"
 
 #: utils.cpp:43
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Very Large"
+#, kde-format
 msgid "Very Large"
 msgstr "Nagyon nagy"
 
 #: utils.cpp:44
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Huge"
+#, kde-format
 msgid "Huge"
 msgstr "Hatalmas"
 
 #: utils.cpp:45
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Very Huge"
+#, kde-format
 msgid "Very Huge"
 msgstr "Óriási"
 
 #: utils.cpp:46
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Oversized"
+#, kde-format
 msgid "Oversized"
 msgstr "Túlméretezett"

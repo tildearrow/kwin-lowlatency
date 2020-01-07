@@ -18,7 +18,7 @@ msgstr ""
 "POT-Creation-Date: 2019-09-27 07:54+0200\n"
 "PO-Revision-Date: 2019-09-22 18:50+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
+"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -755,7 +755,7 @@ msgstr "工作"
 #: debug_console.cpp:1096
 #, kde-format
 msgid "X11 Client Windows"
-msgstr "X11 客戶端視窗"
+msgstr "X11 用戶端視窗"
 
 #: debug_console.cpp:1098
 #, kde-format

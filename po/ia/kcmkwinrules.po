@@ -1,20 +1,20 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# g.sora <g.sora@tiscali.it>, 2010, 2011, 2012, 2013.
+# g.sora <g.sora@tiscali.it>, 2010, 2011, 2012, 2013, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-17 03:28+0200\n"
-"PO-Revision-Date: 2013-11-27 14:22+0100\n"
-"Last-Translator: G.Sora <g.sora@tiscali.it>\n"
-"Language-Team: Interlingua <kde-l10n-ia@kde.org>\n"
+"PO-Revision-Date: 2020-01-06 19:16+0100\n"
+"Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
+"Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -278,10 +278,9 @@ msgid "KWin helper utility"
 msgstr "Utilitate de adjuta de KWin"
 
 #: main.cpp:249
-#, fuzzy, kde-format
-#| msgid "WId of the window for special window settings."
+#, kde-format
 msgid "KWin id of the window for special window settings."
-msgstr "WId del fenestra pro preferentias special de fenestra."
+msgstr "Id del fenestra de KWin  pro preferentias special de fenestra."
 
 #: main.cpp:250
 #, kde-format
@@ -295,16 +294,14 @@ msgstr ""
 "Iste utilitate de adjuta il non es supponite de esser appellate directemente"
 
 #: ruleslist.cpp:152
-#, fuzzy, kde-format
-#| msgid "Export Rule"
+#, kde-format
 msgid "Export Rules"
 msgstr "Regulas de exportation"
 
 #: ruleslist.cpp:153 ruleslist.cpp:165
-#, fuzzy, kde-format
-#| msgid "KWin Rule (*.kwinrule)"
+#, kde-format
 msgid "KWin Rules (*.kwinrule)"
-msgstr "Regula de KWin (*.kwinrule)"
+msgstr "Regula sde KWin (*.kwinrule)"
 
 #: ruleslist.cpp:164
 #, kde-format
@@ -1246,10 +1243,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_fpplevel)
 #: ruleswidgetbase.ui:2232
-#, fuzzy, kde-format
-#| msgid "&Focus stealing prevention"
+#, kde-format
 msgid "Focus protection"
-msgstr "Prevention de robar de &foco"
+msgstr "Protection de foco"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_acceptfocus)
 #: ruleswidgetbase.ui:2295
@@ -1313,13 +1309,13 @@ msgstr "T&ypo de fenestra"
 #: ruleswidgetbase.ui:2507
 #, kde-format
 msgid "Desktop file name"
-msgstr ""
+msgstr "Nomine de file de scriptorio"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, desktopfile)
 #: ruleswidgetbase.ui:2557
 #, kde-format
 msgid "org.kde.kwin"
-msgstr ""
+msgstr "org.kde.kwin"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_blockcompositing)
 #: ruleswidgetbase.ui:2571
@@ -1330,11 +1326,9 @@ msgstr "Bloca composition"
 #: yesnobox.h:35
 #, kde-format
 msgid "Yes"
-msgstr ""
+msgstr "Si"
 
 #: yesnobox.h:36
-#, fuzzy, kde-format
-#| msgctxt "no focus stealing prevention"
-#| msgid "None"
+#, kde-format
 msgid "No"
-msgstr "Nulle"
+msgstr "No"
