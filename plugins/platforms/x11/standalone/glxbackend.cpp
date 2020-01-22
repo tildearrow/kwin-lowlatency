@@ -229,6 +229,11 @@ void GlxBackend::init()
         useWaitSync=true; // issue #17
       }
     }
+    // AMDGPU-PRO/Catalyst. SGI VBlank thingy.
+    if (GLPlatform::instance()->driver() == Driver_Catalyst) {
+      useWaitSync=true;
+      hopeBest=false;
+    }
     // force VSync mechanism code
     switch (options->vsyncMechanism()) {
       case 1:
@@ -237,6 +242,7 @@ void GlxBackend::init()
         break;
       case 2:
         useWaitSync=true;
+        hopeBest=false;
         break;
       case 3:
         useWaitSync=false;

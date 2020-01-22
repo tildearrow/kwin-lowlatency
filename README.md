@@ -182,9 +182,9 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
   - Automatic: auto-detect the VSync mechanism. **default, and recommended.**
   - None and just hope for the best:
     - NVIDIA drivers since version 435 wait for VSync on glXSwapBuffers if `__GL_MaxFramesAllowed` is set to 1.
-    - this may also work on AMDGPU-PRO but I am not sure.
     - **other drivers may cause latency problems.**
   - SGI video sync: use `GLX_SGI_video_sync` to wait for VBlank.
+    - default for AMDGPU-PRO.
     - not recommended on recent Mesa drivers. I've had hangs using it.
     - not recommended on NVIDIA drivers 435+. causes frame rate halving. see above.
   - glFinish: use `glFinish` to force waiting for VBlank.
