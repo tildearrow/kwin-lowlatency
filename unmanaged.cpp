@@ -227,16 +227,18 @@ bool Unmanaged::shouldUnredirect() const
         return false;
     // it must cover whole display or one xinerama screen, and be the topmost there
     const int desktop = VirtualDesktopManager::self()->current();
-    if (geometry() == workspace()->clientArea(FullArea, geometry().center(), desktop)
-            || geometry() == workspace()->clientArea(ScreenArea, geometry().center(), desktop)) {
-        ToplevelList stacking = workspace()->xStackingOrder();
+    // TODO: this mess o-o
+    if (frameGeometry() == workspace()->clientArea(FullArea, frameGeometry().center(), desktop)
+            || frameGeometry() == workspace()->clientArea(ScreenArea, frameGeometry().center(), desktop)) {
+        QList<Toplevel*> stacking = workspace()->xStackingOrder();
         for (int pos = stacking.count() - 1;
                 pos >= 0;
                 --pos) {
             Toplevel* c = stacking.at(pos);
             if (c == this)   // is not covered by any other window, ok to unredirect
                 return true;
-            if (c->geometry().intersects(geometry()))
+            // TODO: check if this works
+            if (c->frameGeometry().intersects(bufferGeometry()))
                 return false;
         }
         abort();

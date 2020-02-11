@@ -5016,7 +5016,7 @@ bool X11Client::shouldUnredirect() const
 {
     if (isActiveFullScreen()) {
         //if (!rules()->checkAllowUnredirect(true)) return false;
-        ToplevelList stacking = workspace()->xStackingOrder();
+        QList<Toplevel*> stacking = workspace()->xStackingOrder();
         for (int pos = stacking.count() - 1;
                 pos >= 0;
                 --pos) {
@@ -5025,9 +5025,9 @@ bool X11Client::shouldUnredirect() const
                 //printf("yes.\n");
                 return true;
             }
-            if (c->geometry().intersects(geometry())) {
+            if (c->frameGeometry().intersects(frameGeometry())) {
                 // check whether this is an invisible floating icon at the top left corner
-                if (c->geometry()==QRect(0,0,32,32)) {
+                if (c->frameGeometry()==QRect(0,0,32,32)) {
                   //printf("yes via hack.\n");
                   return true;
                 }

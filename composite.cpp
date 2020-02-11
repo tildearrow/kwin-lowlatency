@@ -937,7 +937,7 @@ void Compositor::delayedCheckUnredirect()
         return;
     QList<Toplevel*> list;
     bool changed = forceUnredirectCheck;
-    foreach (Client * c, Workspace::self()->clientList())
+    foreach (X11Client * c, Workspace::self()->clientList())
         list.append(c);
     foreach (Unmanaged * c, Workspace::self()->unmanagedList())
         list.append(c);
@@ -957,7 +957,7 @@ void Compositor::delayedCheckUnredirect()
     QRegion reg(0, 0, s.width(), s.height());
     foreach (Toplevel * c, list) {
         if (c->unredirected())
-            reg -= c->geometry();
+            reg -= c->frameGeometry();
     }
     m_scene->overlayWindow()->setShape(reg);
     addRepaint(reg);
