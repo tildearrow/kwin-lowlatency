@@ -653,6 +653,7 @@ void EffectsHandlerImpl::setActiveFullScreenEffect(Effect* e)
     }
     const bool activeChanged = (e == nullptr || fullscreen_effect == nullptr);
     fullscreen_effect = e;
+    m_compositor->checkUnredirect();
     emit activeFullScreenEffectChanged();
     if (activeChanged) {
         emit hasActiveFullScreenEffectChanged();

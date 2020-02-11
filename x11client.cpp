@@ -1650,6 +1650,9 @@ void X11Client::internalShow()
         m_decoInputExtent.map();
         updateHiddenPreview();
     }
+    if (Compositor::self()->isActive()) {
+        Compositor::self()->checkUnredirect();
+    }
     emit windowShown(this);
 }
 
@@ -1665,6 +1668,9 @@ void X11Client::internalHide()
         updateHiddenPreview();
     addWorkspaceRepaint(visibleRect());
     workspace()->clientHidden(this);
+    if (Compositor::self()->isActive()) {
+        Compositor::self()->checkUnredirect();
+    }
     emit windowHidden(this);
 }
 
@@ -1683,6 +1689,9 @@ void X11Client::internalKeep()
     updateHiddenPreview();
     addWorkspaceRepaint(visibleRect());
     workspace()->clientHidden(this);
+    if (Compositor::self()->isActive()) {
+        Compositor::self()->checkUnredirect();
+    }
 }
 
 /**
@@ -2907,6 +2916,10 @@ void X11Client::move(int x, int y, ForceGeometry_t force)
     updateWindowRules(Rules::Position);
     screens()->setCurrent(this);
     workspace()->updateStackingOrder();
+    if (Compositor::self()->isActive()) {
+        // TODO: there was a todo here but I don't know
+        Compositor::self()->checkUnredirect();
+    }
     // client itself is not damaged
     addRepaintDuringGeometryUpdates();
     updateGeometryBeforeUpdateBlocking();
@@ -4997,5 +5010,36 @@ void X11Client::updateWindowPixmap()
         effectWindow()->sceneWindow()->updatePixmap();
     }
 }
+
+// TODO THIS
+bool X11Client::shouldUnredirect() const
+{
+    if (isActiveFullScreen()) {
+        //if (!rules()->checkAllowUnredirect(true)) return false;
+        ToplevelList stacking = workspace()->xStackingOrder();
+        for (int pos = stacking.count() - 1;
+                pos >= 0;
+                --pos) {
+            Toplevel* c = stacking.at(pos);
+            if (c == this) {   // is not covered by any other window, ok to unredirect
+                //printf("yes.\n");
+                return true;
+            }
+            if (c->geometry().intersects(geometry())) {
+                // check whether this is an invisible floating icon at the top left corner
+                if (c->geometry()==QRect(0,0,32,32)) {
+                  //printf("yes via hack.\n");
+                  return true;
+                }
+                //printf("no. this: %d %d %d %d. other: %d %d %d %d.\n",geometry().x(),geometry().y(),geometry().width(),geometry().height(),c->geometry().x(),c->geometry().y(),c->geometry().width(),c->geometry().height());
+                return false;
+            }
+        }
+        //printf("ABORT\n");
+        abort();
+    }
+    return false;
+}
+
 
 } // namespace

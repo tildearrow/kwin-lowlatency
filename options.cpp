@@ -74,8 +74,9 @@ int Options::currentRefreshRate()
     }
 
     // 0Hz or less is invalid, so we fallback to a default rate
+    // I play Turrican. ok? so I need my 50Hz back!
     if (rate <= 0)
-        rate = 60; // and not shitty 50Hz for sure! *grrr*
+        rate = 300; // and not shitty insults to my 50Hz for sure! *grrr*
 
     // QTimer gives us 1msec (1000Hz) at best, so we ignore anything higher;
     // however, additional throttling prevents very high rates from taking place anyway
@@ -109,6 +110,7 @@ Options::Options(QObject *parent)
     , m_compositingMode(Options::defaultCompositingMode())
     , m_useCompositing(Options::defaultUseCompositing())
     , m_hiddenPreviews(Options::defaultHiddenPreviews())
+    , m_unredirectFullscreen(Options::defaultUnredirectFullscreen())
     , m_glSmoothScale(Options::defaultGlSmoothScale())
     , m_xrenderSmoothScale(Options::defaultXrenderSmoothScale())
     , m_maxFpsInterval(Options::defaultMaxFpsInterval())
@@ -120,6 +122,11 @@ Options::Options(QObject *parent)
     , m_glPreferBufferSwap(Options::defaultGlPreferBufferSwap())
     , m_glPlatformInterface(Options::defaultGlPlatformInterface())
     , m_windowsBlockCompositing(true)
+    , m_animationCurve(Options::defaultAnimationCurve())
+    , m_latencyControl(Options::defaultLatencyControl())
+    , m_maxLatency(Options::defaultMaxLatency())
+    , m_minLatency(Options::defaultMinLatency())
+    , m_vsyncMechanism(Options::defaultVsyncMechanism())
     , OpTitlebarDblClick(Options::defaultOperationTitlebarDblClick())
     , CmdActiveTitlebar1(Options::defaultCommandActiveTitlebar1())
     , CmdActiveTitlebar2(Options::defaultCommandActiveTitlebar2())
@@ -589,6 +596,20 @@ void Options::setHiddenPreviews(int hiddenPreviews)
     emit hiddenPreviewsChanged();
 }
 
+void Options::setUnredirectFullscreen(bool unredirectFullscreen)
+{
+    //if (GLPlatform::instance()->driver() == Driver_Intel)
+        //unredirectFullscreen = false; // bug #252817
+    if (m_unredirectFullscreen == unredirectFullscreen) {
+        return;
+    }
+    //if (GLPlatform::instance()->driver() == Driver_Intel) { // write back the value
+        //KConfigGroup(m_settings->config(), "Compositing").writeEntry("UnredirectFullscreen", false);
+    //}
+    m_unredirectFullscreen = unredirectFullscreen;
+    emit unredirectFullscreenChanged();
+}
+
 void Options::setGlSmoothScale(int glSmoothScale)
 {
     if (m_glSmoothScale == glSmoothScale) {
@@ -668,6 +689,46 @@ void Options::setWindowsBlockCompositing(bool value)
     }
     m_windowsBlockCompositing = value;
     emit windowsBlockCompositingChanged();
+}
+
+void Options::setAnimationCurve(int val) {
+  if (m_animationCurve == val) {
+    return;
+  }
+  m_animationCurve = val;
+  emit animationCurveChanged();
+}
+
+void Options::setLatencyControl(int val) {
+  if (m_latencyControl == val) {
+    return;
+  }
+  m_latencyControl = val;
+  emit latencyControlChanged();
+}
+
+void Options::setMaxLatency(int val) {
+  if (m_maxLatency == val) {
+    return;
+  }
+  m_maxLatency = val;
+  emit maxLatencyChanged();
+}
+
+void Options::setMinLatency(int val) {
+  if (m_minLatency == val) {
+    return;
+  }
+  m_minLatency = val;
+  emit minLatencyChanged();
+}
+
+void Options::setVsyncMechanism(int val) {
+  if (m_vsyncMechanism == val) {
+    return;
+  }
+  m_vsyncMechanism = val;
+  emit vsyncMechanismChanged();
 }
 
 void Options::setGlPreferBufferSwap(char glPreferBufferSwap)
@@ -839,6 +900,11 @@ void Options::syncFromKcfgc()
     setElectricBorderCornerRatio(m_settings->electricBorderCornerRatio());
     setWindowsBlockCompositing(m_settings->windowsBlockCompositing());
 
+    setAnimationCurve(m_settings->animationCurve());
+    setLatencyControl(m_settings->latencyControl());
+    setMaxLatency(m_settings->maxLatency());
+    setMinLatency(m_settings->minLatency());
+    setVsyncMechanism(m_settings->vSyncMechanism());
 }
 
 bool Options::loadCompositingConfig (bool force)
@@ -938,6 +1004,8 @@ void Options::reloadCompositingSettings(bool force)
     else if (hps == 6)
         previews = HiddenPreviewsAlways;
     setHiddenPreviews(previews);
+    
+    setUnredirectFullscreen(config.readEntry("UnredirectFullscreen",Options::defaultUnredirectFullscreen()));
 
     auto interfaceToKey = [](OpenGLPlatformInterface interface) {
         switch (interface) {
@@ -1087,6 +1155,11 @@ QStringList Options::modifierOnlyDBusShortcut(Qt::KeyboardModifier mod) const
 bool Options::isUseCompositing() const
 {
     return m_useCompositing || kwinApp()->platform()->requiresCompositing();
+}
+
+bool Options::isUnredirectFullscreen() const
+{
+    return m_unredirectFullscreen && !kwinApp()->platform()->requiresCompositing();
 }
 
 } // namespace

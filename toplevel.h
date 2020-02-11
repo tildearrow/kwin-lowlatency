@@ -447,6 +447,9 @@ public:
     bool hasAlpha() const;
     virtual bool setupCompositing();
     virtual void finishCompositing(ReleaseReason releaseReason = ReleaseReason::Release);
+    bool updateUnredirectedState();
+    bool unredirected() const;
+    void suspendUnredirect(bool suspend);
     Q_INVOKABLE void addRepaint(const QRect& r);
     Q_INVOKABLE void addRepaint(const QRegion& r);
     Q_INVOKABLE void addRepaint(int x, int y, int w, int h);
@@ -697,6 +700,7 @@ protected:
     void disownDataPassedToDeleted();
     friend QDebug& operator<<(QDebug& stream, const Toplevel*);
     void deleteEffectWindow();
+    virtual bool shouldUnredirect() const = 0;
     void setDepth(int depth);
     QRect m_frameGeometry;
     xcb_visualid_t m_visual;
@@ -726,6 +730,8 @@ private:
     QByteArray resource_class;
     ClientMachine *m_clientMachine;
     xcb_window_t m_wmClientLeader;
+    bool unredirect;
+    bool unredirectSuspend; // when unredirected, but pixmap is needed temporarily
     bool m_damageReplyPending;
     QRegion opaque_region;
     xcb_xfixes_fetch_region_cookie_t m_regionCookie;
@@ -977,6 +983,11 @@ inline QByteArray Toplevel::resourceName() const
 inline QByteArray Toplevel::resourceClass() const
 {
     return resource_class; // it is always lowercase
+}
+
+inline bool Toplevel::unredirected() const
+{
+    return unredirect;
 }
 
 inline const ClientMachine *Toplevel::clientMachine() const

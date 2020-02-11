@@ -2076,6 +2076,7 @@ DecorationShadowTextureCache &DecorationShadowTextureCache::instance()
     return s_instance;
 }
 
+// the crash is here but I am not sure what causes it.
 DecorationShadowTextureCache::~DecorationShadowTextureCache()
 {
     Q_ASSERT(m_cache.isEmpty());

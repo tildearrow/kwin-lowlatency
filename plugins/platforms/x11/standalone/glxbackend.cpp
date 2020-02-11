@@ -208,6 +208,57 @@ void GlxBackend::init()
     // Initialize OpenGL
     GLPlatform *glPlatform = GLPlatform::instance();
     glPlatform->detect(GlxPlatformInterface);
+    
+    //if (GLPlatform::instance()->driver() == Driver_Intel)
+        //options->setUnredirectFullscreen(false); // bug #252817
+    // HACK! please replace with a better solution soon
+    if (GLPlatform::instance()->driver() == Driver_Intel) {
+      useHorribleHack=true; // issue #13
+    }
+    // NVIDIA doesn't freeze on that wait sync function
+    if (GLPlatform::instance()->driver() == Driver_NVidia) {
+      int nvidiaVerMaj=0;
+      int nvidiaVerMin=0;
+      // version 435 blocks without having to wait for sync, issues #36, #39
+      // if the latency increases (it hasn't been the case so far), please open
+      // another bug report. thanks.
+      sscanf(GLPlatform::instance()->glVersionString().data(),"%*s NVIDIA %d.%d",&nvidiaVerMaj,&nvidiaVerMin);
+      if (nvidiaVerMaj>=435) {
+        // we don't need to wait for sync anymore. whoop!
+        useWaitSync=false;
+        hopeBest=true;
+      } else {
+        // for old or unknown NVIDIA driver
+        useWaitSync=true; // issue #17
+      }
+    }
+    // AMDGPU-PRO/Catalyst. SGI VBlank thingy.
+    if (GLPlatform::instance()->driver() == Driver_Catalyst) {
+      useWaitSync=true;
+      hopeBest=false;
+    }
+    // force VSync mechanism code
+    switch (options->vsyncMechanism()) {
+      case 1:
+        useWaitSync=false;
+        hopeBest=true;
+        break;
+      case 2:
+        useWaitSync=true;
+        hopeBest=false;
+        break;
+      case 3:
+        useWaitSync=false;
+        hopeBest=false;
+        break;
+      case 4:
+        useWaitSync=true;
+        useHorribleHack=true;
+        break;
+      default:
+        break;
+    }
+    
     options->setGlPreferBufferSwap(options->glPreferBufferSwap()); // resolve autosetting
     if (options->glPreferBufferSwap() == Options::AutoSwapStrategy)
         options->setGlPreferBufferSwap('e'); // for unknown drivers - should not happen
@@ -247,24 +298,21 @@ void GlxBackend::init()
     const bool wantSync = options->glPreferBufferSwap() != Options::NoSwapEncourage;
     if (wantSync && glXIsDirect(display(), ctx)) {
         if (haveSwapInterval) { // glXSwapInterval is preferred being more reliable
-            setSwapInterval(1);
-            setSyncsToVBlank(true);
-            const QByteArray tripleBuffer = qgetenv("KWIN_TRIPLE_BUFFER");
-            if (!tripleBuffer.isEmpty()) {
-                setBlocksForRetrace(qstrcmp(tripleBuffer, "0") == 0);
-                gs_tripleBufferUndetected = false;
-            }
-            gs_tripleBufferNeedsDetection = gs_tripleBufferUndetected;
-        } else if (hasExtension(QByteArrayLiteral("GLX_SGI_video_sync"))) {
+          setSwapInterval(1); // but adds latency. see below
+        } else {
+          qCWarning(KWIN_X11STANDALONE) << "TEARING ALERT! unable to set swap interval";
+        }
+        if (hasExtension(QByteArrayLiteral("GLX_SGI_video_sync"))) {
+            // we still need this extension for lowering latency.
             unsigned int sync;
             if (glXGetVideoSyncSGI(&sync) == 0 && glXWaitVideoSyncSGI(1, 0, &sync) == 0) {
                 setSyncsToVBlank(true);
                 setBlocksForRetrace(true);
                 haveWaitSync = true;
             } else
-                qCWarning(KWIN_X11STANDALONE) << "NO VSYNC! glXSwapInterval is not supported, glXWaitVideoSync is supported but broken";
+              qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitVideoSync is supported but broken";
         } else
-            qCWarning(KWIN_X11STANDALONE) << "NO VSYNC! neither glSwapInterval nor glXWaitVideoSync are supported";
+          qCWarning(KWIN_X11STANDALONE) << "HIGH LATENCY ALERT! glXWaitVideoSync is not supported";
     } else {
         // disable v-sync (if possible)
         setSwapInterval(0);
@@ -749,7 +797,7 @@ void GlxBackend::present()
                 }
             }
         } else {
-            waitSync();
+            if (useWaitSync) waitSync();
             glXSwapBuffers(display(), glxWindow);
         }
         if (supportsBufferAge()) {
@@ -766,7 +814,27 @@ void GlxBackend::present()
         copyPixels(lastDamage());
         glDrawBuffer(GL_BACK);
     }
-
+    
+    if (useHorribleHack) {
+      // HACK HACK HACK! please replace with a better solution soon
+      unsigned int oldSync, sync;
+      glXGetVideoSyncSGI(&sync);
+      oldSync=sync;
+      while (1) {
+        glXGetVideoSyncSGI(&sync);
+        if (sync!=oldSync) break;
+        usleep(1000);
+      }
+    } else {
+      if (useWaitSync) {
+        waitSync();
+      } else {
+        if (!hopeBest) {
+          glFinish();
+        }
+      }
+    }
+    
     setLastDamage(QRegion());
     if (!supportsBufferAge()) {
         glXWaitGL();
@@ -839,15 +907,8 @@ void GlxBackend::endRenderingFrame(const QRegion &renderedRegion, const QRegion 
 
     setLastDamage(renderedRegion);
 
-    if (!blocksForRetrace()) {
-        // This also sets lastDamage to empty which prevents the frame from
-        // being posted again when prepareRenderingFrame() is called.
-        present();
-    } else {
-        // Make sure that the GPU begins processing the command stream
-        // now and not the next time prepareRenderingFrame() is called.
-        glFlush();
-    }
+    // just present. this is the culprit.
+    present();
 
     if (overlayWindow()->window())  // show the window only after the first pass,
         overlayWindow()->show();   // since that pass may take long

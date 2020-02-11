@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>526</width>
-    <height>395</height>
+    <width>561</width>
+    <height>612</height>
    </rect>
   </property>
   <layout class="QFormLayout" name="formLayout">
@@ -27,6 +27,19 @@ This was most likely due to a driver bug.
 If you think that you have meanwhile upgraded to a stable driver,
 you can reset this protection but be aware that this might result in an immediate crash!
 Alternatively, you might want to use the XRender backend instead.</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="KMessageWidget" name="unredirectInformation">
+       <property name="visible">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Having full screen windows bypass the compositor is not supported on every hardware.</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -290,6 +303,161 @@ Alternatively, you might want to use the XRender backend instead.</string>
        </layout>
       </item>
      </layout>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="QCheckBox" name="unredirectFullscreen">
+     <property name="text">
+      <string>Suspend compositor for full screen windows</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0" colspan="2">
+    <widget class="Line" name="line_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>Animation curve:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="1">
+    <widget class="QComboBox" name="animationCurve">
+     <item>
+      <property name="text">
+       <string>Linear</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Quadratic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cubic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Quartic</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Latency/stutter control:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="1">
+    <widget class="QComboBox" name="latencyControl">
+     <item>
+      <property name="text">
+       <string>Less stutter</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Balanced</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Lower latency</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Even lower latency</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="17" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Maximum latency reduction:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="1">
+    <widget class="QSpinBox" name="maxLatency">
+     <property name="maximum">
+      <number>8</number>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>Minimum latency reduction:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="1">
+    <widget class="QSpinBox" name="minLatency">
+     <property name="maximum">
+      <number>8</number>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="1">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>(units in milliseconds)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="1">
+    <widget class="QComboBox" name="vsyncMechanism">
+     <item>
+      <property name="text">
+       <string>Automatic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>None and just hope for the best (NVIDIA 435.17+)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SGI video sync (NVIDIA pre-435, recent Mesa/X versions may hang)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>glFinish (Mesa hang workaround for AMD, maybe works on NVIDIA too)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SGI video sync with horrible hack (Mesa hang workaround for Intel)</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="19" column="0">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>VSync mechanism:</string>
+     </property>
     </widget>
    </item>
   </layout>

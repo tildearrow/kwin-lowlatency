@@ -22,6 +22,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "meta.h"
 #include "scriptingutils.h"
 #include "workspace_wrapper.h"
+#ifndef KWINLL_NO_OPTIONS
+#include "../options.h"
+#endif
 #include "../screens.h"
 #include "../screenedge.h"
 #include "scripting_logging.h"
@@ -153,7 +156,27 @@ AnimationSettings animationSettingsFromObject(QScriptValue &object)
         settings.curve = static_cast<QEasingCurve::Type>(curve.toInt32());
         settings.set |= AnimationSettings::Curve;
     } else {
-        settings.curve = QEasingCurve::Linear;
+#ifndef KWINLL_NO_OPTIONS
+      switch (options->animationCurve()) {
+        case 1:
+          settings.curve = QEasingCurve::InOutQuad;
+          break;
+        case 2:
+          settings.curve = QEasingCurve::InOutSine;
+          break;
+        case 3:
+          settings.curve = QEasingCurve::InOutCubic;
+          break;
+        case 4:
+          settings.curve = QEasingCurve::InOutQuart;
+          break;
+        default:
+          settings.curve = QEasingCurve::Linear;
+          break;
+      }
+#else
+      settings.curve = QEasingCurve::InOutSine;
+#endif
     }
 
     QScriptValue type = object.property(QStringLiteral("type"));
