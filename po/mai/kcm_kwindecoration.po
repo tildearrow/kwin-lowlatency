@@ -1,0 +1,234 @@
+# translation of kcmkwindecoration.po to Maithili
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sangeeta Kumari <sangeeta09@gmail.com>, 2009.
+# Rajesh Ranjan <rajesh672@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-15 03:48+0100\n"
+"PO-Revision-Date: 2010-01-29 13:49+0530\n"
+"Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
+"Language-Team: Maithili <maithili.sf.net>\n"
+"Language: mai\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+"\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "संगीता कुमारी"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sangeeta09@gmail.com"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "मेनू "
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr ""
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, fuzzy, kde-format
+#| msgid "On All Desktops"
+msgid "On all desktops"
+msgstr "सभटा डेस्कटाप पर"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "छोट करू"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "पैघ करू"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "बन्न करू"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr ""
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "छायांकित"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, fuzzy, kde-format
+#| msgid "Keep Below Others"
+msgid "Keep below"
+msgstr "आनसभ केर नीच्चाँ राखू"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, fuzzy, kde-format
+#| msgid "Keep Above Others"
+msgid "Keep above"
+msgstr "आनसभ केर उप्पर राखू"
+
+#: kcm.cpp:62
+#, fuzzy, kde-format
+#| msgid "&Window Decoration"
+msgid "Window Decorations"
+msgstr "विंडो सजावट (&W)"
+
+#: kcm.cpp:66
+#, kde-format
+msgid "Valerio Pilo"
+msgstr ""
+
+#: kcm.cpp:67
+#, kde-format
+msgid "Author"
+msgstr ""
+
+#: kcm.cpp:122
+#, fuzzy, kde-format
+#| msgid "&Window Decoration"
+msgid "Download New Window Decorations"
+msgstr "विंडो सजावट (&W)"
+
+#: package/contents/ui/Buttons.qml:87
+#, kde-format
+msgid "Titlebar"
+msgstr ""
+
+#: package/contents/ui/Buttons.qml:228
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr ""
+
+#: package/contents/ui/Buttons.qml:246
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr ""
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr ""
+
+#: package/contents/ui/main.qml:61
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr ""
+
+#: package/contents/ui/main.qml:65
+#, fuzzy, kde-format
+#| msgid "&Buttons"
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "बटन (&B)"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr ""
+
+#: package/contents/ui/main.qml:121
+#, fuzzy, kde-format
+#| msgid "&Window Decoration"
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "विंडो सजावट (&W)"
+
+#: package/contents/ui/main.qml:138
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr ""
+
+#: package/contents/ui/main.qml:151
+#, kde-format
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+
+#: package/contents/ui/main.qml:158
+#, fuzzy, kde-format
+#| msgid "&Show window button tooltips"
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "विंडो बटन अओजार-नुस्खा देखाबू (&S)"
+
+#: package/contents/ui/Themes.qml:99
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr ""
+
+#: utils.cpp:38
+#, fuzzy, kde-format
+#| msgid "B&order size:"
+msgid "No Borders"
+msgstr "किनारक आकार:"
+
+#: utils.cpp:39
+#, fuzzy, kde-format
+#| msgid "B&order size:"
+msgid "No Side Borders"
+msgstr "किनारक आकार:"
+
+#: utils.cpp:40
+#, fuzzy, kde-format
+#| msgid "Tiny"
+msgid "Tiny"
+msgstr "नन्हा"
+
+#: utils.cpp:41
+#, fuzzy, kde-format
+#| msgid "Normal"
+msgid "Normal"
+msgstr "सामान्य"
+
+#: utils.cpp:42
+#, fuzzy, kde-format
+#| msgid "Large"
+msgid "Large"
+msgstr "पैघ"
+
+#: utils.cpp:43
+#, fuzzy, kde-format
+#| msgid "Very Large"
+msgid "Very Large"
+msgstr "बहुत बड"
+
+#: utils.cpp:44
+#, fuzzy, kde-format
+#| msgid "Huge"
+msgid "Huge"
+msgstr "विशाल"
+
+#: utils.cpp:45
+#, fuzzy, kde-format
+#| msgid "Very Huge"
+msgid "Very Huge"
+msgstr "अत्यंत विशाल"
+
+#: utils.cpp:46
+#, fuzzy, kde-format
+#| msgid "Oversized"
+msgid "Oversized"
+msgstr "वृहताकार"

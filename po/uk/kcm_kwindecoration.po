@@ -1,0 +1,220 @@
+# Translation of kcm_kwindecoration.po to Ukrainian
+# Copyright (C) 2002-2019 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Andriy Rysin <rysin@kde.org>, 2002, 2003, 2004.
+# Eugene Onischenko <oneugene@ukr.net>, 2004, 2005.
+# Ivan Petrouchtchak <fr.ivan@ukrainian-orthodox.org>, 2005, 2006, 2007.
+# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2018, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_kwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-15 03:48+0100\n"
+"PO-Revision-Date: 2019-06-07 08:15+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.04.0\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Andriy Rysin"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "rysin@kde.org"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Меню"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Меню програм"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "На всіх стільницях"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Мінімізувати"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Максимізувати"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Закрити"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Контекстна довідка"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Згорнути"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Тримати знизу"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Тримати зверху"
+
+#: kcm.cpp:62
+#, kde-format
+msgid "Window Decorations"
+msgstr "Обрамлення вікон"
+
+#: kcm.cpp:66
+#, kde-format
+msgid "Valerio Pilo"
+msgstr "Valerio Pilo"
+
+#: kcm.cpp:67
+#, kde-format
+msgid "Author"
+msgstr "Автор"
+
+#: kcm.cpp:122
+#, kde-format
+msgid "Download New Window Decorations"
+msgstr "Отримати нові обрамлення вікон"
+
+#: package/contents/ui/Buttons.qml:87
+#, kde-format
+msgid "Titlebar"
+msgstr "Смужка заголовка"
+
+#: package/contents/ui/Buttons.qml:228
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr "Скиньте кнопку сюди, щоб вилучити її"
+
+#: package/contents/ui/Buttons.qml:246
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Перетягніть кнопки між цією областю і смужкою заголовка"
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr "За допомогою цього модуля ви можете налаштувати обрамлення вікон."
+
+#: package/contents/ui/main.qml:61
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr "Тема"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Кнопки смужки заголовка"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr "Типовий для теми розмір рамки вікна"
+
+#: package/contents/ui/main.qml:121
+#, kde-format
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Отримати нові обрамлення вікон…"
+
+#: package/contents/ui/main.qml:138
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "Закривати вікна у відповідь на подвійне клацання на кнопці меню"
+
+#: package/contents/ui/main.qml:151
+#, kde-format
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+"Закрити можна подвійним клацанням лівою кнопкою миші. Утримуйте кнопку меню "
+"вікна натиснутою, аж доки меню не буде показано."
+
+#: package/contents/ui/main.qml:158
+#, kde-format
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "Показувати підказки кнопок заголовків вікон"
+
+#: package/contents/ui/Themes.qml:99
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr "Редагувати тему %1"
+
+#: utils.cpp:38
+#, kde-format
+msgid "No Borders"
+msgstr "Без обрамлення"
+
+#: utils.cpp:39
+#, kde-format
+msgid "No Side Borders"
+msgstr "Без бічної рамки"
+
+#: utils.cpp:40
+#, kde-format
+msgid "Tiny"
+msgstr "Крихітний"
+
+#: utils.cpp:41
+#, kde-format
+msgid "Normal"
+msgstr "Звичайний"
+
+#: utils.cpp:42
+#, kde-format
+msgid "Large"
+msgstr "Великий"
+
+#: utils.cpp:43
+#, kde-format
+msgid "Very Large"
+msgstr "Дуже великий"
+
+#: utils.cpp:44
+#, kde-format
+msgid "Huge"
+msgstr "Величезний"
+
+#: utils.cpp:45
+#, kde-format
+msgid "Very Huge"
+msgstr "Гігантський"
+
+#: utils.cpp:46
+#, kde-format
+msgid "Oversized"
+msgstr "Найбільший"

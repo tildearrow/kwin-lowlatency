@@ -1,0 +1,244 @@
+# translation of kcmkwindecoration.po to Karakh
+#
+# Sairan Kikkarin <sairan@computer.org>, 2005, 2007, 2008, 2009.
+# Sairan Kikkarin <sairan@computer.org>, 2010, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-15 03:48+0100\n"
+"PO-Revision-Date: 2013-06-10 04:45+0600\n"
+"Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
+"Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"\n"
+"\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Сайран Киккарин"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sairan@computer.org"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Мәзір"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, fuzzy, kde-format
+#| msgctxt "Button showing application menu imported from dbusmenu"
+#| msgid "Application Menu"
+msgid "Application menu"
+msgstr "Қолданбаның мәзірі"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, fuzzy, kde-format
+#| msgid "On All Desktops"
+msgid "On all desktops"
+msgstr "Барлық үстелдерде"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Түю"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Кең жаю"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Жабу"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr ""
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Айдарға түю"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, fuzzy, kde-format
+#| msgid "Keep Below Others"
+msgid "Keep below"
+msgstr "Ең артында ұстау"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, fuzzy, kde-format
+#| msgid "Keep Above Others"
+msgid "Keep above"
+msgstr "Бет алдында ұстау"
+
+#: kcm.cpp:62
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgid "Window Decorations"
+msgstr "Жаңа безендірулерін алу..."
+
+#: kcm.cpp:66
+#, kde-format
+msgid "Valerio Pilo"
+msgstr ""
+
+#: kcm.cpp:67
+#, kde-format
+msgid "Author"
+msgstr ""
+
+#: kcm.cpp:122
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgid "Download New Window Decorations"
+msgstr "Жаңа безендірулерін алу..."
+
+#: package/contents/ui/Buttons.qml:87
+#, kde-format
+msgid "Titlebar"
+msgstr ""
+
+#: package/contents/ui/Buttons.qml:228
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr ""
+
+#: package/contents/ui/Buttons.qml:246
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr ""
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr ""
+
+#: package/contents/ui/main.qml:61
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr ""
+
+#: package/contents/ui/main.qml:65
+#, fuzzy, kde-format
+#| msgid "Buttons"
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Батырмалар"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr ""
+
+#: package/contents/ui/main.qml:121
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Жаңа безендірулерін алу..."
+
+#: package/contents/ui/main.qml:138
+#, fuzzy, kde-format
+#| msgid "Close windows by double clicking the menu button"
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "Мәзір батырмасын қос шерткенде терезе жабылсын"
+
+#: package/contents/ui/main.qml:151
+#, fuzzy, kde-format
+#| msgid "Close windows by double clicking the menu button"
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr "Мәзір батырмасын қос шерткенде терезе жабылсын"
+
+#: package/contents/ui/main.qml:158
+#, fuzzy, kde-format
+#| msgid "&Show window button tooltips"
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "Терезенің батырмасының ишара жазуы &болсын"
+
+#: package/contents/ui/Themes.qml:99
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr ""
+
+#: utils.cpp:38
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Border"
+msgid "No Borders"
+msgstr "Жиегі жоқ"
+
+#: utils.cpp:39
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Side Border"
+msgid "No Side Borders"
+msgstr "Жақтарда жиегі жоқ"
+
+#: utils.cpp:40
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Tiny"
+msgid "Tiny"
+msgstr "Жұқа"
+
+#: utils.cpp:41
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Normal"
+msgid "Normal"
+msgstr "Қалыпты"
+
+#: utils.cpp:42
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Large"
+msgid "Large"
+msgstr "Қалың"
+
+#: utils.cpp:43
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Very Large"
+msgid "Very Large"
+msgstr "Өте қалың"
+
+#: utils.cpp:44
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Huge"
+msgid "Huge"
+msgstr "Зор"
+
+#: utils.cpp:45
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Very Huge"
+msgid "Very Huge"
+msgstr "Өте зор"
+
+#: utils.cpp:46
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Oversized"
+msgid "Oversized"
+msgstr "Тым қалың"

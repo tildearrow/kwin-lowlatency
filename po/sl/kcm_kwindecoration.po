@@ -1,0 +1,253 @@
+# translation of kcmkwindecoration.po to
+# Translation of kcmkwindecoration.po to Slovenian
+# SLOVENIAN TRANSLATION OF K DESKTOP ENVIRONMENT.
+# $Id: kcm_kwindecoration.po 1560187 2020-01-15 04:44:13Z scripty $
+# $Source$
+#
+# Copyright (C) 2001, 2003, 2004, 2005, 2007 Free Software Foundation, Inc.
+# Andrej Vernekar <andrej.vernekar@moj.net>, 2001, 2007, 2012, 2013.
+# Gregor Rakar <gregor.rakar@kiss.si>, 2003, 2004, 2005.
+# Jure Repinc <jlp@holodeck1.com>, 2008, 2009, 2010, 2012.
+# Andrej Mernik <andrejm@ubuntu.si>, 2013, 2014, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-15 03:48+0100\n"
+"PO-Revision-Date: 2015-11-10 14:30+0100\n"
+"Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Andrej Vernekar,Gregor Rakar,Jure Repinc,Andrej Mernik"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"andrej.vernekar@moj.net,gregor.rakar@kiss.si,jlp@holodeck1.com,"
+"andrejm@ubuntu.si"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Meni"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Meni programa"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "Na vseh namizjih"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Skrči"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Razpni"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Zapri"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Vsebinska pomoč"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Zvij"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Ohrani pod vsemi"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Ohrani nad vsemi"
+
+#: kcm.cpp:62
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgid "Window Decorations"
+msgstr "Dobi nove okraske ..."
+
+#: kcm.cpp:66
+#, kde-format
+msgid "Valerio Pilo"
+msgstr ""
+
+#: kcm.cpp:67
+#, kde-format
+msgid "Author"
+msgstr ""
+
+#: kcm.cpp:122
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgid "Download New Window Decorations"
+msgstr "Dobi nove okraske ..."
+
+#: package/contents/ui/Buttons.qml:87
+#, kde-format
+msgid "Titlebar"
+msgstr "Naslovna vrstica"
+
+#: package/contents/ui/Buttons.qml:228
+#, fuzzy, kde-format
+#| msgid "Drop here to remove button"
+msgid "Drop button here to remove it"
+msgstr "Spustite sem za odstranitev gumba"
+
+#: package/contents/ui/Buttons.qml:246
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Povlecite tukajšnje gumbe do naslovne vrstice in obratno"
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr ""
+
+#: package/contents/ui/main.qml:61
+#, fuzzy, kde-format
+#| msgid "Theme"
+msgctxt "tab label"
+msgid "Theme"
+msgstr "Tema"
+
+#: package/contents/ui/main.qml:65
+#, fuzzy, kde-format
+#| msgid "Titlebar"
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Naslovna vrstica"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr ""
+
+#: package/contents/ui/main.qml:121
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Dobi nove okraske ..."
+
+#: package/contents/ui/main.qml:138
+#, fuzzy, kde-format
+#| msgid "Close windows by double clicking the menu button"
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "Zapri okna z dvojnim klikom na menijski gumb"
+
+#: package/contents/ui/main.qml:151
+#, fuzzy, kde-format
+#| msgid ""
+#| "Close by double clicking:\n"
+#| " To open the menu, keep the button pressed until it appears."
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+"Zaprite z dvoklikom:\n"
+" Da odprete meni, držite gumb, dokler se meni ne pojavi."
+
+#: package/contents/ui/main.qml:158
+#, fuzzy, kde-format
+#| msgid "&Show window button tooltips"
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "P&rikaži orodne namige gumbov oken"
+
+#: package/contents/ui/Themes.qml:99
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr ""
+
+#: utils.cpp:38
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Borders"
+msgid "No Borders"
+msgstr "Brez obrobe"
+
+#: utils.cpp:39
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Side Borders"
+msgid "No Side Borders"
+msgstr "Brez stranskih obrob"
+
+#: utils.cpp:40
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Tiny"
+msgid "Tiny"
+msgstr "Zelo majhna"
+
+#: utils.cpp:41
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Normal"
+msgid "Normal"
+msgstr "Običajna"
+
+#: utils.cpp:42
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Large"
+msgid "Large"
+msgstr "Velika"
+
+#: utils.cpp:43
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Very Large"
+msgid "Very Large"
+msgstr "Zelo velika"
+
+#: utils.cpp:44
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Huge"
+msgid "Huge"
+msgstr "Ogromna"
+
+#: utils.cpp:45
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Very Huge"
+msgid "Very Huge"
+msgstr "Velikanska"
+
+#: utils.cpp:46
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Oversized"
+msgid "Oversized"
+msgstr "Prevelika"

@@ -1,0 +1,216 @@
+# Thomas Diehl <thd@kde.org>, 2002, 2003, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2005, 2006.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2006, 2007, 2008, 2009.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2012, 2013, 2014, 2015, 2018, 2019.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-15 03:48+0100\n"
+"PO-Revision-Date: 2019-08-06 21:09+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 18.12.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Diehl"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "thd@kde.org"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Menü"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Anwendungsmenü"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "Auf allen Arbeitsflächen"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Minimieren"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Maximieren"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Schließen"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Kontexthilfe"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Einrollen"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Im Hintergrund halten"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Im Vordergrund halten"
+
+#: kcm.cpp:62
+#, kde-format
+msgid "Window Decorations"
+msgstr "Fensterdekorationen"
+
+#: kcm.cpp:66
+#, kde-format
+msgid "Valerio Pilo"
+msgstr "Valerio Pilo"
+
+#: kcm.cpp:67
+#, kde-format
+msgid "Author"
+msgstr "Autor"
+
+#: kcm.cpp:122
+#, kde-format
+msgid "Download New Window Decorations"
+msgstr "Neue Fensterdekorationen herunterladen"
+
+#: package/contents/ui/Buttons.qml:87
+#, kde-format
+msgid "Titlebar"
+msgstr "Titelleiste"
+
+#: package/contents/ui/Buttons.qml:228
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr "Ziehen Sie Knöpfe hierher, um sie zu entfernen"
+
+#: package/contents/ui/Buttons.qml:246
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Ziehen Sie Knöpfe zwischen hier und der Titelleiste"
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr "Mit diesem Modul können Sie die Fensterdekorationen einrichten."
+
+#: package/contents/ui/main.qml:61
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr "Design"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Titelleistenknöpfe"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr "Voreinstellung der Fenster-Umrandungsgröße des Designs verwenden"
+
+#: package/contents/ui/main.qml:121
+#, kde-format
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Neue Fensterdekorationen herunterladen ..."
+
+#: package/contents/ui/main.qml:138
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "Fenster durch Doppelklick auf Menüknopf schließen"
+
+#: package/contents/ui/main.qml:151
+#, kde-format
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+"Schließen durch Doppelklicken: Halten Sie den Knopf gedrückt, bis das Menü "
+"erscheint."
+
+#: package/contents/ui/main.qml:158
+#, kde-format
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "Kurzinfos für Knöpfe der Titelleiste anzeigen"
+
+#: package/contents/ui/Themes.qml:99
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr "Design %1 bearbeiten"
+
+#: utils.cpp:38
+#, kde-format
+msgid "No Borders"
+msgstr "Keine Umrandungen"
+
+#: utils.cpp:39
+#, kde-format
+msgid "No Side Borders"
+msgstr "Keine Seitenumrandungen"
+
+#: utils.cpp:40
+#, kde-format
+msgid "Tiny"
+msgstr "Sehr klein"
+
+#: utils.cpp:41
+#, kde-format
+msgid "Normal"
+msgstr "Normal"
+
+#: utils.cpp:42
+#, kde-format
+msgid "Large"
+msgstr "Groß"
+
+#: utils.cpp:43
+#, kde-format
+msgid "Very Large"
+msgstr "Sehr groß"
+
+#: utils.cpp:44
+#, kde-format
+msgid "Huge"
+msgstr "Riesig"
+
+#: utils.cpp:45
+#, kde-format
+msgid "Very Huge"
+msgstr "Noch riesiger"
+
+#: utils.cpp:46
+#, kde-format
+msgid "Oversized"
+msgstr "Übergroß"

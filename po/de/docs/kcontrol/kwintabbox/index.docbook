@@ -1,0 +1,169 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+]>
+<article id="kwintabbox" lang="&language;">
+<articleinfo>
+<title
+>Anwendungsumschalter</title>
+<authorgroup>
+<author
+>&Martin.Graesslin;&Martin.Graesslin.mail;</author>
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2015-07-24</date>
+<releaseinfo
+>&plasma; 5.4</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systemeinstellungen</keyword>
+<keyword
+>Desktop</keyword>
+<keyword
+>Fenster</keyword>
+<keyword
+>Navigation</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="windows-navigating">
+<title
+>Wechseln zwischen Fenstern</title>
+
+<para
+>Die Einstellungen in diesem Modul werden vom Effekt „Zwischen Fenstern wechseln“ verwendet, das wird oft auch als <keycombo
+>&Alt;&Tab;</keycombo
+>ulatortaste bezeichnet. Es gibt zwei unabhängige Einstellungen für diesen Effekt, die auf den beiden Karteikarten <guilabel
+>Allgemein</guilabel
+> und <guilabel
+>Alternativ</guilabel
+> eingerichtet werden können. </para>
+
+<note
+><para
+>Der erste Satz von Effekten auf der Karteikarte <guilabel
+>Allgemein</guilabel
+> hat bereits vordefinierte Kurzbefehle. Möchten Sie den zweiten Satz von Effekten auf der Karteikarte <guilabel
+>Alternativ</guilabel
+> benutzen, müssen Sie die Kurzbefehle dafür selbst eingeben.</para
+></note>
+
+<note
+><para
+>Zum Wechseln zwischen Fenstern ohne die Tastenkombination <keycombo
+>&Alt;&Tab;</keycombo
+> können Sie Aktionen für Bildschirmränder im Modul <ulink url="help:/kcontrol/kwinscreenedges/index.html"
+>Bildschirmecken</ulink
+> in den &systemsettings; einstellen. </para
+></note>
+
+<para
+>Die folgende Beschreibung der Einstellungen ist sowohl für die allgemeinen als für die alternativen Einstellungen zutreffend.</para>
+
+<sect2 id="visualization">
+<title
+>Darstellung</title>
+<para
+>Es können mehrere Effekte anstelle der normalen Liste benutzt werden, wenn Compositing aktiviert ist. Als Voreinstellung ist <guilabel
+>Breeze</guilabel
+> ausgewählt. Dieser Effekt zeigt eine kleines Vorschaubild jedes Fensters an der linken Seite des Bildschirms an und das aktuelle Fenster wird hervorgehoben. Es gibt mehrere zusätzliche vordefinierte Layouts mit einer informativen oder kompakten Ansicht, mit großen oder kleinen Symbolen, einem Raster und nur mit Fenstertiteln.</para>
+<para
+>Wählen Sie eines dieser Layouts, dann können Sie mit dem Knopf rechts daneben eine Vorschau anzeigen lassen.</para
+> 
+<para
+>Wenn Sie <guilabel
+>Ausgewähltes Fenster anzeigen</guilabel
+> aktivieren, wird das aktuell ausgewählte Fenster hervorgehoben, indem alle anderen Fenster ausgeblendet werden. Diese Einstellung erfordert aktivierte Arbeitsflächen-Effekte.</para>
+
+<para
+><guilabel
+>3D-Fenstergalerie</guilabel
+> und <guilabel
+>3D-Fensterstapel</guilabel
+> sind dekorative Effekte, die nur mit OpenGL funktionieren. Die <guilabel
+>3D-Fenstergalerie</guilabel
+> zeigt die Fenster als Galerie an, dabei wird das aktuelle ausgewählte Fenster als großes Vorschaubild mittig angezeigt, alle anderen Fenster sind links und rechts angeordnet. <guilabel
+>3D-Fensterstapel</guilabel
+> zeigt die Fenster auf einem dreidimendionalen Stapel an. Das ausgewählte Fenster liegt vorne in diesen Stapel, beim Fensterwechsel wird das neu ausgewählte Fenster nach vorn geschoben. </para>
+<para
+>Gibt es für einen Effekt zusätzliche Einstellungen, wird ein Werkzeugsymbol angezeigt. Klicken Sie darauf, um den Einrichtungsdialog zu öffnen. </para>
+<note
+><para
+>Wenn Compositing nicht aktiviert ist oder abgeschaltet wird, dann wird die übliche Fensterliste angezeigt. Die Funktionalität bleibt immer erhalten, auch wenn ein Effekt ausgewählt wurde und Compositing nicht aktiviert ist.</para
+></note>
+</sect2>
+
+<sect2 id="shortcuts">
+<title
+>Kurzbefehle</title>
+<para
+>Im unteren Teil dieses Modul können Kurzbefehle zum Wechseln zwischen Fenstern eingestellt werden. Für jeden der beiden möglichen Effekte gibt es zwei Kurzbefehle, einen zum Wechseln vorwärts und rückwärts in der Fensterliste. Die Fensterliste kann nur dann angezeigt werden, wenn Sie einen Kurzbefehl mit einer Sondertaste wie zum Beispiel der &Alt;- oder &Ctrl;taste wählen. Diese Sondertaste muss beim Umschalten gedrückt bleiben. Die Auswahl von Kurzbefehlen ohne Sondertasten kann die Funktion des Wechsels zwischen Fenster unbrauchbar machen. </para>
+</sect2>
+
+<sect2 id="content-and-sort-order">
+<title
+>Inhalt</title>
+<para
+>Auch die Reihenfolge der Fenster lässt sich hier einstellen, entweder sortiert nach der kürzlichen Verwendung oder nach der Stapel-Reihenfolge der Fenster. </para>
+<para
+>Wenn <guilabel
+>Symbol „Arbeitsfläche anzeigen“ einfügen</guilabel
+> aktiviert ist, wird ein Eintrag für die Arbeitsfläche zur Liste mit den Programmfenster hinzugefügt. Dann können Sie diesen Eintrag auswählen, um alle Fenster zu minimieren.</para>
+<para
+>Haben Sie <guilabel
+>Nur ein Fenster pro Anwendung</guilabel
+> angekreuzt, dann ist nur die zuletzt benutzte Instanz einer Anwendung in der Liste enthalten. Das Wechseln zu anderen Instanzen der Anwendung ist dann nur über die Kontrollleiste möglich.</para>
+</sect2>
+
+<sect2 id="filter">
+<title
+>Fenster filtern</title>
+<para
+>Hier kann eingestellt werden, welche Fenster in der durch die Tastenkombination <keycombo
+>&Alt;&Tab;</keycombo
+>ulator angezeigten Liste enthalten sind. Dies betrifft sowohl die vordefinierten Einstellungen auf der Karteikarte <guilabel
+>Allgemein</guilabel
+> wie auch die benutzerdefinierten alternativen Einstellungen. </para>
+<para
+>Es können nur die Fenster auf der aktuellen Arbeitsfläche oder von allen Arbeitsflächen angezeigt werden. Zusätzlich können Sie ähnliche Regeln für Fenster in Aktivitäten und auf Bildschirm bei mehreren Monitoren anwenden. </para>
+<para
+>Mit der letzten Einstellung können Sie nach dem Status der Minimierung von Fenstern filtern. </para>
+</sect2>
+
+</sect1>
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
+

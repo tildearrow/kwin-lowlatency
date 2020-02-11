@@ -1,0 +1,216 @@
+# translation of kcmkwindecoration.po to Swedish
+# Översättning kcmkwindecoration.po till Svenska
+#
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2002.
+# Mattias Newzella <newzella@linux.nu>, 2003.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2004, 2005, 2007, 2008, 2009, 2010, 2012, 2013, 2014, 2015, 2018, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-15 03:48+0100\n"
+"PO-Revision-Date: 2019-06-07 16:15+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr " Mattias Newzella"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "newzella@linux.nu"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Meny"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Programmeny"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "På alla skrivbord"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Minimera"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Maximera"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Stäng"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Sammanhangsberoende hjälp"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Rulla upp"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Behåll under"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Behåll ovanför"
+
+#: kcm.cpp:62
+#, kde-format
+msgid "Window Decorations"
+msgstr "Fönsterdekorationer"
+
+#: kcm.cpp:66
+#, kde-format
+msgid "Valerio Pilo"
+msgstr "Valerio Pilo"
+
+#: kcm.cpp:67
+#, kde-format
+msgid "Author"
+msgstr "Upphovsman"
+
+#: kcm.cpp:122
+#, kde-format
+msgid "Download New Window Decorations"
+msgstr "Ladda ner nya fönsterdekorationer"
+
+#: package/contents/ui/Buttons.qml:87
+#, kde-format
+msgid "Titlebar"
+msgstr "Namnlist"
+
+#: package/contents/ui/Buttons.qml:228
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr "Släpp knapp här för att ta bort den"
+
+#: package/contents/ui/Buttons.qml:246
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Dra knappar härifrån till namnlisten"
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr "Modulen låter dig anpassa fönsterdekorationer."
+
+#: package/contents/ui/main.qml:61
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr "Tema"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Namnlistens knappar"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr "Använd temats standardstorlek för fönsterkant"
+
+#: package/contents/ui/main.qml:121
+#, kde-format
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Hämta nya fönsterdekorationer..."
+
+#: package/contents/ui/main.qml:138
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "Stäng fönster genom att dubbelklicka på menyknappen"
+
+#: package/contents/ui/main.qml:151
+#, kde-format
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+"Stäng genom att dubbelklicka: För att visa menyn, håll knappen nedtryckt "
+"tills den dyker upp."
+
+#: package/contents/ui/main.qml:158
+#, kde-format
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "Visa verktygstips för namnlistens knappar"
+
+#: package/contents/ui/Themes.qml:99
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr "Redigera temat %1"
+
+#: utils.cpp:38
+#, kde-format
+msgid "No Borders"
+msgstr "Utan kanter"
+
+#: utils.cpp:39
+#, kde-format
+msgid "No Side Borders"
+msgstr "Utan sidokanter"
+
+#: utils.cpp:40
+#, kde-format
+msgid "Tiny"
+msgstr "Liten"
+
+#: utils.cpp:41
+#, kde-format
+msgid "Normal"
+msgstr "Normal"
+
+#: utils.cpp:42
+#, kde-format
+msgid "Large"
+msgstr "Stor"
+
+#: utils.cpp:43
+#, kde-format
+msgid "Very Large"
+msgstr "Mycket stor"
+
+#: utils.cpp:44
+#, kde-format
+msgid "Huge"
+msgstr "Enorm"
+
+#: utils.cpp:45
+#, kde-format
+msgid "Very Huge"
+msgstr "Större än enorm"
+
+#: utils.cpp:46
+#, kde-format
+msgid "Oversized"
+msgstr "Överdimensionerad"

@@ -1,0 +1,311 @@
+# translation of kcmkwindecoration.po to Italian
+# Copyright (C) 2003, 2004, 2005, 2007 Free Software Foundation, Inc.
+# Andrea Rizzi <rizzi@kde.org>, 2003, 2005.
+# Andrea RIZZI <arizzi@pi.infn.it>, 2004.
+# Luciano Montanaro <mikelima@cirulla.net>, 2007, 2010, 2012.
+# Vincenzo Reale <smart2128@baslug.org>, 2015, 2018, 2019.
+# Paolo Zamponi <zapaolo@email.it>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-15 03:48+0100\n"
+"PO-Revision-Date: 2019-06-10 15:29+0200\n"
+"Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 19.04.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Paolo Zamponi,Luciano Montanaro,Andrea Rizzi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zapaolo@email.it,,"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Menu"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Menu dell'applicazione"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "Su tutti i desktop"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Minimizza"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Massimizza"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Chiudi"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Aiuto contestuale"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Arrotola"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Tieni sotto"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Tieni sopra"
+
+#: kcm.cpp:62
+#, kde-format
+msgid "Window Decorations"
+msgstr "Decorazioni delle finestre"
+
+#: kcm.cpp:66
+#, kde-format
+msgid "Valerio Pilo"
+msgstr "Valerio Pilo"
+
+#: kcm.cpp:67
+#, kde-format
+msgid "Author"
+msgstr "Autore"
+
+#: kcm.cpp:122
+#, kde-format
+msgid "Download New Window Decorations"
+msgstr "Scarica nuove decorazioni delle finestre"
+
+#: package/contents/ui/Buttons.qml:87
+#, kde-format
+msgid "Titlebar"
+msgstr "Barra del titolo"
+
+#: package/contents/ui/Buttons.qml:228
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr "Rilascia qui il pulsante per rimuoverlo"
+
+#: package/contents/ui/Buttons.qml:246
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Trascina i pulsanti da qui alla barra del titolo"
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr ""
+"Questo modulo ti permette di configurare le decorazioni delle finestre."
+
+#: package/contents/ui/main.qml:61
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr "Tema"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Pulsanti della barra del titolo"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr "Usa la dimensione del bordo della finestra predefinita del tema"
+
+#: package/contents/ui/main.qml:121
+#, kde-format
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Ottieni nuove decorazioni delle finestre..."
+
+#: package/contents/ui/main.qml:138
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "Chiudi le finestre con un doppio clic sul pulsante del menu"
+
+#: package/contents/ui/main.qml:151
+#, kde-format
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+"Chiudi con un doppio clic: tieni premuto il pulsante del menu della finestra "
+"finché appare."
+
+#: package/contents/ui/main.qml:158
+#, kde-format
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "Mostra i suggerimenti per i pulsanti della barra del titolo"
+
+#: package/contents/ui/Themes.qml:99
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr "Modifica tema %1"
+
+#: utils.cpp:38
+#, kde-format
+msgid "No Borders"
+msgstr "Nessun bordo"
+
+#: utils.cpp:39
+#, kde-format
+msgid "No Side Borders"
+msgstr "Nessun bordo laterale"
+
+#: utils.cpp:40
+#, kde-format
+msgid "Tiny"
+msgstr "Sottile"
+
+#: utils.cpp:41
+#, kde-format
+msgid "Normal"
+msgstr "Normale"
+
+#: utils.cpp:42
+#, kde-format
+msgid "Large"
+msgstr "Spesso"
+
+#: utils.cpp:43
+#, kde-format
+msgid "Very Large"
+msgstr "Molto spesso"
+
+#: utils.cpp:44
+#, kde-format
+msgid "Huge"
+msgstr "Enorme"
+
+#: utils.cpp:45
+#, kde-format
+msgid "Very Huge"
+msgstr "Gigantesco"
+
+#: utils.cpp:46
+#, kde-format
+msgid "Oversized"
+msgstr "Fuori misura"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# XXX Rivedere, non è del tutto equivalente

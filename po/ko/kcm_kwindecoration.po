@@ -1,0 +1,214 @@
+# Translation of kcmkwindecoration to Korean.
+# Copyright (C) 2001, 2007 Free Software Foundation, Inc.
+# KIM KyungHeon <tody@teoal.net>, 2001.
+# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2010, 2012, 2013, 2014, 2015, 2018, 2019, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-15 03:48+0100\n"
+"PO-Revision-Date: 2020-01-28 23:59+0100\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 19.04.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "박신조"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde@peremen.name"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "메뉴"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "프로그램 메뉴"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "모든 바탕 화면에 두기"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "최소화"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "최대화"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "닫기"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "문맥 도움말"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "말아 올리기"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "아래에 두기"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "위에 두기"
+
+#: kcm.cpp:62
+#, kde-format
+msgid "Window Decorations"
+msgstr "창 장식"
+
+#: kcm.cpp:66
+#, kde-format
+msgid "Valerio Pilo"
+msgstr "Valerio Pilo"
+
+#: kcm.cpp:67
+#, kde-format
+msgid "Author"
+msgstr "작성자"
+
+#: kcm.cpp:122
+#, kde-format
+msgid "Download New Window Decorations"
+msgstr "새 창 장식 가져오기..."
+
+#: package/contents/ui/Buttons.qml:87
+#, kde-format
+msgid "Titlebar"
+msgstr "제목 표시줄"
+
+#: package/contents/ui/Buttons.qml:228
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr "여기에 단추를 끌어다 놓으면 삭제됩니다"
+
+#: package/contents/ui/Buttons.qml:246
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "여기와 제목 표시줄 사이에서 단추를 드래그하십시오"
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr "이 모듈에서 창 장식을 설정할 수 있습니다."
+
+#: package/contents/ui/main.qml:61
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr "테마"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "제목 표시줄 단추"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr "테마의 기본 창 테두리 크기 사용"
+
+#: package/contents/ui/main.qml:121
+#, kde-format
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "새 장식 가져오기..."
+
+#: package/contents/ui/main.qml:138
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "메뉴 단추를 두 번 눌러서 창 닫기"
+
+#: package/contents/ui/main.qml:151
+#, kde-format
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+"두 번 눌러서 닫기:  메뉴를 열려면 메뉴가 나타날 때까지 단추를 누르십시오."
+
+#: package/contents/ui/main.qml:158
+#, kde-format
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "창 단추의 풍선 도움말 보기"
+
+#: package/contents/ui/Themes.qml:99
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr "%1 테마 편집"
+
+#: utils.cpp:38
+#, kde-format
+msgid "No Borders"
+msgstr "경계선 없음"
+
+#: utils.cpp:39
+#, kde-format
+msgid "No Side Borders"
+msgstr "옆쪽 경계선 없음"
+
+#: utils.cpp:40
+#, kde-format
+msgid "Tiny"
+msgstr "작게"
+
+#: utils.cpp:41
+#, kde-format
+msgid "Normal"
+msgstr "일반"
+
+#: utils.cpp:42
+#, kde-format
+msgid "Large"
+msgstr "크게"
+
+#: utils.cpp:43
+#, kde-format
+msgid "Very Large"
+msgstr "매우 크게"
+
+#: utils.cpp:44
+#, kde-format
+msgid "Huge"
+msgstr "매우 매우 크게"
+
+#: utils.cpp:45
+#, kde-format
+msgid "Very Huge"
+msgstr "매우 매우 매우 크게"
+
+#: utils.cpp:46
+#, kde-format
+msgid "Oversized"
+msgstr "과다하게 크게"

@@ -1,0 +1,255 @@
+# translation of kcmkwindecoration.po to
+# translation of kcmkwindecoration.po to Greek
+# Copyright (C) 2002, 2003, 2004, 2005, 2007 Free Software Foundation, Inc.
+#
+# Stergios Dramis <sdramis@egnatia.ee.auth.gr>, 2002-2004.
+# Spiros Georgaras <sngeorgaras@otenet.gr>, 2005, 2007.
+# Toussis Manolis <koppermind@yahoo.com>, 2005.
+# Spiros Georgaras <sng@hellug.gr>, 2007.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2008.
+# Petros Vidalis <p_vidalis@hotmail.com>, 2009, 2010.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2011, 2012.
+# Stelios <sstavra@gmail.com>, 2012.
+# Antonis Geralis <capoiosct@gmail.com>, 2014.
+# Dimitris Kardarakos <dimkard@gmail.com>, 2014, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-15 03:48+0100\n"
+"PO-Revision-Date: 2015-11-18 16:23+0200\n"
+"Last-Translator: Dimitris Kardarakos <dimkard@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Στέργιος Δράμης,Σπύρος Γεωργαράς,Τούσης Μανώλης, Δημήτριος Γλενταδάκης"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"sdramis@egnatia.ee.auth.gr,sngeorgaras@otenet.gr,manolis@koppermind."
+"homelinux.org, dglent@gmail.com"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Μενού"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Μενού εφαρμογών"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "Σε όλες τις επιφάνειες εργασίας"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Ελαχιστοποίηση"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Μεγιστοποίηση"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Πλαίσιο βοήθειας"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Τύλιγμα"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Διατήρηση από κάτω"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Διατήρηση από πάνω"
+
+#: kcm.cpp:62
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgid "Window Decorations"
+msgstr "Λήψη νέων διακοσμήσεων παραθύρου..."
+
+#: kcm.cpp:66
+#, kde-format
+msgid "Valerio Pilo"
+msgstr ""
+
+#: kcm.cpp:67
+#, kde-format
+msgid "Author"
+msgstr ""
+
+#: kcm.cpp:122
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgid "Download New Window Decorations"
+msgstr "Λήψη νέων διακοσμήσεων παραθύρου..."
+
+#: package/contents/ui/Buttons.qml:87
+#, kde-format
+msgid "Titlebar"
+msgstr "Γραμμή τίτλου"
+
+#: package/contents/ui/Buttons.qml:228
+#, fuzzy, kde-format
+#| msgid "Drop here to remove button"
+msgid "Drop button here to remove it"
+msgstr "Απόθεση εδώ για αφαίρεση κουμπιού"
+
+#: package/contents/ui/Buttons.qml:246
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Σύρσιμο κουμπιών μεταξύ της θέσης αυτής και της γραμμής τίτλου"
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr ""
+
+#: package/contents/ui/main.qml:61
+#, fuzzy, kde-format
+#| msgid "Theme"
+msgctxt "tab label"
+msgid "Theme"
+msgstr "Θέμα"
+
+#: package/contents/ui/main.qml:65
+#, fuzzy, kde-format
+#| msgid "Titlebar"
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Γραμμή τίτλου"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr ""
+
+#: package/contents/ui/main.qml:121
+#, fuzzy, kde-format
+#| msgid "Get New Decorations..."
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Λήψη νέων διακοσμήσεων παραθύρου..."
+
+#: package/contents/ui/main.qml:138
+#, fuzzy, kde-format
+#| msgid "Close windows by double clicking the menu button"
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "Κλείστε τα παράθυρα με διπλό κλικ στο κουμπί του μενού"
+
+#: package/contents/ui/main.qml:151
+#, fuzzy, kde-format
+#| msgid ""
+#| "Close by double clicking:\n"
+#| " To open the menu, keep the button pressed until it appears."
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+"Κλείσιμο με διπλό κλικ  :\n"
+" Για να ανοίξετε το μενού, κρατήστε το κουμπί πατημένο μέχρι να εμφανιστεί."
+
+#: package/contents/ui/main.qml:158
+#, fuzzy, kde-format
+#| msgid "&Show window button tooltips"
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "Εμ&φάνιση υποδείξεων κουμπιών παραθύρων"
+
+#: package/contents/ui/Themes.qml:99
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr ""
+
+#: utils.cpp:38
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Borders"
+msgid "No Borders"
+msgstr "Χωρίς περιγράμματα"
+
+#: utils.cpp:39
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Side Borders"
+msgid "No Side Borders"
+msgstr "Χωρίς πλευρικά περιγράμματα"
+
+#: utils.cpp:40
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Tiny"
+msgid "Tiny"
+msgstr "Μικροσκοπικό"
+
+#: utils.cpp:41
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Normal"
+msgid "Normal"
+msgstr "Κανονικό"
+
+#: utils.cpp:42
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Large"
+msgid "Large"
+msgstr "Μεγάλο"
+
+#: utils.cpp:43
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Very Large"
+msgid "Very Large"
+msgstr "Πολύ μεγάλο"
+
+#: utils.cpp:44
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Huge"
+msgid "Huge"
+msgstr "Τεράστιο"
+
+#: utils.cpp:45
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Very Huge"
+msgid "Very Huge"
+msgstr "Τερατώδες"
+
+#: utils.cpp:46
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Oversized"
+msgid "Oversized"
+msgstr "Υπερφυσικό"

@@ -1,0 +1,221 @@
+# Translation of kcm_kwindecoration.po to Catalan (Valencian)
+# Copyright (C) 2001-2019 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2001, 2002, 2007, 2008, 2009, 2010, 2012, 2013, 2014, 2015, 2018, 2019.
+# Albert Astals Cid <aacid@kde.org>, 2004.
+# Sebastià Pla i Sanz <sps@sastia.com>, 2004, 2005.
+# Antoni Bella Pérez <antonibella5@yahoo.com>, 2017, 2019.
+# Empar Montoro Martín <montoro_mde@gva.es>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_kwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-15 03:48+0100\n"
+"PO-Revision-Date: 2019-08-28 11:58+0200\n"
+"Last-Translator: Empar Montoro Martín <montoro_mde@gva.es>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca@valencia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.04.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Josep Ma. Ferrer,Albert Astals Cid,Sebastià Pla i Sanz, Empar Montoro"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "txemaq@post.com,aacid@kde.org,sps@sastia.com,montoro_mde@gva.es"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "Menú"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "Menú d'aplicacions"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "En tots els escriptoris"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "Minimitza"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "Maximitza"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "Tanca"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "Ajuda contextual"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "Plega"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "Mantín davall"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "Mantín per damunt"
+
+#: kcm.cpp:62
+#, kde-format
+msgid "Window Decorations"
+msgstr "Decoració de les finestres"
+
+#: kcm.cpp:66
+#, kde-format
+msgid "Valerio Pilo"
+msgstr "Valerio Pilo"
+
+#: kcm.cpp:67
+#, kde-format
+msgid "Author"
+msgstr "Autor"
+
+#: kcm.cpp:122
+#, kde-format
+msgid "Download New Window Decorations"
+msgstr "Baixa decoracions noves de finestra..."
+
+#: package/contents/ui/Buttons.qml:87
+#, kde-format
+msgid "Titlebar"
+msgstr "Barra de títol"
+
+#: package/contents/ui/Buttons.qml:228
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr "Deixeu anar el botó ací per eliminar-lo"
+
+#: package/contents/ui/Buttons.qml:246
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Arrossegueu els botons des d'ací fins a la barra de títol"
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr "Aquest mòdul permet configurar les decoracions de les finestres."
+
+#: package/contents/ui/main.qml:61
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr "Tema"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Botons de la barra de títol"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr "Usa la mida predeterminada de la vora de la finestra del tema"
+
+#: package/contents/ui/main.qml:121
+#, kde-format
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Obtín decoracions noves de finestra..."
+
+#: package/contents/ui/main.qml:138
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "Tanca les finestres amb doble clic al botó del menú"
+
+#: package/contents/ui/main.qml:151
+#, kde-format
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+"Tanca amb doble clic: mantingueu el botó premut del menú de la finestra fins "
+"que aparega."
+
+#: package/contents/ui/main.qml:158
+#, kde-format
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "Mostra els consells dels botons de la barra de títol"
+
+#: package/contents/ui/Themes.qml:99
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr "Edita el tema %1"
+
+#: utils.cpp:38
+#, kde-format
+msgid "No Borders"
+msgstr "Sense vores"
+
+#: utils.cpp:39
+#, kde-format
+msgid "No Side Borders"
+msgstr "Sense vores laterals"
+
+#: utils.cpp:40
+#, kde-format
+msgid "Tiny"
+msgstr "Minúscula"
+
+#: utils.cpp:41
+#, kde-format
+msgid "Normal"
+msgstr "Normal"
+
+#: utils.cpp:42
+#, kde-format
+msgid "Large"
+msgstr "Gran"
+
+#: utils.cpp:43
+#, kde-format
+msgid "Very Large"
+msgstr "Molt gran"
+
+#: utils.cpp:44
+#, kde-format
+msgid "Huge"
+msgstr "Enorme"
+
+#: utils.cpp:45
+#, kde-format
+msgid "Very Huge"
+msgstr "Gegant"
+
+#: utils.cpp:46
+#, kde-format
+msgid "Oversized"
+msgstr "Fora de mida"
