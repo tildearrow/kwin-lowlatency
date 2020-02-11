@@ -935,7 +935,7 @@ void Compositor::delayedCheckUnredirect()
 {
     if (!isActive() || !m_scene->overlayWindow() || m_scene->overlayWindow()->window() == None || !(options->isUnredirectFullscreen() || sender() == options))
         return;
-    ToplevelList list;
+    QList<Toplevel*> list;
     bool changed = forceUnredirectCheck;
     foreach (Client * c, Workspace::self()->clientList())
         list.append(c);
