@@ -2,10 +2,6 @@
 
 KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
 
-# ported code!
-
-since KWin 5.17 basically makes most of the code unportable to that version I had to port most of the low-latency engine. this is why it took a while...
-
 ## old background
 
 stock KWin has a major issue regarding stuttering. it stutters heavily, and if you don't want that, then you have the latency problem (of up to 50ms!).
@@ -102,13 +98,13 @@ $ cd kwin-lowlatency
 if you are not using the latest major version of Plasma (you can check by doing `kwin_x11 --version`), you may want to check out the branch for your version, e.g.:
 
 ```
-$ git checkout Plasma/5.16
+$ git checkout Plasma/5.18
 ```
 
 you may want to check the current stable version out:
 
 ```
-$ git checkout v5.17.0
+$ git checkout v5.18.0
 ```
 
 #### patch format
@@ -116,21 +112,21 @@ $ git checkout v5.17.0
 download stock KWin source and patch file:
 
 ```
-$ wget https://download.kde.org/stable/plasma/5.17.0/kwin-5.17.0.tar.xz
-$ wget http://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.17.0.patch
+$ wget https://download.kde.org/stable/plasma/5.18.0/kwin-5.18.0.tar.xz
+$ wget http://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.18.0.patch
 ```
 
 extract:
 
 ```
-$ tar -xvf kwin-5.17.0.tar.xz
+$ tar -xvf kwin-5.18.0.tar.xz
 ```
 
 patch:
 
 ```
-$ cd kwin-5.17.0
-$ patch -p1 < ../kwin-lowlatency-5.17.0.patch
+$ cd kwin-5.18.0
+$ patch -p1 < ../kwin-lowlatency-5.18.0.patch
 ```
 
 ### building
