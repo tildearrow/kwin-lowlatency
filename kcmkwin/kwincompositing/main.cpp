@@ -86,24 +86,6 @@ void KWinCompositingSettings::init()
     connect(m_compositing, &Compositing::compositingEnabledChanged, m_form.compositingEnabled, &QCheckBox::setChecked);
     connect(m_form.compositingEnabled, &QCheckBox::toggled, m_compositing, &Compositing::setCompositingEnabled);
 
-    // animation speed
-    m_form.animationSpeed->setMaximum(s_animationMultipliers.size() - 1);
-    auto setSpeed = [this](const qreal multiplier) {
-        auto const it = std::lower_bound(s_animationMultipliers.begin(), s_animationMultipliers.end(), multiplier, std::greater<qreal>());
-        const int index = std::distance(s_animationMultipliers.begin(), it);
-        m_form.animationSpeed->setValue(index);
-    };
-    setSpeed(m_compositing->animationSpeed());
-    connect(m_compositing, &Compositing::animationSpeedChanged, m_form.animationSpeed, setSpeed);
-    connect(m_form.animationSpeed, &QSlider::valueChanged, m_compositing, [this](int index) {
-        m_compositing->setAnimationSpeed(s_animationMultipliers[index]);
-    });
-
-    if (Compositing::isRunningPlasma()) {
-        m_form.animationSpeedLabel->hide();
-        m_form.animationSpeedControls->hide();
-    }
-
     // gl scale filter
     m_form.glScaleFilter->setCurrentIndex(m_compositing->glScaleFilter());
     connect(m_compositing, &Compositing::glScaleFilterChanged, m_form.glScaleFilter, &QComboBox::setCurrentIndex);
