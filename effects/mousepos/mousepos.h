@@ -39,7 +39,7 @@ public:
     MousePosEffect();
     virtual ~MousePosEffect();
     virtual void prePaintScreen(ScreenPrePaintData& data, int time);
-    virtual void paintScreen(int mask, QRegion region, ScreenPaintData& data);
+    virtual void paintScreen(int mask, const QRegion& region, ScreenPaintData& data);
     virtual void postPaintScreen();
     virtual void reconfigure(ReconfigureFlags);
     virtual bool isActive() const;

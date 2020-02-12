@@ -92,6 +92,7 @@ void MousePosEffect::prePaintScreen(ScreenPrePaintData& data, int time)
 bool MousePosEffect::loadData()
 {
     m_inited = true;
+    printf("load data!\n");
 
     m_shader = ShaderManager::instance()->generateShaderFromResources(ShaderTrait::MapTexture, QString("motion.vert"), QStringLiteral("motion.frag"));
     if (!m_shader->isValid()) {
@@ -103,7 +104,7 @@ bool MousePosEffect::loadData()
     return true;
 }
 
-void MousePosEffect::paintScreen(int mask, QRegion region, ScreenPaintData& data)
+void MousePosEffect::paintScreen(int mask, const QRegion& region, ScreenPaintData& data)
 {
     effects->paintScreen(mask, region, data);   // paint normal screen
     if (!m_active)
