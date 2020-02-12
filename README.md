@@ -76,6 +76,10 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 kwin-lowlatency can be found at [home:KAMiKAZOW:KDE](https://software.opensuse.org/download.html?project=home%3AKAMiKAZOW%3AKDE&package=kwin-lowlatency) (OBS).
 
+## Ubuntu
+
+[kwin-lowlatency PPA](https://launchpad.net/~maxiberta/+archive/ubuntu/kwin-lowlatency). thanks maxiberta!
+
 ## other distributions/manual method
 
 you can compile/install this yourself if your distro isn't listed here (yes, I know Ubuntu is missing) or if you want to.
@@ -193,10 +197,6 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
   - if none of these options solve any problems, please open a bug report. thanks.
 
 # misc/FAQ
-
-> Ubuntu Ubuntu Ubuntu
-
-i'm working on it...
 
 > what's this "Paint cursor" effect in Desktop Effects?
 
