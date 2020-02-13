@@ -117,7 +117,7 @@ download stock KWin source and patch file:
 
 ```
 $ wget https://download.kde.org/stable/plasma/5.18.0/kwin-5.18.0.tar.xz
-$ wget http://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.18.0.patch
+$ wget https://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.18.0.patch
 ```
 
 extract:
