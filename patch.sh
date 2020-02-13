@@ -15,4 +15,4 @@ if [ $minorVer -eq 1 ]
   then filename="kwin-lowlatency-$version.patch"
   else filename="kwin-lowlatency-$version-$minorVer.patch"
 fi
-diff -ruNx .git -x build -x .kdev4 -x po kwin-$version $klpath > $filename
+diff -ruNx .git -x build -x .clang-format -x .kdev4 -x po kwin-$version $klpath > $filename
