@@ -82,9 +82,10 @@ void MousePosEffect::prePaintScreen(ScreenPrePaintData& data, int time)
 {
     if (m_active) {
         QTime t = QTime::currentTime();
-        m_lastRect[0].moveCenter(cursorPos());
-        m_lastRect[1].moveCenter(cursorPos());
-        data.paint |= m_lastRect[0].adjusted(-1,-1,1,1);
+        //m_lastRect[0].moveCenter(cursorPos());
+        //m_lastRect[1].moveCenter(cursorPos());
+        m_union=m_lastRect[0].united(m_lastRect[1]);
+        data.paint |= m_union.adjusted(-1,-1,1,1);
     }
     effects->prePaintScreen(data, time);
 }
@@ -178,7 +179,7 @@ void MousePosEffect::paintScreen(int mask, const QRegion& region, ScreenPaintDat
 void MousePosEffect::postPaintScreen()
 {
     if (m_lastRect[0]!=m_lastRect[1]) {
-        //effects->addRepaint(m_lastRect[0].adjusted(-1,-1,1,1));
+      effects->addRepaint(m_lastRect[0].adjusted(-1,-1,1,1));
     }
     effects->postPaintScreen();
 }
@@ -186,9 +187,6 @@ void MousePosEffect::postPaintScreen()
 bool MousePosEffect::init()
 {
     effects->makeOpenGLContextCurrent();
-#ifdef KWIN_HAVE_XRENDER_COMPOSITING
-#else
-#endif
     m_lastRect[0].moveCenter(cursorPos());
     m_lastRect[1].moveCenter(cursorPos());
     m_active = true;
@@ -217,12 +215,13 @@ void MousePosEffect::slotMouseChanged(const QPoint&, const QPoint&,
                                         Qt::MouseButtons, Qt::MouseButtons,
                                         Qt::KeyboardModifiers modifiers, Qt::KeyboardModifiers)
 {
-    if (!m_mousePolling) // we didn't ask for it but maybe someone else did...
-        return;
-    if (!m_active && !init()) {
-            return;
-        }
-        effects->addRepaint(m_lastRect[0].adjusted(-1,-1,1,1));
+  if (!m_mousePolling) // we didn't ask for it but maybe someone else did...
+    return;
+  if (!m_active && !init()) {
+    return;
+  }
+  m_union=m_lastRect[0].united(m_lastRect[1]);
+  effects->addRepaint(m_lastRect[1].adjusted(-1,-1,1,1));
 }
 
 void MousePosEffect::loadTexture()

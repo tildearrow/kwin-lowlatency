@@ -59,6 +59,7 @@ private:
     bool init();
     void loadTexture();
     QRect m_lastRect[2];
+    QRect m_union;
     bool m_active, m_mousePolling;
     float m_angle;
     float m_angleBase;
