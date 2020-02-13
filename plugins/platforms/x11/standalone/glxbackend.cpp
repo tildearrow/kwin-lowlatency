@@ -797,7 +797,6 @@ void GlxBackend::present()
                 }
             }
         } else {
-            if (useWaitSync) waitSync();
             glXSwapBuffers(display(), glxWindow);
         }
         if (supportsBufferAge()) {
