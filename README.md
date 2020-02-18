@@ -24,9 +24,16 @@ you can prove this by moving a window. you'll see the cursor being ahead of the 
 
 so, how to fix this? let's ditch the timer and let us access the VBlank interval directly.
 
-but how do we do that? by using glFinish.
+but how do we do that? there are several approaches, but they vary between drivers.
 
-this is a much, **much** better solution over glXWaitVideoSyncSGI, as it achieves the same effect, doesn't have a chance of freezing under Mesa, and may work under EGL on X and Wayland.
+1. by using glFinish.
+  - this is a much, **much** better solution over glXWaitVideoSyncSGI for Mesa, as it achieves the same effect and doesn't have a chance of freezing.
+2. by using glXWaitVideoSyncSGI.
+  - this solution works on Catalyst/AMDGPU-PRO. it was used before for Mesa too, but not anymore after Mesa exhibited freezes.
+3. by doing nothing at all.
+  - NVIDIA doesn't require anything in particular for this to work. the buffer swap function seems to wait for VBlank.
+4. by polling the current VBlank interval and waiting until the next one.
+  - sadly, Mesa (Intel) does not obey glFinish correctly. this is a hack, but it works.
 
 now, by doing this, we have a proper desktop without stuttering, but the lag persists...
 
@@ -44,7 +51,7 @@ if (!blocksForRetrace()) {
 }
 ```
 
-by removing this code and simply presenting as soon as possible (we're blocking for retrace anyway due to the glFinish thingy), we cut off 1 whole frame of lag!
+by removing this code and simply presenting as soon as possible (we're blocking for retrace anyway due to the wait-for-vblank thingy), we cut off 1 whole frame of lag!
 
 but hey, can we go further? yes, of course!
 
@@ -54,9 +61,9 @@ the reason why only up to 8ms is because any further would leave little room for
 
 ## KWin-lowlatency is not...
 
-* perfect. it tries its best to deliver low-latency no-stutter video, but I can't promise this is always the case.
-  as an example, it will stutter if you select another window, or if you have too many windows open.
-* truly designed for low-end systems. if you use KWin-lowlatency in one of them, you may experience stuttering.
+- perfect. it tries its best to deliver low-latency no-stutter video, but I can't promise this is always the case.
+  - as an example, it will stutter if you select another window, or if you have too many windows open.
+- truly designed for low-end systems. if you use KWin-lowlatency in one of them, you may experience stuttering.
 
 # installation
 
@@ -82,7 +89,7 @@ kwin-lowlatency can be found at [home:KAMiKAZOW:KDE](https://software.opensuse.o
 
 ## other distributions/manual method
 
-you can compile/install this yourself if your distro isn't listed here (yes, I know Ubuntu is missing) or if you want to.
+you can compile/install this yourself if your distro isn't listed here, or if you merely want to.
 
 ### installing dependencies
 
@@ -203,6 +210,12 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
 it's an effect I wrote back in 2018 when experimenting with kmsgrab for some private recordings.
 it basically redraws the cursor. this may seem redundant, but actually is helpful for recording with kmsgrab (since it doesn't draw the hardware sprite).
 
+the following applications may benefit from the usage of this effect:
+
+- FFmpeg (kmsgrab input device)
+- darmstadt
+- w23's drmtoy/linux-libdrm-grab OBS plugin
+
 > will this work under Wayland?
 
 no, it won't, but I am working on it. so far using DRM VBlank only showed negative results, with applications running at half speed. now i'm trying again with glFinish and friends...
@@ -218,6 +231,7 @@ some. Daniel gets a chance to improve the GNOME side in mainline and reduce lag 
   - I can try to upstream just the glFinish/notimer/something bits, and have this project for the rest of features.
 - furthermore, this also brings back "close" option in Present Windows, which once again the KDE devs despise.
   - apparently they officially brought the feature back in Plasma 5.17, but not for left click :(
+- Roman Gilg took my idea away.
 
 > unredirection is not working.
 
