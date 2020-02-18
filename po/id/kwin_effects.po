@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-22 03:12+0200\n"
+"POT-Creation-Date: 2020-02-13 08:28+0100\n"
 "PO-Revision-Date: 2019-10-22 22:16+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -1392,7 +1392,7 @@ msgstr "Jungkit Present Windows (Semua desktop)"
 msgid "Toggle Present Windows (Window class)"
 msgstr "Jungkit Present Windows (Kelas window)"
 
-#: presentwindows/presentwindows.cpp:1634
+#: presentwindows/presentwindows.cpp:1638
 #, kde-format
 msgid ""
 "Filter:\n"

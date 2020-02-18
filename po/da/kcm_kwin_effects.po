@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the kwin package.
 #
-# Martin Schlander <mschlander@opensuse.org>, 2019.
+# Martin Schlander <mschlander@opensuse.org>, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-12-21 03:45+0100\n"
-"PO-Revision-Date: 2019-05-07 12:34+0100\n"
+"PO-Revision-Date: 2020-02-08 15:54+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "Language: da\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 18.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -25,22 +25,22 @@ msgstr "Martin Schlander"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "mschlander@opensuse.org"
 
 #: kcm.cpp:44
 #, kde-format
 msgid "Desktop Effects"
-msgstr ""
+msgstr "Skrivebordseffekter"
 
 #: kcm.cpp:49
 #, kde-format
 msgid "Vlad Zahorodnii"
-msgstr ""
+msgstr "Vlad Zahorodnii"
 
 #: kcm.cpp:88
 #, kde-format
 msgid "Download New Desktop Effects"
-msgstr ""
+msgstr "Download nye skriveeffekter"
 
 #: package/contents/ui/Effect.qml:88
 #, kde-format
@@ -48,23 +48,25 @@ msgid ""
 "Author: %1\n"
 "License: %2"
 msgstr ""
+"Ophavsmand: %1\n"
+"Licens: %2"
 
 #: package/contents/ui/Effect.qml:117
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show/Hide Video"
-msgstr ""
+msgstr "Vis/skjul video"
 
 #: package/contents/ui/Effect.qml:124
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Configure..."
-msgstr ""
+msgstr "Indstil..."
 
 #: package/contents/ui/main.qml:29
 #, kde-format
 msgid "This module lets you configure desktop effects."
-msgstr ""
+msgstr "Med dette modul kan du indstille skrivebordseffekter."
 
 #: package/contents/ui/main.qml:36
 #, kde-format
@@ -72,23 +74,25 @@ msgid ""
 "Hint: To find out or configure how to activate an effect, look at the "
 "effect's settings."
 msgstr ""
+"Tip: For at finde ud af, eller konfigurere, hvordan en effekt aktiveres, så "
+"se på effektens indstillinger."
 
 #: package/contents/ui/main.qml:56
 #, kde-format
 msgid "Configure Filter"
-msgstr ""
+msgstr "Indstil filter"
 
 #: package/contents/ui/main.qml:68
 #, kde-format
 msgid "Exclude unsupported effects"
-msgstr ""
+msgstr "Udelad ikke-understøttede effekter"
 
 #: package/contents/ui/main.qml:76
 #, kde-format
 msgid "Exclude internal effects"
-msgstr ""
+msgstr "Udelad interne effekter"
 
 #: package/contents/ui/main.qml:133
 #, kde-format
 msgid "Get New Desktop Effects..."
-msgstr ""
+msgstr "Hent nye skrivebordseffekter..."

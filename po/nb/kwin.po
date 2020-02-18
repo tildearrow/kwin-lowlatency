@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-01 03:39+0100\n"
+"POT-Creation-Date: 2020-01-26 08:23+0100\n"
 "PO-Revision-Date: 2015-08-27 20:54+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -37,7 +37,7 @@ msgstr ""
 "knut.yrvin@gmail.com,gluras@c2i.net,khollund@responze.net,"
 "zerodogg@skolelinux.no"
 
-#: abstract_client.cpp:1951
+#: abstract_client.cpp:2541
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -48,7 +48,24 @@ msgstr ""
 msgid "unknown"
 msgstr ""
 
-#: composite.cpp:865
+#: colorcorrection/manager.cpp:69
+#, kde-format
+msgctxt "Night Color was disabled"
+msgid "Night Color Off"
+msgstr ""
+
+#: colorcorrection/manager.cpp:70
+#, kde-format
+msgctxt "Night Color was enabled"
+msgid "Night Color On"
+msgstr ""
+
+#: colorcorrection/manager.cpp:240 colorcorrection/manager.cpp:241
+#, kde-format
+msgid "Toggle Night Color"
+msgstr ""
+
+#: composite.cpp:930
 #, kde-format
 msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "
@@ -1670,7 +1687,7 @@ msgstr ""
 msgid "Automatic screen rotation is disabled"
 msgstr ""
 
-#: plugins/scenes/opengl/scene_opengl.cpp:570
+#: plugins/scenes/opengl/scene_opengl.cpp:545
 #, kde-format
 msgid "Desktop effects were restarted due to a graphics reset"
 msgstr ""
@@ -1894,63 +1911,63 @@ msgctxt ""
 msgid "Configure W&indow Manager..."
 msgstr ""
 
-#: useractions.cpp:342
+#: useractions.cpp:340
 #, kde-format
 msgid "Ma&ximize"
 msgstr "Ma&ksimer"
 
-#: useractions.cpp:348
+#: useractions.cpp:346
 #, kde-format
 msgid "Mi&nimize"
 msgstr "Mi&nimer"
 
-#: useractions.cpp:354
+#: useractions.cpp:352
 #, kde-format
 msgid "&More Actions"
 msgstr "&Flere handlinger"
 
-#: useractions.cpp:357
+#: useractions.cpp:355
 #, kde-format
 msgid "&Close"
 msgstr "Lu&kk"
 
-#: useractions.cpp:424
+#: useractions.cpp:422
 #, kde-format
 msgid "&Extensions"
 msgstr "Utvidels&er"
 
-#: useractions.cpp:465
+#: useractions.cpp:463
 #, kde-format
 msgid "&Desktops"
 msgstr ""
 
-#: useractions.cpp:479
+#: useractions.cpp:477
 #, kde-format
 msgid "Move to &Desktop"
 msgstr ""
 
-#: useractions.cpp:497
+#: useractions.cpp:495
 #, kde-format
 msgid "Move to &Screen"
 msgstr ""
 
-#: useractions.cpp:513
+#: useractions.cpp:511
 #, kde-format
 msgid "Show in &Activities"
 msgstr ""
 
-#: useractions.cpp:528 useractions.cpp:573
+#: useractions.cpp:526 useractions.cpp:571
 #, kde-format
 msgid "&All Desktops"
 msgstr "&Alle skrivebord"
 
-#: useractions.cpp:556 useractions.cpp:609
+#: useractions.cpp:554 useractions.cpp:607
 #, kde-format
 msgctxt "Create a new desktop and move there the window"
 msgid "&New Desktop"
 msgstr "&Nytt skrivebord"
 
-#: useractions.cpp:632
+#: useractions.cpp:630
 #, kde-format
 msgctxt ""
 "@item:inmenu List of all Screens to send a window to. First argument is a "
@@ -1958,29 +1975,29 @@ msgctxt ""
 msgid "Screen &%1 (%2)"
 msgstr "Skjerm &%1 (%2)"
 
-#: useractions.cpp:655
+#: useractions.cpp:653
 #, kde-format
 msgid "&All Activities"
 msgstr "&Alle aktiviteter"
 
-#: useractions.cpp:901
+#: useractions.cpp:899
 #, kde-format
 msgctxt "'%1' is a keyboard shortcut like 'ctrl+w'"
 msgid "<b>%1</b> is already in use"
 msgstr "<b>%1</b> er i bruk fra før"
 
-#: useractions.cpp:903
+#: useractions.cpp:901
 #, kde-format
 msgctxt "keyboard shortcut '%1' is used by action '%2' in application '%3'"
 msgid "<b>%1</b> is used by %2 in %3"
 msgstr "<b>%1</b> brukes av %2 i %3"
 
-#: useractions.cpp:1035
+#: useractions.cpp:1033
 #, kde-format
 msgid "Activate Window (%1)"
 msgstr "Skru på vindu (%1) "
 
-#: useractions.cpp:1221
+#: useractions.cpp:1219
 #, kde-format
 msgid ""
 "The window manager is configured to consider the screen with the mouse on it "
@@ -2011,22 +2028,22 @@ msgstr "Bytt til forrige skrivebord"
 msgid "Switch One Desktop to the Right"
 msgstr "Bytt ett skrivebord til høyre"
 
-#: virtualdesktops.cpp:834
+#: virtualdesktops.cpp:835
 #, kde-format
 msgid "Switch One Desktop to the Left"
 msgstr "Bytt ett skrivebord til venstre"
 
-#: virtualdesktops.cpp:835
+#: virtualdesktops.cpp:837
 #, kde-format
 msgid "Switch One Desktop Up"
 msgstr "Hopp ett skrivebord opp"
 
-#: virtualdesktops.cpp:836
+#: virtualdesktops.cpp:839
 #, kde-format
 msgid "Switch One Desktop Down"
 msgstr "Hopp ett skrivebord ned"
 
-#: virtualdesktops.cpp:848
+#: virtualdesktops.cpp:852
 #, kde-format
 msgid "Switch to Desktop %1"
 msgstr "Bytt til skrivebord %1"

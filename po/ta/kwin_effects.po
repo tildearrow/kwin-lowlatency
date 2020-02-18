@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: கேபசூ 4.1 தமிழாக்கம்\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-22 03:12+0200\n"
+"POT-Creation-Date: 2020-02-13 08:28+0100\n"
 "PO-Revision-Date: 2008-03-25 09:16+0530\n"
 "Last-Translator: ஆமாச்சு <amachu@ubuntu.com>\n"
 "Language-Team: தமிழ் <https://lists.ubuntu.com/mailman/listinfo/ubuntu-l10n-"
@@ -1448,7 +1448,7 @@ msgstr "அனைத்து பணிமேசைகளிலும் உள�
 msgid "Toggle Present Windows (Window class)"
 msgstr "அனைத்து பணிமேசைகளிலும் உள்ள சாளரங்களுக்காக:"
 
-#: presentwindows/presentwindows.cpp:1634
+#: presentwindows/presentwindows.cpp:1638
 #, kde-format
 msgid ""
 "Filter:\n"

@@ -2,7 +2,7 @@
 #
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 1999, 2000, 2001, 2002, 2003, 2004, 2005.
 # Håvard Korsvoll <korsvoll@skulelinux.no>, 2004, 2005.
-# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2010, 2014, 2015, 2016, 2017, 2018, 2019.
+# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2010, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
 # Sven Harald Klein Bakke <sirius@nonline.org>, 2005, 2008.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2008, 2009, 2010.
 # Olav Selseng Vestreim <o.vest@operamail.com>, 2015.
@@ -10,15 +10,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-01 03:39+0100\n"
-"PO-Revision-Date: 2019-09-10 21:02+0200\n"
+"POT-Creation-Date: 2020-01-26 08:23+0100\n"
+"PO-Revision-Date: 2020-02-16 14:10+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.11.70\n"
+"X-Generator: Lokalize 19.12.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -34,7 +34,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "gaute@verdsveven.com,korsvoll@skulelinux.no,karl@huftis.org"
 
-#: abstract_client.cpp:1951
+#: abstract_client.cpp:2541
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -45,7 +45,24 @@ msgstr "(Svarar ikkje)"
 msgid "unknown"
 msgstr "ukjend"
 
-#: composite.cpp:865
+#: colorcorrection/manager.cpp:69
+#, kde-format
+msgctxt "Night Color was disabled"
+msgid "Night Color Off"
+msgstr "Nattfargar av"
+
+#: colorcorrection/manager.cpp:70
+#, kde-format
+msgctxt "Night Color was enabled"
+msgid "Night Color On"
+msgstr "Nattfargar på"
+
+#: colorcorrection/manager.cpp:240 colorcorrection/manager.cpp:241
+#, kde-format
+msgid "Toggle Night Color"
+msgstr "Slå på/av nattfargar"
+
+#: composite.cpp:930
 #, kde-format
 msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "
@@ -385,7 +402,7 @@ msgstr "Skannkode"
 #, kde-format
 msgctxt "Key according to Qt"
 msgid "Qt::Key code"
-msgstr ""
+msgstr "Qt::Key-kode"
 
 #: debug_console.cpp:298
 #, kde-format
@@ -581,36 +598,36 @@ msgstr ""
 #: debug_console.cpp:499
 #, kde-format
 msgid "EventType"
-msgstr ""
+msgstr "Hendingstype"
 
 #: debug_console.cpp:500 debug_console.cpp:547 debug_console.cpp:559
 #, kde-format
 msgid "Position"
-msgstr ""
+msgstr "Plassering"
 
 #: debug_console.cpp:502
 #, kde-format
 msgid "Tilt"
-msgstr ""
+msgstr "Helling"
 
 #: debug_console.cpp:504
 #, kde-format
 msgid "Rotation"
-msgstr ""
+msgstr "Dreiing"
 
 #: debug_console.cpp:505
 #, kde-format
 msgid "Pressure"
-msgstr ""
+msgstr "Trykk"
 
 #: debug_console.cpp:506
 #, kde-format
 msgid "Buttons"
-msgstr ""
+msgstr "Knappar"
 
 #. i18n: ectx: property (title), widget (QGroupBox, modifiersBox)
 #: debug_console.cpp:507 debug_console.ui:356
-#, kde-format
+#, fuzzy, kde-format
 msgid "Modifiers"
 msgstr "Valtastar"
 
@@ -622,7 +639,7 @@ msgstr ""
 #: debug_console.cpp:521 debug_console.cpp:536
 #, kde-format
 msgid "Pressed Buttons"
-msgstr ""
+msgstr "Trykte knappar"
 
 #: debug_console.cpp:535
 #, kde-format
@@ -637,12 +654,12 @@ msgstr ""
 #: debug_console.cpp:546 debug_console.cpp:558
 #, kde-format
 msgid "Number"
-msgstr ""
+msgstr "Tal"
 
 #: debug_console.cpp:548 debug_console.cpp:560
 #, kde-format
 msgid "isFinger"
-msgstr ""
+msgstr "er finger"
 
 #: debug_console.cpp:557
 #, kde-format
@@ -1444,7 +1461,7 @@ msgstr "KWin"
 #: main.cpp:203
 #, kde-format
 msgid "(c) 1999-2019, The KDE Developers"
-msgstr ""
+msgstr "© 1999–2019 KDE-utviklarane"
 
 #: main.cpp:205
 #, kde-format
@@ -1474,17 +1491,17 @@ msgstr "Martin Flöser"
 #: main.cpp:210
 #, kde-format
 msgid "David Edmundson"
-msgstr ""
+msgstr "David Edmundson"
 
 #: main.cpp:211
 #, kde-format
 msgid "Roman Gilg"
-msgstr ""
+msgstr "Roman Gilg"
 
 #: main.cpp:212
 #, kde-format
 msgid "Vlad Zahorodnii"
-msgstr ""
+msgstr "Vlad Zahorodnii"
 
 #: main.cpp:221
 #, kde-format
@@ -1679,7 +1696,7 @@ msgstr "Vassrett"
 msgid "Automatic screen rotation is disabled"
 msgstr "Automatisk skjermretning er slått av"
 
-#: plugins/scenes/opengl/scene_opengl.cpp:570
+#: plugins/scenes/opengl/scene_opengl.cpp:545
 #, kde-format
 msgid "Desktop effects were restarted due to a graphics reset"
 msgstr ""
@@ -1905,63 +1922,63 @@ msgctxt ""
 msgid "Configure W&indow Manager..."
 msgstr "Set opp v&indaugshandsamar …"
 
-#: useractions.cpp:342
+#: useractions.cpp:340
 #, kde-format
 msgid "Ma&ximize"
 msgstr "Ma&ksimer"
 
-#: useractions.cpp:348
+#: useractions.cpp:346
 #, kde-format
 msgid "Mi&nimize"
 msgstr "Mi&nimer"
 
-#: useractions.cpp:354
+#: useractions.cpp:352
 #, kde-format
 msgid "&More Actions"
 msgstr "&Fleire handlingar"
 
-#: useractions.cpp:357
+#: useractions.cpp:355
 #, kde-format
 msgid "&Close"
 msgstr "&Lukk"
 
-#: useractions.cpp:424
+#: useractions.cpp:422
 #, kde-format
 msgid "&Extensions"
 msgstr "&Utvidingar"
 
-#: useractions.cpp:465
+#: useractions.cpp:463
 #, kde-format
 msgid "&Desktops"
 msgstr "&Skrivebord"
 
-#: useractions.cpp:479
+#: useractions.cpp:477
 #, kde-format
 msgid "Move to &Desktop"
 msgstr "Flytt til s&krivebord"
 
-#: useractions.cpp:497
+#: useractions.cpp:495
 #, kde-format
 msgid "Move to &Screen"
 msgstr "Flytt til &skjerm"
 
-#: useractions.cpp:513
+#: useractions.cpp:511
 #, kde-format
 msgid "Show in &Activities"
 msgstr "Vis i &aktivitetar"
 
-#: useractions.cpp:528 useractions.cpp:573
+#: useractions.cpp:526 useractions.cpp:571
 #, kde-format
 msgid "&All Desktops"
 msgstr "&Alle skrivebord"
 
-#: useractions.cpp:556 useractions.cpp:609
+#: useractions.cpp:554 useractions.cpp:607
 #, kde-format
 msgctxt "Create a new desktop and move there the window"
 msgid "&New Desktop"
 msgstr "&Nytt skrivebord"
 
-#: useractions.cpp:632
+#: useractions.cpp:630
 #, kde-format
 msgctxt ""
 "@item:inmenu List of all Screens to send a window to. First argument is a "
@@ -1969,29 +1986,29 @@ msgctxt ""
 msgid "Screen &%1 (%2)"
 msgstr "Skjerm &%1 (%2)"
 
-#: useractions.cpp:655
+#: useractions.cpp:653
 #, kde-format
 msgid "&All Activities"
 msgstr "&Alle aktivitetar"
 
-#: useractions.cpp:901
+#: useractions.cpp:899
 #, kde-format
 msgctxt "'%1' is a keyboard shortcut like 'ctrl+w'"
 msgid "<b>%1</b> is already in use"
 msgstr "<b>%1</b> er alt i bruk"
 
-#: useractions.cpp:903
+#: useractions.cpp:901
 #, kde-format
 msgctxt "keyboard shortcut '%1' is used by action '%2' in application '%3'"
 msgid "<b>%1</b> is used by %2 in %3"
 msgstr "<b>%1</b> er brukt av %2 i %3"
 
-#: useractions.cpp:1035
+#: useractions.cpp:1033
 #, kde-format
 msgid "Activate Window (%1)"
 msgstr "Aktiver vindauge (%1)"
 
-#: useractions.cpp:1221
+#: useractions.cpp:1219
 #, kde-format
 msgid ""
 "The window manager is configured to consider the screen with the mouse on it "
@@ -2022,22 +2039,22 @@ msgstr "Byt til førre skrivebord"
 msgid "Switch One Desktop to the Right"
 msgstr "Byt til skrivebordet til høgre"
 
-#: virtualdesktops.cpp:834
+#: virtualdesktops.cpp:835
 #, kde-format
 msgid "Switch One Desktop to the Left"
 msgstr "Byt til skrivebordet til venstre"
 
-#: virtualdesktops.cpp:835
+#: virtualdesktops.cpp:837
 #, kde-format
 msgid "Switch One Desktop Up"
 msgstr "Byt til skrivebordet over"
 
-#: virtualdesktops.cpp:836
+#: virtualdesktops.cpp:839
 #, kde-format
 msgid "Switch One Desktop Down"
 msgstr "Byt til skrivebordet under"
 
-#: virtualdesktops.cpp:848
+#: virtualdesktops.cpp:852
 #, kde-format
 msgid "Switch to Desktop %1"
 msgstr "Byt til skrivebord %1"

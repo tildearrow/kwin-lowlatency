@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-12-24 03:28+0100\n"
+"POT-Creation-Date: 2020-01-15 03:48+0100\n"
 "PO-Revision-Date: 2019-06-28 23:01+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -83,37 +83,37 @@ msgstr "Hald under"
 msgid "Keep above"
 msgstr "Hald over"
 
-#: kcm.cpp:95
+#: kcm.cpp:62
 #, kde-format
 msgid "Window Decorations"
 msgstr "Vindaugspynt"
 
-#: kcm.cpp:99
+#: kcm.cpp:66
 #, kde-format
 msgid "Valerio Pilo"
 msgstr "Valerio Pilo"
 
-#: kcm.cpp:100
+#: kcm.cpp:67
 #, kde-format
 msgid "Author"
 msgstr "Opphavsperson"
 
-#: kcm.cpp:141
+#: kcm.cpp:122
 #, kde-format
 msgid "Download New Window Decorations"
 msgstr "Last ned ny vindaugspynt"
 
-#: package/contents/ui/Buttons.qml:85
+#: package/contents/ui/Buttons.qml:87
 #, kde-format
 msgid "Titlebar"
 msgstr "Tittellinje"
 
-#: package/contents/ui/Buttons.qml:224
+#: package/contents/ui/Buttons.qml:228
 #, kde-format
 msgid "Drop button here to remove it"
 msgstr "Slepp ein knapp her for å fjerna han"
 
-#: package/contents/ui/Buttons.qml:241
+#: package/contents/ui/Buttons.qml:246
 #, kde-format
 msgid "Drag buttons between here and the titlebar"
 msgstr "Dra knappar mellom her og tittellinja"
@@ -123,13 +123,13 @@ msgstr "Dra knappar mellom her og tittellinja"
 msgid "This module lets you configure the window decorations."
 msgstr "Med denne modulen kan du setja opp vindaugspynten."
 
-#: package/contents/ui/main.qml:62
+#: package/contents/ui/main.qml:61
 #, kde-format
 msgctxt "tab label"
 msgid "Theme"
 msgstr "Tema"
 
-#: package/contents/ui/main.qml:66
+#: package/contents/ui/main.qml:65
 #, kde-format
 msgctxt "tab label"
 msgid "Titlebar Buttons"
@@ -147,13 +147,13 @@ msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr "Hent ny vindaugspynt …"
 
-#: package/contents/ui/main.qml:137
+#: package/contents/ui/main.qml:138
 #, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "Lukk vindauga ved å dobbeltklikka på menyknappen"
 
-#: package/contents/ui/main.qml:149
+#: package/contents/ui/main.qml:151
 #, kde-format
 msgctxt "popup tip"
 msgid ""
@@ -161,13 +161,13 @@ msgid ""
 "appears."
 msgstr "Lukk ved å dobbeltklikka: Hald inne menyknappen til menyen dukkar opp."
 
-#: package/contents/ui/main.qml:156
+#: package/contents/ui/main.qml:158
 #, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
 msgstr "Vis hjelpebobler til knappar på tittellinja"
 
-#: package/contents/ui/Themes.qml:97
+#: package/contents/ui/Themes.qml:99
 #, kde-format
 msgid "Edit %1 Theme"
 msgstr "Rediger temaet %1"

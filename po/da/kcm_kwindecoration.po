@@ -4,20 +4,20 @@
 #
 # Erik Kjær Pedersen <erik@binghamton.edu>, 2001, 2002, 2003, 2004, 2005.
 # Keld Simonsen <keld@dkuug.dk>, 2008.
-# Martin Schlander <mschlander@opensuse.org>, 2008, 2009, 2010, 2012, 2013, 2014, 2015, 2018, 2019.
+# Martin Schlander <mschlander@opensuse.org>, 2008, 2009, 2010, 2012, 2013, 2014, 2015, 2018, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-01-15 03:48+0100\n"
-"PO-Revision-Date: 2019-05-07 13:07+0100\n"
+"PO-Revision-Date: 2020-02-08 15:28+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 18.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -81,26 +81,24 @@ msgid "Keep above"
 msgstr "Hold over"
 
 #: kcm.cpp:62
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgid "Window Decorations"
-msgstr "Hent nye dekorationer..."
+msgstr "Vinduesdekorationer"
 
 #: kcm.cpp:66
 #, kde-format
 msgid "Valerio Pilo"
-msgstr ""
+msgstr "Valerio Pilo"
 
 #: kcm.cpp:67
 #, kde-format
 msgid "Author"
-msgstr ""
+msgstr "Ophavsmand"
 
 #: kcm.cpp:122
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgid "Download New Window Decorations"
-msgstr "Hent nye dekorationer..."
+msgstr "Download nye vinduesdekorationer"
 
 #: package/contents/ui/Buttons.qml:87
 #, kde-format
@@ -108,10 +106,9 @@ msgid "Titlebar"
 msgstr "Titellinje"
 
 #: package/contents/ui/Buttons.qml:228
-#, fuzzy, kde-format
-#| msgid "Drop here to remove button"
+#, kde-format
 msgid "Drop button here to remove it"
-msgstr "Slip her for at fjerne knap"
+msgstr "Slip knappen her for at fjerne den"
 
 #: package/contents/ui/Buttons.qml:246
 #, kde-format
@@ -121,27 +118,25 @@ msgstr "Træk knapper her og fra/til titellinjen"
 #: package/contents/ui/main.qml:27
 #, kde-format
 msgid "This module lets you configure the window decorations."
-msgstr ""
+msgstr "Med dette modul kan du indstille vinduesdekorationerne."
 
 #: package/contents/ui/main.qml:61
-#, fuzzy, kde-format
-#| msgid "Theme"
+#, kde-format
 msgctxt "tab label"
 msgid "Theme"
 msgstr "Tema"
 
 #: package/contents/ui/main.qml:65
-#, fuzzy, kde-format
-#| msgid "Titlebar"
+#, kde-format
 msgctxt "tab label"
 msgid "Titlebar Buttons"
-msgstr "Titellinje"
+msgstr "Titellinjeknapper"
 
 #: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
-msgstr ""
+msgstr "Brug temaets standardstørrelse for vindueskanter"
 
 #: package/contents/ui/main.qml:121
 #, kde-format
@@ -150,96 +145,73 @@ msgid "Get New Window Decorations..."
 msgstr "Hent nye vinduesdekorationer..."
 
 #: package/contents/ui/main.qml:138
-#, fuzzy, kde-format
-#| msgid "Close windows by double clicking the menu button"
+#, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
-msgstr "Luk vinduer ved at dobbeltklikke på menuknappen"
+msgstr "Luk vinduer ved at dobbeltklikke på menuknap"
 
 #: package/contents/ui/main.qml:151
-#, fuzzy, kde-format
-#| msgid ""
-#| "Close by double clicking:\n"
-#| " To open the menu, keep the button pressed until it appears."
+#, kde-format
 msgctxt "popup tip"
 msgid ""
 "Close by double clicking: Keep the window's Menu button pressed until it "
 "appears."
 msgstr ""
-"Luk med dobbeltklik:\n"
-" For at åbne menuen holdes knappen nede, indtil den dukker op."
+"Luk med dobbeltklik: Bliv ved med at trykke på vindues menuknap indtil den "
+"dukker op."
 
 #: package/contents/ui/main.qml:158
-#, fuzzy, kde-format
-#| msgid "&Show window button tooltips"
+#, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
-msgstr "&Vis vinduesknap-værktøjstip"
+msgstr "Vis værktøjstip for titellinjeknapper"
 
 #: package/contents/ui/Themes.qml:99
 #, kde-format
 msgid "Edit %1 Theme"
-msgstr ""
+msgstr "Redigér temaet %1"
 
 #: utils.cpp:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "No Borders"
+#, kde-format
 msgid "No Borders"
 msgstr "Ingen kanter"
 
 #: utils.cpp:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "No Side Borders"
+#, kde-format
 msgid "No Side Borders"
 msgstr "Ingen sidekanter"
 
 #: utils.cpp:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Tiny"
+#, kde-format
 msgid "Tiny"
 msgstr "Meget lille"
 
 #: utils.cpp:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Normal"
+#, kde-format
 msgid "Normal"
 msgstr "Normal"
 
 #: utils.cpp:42
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Large"
+#, kde-format
 msgid "Large"
 msgstr "Stor"
 
 #: utils.cpp:43
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Very Large"
+#, kde-format
 msgid "Very Large"
 msgstr "Meget stor"
 
 #: utils.cpp:44
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Huge"
+#, kde-format
 msgid "Huge"
 msgstr "Enorm"
 
 #: utils.cpp:45
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Very Huge"
+#, kde-format
 msgid "Very Huge"
 msgstr "Meget enorm"
 
 #: utils.cpp:46
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Oversized"
+#, kde-format
 msgid "Oversized"
 msgstr "Overstørrelse"

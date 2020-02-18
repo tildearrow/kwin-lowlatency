@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase-workspace\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-22 03:12+0200\n"
+"POT-Creation-Date: 2020-02-13 08:28+0100\n"
 "PO-Revision-Date: 2010-08-19 12:19+0000\n"
 "Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -1410,7 +1410,7 @@ msgstr ""
 msgid "Toggle Present Windows (Window class)"
 msgstr ""
 
-#: presentwindows/presentwindows.cpp:1634
+#: presentwindows/presentwindows.cpp:1638
 #, kde-format
 msgid ""
 "Filter:\n"
