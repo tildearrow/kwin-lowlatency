@@ -29,6 +29,17 @@ decoration rendering is done in software so yeah...
 
 ...we could replace certain unneeded Qt parts by our own ones, and perhaps improve performance...
 
+## kwin-lowerlatencyandlowpower
+
+what about we go single-buffer, somehow make the card always wait for VBlank (or near-VBlank) and let that be it?
+
+what about we use an hybrid setup?
+
+- single-buffering when the compositor is not doing anything fancy
+- double-buffering when it is
+- clients that want VSync will have a big wait before present
+- clients that don't, will be redrawn immediately (this may cause tearing), Quartz-style
+
 ## let's learn OpenGL
 
 because this could allow for further optimizations on lower-end systems.
