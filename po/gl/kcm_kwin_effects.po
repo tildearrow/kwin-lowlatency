@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-12-21 03:45+0100\n"
+"POT-Creation-Date: 2020-02-23 08:19+0100\n"
 "PO-Revision-Date: 2019-10-07 10:54+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -92,7 +92,7 @@ msgstr "Excluír os efectos incompatíbeis"
 msgid "Exclude internal effects"
 msgstr "Excluír os efectos internos"
 
-#: package/contents/ui/main.qml:133
+#: package/contents/ui/main.qml:135
 #, kde-format
 msgid "Get New Desktop Effects..."
 msgstr "Obter novos efectos de escritorio…"

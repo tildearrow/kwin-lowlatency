@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-12-21 03:45+0100\n"
+"POT-Creation-Date: 2020-02-23 08:19+0100\n"
 "PO-Revision-Date: 2019-11-02 18:36+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -95,7 +95,7 @@ msgstr "Kanporatu onartzen ez diren efektuak"
 msgid "Exclude internal effects"
 msgstr "Kanporatu barneko efektuak"
 
-#: package/contents/ui/main.qml:133
+#: package/contents/ui/main.qml:135
 #, kde-format
 msgid "Get New Desktop Effects..."
 msgstr "Jaitsi mahaigaineko efektu berriak..."

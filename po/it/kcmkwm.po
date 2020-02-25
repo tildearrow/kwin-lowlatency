@@ -4,13 +4,13 @@
 # Pino Toscano <toscano.pino@tiscali.it>, 2006.
 # Luciano Montanaro <mikelima@cirulla.net>, 2007, 2008, 2009, 2010, 2011, 2012.
 # Luigi Toscano <luigi.toscano@tiscali.it>, 2013.
-# Vincenzo Reale <smart2128@baslug.org>, 2015, 2018, 2019.
+# Vincenzo Reale <smart2128@baslug.org>, 2015, 2018, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-20 03:31+0200\n"
-"PO-Revision-Date: 2019-09-20 20:33+0200\n"
+"PO-Revision-Date: 2020-02-06 21:00+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 19.08.1\n"
+"X-Generator: Lokalize 19.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -864,7 +864,7 @@ msgstr ""
 "esempio appaiono le nuove finestre) è lo schermo contenente il puntatore del "
 "mouse. Quando è disabilitata, lo schermo Xinerama attivo è quello contenente "
 "la finestra attiva. Questa opzione è normalmente inattiva quando è adottata "
-"la politica Clic per il focus e attiva per le altre politiche del focus."
+"la regola Clic per il focus e attiva per le altre politiche del focus."
 
 #. i18n: ectx: property (text), widget (QCheckBox, activeMouseScreen)
 #: focus.ui:206
@@ -980,11 +980,10 @@ msgid ""
 msgstr ""
 "<h1>Comportamento delle finestre</h1><p>Qui puoi modificare il modo in cui "
 "le finestre si comportano quando sono spostate, ridimensionate o ricevono un "
-"clic. Puoi anche impostare le politiche sul piazzamento e sul focus delle "
-"nuove finestre.</p><p>Nota che cambiamenti in questo modulo si applicano "
-"solo se usi KWin come gestore delle finestre. Se utilizzi un window manager "
-"diverso consulta la sua documentazione su come cambiarne il comportamento.</"
-"p>"
+"clic. Puoi anche impostare le regole sul piazzamento e sul focus delle nuove "
+"finestre.</p><p>Nota che cambiamenti in questo modulo si applicano solo se "
+"usi KWin come gestore delle finestre. Se utilizzi un window manager diverso "
+"consulta la sua documentazione su come cambiarne il comportamento.</p>"
 
 #: main.cpp:191
 #, kde-format
@@ -1362,12 +1361,12 @@ msgid ""
 msgstr ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Fuoco sotto il "
 "mouse</span> Il fuoco rimane sempre sulla finestra sotto il puntatore del "
-"mouse.<br/><span style=\" font-weight:600;\">Avviso: La </span><span style="
+"mouse.<br/><span style=\" font-weight:600;\">Avviso: la </span><span style="
 "\" font-style:italic;\">Prevenzione della cattura del fuoco</span> e la "
 "<span style=\" font-style:italic;\">tabbox (\"Alt+Tab\")</span> "
 "contraddicono il criterio di attivazione e non funzioneranno. Molto "
-"probabilmente vorrai usare <span style=\" font-style:italic;\">Il fuoco "
-"segue il mouse (precedenza al mouse)</span> invece!</p></body></html>"
+"probabilmente vorrai usare invece <span style=\" font-style:italic;\">Il "
+"fuoco segue il mouse (precedenza al mouse)</span>!</p></body></html>"
 
 #: windows.cpp:187
 #, kde-format
@@ -1389,6 +1388,6 @@ msgstr ""
 "weight:600;\">Avviso: la </span><span style=\" font-style:italic;"
 "\">Prevenzione della cattura del fuoco</span> e la <span style=\" font-style:"
 "italic;\">tabbox (\"Alt+Tab\")</span> contraddicono il criterio di "
-"attivazione e non funzioneranno. Molto probabilmente vorrai usare <span "
-"style=\" font-style:italic;\">Il fuoco segue il mouse (precedenza al mouse)</"
-"span> invece!</p></body></html>"
+"attivazione e non funzioneranno. Molto probabilmente vorrai usare invece "
+"<span style=\" font-style:italic;\">Il fuoco segue il mouse (precedenza al "
+"mouse)</span>!</p></body></html>"

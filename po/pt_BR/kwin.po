@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-26 08:23+0100\n"
+"POT-Creation-Date: 2020-02-22 08:21+0100\n"
 "PO-Revision-Date: 2020-01-15 14:36-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 "diniz.bortolotto@gmail.com, rodrigo@conectiva.com.br, lisiane@kdemail.net, "
 "alvarenga@kde.org, camila.moura@kde.org, elchevive@opensuse.org"
 
-#: abstract_client.cpp:2541
+#: abstract_client.cpp:2542
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-12-21 03:45+0100\n"
+"POT-Creation-Date: 2020-02-23 08:19+0100\n"
 "PO-Revision-Date: 2019-12-05 23:39+0100\n"
 "Last-Translator: enolp <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -92,7 +92,7 @@ msgstr "Escluyir los efeutos que nun se sofiten"
 msgid "Exclude internal effects"
 msgstr "Escluyir los efeutos internos"
 
-#: package/contents/ui/main.qml:133
+#: package/contents/ui/main.qml:135
 #, kde-format
 msgid "Get New Desktop Effects..."
 msgstr "Consiguir efeutos nuevos..."

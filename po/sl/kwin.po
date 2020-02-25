@@ -1,7 +1,7 @@
 # translation of kwin.po to
 # Translation of kwin.po to Slovenian
 # Copyright (C) 2001, 2003, 2004, 2005, 2007 Free Software Foundation, Inc.
-# $Id: kwin.po 1561154 2020-01-26 08:13:56Z scripty $
+# $Id: kwin.po 1562686 2020-02-22 08:13:13Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@hermes.si>, 2000.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-26 08:23+0100\n"
+"POT-Creation-Date: 2020-02-22 08:21+0100\n"
 "PO-Revision-Date: 2018-01-12 17:04+0100\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -37,7 +37,7 @@ msgstr ""
 "roman.maurer@amis.net,gregor.rakar@kiss.si,jlp@holodeck1.com,andrejm@ubuntu."
 "si"
 
-#: abstract_client.cpp:2541
+#: abstract_client.cpp:2542
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
