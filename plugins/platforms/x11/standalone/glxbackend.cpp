@@ -225,10 +225,8 @@ void GlxBackend::init()
       sscanf(GLPlatform::instance()->glVersionString().data(),"%*s NVIDIA %d.%d",&nvidiaVerMaj,&nvidiaVerMin);
       if (nvidiaVerMaj>=435) {
         // we don't need to wait for sync anymore. whoop!
-        //useWaitSync=false;
-        //hopeBest=true;
-        // I am too sad to find a solution...
-        useHorribleHack=true;
+        useWaitSync=false;
+        hopeBest=true;
       } else {
         // for old or unknown NVIDIA driver
         useWaitSync=true; // issue #17
