@@ -249,13 +249,16 @@ void GlxBackend::init()
       case 2:
         useWaitSync=true;
         hopeBest=false;
+        useHorribleHack=false;
         break;
       case 3:
         useWaitSync=false;
         hopeBest=false;
+        useHorribleHack=false;
         break;
       case 4:
         useWaitSync=true;
+        hopeBest=false;
         useHorribleHack=true;
         break;
       default:
