@@ -79,6 +79,27 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 [an overlay](https://github.com/agates/kwin-lowlatency-overlay) is available, courtesy of agates.
 
+## Manjaro
+
+Manjaro tends to provide an older version of KDE Plasma in their official repositories. after cloning the AUR repo you may have to go back to a previous version, e.g.:
+
+```
+$ git clone https://aur.archlinux.org/kwin-lowlatency.git
+$ cd kwin-lowlatency
+$ git checkout 92edad72
+$ makepkg -sri
+```
+
+(this is for v5.17.5, which is the latest version of KDE Plasma in the official Manjaro repos)
+
+### a note about Pamac
+
+**do not use Pamac to install this package for the first time.** Pamac cannot handle the provides/conflicts fields in the PKGBUILD correctly, therefore preventing installation:
+
+```
+could not satisfy dependencies: removing kwin breaks dependency 'kwin' required by plasma-workspace
+```
+
 ## openSUSE Tumbleweed
 
 kwin-lowlatency can be found at [home:KAMiKAZOW:KDE](https://software.opensuse.org/download.html?project=home%3AKAMiKAZOW%3AKDE&package=kwin-lowlatency) (OBS).
