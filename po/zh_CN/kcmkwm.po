@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-20 03:31+0200\n"
-"PO-Revision-Date: 2020-01-20 21:55\n"
+"PO-Revision-Date: 2020-03-10 10:57\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -504,6 +504,28 @@ msgid ""
 "\"><span style=\" font-style:italic;\">Under mouse</span> will place the "
 "window under the pointer</li></ul></body></html>"
 msgstr ""
+"<html><head/><body><p>位置策略决定新窗口将出现在桌面何处。</p><ul style="
+"\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -"
+"qt-list-indent: 1;\"><li style=\" margin-top:12px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">智能</span> 会尝试实现最小的窗口重叠</li><li "
+"style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">最大化</span> 会尝试最大化每个窗口以填充整个屏幕。 使用特定窗口设置"
+"有选择地影响某些窗口的放置可能是有用的。</li><li style=\" margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-style:italic;\">级联</span> 将把窗口带"
+"到顶层</li><li style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"style:italic;\">Random</span> 将使用随机位置</li><li style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Center</"
+"span> 将以窗口为中心</li><li style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span style=\" font-style:italic;\">Zero-cornered</span> 将窗口置于左上角"
+"</li><li style=\" margin-top:0px; margin-bottom:12px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"style:italic;\">鼠标下</span> 将把窗口置于指针下</li></ul></body></html>"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:80
@@ -582,7 +604,7 @@ msgstr "窗口激活策略(&A)："
 #: focus.ui:32
 #, kde-format
 msgid "With this option you can specify how and when windows will be focused."
-msgstr ""
+msgstr "使用此选项您可以指定窗口将如何和何时聚焦。"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:36
@@ -985,7 +1007,7 @@ msgstr "显示在所有桌面上"
 #: mouse.ui:98
 #, kde-format
 msgid "Behavior on <em>mouse wheel</em> scroll over the titlebar."
-msgstr ""
+msgstr "<em>鼠标滚轮</em>在标题栏滚动的行为。"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: mouse.ui:143
@@ -1114,6 +1136,8 @@ msgid ""
 "Here you can set the snap zone for screen edges, i.e. the 'strength' of the "
 "magnetic field which will make windows snap to the border when moved near it."
 msgstr ""
+"在这里您可以设置屏幕边缘的吸附区域，即： 磁场的“强度”，它会使窗口在靠近边界时"
+"吸附到边界。"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, borderSnap)
 #. i18n: ectx: property (suffix), widget (QSpinBox, windowSnap)
@@ -1187,6 +1211,9 @@ msgid ""
 "span> A window becomes active when you click into it. This behavior is "
 "common on other operating systems and likely what you want.</p></body></html>"
 msgstr ""
+"<html><head/><body><p><span style=\" font-style:italic;\">点击焦点：</span> "
+"当您点击窗口时，窗口激活。 这种行为在其他操作系统中是常见的，可能是你想要的。"
+"</p></body></html>"
 
 #: windows.cpp:175
 #, kde-format

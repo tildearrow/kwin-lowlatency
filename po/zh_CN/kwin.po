@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-02-22 08:21+0100\n"
-"PO-Revision-Date: 2020-01-20 21:55\n"
+"PO-Revision-Date: 2020-03-10 10:57\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -650,7 +650,7 @@ msgstr "数位板画板按钮"
 #: debug_console.cpp:545
 #, kde-format
 msgid "Tablet Pad Strip"
-msgstr "数位板画板条"
+msgstr "数位板触控条"
 
 #: debug_console.cpp:546 debug_console.cpp:558
 #, kde-format
@@ -665,7 +665,7 @@ msgstr "是否是手指"
 #: debug_console.cpp:557
 #, kde-format
 msgid "Tablet Pad Ring"
-msgstr "数位板画板环"
+msgstr "数位板触控环"
 
 #: debug_console.cpp:745
 #, kde-format

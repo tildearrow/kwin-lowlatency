@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-02-22 08:21+0100\n"
-"PO-Revision-Date: 2020-01-27 11:40+0200\n"
+"PO-Revision-Date: 2020-03-05 18:31+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
 "Language: et\n"
@@ -46,18 +46,18 @@ msgstr "tundmatu"
 #, kde-format
 msgctxt "Night Color was disabled"
 msgid "Night Color Off"
-msgstr "Öine värv väljas"
+msgstr "Öörežiim väljas"
 
 #: colorcorrection/manager.cpp:70
 #, kde-format
 msgctxt "Night Color was enabled"
 msgid "Night Color On"
-msgstr "Öine värv sees"
+msgstr "Öörežiim sees"
 
 #: colorcorrection/manager.cpp:240 colorcorrection/manager.cpp:241
 #, kde-format
 msgid "Toggle Night Color"
-msgstr "Öise värvi lülitamine"
+msgstr "Öörežiimi lülitamine"
 
 #: composite.cpp:930
 #, kde-format
