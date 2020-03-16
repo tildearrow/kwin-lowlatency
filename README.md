@@ -81,16 +81,7 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 ## Manjaro
 
-Manjaro tends to provide an older version of KDE Plasma in their official repositories. after cloning the AUR repo you may have to go back to a previous version, e.g.:
-
-```
-$ git clone https://aur.archlinux.org/kwin-lowlatency.git
-$ cd kwin-lowlatency
-$ git checkout 92edad72
-$ makepkg -sri
-```
-
-(this is for v5.17.5, which is the latest version of KDE Plasma in the official Manjaro repos)
+follow the Arch Linux instructions. Manjaro is providing Plasma 5.18 now.
 
 ### a note about Pamac
 
