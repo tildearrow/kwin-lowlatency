@@ -912,7 +912,13 @@ void GlxBackend::endRenderingFrame(const QRegion &renderedRegion, const QRegion 
 
     // just present. this is the culprit.
     // come on Roman Gilg at least acknowledge me for the discovery
-    present();
+    if (options->neverGonnaGiveYouUp()) {
+      present();
+    } else {
+      glFlush();
+      glFlush();
+      glFlush();
+    }
 
     if (overlayWindow()->window())  // show the window only after the first pass,
         overlayWindow()->show();   // since that pass may take long

@@ -54,6 +54,7 @@ Compositing::Compositing(QObject *parent)
     , m_maxLatency(8)
     , m_minLatency(0)
     , m_vsyncMechanism(0)
+    , m_neverGonnaGiveYouUp(false)
     , m_compositingInterface(new OrgKdeKwinCompositingInterface(QStringLiteral("org.kde.KWin"), QStringLiteral("/Compositor"), QDBusConnection::sessionBus(), this))
     , m_config(KSharedConfig::openConfig("kwinrc"))
 {
@@ -73,6 +74,7 @@ Compositing::Compositing(QObject *parent)
     connect(this, &Compositing::maxLatencyChanged,              this, &Compositing::changed);
     connect(this, &Compositing::minLatencyChanged,              this, &Compositing::changed);
     connect(this, &Compositing::vsyncMechanismChanged,          this, &Compositing::changed);
+    connect(this, &Compositing::neverGonnaGiveYouUpChanged,     this, &Compositing::changed);
 
     connect(this, &Compositing::changed, [this]{
         m_changed = true;
@@ -135,6 +137,7 @@ void Compositing::reset()
     setMaxLatency(kwinConfig.readEntry("MaxLatency",8));
     setMinLatency(kwinConfig.readEntry("MinLatency",0));
     setVsyncMechanism(kwinConfig.readEntry("VSyncMechanism",0));
+    setNeverGonnaGiveYouUp(kwinConfig.readEntry("NeverGonnaGiveYouUp",false));
 
     m_changed = false;
 }
@@ -156,6 +159,7 @@ void Compositing::defaults()
     setMaxLatency(8);
     setMinLatency(0);
     setVsyncMechanism(0);
+    setNeverGonnaGiveYouUp(false);
     m_changed = true;
 }
 
@@ -366,6 +370,7 @@ void Compositing::save()
     kwinConfig.writeEntry("MaxLatency",maxLatency());
     kwinConfig.writeEntry("MinLatency",minLatency());
     kwinConfig.writeEntry("VSyncMechanism",vsyncMechanism());
+    kwinConfig.writeEntry("NeverGonnaGiveYouUp",neverGonnaGiveYouUp());
     kwinConfig.sync();
 
     if (m_changed) {
@@ -439,6 +444,11 @@ int Compositing::vsyncMechanism() const
     return m_vsyncMechanism;
 }
 
+bool Compositing::neverGonnaGiveYouUp() const
+{
+    return m_neverGonnaGiveYouUp;
+}
+
 void Compositing::setAnimationCurve(int val)
 {
     if (m_animationCurve == val) {
@@ -482,6 +492,12 @@ void Compositing::setVsyncMechanism(int val)
     }
     m_vsyncMechanism = val;
     emit vsyncMechanismChanged(val);
+}
+
+void Compositing::setNeverGonnaGiveYouUp(bool set)
+{
+    m_neverGonnaGiveYouUp = set;
+    emit neverGonnaGiveYouUpChanged(set);
 }
 
 bool Compositing::compositingRequired() const

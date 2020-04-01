@@ -53,6 +53,7 @@ class Compositing : public QObject
     Q_PROPERTY(int maxLatency READ maxLatency WRITE setMaxLatency NOTIFY maxLatencyChanged)
     Q_PROPERTY(int minLatency READ minLatency WRITE setMinLatency NOTIFY minLatencyChanged)
     Q_PROPERTY(int vsyncMechanism READ vsyncMechanism WRITE setVsyncMechanism NOTIFY vsyncMechanismChanged)
+    Q_PROPERTY(bool neverGonnaGiveYouUp READ neverGonnaGiveYouUp WRITE setNeverGonnaGiveYouUp NOTIFY neverGonnaGiveYouUpChanged)
     Q_PROPERTY(bool compositingRequired READ compositingRequired CONSTANT)
 public:
     explicit Compositing(QObject *parent = nullptr);
@@ -75,6 +76,7 @@ public:
     int maxLatency() const;
     int minLatency() const;
     int vsyncMechanism() const;
+    bool neverGonnaGiveYouUp() const;
     bool compositingRequired() const;
 
     OpenGLPlatformInterfaceModel *openGLPlatformInterfaceModel() const;
@@ -94,6 +96,7 @@ public:
     void setMaxLatency(int val);
     void setMinLatency(int val);
     void setVsyncMechanism(int index);
+    void setNeverGonnaGiveYouUp(bool set);
     void save();
 
     static bool isRunningPlasma();
@@ -119,6 +122,7 @@ Q_SIGNALS:
     void maxLatencyChanged(int);
     void minLatencyChanged(int);
     void vsyncMechanismChanged(int);
+    void neverGonnaGiveYouUpChanged(bool);
 
 private:
     qreal m_animationSpeed;
@@ -138,6 +142,7 @@ private:
     int m_maxLatency;
     int m_minLatency;
     int m_vsyncMechanism;
+    bool m_neverGonnaGiveYouUp;
     bool m_windowsBlockingCompositing;
     OrgKdeKwinCompositingInterface *m_compositingInterface;
     KSharedConfigPtr m_config;

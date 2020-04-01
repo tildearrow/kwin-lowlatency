@@ -597,6 +597,9 @@ public:
     int vsyncMechanism() const {
       return m_vsyncMechanism;
     }
+    bool neverGonnaGiveYouUp() const {
+      return m_neverGonnaGiveYouUp;
+    }
 
 
     QStringList modifierOnlyDBusShortcut(Qt::KeyboardModifier mod) const;
@@ -664,6 +667,7 @@ public:
     void setMaxLatency(int val);
     void setMinLatency(int val);
     void setVsyncMechanism(int val);
+    void setNeverGonnaGiveYouUp(bool set);
 
     // default values
     static WindowOperation defaultOperationTitlebarDblClick() {
@@ -786,6 +790,9 @@ public:
     static int defaultVsyncMechanism() {
       return 0;
     }
+    static bool defaultNeverGonnaGiveYouUp() {
+        return false;
+    }
     /**
      * Performs loading all settings except compositing related.
      */
@@ -865,6 +872,7 @@ Q_SIGNALS:
     void maxLatencyChanged();
     void minLatencyChanged();
     void vsyncMechanismChanged();
+    void neverGonnaGiveYouUpChanged();
 
     void configChanged();
 
@@ -914,6 +922,7 @@ private:
     int m_maxLatency;
     int m_minLatency;
     int m_vsyncMechanism;
+    bool m_neverGonnaGiveYouUp;
 
     WindowOperation OpTitlebarDblClick;
     WindowOperation opMaxButtonRightClick = defaultOperationMaxButtonRightClick();
