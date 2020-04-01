@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-20 03:31+0200\n"
-"PO-Revision-Date: 2020-02-25 20:42+0100\n"
+"PO-Revision-Date: 2020-03-15 20:14+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.12.2\n"
+"X-Generator: Lokalize 19.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -134,7 +134,7 @@ msgstr ""
 #: actions.ui:146 mouse.ui:88
 #, kde-format
 msgid "Mouse &wheel:"
-msgstr "M&ushjul:"
+msgstr "M&usehjul:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coWinWheel)
 #: actions.ui:159
@@ -381,7 +381,7 @@ msgstr ""
 #: actions.ui:458
 #, kde-format
 msgid "Mo&use wheel:"
-msgstr "M&ushjul:"
+msgstr "M&usehjul:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coAllW)
 #: actions.ui:471
@@ -449,12 +449,15 @@ msgid ""
 "unshade automatically when the mouse pointer has been over the titlebar for "
 "some time.</p></body></html>"
 msgstr ""
+"<html><head/><body><p>Viss det er kryssa av her, vil eit opprulla vindauge "
+"automatisk rullast ned når musepeikaren har lege over tittellinja ei viss "
+"tid.</p></body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, shadeHoverOn)
 #: advanced.ui:35
 #, kde-format
 msgid "On titlebar hover after:"
-msgstr ""
+msgstr "Når peikaren er over tittellinja i:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, shadeHover)
 #: advanced.ui:42
@@ -511,6 +514,33 @@ msgid ""
 "\"><span style=\" font-style:italic;\">Under mouse</span> will place the "
 "window under the pointer</li></ul></body></html>"
 msgstr ""
+"<html><head/><body><p>Plasseringsreglene fastset kor eit nytt vindauge vil "
+"dukka opp på skrivebordet.</p><ul style=\"margin-top: 0px; margin-bottom: "
+"0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\"><li style=\" "
+"margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Smart</span> vil prøva å få minst mogleg overlapping av vindauge.</li><li "
+"style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"style:italic;\">Maksimert</span> vil prøva å maksimera alle vindauga slik at "
+"dei fyllar heile skjermen. Det kan vera nyttig å endra dette for "
+"enkelt­vindauge ved å bruka innstillingar for enkelt­vindauge.</li><li "
+"style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"style:italic;\">Overlappande</span> vil leggja vindauga delvis oppå "
+"kvarandre.</li><li style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Tilfeldig</span> vil bruka tilfeldige "
+"plasseringar.</li><li style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Midt på</span> vil plassera vindauga i midten."
+"</li><li style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"style:italic;\">Oppe til venstre</span> vil plassera vindauga øvst i venstre "
+"hjørne.</li><li style=\" margin-top:0px; margin-bottom:12px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Under musa</span> vil plassera vindauga under "
+"musepeikaren.</li></ul></body></html>"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:80
@@ -534,7 +564,7 @@ msgstr "Overlappande"
 #: advanced.ui:95
 #, kde-format
 msgid "Random"
-msgstr "Vilkårleg"
+msgstr "Tilfeldig"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:100
@@ -584,13 +614,13 @@ msgstr "Gøym verktøyvindauge for program som ikkje er i bruk"
 #: focus.ui:22
 #, kde-format
 msgid "Window &activation policy:"
-msgstr ""
+msgstr "Reglar for vindaugs&aktivering:"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:32
 #, kde-format
 msgid "With this option you can specify how and when windows will be focused."
-msgstr ""
+msgstr "Her kan du velja korleis og når vindauge skal fokuserast."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:36
@@ -685,6 +715,37 @@ msgid ""
 "by default means their taskbar entry will be highlighted. This can be "
 "changed in the Notifications control module.</p></body></html>"
 msgstr ""
+"<html><head/><body><p>Med denne funksjonen kan du velja kor mykje KWin skal "
+"prøva å hindra uønskt fokussteling frå vindauge som dukkar uventa opp. (Merk "
+"at denne funksjonen ikkje fungerer med <span style=\" font-style:italic;"
+"\">Fokus under musa</span> og <span style=\" font-style:italic;\">Fokus "
+"strengt under musa</span>.) </p><ul style=\"margin-top: 0px; margin-bottom: "
+"0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\"><li style=\" "
+"margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Inga:</span> Fokussteling vert ikkje hindra, og nye vindauge vert alltid "
+"verksame.</li><li style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Låg:</span> Fokussteling vert hindra. Eit "
+"vindauge vert verksamt dersom det ikkje støttar den underliggjande "
+"mekanismen, slik at KWin ikkje klarar å avgjera om vindauget skal gjerast "
+"verksamt. Avhengig av programmet kan denne innstillinga gje dårlegare eller "
+"betre resultat enn middelsnivået.</li><li style=\" margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">Middels:</span> "
+"Fokussteling vert hindra.</li><li style=\" margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">Høg:</span> Nye vindauge "
+"vert berre verksame dersom ingen andre vindauge er verksame, eller dersom "
+"dei høyrer til det aktive programmet. Denne innstillinga er truleg ikkje "
+"særleg nyttig dersom du ikkje brukar musa til fokusering.</li><li style=\" "
+"margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Ekstrem:</span> Alle vindauge må gjerast verksame av brukaren.</li></"
+"ul><p>Vindauge som vert hindra i å stela fokus, vil visa at dei påkallar "
+"merksemd. Det skjer vanlegvis ved at dei vert markerte i oppgåvelinja. Du "
+"kan endra på dette i kontrollmodulen <span style=\" font-style:italic;"
+"\">Varslingar</span>.</p></body></html>"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
@@ -1128,7 +1189,7 @@ msgstr "Vis ved flytting og endring av storleik"
 #: moving.ui:40
 #, kde-format
 msgid "Screen &edge snap zone:"
-msgstr ""
+msgstr "Låsesone for skjerm&kant:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, borderSnap)
 #: moving.ui:50
@@ -1193,7 +1254,7 @@ msgstr "Berre ved overlapp"
 #: moving.ui:123
 #, kde-format
 msgid "&Window snap zone:"
-msgstr "&Vindaugslåsesone:"
+msgstr "V&indaugslåsesone:"
 
 #. i18n: ectx: property (text), widget (QLabel, centerSnaplabel)
 #: moving.ui:133
@@ -1205,7 +1266,7 @@ msgstr "&Midtlåsesone:"
 #: moving.ui:143
 #, kde-format
 msgid "&Snap windows:"
-msgstr ""
+msgstr "&Lås vindauge til soner:"
 
 #: windows.cpp:172
 #, kde-format
@@ -1247,6 +1308,12 @@ msgid ""
 "Think as <span style=\" font-style:italic;\">Click to focus</span> just "
 "without having to actually click.</p></body></html>"
 msgstr ""
+"<html><head/><body><p><span style=\" font-style:italic;\">Fokuset følgjer "
+"musa:</span> Eit vindauge vert aktivt når musepeikaren vert flytta inn i "
+"det. Vindauge som tilfeldigvis dukkar opp under musepeikaren får ikkje "
+"fokus. Fokussteling vert førebygd på vanleg måte. Tenk på dette som <span "
+"style=\" font-style:italic;\">Trykk for fokus</span>, men utan at det er "
+"nødvendig å trykkja.</p></body></html>"
 
 #: windows.cpp:181
 #, kde-format
@@ -1257,6 +1324,11 @@ msgid ""
 "under the mouse is the preferred candidate. Choose this, if you want a hover "
 "controlled focus.</p></body></html>"
 msgstr ""
+"<html><head/><body><p>Dette er stort sett det same som <span style=\" font-"
+"style:italic;\">Fokus følgjer musa</span>. Viss systemet må velja eit nytt "
+"aktivt vindauge (for eksempel fordi det gjeldande vart lukka), så vert "
+"vindauget under musepeikaren den føretrekte kandidaten. Vel dette viss du "
+"ønskjer fokus styrt av plasseringa til musepeikaren.</p></body></html>"
 
 #: windows.cpp:184
 #, kde-format
@@ -1269,6 +1341,12 @@ msgid ""
 "work. You very likely want to use <span style=\" font-style:italic;\">Focus "
 "follows mouse (mouse precedence)</span> instead!</p></body></html>"
 msgstr ""
+"<html><head/><body><p><span style=\" font-style:italic;\">Fokus under musa:</"
+"span> Fokus er alltid på vindauget under musepeikaren.<br/><strong>Merk:</"
+"strong> <em>Hindring av fokussteling</em> og <em>programbyte­vindauget "
+"(«Alt+Tab»)</em> er mot denne praksisen og vil ikkje verka. Du vil truleg "
+"heller vilja bruka <em>Fokus følgjer musa – musprioritet</em> i staden.</p></"
+"body></html>"
 
 #: windows.cpp:187
 #, kde-format
@@ -1283,3 +1361,10 @@ msgid ""
 "\" font-style:italic;\">Focus follows mouse (mouse precedence)</span> "
 "instead!</p></body></html>"
 msgstr ""
+"<html><head/><body><p><span style=\" font-style:italic;\">Fokus strengt "
+"under musa:</span> Fokus er alltid på vindauget under musepeikaren (viss "
+"tvil, ingen stadar), svært likt fokusåtferda i eit gammaldags X11-miljø utan "
+"vindaugshandsamar.<br/><strong>Merk:</strong> <em>Hindring av fokussteling</"
+"em> og <em>programbyte­vindauget («Alt+Tab»)</em> er mot denne praksisen og "
+"vil ikkje verka. Du vil truleg heller vilja bruka <em>Fokus følgjer musa – "
+"musprioritet</em> i staden.</p></body></html>"

@@ -1,7 +1,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Lukáš Tinkl <lukas@kde.org>, 2010, 2011, 2012.
-# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019.
+# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012.
 #
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-02-22 08:21+0100\n"
-"PO-Revision-Date: 2019-12-12 17:41+0100\n"
+"PO-Revision-Date: 2020-03-22 13:02+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 19.08.3\n"
+"X-Generator: Lokalize 19.12.3\n"
 "X-Language: cs_CZ\n"
 "X-Source-Language: en_US\n"
 
@@ -46,18 +46,18 @@ msgstr "neznámý"
 #, kde-format
 msgctxt "Night Color was disabled"
 msgid "Night Color Off"
-msgstr ""
+msgstr "Noční barvu vypnout"
 
 #: colorcorrection/manager.cpp:70
 #, kde-format
 msgctxt "Night Color was enabled"
 msgid "Night Color On"
-msgstr ""
+msgstr "Noční barvu zapnout"
 
 #: colorcorrection/manager.cpp:240 colorcorrection/manager.cpp:241
 #, kde-format
 msgid "Toggle Night Color"
-msgstr ""
+msgstr "Přepnout noční barvu"
 
 #: composite.cpp:930
 #, kde-format
@@ -590,12 +590,12 @@ msgstr "Stav"
 #: debug_console.cpp:498
 #, kde-format
 msgid "Tablet Tool"
-msgstr ""
+msgstr "Nástroj pro tablet"
 
 #: debug_console.cpp:499
 #, kde-format
 msgid "EventType"
-msgstr ""
+msgstr "TypUdálosti"
 
 #: debug_console.cpp:500 debug_console.cpp:547 debug_console.cpp:559
 #, kde-format
@@ -631,12 +631,12 @@ msgstr "Modifikátory"
 #: debug_console.cpp:520
 #, kde-format
 msgid "Tablet Tool Button"
-msgstr ""
+msgstr "Tlačítko nástroje tabletu"
 
 #: debug_console.cpp:521 debug_console.cpp:536
 #, kde-format
 msgid "Pressed Buttons"
-msgstr ""
+msgstr "Stisknutá tlačítka"
 
 #: debug_console.cpp:535
 #, kde-format

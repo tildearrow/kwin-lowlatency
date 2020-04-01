@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwin_virtualdesktops\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-12-24 03:28+0100\n"
+"POT-Creation-Date: 2020-03-30 09:08+0200\n"
 "PO-Revision-Date: 2019-08-12 00:01-0300\n"
 "Last-Translator: André Marcelo Alvarenga <alvarenga@kde.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_br@kde.org>\n"
@@ -98,32 +98,32 @@ msgid_plural "%1 Rows"
 msgstr[0] "1 linha"
 msgstr[1] "%1 linhas"
 
-#: package/contents/ui/main.qml:172
+#: package/contents/ui/main.qml:173
 #, kde-format
 msgid "Options:"
 msgstr "Opções:"
 
-#: package/contents/ui/main.qml:174
+#: package/contents/ui/main.qml:175
 #, kde-format
 msgid "Navigation wraps around"
 msgstr "Navegação envolvente"
 
-#: package/contents/ui/main.qml:189
+#: package/contents/ui/main.qml:190
 #, kde-format
 msgid "Show animation when switching:"
 msgstr "Mostrar animação ao alternar:"
 
-#: package/contents/ui/main.qml:232
+#: package/contents/ui/main.qml:233
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr "Mostrar painel visual na tela ao alternar:"
 
-#: package/contents/ui/main.qml:250
+#: package/contents/ui/main.qml:251
 #, kde-format
 msgid "%1 ms"
 msgstr "%1 ms"
 
-#: package/contents/ui/main.qml:268
+#: package/contents/ui/main.qml:269
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "Mostrar os indicadores de layout da área de trabalho"
