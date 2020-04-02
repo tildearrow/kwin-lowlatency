@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-12-24 03:28+0100\n"
-"PO-Revision-Date: 2020-03-10 10:59\n"
+"POT-Creation-Date: 2020-03-30 09:08+0200\n"
+"PO-Revision-Date: 2020-03-25 19:56\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -99,32 +99,32 @@ msgid "1 Row"
 msgid_plural "%1 Rows"
 msgstr[0] "%1 行"
 
-#: package/contents/ui/main.qml:172
+#: package/contents/ui/main.qml:173
 #, kde-format
 msgid "Options:"
 msgstr "选项："
 
-#: package/contents/ui/main.qml:174
+#: package/contents/ui/main.qml:175
 #, kde-format
 msgid "Navigation wraps around"
 msgstr "循环切换"
 
-#: package/contents/ui/main.qml:189
+#: package/contents/ui/main.qml:190
 #, kde-format
 msgid "Show animation when switching:"
 msgstr "切换时显示动画："
 
-#: package/contents/ui/main.qml:232
+#: package/contents/ui/main.qml:233
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr "切换时显示屏幕提示："
 
-#: package/contents/ui/main.qml:250
+#: package/contents/ui/main.qml:251
 #, kde-format
 msgid "%1 ms"
 msgstr "%1 毫秒"
 
-#: package/contents/ui/main.qml:268
+#: package/contents/ui/main.qml:269
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "显示桌面布局符"
