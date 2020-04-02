@@ -391,13 +391,6 @@ Alternatively, you might want to use the XRender backend instead.</string>
      </property>
     </widget>
    </item>
-   <item row="18" column="1">
-    <widget class="QCheckBox" name="neverGonnaGiveYouUp">
-     <property name="text">
-      <string>Enough of this torment already!</string>
-     </property>
-    </widget>
-   </item>
   </layout>
  </widget>
  <customwidgets>

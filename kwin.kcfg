@@ -282,9 +282,6 @@
             <min>0</min>
             <max>4</max>
         </entry>
-        <entry name="NeverGonnaGiveYouUp" type="Bool">
-            <default>false</default>
-        </entry>
     </group>
     <group name="TabBox">
         <entry name="ShowDelay" type="Bool">

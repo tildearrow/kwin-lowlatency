@@ -739,14 +739,6 @@ void Compositor::performCompositing()
             m_lastPaintFree=2000;
           }
           usleep(m_lastPaintFree);
-          if (!options->neverGonnaGiveYouUp()) {
-            if ((rand()%5)==0) {
-              usleep(100*(rand()%400));
-            }
-            if ((rand()%50)==0) {
-              usleep(100*(rand()%5000));
-            }
-          }
           scheduleRepaint();
         }
     }

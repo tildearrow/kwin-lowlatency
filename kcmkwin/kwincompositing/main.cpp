@@ -194,11 +194,6 @@ void KWinCompositingSettings::init()
     connect(m_compositing, &Compositing::vsyncMechanismChanged, m_form.vsyncMechanism, &QComboBox::setCurrentIndex);
     connect(m_form.vsyncMechanism, currentIndexChangedSignal, m_compositing, &Compositing::setVsyncMechanism);
 
-    // you know the rules and so do I
-    m_form.neverGonnaGiveYouUp->setChecked(m_compositing->neverGonnaGiveYouUp());
-    connect(m_compositing, &Compositing::neverGonnaGiveYouUpChanged, m_form.neverGonnaGiveYouUp, &QCheckBox::setChecked);
-    connect(m_form.neverGonnaGiveYouUp, &QCheckBox::toggled, m_compositing, &Compositing::setNeverGonnaGiveYouUp);
-
     // compositing type
     CompositingType *type = new CompositingType(this);
     m_form.type->setModel(type);
