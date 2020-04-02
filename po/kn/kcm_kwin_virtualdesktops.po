@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwindesktop\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-03-30 09:08+0200\n"
+"POT-Creation-Date: 2019-12-24 03:28+0100\n"
 "PO-Revision-Date: 2010-01-20 23:39+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: kn-IN <>\n"
@@ -94,33 +94,33 @@ msgid_plural "%1 Rows"
 msgstr[0] ""
 msgstr[1] ""
 
-#: package/contents/ui/main.qml:173
+#: package/contents/ui/main.qml:172
 #, kde-format
 msgid "Options:"
 msgstr ""
 
-#: package/contents/ui/main.qml:175
+#: package/contents/ui/main.qml:174
 #, fuzzy, kde-format
 #| msgid "Desktop navigation wraps around"
 msgid "Navigation wraps around"
 msgstr "ಗಣಕತೆರೆ ಸಂಚರಿಸುವಿಕೆಯು ಆವರಿಸುತ್ತದೆ"
 
-#: package/contents/ui/main.qml:190
+#: package/contents/ui/main.qml:189
 #, kde-format
 msgid "Show animation when switching:"
 msgstr ""
 
-#: package/contents/ui/main.qml:233
+#: package/contents/ui/main.qml:232
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr ""
 
-#: package/contents/ui/main.qml:251
+#: package/contents/ui/main.qml:250
 #, kde-format
 msgid "%1 ms"
 msgstr ""
 
-#: package/contents/ui/main.qml:269
+#: package/contents/ui/main.qml:268
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "ಗಣಕತೆರೆ ಹೊರವಿನ್ಯಾಸ ಸೂಚಕಗಳನ್ನು ತೋರಿಸು"

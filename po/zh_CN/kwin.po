@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-02-22 08:21+0100\n"
-"PO-Revision-Date: 2020-03-25 19:56\n"
+"PO-Revision-Date: 2020-03-10 10:57\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -52,18 +52,18 @@ msgstr "未知"
 #, kde-format
 msgctxt "Night Color was disabled"
 msgid "Night Color Off"
-msgstr "夜间颜色关闭"
+msgstr ""
 
 #: colorcorrection/manager.cpp:70
 #, kde-format
 msgctxt "Night Color was enabled"
 msgid "Night Color On"
-msgstr "夜间颜色开启"
+msgstr ""
 
 #: colorcorrection/manager.cpp:240 colorcorrection/manager.cpp:241
 #, kde-format
 msgid "Toggle Night Color"
-msgstr "切换夜间颜色"
+msgstr ""
 
 #: composite.cpp:930
 #, kde-format

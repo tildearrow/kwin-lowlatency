@@ -11,14 +11,14 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-02-22 08:21+0100\n"
-"PO-Revision-Date: 2020-03-14 22:40+0100\n"
+"PO-Revision-Date: 2020-02-16 14:10+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.12.3\n"
+"X-Generator: Lokalize 19.12.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -593,7 +593,7 @@ msgstr "Tilstand"
 #: debug_console.cpp:498
 #, kde-format
 msgid "Tablet Tool"
-msgstr "Teikneplate-verktøy"
+msgstr ""
 
 #: debug_console.cpp:499
 #, kde-format
@@ -627,14 +627,14 @@ msgstr "Knappar"
 
 #. i18n: ectx: property (title), widget (QGroupBox, modifiersBox)
 #: debug_console.cpp:507 debug_console.ui:356
-#, kde-format
+#, fuzzy, kde-format
 msgid "Modifiers"
 msgstr "Valtastar"
 
 #: debug_console.cpp:520
 #, kde-format
 msgid "Tablet Tool Button"
-msgstr "Teikneplateverktøy-knapp"
+msgstr ""
 
 #: debug_console.cpp:521 debug_console.cpp:536
 #, kde-format
@@ -644,12 +644,12 @@ msgstr "Trykte knappar"
 #: debug_console.cpp:535
 #, kde-format
 msgid "Tablet Pad Button"
-msgstr "Teikneplateflate-knapp"
+msgstr ""
 
 #: debug_console.cpp:545
 #, kde-format
 msgid "Tablet Pad Strip"
-msgstr "Teikneplate-stripe"
+msgstr ""
 
 #: debug_console.cpp:546 debug_console.cpp:558
 #, kde-format
@@ -664,7 +664,7 @@ msgstr "er finger"
 #: debug_console.cpp:557
 #, kde-format
 msgid "Tablet Pad Ring"
-msgstr "Teikneplate-ring"
+msgstr ""
 
 #: debug_console.cpp:745
 #, kde-format

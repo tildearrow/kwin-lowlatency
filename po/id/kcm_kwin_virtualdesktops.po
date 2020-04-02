@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-03-30 09:08+0200\n"
+"POT-Creation-Date: 2019-12-24 03:28+0100\n"
 "PO-Revision-Date: 2019-11-14 22:01+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -95,32 +95,32 @@ msgid_plural "%1 Rows"
 msgstr[0] "Sebaris"
 msgstr[1] "%1 Baris"
 
-#: package/contents/ui/main.qml:173
+#: package/contents/ui/main.qml:172
 #, kde-format
 msgid "Options:"
 msgstr "Opsi:"
 
-#: package/contents/ui/main.qml:175
+#: package/contents/ui/main.qml:174
 #, kde-format
 msgid "Navigation wraps around"
 msgstr "Navigasi sekitar kemasan"
 
-#: package/contents/ui/main.qml:190
+#: package/contents/ui/main.qml:189
 #, kde-format
 msgid "Show animation when switching:"
 msgstr "Tampilkan animasi ketika pengalihan:"
 
-#: package/contents/ui/main.qml:233
+#: package/contents/ui/main.qml:232
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr "Tampilkan osd ketika mengalihkan:"
 
-#: package/contents/ui/main.qml:251
+#: package/contents/ui/main.qml:250
 #, kde-format
 msgid "%1 ms"
 msgstr "%1 md"
 
-#: package/contents/ui/main.qml:269
+#: package/contents/ui/main.qml:268
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "Tampilkan indikator tataletak desktop"
