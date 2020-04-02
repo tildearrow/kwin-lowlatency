@@ -127,7 +127,6 @@ Options::Options(QObject *parent)
     , m_maxLatency(Options::defaultMaxLatency())
     , m_minLatency(Options::defaultMinLatency())
     , m_vsyncMechanism(Options::defaultVsyncMechanism())
-    , m_neverGonnaGiveYouUp(Options::defaultNeverGonnaGiveYouUp())
     , OpTitlebarDblClick(Options::defaultOperationTitlebarDblClick())
     , CmdActiveTitlebar1(Options::defaultCommandActiveTitlebar1())
     , CmdActiveTitlebar2(Options::defaultCommandActiveTitlebar2())
@@ -732,11 +731,6 @@ void Options::setVsyncMechanism(int val) {
   emit vsyncMechanismChanged();
 }
 
-void Options::setNeverGonnaGiveYouUp(bool set) {
-  m_neverGonnaGiveYouUp = set;
-  emit neverGonnaGiveYouUpChanged();
-}
-
 void Options::setGlPreferBufferSwap(char glPreferBufferSwap)
 {
     if (glPreferBufferSwap == 'a') {
@@ -911,7 +905,6 @@ void Options::syncFromKcfgc()
     setMaxLatency(m_settings->maxLatency());
     setMinLatency(m_settings->minLatency());
     setVsyncMechanism(m_settings->vSyncMechanism());
-    setNeverGonnaGiveYouUp(m_settings->neverGonnaGiveYouUp());
 }
 
 bool Options::loadCompositingConfig (bool force)
