@@ -196,7 +196,7 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
   - Cubic: smooth curve. may cause an annoyance if your animation speed is high.
   - Quartic: smoothest curve. you definitely need to lower the animation speed for this one, though.
 - latency/stutter control: use if you have a high-end system and want lower latency, or if you're having stuttering and want to reduce it.
-- maximum/minimum latency reduction: allows you to configure the latency reduction window. examples (min/max): 8/0 default, 0/0 disable latency reduction, and 8/8 lowest latency possible. this is limited to 8ms, since any further would cause major stuttering and slowdowns.
+- minimum/maximum latency reduction: allows you to configure the latency reduction window. examples (min/max): 0/8 default, 0/0 disable latency reduction, and 8/8 lowest latency possible. this is limited to 8ms, since any further would cause major stuttering and slowdowns.
 - VSync mechanism: **use this if you have latency problems or frame rate halving.** allows you to set the mechanism used to detect VSync. the following options are available:
   - Automatic: auto-detect the VSync mechanism. **default, and recommended.**
   - None and just hope for the best:
