@@ -130,6 +130,7 @@ RulesWidget::RulesWidget(QWidget* parent)
     SETUP(strictgeometry, force);
     SETUP(disableglobalshortcuts, force);
     SETUP(blockcompositing, force);
+    SETUP(allowunredirect, force);
 
     connect (shortcut_edit, SIGNAL(clicked()), SLOT(shortcutEditClicked()));
 
@@ -229,6 +230,7 @@ UPDATE_ENABLE_SLOT(maxsize)
 UPDATE_ENABLE_SLOT(strictgeometry)
 UPDATE_ENABLE_SLOT(disableglobalshortcuts)
 UPDATE_ENABLE_SLOT(blockcompositing)
+UPDATE_ENABLE_SLOT(allowunredirect)
 UPDATE_ENABLE_SLOT(desktopfile)
 
 #undef UPDATE_ENABLE_SLOT
@@ -546,6 +548,7 @@ void RulesWidget::setRules(Rules* rules)
     CHECKBOX_FORCE_RULE(strictgeometry,);
     CHECKBOX_FORCE_RULE(disableglobalshortcuts,);
     CHECKBOX_FORCE_RULE(blockcompositing,);
+    CHECKBOX_FORCE_RULE(allowunredirect,);
     LINEEDIT_SET_RULE(desktopfile,)
 }
 
@@ -651,6 +654,7 @@ Rules* RulesWidget::rules() const
     CHECKBOX_FORCE_RULE(strictgeometry,);
     CHECKBOX_FORCE_RULE(disableglobalshortcuts,);
     CHECKBOX_FORCE_RULE(blockcompositing,);
+    CHECKBOX_FORCE_RULE(allowunredirect,);
     LINEEDIT_SET_RULE(desktopfile,);
     return rules;
 }
@@ -774,6 +778,7 @@ void RulesWidget::prefillUnusedValues(const QVariantMap& info)
     //CHECKBOX_PREFILL( strictgeometry, );
     //CHECKBOX_PREFILL( disableglobalshortcuts, );
     //CHECKBOX_PREFILL( blockcompositing, );
+    //CHECKBOX_PREFILL( allowunredirect, );
     LINEEDIT_PREFILL(desktopfile, , info.value("desktopFile").toString());
 }
 

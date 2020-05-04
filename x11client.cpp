@@ -5032,7 +5032,7 @@ void X11Client::updateWindowPixmap()
 bool X11Client::shouldUnredirect() const
 {
     if (isActiveFullScreen()) {
-        //if (!rules()->checkAllowUnredirect(true)) return false;
+        if (!rules()->checkAllowUnredirect(true)) return false;
         QList<Toplevel*> stacking = workspace()->xStackingOrder();
         for (int pos = stacking.count() - 1;
                 pos >= 0;
