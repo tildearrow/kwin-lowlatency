@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-20 03:31+0200\n"
-"PO-Revision-Date: 2020-01-29 00:03+0100\n"
+"PO-Revision-Date: 2020-04-05 02:05+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -159,7 +159,7 @@ msgstr "창 역할 (기능별 창을 선택할 수 있음)"
 #: detectwidget.ui:195
 #, kde-format
 msgid "Window type (eg. all dialogs, but not the main windows)"
-msgstr "창 종류 (예: 모든 대화상자, 주 창 제외)"
+msgstr "창 종류 (예: 모든 대화 상자, 주 창 제외)"
 
 #. i18n: ectx: property (text), widget (QCheckBox, match_title)
 #: detectwidget.ui:202
@@ -181,12 +181,12 @@ msgid ""
 "For example \"<b>Shift+Alt+(123) Shift+Ctrl+(ABC)</b>\" will first try "
 "<b>Shift+Alt+1</b>, then others with <b>Shift+Ctrl+C</b> as the last one."
 msgstr ""
-"하나의 단축 키는 두 개의 단추를 사용해서 쉽게 할당하거나 삭제할 수 있습니다. "
-"단축키는 반드시 수정자 키와 함께 사용되어야 합니다.<p>\n"
-"여러 개의 단축키를 지정할 수 있으며 사용할 수 있는 단축키는 처음부터 선택됩니"
-"다. 단축키는 \" - \"로 구분된 단축키 집합으로 지정할 수도 있습니다. 하나의 집"
+"단축키 하나는 단추 두 개를 사용해서 쉽게 할당하거나 삭제할 수 있습니다. 단축"
+"키는 반드시 수정자 키와 같이 사용해야 합니다.<p>\n"
+"단축키 여러 개도 지정할 수 있으며, 사용할 수 있는 단축키 중 첫 번째를 선택합"
+"니다. 단축키는 \" - \"로 구분된 단축키 집합으로 지정할 수도 있습니다. 개별 집"
 "합은 <i>기본 키</i>+(<i>키 목록</i>)으로 지정할 수 있으며 기본 키는 수정자 키"
-"들이고, 키 목록은 키들의 목록입니다.<br />\n"
+"이고, 키 목록은 키의 목록입니다.<br />\n"
 "예를 들어 \"<b>Shift+Alt+(123) Shift+Ctrl+(ABC)</b>\"를 지정하면 맨 처음으로 "
 "<b>Shift+Alt+1</b>을 시도하며 마지막으로 <b>Shift+Ctrl+C</b>를 시도합니다."
 
@@ -210,7 +210,7 @@ msgstr "창 지정 설정 모듈"
 #: kcm.cpp:52
 #, kde-format
 msgid "(c) 2004 KWin and KControl Authors"
-msgstr "(c) 2004 Kwin, KControl 작성자"
+msgstr "(c) 2004 KWin and KControl Authors"
 
 #: kcm.cpp:53
 #, kde-format
@@ -239,17 +239,17 @@ msgstr "각각 창의 설정을 따로 기억하기"
 #: kcm.cpp:101
 #, kde-format
 msgid "Show internal settings for remembering"
-msgstr "기억하기 위한 내부 설정 보이기"
+msgstr "기억할 내부 설정 표시"
 
 #: kcm.cpp:102
 #, kde-format
 msgid "Internal setting for remembering"
-msgstr "기억하기 위한 내부 설정"
+msgstr "기억할 내부 설정"
 
 #: main.cpp:138
 #, kde-format
 msgid "Application settings for %1"
-msgstr "%1의 프로그램 지정 설정"
+msgstr "%1의 프로그램 설정"
 
 #: main.cpp:158
 #, kde-format
@@ -275,7 +275,7 @@ msgstr "KWin 도우미 유틸리티"
 #: main.cpp:249
 #, kde-format
 msgid "KWin id of the window for special window settings."
-msgstr "창 지정 설정을 위한 창의 KWin ID."
+msgstr "창 지정 설정에 사용할 창의 KWin ID."
 
 #: main.cpp:250
 #, kde-format
@@ -285,7 +285,7 @@ msgstr "설정이 이 프로그램의 모든 창에 영향을 줄지 여부."
 #: main.cpp:259
 #, kde-format
 msgid "This helper utility is not supposed to be called directly."
-msgstr "이 도우미 유틸리티는 직접 호출되기 위한 것이 아닙니다."
+msgstr "이 도우미 프로그램은 직접 호출되지 않습니다."
 
 #: ruleslist.cpp:152
 #, kde-format
@@ -371,12 +371,12 @@ msgid ""
 msgstr ""
 "창 속성이 영향 받는 방법을 선택하십시오.<ul><li><em>영향 주지 않음</em>: 창 "
 "속성은 영향을 주지 않으며 기본적인 처리를 사용합니다. 이것을 지정하면 더 일반"
-"적인 창 속성이 적용되지 않을 것입니다.</li><li><em>초기에 적용하기</em>: 창"
-"이 만들어지자 마자 속성을 적용합니다. 나중에 변경된 사항은 영향을 받지 않습니"
-"다.</li><li><em>기억하기</em>: 창 속성을 기억하며 창이 생성될 때마다 기억하"
-"고 있는 값이 적용됩니다.</li><li><em>강제</em>: 창 속성을 항상 지정한 값으로 "
-"강제적으로 적용합니다.</li><li><em>지금 적용하기</em>: 창 속성은 즉시 적용되"
-"며 나중에 변경된 사항은 영향 받지 않습니다. 이 동작은 이후에 삭제됩니다.</"
+"적인 창 속성이 적용되지 않습니다.</li><li><em>초기에 적용하기</em>: 창이 만들"
+"어지자 마자 속성을 적용합니다. 나중에 변경된 사항은 영향을 받지 않습니다.</"
+"li><li><em>기억하기</em>: 창 속성을 기억하며 창이 생성될 때마다 기억하고 있"
+"는 값을 적용합니다.</li><li><em>강제</em>: 창 속성을 항상 지정한 값으로 강제"
+"적으로 적용합니다.</li><li><em>지금 적용하기</em>: 창 속성은 즉시 적용되며 나"
+"중에 변경된 사항은 영향 받지 않습니다. 이 동작은 이후에 삭제됩니다.</"
 "li><li><em>임시로 강제하기</em>: 창 속성은 숨겨질 때까지 주어진 값으로 강제됩"
 "니다. 이 동작은 창이 숨겨지면 삭제됩니다.</li></ul>"
 
@@ -393,10 +393,10 @@ msgid ""
 msgstr ""
 "창 속성이 영향받는 방법을 선택하십시오.<ul><li><em>영향 주지 않음</em>: 창 속"
 "성은 영향을 주지 않으며 기본적인 처리를 사용합니다. 이것을 지정하면 더 일반적"
-"인 창 속성이 적용되지 않을 것입니다.</li><li><em>기억하기</em>: 창 속성은 기"
-"억되며 창이 생성될 때마다 기억하고 있는 값이 적용됩니다.</li><li><em>임시로 "
-"강제하기</em>: 창 속성은 숨겨질 때까지 주어진 값으로 강제됩니다. 이 동작은 창"
-"이 숨겨지면 삭제됩니다.</li></ul>"
+"인 창 속성을 적용하지 않습니다.</li><li><em>기억하기</em>: 창 속성이 기억되"
+"며 창이 생성될 때마다 기억하고 있는 값을 적용합니다.</li><li><em>임시로 강제"
+"하기</em>: 창 속성을 숨겨질 때까지 주어진 값으로 강제합니다. 이 동작은 창이 "
+"숨겨지면 삭제됩니다.</li></ul>"
 
 #: ruleswidget.cpp:151
 #, kde-format
@@ -428,9 +428,9 @@ msgid ""
 "types."
 msgstr ""
 "창 클래스를 중요하지 않음으로 지정했습니다.\n"
-"모든 프로그램의 창에 영향을 끼칠 수도 있습니다. 일반적인 설정을 만들기 위한 "
-"것이라면 최소한 창 종류의 제한을 두어서 특별한 창에 설정이 적용되지 않도록 하"
-"는 것을 권장합니다."
+"모든 프로그램의 창에 영향을 끼칠 수도 있습니다. 일반적인 설정을 만들려는 것이"
+"라면 최소한 창 종류의 제한을 두어서 특별한 창에 설정이 적용되지 않도록 하는 "
+"것을 권장합니다."
 
 #: ruleswidget.cpp:831
 #, kde-format
@@ -445,9 +445,9 @@ msgid ""
 "setting using the checkbox, select in what way the setting should be "
 "affected and to which value."
 msgstr ""
-"이 설정 대화상자는 선택한 창이나 프로그램의 설정만 바꿉니다. 바꾸고 싶은 설정"
-"을 선택한 다음 설정을 체크 상자를 통해서 활성화시키시고, 어떤 식으로 바꾸고 "
-"싶은지를 결정하십시오."
+"이 설정 대화 상자는 선택한 창이나 프로그램의 설정만 바꿉니다. 바꾸고 싶은 설"
+"정을 선택한 다음 설정을 체크 상자를 통해서 활성화시키시고, 어떤 식으로 바꾸"
+"고 싶은지를 결정하십시오."
 
 #: ruleswidget.cpp:867
 #, kde-format
@@ -1264,7 +1264,7 @@ msgid ""
 "while it's active!"
 msgstr ""
 "선택하면 창이 활성화되어 있을 때\n"
-"Alt+Tab 등을 포함한 모든 키 입력을 받습니다.\n"
+"Alt+Tab과 같은 모든 키 입력을 받습니다.\n"
 "에뮬레이터나 가상 머신 등에 유용하게 사용할 수 있습니다.\n"
 "\n"
 "경고:\n"

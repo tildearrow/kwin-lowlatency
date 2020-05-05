@@ -103,7 +103,7 @@ msgstr "대체 창 전환 사용/사용 안 함"
 msgid ""
 "You can trigger an action by pushing the mouse cursor against the "
 "corresponding screen edge or corner."
-msgstr "동작을 실행하려면 화면의 원하는 쪽 경계나 모서리로 마우스를 미십시오"
+msgstr "동작을 실행하려면 화면의 원하는 쪽 경계나 모서리로 마우스를 미십시오."
 
 #. i18n: ectx: property (text), widget (QLabel, quickMaximizeLabel)
 #: main.ui:67
@@ -218,7 +218,7 @@ msgstr "동작이 실행된 이후 다음 동작이 실행될 때까지 기다�
 #: main.ui:211
 #, kde-format
 msgid "&Reactivation delay:"
-msgstr "재활성화 지연 시간(&D):"
+msgstr "재활성화 지연 시간(&R):"
 
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #: touch.ui:17

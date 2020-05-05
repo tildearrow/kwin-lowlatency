@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-02-22 08:21+0100\n"
+"POT-Creation-Date: 2020-04-29 09:25+0200\n"
 "PO-Revision-Date: 2020-02-24 08:01+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -57,7 +57,7 @@ msgstr "Warna Malam On"
 msgid "Toggle Night Color"
 msgstr "Jungkitan Warna Malam"
 
-#: composite.cpp:930
+#: composite.cpp:948
 #, kde-format
 msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "

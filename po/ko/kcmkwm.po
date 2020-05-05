@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-20 03:31+0200\n"
-"PO-Revision-Date: 2020-01-29 00:06+0100\n"
+"PO-Revision-Date: 2020-04-05 02:06+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -96,7 +96,7 @@ msgstr "활성화 및 올림"
 #: actions.ui:66 mouse.ui:200
 #, kde-format
 msgid "&Middle click:"
-msgstr "가운데 단추 클릭(&E):"
+msgstr "가운데 단추 클릭(&M):"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coWin2)
 #: actions.ui:79
@@ -178,7 +178,8 @@ msgstr "수정자 키(&D):"
 msgid ""
 "Here you select whether holding the Meta key or Alt key will allow you to "
 "perform the following actions."
-msgstr "Meta 키나 Alt 키를 눌렀을 때 다음 동작을 수행할 것입니다."
+msgstr ""
+"Meta 키나 Alt 키를 누르고 있을 때 다음 동작을 수행할지 선택할 수 있습니다."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllKey)
 #: actions.ui:209
@@ -892,7 +893,7 @@ msgstr "창 동작 설정 모듈"
 #: main.cpp:104
 #, kde-format
 msgid "(c) 1997 - 2002 KWin and KControl Authors"
-msgstr "(c) 1997 - 2002 KWin, KControl 작성자"
+msgstr "(c) 1997 - 2002 KWin and KControl Authors"
 
 #: main.cpp:106
 #, kde-format
@@ -952,7 +953,7 @@ msgstr ""
 "<p><h1>창 동작</h1> 이곳에서 창을 옮기거나, 크기를 조정하거나, 누를 때 행동"
 "을 지정할 수 있습니다. 또한 새 창에 대한 배치 및 초점 정책을 설정할 수 있습니"
 "다.</p><p>이 설정은 창 관리자가 KWin일 때에만 작동합니다. 만약 다른 창 관리자"
-"를 사용한다면 창 관리자의 문서를 참고하셔서 설정하십시오.</p>"
+"를 사용한다면 창 관리자의 문서를 참고해서 설정하십시오.</p>"
 
 #: main.cpp:191
 #, kde-format
@@ -1284,7 +1285,7 @@ msgstr ""
 "<html><head/><body><p><span style=\" font-style:italic;\">마우스가 초점을 따"
 "라감:</span> 마우스를 창으로 이동하면 활성화됩니다. 예. 마우스 아래에 무작위"
 "적으로 표시되는 창은 초점을 받지 못합니다. <span style=\" font-style:italic;"
-"\">초점 훔치기 방지</span>는 평소대로 작동합니다. 실제로 누를 필요가 없는 "
+"\">초점 훔치기 방지</span>는 평소대로 작동합니다. 실제로 누르지 않아도 되는 "
 "<span style=\" font-style:italic;\">누르면 초점을 맞춤</span>과 유사합니다.</"
 "p></body></html>"
 
@@ -1317,9 +1318,9 @@ msgstr ""
 "span> 창 초점은 항상 마우스 아래에 있는 창에 맞춰집니다.<br/><span style=\" "
 "font-weight:600;\">알림:</span> <span style=\" font-style:italic;\">초점 훔치"
 "기 방지</span> 및 <span style=\" font-style:italic;\">탭 상자(\"Alt+Tab\")</"
-"span>는 이 정책에 모순되며 작동하지 않을 것입니다. 만약 위 설정을 사용해야 한"
-"다면 <span style=\" font-style:italic;\">마우스가 초점을 따라감(마우스 우"
-"선)</span> 설정을 사용하십시오.</p></body></html>"
+"span>는 이 정책에 모순되며 작동하지 않습니다. 만약 위 설정을 사용해야 한다면 "
+"<span style=\" font-style:italic;\">마우스가 초점을 따라감(마우스 우선)</"
+"span> 설정을 사용하십시오.</p></body></html>"
 
 #: windows.cpp:187
 #, kde-format
@@ -1339,6 +1340,6 @@ msgstr ""
 "아무 창도 초점을 가지지 않습니다. 관리되지 않는 X11 환경의 기본값과 비슷하게 "
 "동작합니다.<br/><span style=\" font-weight:600;\">알림:</span> <span style="
 "\" font-style:italic;\">초점 훔치기 방지</span> 및 <span style=\" font-style:"
-"italic;\">탭 상자(\"Alt+Tab\")</span>는 이 정책에 모순되며 작동하지 않을 것입"
-"니다. 만약 위 설정을 사용해야 한다면 <span style=\" font-style:italic;\">마우"
-"스가 초점을 따라감(마우스 우선)</span> 설정을 사용하십시오.</p></body></html>"
+"italic;\">탭 상자(\"Alt+Tab\")</span>는 이 정책에 모순되며 작동하지 않습니"
+"다. 만약 위 설정을 사용해야 한다면 <span style=\" font-style:italic;\">마우스"
+"가 초점을 따라감(마우스 우선)</span> 설정을 사용하십시오.</p></body></html>"

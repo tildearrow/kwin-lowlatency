@@ -75,7 +75,7 @@ msgid ""
 "effect's settings."
 msgstr ""
 "정보: 효과를 활성화시키고 설정하는 방법을 알아 보시려면 효과의 설정을 보십시"
-"오"
+"오."
 
 #: package/contents/ui/main.qml:56
 #, kde-format

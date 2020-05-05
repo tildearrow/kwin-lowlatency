@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-02-22 08:21+0100\n"
-"PO-Revision-Date: 2020-01-29 00:16+0100\n"
+"POT-Creation-Date: 2020-04-29 09:25+0200\n"
+"PO-Revision-Date: 2020-04-04 00:53+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -58,7 +58,7 @@ msgstr "야간 색상 켜짐"
 msgid "Toggle Night Color"
 msgstr "야간 색상 전환"
 
-#: composite.cpp:930
+#: composite.cpp:948
 #, kde-format
 msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "
@@ -1836,7 +1836,7 @@ msgid ""
 msgstr ""
 "창의 경계선이 보이지 않게 하도록 설정했습니다.\n"
 "경계선이 없을 때는 마우스를 사용해서 경계선을 다시 보이게 할 수 없습니다: 키"
-"보드 단축키 %1을(를) 사용하셔서 창 동작 메뉴를 부르십시오."
+"보드 단축키 %1을(를) 사용해서 창 동작 메뉴를 부르십시오."
 
 #: useractions.cpp:187
 #, kde-format
@@ -1848,8 +1848,8 @@ msgid ""
 msgstr ""
 "창을 전체 화면 모드로 보이도록 설정했습니다.\n"
 "프로그램에서 전체 화면 모드를 제어할 수 없을 때에는 마우스를 사용해서 전체 화"
-"면 모드에서 벗어날 수 없습니다: 키보드 단축키 %1을(를) 사용하셔서 창 동작 메"
-"뉴를 부르십시오."
+"면 모드에서 벗어날 수 없습니다: 키보드 단축키 %1을(를) 사용해서 창 동작 메뉴"
+"를 부르십시오."
 
 #: useractions.cpp:252
 #, kde-format

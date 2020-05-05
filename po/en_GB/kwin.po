@@ -3,15 +3,15 @@
 #
 # Malcolm Hunter <malcolm.hunter@gmx.co.uk>, 2003, 2004, 2005, 2008.
 # Andrew Coles <andrew_coles@yahoo.co.uk>, 2004, 2005, 2009, 2010.
-# Steve Allewell <steve.allewell@gmail.com>, 2014, 2015, 2016, 2017, 2018, 2019.
+# Steve Allewell <steve.allewell@gmail.com>, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-02-22 08:21+0100\n"
-"PO-Revision-Date: 2019-12-29 15:02+0000\n"
+"POT-Creation-Date: 2020-04-29 09:25+0200\n"
+"PO-Revision-Date: 2020-03-31 12:20+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
-"Language-Team: British English <kde-i18n-doc@kde.org>\n"
+"Language-Team: British English <kde-l10n-en_gb@kde.org>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,20 +46,20 @@ msgstr "unknown"
 #, kde-format
 msgctxt "Night Color was disabled"
 msgid "Night Color Off"
-msgstr ""
+msgstr "Night Colour Off"
 
 #: colorcorrection/manager.cpp:70
 #, kde-format
 msgctxt "Night Color was enabled"
 msgid "Night Color On"
-msgstr ""
+msgstr "Night Colour On"
 
 #: colorcorrection/manager.cpp:240 colorcorrection/manager.cpp:241
 #, kde-format
 msgid "Toggle Night Color"
-msgstr ""
+msgstr "Toggle Night Colour"
 
-#: composite.cpp:930
+#: composite.cpp:948
 #, kde-format
 msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "

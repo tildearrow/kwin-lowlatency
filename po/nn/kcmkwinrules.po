@@ -1,7 +1,7 @@
 # Translation of kcmkwinrules to Norwegian Nynorsk
 #
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 2004, 2005.
-# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2010, 2015, 2016, 2018, 2019.
+# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2010, 2015, 2016, 2018, 2019, 2020.
 # Håvard Korsvoll <korsvoll@skulelinux.no>, 2005, 2009.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2010.
 # Øystein Steffensen-Alværvik <ystein@posteo.net>, 2018.
@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-20 03:31+0200\n"
-"PO-Revision-Date: 2019-10-26 12:45+0200\n"
+"PO-Revision-Date: 2020-04-25 09:48+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
-"Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
+"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.11.70\n"
+"X-Generator: Lokalize 19.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -581,11 +581,12 @@ msgstr "&Maskin (vertsnamn):"
 msgid "&Detect Window Properties"
 msgstr "&Oppdag vindaugseigenskapar"
 
+# Treng ekstra mellomrom for at det ikkje skal stå «0sekund forseinking».
 #. i18n: ectx: property (suffix), widget (QSpinBox, detection_delay)
 #: ruleswidgetbase.ui:325
 #, kde-format
 msgid "s delay"
-msgstr "sekund forseinking"
+msgstr " sekund forseinking"
 
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #: ruleswidgetbase.ui:468

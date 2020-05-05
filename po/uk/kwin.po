@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-02-22 08:21+0100\n"
+"POT-Creation-Date: 2020-04-29 09:25+0200\n"
 "PO-Revision-Date: 2020-01-13 08:11+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -62,7 +62,7 @@ msgstr "Нічні кольори увімкнено"
 msgid "Toggle Night Color"
 msgstr "Перемкнути нічні кольори"
 
-#: composite.cpp:930
+#: composite.cpp:948
 #, kde-format
 msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "

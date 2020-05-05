@@ -2,22 +2,22 @@
 # Stephan Johach <hunsum@gmx.de>, 2005, 2006.
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008, 2009, 2010.
 # Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
-# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012, 2013, 2015, 2016, 2018.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012, 2013, 2015, 2016, 2018, 2020.
 # Burkhard Lück <lueck@hube-lueck.de>, 2010, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
 # Frank Steinmetzger <Warp_7@gmx.de>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-02-22 08:21+0100\n"
-"PO-Revision-Date: 2020-01-08 08:08+0100\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"POT-Creation-Date: 2020-04-29 09:25+0200\n"
+"PO-Revision-Date: 2020-04-04 22:30+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 18.12.3\n"
+"X-Generator: Lokalize 19.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -45,20 +45,20 @@ msgstr "unbekannt"
 #, kde-format
 msgctxt "Night Color was disabled"
 msgid "Night Color Off"
-msgstr ""
+msgstr "Nachtfarben aus"
 
 #: colorcorrection/manager.cpp:70
 #, kde-format
 msgctxt "Night Color was enabled"
 msgid "Night Color On"
-msgstr ""
+msgstr "Nachfarben ein"
 
 #: colorcorrection/manager.cpp:240 colorcorrection/manager.cpp:241
 #, kde-format
 msgid "Toggle Night Color"
-msgstr ""
+msgstr "Nachtfarben umschalten"
 
-#: composite.cpp:930
+#: composite.cpp:948
 #, kde-format
 msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "
@@ -600,11 +600,9 @@ msgid "EventType"
 msgstr ""
 
 #: debug_console.cpp:500 debug_console.cpp:547 debug_console.cpp:559
-#, fuzzy, kde-format
-#| msgctxt "The global mouse pointer position"
-#| msgid "Global Position"
+#, kde-format
 msgid "Position"
-msgstr "Globale Position"
+msgstr "Position"
 
 #: debug_console.cpp:502
 #, kde-format
@@ -612,22 +610,19 @@ msgid "Tilt"
 msgstr ""
 
 #: debug_console.cpp:504
-#, fuzzy, kde-format
-#| msgid "Allow Rotation"
+#, kde-format
 msgid "Rotation"
-msgstr "Drehung erlauben"
+msgstr "Drehung"
 
 #: debug_console.cpp:505
 #, kde-format
 msgid "Pressure"
-msgstr ""
+msgstr "Druck"
 
 #: debug_console.cpp:506
-#, fuzzy, kde-format
-#| msgctxt "A button in a mouse press/release event"
-#| msgid "Button"
+#, kde-format
 msgid "Buttons"
-msgstr "Knopf"
+msgstr "Knöpfe"
 
 #. i18n: ectx: property (title), widget (QGroupBox, modifiersBox)
 #: debug_console.cpp:507 debug_console.ui:356
@@ -641,9 +636,7 @@ msgid "Tablet Tool Button"
 msgstr ""
 
 #: debug_console.cpp:521 debug_console.cpp:536
-#, fuzzy, kde-format
-#| msgctxt "All currently pressed buttons in a mouse press/release event"
-#| msgid "Pressed Buttons"
+#, kde-format
 msgid "Pressed Buttons"
 msgstr "Gedrückte Knöpfe"
 

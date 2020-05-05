@@ -1,8 +1,8 @@
 #!/bin/bash
 
 klpath=${PWD##*/}
-minorVer=4
-tinyPatch=1
+minorVer=1
+tinyPatch=0
 version=$(sed -rn "s/^set\(PROJECT_VERSION \"([0-9.]+)\"\)$/\1/p" CMakeLists.txt)
 
 if [ $tinyPatch -gt 0 ]; then

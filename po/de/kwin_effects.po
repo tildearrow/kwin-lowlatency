@@ -1,7 +1,7 @@
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2007, 2008, 2009, 2010.
 # Burkhard Lück <lueck@hube-lueck.de>, 2009, 2012, 2013, 2014, 2015, 2017, 2018, 2019.
 # Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
-# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012, 2013, 2015, 2016, 2018.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012, 2013, 2015, 2016, 2018, 2020.
 # Markus Slopianka <kamikazow@fishmouth.net>, 2010.
 # Felix Schweighofer <felix.schweighofer@googlemail.com>, 2010.
 # Hendrik Knackstedt <kn.hendrik@gmail.com>, 2011.
@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-02-13 08:28+0100\n"
-"PO-Revision-Date: 2019-08-06 21:13+0200\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"PO-Revision-Date: 2020-04-04 22:34+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 18.12.3\n"
+"X-Generator: Lokalize 19.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -32,10 +32,9 @@ msgstr "schwarzer@kde.org"
 
 #. i18n: ectx: property (text), widget (QLabel, labelConstantBlurDescription)
 #: blur/blur_config.ui:17
-#, fuzzy, kde-format
-#| msgid "&Strength:"
+#, kde-format
 msgid "Blur strength:"
-msgstr "&Stärke:"
+msgstr "Verwischstärke:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelConstantBlurLight)
 #. i18n: ectx: property (text), widget (QLabel, labelConstantNoiseLight)
@@ -53,10 +52,9 @@ msgstr "Stark"
 
 #. i18n: ectx: property (text), widget (QLabel, labelConstantNoiseDescription)
 #: blur/blur_config.ui:83
-#, fuzzy, kde-format
-#| msgid "&Strength:"
+#, kde-format
 msgid "Noise strength:"
-msgstr "&Stärke:"
+msgstr "Verzerrstärke:"
 
 #: colorpicker/colorpicker.cpp:118
 #, kde-format
@@ -596,10 +594,9 @@ msgstr "Abdunkeln:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimPanels)
 #: diminactive/diminactive_config.ui:47
-#, fuzzy, kde-format
-#| msgid "Do not animate panels"
+#, kde-format
 msgid "Docks and panels"
-msgstr "Kontrollleisten nicht animieren"
+msgstr "Kontroll- und Seitenleisten"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimDesktop)
 #: diminactive/diminactive_config.ui:54

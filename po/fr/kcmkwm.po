@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-09-20 03:31+0200\n"
-"PO-Revision-Date: 2020-01-31 15:16+0800\n"
+"PO-Revision-Date: 2020-05-02 15:07+0800\n"
 "Last-Translator: Simon Depiets <sdepiets@gmail.com>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 19.07.70\n"
+"X-Generator: Lokalize 20.07.70\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -74,8 +74,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
 #: actions.ui:43 actions.ui:83 actions.ui:123
-#, fuzzy, kde-format
-#| msgid "Activate, Raise & Pass Click"
+#, kde-format
 msgid "Activate, raise and pass click"
 msgstr "Activer, placer dessus et passer un clic"
 
@@ -83,8 +82,7 @@ msgstr "Activer, placer dessus et passer un clic"
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
 #: actions.ui:48 actions.ui:88 actions.ui:128
-#, fuzzy, kde-format
-#| msgid "Activate & Pass Click"
+#, kde-format
 msgid "Activate and pass click"
 msgstr "Activer et passer un clic"
 
@@ -108,8 +106,7 @@ msgstr "Activer"
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
 #: actions.ui:58 actions.ui:98 actions.ui:138 mouse.ui:283 mouse.ui:398
 #: mouse.ui:513
-#, fuzzy, kde-format
-#| msgid "Activate & Raise"
+#, kde-format
 msgid "Activate and raise"
 msgstr "Activer et placer dessus"
 
@@ -430,10 +427,9 @@ msgstr "Placer dessus / dessous"
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #: actions.ui:480 mouse.ui:107
-#, fuzzy, kde-format
-#| msgid "Shade/Unshade"
+#, kde-format
 msgid "Shade/unshade"
-msgstr "Enrouler / Dérouler"
+msgstr "Enrouler / dérouler"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
@@ -511,10 +507,9 @@ msgstr " msec"
 
 #. i18n: ectx: property (text), widget (QLabel, windowPlacementLabel)
 #: advanced.ui:66
-#, fuzzy, kde-format
-#| msgid "&Placement:"
+#, kde-format
 msgid "Window &placement:"
-msgstr "&Placement :"
+msgstr "&Placement de la fenêtre :"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, placementCombo)
 #: advanced.ui:76
@@ -550,22 +545,19 @@ msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:80
-#, fuzzy, kde-format
-#| msgid "Snap windows onl&y when overlapping"
+#, kde-format
 msgid "Minimal Overlapping"
-msgstr "Attirer les fenêtres uniquement en cas de chevauchement"
+msgstr "Chevauchement minimal"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:85
-#, fuzzy, kde-format
-#| msgid "Maximize"
+#, kde-format
 msgid "Maximized"
-msgstr "Maximiser"
+msgstr "Maximisé"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:90
-#, fuzzy, kde-format
-#| msgid "Cascade"
+#, kde-format
 msgid "Cascaded"
 msgstr "En cascade"
 
@@ -585,21 +577,19 @@ msgstr "Centrée"
 #: advanced.ui:105
 #, kde-format
 msgid "In Top-Left Corner"
-msgstr ""
+msgstr "Dans le coin supérieur gauche"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:110
-#, fuzzy, kde-format
-#| msgid "Under Mouse"
+#, kde-format
 msgid "Under mouse"
 msgstr "Sous la souris"
 
 #. i18n: ectx: property (text), widget (QLabel, specialWindowsLabel)
 #: advanced.ui:118
-#, fuzzy, kde-format
-#| msgid "Special Windows"
+#, kde-format
 msgid "&Special windows:"
-msgstr "Fenêtres spéciales"
+msgstr "Fenêtres &spéciales :"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, hideUtilityWindowsForInactive)
 #: advanced.ui:128
@@ -626,7 +616,7 @@ msgstr "Cacher les fenêtres d'utilitaires pour les applications inactives"
 #: focus.ui:22
 #, kde-format
 msgid "Window &activation policy:"
-msgstr ""
+msgstr "Politique d'&activation des fenêtres :"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:32
@@ -636,8 +626,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:36
-#, fuzzy, kde-format
-#| msgid "Click to Focus"
+#, kde-format
 msgctxt "sassa asas"
 msgid "Click to focus"
 msgstr "Cliquer pour avoir le focus"
@@ -650,8 +639,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:46
-#, fuzzy, kde-format
-#| msgid "Focus Follows Mouse"
+#, kde-format
 msgid "Focus follows mouse"
 msgstr "Le focus suit la souris"
 
@@ -663,15 +651,13 @@ msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:56
-#, fuzzy, kde-format
-#| msgid "Focus Under Mouse"
+#, kde-format
 msgid "Focus under mouse"
 msgstr "Le focus est sous la souris"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:61
-#, fuzzy, kde-format
-#| msgid "Focus Strictly Under Mouse"
+#, kde-format
 msgid "Focus strictly under mouse"
 msgstr "Le focus est strictement sous la souris"
 
@@ -693,10 +679,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, focusStealingLabel)
 #: focus.ui:101
-#, fuzzy, kde-format
-#| msgid "Focus &stealing prevention"
+#, kde-format
 msgid "Focus &stealing prevention:"
-msgstr "Niveau de prévention de vol du focu&s"
+msgstr "Niveau de prévention de vol du focu&s :"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, focusStealing)
 #: focus.ui:114
@@ -842,10 +827,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, clickRaiseOn)
 #: focus.ui:156
-#, fuzzy, kde-format
-#| msgid "C&lick raises active window"
+#, kde-format
 msgid "&Click raises active window"
-msgstr "Un c&lic place la fenêtre active sur le dessus"
+msgstr "Un &clic place la fenêtre active sur le dessus"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, autoRaiseOn)
 #: focus.ui:165
@@ -860,10 +844,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoRaiseOn)
 #: focus.ui:168
-#, fuzzy, kde-format
-#| msgid "&Raise on hover, delayed by"
+#, kde-format
 msgid "&Raise on hover, delayed by:"
-msgstr "&Mettre sur le dessus lors d'un survol, temporisé de"
+msgstr "Mett&re sur le dessus lors d'un survol, temporisé de :"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, autoRaise)
 #: focus.ui:175
@@ -877,10 +860,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, multiscreenBehaviorLabel)
 #: focus.ui:196
-#, fuzzy, kde-format
-#| msgid "Multiscreen behaviour"
+#, kde-format
 msgid "Multiscreen behavior:"
-msgstr "Comportement en multi-écrans"
+msgstr "Comportement en multi-écrans :"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, activeMouseScreen)
 #: focus.ui:203
@@ -917,10 +899,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, separateScreenFocus)
 #: focus.ui:216
-#, fuzzy, kde-format
-#| msgid "S&eparate screen focus"
+#, kde-format
 msgid "&Separate screen focus"
-msgstr "Sé&parer le focus des écrans"
+msgstr "&Séparer le focus des écrans"
 
 #: main.cpp:78
 #, kde-format
@@ -928,28 +909,24 @@ msgid "&Focus"
 msgstr "Donner le &focus"
 
 #: main.cpp:83
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar A&ctions"
-msgstr "Actions de la barre de &titre"
+msgstr "A&ctions de la barre de titre"
 
 #: main.cpp:88
-#, fuzzy, kde-format
-#| msgid "Window Actio&ns"
+#, kde-format
 msgid "W&indow Actions"
-msgstr "Actio&ns de la fenêtre"
+msgstr "Act&ions de la fenêtre"
 
 #: main.cpp:93
-#, fuzzy, kde-format
-#| msgid "&Placement:"
+#, kde-format
 msgid "Mo&vement"
-msgstr "&Placement :"
+msgstr "Dé&placement"
 
 #: main.cpp:98
-#, fuzzy, kde-format
-#| msgid "Ad&vanced"
+#, kde-format
 msgid "Adva&nced"
-msgstr "A&vancé"
+msgstr "Ava&ncé"
 
 #: main.cpp:102
 #, kde-format
@@ -1058,10 +1035,9 @@ msgstr "Maximiser uniquement horizontalement"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
 #: mouse.ui:17
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar Actions"
-msgstr "Actions de la barre de &titre"
+msgstr "Actions de la barre de titre"
 
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #: mouse.ui:26
@@ -1106,10 +1082,9 @@ msgstr "Fermer"
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
 #: mouse.ui:75
-#, fuzzy, kde-format
-#| msgid "On All Desktops"
+#, kde-format
 msgid "Show on all desktops"
-msgstr "Sur tous les bureaux"
+msgstr "Afficher sur tous les bureaux"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coTiAct4)
 #: mouse.ui:98
@@ -1178,8 +1153,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #: mouse.ui:288 mouse.ui:403 mouse.ui:518
-#, fuzzy, kde-format
-#| msgid "Activate & Lower"
+#, kde-format
 msgid "Activate and lower"
 msgstr "Activer et placer dessous"
 
@@ -1208,10 +1182,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: mouse.ui:627
-#, fuzzy, kde-format
-#| msgid "Middle b&utton:"
+#, kde-format
 msgid "Middle c&lick:"
-msgstr "Bo&uton central :"
+msgstr "Bouton centra&l :"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_10)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, rightClickMaximizeButton)
@@ -1225,7 +1198,7 @@ msgstr ""
 #: moving.ui:20
 #, kde-format
 msgid "Window &geometry:"
-msgstr ""
+msgstr "&Géométrie de la fenêtre :"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, geometryTipOn)
 #: moving.ui:30
@@ -1242,12 +1215,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, geometryTipOn)
 #: moving.ui:33
-#, fuzzy, kde-format
-#| msgid "Display window &geometry when moving or resizing"
+#, kde-format
 msgid "Display when moving or resizing"
-msgstr ""
-"Afficher la taille de la fenêtre lors d'un &déplacement ou d'un "
-"redimensionnement"
+msgstr "Afficher lors d'un déplacement ou d'un redimensionnement"
 
 #. i18n: ectx: property (text), widget (QLabel, borderSnapLabel)
 #: moving.ui:40
