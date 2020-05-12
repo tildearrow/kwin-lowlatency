@@ -83,14 +83,6 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 follow the Arch Linux instructions. Manjaro is providing Plasma 5.18 now.
 
-### a note about Pamac
-
-**do not use Pamac to install this package for the first time.** Pamac cannot handle the provides/conflicts fields in the PKGBUILD correctly, therefore preventing installation:
-
-```
-could not satisfy dependencies: removing kwin breaks dependency 'kwin' required by plasma-workspace
-```
-
 ## openSUSE Tumbleweed
 
 kwin-lowlatency can be found at [home:KAMiKAZOW:KDE](https://software.opensuse.org/download.html?project=home%3AKAMiKAZOW%3AKDE&package=kwin-lowlatency) (OBS).
