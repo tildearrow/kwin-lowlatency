@@ -4768,7 +4768,7 @@ void X11Client::doResizeSync()
         sendSyncRequest();
     } else {
         m_syncRequest.isPending = true;   // 30Hz resizes are so old and it makes the compositor
-        m_syncRequest.timeout->start(8);  // look horrible. zero excuses.
+        m_syncRequest.timeout->start(5);  // look horrible. zero excuses.
     }
 
     const QRect moveResizeClientGeometry = frameRectToClientRect(moveResizeGeometry());

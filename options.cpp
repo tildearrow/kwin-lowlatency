@@ -70,6 +70,10 @@ int Options::currentRefreshRate()
                 }
             }
         }
+        // wait who in the heck said "50Hz BS"?!
+        // hey come on I still play Turrican or some other Amiga/C64 stuff!
+        // yeah I have not in a while but COME ON THERE IS **NO** REASON to
+        // attack the PAL territory!
         rate = qRound(Screens::self()->refreshRate(syncScreen)); // TODO forward float precision?
     }
 

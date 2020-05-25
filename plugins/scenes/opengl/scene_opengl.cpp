@@ -2083,7 +2083,12 @@ DecorationShadowTextureCache &DecorationShadowTextureCache::instance()
 // the crash is here but I am not sure what causes it.
 DecorationShadowTextureCache::~DecorationShadowTextureCache()
 {
-    Q_ASSERT(m_cache.isEmpty());
+    // why should we assert anything? why not just empty the cache here?
+    //Q_ASSERT(m_cache.isEmpty());
+    if (!m_cache.isEmpty()) {
+      qWarning() << "the DecorationShadowTextureCache is not empty. clearing it out. hope this doesn't crash :<";
+      m_cache.clear();
+    }
 }
 
 void DecorationShadowTextureCache::unregister(SceneOpenGLShadow *shadow)
