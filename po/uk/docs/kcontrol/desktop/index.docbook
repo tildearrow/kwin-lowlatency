@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % Ukrainian "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="desktop" lang="&language;">
+<title
+>Віртуальні стільниці</title>
+<articleinfo>
+
+<authorgroup>
+<author
+>&Mike.McBride; &Mike.McBride.mail;</author>
+<author
+>&Jost.Schenck; &Jost.Schenck.mail;</author>
+<othercredit role="translator"
+><firstname
+>Юрій</firstname
+><surname
+>Чорноіван</surname
+><affiliation
+><address
+><email
+>yurchor@ukr.net</email
+></address
+></affiliation
+><contrib
+>Переклад українською</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>9 квітня 2015 року</date>
+<releaseinfo
+>Плазма 5.3</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Системні параметри</keyword>
+<keyword
+>стільниця</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="virtual-desktops">
+
+<title
+>Віртуальні стільниці</title>
+
+<sect2 id="desktop-number">
+<title
+><guilabel
+>Стільниці</guilabel
+></title>
+
+<para
+>У &kde; ви маєте можливість користуватися декількома віртуальними стільницями. На цій вкладці ви можете налаштувати кількість стільниць, кількість рядків у віджеті <guilabel
+>Пейджер</guilabel
+> та їх назви. Кількість стільниць можна визначити за допомогою відповідного поля. Назви стільниць ви можете ввести у полях для введення тексту, розташованих нижче.</para
+> 
+<!-- not in 5.3
+<para
+>Enable <guilabel
+>Different widgets for each desktop</guilabel
+> 
+to use independent widgets and wallpapers on each individual desktop.
+</para>
+-->
+</sect2>
+
+<sect2 id="desktop-switching">
+<title
+><guilabel
+>Перемикання</guilabel
+></title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Зациклення навігації стільницею</guilabel
+></term>
+<listitem
+><para
+>Позначте цей пункт, якщо ви хочете, щоб навігація з клавіатури або активні межі стільниці переносили вас за межу поточної стільниці на протилежний край нової стільниці. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Анімація ефектів стільниці</guilabel
+></term>
+<listitem
+><para
+>Оберіть зі спадного списку один з пунктів: <guilabel
+>Без анімації</guilabel
+>, <guilabel
+>Ковзання</guilabel
+>, <guilabel
+>Анімація куба стільниць</guilabel
+> або <guilabel
+>Затемнювати стільницю</guilabel
+>. Якщо для обраної анімації передбачено параметри налаштування, ви можете натиснути кнопку з піктограмою налаштування, розташовану праворуч від спадного списку, щоб відкрити діалогове вікно налаштування. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Екранна панель перемикання стільниць</guilabel
+></term>
+<listitem
+><para
+>Позначте цей пункт, якщо бажаєте, щоб система показувала екранну панель для перемикання стільниць. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Показувати компонування стільниці</guilabel
+></term>
+<listitem
+><para
+>Позначення цього пункту призведе до показу мініатюрного компонування, що відповідатиме обраній стільниці. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Клавіатурні скорочення</guilabel
+></term>
+<listitem
+><para
+>У цьому розділі буде показано список налаштованих клавіатурних скорочень для перемикання між стільницями. Ви зможете змінити ці скорочення. </para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Прокручування коліщатка над порожнім місцем на стільниці або над віджетом <guilabel
+>Пейджер</guilabel
+> призводитиме до переходу до наступної віртуальної стільниці за порядком нумерації у напрямку, що відповідає напрямку прокручування (вгору або вниз).</para>
+<para
+>Ви можете змінити цю типову поведінку за допомогою сторінки <guilabel
+>Дії для миші</guilabel
+> модуля <guilabel
+>Параметри стільниці</guilabel
+> (<keycombo action="simul"
+>&Alt;<keycap
+>D</keycap
+></keycombo
+>, <keycombo action="simul"
+>&Alt;<keycap
+>S</keycap
+></keycombo
+>).</para>
+</sect2>
+</sect1>
+
+</article>

@@ -1,0 +1,839 @@
+# translation of kcmkwinrules.po to Chinese Traditional
+# Traditional Chinese Translation of kcmkwinrules.
+#
+# Stanley Wong <stanley18fan0k@yahoo.com.hk>, 2005.
+# Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2006, 2009, 2010.
+# Frank Weng (a.k.a. Franklin) <franklin@mail.everfocus.com.tw>, 2007.
+# Franklin Weng <franklin at goodhorse dot idv dot tw>, 2007, 2008.
+# Franklin Weng <franklin@goodhorse.idv.tw>, 2011, 2012, 2013, 2015.
+# Jeff Huang <s8321414@gmail.com>, 2016.
+# pan93412 <pan93412@gmail.com>, 2018, 2019, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwinrules\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-05-13 03:55+0200\n"
+"PO-Revision-Date: 2020-04-26 13:15+0800\n"
+"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
+"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.12.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stanley Wong, Jeff Huang"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "stanley18fan0k@yahoo.com.hk, s8321414@gmail.com"
+
+#: kcmrules.cpp:42
+#, kde-format
+msgid "Window Rules"
+msgstr "視窗規則"
+
+#: kcmrules.cpp:46
+#, kde-format
+msgid "Ismael Asensio"
+msgstr "Ismael Asensio"
+
+#: kcmrules.cpp:47
+#, kde-format
+msgid "Author"
+msgstr "作者"
+
+#: kcmrules.cpp:51
+#, kde-format
+msgid ""
+"<p><h1>Window-specific Settings</h1> Here you can customize window settings "
+"specifically only for some windows.</p> <p>Please note that this "
+"configuration will not take effect if you do not use KWin as your window "
+"manager. If you do use a different window manager, please refer to its "
+"documentation for how to customize window behavior.</p>"
+msgstr ""
+"<p><h1>特定視窗設定配置模組</h1>在這裏您可以自行設定特定視窗的一些設定。</"
+"p><p>請注意若您不是使用 KWin 作視窗管理器，這些設定不會生效。如果您正在使用其"
+"他的視窗管理器，請參考它的文件。</p>"
+
+#: main.cpp:103
+#, kde-format
+msgid "Application settings for %1"
+msgstr "%1 的應用程式設定"
+
+#: main.cpp:123 rulesmodel.cpp:212
+#, kde-format
+msgid "Window settings for %1"
+msgstr "%1 的視窗設定"
+
+#: main.cpp:175
+#, kde-format
+msgctxt "Window caption for the application wide rules dialog"
+msgid "Edit Application-Specific Settings"
+msgstr "編輯特定應用程式的設定"
+
+#: main.cpp:206
+#, kde-format
+msgid "KWin"
+msgstr "KWin"
+
+#: main.cpp:213
+#, kde-format
+msgid "KWin helper utility"
+msgstr "KWin 協助工具"
+
+#: main.cpp:214
+#, kde-format
+msgid "KWin id of the window for special window settings."
+msgstr "用於設定特殊視窗的視窗 KWin ID。"
+
+#: main.cpp:215
+#, kde-format
+msgid "Whether the settings should affect all windows of the application."
+msgstr "這些設定是否要套用到此應用程式的所有視窗。"
+
+#: main.cpp:224
+#, kde-format
+msgid "This helper utility is not supposed to be called directly."
+msgstr "這個協助工具不是用來被直接呼叫的。"
+
+#: optionsmodel.cpp:159
+#, kde-format
+msgid "Unimportant"
+msgstr "不重要"
+
+#: optionsmodel.cpp:160
+#, kde-format
+msgid "Exact Match"
+msgstr "完全符合"
+
+#: optionsmodel.cpp:161
+#, kde-format
+msgid "Substring Match"
+msgstr "字串符合"
+
+#: optionsmodel.cpp:162
+#, kde-format
+msgid "Regular Expression"
+msgstr "正則表達式"
+
+#: optionsmodel.cpp:167
+#, kde-format
+msgid "Do Not Affect"
+msgstr "不影響"
+
+#: optionsmodel.cpp:168
+#, kde-format
+msgid ""
+"The window property will not be affected and therefore the default handling "
+"for it will be used.\n"
+"Specifying this will block more generic window settings from taking effect."
+msgstr ""
+
+#: optionsmodel.cpp:171
+#, kde-format
+msgid "Apply Initially"
+msgstr "初始化套用"
+
+#: optionsmodel.cpp:172
+#, kde-format
+msgid ""
+"The window property will be only set to the given value after the window is "
+"created.\n"
+"No further changes will be affected."
+msgstr ""
+
+#: optionsmodel.cpp:175
+#, kde-format
+msgid "Remember"
+msgstr "記住"
+
+#: optionsmodel.cpp:176
+#, kde-format
+msgid ""
+"The value of the window property will be remembered and, every time the "
+"window is created, the last remembered value will be applied."
+msgstr ""
+
+#: optionsmodel.cpp:179
+#, kde-format
+msgid "Force"
+msgstr "強制"
+
+#: optionsmodel.cpp:180
+#, kde-format
+msgid "The window property will be always forced to the given value."
+msgstr "將視窗屬性永遠強制設定為指定值。"
+
+#: optionsmodel.cpp:182
+#, kde-format
+msgid "Apply Now"
+msgstr "立刻套用"
+
+#: optionsmodel.cpp:183
+#, kde-format
+msgid ""
+"The window property will be set to the given value immediately and will not "
+"be affected later\n"
+"(this action will be deleted afterwards)."
+msgstr ""
+
+#: optionsmodel.cpp:186
+#, kde-format
+msgid "Force Temporarily"
+msgstr "暫時強制"
+
+#: optionsmodel.cpp:187
+#, kde-format
+msgid ""
+"The window property will be forced to the given value until it is hidden\n"
+"(this action will be deleted after the window is hidden)."
+msgstr ""
+
+#: package/contents/ui/FileDialogLoader.qml:28
+#, kde-format
+msgid "Select File"
+msgstr ""
+
+#: package/contents/ui/FileDialogLoader.qml:40
+#, kde-format
+msgid "KWin Rules (*.kwinrule)"
+msgstr "KWin 規則 (*.kwinrule)"
+
+#: package/contents/ui/OptionsComboBox.qml:46
+#, kde-format
+msgid "None selected"
+msgstr ""
+
+#: package/contents/ui/OptionsComboBox.qml:51
+#, kde-format
+msgid "All selected"
+msgstr ""
+
+#: package/contents/ui/OptionsComboBox.qml:53
+#, kde-format
+msgid "%1 selected"
+msgid_plural "%1 selected"
+msgstr[0] ""
+
+#: package/contents/ui/RulesEditor.qml:54
+#: package/contents/ui/RulesEditor.qml:73
+#, kde-format
+msgid "Add Properties..."
+msgstr ""
+
+#: package/contents/ui/RulesEditor.qml:73
+#, fuzzy, kde-format
+#| msgid "Closeable"
+msgid "Close"
+msgstr "可關閉"
+
+#: package/contents/ui/RulesEditor.qml:86
+#, fuzzy, kde-format
+#| msgid "&Detect Window Properties"
+msgid "Detect Window Properties"
+msgstr "偵側視窗屬性(&D)"
+
+#: package/contents/ui/RulesEditor.qml:99
+#, kde-format
+msgid "Instantly"
+msgstr ""
+
+#: package/contents/ui/RulesEditor.qml:100
+#, kde-format
+msgid "After %1 second"
+msgid_plural "After %1 seconds"
+msgstr[0] ""
+
+#: package/contents/ui/RulesEditor.qml:119
+#, fuzzy, kde-format
+#| msgid "&Detect Window Properties"
+msgid "Select properties"
+msgstr "偵側視窗屬性(&D)"
+
+#: package/contents/ui/RulesEditor.qml:210
+#: package/contents/ui/ValueEditor.qml:66
+#, kde-format
+msgid "Yes"
+msgstr "是"
+
+#: package/contents/ui/RulesEditor.qml:210
+#: package/contents/ui/ValueEditor.qml:72
+#, kde-format
+msgid "No"
+msgstr "否"
+
+#: package/contents/ui/RulesEditor.qml:212
+#: package/contents/ui/ValueEditor.qml:139
+#: package/contents/ui/ValueEditor.qml:146
+#, kde-format
+msgid "%1 %"
+msgstr ""
+
+#: package/contents/ui/RulesEditor.qml:215
+#, kde-format
+msgctxt "Coordinates (x, y)"
+msgid "(%1, %2)"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:73
+#, kde-format
+msgid "No rules for specific windows are currently set"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:81
+#, kde-format
+msgid "Select the rules to export"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:85
+#, kde-format
+msgid "Unselect All"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:85
+#, kde-format
+msgid "Select All"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:99
+#, kde-format
+msgid "Save Rules"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:110
+#, fuzzy, kde-format
+#| msgid "&New..."
+msgid "Add New..."
+msgstr "新增(&N)..."
+
+#: package/contents/ui/RulesList.qml:121
+#, fuzzy, kde-format
+#| msgid "&Import"
+msgid "Import..."
+msgstr "匯入(&I)"
+
+#: package/contents/ui/RulesList.qml:129
+#, fuzzy, kde-format
+#| msgid "&Export"
+msgid "Cancel Export"
+msgstr "匯出(&E)"
+
+#: package/contents/ui/RulesList.qml:129
+#, fuzzy, kde-format
+#| msgid "&Export"
+msgid "Export..."
+msgstr "匯出(&E)"
+
+#: package/contents/ui/RulesList.qml:202
+#, kde-format
+msgid "Edit"
+msgstr "編輯"
+
+#: package/contents/ui/RulesList.qml:210
+#, kde-format
+msgid "Delete"
+msgstr "刪除"
+
+#: package/contents/ui/RulesList.qml:239
+#, kde-format
+msgid "Import Rules"
+msgstr "匯入規則"
+
+#: package/contents/ui/RulesList.qml:251
+#, kde-format
+msgid "Export Rules"
+msgstr "匯出規則"
+
+#: package/contents/ui/ValueEditor.qml:172
+#, kde-format
+msgctxt "(x, y) coordinates separator in size/position"
+msgid "x"
+msgstr ""
+
+#: rulesdialog.cpp:40
+#, kde-format
+msgid "Edit Window-Specific Settings"
+msgstr "編輯特定視窗的設定"
+
+#: rulesmodel.cpp:215
+#, kde-format
+msgid "Settings for %1"
+msgstr "%1 的設定"
+
+#: rulesmodel.cpp:218
+#, kde-format
+msgid "New window settings"
+msgstr "新增視窗設定"
+
+#: rulesmodel.cpp:224
+#, kde-format
+msgid ""
+"You have specified the window class as unimportant.\n"
+"This means the settings will possibly apply to windows from all "
+"applications. If you really want to create a generic setting, it is "
+"recommended you at least limit the window types to avoid special window "
+"types."
+msgstr ""
+"您已指定視窗類別為'不重要'。\n"
+"這表示這個設定會套用至所有應用程式的所有視窗。如果您是希望這樣做來建立一個通"
+"用設定，我們建議您至少要限制視窗類型，來避免特殊的視窗類型。"
+
+#: rulesmodel.cpp:353
+#, kde-format
+msgid "Description"
+msgstr "描述"
+
+#: rulesmodel.cpp:353 rulesmodel.cpp:361 rulesmodel.cpp:369 rulesmodel.cpp:375
+#: rulesmodel.cpp:383 rulesmodel.cpp:388 rulesmodel.cpp:394
+#, kde-format
+msgid "Window matching"
+msgstr "視窗比對"
+
+#: rulesmodel.cpp:361
+#, kde-format
+msgid "Window class (application)"
+msgstr "視窗類別 (應用程式)"
+
+#: rulesmodel.cpp:369
+#, kde-format
+msgid "Match whole window class"
+msgstr "符合整個視窗類別"
+
+#: rulesmodel.cpp:375
+#, kde-format
+msgid "Window types"
+msgstr "視窗類型"
+
+#: rulesmodel.cpp:383
+#, kde-format
+msgid "Window role"
+msgstr "視窗角色"
+
+#: rulesmodel.cpp:388
+#, kde-format
+msgid "Window title"
+msgstr "視窗標題"
+
+#: rulesmodel.cpp:394
+#, kde-format
+msgid "Machine (hostname)"
+msgstr "機器 (主機名稱)"
+
+#: rulesmodel.cpp:400
+#, kde-format
+msgid "Position"
+msgstr "位置"
+
+#: rulesmodel.cpp:400 rulesmodel.cpp:405 rulesmodel.cpp:410 rulesmodel.cpp:415
+#: rulesmodel.cpp:420 rulesmodel.cpp:429 rulesmodel.cpp:443 rulesmodel.cpp:448
+#: rulesmodel.cpp:453 rulesmodel.cpp:458 rulesmodel.cpp:463 rulesmodel.cpp:469
+#: rulesmodel.cpp:478 rulesmodel.cpp:483 rulesmodel.cpp:488
+#, kde-format
+msgid "Size & Position"
+msgstr "大小與位置"
+
+#: rulesmodel.cpp:405
+#, kde-format
+msgid "Size"
+msgstr "大小"
+
+#: rulesmodel.cpp:410
+#, kde-format
+msgid "Maximized horizontally"
+msgstr "橫向最大化"
+
+#: rulesmodel.cpp:415
+#, kde-format
+msgid "Maximized vertically"
+msgstr "垂直最大化"
+
+#: rulesmodel.cpp:420
+#, kde-format
+msgid "Virtual Desktop"
+msgstr "虛擬桌面"
+
+#: rulesmodel.cpp:429
+#, kde-format
+msgid "Activity"
+msgstr "活動"
+
+#: rulesmodel.cpp:443
+#, kde-format
+msgid "Screen"
+msgstr "螢幕"
+
+#: rulesmodel.cpp:448
+#, kde-format
+msgid "Fullscreen"
+msgstr "全螢幕"
+
+#: rulesmodel.cpp:453
+#, kde-format
+msgid "Minimized"
+msgstr "最小化"
+
+#: rulesmodel.cpp:458
+#, kde-format
+msgid "Shaded"
+msgstr "加上陰影"
+
+#: rulesmodel.cpp:463
+#, kde-format
+msgid "Initial placement"
+msgstr "初始置放位置"
+
+#: rulesmodel.cpp:469
+#, kde-format
+msgid "Ignore requested geometry"
+msgstr "略過要求的大小和位置"
+
+#: rulesmodel.cpp:471
+#, kde-format
+msgid ""
+"Windows can ask to appear in a certain position.\n"
+"By default this overrides the placement strategy\n"
+"what might be nasty if the client abuses the feature\n"
+"to unconditionally popup in the middle of your screen."
+msgstr ""
+"視窗可以要求在特定的位置出現。\n"
+"預設它會覆蓋放置位置政策，因為預設的政策可能會造成不必要的彈出視窗出現在螢幕"
+"正中央。"
+
+#: rulesmodel.cpp:478
+#, kde-format
+msgid "Minimum Size"
+msgstr "最小大小"
+
+#: rulesmodel.cpp:483
+#, kde-format
+msgid "Maximum Size"
+msgstr "最大大小"
+
+#: rulesmodel.cpp:488
+#, kde-format
+msgid "Obey geometry restrictions"
+msgstr "遵循位置限制"
+
+#: rulesmodel.cpp:490
+#, kde-format
+msgid ""
+"Eg. terminals or video players can ask to keep a certain aspect ratio\n"
+"or only grow by values larger than one\n"
+"(eg. by the dimensions of one character).\n"
+"This may be pointless and the restriction prevents arbitrary dimensions\n"
+"like your complete screen area."
+msgstr ""
+"例如：終端機或影像播放器可以要求保持特定的大小比例，或是只增長大於一的值。\n"
+"（如大於一個字元的大小）。\n"
+"這個限制可以避免被任意改變大小成全螢幕。"
+
+#: rulesmodel.cpp:499
+#, kde-format
+msgid "Keep above"
+msgstr "置於最上層"
+
+#: rulesmodel.cpp:499 rulesmodel.cpp:504 rulesmodel.cpp:509 rulesmodel.cpp:515
+#: rulesmodel.cpp:521 rulesmodel.cpp:527
+#, kde-format
+msgid "Arrangement & Access"
+msgstr "置放與存取"
+
+#: rulesmodel.cpp:504
+#, kde-format
+msgid "Keep below"
+msgstr "置於最下層"
+
+#: rulesmodel.cpp:509
+#, kde-format
+msgid "Skip taskbar"
+msgstr "略過工作列"
+
+#: rulesmodel.cpp:511
+#, kde-format
+msgid "Window shall (not) appear in the taskbar."
+msgstr "不讓視窗出現在工具列中。"
+
+#: rulesmodel.cpp:515
+#, kde-format
+msgid "Skip pager"
+msgstr "略過呼叫器"
+
+#: rulesmodel.cpp:517
+#, kde-format
+msgid "Window shall (not) appear in the manager for virtual desktops"
+msgstr "不讓視窗出現在虛擬桌面的縮圖中"
+
+#: rulesmodel.cpp:521
+#, kde-format
+msgid "Skip switcher"
+msgstr "略過切換器"
+
+#: rulesmodel.cpp:523
+#, kde-format
+msgid "Window shall (not) appear in the Alt+Tab list"
+msgstr "視窗不要出現在 Alt+Tab 切換清單中"
+
+#: rulesmodel.cpp:527
+#, kde-format
+msgid "Shortcut"
+msgstr "捷徑"
+
+#: rulesmodel.cpp:533
+#, kde-format
+msgid "No titlebar and frame"
+msgstr "沒有標題列與外框"
+
+#: rulesmodel.cpp:533 rulesmodel.cpp:538 rulesmodel.cpp:544 rulesmodel.cpp:549
+#: rulesmodel.cpp:554 rulesmodel.cpp:565 rulesmodel.cpp:576 rulesmodel.cpp:584
+#: rulesmodel.cpp:597 rulesmodel.cpp:602 rulesmodel.cpp:608 rulesmodel.cpp:613
+#, kde-format
+msgid "Appearance & Fixes"
+msgstr "外觀與修復"
+
+#: rulesmodel.cpp:538
+#, kde-format
+msgid "Titlebar color scheme"
+msgstr "標題列配色"
+
+#: rulesmodel.cpp:544
+#, kde-format
+msgid "Active opacity"
+msgstr "使用中的不透明度"
+
+#: rulesmodel.cpp:549
+#, kde-format
+msgid "Inactive opacity"
+msgstr "非使用中的不透明度"
+
+#: rulesmodel.cpp:554
+#, kde-format
+msgid "Focus stealing prevention"
+msgstr "防止盜取焦點"
+
+#: rulesmodel.cpp:556
+#, kde-format
+msgid ""
+"KWin tries to prevent windows from taking the focus\n"
+"(\"activate\") while you're working in another window,\n"
+"but this may sometimes fail or superact.\n"
+"\"None\" will unconditionally allow this window to get the focus while\n"
+"\"Extreme\" will completely prevent it from taking the focus."
+msgstr ""
+"KWin 會試著在您在別的視窗工作時，讓這個視窗取得焦點，\n"
+"但是有時可能會失敗，或是會誤動作。\n"
+"「無」會無條件允許視窗取得焦點，「極高」則是會完全避免它取得焦點。"
+
+#: rulesmodel.cpp:565
+#, kde-format
+msgid "Focus protection"
+msgstr "焦點保護"
+
+#: rulesmodel.cpp:567
+#, kde-format
+msgid ""
+"This controls the focus protection of the currently active window.\n"
+"None will always give the focus away,\n"
+"Extreme will keep it.\n"
+"Otherwise it's interleaved with the stealing prevention\n"
+"assigned to the window that wants the focus."
+msgstr ""
+"這個模組控制目前作用中視窗的焦點保護。\n"
+"「無」每次都會丟掉焦點，\n"
+"「極高」每次都會保留焦點。\n"
+"其他中間的值則會依程度避免將焦點被其他視窗偷走。"
+
+#: rulesmodel.cpp:576
+#, kde-format
+msgid "Accept focus"
+msgstr "接受焦點"
+
+#: rulesmodel.cpp:578
+#, kde-format
+msgid ""
+"Windows may prevent to get the focus (activate) when being clicked.\n"
+"On the other hand you might wish to prevent a window\n"
+"from getting focused on a mouse click."
+msgstr ""
+"視窗可能會避免在點擊時取得焦點（啟動）。\n"
+"反之您也可能希望避免讓視窗在滑鼠點擊時取得焦點。"
+
+#: rulesmodel.cpp:584
+#, kde-format
+msgid "Ignore global shortcuts"
+msgstr "忽略全域快捷鍵"
+
+#: rulesmodel.cpp:586
+#, kde-format
+msgid ""
+"When used, a window will receive\n"
+"all keyboard inputs while it is active, including Alt+Tab etc.\n"
+"This is especially interesting for emulators or virtual machines.\n"
+"\n"
+"Be warned:\n"
+"you won't be able to Alt+Tab out of the window\n"
+"nor use any other global shortcut (such as Alt+F2 to show KRunner)\n"
+"while it's active!"
+msgstr ""
+"若使用此選項，視窗會在啟動時接受所有鍵盤輸入，包含 Alt+Tab 等。\n"
+"特別是該視窗在執行模擬器或虛擬機器時。\n"
+"\n"
+"警告：\n"
+"如此一來，在該視窗啟動時，您就不能使用 Alt+Tab 離開視窗。\n"
+"也沒辦法用任何其它的全域捷徑鍵（如按 Alt+F2 叫出 KRunner）。"
+
+#: rulesmodel.cpp:597
+#, kde-format
+msgid "Closeable"
+msgstr "可關閉"
+
+#: rulesmodel.cpp:602
+#, kde-format
+msgid "Set window type"
+msgstr "設定視窗類型"
+
+#: rulesmodel.cpp:608
+#, kde-format
+msgid "Desktop file name"
+msgstr "桌面檔案名稱"
+
+#: rulesmodel.cpp:613
+#, kde-format
+msgid "Block compositing"
+msgstr "阻擋組合"
+
+#: rulesmodel.cpp:688
+#, kde-format
+msgid "Normal Window"
+msgstr "正常視窗"
+
+#: rulesmodel.cpp:689
+#, kde-format
+msgid "Dialog Window"
+msgstr "對話框視窗"
+
+#: rulesmodel.cpp:690
+#, kde-format
+msgid "Utility Window"
+msgstr "工具視窗"
+
+#: rulesmodel.cpp:691
+#, kde-format
+msgid "Dock (panel)"
+msgstr "Dock (panel)"
+
+#: rulesmodel.cpp:692
+#, kde-format
+msgid "Toolbar"
+msgstr "工具列"
+
+#: rulesmodel.cpp:693
+#, kde-format
+msgid "Torn-Off Menu"
+msgstr "撕下的選單"
+
+#: rulesmodel.cpp:694
+#, kde-format
+msgid "Splash Screen"
+msgstr "啟動畫面"
+
+#: rulesmodel.cpp:695
+#, kde-format
+msgid "Desktop"
+msgstr "桌面"
+
+#. i18n("Unmanaged Window")   },  deprecated
+#: rulesmodel.cpp:697
+#, kde-format
+msgid "Standalone Menubar"
+msgstr "獨立選單"
+
+#: rulesmodel.cpp:712
+#, kde-format
+msgid "All Desktops"
+msgstr "所有桌面"
+
+#: rulesmodel.cpp:725
+#, kde-format
+msgid "All Activities"
+msgstr "所有的活動"
+
+#: rulesmodel.cpp:747
+#, kde-format
+msgid "Default"
+msgstr "預設"
+
+#: rulesmodel.cpp:748
+#, kde-format
+msgid "No Placement"
+msgstr "無特定放置"
+
+#: rulesmodel.cpp:749
+#, kde-format
+msgid "Minimal Overlapping"
+msgstr "最小化重疊"
+
+#: rulesmodel.cpp:750
+#, kde-format
+msgid "Maximized"
+msgstr "最大化"
+
+#: rulesmodel.cpp:751
+#, kde-format
+msgid "Cascaded"
+msgstr "重疊"
+
+#: rulesmodel.cpp:752
+#, kde-format
+msgid "Centered"
+msgstr "置中"
+
+#: rulesmodel.cpp:753
+#, kde-format
+msgid "Random"
+msgstr "隨機"
+
+#: rulesmodel.cpp:754
+#, kde-format
+msgid "In Top-Left Corner"
+msgstr "於左上角"
+
+#: rulesmodel.cpp:755
+#, kde-format
+msgid "Under Mouse"
+msgstr "在滑鼠下"
+
+#: rulesmodel.cpp:756
+#, kde-format
+msgid "On Main Window"
+msgstr "在主視窗上"
+
+#: rulesmodel.cpp:764
+#, kde-format
+msgid "None"
+msgstr "無"
+
+#: rulesmodel.cpp:765
+#, kde-format
+msgid "Low"
+msgstr "低"
+
+#: rulesmodel.cpp:766
+#, kde-format
+msgid "Normal"
+msgstr "正常"
+
+#: rulesmodel.cpp:767
+#, kde-format
+msgid "High"
+msgstr "高"
+
+#: rulesmodel.cpp:768
+#, kde-format
+msgid "Extreme"
+msgstr "極高"

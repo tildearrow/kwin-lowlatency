@@ -1,0 +1,173 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Italian "INCLUDE">
+]>
+<article id="kwintabbox" lang="&language;">
+<articleinfo>
+<title
+>Scambiafinestre</title>
+<authorgroup>
+<author
+>&Martin.Graesslin;&Martin.Graesslin.mail;</author>
+<othercredit role="translator"
+><firstname
+>Federico</firstname
+><surname
+>Zenith</surname
+><affiliation
+><address
+><email
+>federico.zenith@member.fsf.org</email
+></address
+></affiliation
+><contrib
+>Traduzione in italiano</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2015-07-24</date>
+<releaseinfo
+>&plasma; 5.4</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Impostazioni di sistema</keyword>
+<keyword
+>desktop</keyword>
+<keyword
+>finestra</keyword>
+<keyword
+>navigazione</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="windows-navigating">
+<title
+>Navigare tra le finestre</title>
+
+<para
+>Questo modulo dà la possibilità di configurare il comportamento della navigazione tra finestre, spesso indicata come <keycombo action="simul"
+>&Alt;&Tab;</keycombo
+>. Ci sono due insiemi di effetti indipendenti che possono avere impostazioni diverse. Ciascuno di questi insiemi ha la sua scheda (<guilabel
+>Principale</guilabel
+> e <guilabel
+>Alternativo</guilabel
+>) in questo modulo. </para>
+
+<note
+><para
+>Il primo insieme di effetti nella scheda <guilabel
+>Principale</guilabel
+> ha delle scorciatoie predefinite. Se vuoi usare il secondo insieme di effetti nella scheda <guilabel
+>Alternativo</guilabel
+>, devi impostare manualmente una scorciatoia per questi effetti nell'editor delle scorciatoie.</para
+></note>
+
+<note
+><para
+>Per cambiare finestra senza <keycombo
+>&Alt;&Tab;</keycombo
+>, puoi definire delle azioni per i bordi dello schermo nel modulo delle &systemsettings; <ulink url="help:/kcontrol/kwinscreenedges/index.html"
+><guilabel
+>Bordi dello schermo</guilabel
+></ulink
+>. </para
+></note>
+
+<para
+>La seguente documentazione delle opzioni si applica sia alle impostazioni generali che a quelle alternative.</para>
+
+<sect2 id="visualization">
+<title
+>Visualizzazione</title>
+<para
+>Ci sono diversi effetti che possono essere usati al posto del normale elenco di finestre quando la composizione è attiva. Come impostazione predefinita, si usa l'effetto <guilabel
+>Brezza</guilabel
+>. Questo effetto mostra una miniatura di ogni finestra in un elenco sulla sinistra dello schermo, con in evidenza la finestra attualmente selezionata. Ci sono diverse altre disposizioni predefinite che producono una vista ricca di informazioni o compatta, icone grandi o piccole, o solo una griglia e un titolo di finestra.</para>
+<para
+>Dopo aver selezionato una di queste disposizioni, avrai un pulsante per mostrarne un'anteprima.</para
+> 
+<para
+>Se abiliti <guilabel
+>Mostra la finestra selezionata</guilabel
+>, la finestra attualmente selezionata verrà evidenziata sfocando tutte le altre. Questa opzione richiede che gli effetti del desktop siano attivi.</para>
+
+<para
+>Lo <guilabel
+>Scambiafinestre circolare</guilabel
+> e lo <guilabel
+>Scambiafinestre a pila</guilabel
+> sono effetti più complessi che richiedono OpenGL. Lo <guilabel
+>Scambiafinestre circolare</guilabel
+> mostra le finestre in un galleria con un'ampia <quote
+>miniatura</quote
+> della finestra selezionata al centro dello schermo, mentre le altre sono ruotate sulla sinistra e sulla destra. Lo <guilabel
+>Scambiafinestre a pila</guilabel
+> mostra tutte le finestre impilate in tre dimensioni. La finestra selezionata è in cima alla pila, e navigando tra le finestre la pila viene avanzata in modo da portare il cima la nuova finestra selezionata. </para>
+<para
+>Se l'effetto fornisce impostazioni aggiuntive, sarà attivato il pulsante di configurazione. Facendo clic su questo pulsante verrà mostrata una finestra di configurazione. </para>
+<note
+><para
+>Quando la composizione non è attiva o viene sospesa, verrà mostrato il normale elenco delle finestre. Non c'è perdita di funzionalità se un effetto viene selezionato e la composizione non è attiva.</para
+></note>
+</sect2>
+
+<sect2 id="shortcuts">
+<title
+>Scorciatoie</title>
+<para
+>L'editor delle scorciatoie fornisce l'interfaccia di configurazione per le scorciatoie da tastiera per navigare tra le finestre. Ciascuno dei due insiemi di effetti possibili ha due scorciatoie: una per andare avanti e una per tornare indietro. Nota che l'elenco delle finestre può venire mostrato solo se selezioni una scorciatoia con un modificatore come i tasti &Alt; e &Ctrl;. Questo modificatore deve essere mantenuto premuto durante il cambio. Selezionare una scorciatoia senza modificatore può rovinare il comportamento dello scambiafinestre. </para>
+</sect2>
+
+<sect2 id="content-and-sort-order">
+<title
+>Contenuto</title>
+<para
+>È possibile determinare l'ordinamento: puoi basarti sull'ultimo uso delle finestre o sul loro impilamento. </para>
+<para
+>Se spunti <guilabel
+>Includi l'icona «Mostra il desktop»</guilabel
+>, verrà aggiunta una voce per il desktop all'elenco delle finestre delle applicazioni; la puoi quindi selezionare nell'elenco per minimizzare tutte le finestre.</para>
+<para
+>Se <guilabel
+>Solo una finestra per applicazione</guilabel
+> è selezionato, l'elenco contiene solo l'ultima istanza usata di ciascuna applicazione. La selezione di altre istanze è possibile quindi solo attraverso il pannello.</para>
+</sect2>
+
+<sect2 id="filter">
+<title
+>Filtrare le finestre</title>
+<para
+>Puoi configurare quali finestre debbano venire mostrate nell'elenco richiamato da <keycombo action="simul"
+>&Alt;&Tab;</keycombo
+> (predefinito per le impostazioni nella scheda <guilabel
+>Principale</guilabel
+>) o dalla scorciatoia definita dall'utente per le impostazioni alternative. </para>
+<para
+>È possibile mostrare solo finestre sul desktop virtuale attuale o da tutti i desktop. Inoltre puoi applicare regole simili per le finestre su attività o schermi diversi, se ne hai più di uno. </para>
+<para
+>L'ultima opzione permette di filtrare secondo lo stato di minimizzazione delle finestre. </para>
+</sect2>
+
+</sect1>
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
+

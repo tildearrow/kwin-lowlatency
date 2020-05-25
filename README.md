@@ -81,7 +81,7 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 ## Manjaro
 
-follow the Arch Linux instructions. Manjaro is providing Plasma 5.18 now.
+follow the Arch Linux instructions but I bet they will take a while to bring 5.19 in. in that case check the Plasma/5.18 branch instead.
 
 ## openSUSE Tumbleweed
 
@@ -113,13 +113,13 @@ $ cd kwin-lowlatency
 if you are not using the latest major version of Plasma (you can check by doing `kwin_x11 --version`), you may want to check out the branch for your version, e.g.:
 
 ```
-$ git checkout Plasma/5.18
+$ git checkout Plasma/5.19
 ```
 
 you may want to check the current stable version out:
 
 ```
-$ git checkout v5.18.5
+$ git checkout v5.18.90
 ```
 
 #### patch format
@@ -127,21 +127,21 @@ $ git checkout v5.18.5
 download stock KWin source and patch file:
 
 ```
-$ wget https://download.kde.org/stable/plasma/5.18.5/kwin-5.18.5.tar.xz
-$ wget https://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.18.5.patch
+$ wget https://download.kde.org/unstable/plasma/5.18.90/kwin-5.18.90.tar.xz
+$ wget https://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.18.90.patch
 ```
 
 extract:
 
 ```
-$ tar -xvf kwin-5.18.5.tar.xz
+$ tar -xvf kwin-5.18.90.tar.xz
 ```
 
 patch:
 
 ```
-$ cd kwin-5.18.5
-$ patch -p1 < ../kwin-lowlatency-5.18.5.patch
+$ cd kwin-5.18.90
+$ patch -p1 < ../kwin-lowlatency-5.18.90.patch
 ```
 
 ### building

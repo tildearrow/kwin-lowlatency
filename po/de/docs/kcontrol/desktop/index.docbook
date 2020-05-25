@@ -1,0 +1,184 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="desktop" lang="&language;">
+<title
+>Virtuelle Arbeitsflächen</title>
+<articleinfo>
+
+<authorgroup>
+<author
+>&Mike.McBride; &Mike.McBride.mail;</author>
+<author
+>&Jost.Schenck; &Jost.Schenck.mail;</author>
+<othercredit role="translator"
+><firstname
+>Frank</firstname
+><surname
+>Schütte</surname
+><affiliation
+><address
+><email
+>F.Schuette@t-online.de</email
+></address
+></affiliation
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> <othercredit role="translator"
+><firstname
+>Frank</firstname
+><surname
+>Brücker</surname
+><affiliation
+><address
+><email
+>f.bruecker@gmx.de</email
+></address
+></affiliation
+><contrib
+>Überarbeitung der Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2015-04-09</date>
+<releaseinfo
+>Plasma 5.3</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systemeinstellungen</keyword>
+<keyword
+>Arbeitsfläche</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="virtual-desktops">
+
+<title
+>Virtuelle Arbeitsflächen</title>
+
+<sect2 id="desktop-number">
+<title
+><guilabel
+>Arbeitsflächen</guilabel
+></title>
+
+<para
+>&kde; bietet Ihnen die Möglichkeit, mehrere virtuelle Arbeitsflächen zu verwenden. Auf dieser Karteikarte legen Sie die Anzahl der Arbeitsflächen, die Anzahl der Zeilen im <guilabel
+>Arbeiflächen-Umschalter</guilabel
+> sowie die Namen der Arbeitsflächen fest. Verwenden Sie das Eingabefeld, um die Anzahl der Arbeitsflächen einzustellen. Sie weisen einer Arbeitsfläche einen Namen zu, indem Sie den Namen in das entsprechende Textfeld eingeben.</para
+> 
+<!-- not in 5.3
+<para
+>Enable <guilabel
+>Different widgets for each desktop</guilabel
+> 
+to use independent widgets and wallpapers on each individual desktop.
+</para>
+-->
+</sect2>
+
+<sect2 id="desktop-switching">
+<title
+><guilabel
+>Wechsel</guilabel
+></title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Automatisch zur Gegenseite navigieren</guilabel
+></term>
+<listitem
+><para
+>Aktivieren Sie diese Einstellung, wenn Sie möchten, dass die Navigation über eine Arbeitsfläche hinaus Sie automatisch zum entgegengesetzten Rand der neuen Arbeitsfläche bringt. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Animation von Arbeitsflächen-Effekten</guilabel
+></term>
+<listitem
+><para
+>Als Animation stehen <guilabel
+>Keine Animation</guilabel
+>, <guilabel
+>Gleiten</guilabel
+>, <guilabel
+>Animation Arbeitsflächen-Würfel</guilabel
+>, <guilabel
+>Animation ein-/ausblenden</guilabel
+> im Auswahlfeld zur Verfügung. Gibt es für die gewählte Animation Einstellungsoptionen, klicken Sie auf das Werkzeugsymbol rechts neben dem Auswahlfeld, um einen Einrichtungsdialog zu öffnen. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>On-Screen-Anzeige für Arbeitsflächenwechsel</guilabel
+></term>
+<listitem
+><para
+>Ist diese Einstellung aktiv, wird beim Wechseln der Arbeitsfläche eine OnScreen-Anzeige verwendet. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Arbeitsflächenvorschau anzeigen</guilabel
+></term>
+<listitem
+><para
+>Wenn Sie diese Einstellung aktivieren, erhalten Sie eine kleine Vorschau, die das Layout der gewählten Arbeitsfläche anzeigt. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Kurzbefehle</guilabel
+></term>
+<listitem
+><para
+>In diesem Abschnitt werden die vorhandenen Kurzbefehle für den Arbeitsflächenwechsel angezeigt und können hier geändert werden.  </para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Bewegen Sie das Mausrads über einem leeren Bereich der Arbeitsfläche oder dem Symbol vom <guilabel
+>Arbeitsflächen-Umschalter</guilabel
+> in der Kontrollleiste, erfolgt ein Wechsel zur nächsten virtuellen Arbeitsfläche (in numerischer Reihenfolge). Die (numerische) Richtung wird hierbei durch die Bewegungsrichtung (rauf oder runter) des Mausrades bestimmt.</para>
+<para
+>Dieses Standardverhalten können Sie auf der Seite <guilabel
+>Maus-Aktionen</guilabel
+> in den <guilabel
+>Einstellungen für die Arbeitsfläche</guilabel
+> (<keycombo action="simul"
+>&Alt;<keycap
+>D</keycap
+></keycombo
+>, <keycombo action="simul"
+>&Alt;<keycap
+>S</keycap
+></keycombo
+>) ändern.</para>
+</sect2>
+</sect1>
+
+</article>

@@ -1,0 +1,847 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2012, 2013, 2014, 2015, 2017.
+# Lukáš Tinkl <ltinkl@redhat.com>, 2010, 2011.
+# Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012, 2013.
+# Vit Pelcak <vpelcak@suse.cz>, 2017, 2018, 2019, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwinrules\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-05-13 03:55+0200\n"
+"PO-Revision-Date: 2020-04-28 21:56+0200\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 19.12.3\n"
+"X-Language: cs_CZ\n"
+"X-Source-Language: en_US\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Lukáš Tinkl,Jakub Friedl,Klára Cihlářová,Marián Kyral,David Kolibáč"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"lukas@kde.org,jfriedl@suse.cz,koty@seznam.cz,mkyral@email.cz,david@kolibac.cz"
+
+#: kcmrules.cpp:42
+#, kde-format
+msgid "Window Rules"
+msgstr "Pravidla oken"
+
+#: kcmrules.cpp:46
+#, kde-format
+msgid "Ismael Asensio"
+msgstr ""
+
+#: kcmrules.cpp:47
+#, kde-format
+msgid "Author"
+msgstr "Autor"
+
+#: kcmrules.cpp:51
+#, kde-format
+msgid ""
+"<p><h1>Window-specific Settings</h1> Here you can customize window settings "
+"specifically only for some windows.</p> <p>Please note that this "
+"configuration will not take effect if you do not use KWin as your window "
+"manager. If you do use a different window manager, please refer to its "
+"documentation for how to customize window behavior.</p>"
+msgstr ""
+"<p><h1>Nastavení specifická pro okno</h1> Zde můžete upravit nastavení "
+"specifická jen pro některá okna.</p><p>Toto nastavení však nebude účinné, "
+"pokud nepoužíváte KWin jako správce oken. Pokud používáte jiného správce "
+"oken, řiďte se jeho dokumentací. Tam se dozvíte, jak chováni oken upravit.</"
+"p>"
+
+#: main.cpp:103
+#, kde-format
+msgid "Application settings for %1"
+msgstr "Nastavení aplikace pro %1"
+
+#: main.cpp:123 rulesmodel.cpp:212
+#, kde-format
+msgid "Window settings for %1"
+msgstr "Nastavení okna pro %1"
+
+#: main.cpp:175
+#, kde-format
+msgctxt "Window caption for the application wide rules dialog"
+msgid "Edit Application-Specific Settings"
+msgstr "Upravit nastavení specifická pro aplikaci"
+
+#: main.cpp:206
+#, kde-format
+msgid "KWin"
+msgstr "KWin"
+
+#: main.cpp:213
+#, kde-format
+msgid "KWin helper utility"
+msgstr "Pomocný nástroj pro KWin"
+
+#: main.cpp:214
+#, kde-format
+msgid "KWin id of the window for special window settings."
+msgstr "KWin Id okna pro speciální nastavení oken."
+
+#: main.cpp:215
+#, kde-format
+msgid "Whether the settings should affect all windows of the application."
+msgstr "Jestli se má nastavení vztahovat na všechna okna aplikace."
+
+#: main.cpp:224
+#, kde-format
+msgid "This helper utility is not supposed to be called directly."
+msgstr "Tento pomocný nástroj není určen k samostatnému spouštění."
+
+#: optionsmodel.cpp:159
+#, kde-format
+msgid "Unimportant"
+msgstr "Nedůležité"
+
+#: optionsmodel.cpp:160
+#, kde-format
+msgid "Exact Match"
+msgstr "Přesná shoda"
+
+#: optionsmodel.cpp:161
+#, kde-format
+msgid "Substring Match"
+msgstr "Shoda podřetězce"
+
+#: optionsmodel.cpp:162
+#, kde-format
+msgid "Regular Expression"
+msgstr "Regulární výraz"
+
+#: optionsmodel.cpp:167
+#, kde-format
+msgid "Do Not Affect"
+msgstr "Nemá vliv"
+
+#: optionsmodel.cpp:168
+#, kde-format
+msgid ""
+"The window property will not be affected and therefore the default handling "
+"for it will be used.\n"
+"Specifying this will block more generic window settings from taking effect."
+msgstr ""
+
+#: optionsmodel.cpp:171
+#, kde-format
+msgid "Apply Initially"
+msgstr "Použít na začátku"
+
+#: optionsmodel.cpp:172
+#, kde-format
+msgid ""
+"The window property will be only set to the given value after the window is "
+"created.\n"
+"No further changes will be affected."
+msgstr ""
+
+#: optionsmodel.cpp:175
+#, kde-format
+msgid "Remember"
+msgstr "Zapamatovat si"
+
+#: optionsmodel.cpp:176
+#, kde-format
+msgid ""
+"The value of the window property will be remembered and, every time the "
+"window is created, the last remembered value will be applied."
+msgstr ""
+
+#: optionsmodel.cpp:179
+#, kde-format
+msgid "Force"
+msgstr "Vynutit"
+
+#: optionsmodel.cpp:180
+#, kde-format
+msgid "The window property will be always forced to the given value."
+msgstr ""
+
+#: optionsmodel.cpp:182
+#, kde-format
+msgid "Apply Now"
+msgstr "Aplikovat nyní"
+
+#: optionsmodel.cpp:183
+#, kde-format
+msgid ""
+"The window property will be set to the given value immediately and will not "
+"be affected later\n"
+"(this action will be deleted afterwards)."
+msgstr ""
+
+#: optionsmodel.cpp:186
+#, kde-format
+msgid "Force Temporarily"
+msgstr "Dočasně vynutit"
+
+#: optionsmodel.cpp:187
+#, kde-format
+msgid ""
+"The window property will be forced to the given value until it is hidden\n"
+"(this action will be deleted after the window is hidden)."
+msgstr ""
+
+#: package/contents/ui/FileDialogLoader.qml:28
+#, kde-format
+msgid "Select File"
+msgstr ""
+
+#: package/contents/ui/FileDialogLoader.qml:40
+#, kde-format
+msgid "KWin Rules (*.kwinrule)"
+msgstr ""
+
+#: package/contents/ui/OptionsComboBox.qml:46
+#, kde-format
+msgid "None selected"
+msgstr ""
+
+#: package/contents/ui/OptionsComboBox.qml:51
+#, kde-format
+msgid "All selected"
+msgstr ""
+
+#: package/contents/ui/OptionsComboBox.qml:53
+#, kde-format
+msgid "%1 selected"
+msgid_plural "%1 selected"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: package/contents/ui/RulesEditor.qml:54
+#: package/contents/ui/RulesEditor.qml:73
+#, kde-format
+msgid "Add Properties..."
+msgstr ""
+
+#: package/contents/ui/RulesEditor.qml:73
+#, kde-format
+msgid "Close"
+msgstr ""
+
+#: package/contents/ui/RulesEditor.qml:86
+#, kde-format
+msgid "Detect Window Properties"
+msgstr ""
+
+#: package/contents/ui/RulesEditor.qml:99
+#, kde-format
+msgid "Instantly"
+msgstr ""
+
+#: package/contents/ui/RulesEditor.qml:100
+#, kde-format
+msgid "After %1 second"
+msgid_plural "After %1 seconds"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: package/contents/ui/RulesEditor.qml:119
+#, kde-format
+msgid "Select properties"
+msgstr ""
+
+#: package/contents/ui/RulesEditor.qml:210
+#: package/contents/ui/ValueEditor.qml:66
+#, kde-format
+msgid "Yes"
+msgstr ""
+
+# žádné parametry funkce v inspektoru funkcí
+#: package/contents/ui/RulesEditor.qml:210
+#: package/contents/ui/ValueEditor.qml:72
+#, fuzzy, kde-format
+#| msgid "None"
+msgid "No"
+msgstr "Nic"
+
+#: package/contents/ui/RulesEditor.qml:212
+#: package/contents/ui/ValueEditor.qml:139
+#: package/contents/ui/ValueEditor.qml:146
+#, kde-format
+msgid "%1 %"
+msgstr ""
+
+#: package/contents/ui/RulesEditor.qml:215
+#, kde-format
+msgctxt "Coordinates (x, y)"
+msgid "(%1, %2)"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:73
+#, kde-format
+msgid "No rules for specific windows are currently set"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:81
+#, kde-format
+msgid "Select the rules to export"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:85
+#, kde-format
+msgid "Unselect All"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:85
+#, kde-format
+msgid "Select All"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:99
+#, kde-format
+msgid "Save Rules"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:110
+#, kde-format
+msgid "Add New..."
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:121
+#, kde-format
+msgid "Import..."
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:129
+#, kde-format
+msgid "Cancel Export"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:129
+#, kde-format
+msgid "Export..."
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:202
+#, kde-format
+msgid "Edit"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:210
+#, kde-format
+msgid "Delete"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:239
+#, kde-format
+msgid "Import Rules"
+msgstr ""
+
+#: package/contents/ui/RulesList.qml:251
+#, kde-format
+msgid "Export Rules"
+msgstr ""
+
+#: package/contents/ui/ValueEditor.qml:172
+#, kde-format
+msgctxt "(x, y) coordinates separator in size/position"
+msgid "x"
+msgstr ""
+
+#: rulesdialog.cpp:40
+#, kde-format
+msgid "Edit Window-Specific Settings"
+msgstr "Upravit nastavení specifická pro okno"
+
+#: rulesmodel.cpp:215
+#, kde-format
+msgid "Settings for %1"
+msgstr "Nastavení pro %1"
+
+#: rulesmodel.cpp:218
+#, kde-format
+msgid "New window settings"
+msgstr ""
+
+#: rulesmodel.cpp:224
+#, kde-format
+msgid ""
+"You have specified the window class as unimportant.\n"
+"This means the settings will possibly apply to windows from all "
+"applications. If you really want to create a generic setting, it is "
+"recommended you at least limit the window types to avoid special window "
+"types."
+msgstr ""
+"Nastavili jste třídu okna jako nedůležitou.\n"
+"Tato nastavení se pravděpodobně použijí na všechna okna aplikací. Pokud si "
+"skutečně přejete vytvořit generické nastavení, je doporučeno omezit alespoň "
+"typ oken a zabránit tak zvláštním typům oken."
+
+#: rulesmodel.cpp:353
+#, kde-format
+msgid "Description"
+msgstr "Popis"
+
+#: rulesmodel.cpp:353 rulesmodel.cpp:361 rulesmodel.cpp:369 rulesmodel.cpp:375
+#: rulesmodel.cpp:383 rulesmodel.cpp:388 rulesmodel.cpp:394
+#, kde-format
+msgid "Window matching"
+msgstr ""
+
+#: rulesmodel.cpp:361
+#, kde-format
+msgid "Window class (application)"
+msgstr ""
+
+#: rulesmodel.cpp:369
+#, kde-format
+msgid "Match whole window class"
+msgstr ""
+
+#: rulesmodel.cpp:375
+#, kde-format
+msgid "Window types"
+msgstr "Typy oken"
+
+#: rulesmodel.cpp:383
+#, kde-format
+msgid "Window role"
+msgstr "Role okna"
+
+#: rulesmodel.cpp:388
+#, kde-format
+msgid "Window title"
+msgstr "Titulek okna"
+
+#: rulesmodel.cpp:394
+#, kde-format
+msgid "Machine (hostname)"
+msgstr "Počítač (název)"
+
+#: rulesmodel.cpp:400
+#, kde-format
+msgid "Position"
+msgstr "Pozice"
+
+#: rulesmodel.cpp:400 rulesmodel.cpp:405 rulesmodel.cpp:410 rulesmodel.cpp:415
+#: rulesmodel.cpp:420 rulesmodel.cpp:429 rulesmodel.cpp:443 rulesmodel.cpp:448
+#: rulesmodel.cpp:453 rulesmodel.cpp:458 rulesmodel.cpp:463 rulesmodel.cpp:469
+#: rulesmodel.cpp:478 rulesmodel.cpp:483 rulesmodel.cpp:488
+#, kde-format
+msgid "Size & Position"
+msgstr "Velikost a umístění"
+
+#: rulesmodel.cpp:405
+#, kde-format
+msgid "Size"
+msgstr "Velikost"
+
+#: rulesmodel.cpp:410
+#, kde-format
+msgid "Maximized horizontally"
+msgstr "Maximalizované vodorovně"
+
+#: rulesmodel.cpp:415
+#, kde-format
+msgid "Maximized vertically"
+msgstr "Maximalizované svisle"
+
+#: rulesmodel.cpp:420
+#, kde-format
+msgid "Virtual Desktop"
+msgstr ""
+
+#: rulesmodel.cpp:429
+#, kde-format
+msgid "Activity"
+msgstr "Aktivita"
+
+#: rulesmodel.cpp:443
+#, kde-format
+msgid "Screen"
+msgstr "Obrazovka"
+
+#: rulesmodel.cpp:448
+#, kde-format
+msgid "Fullscreen"
+msgstr "Celá obrazovka"
+
+#: rulesmodel.cpp:453
+#, kde-format
+msgid "Minimized"
+msgstr "Minimalizované"
+
+#: rulesmodel.cpp:458
+#, kde-format
+msgid "Shaded"
+msgstr "Sbalené"
+
+#: rulesmodel.cpp:463
+#, kde-format
+msgid "Initial placement"
+msgstr "Úvodní umístění"
+
+#: rulesmodel.cpp:469
+#, kde-format
+msgid "Ignore requested geometry"
+msgstr "Ignorovat požadovanou geometrii"
+
+#: rulesmodel.cpp:471
+#, kde-format
+msgid ""
+"Windows can ask to appear in a certain position.\n"
+"By default this overrides the placement strategy\n"
+"what might be nasty if the client abuses the feature\n"
+"to unconditionally popup in the middle of your screen."
+msgstr ""
+"Okno může požadovat zobrazení na určité pozici.\n"
+"Toto standardně potlačí strategii umístění,\n"
+"což může být nepříjemné, pokud klient tuto vlastnost\n"
+"zneužije pro bezpodmínečné zobrazení uprostřed vaší obrazovky."
+
+#: rulesmodel.cpp:478
+#, kde-format
+msgid "Minimum Size"
+msgstr "Minimální velikost"
+
+#: rulesmodel.cpp:483
+#, kde-format
+msgid "Maximum Size"
+msgstr "Maximální velikost"
+
+#: rulesmodel.cpp:488
+#, kde-format
+msgid "Obey geometry restrictions"
+msgstr "Řídit se omezenou geometrií"
+
+#: rulesmodel.cpp:490
+#, kde-format
+msgid ""
+"Eg. terminals or video players can ask to keep a certain aspect ratio\n"
+"or only grow by values larger than one\n"
+"(eg. by the dimensions of one character).\n"
+"This may be pointless and the restriction prevents arbitrary dimensions\n"
+"like your complete screen area."
+msgstr ""
+"Například terminály nebo video přehrávače mohou požádat o dodržení  poměru "
+"stran\n"
+"nebo jen zvětšit o hodnoty větší než jedna\n"
+"(například dle velikosti jednoho znaku).\n"
+"Toto může být zbytečné a omezení zabrání nastavení libovolných rozměrů,\n"
+"například na plnou plochu obrazovky."
+
+#: rulesmodel.cpp:499
+#, kde-format
+msgid "Keep above"
+msgstr "Podržet nad"
+
+#: rulesmodel.cpp:499 rulesmodel.cpp:504 rulesmodel.cpp:509 rulesmodel.cpp:515
+#: rulesmodel.cpp:521 rulesmodel.cpp:527
+#, kde-format
+msgid "Arrangement & Access"
+msgstr "Uspořádání a přístup"
+
+#: rulesmodel.cpp:504
+#, kde-format
+msgid "Keep below"
+msgstr "Ponechat pod"
+
+#: rulesmodel.cpp:509
+#, kde-format
+msgid "Skip taskbar"
+msgstr "Přeskočit pruh úloh"
+
+#: rulesmodel.cpp:511
+#, kde-format
+msgid "Window shall (not) appear in the taskbar."
+msgstr "Okno se zobrazí nebo nezobrazí v pruhu úloh."
+
+#: rulesmodel.cpp:515
+#, kde-format
+msgid "Skip pager"
+msgstr ""
+
+#: rulesmodel.cpp:517
+#, kde-format
+msgid "Window shall (not) appear in the manager for virtual desktops"
+msgstr "Okno se zobrazí nebo nezobrazí ve správci virtuálních ploch"
+
+#: rulesmodel.cpp:521
+#, kde-format
+msgid "Skip switcher"
+msgstr "Přeskočit přepínač"
+
+#: rulesmodel.cpp:523
+#, kde-format
+msgid "Window shall (not) appear in the Alt+Tab list"
+msgstr "Okno se zobrazí nebo nezobrazí v Alt+Tab seznamu."
+
+#: rulesmodel.cpp:527
+#, kde-format
+msgid "Shortcut"
+msgstr "Zkratka"
+
+#: rulesmodel.cpp:533
+#, kde-format
+msgid "No titlebar and frame"
+msgstr ""
+
+#: rulesmodel.cpp:533 rulesmodel.cpp:538 rulesmodel.cpp:544 rulesmodel.cpp:549
+#: rulesmodel.cpp:554 rulesmodel.cpp:565 rulesmodel.cpp:576 rulesmodel.cpp:584
+#: rulesmodel.cpp:597 rulesmodel.cpp:602 rulesmodel.cpp:608 rulesmodel.cpp:613
+#, kde-format
+msgid "Appearance & Fixes"
+msgstr ""
+
+#: rulesmodel.cpp:538
+#, kde-format
+msgid "Titlebar color scheme"
+msgstr ""
+
+#: rulesmodel.cpp:544
+#, kde-format
+msgid "Active opacity"
+msgstr ""
+
+#: rulesmodel.cpp:549
+#, kde-format
+msgid "Inactive opacity"
+msgstr ""
+
+#: rulesmodel.cpp:554
+#, kde-format
+msgid "Focus stealing prevention"
+msgstr ""
+
+#: rulesmodel.cpp:556
+#, kde-format
+msgid ""
+"KWin tries to prevent windows from taking the focus\n"
+"(\"activate\") while you're working in another window,\n"
+"but this may sometimes fail or superact.\n"
+"\"None\" will unconditionally allow this window to get the focus while\n"
+"\"Extreme\" will completely prevent it from taking the focus."
+msgstr ""
+"KWin se pokusí zabránit oknu v získání zaměření\n"
+"(\"aktivaci\"), pokud budete pracovat v jiném okně.\n"
+"Nicméně toto může někdy selhat nebo být až moc účinné.\n"
+"\"Žádná\" povolí oknu bezpodmínečné získání zaměření, zatímco\n"
+"\"Extrémní\" může oknu zcela zabránit v získání zaměření."
+
+#: rulesmodel.cpp:565
+#, kde-format
+msgid "Focus protection"
+msgstr "Ochrana zaměření"
+
+#: rulesmodel.cpp:567
+#, kde-format
+msgid ""
+"This controls the focus protection of the currently active window.\n"
+"None will always give the focus away,\n"
+"Extreme will keep it.\n"
+"Otherwise it's interleaved with the stealing prevention\n"
+"assigned to the window that wants the focus."
+msgstr ""
+
+#: rulesmodel.cpp:576
+#, kde-format
+msgid "Accept focus"
+msgstr ""
+
+#: rulesmodel.cpp:578
+#, kde-format
+msgid ""
+"Windows may prevent to get the focus (activate) when being clicked.\n"
+"On the other hand you might wish to prevent a window\n"
+"from getting focused on a mouse click."
+msgstr ""
+"Okna mohou bránit získání zaměření (aktivaci) při kliknutí.\n"
+"Na druhou stranu si můžete přát zabránit oknům získat\n"
+"zaměření po kliknutí myší."
+
+#: rulesmodel.cpp:584
+#, kde-format
+msgid "Ignore global shortcuts"
+msgstr "Ignorovat globální zkratky"
+
+#: rulesmodel.cpp:586
+#, kde-format
+msgid ""
+"When used, a window will receive\n"
+"all keyboard inputs while it is active, including Alt+Tab etc.\n"
+"This is especially interesting for emulators or virtual machines.\n"
+"\n"
+"Be warned:\n"
+"you won't be able to Alt+Tab out of the window\n"
+"nor use any other global shortcut (such as Alt+F2 to show KRunner)\n"
+"while it's active!"
+msgstr ""
+"Pokud je použito a pokud je okno aktivní, obdrží\n"
+"všechny vstupy z klávesnice, včetně Alt+Tab a jiné.\n"
+"Toto je mimořádně zajímavé pro emulátory a virtuální stroje.\n"
+"\n"
+"Upozornění:\n"
+"Pokud bude okno aktivní nebudete moci použít Alt+Tab pro přepnutí\n"
+"do dalšího okna a ani další globální zkratky\n"
+"(například Alt+F2 pro zobrazení KRunneru)."
+
+#: rulesmodel.cpp:597
+#, kde-format
+msgid "Closeable"
+msgstr ""
+
+#: rulesmodel.cpp:602
+#, kde-format
+msgid "Set window type"
+msgstr ""
+
+#: rulesmodel.cpp:608
+#, kde-format
+msgid "Desktop file name"
+msgstr "Název souboru plochy"
+
+#: rulesmodel.cpp:613
+#, kde-format
+msgid "Block compositing"
+msgstr "Zablokovat kompozici"
+
+#: rulesmodel.cpp:688
+#, kde-format
+msgid "Normal Window"
+msgstr "Normální okno"
+
+#: rulesmodel.cpp:689
+#, kde-format
+msgid "Dialog Window"
+msgstr "Dialogové okno"
+
+#: rulesmodel.cpp:690
+#, kde-format
+msgid "Utility Window"
+msgstr "Nástrojové okno"
+
+#: rulesmodel.cpp:691
+#, kde-format
+msgid "Dock (panel)"
+msgstr "Dok (panel)"
+
+#: rulesmodel.cpp:692
+#, kde-format
+msgid "Toolbar"
+msgstr "Panel nástrojů"
+
+#: rulesmodel.cpp:693
+#, kde-format
+msgid "Torn-Off Menu"
+msgstr "Vytržená nabídka"
+
+#: rulesmodel.cpp:694
+#, kde-format
+msgid "Splash Screen"
+msgstr "Úvodní obrazovka"
+
+#: rulesmodel.cpp:695
+#, kde-format
+msgid "Desktop"
+msgstr "Pracovní plocha"
+
+#. i18n("Unmanaged Window")   },  deprecated
+#: rulesmodel.cpp:697
+#, kde-format
+msgid "Standalone Menubar"
+msgstr "Samostatná nabídka"
+
+#: rulesmodel.cpp:712
+#, kde-format
+msgid "All Desktops"
+msgstr "Všechny plochy"
+
+#: rulesmodel.cpp:725
+#, kde-format
+msgid "All Activities"
+msgstr "Všechny aktivity"
+
+#: rulesmodel.cpp:747
+#, kde-format
+msgid "Default"
+msgstr "Výchozí"
+
+#: rulesmodel.cpp:748
+#, kde-format
+msgid "No Placement"
+msgstr "Bez umístění"
+
+#: rulesmodel.cpp:749
+#, kde-format
+msgid "Minimal Overlapping"
+msgstr "Minimální překrytí"
+
+#: rulesmodel.cpp:750
+#, kde-format
+msgid "Maximized"
+msgstr "Maximalizováno"
+
+#: rulesmodel.cpp:751
+#, kde-format
+msgid "Cascaded"
+msgstr "Kaskáda"
+
+#: rulesmodel.cpp:752
+#, kde-format
+msgid "Centered"
+msgstr "Na střed"
+
+#: rulesmodel.cpp:753
+#, kde-format
+msgid "Random"
+msgstr "Náhodné"
+
+#: rulesmodel.cpp:754
+#, kde-format
+msgid "In Top-Left Corner"
+msgstr "V levém horním rohu"
+
+#: rulesmodel.cpp:755
+#, kde-format
+msgid "Under Mouse"
+msgstr "Pod myší"
+
+#: rulesmodel.cpp:756
+#, kde-format
+msgid "On Main Window"
+msgstr "Na hlavním okně"
+
+# žádné parametry funkce v inspektoru funkcí
+#: rulesmodel.cpp:764
+#, kde-format
+msgid "None"
+msgstr "Nic"
+
+#: rulesmodel.cpp:765
+#, kde-format
+msgid "Low"
+msgstr "Nízká"
+
+#: rulesmodel.cpp:766
+#, kde-format
+msgid "Normal"
+msgstr "Normální"
+
+#: rulesmodel.cpp:767
+#, kde-format
+msgid "High"
+msgstr "Vysoká"
+
+#: rulesmodel.cpp:768
+#, kde-format
+msgid "Extreme"
+msgstr "Extrémní"

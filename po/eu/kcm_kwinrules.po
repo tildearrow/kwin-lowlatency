@@ -1,0 +1,873 @@
+# Translation of kcmkwinrules.po to Euskara/Basque (eu).
+# Copyright (C) 2004-2018 Free Software Foundation.
+# Copyright (C) 2019-2020, This file is copyright:
+# This file is distributed under the same license as the kwin package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@euskalnet.net>.
+#
+# Translators:
+# Marcos  <marcos@euskalgnu.org>, 2004, 2005, 2006, 2007.
+# Juan Irigoien <juanirigoien@yahoo.es>, 2004.
+# Asier Urio Larrea <asieriko@gmail.com>, 2008.
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2011, 2014, 2018, 2019, 2020.
+# Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-05-13 03:55+0200\n"
+"PO-Revision-Date: 2020-05-09 18:35+0200\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.04.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Juan Irigoien,Asier Urio Larrea,Marcos Goyeneche,Iñigo Salvador Azurmendi,"
+"Hizkuntza Politikarako Sailburuordetza"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"juanirigoien@yahoo.es,asieriko@gmail.com,marcos@euskalgnu.org,"
+"xalba@euskalnet.net,hizpol@ej-gv.es"
+
+#: kcmrules.cpp:42
+#, kde-format
+msgid "Window Rules"
+msgstr "Leihoko arauak"
+
+#: kcmrules.cpp:46
+#, kde-format
+msgid "Ismael Asensio"
+msgstr "Ismael Asensio"
+
+#: kcmrules.cpp:47
+#, kde-format
+msgid "Author"
+msgstr "Egilea"
+
+#: kcmrules.cpp:51
+#, kde-format
+msgid ""
+"<p><h1>Window-specific Settings</h1> Here you can customize window settings "
+"specifically only for some windows.</p> <p>Please note that this "
+"configuration will not take effect if you do not use KWin as your window "
+"manager. If you do use a different window manager, please refer to its "
+"documentation for how to customize window behavior.</p>"
+msgstr ""
+"<p><h1>Leihoen ezarpen espezifikoak</h1> Hemen, leiho jakin batzuentzako "
+"ezarpenak pertsonaliza ditzakezu.</p> <p>Kontuan izan konfigurazio honek ez "
+"duela eraginik izango KWin leiho-kudeatzaile gisa erabiltzen ez baldin "
+"baduzu. Beste leiho-kudeatzaileren bat badarabilzu, jo ezazu haren "
+"dokumentaziora dagokion leiho-portaera nola pertsonalizatu behar den "
+"jakiteko.</p>"
+
+#: main.cpp:103
+#, kde-format
+msgid "Application settings for %1"
+msgstr "%1(r)entzako aplikazio-ezarpenak"
+
+#: main.cpp:123 rulesmodel.cpp:212
+#, kde-format
+msgid "Window settings for %1"
+msgstr "%1(r)entzako leiho-ezarpenak"
+
+#: main.cpp:175
+#, kde-format
+msgctxt "Window caption for the application wide rules dialog"
+msgid "Edit Application-Specific Settings"
+msgstr "Editatu aplikazioaren ezarpen espezifikoak"
+
+#: main.cpp:206
+#, kde-format
+msgid "KWin"
+msgstr "KWin"
+
+#: main.cpp:213
+#, kde-format
+msgid "KWin helper utility"
+msgstr "KWin-en laguntza-utilitatea"
+
+#: main.cpp:214
+#, kde-format
+msgid "KWin id of the window for special window settings."
+msgstr "Leihoaren «Kwin» identifikatzailea leiho ezarpen berezietarako."
+
+#: main.cpp:215
+#, kde-format
+msgid "Whether the settings should affect all windows of the application."
+msgstr "Ezarpenek aplikazioaren leiho guztiei eragingo dien ala ez."
+
+#: main.cpp:224
+#, kde-format
+msgid "This helper utility is not supposed to be called directly."
+msgstr "Laguntza-utilitate honi ez litzaioke zuzenean deitu behar."
+
+#: optionsmodel.cpp:159
+#, kde-format
+msgid "Unimportant"
+msgstr "Garrantzirik gabekoa"
+
+#: optionsmodel.cpp:160
+#, kde-format
+msgid "Exact Match"
+msgstr "Bat-etortze zehatza"
+
+#: optionsmodel.cpp:161
+#, kde-format
+msgid "Substring Match"
+msgstr "Azpikateen bat-etortzea"
+
+#: optionsmodel.cpp:162
+#, kde-format
+msgid "Regular Expression"
+msgstr "Adierazpen erregularra"
+
+#: optionsmodel.cpp:167
+#, kde-format
+msgid "Do Not Affect"
+msgstr "Eraginik ez"
+
+#: optionsmodel.cpp:168
+#, kde-format
+msgid ""
+"The window property will not be affected and therefore the default handling "
+"for it will be used.\n"
+"Specifying this will block more generic window settings from taking effect."
+msgstr ""
+"Leihoko propietatea ez da ukituko, hori dela eta bere kudeaketa lehenetsia "
+"erabiliko da.\n"
+"Hau zehazteak leiho ezarpen generikoagoak indarrean sartzea blokeatuko du."
+
+#: optionsmodel.cpp:171
+#, kde-format
+msgid "Apply Initially"
+msgstr "Aplikatu hasieran"
+
+#: optionsmodel.cpp:172
+#, kde-format
+msgid ""
+"The window property will be only set to the given value after the window is "
+"created.\n"
+"No further changes will be affected."
+msgstr ""
+"Leihoko propietatea emandako balioan ezarriko da soilik leihoa sortu "
+"ondoren.\n"
+"Ez da beste aldaketarik ukituko."
+
+#: optionsmodel.cpp:175
+#, kde-format
+msgid "Remember"
+msgstr "Gogorarazi"
+
+#: optionsmodel.cpp:176
+#, kde-format
+msgid ""
+"The value of the window property will be remembered and, every time the "
+"window is created, the last remembered value will be applied."
+msgstr ""
+"Leiho-propietatearen balioa gogoratuko da eta leihoa sortzen den bakoitzean "
+"gogoratutako azken balioa ezarriko da."
+
+#: optionsmodel.cpp:179
+#, kde-format
+msgid "Force"
+msgstr "Behartu"
+
+#: optionsmodel.cpp:180
+#, kde-format
+msgid "The window property will be always forced to the given value."
+msgstr "Leihoko propietatea beti emandako balioan ezarriko da."
+
+#: optionsmodel.cpp:182
+#, kde-format
+msgid "Apply Now"
+msgstr "Aplikatu orain"
+
+#: optionsmodel.cpp:183
+#, kde-format
+msgid ""
+"The window property will be set to the given value immediately and will not "
+"be affected later\n"
+"(this action will be deleted afterwards)."
+msgstr ""
+"Leihoko propietatea emandako balioan ezarriko da berehala eta ondoren ez da "
+"ukituko\n"
+"(ekintza hori ondoren ezabatuko da)."
+
+#: optionsmodel.cpp:186
+#, kde-format
+msgid "Force Temporarily"
+msgstr "Behartu aldi baterako"
+
+#: optionsmodel.cpp:187
+#, kde-format
+msgid ""
+"The window property will be forced to the given value until it is hidden\n"
+"(this action will be deleted after the window is hidden)."
+msgstr ""
+"Leihoko propietatea emandako baliora behartuko da ezkutatu arte\n"
+"(ekintza hau ezabatuko da leihoa ezkutatu ondoren)."
+
+#: package/contents/ui/FileDialogLoader.qml:28
+#, kde-format
+msgid "Select File"
+msgstr "Hautatu fitxategia"
+
+#: package/contents/ui/FileDialogLoader.qml:40
+#, kde-format
+msgid "KWin Rules (*.kwinrule)"
+msgstr "KWin arauak (*.kwinrule)"
+
+#: package/contents/ui/OptionsComboBox.qml:46
+#, kde-format
+msgid "None selected"
+msgstr "Ez da ezer hautatu"
+
+#: package/contents/ui/OptionsComboBox.qml:51
+#, kde-format
+msgid "All selected"
+msgstr "Denak hautatu dira"
+
+#: package/contents/ui/OptionsComboBox.qml:53
+#, kde-format
+msgid "%1 selected"
+msgid_plural "%1 selected"
+msgstr[0] "%1 hautatu da"
+msgstr[1] "%1 hautatu dira"
+
+#: package/contents/ui/RulesEditor.qml:54
+#: package/contents/ui/RulesEditor.qml:73
+#, kde-format
+msgid "Add Properties..."
+msgstr "Gehitu propietateak..."
+
+#: package/contents/ui/RulesEditor.qml:73
+#, kde-format
+msgid "Close"
+msgstr "Itxi"
+
+#: package/contents/ui/RulesEditor.qml:86
+#, kde-format
+msgid "Detect Window Properties"
+msgstr "Hauteman leihoaren propietateak"
+
+#: package/contents/ui/RulesEditor.qml:99
+#, kde-format
+msgid "Instantly"
+msgstr "Bat-batekoa"
+
+#: package/contents/ui/RulesEditor.qml:100
+#, kde-format
+msgid "After %1 second"
+msgid_plural "After %1 seconds"
+msgstr[0] "Segundo %1 igarota"
+msgstr[1] "%1 segundo igarota"
+
+#: package/contents/ui/RulesEditor.qml:119
+#, kde-format
+msgid "Select properties"
+msgstr "Hautatu propietateak"
+
+#: package/contents/ui/RulesEditor.qml:210
+#: package/contents/ui/ValueEditor.qml:66
+#, kde-format
+msgid "Yes"
+msgstr "Bai"
+
+#: package/contents/ui/RulesEditor.qml:210
+#: package/contents/ui/ValueEditor.qml:72
+#, kde-format
+msgid "No"
+msgstr "Ez"
+
+#: package/contents/ui/RulesEditor.qml:212
+#: package/contents/ui/ValueEditor.qml:139
+#: package/contents/ui/ValueEditor.qml:146
+#, kde-format
+msgid "%1 %"
+msgstr "%%1"
+
+#: package/contents/ui/RulesEditor.qml:215
+#, kde-format
+msgctxt "Coordinates (x, y)"
+msgid "(%1, %2)"
+msgstr "(%1, %2)"
+
+#: package/contents/ui/RulesList.qml:73
+#, kde-format
+msgid "No rules for specific windows are currently set"
+msgstr "Une honetan ez dago berariazko leihoetarako ezarritako araurik"
+
+#: package/contents/ui/RulesList.qml:81
+#, kde-format
+msgid "Select the rules to export"
+msgstr "Hautatu esportatu beharreko arauak"
+
+#: package/contents/ui/RulesList.qml:85
+#, kde-format
+msgid "Unselect All"
+msgstr "Desautatu denak"
+
+#: package/contents/ui/RulesList.qml:85
+#, kde-format
+msgid "Select All"
+msgstr "Hautatu denak"
+
+#: package/contents/ui/RulesList.qml:99
+#, kde-format
+msgid "Save Rules"
+msgstr "Gorde arauak"
+
+#: package/contents/ui/RulesList.qml:110
+#, kde-format
+msgid "Add New..."
+msgstr "Gehitu berria..."
+
+#: package/contents/ui/RulesList.qml:121
+#, kde-format
+msgid "Import..."
+msgstr "Inportatu..."
+
+#: package/contents/ui/RulesList.qml:129
+#, kde-format
+msgid "Cancel Export"
+msgstr "Utzi esportatzea"
+
+#: package/contents/ui/RulesList.qml:129
+#, kde-format
+msgid "Export..."
+msgstr "Esportatu..."
+
+#: package/contents/ui/RulesList.qml:202
+#, kde-format
+msgid "Edit"
+msgstr "Editatu"
+
+#: package/contents/ui/RulesList.qml:210
+#, kde-format
+msgid "Delete"
+msgstr "Ezabatu"
+
+#: package/contents/ui/RulesList.qml:239
+#, kde-format
+msgid "Import Rules"
+msgstr "Inportatu arauak"
+
+#: package/contents/ui/RulesList.qml:251
+#, kde-format
+msgid "Export Rules"
+msgstr "Esportatu arauak"
+
+#: package/contents/ui/ValueEditor.qml:172
+#, kde-format
+msgctxt "(x, y) coordinates separator in size/position"
+msgid "x"
+msgstr "x"
+
+#: rulesdialog.cpp:40
+#, kde-format
+msgid "Edit Window-Specific Settings"
+msgstr "Editatu leihoen ezarpen espezifikoak"
+
+#: rulesmodel.cpp:215
+#, kde-format
+msgid "Settings for %1"
+msgstr "%1(r)en ezarpenak"
+
+#: rulesmodel.cpp:218
+#, kde-format
+msgid "New window settings"
+msgstr "Leiho berrien ezarpenak"
+
+#: rulesmodel.cpp:224
+#, kde-format
+msgid ""
+"You have specified the window class as unimportant.\n"
+"This means the settings will possibly apply to windows from all "
+"applications. If you really want to create a generic setting, it is "
+"recommended you at least limit the window types to avoid special window "
+"types."
+msgstr ""
+"Leiho klasea garrantzirik gabekotzat zehaztu duzu.\n"
+"Beraz, seguru asko, aplikazio guztietako leihoei aplikatuko zaizkie "
+"ezarpenak. Ezarpen generikoa sortu nahi baldin baduzu, gomendagarria da "
+"gutxienez leiho motak mugatzea, leiho mota bereziak saihesteko."
+
+#: rulesmodel.cpp:353
+#, kde-format
+msgid "Description"
+msgstr "Deskribapena"
+
+#: rulesmodel.cpp:353 rulesmodel.cpp:361 rulesmodel.cpp:369 rulesmodel.cpp:375
+#: rulesmodel.cpp:383 rulesmodel.cpp:388 rulesmodel.cpp:394
+#, kde-format
+msgid "Window matching"
+msgstr "Leihoaren bat-etortzea"
+
+#: rulesmodel.cpp:361
+#, kde-format
+msgid "Window class (application)"
+msgstr "Leiho klasea (aplikazioa)"
+
+#: rulesmodel.cpp:369
+#, kde-format
+msgid "Match whole window class"
+msgstr "Bat etorrarazi leiho klase osoarekin"
+
+#: rulesmodel.cpp:375
+#, kde-format
+msgid "Window types"
+msgstr "Leiho motak"
+
+#: rulesmodel.cpp:383
+#, kde-format
+msgid "Window role"
+msgstr "Leihoren funtzioa"
+
+#: rulesmodel.cpp:388
+#, kde-format
+msgid "Window title"
+msgstr "Leihoaren titulua"
+
+#: rulesmodel.cpp:394
+#, kde-format
+msgid "Machine (hostname)"
+msgstr "Makina (ostalari-izena)"
+
+#: rulesmodel.cpp:400
+#, kde-format
+msgid "Position"
+msgstr "Kokalekua"
+
+#: rulesmodel.cpp:400 rulesmodel.cpp:405 rulesmodel.cpp:410 rulesmodel.cpp:415
+#: rulesmodel.cpp:420 rulesmodel.cpp:429 rulesmodel.cpp:443 rulesmodel.cpp:448
+#: rulesmodel.cpp:453 rulesmodel.cpp:458 rulesmodel.cpp:463 rulesmodel.cpp:469
+#: rulesmodel.cpp:478 rulesmodel.cpp:483 rulesmodel.cpp:488
+#, kde-format
+msgid "Size & Position"
+msgstr "Tamaina eta kokalekua"
+
+#: rulesmodel.cpp:405
+#, kde-format
+msgid "Size"
+msgstr "Tamaina"
+
+#: rulesmodel.cpp:410
+#, kde-format
+msgid "Maximized horizontally"
+msgstr "Horizontalki maximizatuta"
+
+#: rulesmodel.cpp:415
+#, kde-format
+msgid "Maximized vertically"
+msgstr "Bertikalki maximizatuta"
+
+#: rulesmodel.cpp:420
+#, kde-format
+msgid "Virtual Desktop"
+msgstr "Alegiazko mahaigaina"
+
+#: rulesmodel.cpp:429
+#, kde-format
+msgid "Activity"
+msgstr "Jarduera"
+
+#: rulesmodel.cpp:443
+#, kde-format
+msgid "Screen"
+msgstr "Pantaila"
+
+#: rulesmodel.cpp:448
+#, kde-format
+msgid "Fullscreen"
+msgstr "Pantaila-betea"
+
+#: rulesmodel.cpp:453
+#, kde-format
+msgid "Minimized"
+msgstr "Ikonotuta"
+
+#: rulesmodel.cpp:458
+#, kde-format
+msgid "Shaded"
+msgstr "Bilduta"
+
+#: rulesmodel.cpp:463
+#, kde-format
+msgid "Initial placement"
+msgstr "Hasierako kokapena"
+
+#: rulesmodel.cpp:469
+#, kde-format
+msgid "Ignore requested geometry"
+msgstr "Ez-ikusi egin eskatutako geometriari"
+
+#: rulesmodel.cpp:471
+#, kde-format
+msgid ""
+"Windows can ask to appear in a certain position.\n"
+"By default this overrides the placement strategy\n"
+"what might be nasty if the client abuses the feature\n"
+"to unconditionally popup in the middle of your screen."
+msgstr ""
+"Leihoek kokapen jakin batean agertzea eska dezakete.\n"
+"Lehenespenez, kokapen-estrategia indargabetzen du horrek;\n"
+"desatsegina izan liteke, bezeroak ezaugarria\n"
+"gehiegi erabiltzen badu zure pantailaren erdian nahi duenean azaltzeko."
+
+#: rulesmodel.cpp:478
+#, kde-format
+msgid "Minimum Size"
+msgstr "Gutxieneko tamaina"
+
+#: rulesmodel.cpp:483
+#, kde-format
+msgid "Maximum Size"
+msgstr "Gehieneko tamaina"
+
+#: rulesmodel.cpp:488
+#, kde-format
+msgid "Obey geometry restrictions"
+msgstr "Obeditu geometria murrizpenei"
+
+#: rulesmodel.cpp:490
+#, kde-format
+msgid ""
+"Eg. terminals or video players can ask to keep a certain aspect ratio\n"
+"or only grow by values larger than one\n"
+"(eg. by the dimensions of one character).\n"
+"This may be pointless and the restriction prevents arbitrary dimensions\n"
+"like your complete screen area."
+msgstr ""
+"Adibidez, terminalek edo bideo-erreproduzigailuek \n"
+"aspektu-erlazio jakin bat mantentzea\n"
+"eska dezakete, edo soilik bat baino balio handiagoetan haztea (esaterako, "
+"karaktere bateko neurrietan).\n"
+"Hori alferrikakoa izan liteke, eta murrizpenak hautazko neurriak\n"
+"eragozten ditu, hala nola zure pantailaren azalera osoa."
+
+#: rulesmodel.cpp:499
+#, kde-format
+msgid "Keep above"
+msgstr "Mantendu gainean"
+
+#: rulesmodel.cpp:499 rulesmodel.cpp:504 rulesmodel.cpp:509 rulesmodel.cpp:515
+#: rulesmodel.cpp:521 rulesmodel.cpp:527
+#, kde-format
+msgid "Arrangement & Access"
+msgstr "Antolamendua eta atzitzea"
+
+#: rulesmodel.cpp:504
+#, kde-format
+msgid "Keep below"
+msgstr "Mantendu azpian"
+
+#: rulesmodel.cpp:509
+#, kde-format
+msgid "Skip taskbar"
+msgstr "Saihestu ataza-barra"
+
+#: rulesmodel.cpp:511
+#, kde-format
+msgid "Window shall (not) appear in the taskbar."
+msgstr "Leihoa ataza-barran ez litzateke/ agertu beharko /litzateke."
+
+#: rulesmodel.cpp:515
+#, kde-format
+msgid "Skip pager"
+msgstr "Saihestu orrialdekatzailea"
+
+#: rulesmodel.cpp:517
+#, kde-format
+msgid "Window shall (not) appear in the manager for virtual desktops"
+msgstr ""
+"Leihoa alegiazko ez litzateke/ mahaigain-kudeatzailean agertu beharko /"
+"litzateke"
+
+#: rulesmodel.cpp:521
+#, kde-format
+msgid "Skip switcher"
+msgstr "Saihestu aldatzailea"
+
+#: rulesmodel.cpp:523
+#, kde-format
+msgid "Window shall (not) appear in the Alt+Tab list"
+msgstr "Leihoa ez litzateke/ Alt+Tab zerrendan agertu beharko /litzateke"
+
+#: rulesmodel.cpp:527
+#, kde-format
+msgid "Shortcut"
+msgstr "Lasterbidea"
+
+#: rulesmodel.cpp:533
+#, kde-format
+msgid "No titlebar and frame"
+msgstr "Titulu-barrarik eta markorik ez"
+
+#: rulesmodel.cpp:533 rulesmodel.cpp:538 rulesmodel.cpp:544 rulesmodel.cpp:549
+#: rulesmodel.cpp:554 rulesmodel.cpp:565 rulesmodel.cpp:576 rulesmodel.cpp:584
+#: rulesmodel.cpp:597 rulesmodel.cpp:602 rulesmodel.cpp:608 rulesmodel.cpp:613
+#, kde-format
+msgid "Appearance & Fixes"
+msgstr "Itxura eta konponketak"
+
+#: rulesmodel.cpp:538
+#, kde-format
+msgid "Titlebar color scheme"
+msgstr "Titulu-barrako kolore-antolaera"
+
+#: rulesmodel.cpp:544
+#, kde-format
+msgid "Active opacity"
+msgstr "Opakutasun aktiboa"
+
+#: rulesmodel.cpp:549
+#, kde-format
+msgid "Inactive opacity"
+msgstr "Opakutasuna inaktiboa"
+
+#: rulesmodel.cpp:554
+#, kde-format
+msgid "Focus stealing prevention"
+msgstr "Fokua-lapurtze prebentzioa"
+
+#: rulesmodel.cpp:556
+#, kde-format
+msgid ""
+"KWin tries to prevent windows from taking the focus\n"
+"(\"activate\") while you're working in another window,\n"
+"but this may sometimes fail or superact.\n"
+"\"None\" will unconditionally allow this window to get the focus while\n"
+"\"Extreme\" will completely prevent it from taking the focus."
+msgstr ""
+"KWin saiatzen da leiho batean lanean ari zaren bitartean\n"
+"beste leihoek fokua hartzea eragozten (\"aktibatu\"),\n"
+"baina baliteke batzuetan huts egitea edo gehiegi jardutea.\n"
+"\"Bat ere ez\" aukerarekin, leihoak baldintzarik gabe hartzen du fokua; "
+"\"Muturrekoa\" aukerarekin, berriz, erabat eragozten da fokua hartzea."
+
+#: rulesmodel.cpp:565
+#, kde-format
+msgid "Focus protection"
+msgstr "Fokuaren babesa"
+
+# xalba 2018-07-11
+#
+# interleave: bateratu itzuli det esaldiaren esanahiari so. Berez "entrelazar" adierazten du, hau da, bien konfigurazioen arteko erlazia zehaztu eta ondorioztatu nagusi/mendekoa zeintzu diren eta horren arabera konfigurazioa ondorioztatu. Horregatik iruditzen zait bien arteko konfigurazioak bateratzen dituela.
+#: rulesmodel.cpp:567
+#, kde-format
+msgid ""
+"This controls the focus protection of the currently active window.\n"
+"None will always give the focus away,\n"
+"Extreme will keep it.\n"
+"Otherwise it's interleaved with the stealing prevention\n"
+"assigned to the window that wants the focus."
+msgstr ""
+"Honek unean aktibo dagoen leihoaren fokuaren babesa kontrolatzen du.\n"
+"«Bat ere ez» fokua beti emateko,\n"
+"«Muturrekoa» hari eusteko.\n"
+"Bestela fokua bereganatu nahi duen leihoari esleitutako foku-lapurtze\n"
+"prebentzioarekin bateratuko da."
+
+#: rulesmodel.cpp:576
+#, kde-format
+msgid "Accept focus"
+msgstr "Onartu fokua"
+
+#: rulesmodel.cpp:578
+#, kde-format
+msgid ""
+"Windows may prevent to get the focus (activate) when being clicked.\n"
+"On the other hand you might wish to prevent a window\n"
+"from getting focused on a mouse click."
+msgstr ""
+"Leihoek, horietan klik egitean, fokua jasotzea (aktibatzea) eragotz "
+"dezakete.\n"
+"Bestalde, leiho batean saguarekin klik egitean hura aktibatzea\n"
+"eragotzi nahiko duzu beharbada."
+
+#: rulesmodel.cpp:584
+#, kde-format
+msgid "Ignore global shortcuts"
+msgstr "Ez ikusi egin lasterbide orokorrei"
+
+#: rulesmodel.cpp:586
+#, kde-format
+msgid ""
+"When used, a window will receive\n"
+"all keyboard inputs while it is active, including Alt+Tab etc.\n"
+"This is especially interesting for emulators or virtual machines.\n"
+"\n"
+"Be warned:\n"
+"you won't be able to Alt+Tab out of the window\n"
+"nor use any other global shortcut (such as Alt+F2 to show KRunner)\n"
+"while it's active!"
+msgstr ""
+"Leiho bat erabiltzen denean, teklatuko\n"
+"sarrera guztiak jasoko ditu hark, aktibo dagoen bitartean, Alt+Tab barne.\n"
+"Hori bereziki interesgarria da emulatzaile edo alegiazko makinetarako.\n"
+"\n"
+"Abisua:\n"
+"ezingo duzu Alt+Tab leihotik kanpora egin, ez eta beste edozein\n"
+"lasterbide erabili ere (esaterako, Alt+F2, KRunner erakusteko),\n"
+"aktibo dagoen bitartean!"
+
+#: rulesmodel.cpp:597
+#, kde-format
+msgid "Closeable"
+msgstr "Itxigarria"
+
+#: rulesmodel.cpp:602
+#, kde-format
+msgid "Set window type"
+msgstr "Ezarri leiho mota"
+
+#: rulesmodel.cpp:608
+#, kde-format
+msgid "Desktop file name"
+msgstr "Mahaiganeko fitxategiaren izena"
+
+#: rulesmodel.cpp:613
+#, kde-format
+msgid "Block compositing"
+msgstr "Bloke-konposizioa"
+
+#: rulesmodel.cpp:688
+#, kde-format
+msgid "Normal Window"
+msgstr "Leiho normala"
+
+#: rulesmodel.cpp:689
+#, kde-format
+msgid "Dialog Window"
+msgstr "Elkarrizketa-leihoa"
+
+#: rulesmodel.cpp:690
+#, kde-format
+msgid "Utility Window"
+msgstr "Utilitate-leihoa"
+
+#: rulesmodel.cpp:691
+#, kde-format
+msgid "Dock (panel)"
+msgstr "Atrakatu (panela)"
+
+#: rulesmodel.cpp:692
+#, kde-format
+msgid "Toolbar"
+msgstr "Tresna-barra"
+
+#: rulesmodel.cpp:693
+#, kde-format
+msgid "Torn-Off Menu"
+msgstr "Goitik beherako menua"
+
+#: rulesmodel.cpp:694
+#, kde-format
+msgid "Splash Screen"
+msgstr "Harrerako pantaila"
+
+#: rulesmodel.cpp:695
+#, kde-format
+msgid "Desktop"
+msgstr "Mahaigaina"
+
+#. i18n("Unmanaged Window")   },  deprecated
+#: rulesmodel.cpp:697
+#, kde-format
+msgid "Standalone Menubar"
+msgstr "Menu-barra autonomoa"
+
+#: rulesmodel.cpp:712
+#, kde-format
+msgid "All Desktops"
+msgstr "Mahaigain guztiak"
+
+#: rulesmodel.cpp:725
+#, kde-format
+msgid "All Activities"
+msgstr "Jarduera guztiak"
+
+#: rulesmodel.cpp:747
+#, kde-format
+msgid "Default"
+msgstr "Lehenetsia"
+
+#: rulesmodel.cpp:748
+#, kde-format
+msgid "No Placement"
+msgstr "Kokapenik gabe"
+
+#: rulesmodel.cpp:749
+#, kde-format
+msgid "Minimal Overlapping"
+msgstr "Gutxieneko gainezarpena"
+
+#: rulesmodel.cpp:750
+#, kde-format
+msgid "Maximized"
+msgstr "Maximizatuta"
+
+#: rulesmodel.cpp:751
+#, kde-format
+msgid "Cascaded"
+msgstr "Turrustan"
+
+#: rulesmodel.cpp:752
+#, kde-format
+msgid "Centered"
+msgstr "Erdiratuta"
+
+#: rulesmodel.cpp:753
+#, kde-format
+msgid "Random"
+msgstr "Ausazkoa"
+
+#: rulesmodel.cpp:754
+#, kde-format
+msgid "In Top-Left Corner"
+msgstr "Goi-ezkerreko izkinan"
+
+#: rulesmodel.cpp:755
+#, kde-format
+msgid "Under Mouse"
+msgstr "Saguaren azpian"
+
+#: rulesmodel.cpp:756
+#, kde-format
+msgid "On Main Window"
+msgstr "Leiho nagusiaren gainean"
+
+#: rulesmodel.cpp:764
+#, kde-format
+msgid "None"
+msgstr "Bat ere ez"
+
+#: rulesmodel.cpp:765
+#, kde-format
+msgid "Low"
+msgstr "Txikia"
+
+#: rulesmodel.cpp:766
+#, kde-format
+msgid "Normal"
+msgstr "Arrunta"
+
+#: rulesmodel.cpp:767
+#, kde-format
+msgid "High"
+msgstr "Altua"
+
+#: rulesmodel.cpp:768
+#, kde-format
+msgid "Extreme"
+msgstr "Muturrekoa"

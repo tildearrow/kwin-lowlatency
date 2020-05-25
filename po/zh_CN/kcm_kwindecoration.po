@@ -1,0 +1,223 @@
+# translation of kcmkwindecoration.po to zh_CN
+# Copyright (C) 2003 Free Software Foundation, Inc.
+#
+# Li Zongliang <li-zongliang@21cn.com>, 2001.
+# Xiong Jiang <jxiong@offtopic.org>, 2003.
+# Funda Wang <fundawang@linux.net.cn>, 2004.
+# Lie Ex <lilith.ex@gmail.com>, 2009-2010.
+# Ni Hui <shuizhuyuanluo@126.com>, 2012, 2013.
+# Weng Xuetian <wengxt@gmail.com>, 2012, 2014, 2015.
+# Feng Chao <chaofeng111@gmail.com>, 2014.
+# Xuetian Weng <xweng@cs.stonybrook.edu>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-05-07 03:54+0200\n"
+"PO-Revision-Date: 2020-05-09 13:50\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-trunk/messages/kde-workspace/kcm_kwindecoration.pot\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KDE 中国, Guo Yunhe"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-china@kde.org, i@guoyunhe.me"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Menu"
+msgstr "菜单"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Application menu"
+msgstr "应用程序菜单"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "On all desktops"
+msgstr "在全部桌面"
+
+#: declarative-plugin/buttonsmodel.cpp:74
+#, kde-format
+msgid "Minimize"
+msgstr "最小化"
+
+#: declarative-plugin/buttonsmodel.cpp:76
+#, kde-format
+msgid "Maximize"
+msgstr "最大化"
+
+#: declarative-plugin/buttonsmodel.cpp:78
+#, kde-format
+msgid "Close"
+msgstr "关闭"
+
+#: declarative-plugin/buttonsmodel.cpp:80
+#, kde-format
+msgid "Context help"
+msgstr "上下文帮助"
+
+#: declarative-plugin/buttonsmodel.cpp:82
+#, kde-format
+msgid "Shade"
+msgstr "卷起"
+
+#: declarative-plugin/buttonsmodel.cpp:84
+#, kde-format
+msgid "Keep below"
+msgstr "保持在下方"
+
+#: declarative-plugin/buttonsmodel.cpp:86
+#, kde-format
+msgid "Keep above"
+msgstr "保持在上方"
+
+#: kcm.cpp:62
+#, kde-format
+msgid "Window Decorations"
+msgstr "窗口装饰"
+
+#: kcm.cpp:66
+#, kde-format
+msgid "Valerio Pilo"
+msgstr "Valerio Pilo"
+
+#: kcm.cpp:67
+#, kde-format
+msgid "Author"
+msgstr "作者"
+
+#: kcm.cpp:122
+#, kde-format
+msgid "Download New Window Decorations"
+msgstr "下载新窗口装饰"
+
+#: package/contents/ui/Buttons.qml:87
+#, kde-format
+msgid "Titlebar"
+msgstr "标题栏"
+
+#: package/contents/ui/Buttons.qml:228
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr "将按钮拖到这里移除"
+
+#: package/contents/ui/Buttons.qml:246
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "在此处和标题栏之间拖拽按钮"
+
+#: package/contents/ui/main.qml:27
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr "此模块允许您配置窗口装饰。"
+
+#: package/contents/ui/main.qml:61
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr "主题"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "标题栏按钮"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr "使用主题的默认边框大小"
+
+#: package/contents/ui/main.qml:121
+#, kde-format
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "获取新窗口装饰..."
+
+#: package/contents/ui/main.qml:138
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "双击菜单按钮关闭窗口"
+
+#: package/contents/ui/main.qml:151
+#, kde-format
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+"双击关闭：\n"
+" 如需打开菜单，按住按钮直到菜单出现。"
+
+#: package/contents/ui/main.qml:158
+#, kde-format
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "显示标题栏按钮提示"
+
+#: package/contents/ui/Themes.qml:100
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr "编辑 %1 主题"
+
+#: utils.cpp:38
+#, kde-format
+msgid "No Borders"
+msgstr "无边框"
+
+#: utils.cpp:39
+#, kde-format
+msgid "No Side Borders"
+msgstr "无侧边框"
+
+#: utils.cpp:40
+#, kde-format
+msgid "Tiny"
+msgstr "微小"
+
+#: utils.cpp:41
+#, kde-format
+msgid "Normal"
+msgstr "正常"
+
+#: utils.cpp:42
+#, kde-format
+msgid "Large"
+msgstr "大"
+
+#: utils.cpp:43
+#, kde-format
+msgid "Very Large"
+msgstr "很大"
+
+#: utils.cpp:44
+#, kde-format
+msgid "Huge"
+msgstr "巨大"
+
+#: utils.cpp:45
+#, kde-format
+msgid "Very Huge"
+msgstr "超大"
+
+#: utils.cpp:46
+#, kde-format
+msgid "Oversized"
+msgstr "特大"
