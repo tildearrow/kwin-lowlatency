@@ -2020,4 +2020,9 @@ void XdgShellClient::ping(PingReason reason)
     m_pingSerials.insert(serial, reason);
 }
 
+bool XdgShellClient::shouldUnredirect() const
+{
+    return false;
+}
+
 }

@@ -1602,6 +1602,9 @@ void X11Client::internalShow()
         m_decoInputExtent.map();
         updateHiddenPreview();
     }
+    if (Compositor::self()->isActive()) {
+        Compositor::self()->checkUnredirect();
+    }
     emit windowShown(this);
 }
 
@@ -1617,6 +1620,9 @@ void X11Client::internalHide()
         updateHiddenPreview();
     addWorkspaceRepaint(visibleRect());
     workspace()->clientHidden(this);
+    if (Compositor::self()->isActive()) {
+        Compositor::self()->checkUnredirect();
+    }
     emit windowHidden(this);
 }
 
@@ -1635,6 +1641,9 @@ void X11Client::internalKeep()
     updateHiddenPreview();
     addWorkspaceRepaint(visibleRect());
     workspace()->clientHidden(this);
+    if (Compositor::self()->isActive()) {
+        Compositor::self()->checkUnredirect();
+    }
 }
 
 /**
@@ -2896,6 +2905,10 @@ void X11Client::move(int x, int y, ForceGeometry_t force)
     updateWindowRules(Rules::Position);
     screens()->setCurrent(this);
     workspace()->updateStackingOrder();
+    if (Compositor::self()->isActive()) {
+        // TODO: there was a todo here but I don't know
+        Compositor::self()->checkUnredirect();
+    }
     // client itself is not damaged
     if (frameGeometryBeforeUpdateBlocking() != frameGeometry()) {
         emit frameGeometryChanged(this, frameGeometryBeforeUpdateBlocking());
@@ -4753,10 +4766,11 @@ void X11Client::doResizeSync()
     if (m_syncRequest.counter != XCB_NONE) {
         m_syncRequest.timeout->start(250);
         sendSyncRequest();
-    } else {                              // for clients not supporting the XSYNC protocol, we
-        m_syncRequest.isPending = true;   // limit the resizes to 30Hz to take pointless load from X11
-        m_syncRequest.timeout->start(33); // and the client, the mouse is still moved at full speed
-    }                                     // and no human can control faster resizes anyway
+    } else {
+        m_syncRequest.isPending = true;   // 30Hz resizes are so old and it makes the compositor
+        m_syncRequest.timeout->start(8);  // look horrible. zero excuses.
+    }
+
     const QRect moveResizeClientGeometry = frameRectToClientRect(moveResizeGeometry());
     const QRect moveResizeBufferGeometry = frameRectToBufferRect(moveResizeGeometry());
 
@@ -4987,5 +5001,36 @@ void X11Client::updateWindowPixmap()
         effectWindow()->sceneWindow()->updatePixmap();
     }
 }
+
+// TODO THIS
+bool X11Client::shouldUnredirect() const
+{
+    if (isActiveFullScreen()) {
+        if (!rules()->checkAllowUnredirect(true)) return false;
+        QList<Toplevel*> stacking = workspace()->xStackingOrder();
+        for (int pos = stacking.count() - 1;
+                pos >= 0;
+                --pos) {
+            Toplevel* c = stacking.at(pos);
+            if (c == this) {   // is not covered by any other window, ok to unredirect
+                //printf("yes.\n");
+                return true;
+            }
+            if (c->frameGeometry().intersects(frameGeometry())) {
+                // check whether this is an invisible floating icon at the top left corner
+                if (c->frameGeometry()==QRect(0,0,32,32)) {
+                  //printf("yes via hack.\n");
+                  return true;
+                }
+                //printf("no. this: %d %d %d %d. other: %d %d %d %d.\n",geometry().x(),geometry().y(),geometry().width(),geometry().height(),c->geometry().x(),c->geometry().y(),c->geometry().width(),c->geometry().height());
+                return false;
+            }
+        }
+        //printf("ABORT\n");
+        abort();
+    }
+    return false;
+}
+
 
 } // namespace

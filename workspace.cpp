@@ -540,6 +540,11 @@ X11Client *Workspace::createClient(xcb_window_t w, bool is_mapped)
         connect(c, &X11Client::blockingCompositingChanged, compositor, &X11Compositor::updateClientCompositeBlocking);
     }
     connect(c, SIGNAL(clientFullScreenSet(KWin::X11Client *,bool,bool)), ScreenEdges::self(), SIGNAL(checkBlocking()));
+    connect(c, &X11Client::activeChanged, m_compositor, static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
+    // THIS ONE PLEASE
+    connect(c, &X11Client::fullScreenChanged, m_compositor, static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
+    connect(c, &X11Client::geometryChanged, m_compositor, static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
+    connect(c, &X11Client::geometryShapeChanged, m_compositor, static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
     if (!c->manage(w, is_mapped)) {
         X11Client::deleteClient(c);
         return nullptr;
@@ -1966,6 +1971,9 @@ void Workspace::desktopResized()
     if (effects) {
         static_cast<EffectsHandlerImpl*>(effects)->desktopResized(geom.size());
     }
+
+    // best guess.
+    m_compositor->checkUnredirect(true);
 }
 
 void Workspace::saveOldScreenSizes()

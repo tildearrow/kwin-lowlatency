@@ -90,6 +90,7 @@ set(kwin4_effect_builtins_sources
     magnifier/magnifier.cpp
     mouseclick/mouseclick.cpp
     mousemark/mousemark.cpp
+    mousepos/mousepos.cpp
     presentwindows/presentwindows.cpp
     presentwindows/presentwindows_proxy.cpp
     resize/resize.cpp
@@ -121,6 +122,7 @@ kconfig_add_kcfg_files(kwin4_effect_builtins_sources
     magnifier/magnifierconfig.kcfgc
     mouseclick/mouseclickconfig.kcfgc
     mousemark/mousemarkconfig.kcfgc
+    mousepos/mouseposconfig.kcfgc
     presentwindows/presentwindowsconfig.kcfgc
     resize/resizeconfig.kcfgc
     showfps/showfpsconfig.kcfgc
@@ -192,6 +194,7 @@ add_subdirectory(lookingglass)
 add_subdirectory(magnifier)
 add_subdirectory(mouseclick)
 add_subdirectory(mousemark)
+add_subdirectory(mousepos)
 include(screenshot/CMakeLists.txt)
 include(sheet/CMakeLists.txt)
 include(snaphelper/CMakeLists.txt)

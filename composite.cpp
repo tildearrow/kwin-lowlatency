@@ -61,6 +61,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <xcb/damage.h>
 
 #include <cstdio>
+#include <unistd.h>
 
 Q_DECLARE_METATYPE(KWin::X11Compositor::SuspendReason)
 
@@ -124,6 +125,7 @@ Compositor::Compositor(QObject* workspace)
     , m_selectionOwner(nullptr)
     , vBlankInterval(0)
     , fpsInterval(0)
+    , forceUnredirectCheck(false)
     , m_timeSinceLastVBlank(0)
     , m_scene(nullptr)
     , m_bufferSwapPending(false)
@@ -132,6 +134,10 @@ Compositor::Compositor(QObject* workspace)
     connect(options, &Options::configChanged, this, &Compositor::configChanged);
     connect(options, &Options::animationSpeedChanged, this, &Compositor::configChanged);
 
+    connect(&unredirectTimer, &QTimer::timeout, this, &Compositor::delayedCheckUnredirect);
+    connect(options, &Options::unredirectFullscreenChanged, this, &Compositor::delayedCheckUnredirect);
+    unredirectTimer.setSingleShot(true);
+    
     m_monotonicClock.start();
 
     // 2 sec which should be enough to restart the compositor.
@@ -739,7 +745,19 @@ void Compositor::performCompositing()
     if (m_bufferSwapPending && m_scene->syncsToVBlank()) {
         m_composeAtSwapCompletion = true;
     } else {
-        scheduleRepaint();
+        if (m_bufferSwapPending && m_scene->syncsToVBlank()) {
+          m_composeAtSwapCompletion = true;
+        } else {
+          if (m_idle) {
+            m_idle=false;
+            m_totalSkips--;
+            if (m_totalSkips<0) m_totalSkips=0;
+            // TODO: improve this thing
+            m_lastPaintFree=2000;
+          }
+          usleep(m_lastPaintFree);
+          scheduleRepaint();
+        }
     }
 }
 
@@ -855,12 +873,111 @@ void Compositor::setCompositeTimer()
         }
     }
     // Force 4fps minimum:
+    if (waitTime<4) waitTime=4;
+    m_totalSkips-=0.004;
+    if (m_totalSkips<0) {
+      m_totalSkips=0;
+    }
+    if ((signed)(m_lastPaintFree-2000)>(signed)((waitTime*1000)-4000)) {
+      m_totalSkips++;
+      switch (options->latencyControl()) {
+        case 0: // favor responsive
+          m_lastPaintFree=(waitTime*1000)-4000;
+          break;
+        case 2: // favor low-latency
+          m_lastPaintFree-=500;
+          break;
+        case 3: // aggressive
+          m_lastPaintFree-=300;
+          break;
+        case 1: default: // balanced
+          m_lastPaintFree-=500;
+          break;
+      }
+      //printf("\x1b[1;31mstutter\x1b[m\n");
+    } else {
+      switch (options->latencyControl()) {
+        case 0: // favor responsive
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(50-m_totalSkips*5));
+          break;
+        case 2: // favor low-latency
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(500-m_totalSkips*30));
+          break;
+        case 3: // aggressive
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(1000-m_totalSkips*30));
+          break;
+        case 1: default: // balanced
+          m_lastPaintFree=fmin((waitTime*1000)-4000,m_lastPaintFree+(200-m_totalSkips*20));
+          break;
+      }
+    }
+    if (m_lastPaintFree<options->minLatency()*1000) {
+      m_lastPaintFree=options->minLatency()*1000;
+    }
+    if (m_lastPaintFree<1) {
+      m_lastPaintFree=1;
+    }
+    if (m_lastPaintFree>options->maxLatency()*1000) {
+      m_lastPaintFree=options->maxLatency()*1000;
+    }
+    if (m_totalSkips>10) {
+      m_totalSkips=10;
+    }
+    waitTime=0;
     compositeTimer.start(qMin(waitTime, 250u), this);
 }
 
 bool Compositor::isActive()
 {
     return m_state == State::On;
+}
+
+void Compositor::checkUnredirect()
+{
+    checkUnredirect(false);
+}
+
+// force is needed when the list of windows changes (e.g. a window goes away)
+void Compositor::checkUnredirect(bool force)
+{
+    if (!isActive() || !m_scene->overlayWindow() || m_scene->overlayWindow()->window() == None || !options->isUnredirectFullscreen())
+        return;
+    if (force)
+        forceUnredirectCheck = true;
+    if (!unredirectTimer.isActive())
+        unredirectTimer.start(0);
+}
+
+void Compositor::delayedCheckUnredirect()
+{
+    if (!isActive() || !m_scene->overlayWindow() || m_scene->overlayWindow()->window() == None || !(options->isUnredirectFullscreen() || sender() == options))
+        return;
+    QList<Toplevel*> list;
+    bool changed = forceUnredirectCheck;
+    foreach (X11Client * c, Workspace::self()->clientList())
+        list.append(c);
+    foreach (Unmanaged * c, Workspace::self()->unmanagedList())
+        list.append(c);
+    foreach (Toplevel * c, list) {
+        if (c->updateUnredirectedState()) {
+            changed = true;
+            break;
+        }
+    }
+    // no desktops, no Deleted ones
+    if (!changed)
+        return;
+    forceUnredirectCheck = false;
+    // Cut out parts from the overlay window where unredirected windows are,
+    // so that they are actually visible.
+    const QSize &s = screens()->size();
+    QRegion reg(0, 0, s.width(), s.height());
+    foreach (Toplevel * c, list) {
+        if (c->unredirected())
+            reg -= c->frameGeometry();
+    }
+    m_scene->overlayWindow()->setShape(reg);
+    addRepaint(reg);
 }
 
 WaylandCompositor::WaylandCompositor(QObject *parent)

@@ -69,6 +69,43 @@
            <default>true</default>
        </entry>
 
+       <entry name="unredirectFullscreen" key="UnredirectFullscreen" type="Bool">
+           <default>true</default>
+       </entry>
+
+       <entry name="animationCurve" key="AnimationCurve" type="Int">
+           <default>2</default>
+       </entry>
+
+       <entry name="latencyControl" key="LatencyControl" type="Enum">
+           <default>Balance</default>
+           <choices>
+               <choice name="Responsive" value="0" />
+               <choice name="Balance" value="1" />
+               <choice name="LowLatency" value="2" />
+               <choice name="LowerLatency" value="3" />
+           </choices>
+       </entry>
+
+       <entry name="vsyncMechanism" key="VSyncMechanism" type="Enum">
+           <default>Automatic</default>
+           <choices>
+               <choice name="Automatic" value="0" />
+               <choice name="HopeBest" value="1" />
+               <choice name="SGIVideoSync" value="2" />
+               <choice name="glFinish" value="3" />
+               <choice name="SGIHack" value="4" />
+           </choices>
+       </entry>
+
+       <entry name="maxLatency" key="MaxLatency" type="Int">
+           <default>8</default>
+       </entry>
+
+       <entry name="minLatency" key="MinLatency" type="Int">
+           <default>8</default>
+       </entry>
+
     </group>
 
 </kcfg>

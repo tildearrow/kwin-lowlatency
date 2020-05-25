@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>526</width>
-    <height>395</height>
+    <width>628</width>
+    <height>581</height>
    </rect>
   </property>
   <layout class="QFormLayout" name="formLayout">
@@ -289,6 +289,159 @@ Alternatively, you might want to use the XRender backend instead.</string>
      </property>
      <property name="text">
       <string>Allow applications to block compositing</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="1">
+    <widget class="QCheckBox" name="kcfg_unredirectFullscreen">
+     <property name="toolTip">
+      <string>Applications do not have to set any hint to suspend compositing when the window is full-screen.
+              This delivers lower latency and has no delay when compared to the other option.
+              Some people have reported crashes under Intel, but I am not sure if this is the case.</string>
+     </property>
+     <property name="text">
+      <string>Suspend compositor for full-screen windows</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="0">
+    <widget class="QLabel" name="label_X">
+     <property name="text">
+      <string>Animation curve:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="1">
+    <widget class="QComboBox" name="kcfg_animationCurve">
+     <item>
+      <property name="text">
+       <string>Linear</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Quadratic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sine</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cubic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Quartic</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLabel" name="label_Y">
+     <property name="text">
+      <string>Latency/stutter control:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="1">
+    <widget class="QComboBox" name="kcfg_latencyControl">
+     <item>
+      <property name="text">
+       <string>Less stutter</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Balanced</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Lower latency</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Even lower latency</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="17" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Maximum latency reduction:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="1">
+    <widget class="QSpinBox" name="kcfg_maxLatency">
+     <property name="maximum">
+      <number>8</number>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>Minimum latency reduction:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="1">
+    <widget class="QSpinBox" name="kcfg_minLatency">
+     <property name="maximum">
+      <number>8</number>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="1">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>(units in milliseconds)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="1">
+    <widget class="QComboBox" name="kcfg_vsyncMechanism">
+     <item>
+      <property name="text">
+       <string>Automatic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>None and just hope for the best (NVIDIA 435.17+)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SGI video sync (NVIDIA pre-435, recent Mesa/X versions may hang)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>glFinish (Mesa hang workaround for AMD, maybe works on NVIDIA too)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SGI video sync with horrible hack (Mesa hang workaround for Intel)</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="20" column="0">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>VSync mechanism:</string>
      </property>
     </widget>
    </item>
