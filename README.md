@@ -83,6 +83,10 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 follow the Arch Linux instructions but I bet they will take a while to bring 5.19 in. in that case check the Plasma/5.18 branch instead.
 
+## NixOS
+
+check out pasqui23's [kwin-ll](https://github.com/pasqui23/nixpkgs/tree/kwin-ll) branch.
+
 ## openSUSE Tumbleweed
 
 kwin-lowlatency can be found at [home:KAMiKAZOW:KDE](https://software.opensuse.org/download.html?project=home%3AKAMiKAZOW%3AKDE&package=kwin-lowlatency) (OBS).
