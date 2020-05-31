@@ -45,7 +45,8 @@ Loader {
             case RuleItem.Option: return optionEditor
             case RuleItem.FlagsOption: return flagsEditor
             case RuleItem.Percentage: return percentageEditor
-            case RuleItem.Coordinate: return coordinateEditor
+            case RuleItem.Point: return coordinateEditor
+            case RuleItem.Size: return coordinateEditor
             case RuleItem.Shortcut: return shortcutEditor
             default: return emptyEditor
         }
@@ -154,7 +155,9 @@ Loader {
             id: coordItem
             spacing: Kirigami.Units.smallSpacing
 
-            property var coords: ruleValue ? ruleValue.split(',') : [0, 0]
+            readonly property var coord: (controlType == RuleItem.Size) ? Qt.size(coordX.value, coordY.value)
+                                                                        : Qt.point(coordX.value, coordY.value)
+            onCoordChanged: valueEditor.valueEdited(coord)
 
             QQC2.SpinBox {
                 id: coordX
@@ -162,9 +165,8 @@ Loader {
                 Layout.preferredWidth: 50   // 50%
                 Layout.fillWidth: true
                 from: 0
-                to: 4098
-                value: coords[0]
-                onValueModified: valueEditor.valueEdited(coordX.value + "," + coordY.value)
+                to: 32767
+                value: (controlType == RuleItem.Size) ? ruleValue.width : ruleValue.x
             }
             QQC2.Label {
                 id: coordSeparator
@@ -176,11 +178,10 @@ Loader {
                 id: coordY
                 editable: true
                 from: 0
-                to: 4098
+                to: 32767
                 Layout.preferredWidth: 50   // 50%
                 Layout.fillWidth: true
-                value: coords[1]
-                onValueModified: valueEditor.valueEdited(coordX.value + "," + coordY.value)
+                value: (controlType == RuleItem.Size) ? ruleValue.height : ruleValue.y
             }
         }
     }

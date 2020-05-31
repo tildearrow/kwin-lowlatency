@@ -119,7 +119,7 @@ RuleItem::Type RuleItem::type() const
 
 QVariant RuleItem::value() const
 {
-    if (m_type == Option) {
+    if (m_options && m_type == Option) {
         return m_options->value();
     }
     return m_value;
@@ -127,7 +127,7 @@ QVariant RuleItem::value() const
 
 void RuleItem::setValue(QVariant value)
 {
-    if (m_type == Option) {
+    if (m_options && m_type == Option) {
         m_options->setValue(value);
     }
     m_value = typedValue(value, m_type);
@@ -208,11 +208,10 @@ QVariant RuleItem::typedValue(const QVariant &value, const RuleItem::Type type)
                 return 0x3FF - 0x040;  //All possible flags minus NET::Override (deprecated)
             }
             return value.toInt();
-        case Coordinate:
-            if (value.toString().isEmpty()) {
-                return QStringLiteral("0,0");
-            }
-            return value.toString();
+        case Point:
+            return value.toPoint();
+        case Size:
+            return value.toSize();
         case String:
             return value.toString().trimmed();
         case Shortcut:
