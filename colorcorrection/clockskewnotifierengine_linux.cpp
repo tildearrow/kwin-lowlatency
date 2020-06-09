@@ -20,6 +20,7 @@
 
 #include <QSocketNotifier>
 
+#include <errno.h>
 #include <fcntl.h>
 #include <sys/timerfd.h>
 #include <unistd.h>
