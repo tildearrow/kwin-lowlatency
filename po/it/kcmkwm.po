@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-14 03:59+0200\n"
-"PO-Revision-Date: 2020-05-01 11:45+0200\n"
+"POT-Creation-Date: 2020-05-15 09:24+0200\n"
+"PO-Revision-Date: 2020-06-04 16:58+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.04.0\n"
+"X-Generator: Lokalize 20.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -556,7 +556,7 @@ msgstr "Sovrapposizione minima"
 #: advanced.ui:85
 #, kde-format
 msgid "Maximized"
-msgstr "Finestreassimizzate"
+msgstr "Massimizzate"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
 #: advanced.ui:90
@@ -603,11 +603,11 @@ msgid ""
 "application becomes active. Note that applications have to mark the windows "
 "with the proper window type for this feature to work."
 msgstr ""
-"Quando questa funzione viene attivata, le finestre accessorie (finestre "
-"degli strumenti, menu staccati, ...) delle applicazioni non attive saranno "
-"nascosti e verranno mostrati nuovamente solo quando l'applicazione torna ad "
-"essere attiva. Nota bene che l'applicazione deve segnare le finestre con il "
-"tipo corretto affinché questa funzione sia efficace."
+"Quando questa funzione è attivata, le finestre accessorie (finestre degli "
+"strumenti, menu staccati,...) delle applicazioni non attive saranno nascoste "
+"e saranno mostrate nuovamente solo quando l'applicazione torna a essere "
+"attiva. Nota bene che l'applicazione deve marcare le finestre con il tipo "
+"corretto affinché questa funzione sia efficace."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_HideUtilityWindowsForInactive)
 #: advanced.ui:131
@@ -826,7 +826,7 @@ msgid ""
 "When this option is enabled, a window in the background will automatically "
 "come to the front when the mouse pointer has been over it for some time."
 msgstr ""
-"Quando questa opzione è abilitata una finestra sullo sfondo sarà portata in "
+"Quando questa opzione è abilitata, una finestra sullo sfondo sarà portata in "
 "primo piano se il puntatore del mouse vi si sofferma per un certo tempo."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoRaise)
@@ -1038,8 +1038,8 @@ msgstr "Massimizza"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonRightClickCommand)
 #: mouse.ui:45 mouse.ui:620 mouse.ui:655 mouse.ui:690
 #, kde-format
-msgid "Vertically maximize"
-msgstr ""
+msgid "Maximize (vertical only)"
+msgstr "Massimizza (solo verticale)"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
@@ -1048,8 +1048,8 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonRightClickCommand)
 #: mouse.ui:50 mouse.ui:625 mouse.ui:660 mouse.ui:695
 #, kde-format
-msgid "Horizontally maximize"
-msgstr ""
+msgid "Maximize (horizontal only)"
+msgstr "Massimizza (solo orizzontale)"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)

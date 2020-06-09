@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-08 03:56+0200\n"
+"POT-Creation-Date: 2020-05-13 03:54+0200\n"
 "PO-Revision-Date: 2007-12-20 11:35+0100\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -29,7 +29,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "boerre@skolelinux.no"
 
-#: abstract_client.cpp:2642
+#: abstract_client.cpp:2644
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -844,22 +844,22 @@ msgctxt "Mouse Button"
 msgid "task"
 msgstr ""
 
-#: debug_console.cpp:1183
+#: debug_console.cpp:1185
 #, kde-format
 msgid "X11 Client Windows"
 msgstr ""
 
-#: debug_console.cpp:1185
+#: debug_console.cpp:1187
 #, kde-format
 msgid "X11 Unmanaged Windows"
 msgstr ""
 
-#: debug_console.cpp:1187
+#: debug_console.cpp:1189
 #, kde-format
 msgid "Wayland Windows"
 msgstr ""
 
-#: debug_console.cpp:1189
+#: debug_console.cpp:1191
 #, kde-format
 msgid "Internal Windows"
 msgstr ""

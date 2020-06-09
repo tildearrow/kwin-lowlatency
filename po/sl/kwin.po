@@ -1,7 +1,7 @@
 # translation of kwin.po to
 # Translation of kwin.po to Slovenian
 # Copyright (C) 2001, 2003, 2004, 2005, 2007 Free Software Foundation, Inc.
-# $Id: kwin.po 1569249 2020-05-13 04:10:13Z scripty $
+# $Id: kwin.po 1569795 2020-05-20 23:32:30Z ltoscano $
 # $Source$
 #
 # Roman Maurer <roman.maurer@hermes.si>, 2000.

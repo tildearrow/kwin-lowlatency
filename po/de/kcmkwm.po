@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-14 03:59+0200\n"
+"POT-Creation-Date: 2020-05-15 09:24+0200\n"
 "PO-Revision-Date: 2019-11-05 12:03+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -1038,8 +1038,8 @@ msgstr "Maximieren"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonRightClickCommand)
 #: mouse.ui:45 mouse.ui:620 mouse.ui:655 mouse.ui:690
 #, kde-format
-msgid "Vertically maximize"
-msgstr ""
+msgid "Maximize (vertical only)"
+msgstr "Maximieren (nur senkrecht)"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
@@ -1047,10 +1047,9 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonMiddleClickCommand)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonRightClickCommand)
 #: mouse.ui:50 mouse.ui:625 mouse.ui:660 mouse.ui:695
-#, fuzzy, kde-format
-#| msgid "Horizontal offset:"
-msgid "Horizontally maximize"
-msgstr "Horizontaler Versatz:"
+#, kde-format
+msgid "Maximize (horizontal only)"
+msgstr "Maximieren (nur waagerecht)"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)

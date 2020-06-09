@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase/kcmkwinrules.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-13 03:55+0200\n"
+"POT-Creation-Date: 2020-05-31 15:26+0200\n"
 "PO-Revision-Date: 2004-12-03 14:52-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -64,7 +64,7 @@ msgstr ""
 msgid "Application settings for %1"
 msgstr "Socruithe feidhmchláir do %1"
 
-#: main.cpp:123 rulesmodel.cpp:212
+#: main.cpp:123 rulesmodel.cpp:215
 #, kde-format
 msgid "Window settings for %1"
 msgstr "Socruithe fuinneoige do %1"
@@ -226,30 +226,30 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: package/contents/ui/RulesEditor.qml:54
-#: package/contents/ui/RulesEditor.qml:73
+#: package/contents/ui/RulesEditor.qml:62
+#: package/contents/ui/RulesEditor.qml:81
 #, kde-format
 msgid "Add Properties..."
 msgstr ""
 
-#: package/contents/ui/RulesEditor.qml:73
+#: package/contents/ui/RulesEditor.qml:81
 #, fuzzy, kde-format
 #| msgid "&Closeable"
 msgid "Close"
 msgstr "&Indúnta"
 
-#: package/contents/ui/RulesEditor.qml:86
+#: package/contents/ui/RulesEditor.qml:94
 #, fuzzy, kde-format
 #| msgid "&Detect Window Properties"
 msgid "Detect Window Properties"
 msgstr "&Braith Airíonna na Fuinneoige"
 
-#: package/contents/ui/RulesEditor.qml:99
+#: package/contents/ui/RulesEditor.qml:107
 #, kde-format
 msgid "Instantly"
 msgstr ""
 
-#: package/contents/ui/RulesEditor.qml:100
+#: package/contents/ui/RulesEditor.qml:108
 #, kde-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
@@ -259,36 +259,42 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: package/contents/ui/RulesEditor.qml:119
+#: package/contents/ui/RulesEditor.qml:127
 #, fuzzy, kde-format
 #| msgid "&Detect Window Properties"
 msgid "Select properties"
 msgstr "&Braith Airíonna na Fuinneoige"
 
-#: package/contents/ui/RulesEditor.qml:210
-#: package/contents/ui/ValueEditor.qml:66
+#: package/contents/ui/RulesEditor.qml:219
+#: package/contents/ui/ValueEditor.qml:67
 #, kde-format
 msgid "Yes"
 msgstr ""
 
-#: package/contents/ui/RulesEditor.qml:210
-#: package/contents/ui/ValueEditor.qml:72
+#: package/contents/ui/RulesEditor.qml:219
+#: package/contents/ui/ValueEditor.qml:73
 #, fuzzy, kde-format
 #| msgctxt "no focus stealing prevention"
 #| msgid "None"
 msgid "No"
 msgstr "Neamhní"
 
-#: package/contents/ui/RulesEditor.qml:212
-#: package/contents/ui/ValueEditor.qml:139
-#: package/contents/ui/ValueEditor.qml:146
+#: package/contents/ui/RulesEditor.qml:221
+#: package/contents/ui/ValueEditor.qml:140
+#: package/contents/ui/ValueEditor.qml:147
 #, kde-format
 msgid "%1 %"
 msgstr ""
 
-#: package/contents/ui/RulesEditor.qml:215
+#: package/contents/ui/RulesEditor.qml:223
 #, kde-format
 msgctxt "Coordinates (x, y)"
+msgid "(%1, %2)"
+msgstr ""
+
+#: package/contents/ui/RulesEditor.qml:225
+#, kde-format
+msgctxt "Size (width, height)"
 msgid "(%1, %2)"
 msgstr ""
 
@@ -363,7 +369,7 @@ msgstr "&Easpórtáil"
 msgid "Export Rules"
 msgstr "&Easpórtáil"
 
-#: package/contents/ui/ValueEditor.qml:172
+#: package/contents/ui/ValueEditor.qml:174
 #, kde-format
 msgctxt "(x, y) coordinates separator in size/position"
 msgid "x"
@@ -374,18 +380,18 @@ msgstr ""
 msgid "Edit Window-Specific Settings"
 msgstr "Cuir Socruithe Sainiúil d'Fhuinneog in Eagar"
 
-#: rulesmodel.cpp:215
+#: rulesmodel.cpp:218
 #, kde-format
 msgid "Settings for %1"
 msgstr "Socruithe do %1"
 
-#: rulesmodel.cpp:218
+#: rulesmodel.cpp:221
 #, fuzzy, kde-format
 #| msgid "Window settings for %1"
 msgid "New window settings"
 msgstr "Socruithe fuinneoige do %1"
 
-#: rulesmodel.cpp:224
+#: rulesmodel.cpp:227
 #, kde-format
 msgid ""
 "You have specified the window class as unimportant.\n"
@@ -400,136 +406,136 @@ msgstr ""
 "ndáiríre, moltar duit teorainn a chur le cineálacha na bhfuinneog ar a "
 "laghad, chun cineálacha speisialta a sheachaint."
 
-#: rulesmodel.cpp:353
+#: rulesmodel.cpp:356
 #, fuzzy, kde-format
 #| msgid "De&scription:"
 msgid "Description"
 msgstr "Cu&r Síos:"
 
-#: rulesmodel.cpp:353 rulesmodel.cpp:361 rulesmodel.cpp:369 rulesmodel.cpp:375
-#: rulesmodel.cpp:383 rulesmodel.cpp:388 rulesmodel.cpp:394
+#: rulesmodel.cpp:356 rulesmodel.cpp:364 rulesmodel.cpp:372 rulesmodel.cpp:378
+#: rulesmodel.cpp:386 rulesmodel.cpp:391 rulesmodel.cpp:397
 #, fuzzy, kde-format
 #| msgid "Window t&itle:"
 msgid "Window matching"
 msgstr "&Teideal na fuinneoga:"
 
-#: rulesmodel.cpp:361
+#: rulesmodel.cpp:364
 #, fuzzy, kde-format
 #| msgid "Window &class (application):"
 msgid "Window class (application)"
 msgstr "Ai&cme fhuinneoige (feidhmchlár):"
 
-#: rulesmodel.cpp:369
+#: rulesmodel.cpp:372
 #, fuzzy, kde-format
 #| msgid "Match w&hole window class"
 msgid "Match whole window class"
 msgstr "Comhoiriúnaigh an aicme f&huinneoige iomlán"
 
-#: rulesmodel.cpp:375
+#: rulesmodel.cpp:378
 #, fuzzy, kde-format
 #| msgid "Window &types:"
 msgid "Window types"
 msgstr "Cineálacha &fuinneoga:"
 
-#: rulesmodel.cpp:383
+#: rulesmodel.cpp:386
 #, fuzzy, kde-format
 #| msgid "Window &role:"
 msgid "Window role"
 msgstr "&Ról na fuinneoige:"
 
-#: rulesmodel.cpp:388
+#: rulesmodel.cpp:391
 #, fuzzy, kde-format
 #| msgid "Window t&itle:"
 msgid "Window title"
 msgstr "&Teideal na fuinneoga:"
 
-#: rulesmodel.cpp:394
+#: rulesmodel.cpp:397
 #, fuzzy, kde-format
 #| msgid "&Machine (hostname):"
 msgid "Machine (hostname)"
 msgstr "&Meaisín (óstainm):"
 
-#: rulesmodel.cpp:400
+#: rulesmodel.cpp:403
 #, fuzzy, kde-format
 #| msgid "&Position"
 msgid "Position"
 msgstr "&Ionad"
 
-#: rulesmodel.cpp:400 rulesmodel.cpp:405 rulesmodel.cpp:410 rulesmodel.cpp:415
-#: rulesmodel.cpp:420 rulesmodel.cpp:429 rulesmodel.cpp:443 rulesmodel.cpp:448
-#: rulesmodel.cpp:453 rulesmodel.cpp:458 rulesmodel.cpp:463 rulesmodel.cpp:469
-#: rulesmodel.cpp:478 rulesmodel.cpp:483 rulesmodel.cpp:488
+#: rulesmodel.cpp:403 rulesmodel.cpp:408 rulesmodel.cpp:413 rulesmodel.cpp:418
+#: rulesmodel.cpp:423 rulesmodel.cpp:436 rulesmodel.cpp:450 rulesmodel.cpp:455
+#: rulesmodel.cpp:460 rulesmodel.cpp:465 rulesmodel.cpp:470 rulesmodel.cpp:476
+#: rulesmodel.cpp:485 rulesmodel.cpp:490 rulesmodel.cpp:495
 #, fuzzy, kde-format
 #| msgid "&Size && Position"
 msgid "Size & Position"
 msgstr "&Méid agus Ionad"
 
-#: rulesmodel.cpp:405
+#: rulesmodel.cpp:408
 #, fuzzy, kde-format
 #| msgid "&Size"
 msgid "Size"
 msgstr "&Méid"
 
-#: rulesmodel.cpp:410
+#: rulesmodel.cpp:413
 #, fuzzy, kde-format
 #| msgid "Maximized &horizontally"
 msgid "Maximized horizontally"
 msgstr "Uasmhéadaigh go &cothrománach"
 
-#: rulesmodel.cpp:415
+#: rulesmodel.cpp:418
 #, fuzzy, kde-format
 #| msgid "Maximized &vertically"
 msgid "Maximized vertically"
 msgstr "Uasmhéadaigh go h&ingearach"
 
-#: rulesmodel.cpp:420
+#: rulesmodel.cpp:423
 #, fuzzy, kde-format
 #| msgid "All Desktops"
 msgid "Virtual Desktop"
 msgstr "Gach Deasc"
 
-#: rulesmodel.cpp:429
+#: rulesmodel.cpp:436
 #, fuzzy, kde-format
 #| msgid "Activit&y"
 msgid "Activity"
 msgstr "G&níomhaíocht"
 
-#: rulesmodel.cpp:443
+#: rulesmodel.cpp:450
 #, kde-format
 msgid "Screen"
 msgstr "Scáileán"
 
-#: rulesmodel.cpp:448
+#: rulesmodel.cpp:455
 #, fuzzy, kde-format
 #| msgid "&Fullscreen"
 msgid "Fullscreen"
 msgstr "&Lánscáileán"
 
-#: rulesmodel.cpp:453
+#: rulesmodel.cpp:460
 #, fuzzy, kde-format
 #| msgid "M&inimized"
 msgid "Minimized"
 msgstr "Íoslaghda&ithe"
 
-#: rulesmodel.cpp:458
+#: rulesmodel.cpp:465
 #, fuzzy, kde-format
 #| msgid "Sh&aded"
 msgid "Shaded"
 msgstr "&Scáthlínithe"
 
-#: rulesmodel.cpp:463
+#: rulesmodel.cpp:470
 #, fuzzy, kde-format
 #| msgid "No Placement"
 msgid "Initial placement"
 msgstr "Gan Socrú"
 
-#: rulesmodel.cpp:469
+#: rulesmodel.cpp:476
 #, fuzzy, kde-format
 #| msgid "Ignore requested &geometry"
 msgid "Ignore requested geometry"
 msgstr "Déan neamhaird den &chéimseata iarrtha"
 
-#: rulesmodel.cpp:471
+#: rulesmodel.cpp:478
 #, kde-format
 msgid ""
 "Windows can ask to appear in a certain position.\n"
@@ -538,24 +544,24 @@ msgid ""
 "to unconditionally popup in the middle of your screen."
 msgstr ""
 
-#: rulesmodel.cpp:478
+#: rulesmodel.cpp:485
 #, fuzzy, kde-format
 #| msgid "M&inimum size"
 msgid "Minimum Size"
 msgstr "Íoslaghda&igh"
 
-#: rulesmodel.cpp:483
+#: rulesmodel.cpp:490
 #, fuzzy, kde-format
 #| msgid "M&aximum size"
 msgid "Maximum Size"
 msgstr "U&asmhéid"
 
-#: rulesmodel.cpp:488
+#: rulesmodel.cpp:495
 #, kde-format
 msgid "Obey geometry restrictions"
 msgstr ""
 
-#: rulesmodel.cpp:490
+#: rulesmodel.cpp:497
 #, kde-format
 msgid ""
 "Eg. terminals or video players can ask to keep a certain aspect ratio\n"
@@ -565,99 +571,99 @@ msgid ""
 "like your complete screen area."
 msgstr ""
 
-#: rulesmodel.cpp:499
+#: rulesmodel.cpp:506
 #, fuzzy, kde-format
 #| msgid "Keep &above"
 msgid "Keep above"
 msgstr "Coimeád os &cionn"
 
-#: rulesmodel.cpp:499 rulesmodel.cpp:504 rulesmodel.cpp:509 rulesmodel.cpp:515
-#: rulesmodel.cpp:521 rulesmodel.cpp:527
+#: rulesmodel.cpp:506 rulesmodel.cpp:511 rulesmodel.cpp:516 rulesmodel.cpp:522
+#: rulesmodel.cpp:528 rulesmodel.cpp:534
 #, fuzzy, kde-format
 #| msgid "&Arrangement && Access"
 msgid "Arrangement & Access"
 msgstr "&Leagan Amach agus Rochtain"
 
-#: rulesmodel.cpp:504
+#: rulesmodel.cpp:511
 #, fuzzy, kde-format
 #| msgid "Keep &below"
 msgid "Keep below"
 msgstr "Coimeád &faoi chinn eile"
 
-#: rulesmodel.cpp:509
+#: rulesmodel.cpp:516
 #, fuzzy, kde-format
 #| msgid "Skip &taskbar"
 msgid "Skip taskbar"
 msgstr "Ná bac le &tascbharra"
 
-#: rulesmodel.cpp:511
+#: rulesmodel.cpp:518
 #, kde-format
 msgid "Window shall (not) appear in the taskbar."
 msgstr ""
 
-#: rulesmodel.cpp:515
+#: rulesmodel.cpp:522
 #, fuzzy, kde-format
 #| msgid "Skip pa&ger"
 msgid "Skip pager"
 msgstr "Ná bac le &brabhsálaí"
 
-#: rulesmodel.cpp:517
+#: rulesmodel.cpp:524
 #, kde-format
 msgid "Window shall (not) appear in the manager for virtual desktops"
 msgstr ""
 
-#: rulesmodel.cpp:521
+#: rulesmodel.cpp:528
 #, fuzzy, kde-format
 #| msgid "Skip &switcher"
 msgid "Skip switcher"
 msgstr "Ná bac leis an &athraitheoir"
 
-#: rulesmodel.cpp:523
+#: rulesmodel.cpp:530
 #, kde-format
 msgid "Window shall (not) appear in the Alt+Tab list"
 msgstr ""
 
-#: rulesmodel.cpp:527
+#: rulesmodel.cpp:534
 #, kde-format
 msgid "Shortcut"
 msgstr "Aicearra"
 
-#: rulesmodel.cpp:533
+#: rulesmodel.cpp:540
 #, kde-format
 msgid "No titlebar and frame"
 msgstr ""
 
-#: rulesmodel.cpp:533 rulesmodel.cpp:538 rulesmodel.cpp:544 rulesmodel.cpp:549
-#: rulesmodel.cpp:554 rulesmodel.cpp:565 rulesmodel.cpp:576 rulesmodel.cpp:584
-#: rulesmodel.cpp:597 rulesmodel.cpp:602 rulesmodel.cpp:608 rulesmodel.cpp:613
+#: rulesmodel.cpp:540 rulesmodel.cpp:545 rulesmodel.cpp:551 rulesmodel.cpp:556
+#: rulesmodel.cpp:561 rulesmodel.cpp:572 rulesmodel.cpp:583 rulesmodel.cpp:591
+#: rulesmodel.cpp:604 rulesmodel.cpp:609 rulesmodel.cpp:615 rulesmodel.cpp:620
 #, kde-format
 msgid "Appearance & Fixes"
 msgstr ""
 
-#: rulesmodel.cpp:538
+#: rulesmodel.cpp:545
 #, kde-format
 msgid "Titlebar color scheme"
 msgstr ""
 
-#: rulesmodel.cpp:544
+#: rulesmodel.cpp:551
 #, fuzzy, kde-format
 #| msgid "A&ctive opacity"
 msgid "Active opacity"
 msgstr "Teimhneacht &ghníomhach"
 
-#: rulesmodel.cpp:549
+#: rulesmodel.cpp:556
 #, fuzzy, kde-format
 #| msgid "I&nactive opacity"
 msgid "Inactive opacity"
 msgstr "Teimh&neacht neamhghníomhach"
 
-#: rulesmodel.cpp:554
+#: rulesmodel.cpp:561
 #, fuzzy, kde-format
 #| msgid "&Focus stealing prevention"
 msgid "Focus stealing prevention"
 msgstr "Cosc ar ghadaíocht an &fhócais"
 
-#: rulesmodel.cpp:556
+#: rulesmodel.cpp:563
 #, kde-format
 msgid ""
 "KWin tries to prevent windows from taking the focus\n"
@@ -667,13 +673,13 @@ msgid ""
 "\"Extreme\" will completely prevent it from taking the focus."
 msgstr ""
 
-#: rulesmodel.cpp:565
+#: rulesmodel.cpp:572
 #, fuzzy, kde-format
 #| msgid "&Focus stealing prevention"
 msgid "Focus protection"
 msgstr "Cosc ar ghadaíocht an &fhócais"
 
-#: rulesmodel.cpp:567
+#: rulesmodel.cpp:574
 #, kde-format
 msgid ""
 "This controls the focus protection of the currently active window.\n"
@@ -683,13 +689,13 @@ msgid ""
 "assigned to the window that wants the focus."
 msgstr ""
 
-#: rulesmodel.cpp:576
+#: rulesmodel.cpp:583
 #, fuzzy, kde-format
 #| msgid "Accept &focus"
 msgid "Accept focus"
 msgstr "Glac le &fócas"
 
-#: rulesmodel.cpp:578
+#: rulesmodel.cpp:585
 #, kde-format
 msgid ""
 "Windows may prevent to get the focus (activate) when being clicked.\n"
@@ -697,12 +703,12 @@ msgid ""
 "from getting focused on a mouse click."
 msgstr ""
 
-#: rulesmodel.cpp:584
+#: rulesmodel.cpp:591
 #, kde-format
 msgid "Ignore global shortcuts"
 msgstr "Déan neamhaird d'aicearraí comhchoiteanna"
 
-#: rulesmodel.cpp:586
+#: rulesmodel.cpp:593
 #, kde-format
 msgid ""
 "When used, a window will receive\n"
@@ -715,160 +721,160 @@ msgid ""
 "while it's active!"
 msgstr ""
 
-#: rulesmodel.cpp:597
+#: rulesmodel.cpp:604
 #, fuzzy, kde-format
 #| msgid "&Closeable"
 msgid "Closeable"
 msgstr "&Indúnta"
 
-#: rulesmodel.cpp:602
+#: rulesmodel.cpp:609
 #, fuzzy, kde-format
 #| msgid "Window &type"
 msgid "Set window type"
 msgstr "Cineál &fuinneoige"
 
-#: rulesmodel.cpp:608
+#: rulesmodel.cpp:615
 #, kde-format
 msgid "Desktop file name"
 msgstr ""
 
-#: rulesmodel.cpp:613
+#: rulesmodel.cpp:620
 #, kde-format
 msgid "Block compositing"
 msgstr ""
 
-#: rulesmodel.cpp:688
+#: rulesmodel.cpp:693
 #, kde-format
 msgid "Normal Window"
 msgstr "Gnáthfhuinneog"
 
-#: rulesmodel.cpp:689
+#: rulesmodel.cpp:694
 #, kde-format
 msgid "Dialog Window"
 msgstr "Fuinneog Dhialóige"
 
-#: rulesmodel.cpp:690
+#: rulesmodel.cpp:695
 #, kde-format
 msgid "Utility Window"
 msgstr "Fuinneog Uirlise"
 
-#: rulesmodel.cpp:691
+#: rulesmodel.cpp:696
 #, kde-format
 msgid "Dock (panel)"
 msgstr "Duga (painéal)"
 
-#: rulesmodel.cpp:692
+#: rulesmodel.cpp:697
 #, kde-format
 msgid "Toolbar"
 msgstr "Barra Uirlisí"
 
-#: rulesmodel.cpp:693
+#: rulesmodel.cpp:698
 #, kde-format
 msgid "Torn-Off Menu"
 msgstr "Roghchlár Stróicthe"
 
-#: rulesmodel.cpp:694
+#: rulesmodel.cpp:699
 #, kde-format
 msgid "Splash Screen"
 msgstr "Splancscáileán"
 
-#: rulesmodel.cpp:695
+#: rulesmodel.cpp:700
 #, kde-format
 msgid "Desktop"
 msgstr "Deasc"
 
 #. i18n("Unmanaged Window")   },  deprecated
-#: rulesmodel.cpp:697
+#: rulesmodel.cpp:702
 #, kde-format
 msgid "Standalone Menubar"
 msgstr "Barra Roghchláir Saorsheasaimh"
 
-#: rulesmodel.cpp:712
+#: rulesmodel.cpp:717
 #, kde-format
 msgid "All Desktops"
 msgstr "Gach Deasc"
 
-#: rulesmodel.cpp:725
+#: rulesmodel.cpp:730
 #, kde-format
 msgid "All Activities"
 msgstr ""
 
-#: rulesmodel.cpp:747
+#: rulesmodel.cpp:751
 #, kde-format
 msgid "Default"
 msgstr "Réamhshocrú"
 
-#: rulesmodel.cpp:748
+#: rulesmodel.cpp:752
 #, kde-format
 msgid "No Placement"
 msgstr "Gan Socrú"
 
-#: rulesmodel.cpp:749
+#: rulesmodel.cpp:753
 #, kde-format
 msgid "Minimal Overlapping"
 msgstr ""
 
-#: rulesmodel.cpp:750
+#: rulesmodel.cpp:754
 #, fuzzy, kde-format
 #| msgid "Maximizing"
 msgid "Maximized"
 msgstr "Uasmhéadú"
 
-#: rulesmodel.cpp:751
+#: rulesmodel.cpp:755
 #, fuzzy, kde-format
 #| msgid "Cascade"
 msgid "Cascaded"
 msgstr "Cascáidigh"
 
-#: rulesmodel.cpp:752
+#: rulesmodel.cpp:756
 #, kde-format
 msgid "Centered"
 msgstr "Láraithe"
 
-#: rulesmodel.cpp:753
+#: rulesmodel.cpp:757
 #, kde-format
 msgid "Random"
 msgstr "Randamach"
 
-#: rulesmodel.cpp:754
+#: rulesmodel.cpp:758
 #, fuzzy, kde-format
 #| msgid "Top-Left Corner"
 msgid "In Top-Left Corner"
 msgstr "Cúinne ag Barr ar Chlé"
 
-#: rulesmodel.cpp:755
+#: rulesmodel.cpp:759
 #, kde-format
 msgid "Under Mouse"
 msgstr "Faoin Luch"
 
-#: rulesmodel.cpp:756
+#: rulesmodel.cpp:760
 #, kde-format
 msgid "On Main Window"
 msgstr "Ar An Phríomhfhuinneog"
 
-#: rulesmodel.cpp:764
+#: rulesmodel.cpp:768
 #, fuzzy, kde-format
 #| msgctxt "no focus stealing prevention"
 #| msgid "None"
 msgid "None"
 msgstr "Neamhní"
 
-#: rulesmodel.cpp:765
+#: rulesmodel.cpp:769
 #, kde-format
 msgid "Low"
 msgstr "Íseal"
 
-#: rulesmodel.cpp:766
+#: rulesmodel.cpp:770
 #, kde-format
 msgid "Normal"
 msgstr "Gnách"
 
-#: rulesmodel.cpp:767
+#: rulesmodel.cpp:771
 #, kde-format
 msgid "High"
 msgstr "Ard"
 
-#: rulesmodel.cpp:768
+#: rulesmodel.cpp:772
 #, kde-format
 msgid "Extreme"
 msgstr "As Cuimse"

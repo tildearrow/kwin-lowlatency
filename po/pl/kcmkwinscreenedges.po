@@ -2,20 +2,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Marta Rybczyńska <kde-i18n@rybczynska.net>, 2009, 2010.
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinscreenedges\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-04-23 04:00+0200\n"
-"PO-Revision-Date: 2019-08-15 06:42+0200\n"
+"PO-Revision-Date: 2020-05-16 08:42+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.07.70\n"
+"X-Generator: Lokalize 20.07.70\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
@@ -57,7 +57,7 @@ msgstr "Zarządzanie aktywnościami"
 #: main.cpp:139 touch.cpp:138
 #, kde-format
 msgid "Application Launcher"
-msgstr "Aktywator programów"
+msgstr "Skróty do programów"
 
 #: main.cpp:143 touch.cpp:142
 #, kde-format
@@ -92,12 +92,12 @@ msgstr "%1 - Kula"
 #: main.cpp:152 touch.cpp:151
 #, kde-format
 msgid "Toggle window switching"
-msgstr "Przełącz przełączanie okien"
+msgstr "Przełącznik okien"
 
 #: main.cpp:153 touch.cpp:152
 #, kde-format
 msgid "Toggle alternative window switching"
-msgstr "Przełącz alternatywne przełączanie okien"
+msgstr "Zamienny przełącznik okien"
 
 #. i18n: ectx: property (text), widget (QLabel, infoLabel)
 #: main.ui:23
