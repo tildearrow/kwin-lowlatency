@@ -755,6 +755,9 @@ void Compositor::performCompositing()
             // TODO: improve this thing
             m_lastPaintFree=2000;
           }
+          // BEGIN #85
+          printf("lpf: %d\n",m_lastPaintFree);
+          // END #85
           usleep(m_lastPaintFree);
           scheduleRepaint();
         }
