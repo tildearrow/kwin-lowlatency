@@ -759,9 +759,10 @@ void Compositor::performCompositing()
           printf("lpf: %d\n",m_lastPaintFree);
           // END #85
           if (m_scene->syncsToVBlank()) {
-            usleep(6000);
-          } else {
             usleep(m_lastPaintFree);
+          } else {
+            printf("no vsync\n");
+            usleep(6000);
           }
           scheduleRepaint();
         }
