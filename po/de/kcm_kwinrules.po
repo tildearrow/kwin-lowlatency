@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-31 15:26+0200\n"
+"POT-Creation-Date: 2020-06-11 08:18+0200\n"
 "PO-Revision-Date: 2019-09-23 16:05+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -338,22 +338,22 @@ msgstr "&Exportieren"
 msgid "Export..."
 msgstr "&Exportieren"
 
-#: package/contents/ui/RulesList.qml:202
+#: package/contents/ui/RulesList.qml:210
 #, kde-format
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: package/contents/ui/RulesList.qml:210
+#: package/contents/ui/RulesList.qml:219
 #, kde-format
 msgid "Delete"
 msgstr "Entfernen"
 
-#: package/contents/ui/RulesList.qml:239
+#: package/contents/ui/RulesList.qml:232
 #, kde-format
 msgid "Import Rules"
 msgstr "Regeln importieren"
 
-#: package/contents/ui/RulesList.qml:251
+#: package/contents/ui/RulesList.qml:244
 #, kde-format
 msgid "Export Rules"
 msgstr "Regeln exportieren"

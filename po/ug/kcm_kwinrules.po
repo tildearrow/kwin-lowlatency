@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-31 15:26+0200\n"
+"POT-Creation-Date: 2020-06-11 08:18+0200\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -331,22 +331,22 @@ msgstr "چىقار(&E)"
 msgid "Export..."
 msgstr "چىقار(&E)"
 
-#: package/contents/ui/RulesList.qml:202
+#: package/contents/ui/RulesList.qml:210
 #, kde-format
 msgid "Edit"
 msgstr "تەھرىرلەش"
 
-#: package/contents/ui/RulesList.qml:210
+#: package/contents/ui/RulesList.qml:219
 #, kde-format
 msgid "Delete"
 msgstr "ئۆچۈر"
 
-#: package/contents/ui/RulesList.qml:239
+#: package/contents/ui/RulesList.qml:232
 #, kde-format
 msgid "Import Rules"
 msgstr "تۈزۈملەرنى ئىمپورت قىلىش"
 
-#: package/contents/ui/RulesList.qml:251
+#: package/contents/ui/RulesList.qml:244
 #, fuzzy, kde-format
 #| msgid "Export Rule"
 msgid "Export Rules"

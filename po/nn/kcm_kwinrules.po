@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-31 15:26+0200\n"
+"POT-Creation-Date: 2020-06-11 08:18+0200\n"
 "PO-Revision-Date: 2020-06-06 15:58+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -348,22 +348,22 @@ msgstr "Avbryt eksport"
 msgid "Export..."
 msgstr "Eksporter …"
 
-#: package/contents/ui/RulesList.qml:202
+#: package/contents/ui/RulesList.qml:210
 #, kde-format
 msgid "Edit"
 msgstr "Rediger"
 
-#: package/contents/ui/RulesList.qml:210
+#: package/contents/ui/RulesList.qml:219
 #, kde-format
 msgid "Delete"
 msgstr "Slett"
 
-#: package/contents/ui/RulesList.qml:239
+#: package/contents/ui/RulesList.qml:232
 #, kde-format
 msgid "Import Rules"
 msgstr "Importer reglar"
 
-#: package/contents/ui/RulesList.qml:251
+#: package/contents/ui/RulesList.qml:244
 #, kde-format
 msgid "Export Rules"
 msgstr "Eksporter reglar"

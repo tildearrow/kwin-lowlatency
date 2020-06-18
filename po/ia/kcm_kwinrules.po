@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-31 15:26+0200\n"
+"POT-Creation-Date: 2020-06-11 08:18+0200\n"
 "PO-Revision-Date: 2020-05-05 21:54+0100\n"
 "Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -331,22 +331,22 @@ msgstr "Cancella exportation"
 msgid "Export..."
 msgstr "Exporta..."
 
-#: package/contents/ui/RulesList.qml:202
+#: package/contents/ui/RulesList.qml:210
 #, kde-format
 msgid "Edit"
 msgstr "Edita"
 
-#: package/contents/ui/RulesList.qml:210
+#: package/contents/ui/RulesList.qml:219
 #, kde-format
 msgid "Delete"
 msgstr "Dele"
 
-#: package/contents/ui/RulesList.qml:239
+#: package/contents/ui/RulesList.qml:232
 #, kde-format
 msgid "Import Rules"
 msgstr "Regulas de importation"
 
-#: package/contents/ui/RulesList.qml:251
+#: package/contents/ui/RulesList.qml:244
 #, kde-format
 msgid "Export Rules"
 msgstr "Regulas de exportation"
