@@ -755,9 +755,6 @@ void Compositor::performCompositing()
             // TODO: improve this thing
             m_lastPaintFree=2000;
           }
-          // BEGIN #85
-          printf("lpf: %d\n",m_lastPaintFree);
-          // END #85
           if (m_scene->syncsToVBlank()) {
             usleep(m_lastPaintFree);
           } else {
