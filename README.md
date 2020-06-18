@@ -81,7 +81,7 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 ## Manjaro
 
-follow the Arch Linux instructions but I bet they will take a while to bring 5.19 in. in that case check the Plasma/5.18 branch instead.
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD.**
 
 ## NixOS
 
@@ -212,6 +212,11 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
   - if none of these options solve any problems, please open a bug report. thanks.
 
 # misc/FAQ
+
+> I can't build it and it fails on the class ScreenLocker::KSldApp has no member named 'setWaylandFd'
+
+update Plasma to 5.19 before building.
+this might include going back to vanilla KWin for the purpose of building the package.
 
 > what's this "Paint cursor" effect in Desktop Effects?
 
