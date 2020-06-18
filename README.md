@@ -1,3 +1,7 @@
+# HUGE NOTE
+
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ BELOW.**
+
 # KWin-lowlatency
 
 KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
@@ -67,6 +71,8 @@ the reason why only up to 8ms is because any further would leave little room for
 
 # installation
 
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ BELOW.**
+
 ## Arch Linux
 
 [kwin-lowlatency is available in the AUR](https://aur.archlinux.org/packages/kwin-lowlatency).
@@ -82,6 +88,18 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 ## Manjaro
 
 **MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD.**
+
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD.**
+
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD.**
+
+```
+git clone https://aur.archlinux.org/kwin-lowlatency.git
+cd kwin-lowlatency
+git checkout 16cccd1703d4f6ea8831ee2cc424f218acec95d3
+```
+
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
 
 ## NixOS
 
@@ -99,9 +117,13 @@ kwin-lowlatency can be found at [home:KAMiKAZOW:KDE](https://software.opensuse.o
 
 you can compile/install this yourself if your distro isn't listed here, or if you merely want to.
 
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
+
 ### installing dependencies
 
 you may need to install specific dependencies before compiling. [here](https://community.kde.org/Guidelines_and_HOWTOs/Build_from_source/Install_the_dependencies) you can find a list.
+
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
 
 ### acquiring the source
 
@@ -126,6 +148,8 @@ you may want to check the current stable version out:
 $ git checkout v5.19.0
 ```
 
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
+
 #### patch format
 
 download stock KWin source and patch file:
@@ -148,6 +172,8 @@ $ cd kwin-5.19.0
 $ patch -p1 < ../kwin-lowlatency-5.19.0.patch
 ```
 
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
+
 ### building
 
 #### Ubuntu
@@ -162,6 +188,8 @@ $ make
 ```
 
 #### other distros
+
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
 
 ```
 $ mkdir build
@@ -218,6 +246,8 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
 update Plasma to 5.19 before building.
 this might include going back to vanilla KWin for the purpose of building the package.
 
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
+
 > what's this "Paint cursor" effect in Desktop Effects?
 
 it's an effect I wrote back in 2018 when experimenting with kmsgrab for some private recordings.
@@ -255,6 +285,9 @@ please see [unredirect.md](https://github.com/tildearrow/kwin-lowlatency/blob/Pl
 use the issues section at the top. **but wait!** before reporting an issue, first test it again on [the official KWin](https://cgit.kde.org/kwin.git/) to determine whether this is really a KWin-lowlatency-only bug.
 
 if the bug also reproduces in official KWin, please file a bug on [their bug tracker](https://bugs.kde.org/enter_bug.cgi?product=kwin) instead.
+
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
+**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
 
 # Developing on KWin
 
