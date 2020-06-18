@@ -756,7 +756,12 @@ void Compositor::performCompositing()
             // TODO: improve this thing
             m_lastPaintFree=2000;
           }
-          usleep(m_lastPaintFree);
+          if (m_scene->syncsToVBlank()) {
+            usleep(m_lastPaintFree);
+          } else {
+            printf("no vsync\n");
+            usleep(6000);
+          }
           scheduleRepaint();
         }
     }
