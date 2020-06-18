@@ -506,29 +506,15 @@ void X11StandalonePlatform::doUpdateOutputs()
             o->setGeometry(geo);
             o->setRefreshRate(refreshRate * 1000);
 
+            QString name;
             for (int j = 0; j < info->num_outputs; ++j) {
                 Xcb::RandR::OutputInfo outputInfo(outputInfos.at(j));
-                if (outputInfo->crtc != crtc) {
-                    continue;
-                }
-                QSize physicalSize(outputInfo->mm_width, outputInfo->mm_height);
-                switch (info->rotation) {
-                case XCB_RANDR_ROTATION_ROTATE_0:
-                case XCB_RANDR_ROTATION_ROTATE_180:
-                    break;
-                case XCB_RANDR_ROTATION_ROTATE_90:
-                case XCB_RANDR_ROTATION_ROTATE_270:
-                    physicalSize.transpose();
-                    break;
-                case XCB_RANDR_ROTATION_REFLECT_X:
-                case XCB_RANDR_ROTATION_REFLECT_Y:
+                if (crtc == outputInfo->crtc) {
+                    name = outputInfo.name();
                     break;
                 }
-                o->setName(outputInfo.name());
-                o->setPhysicalSize(physicalSize);
-                break;
             }
-
+            o->setName(name);
             m_outputs << o;
         }
     }
