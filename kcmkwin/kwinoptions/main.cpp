@@ -42,10 +42,8 @@ class KFocusConfigStandalone : public KFocusConfig
     Q_OBJECT
 public:
     KFocusConfigStandalone(QWidget* parent, const QVariantList &)
-        : KFocusConfig(true, nullptr, parent)
-    {
-        initialize(new KWinOptionsSettings(this));
-    }
+        : KFocusConfig(true, new KWinOptionsSettings(this), parent)
+    {}
 };
 
 class KMovingConfigStandalone : public KMovingConfig
@@ -53,10 +51,8 @@ class KMovingConfigStandalone : public KMovingConfig
     Q_OBJECT
 public:
     KMovingConfigStandalone(QWidget* parent, const QVariantList &)
-        : KMovingConfig(true, nullptr, parent)
-    {
-        initialize(new KWinOptionsSettings(this));
-    }
+        : KMovingConfig(true, new KWinOptionsSettings(this), parent)
+    {}
 };
 
 class KAdvancedConfigStandalone : public KAdvancedConfig
@@ -64,10 +60,8 @@ class KAdvancedConfigStandalone : public KAdvancedConfig
     Q_OBJECT
 public:
     KAdvancedConfigStandalone(QWidget* parent, const QVariantList &)
-        : KAdvancedConfig(true, nullptr, parent)
-    {
-        initialize(new KWinOptionsSettings(this));
-    }
+        : KAdvancedConfig(true, new KWinOptionsSettings(this), parent)
+    {}
 };
 
 KWinOptions::KWinOptions(QWidget *parent, const QVariantList &)

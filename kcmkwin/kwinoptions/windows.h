@@ -82,7 +82,6 @@ Q_SIGNALS:
     void unmanagedWidgetStateChanged(bool changed);
 
 protected:
-    void initialize(KWinOptionsSettings *settings);
     void showEvent(QShowEvent *ev) override;
 
 private Q_SLOTS:
@@ -106,11 +105,10 @@ public:
     void save() override;
 
 protected:
-    void initialize(KWinOptionsSettings *settings);
     void showEvent(QShowEvent *ev) override;
 
 private:
-    KWinOptionsSettings *m_settings;
+    KWinOptionsSettings *m_config;
     bool     standAlone;
     KWinMovingConfigForm *m_ui;
 };
@@ -124,7 +122,6 @@ public:
     void save() override;
 
 protected:
-    void initialize(KWinOptionsSettings *settings);
     void showEvent(QShowEvent *ev) override;
 
 private:
