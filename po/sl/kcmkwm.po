@@ -1,7 +1,7 @@
 # translation of kcmkwm.po to Slovenian
 # Translation of kcmkwm.po to Slovenian
 # KDEBASE translation to Slovenian language.
-# $Id: kcmkwm.po 1569795 2020-05-20 23:32:30Z ltoscano $
+# $Id: kcmkwm.po 1572293 2020-06-19 05:44:17Z scripty $
 # $Source$
 #
 # Copyright (C) 2001, 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-15 09:24+0200\n"
+"POT-Creation-Date: 2020-06-19 06:47+0200\n"
 "PO-Revision-Date: 2020-03-24 06:28+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -898,87 +898,87 @@ msgstr "Ločena osredotočenost zaslona"
 msgid "Window activation policy description"
 msgstr "Politika aktiviranja oken:"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "&Focus"
 msgstr "Osredotočenost"
 
-#: main.cpp:89
+#: main.cpp:95
 #, kde-format
 msgid "Titlebar A&ctions"
 msgstr "Dejanja naslovne vrstice"
 
-#: main.cpp:95
+#: main.cpp:101
 #, kde-format
 msgid "W&indow Actions"
 msgstr "Dejanja okna"
 
-#: main.cpp:101
+#: main.cpp:107
 #, kde-format
 msgid "Mo&vement"
 msgstr "Premikanje"
 
-#: main.cpp:107
+#: main.cpp:113
 #, kde-format
 msgid "Adva&nced"
 msgstr "Napredno"
 
-#: main.cpp:112
+#: main.cpp:118
 #, kde-format
 msgid "Window Behavior Configuration Module"
 msgstr "Nastavitveni modul obnašanja oken"
 
-#: main.cpp:114
+#: main.cpp:120
 #, kde-format
 msgid "(c) 1997 - 2002 KWin and KControl Authors"
 msgstr "© 1997 - 2002 Avtorji KWin in KControl"
 
-#: main.cpp:116
+#: main.cpp:122
 #, kde-format
 msgid "Matthias Ettrich"
 msgstr "Matthias Ettrich"
 
-#: main.cpp:117
+#: main.cpp:123
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:118
+#: main.cpp:124
 #, kde-format
 msgid "Cristian Tibirna"
 msgstr "Cristian Tibirna"
 
-#: main.cpp:119
+#: main.cpp:125
 #, kde-format
 msgid "Matthias Kalle Dalheimer"
 msgstr "Matthias Kalle Dalheimer"
 
-#: main.cpp:120
+#: main.cpp:126
 #, kde-format
 msgid "Daniel Molkentin"
 msgstr "Daniel Molkentin"
 
-#: main.cpp:121
+#: main.cpp:127
 #, kde-format
 msgid "Wynn Wilkes"
 msgstr "Wynn Wilkes"
 
-#: main.cpp:122
+#: main.cpp:128
 #, kde-format
 msgid "Pat Dowler"
 msgstr "Pat Dowler"
 
-#: main.cpp:123
+#: main.cpp:129
 #, kde-format
 msgid "Bernd Wuebben"
 msgstr "Bernd Wuebben"
 
-#: main.cpp:124
+#: main.cpp:130
 #, kde-format
 msgid "Matthias Hoelzer-Kluepfel"
 msgstr "Matthias Hoelzer-Kluepfel"
 
-#: main.cpp:169
+#: main.cpp:175
 #, kde-format
 msgid ""
 "<p><h1>Window Behavior</h1> Here you can customize the way windows behave "
@@ -996,12 +996,12 @@ msgstr ""
 "oken, potem poglejte v njegovo dokumentacijo, če želite izvedeti, kako "
 "nastaviti obnašanje oken.</p>"
 
-#: main.cpp:189
+#: main.cpp:195
 #, kde-format
 msgid "&Titlebar Actions"
 msgstr "Dejanja naslovne vrs&tice"
 
-#: main.cpp:195
+#: main.cpp:201
 #, kde-format
 msgid "Window Actio&ns"
 msgstr "Dejanja ok&na"
@@ -1297,7 +1297,7 @@ msgstr "Območje pripenjanja na sredino:"
 msgid "&Snap windows:"
 msgstr "Pripni okna:"
 
-#: windows.cpp:93
+#: windows.cpp:100
 #, kde-format
 msgid ""
 "<em>Click to focus:</em> A window becomes active when you click into it. "
@@ -1307,7 +1307,7 @@ msgstr ""
 "Okno postane aktivno, ko kliknete vanj. To obnašanje je pogosto pri drugih "
 "operacijskih sistemih in je najbrž to, kar želite."
 
-#: windows.cpp:97
+#: windows.cpp:104
 #, kde-format
 msgid ""
 "<em>Click to focus (mouse precedence):</em> Mostly the same as <em>Click to "
@@ -1322,7 +1322,7 @@ msgstr ""
 "miško. Neobičajna, vendar mogoča različica <em>Kliknite za osredotočenost</"
 "em>."
 
-#: windows.cpp:102
+#: windows.cpp:109
 #, kde-format
 msgid ""
 "<em>Focus follows mouse:</em> Moving the mouse onto a window will activate "
@@ -1336,7 +1336,7 @@ msgstr ""
 "običajno. Mislite si <em>Kliknite za osredotočenost</em> samo, da ni treba "
 "zares klikniti."
 
-#: windows.cpp:106
+#: windows.cpp:113
 #, kde-format
 msgid ""
 "This is mostly the same as <em>Focus follows mouse</em>. If an active window "
@@ -1349,7 +1349,7 @@ msgstr ""
 "prednost okno, ki je pod miško. Izberite to, če hočete imeti nadzor nad "
 "osredotočenostjo oken pod kazalko."
 
-#: windows.cpp:111
+#: windows.cpp:118
 #, kde-format
 msgid ""
 "<em>Focus under mouse:</em> The focus always remains on the window under the "
@@ -1364,7 +1364,7 @@ msgstr ""
 "politiki aktiviranja in ne bodo delovali. Zelo verjetno bi želeli "
 "uporabljati <em>Osredotočenost sledi miški (prednost miške)</em>!"
 
-#: windows.cpp:115
+#: windows.cpp:122
 #, kde-format
 msgid ""
 "<em>Focus strictly under mouse:</em> The focus is always on the window under "

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwintabbox\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-11-01 03:57+0100\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-04-02 03:52+0200\n"
 "PO-Revision-Date: 2016-03-20 15:24+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -19,42 +19,42 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Associated-UI-Catalogs: kwin\n"
 
-#: layoutpreview.cpp:165
+#: kwintabboxconfigform.cpp:88
+#, kde-format
+msgid "KWin"
+msgstr ""
+
+#: layoutpreview.cpp:159
 #, kde-format
 msgctxt "An example Desktop Name"
 msgid "Desktop 1"
 msgstr "površ 1"
 
 # >> @title:tab
-#: main.cpp:76
+#: main.cpp:77
 #, kde-format
 msgid "Main"
 msgstr "Glavno"
 
 # >> @title:tab
-#: main.cpp:77
+#: main.cpp:78
 #, kde-format
 msgid "Alternative"
 msgstr "Alternativno"
 
-#: main.cpp:79
+#: main.cpp:80
 #, fuzzy, kde-format
 #| msgid "Get New Window Switcher Layout"
 msgid "Get New Task Switchers..."
 msgstr "Dobavi novi raspored menjača prozora"
 
-#: main.cpp:89
+#: main.cpp:90
 #, kde-format
 msgid ""
 "Focus policy settings limit the functionality of navigating through windows."
 msgstr ""
 "Postavke smjernice fokusiranja ograničavaju funkcionalnost kretanja između "
 "prozora."
-
-#: main.cpp:107
-#, kde-format
-msgid "KWin"
-msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: main.ui:32
@@ -228,7 +228,7 @@ msgstr "Vizuelizacija"
 msgid "The effect to replace the list window when desktop effects are active."
 msgstr "Efekat koji mijenja prozor spiska kada su aktivni efekti površi."
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, highlightWindowCheck)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_HighlightWindows)
 #: main.ui:549
 #, kde-format
 msgid ""
@@ -238,7 +238,7 @@ msgstr ""
 "Trenutno izabrani prozor biće istaknut utapanjem svih drugih prozora. Ova "
 "opcija zahtijeva da budu aktivni efekti površi."
 
-#. i18n: ectx: property (text), widget (QCheckBox, highlightWindowCheck)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightWindows)
 #: main.ui:552
 #, kde-format
 msgid "Show selected window"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-15 09:24+0200\n"
+"POT-Creation-Date: 2020-06-19 06:47+0200\n"
 "PO-Revision-Date: 2020-05-14 23:43+0800\n"
 "Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
@@ -827,87 +827,87 @@ msgstr "分離螢幕焦點(&S)："
 msgid "Window activation policy description"
 msgstr "視窗作用策略描述"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "&Focus"
 msgstr "焦點(&F)"
 
-#: main.cpp:89
+#: main.cpp:95
 #, kde-format
 msgid "Titlebar A&ctions"
 msgstr "標題列動作(&C)"
 
-#: main.cpp:95
+#: main.cpp:101
 #, kde-format
 msgid "W&indow Actions"
 msgstr "視窗動作(&I)"
 
-#: main.cpp:101
+#: main.cpp:107
 #, kde-format
 msgid "Mo&vement"
 msgstr "移動(&V)"
 
-#: main.cpp:107
+#: main.cpp:113
 #, kde-format
 msgid "Adva&nced"
 msgstr "進階(&N)"
 
-#: main.cpp:112
+#: main.cpp:118
 #, kde-format
 msgid "Window Behavior Configuration Module"
 msgstr "視窗行為設定模組"
 
-#: main.cpp:114
+#: main.cpp:120
 #, kde-format
 msgid "(c) 1997 - 2002 KWin and KControl Authors"
 msgstr "(c) 1997 - 2002 KWin and KControl Authors"
 
-#: main.cpp:116
+#: main.cpp:122
 #, kde-format
 msgid "Matthias Ettrich"
 msgstr "Matthias Ettrich"
 
-#: main.cpp:117
+#: main.cpp:123
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:118
+#: main.cpp:124
 #, kde-format
 msgid "Cristian Tibirna"
 msgstr "Cristian Tibirna"
 
-#: main.cpp:119
+#: main.cpp:125
 #, kde-format
 msgid "Matthias Kalle Dalheimer"
 msgstr "Matthias Kalle Dalheimer"
 
-#: main.cpp:120
+#: main.cpp:126
 #, kde-format
 msgid "Daniel Molkentin"
 msgstr "Daniel Molkentin"
 
-#: main.cpp:121
+#: main.cpp:127
 #, kde-format
 msgid "Wynn Wilkes"
 msgstr "Wynn Wilkes"
 
-#: main.cpp:122
+#: main.cpp:128
 #, kde-format
 msgid "Pat Dowler"
 msgstr "Pat Dowler"
 
-#: main.cpp:123
+#: main.cpp:129
 #, kde-format
 msgid "Bernd Wuebben"
 msgstr "Bernd Wuebben"
 
-#: main.cpp:124
+#: main.cpp:130
 #, kde-format
 msgid "Matthias Hoelzer-Kluepfel"
 msgstr "Matthias Hoelzer-Kluepfel"
 
-#: main.cpp:169
+#: main.cpp:175
 #, kde-format
 msgid ""
 "<p><h1>Window Behavior</h1> Here you can customize the way windows behave "
@@ -922,12 +922,12 @@ msgstr ""
 "KWin 當作您的視窗管理員，這個設定將不會產生作用。假如您使用其他的視窗管理員，"
 "請參考它的文件來看如何自訂視窗行為。</p>"
 
-#: main.cpp:189
+#: main.cpp:195
 #, kde-format
 msgid "&Titlebar Actions"
 msgstr "標題列動作(&T)"
 
-#: main.cpp:195
+#: main.cpp:201
 #, kde-format
 msgid "Window Actio&ns"
 msgstr "視窗動作(&N)"
@@ -1216,7 +1216,7 @@ msgstr "中央貼齊區域 (&C):"
 msgid "&Snap windows:"
 msgstr "貼齊視窗(&S)："
 
-#: windows.cpp:93
+#: windows.cpp:100
 #, kde-format
 msgid ""
 "<em>Click to focus:</em> A window becomes active when you click into it. "
@@ -1225,7 +1225,7 @@ msgstr ""
 "<em>按一下成為焦點：</em>視窗將會在按下時作用。這個行為就如同其他作業系統，且"
 "通常就是您所想要的。"
 
-#: windows.cpp:97
+#: windows.cpp:104
 #, kde-format
 msgid ""
 "<em>Click to focus (mouse precedence):</em> Mostly the same as <em>Click to "
@@ -1238,7 +1238,7 @@ msgstr ""
 "系統要選取某個視窗成使用中（例如：因為目前的使用中視窗已被關閉），則滑鼠下方"
 "的視窗會第一順位使用。算是 <em>按一下取得焦點</em> 的變化型。"
 
-#: windows.cpp:102
+#: windows.cpp:109
 #, kde-format
 msgid ""
 "<em>Focus follows mouse:</em> Moving the mouse onto a window will activate "
@@ -1250,7 +1250,7 @@ msgstr ""
 "機出現在滑鼠底下的視窗不會取得焦點。通常會有 <em>防止盜取焦點</em>。可以想成 "
 "<em>按一下取得焦點</em>，但不用實際點選。"
 
-#: windows.cpp:106
+#: windows.cpp:113
 #, kde-format
 msgid ""
 "This is mostly the same as <em>Focus follows mouse</em>. If an active window "
@@ -1262,7 +1262,7 @@ msgstr ""
 "（例如：因為目前的使用中視窗已被關閉），則滑鼠下方的視窗會第一順位使用。如果"
 "你想要由懸停控制的焦點，請選擇。"
 
-#: windows.cpp:111
+#: windows.cpp:118
 #, kde-format
 msgid ""
 "<em>Focus under mouse:</em> The focus always remains on the window under the "
@@ -1276,7 +1276,7 @@ msgstr ""
 "略相衝突，且不會運作。通常你可能會想用<em>將焦點設為滑鼠所在位置 (滑鼠優先)</"
 "em>代替！"
 
-#: windows.cpp:115
+#: windows.cpp:122
 #, kde-format
 msgid ""
 "<em>Focus strictly under mouse:</em> The focus is always on the window under "

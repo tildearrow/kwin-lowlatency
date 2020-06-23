@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-15 09:24+0200\n"
+"POT-Creation-Date: 2020-06-19 06:47+0200\n"
 "PO-Revision-Date: 2020-05-14 14:19+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -902,87 +902,87 @@ msgstr "G&escheiden schermfocus"
 msgid "Window activation policy description"
 msgstr "Beschrijving van beleid voor activeren van venster"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "&Focus"
 msgstr "&Focus"
 
-#: main.cpp:89
+#: main.cpp:95
 #, kde-format
 msgid "Titlebar A&ctions"
 msgstr "Titelbalka&cties"
 
-#: main.cpp:95
+#: main.cpp:101
 #, kde-format
 msgid "W&indow Actions"
 msgstr "Vensteract&ies"
 
-#: main.cpp:101
+#: main.cpp:107
 #, kde-format
 msgid "Mo&vement"
 msgstr "&Verplaatsing"
 
-#: main.cpp:107
+#: main.cpp:113
 #, kde-format
 msgid "Adva&nced"
 msgstr "Geava&nceerd"
 
-#: main.cpp:112
+#: main.cpp:118
 #, kde-format
 msgid "Window Behavior Configuration Module"
 msgstr "Venstergedrag Configuratiemodule"
 
-#: main.cpp:114
+#: main.cpp:120
 #, kde-format
 msgid "(c) 1997 - 2002 KWin and KControl Authors"
 msgstr "(c) 1997 - 2002 auteurs van KWin en  KControl"
 
-#: main.cpp:116
+#: main.cpp:122
 #, kde-format
 msgid "Matthias Ettrich"
 msgstr "Matthias Ettrich"
 
-#: main.cpp:117
+#: main.cpp:123
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:118
+#: main.cpp:124
 #, kde-format
 msgid "Cristian Tibirna"
 msgstr "Cristian Tibirna"
 
-#: main.cpp:119
+#: main.cpp:125
 #, kde-format
 msgid "Matthias Kalle Dalheimer"
 msgstr "Matthias Kalle Dalheimer"
 
-#: main.cpp:120
+#: main.cpp:126
 #, kde-format
 msgid "Daniel Molkentin"
 msgstr "Daniel Molkentin"
 
-#: main.cpp:121
+#: main.cpp:127
 #, kde-format
 msgid "Wynn Wilkes"
 msgstr "Wynn Wilkes"
 
-#: main.cpp:122
+#: main.cpp:128
 #, kde-format
 msgid "Pat Dowler"
 msgstr "Pat Dowler"
 
-#: main.cpp:123
+#: main.cpp:129
 #, kde-format
 msgid "Bernd Wuebben"
 msgstr "Bernd Wuebben"
 
-#: main.cpp:124
+#: main.cpp:130
 #, kde-format
 msgid "Matthias Hoelzer-Kluepfel"
 msgstr "Matthias Hoelzer-Kluepfel"
 
-#: main.cpp:169
+#: main.cpp:175
 #, kde-format
 msgid ""
 "<p><h1>Window Behavior</h1> Here you can customize the way windows behave "
@@ -1000,12 +1000,12 @@ msgstr ""
 "windowmanager gebruikt, kijk dan in de documentatie ervan hoe u het "
 "venstergedrag kunt wijzigen.</p>"
 
-#: main.cpp:189
+#: main.cpp:195
 #, kde-format
 msgid "&Titlebar Actions"
 msgstr "&Titelbalkacties"
 
-#: main.cpp:195
+#: main.cpp:201
 #, kde-format
 msgid "Window Actio&ns"
 msgstr "Ve&nsteracties"
@@ -1304,7 +1304,7 @@ msgstr "Magnetisch veld in midden van s&cherm:"
 msgid "&Snap windows:"
 msgstr "Venster&s tegen elkaar klikken:"
 
-#: windows.cpp:93
+#: windows.cpp:100
 #, kde-format
 msgid ""
 "<em>Click to focus:</em> A window becomes active when you click into it. "
@@ -1313,7 +1313,7 @@ msgstr ""
 "<em>Klik voor focus:</em> Een venster wordt actief wanneer u erin klikt. Dit "
 "gedrag is algemeen in andere besturingssystemen en waarschijnlijk wat u wilt."
 
-#: windows.cpp:97
+#: windows.cpp:104
 #, kde-format
 msgid ""
 "<em>Click to focus (mouse precedence):</em> Mostly the same as <em>Click to "
@@ -1328,7 +1328,7 @@ msgstr ""
 "onder de muis de voorkeur hebben. Ongebruikelijk, maar mogelijk een variant "
 "van <em>Klik voor focus</em>."
 
-#: windows.cpp:102
+#: windows.cpp:109
 #, kde-format
 msgid ""
 "<em>Focus follows mouse:</em> Moving the mouse onto a window will activate "
@@ -1342,7 +1342,7 @@ msgstr ""
 "zoals gebruikelijk. Lijkt op <em>Klik voor focus</em> maar zonder te hoeven "
 "klikken."
 
-#: windows.cpp:106
+#: windows.cpp:113
 #, kde-format
 msgid ""
 "This is mostly the same as <em>Focus follows mouse</em>. If an active window "
@@ -1355,7 +1355,7 @@ msgstr ""
 "actieve wordt gesloten) heeft het venster onder de muis de voorkeur. Kies "
 "dit, als u een via er boven zweven focus wilt besturen."
 
-#: windows.cpp:111
+#: windows.cpp:118
 #, kde-format
 msgid ""
 "<em>Focus under mouse:</em> The focus always remains on the window under the "
@@ -1370,7 +1370,7 @@ msgstr ""
 "van activeren en zal niet werken. U zult in plaats daarvan waarschijnlijk "
 "<em>Focus volgt muis (muis heeft voorrang)</em> willen gebruiken!"
 
-#: windows.cpp:115
+#: windows.cpp:122
 #, kde-format
 msgid ""
 "<em>Focus strictly under mouse:</em> The focus is always on the window under "

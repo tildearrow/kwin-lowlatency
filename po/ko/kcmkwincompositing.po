@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwincompositing\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-22 03:59+0200\n"
+"POT-Creation-Date: 2020-06-23 07:42+0200\n"
 "PO-Revision-Date: 2019-04-12 00:14+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -189,12 +189,12 @@ msgstr ""
 msgid "Allow applications to block compositing"
 msgstr "프로그램에서 컴포지팅 차단 허용"
 
-#: main.cpp:96
+#: main.cpp:91
 #, kde-format
 msgid "Re-enable OpenGL detection"
 msgstr "OpenGL 감지 다시 활성화"
 
-#: main.cpp:148
+#: main.cpp:143
 #, kde-format
 msgid ""
 "\"Only when cheap\" only prevents tearing for full screen changes like a "
@@ -203,29 +203,29 @@ msgstr ""
 "\"부담되지 않는 경우에만\" 옵션은 동영상과 같은 전체 화면의 티어링만 방지합니"
 "다."
 
-#: main.cpp:152
+#: main.cpp:147
 #, kde-format
 msgid "\"Full screen repaints\" can cause performance problems."
 msgstr "\"전체 화면 다시 그리기\" 옵션은 성능에 영향을 줄 수도 있습니다."
 
-#: main.cpp:156
+#: main.cpp:151
 #, kde-format
 msgid ""
 "\"Re-use screen content\" causes severe performance problems on MESA drivers."
 msgstr ""
 "\"화면 내용 다시 사용\" 옵션은 MESA 드라이버에서 문제를 발생시킬 수 있습니다."
 
-#: main.cpp:176
+#: main.cpp:171
 #, kde-format
 msgid "OpenGL 3.1"
 msgstr "OpenGL 3.1"
 
-#: main.cpp:177
+#: main.cpp:172
 #, kde-format
 msgid "OpenGL 2.0"
 msgstr "OpenGL 2.0"
 
-#: main.cpp:178
+#: main.cpp:173
 #, kde-format
 msgid "XRender"
 msgstr "XRender"

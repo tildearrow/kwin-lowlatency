@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-15 09:24+0200\n"
+"POT-Creation-Date: 2020-06-19 06:47+0200\n"
 "PO-Revision-Date: 2020-06-15 19:45+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -866,87 +866,87 @@ msgstr "화면별 초점 분리(&S)"
 msgid "Window activation policy description"
 msgstr "창 활성화 정책 설명"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "&Focus"
 msgstr "초점(&F)"
 
-#: main.cpp:89
+#: main.cpp:95
 #, kde-format
 msgid "Titlebar A&ctions"
 msgstr "제목 표시줄 동작(&C)"
 
-#: main.cpp:95
+#: main.cpp:101
 #, kde-format
 msgid "W&indow Actions"
 msgstr "창 동작(&I)"
 
-#: main.cpp:101
+#: main.cpp:107
 #, kde-format
 msgid "Mo&vement"
 msgstr "이동(&V)"
 
-#: main.cpp:107
+#: main.cpp:113
 #, kde-format
 msgid "Adva&nced"
 msgstr "고급(&N)"
 
-#: main.cpp:112
+#: main.cpp:118
 #, kde-format
 msgid "Window Behavior Configuration Module"
 msgstr "창 동작 설정 모듈"
 
-#: main.cpp:114
+#: main.cpp:120
 #, kde-format
 msgid "(c) 1997 - 2002 KWin and KControl Authors"
 msgstr "(c) 1997 - 2002 KWin and KControl Authors"
 
-#: main.cpp:116
+#: main.cpp:122
 #, kde-format
 msgid "Matthias Ettrich"
 msgstr "Matthias Ettrich"
 
-#: main.cpp:117
+#: main.cpp:123
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:118
+#: main.cpp:124
 #, kde-format
 msgid "Cristian Tibirna"
 msgstr "Cristian Tibirna"
 
-#: main.cpp:119
+#: main.cpp:125
 #, kde-format
 msgid "Matthias Kalle Dalheimer"
 msgstr "Matthias Kalle Dalheimer"
 
-#: main.cpp:120
+#: main.cpp:126
 #, kde-format
 msgid "Daniel Molkentin"
 msgstr "Daniel Molkentin"
 
-#: main.cpp:121
+#: main.cpp:127
 #, kde-format
 msgid "Wynn Wilkes"
 msgstr "Wynn Wilkes"
 
-#: main.cpp:122
+#: main.cpp:128
 #, kde-format
 msgid "Pat Dowler"
 msgstr "Pat Dowler"
 
-#: main.cpp:123
+#: main.cpp:129
 #, kde-format
 msgid "Bernd Wuebben"
 msgstr "Bernd Wuebben"
 
-#: main.cpp:124
+#: main.cpp:130
 #, kde-format
 msgid "Matthias Hoelzer-Kluepfel"
 msgstr "Matthias Hoelzer-Kluepfel"
 
-#: main.cpp:169
+#: main.cpp:175
 #, kde-format
 msgid ""
 "<p><h1>Window Behavior</h1> Here you can customize the way windows behave "
@@ -961,12 +961,12 @@ msgstr ""
 "다.</p><p>이 설정은 창 관리자가 KWin일 때에만 작동합니다. 만약 다른 창 관리자"
 "를 사용한다면 창 관리자의 문서를 참고해서 설정하십시오.</p>"
 
-#: main.cpp:189
+#: main.cpp:195
 #, kde-format
 msgid "&Titlebar Actions"
 msgstr "제목 표시줄 동작(&T)"
 
-#: main.cpp:195
+#: main.cpp:201
 #, kde-format
 msgid "Window Actio&ns"
 msgstr "창 동작(&N)"
@@ -1259,7 +1259,7 @@ msgstr "가운데 스냅 구역(&C):"
 msgid "&Snap windows:"
 msgstr "창 스냅(&S):"
 
-#: windows.cpp:93
+#: windows.cpp:100
 #, kde-format
 msgid ""
 "<em>Click to focus:</em> A window becomes active when you click into it. "
@@ -1268,7 +1268,7 @@ msgstr ""
 "<em>눌러서 초점 맞춤:</em> 창을 누르면 초점을 맞춥니다. 이 행동은 다른 운영체"
 "제에서 취하는 방식이며 대부분 경우 원하는 방식입니다."
 
-#: windows.cpp:97
+#: windows.cpp:104
 #, kde-format
 msgid ""
 "<em>Click to focus (mouse precedence):</em> Mostly the same as <em>Click to "
@@ -1282,7 +1282,7 @@ msgstr ""
 "야 하면 현재 마우스 포인터 아래의 창을 선택합니다. <em>누르면 초점을 맞춤</"
 "em> 설정의 파생형입니다."
 
-#: windows.cpp:102
+#: windows.cpp:109
 #, kde-format
 msgid ""
 "<em>Focus follows mouse:</em> Moving the mouse onto a window will activate "
@@ -1295,7 +1295,7 @@ msgstr ""
 "지는 평소대로 작동합니다. 실제로 누르지 않아도 되는 <em>누르면 초점을 맞춤</"
 "em>으로 생각하십시오."
 
-#: windows.cpp:106
+#: windows.cpp:113
 #, kde-format
 msgid ""
 "This is mostly the same as <em>Focus follows mouse</em>. If an active window "
@@ -1307,7 +1307,7 @@ msgstr ""
 "닫히는 등 시스템에서 활성 창을 선택하여야 하면 현재 마우스 포인터 아래의 창"
 "을 선택합니다. 호버로 제어하는 초점을 원하면 선택하십시오."
 
-#: windows.cpp:111
+#: windows.cpp:118
 #, kde-format
 msgid ""
 "<em>Focus under mouse:</em> The focus always remains on the window under the "
@@ -1321,7 +1321,7 @@ msgstr ""
 "+Tab\")</em>는 이 정책에 모순되며 작동하지 않습니다. 만약 위 설정을 사용해야 "
 "한다면 <em>마우스가 초점을 따라감(마우스 우선)</em> 설정을 사용하십시오!"
 
-#: windows.cpp:115
+#: windows.cpp:122
 #, kde-format
 msgid ""
 "<em>Focus strictly under mouse:</em> The focus is always on the window under "

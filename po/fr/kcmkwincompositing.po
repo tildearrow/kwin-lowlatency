@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwincompositing\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-22 03:59+0200\n"
+"POT-Creation-Date: 2020-06-23 07:42+0200\n"
 "PO-Revision-Date: 2019-01-24 18:31+0800\n"
 "Last-Translator: Simon Depiets <sdepiets@gmail.com>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -203,12 +203,12 @@ msgstr ""
 msgid "Allow applications to block compositing"
 msgstr "Permettre aux applications de bloquer la composition"
 
-#: main.cpp:96
+#: main.cpp:91
 #, kde-format
 msgid "Re-enable OpenGL detection"
 msgstr "Activer à nouveau la détection OpenGL"
 
-#: main.cpp:148
+#: main.cpp:143
 #, kde-format
 msgid ""
 "\"Only when cheap\" only prevents tearing for full screen changes like a "
@@ -217,14 +217,14 @@ msgstr ""
 "« Seulement lorsque peu coûteux » prévient le déchirement uniquement pour "
 "les changements de l'écran complet comme dans une vidéo."
 
-#: main.cpp:152
+#: main.cpp:147
 #, kde-format
 msgid "\"Full screen repaints\" can cause performance problems."
 msgstr ""
 "« Rafraîchissement de tout l'écran » peut provoquer des problèmes de "
 "performances."
 
-#: main.cpp:156
+#: main.cpp:151
 #, kde-format
 msgid ""
 "\"Re-use screen content\" causes severe performance problems on MESA drivers."
@@ -232,17 +232,17 @@ msgstr ""
 "« Ré-utiliser le contenu de l'écran » peut provoquer de sérieux problèmes de "
 "performances avec les pilotes MESA."
 
-#: main.cpp:176
+#: main.cpp:171
 #, kde-format
 msgid "OpenGL 3.1"
 msgstr "OpenGL 3.1"
 
-#: main.cpp:177
+#: main.cpp:172
 #, kde-format
 msgid "OpenGL 2.0"
 msgstr "OpenGL 2.0"
 
-#: main.cpp:178
+#: main.cpp:173
 #, kde-format
 msgid "XRender"
 msgstr "XRender"

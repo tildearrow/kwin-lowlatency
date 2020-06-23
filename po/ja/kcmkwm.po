@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-15 09:24+0200\n"
+"POT-Creation-Date: 2020-06-19 06:47+0200\n"
 "PO-Revision-Date: 2019-09-29 12:19-0700\n"
 "Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -901,87 +901,87 @@ msgstr "スクリーンフォーカスを分離する(&O)"
 msgid "Window activation policy description"
 msgstr "ウィンドウのアクティブ化ポリシー(&A):"
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "&Focus"
 msgstr "フォーカス(&F)"
 
-#: main.cpp:89
+#: main.cpp:95
 #, kde-format
 msgid "Titlebar A&ctions"
 msgstr "タイトルバーの挙動(&C)"
 
-#: main.cpp:95
+#: main.cpp:101
 #, kde-format
 msgid "W&indow Actions"
 msgstr "ウィンドウの挙動(&I)"
 
-#: main.cpp:101
+#: main.cpp:107
 #, kde-format
 msgid "Mo&vement"
 msgstr "移動(&V)"
 
-#: main.cpp:107
+#: main.cpp:113
 #, kde-format
 msgid "Adva&nced"
 msgstr "詳細設定(&N)"
 
-#: main.cpp:112
+#: main.cpp:118
 #, kde-format
 msgid "Window Behavior Configuration Module"
 msgstr "ウィンドウの挙動設定モジュール"
 
-#: main.cpp:114
+#: main.cpp:120
 #, kde-format
 msgid "(c) 1997 - 2002 KWin and KControl Authors"
 msgstr "(c) 1997 - 2002 KWin および KControl 開発チーム"
 
-#: main.cpp:116
+#: main.cpp:122
 #, kde-format
 msgid "Matthias Ettrich"
 msgstr "Matthias Ettrich"
 
-#: main.cpp:117
+#: main.cpp:123
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:118
+#: main.cpp:124
 #, kde-format
 msgid "Cristian Tibirna"
 msgstr "Cristian Tibirna"
 
-#: main.cpp:119
+#: main.cpp:125
 #, kde-format
 msgid "Matthias Kalle Dalheimer"
 msgstr "Matthias Kalle Dalheimer"
 
-#: main.cpp:120
+#: main.cpp:126
 #, kde-format
 msgid "Daniel Molkentin"
 msgstr "Daniel Molkentin"
 
-#: main.cpp:121
+#: main.cpp:127
 #, kde-format
 msgid "Wynn Wilkes"
 msgstr "Wynn Wilkes"
 
-#: main.cpp:122
+#: main.cpp:128
 #, kde-format
 msgid "Pat Dowler"
 msgstr "Pat Dowler"
 
-#: main.cpp:123
+#: main.cpp:129
 #, kde-format
 msgid "Bernd Wuebben"
 msgstr "Bernd Wuebben"
 
-#: main.cpp:124
+#: main.cpp:130
 #, kde-format
 msgid "Matthias Hoelzer-Kluepfel"
 msgstr "Matthias Hoelzer-Kluepfel"
 
-#: main.cpp:169
+#: main.cpp:175
 #, kde-format
 msgid ""
 "<p><h1>Window Behavior</h1> Here you can customize the way windows behave "
@@ -998,12 +998,12 @@ msgstr ""
 "場合にのみ有効です。他のウィンドウマネージャでのウィンドウの挙動のカスタマイ"
 "ズ方法については、それぞれのドキュメントを参照してください。</p></qt>"
 
-#: main.cpp:189
+#: main.cpp:195
 #, kde-format
 msgid "&Titlebar Actions"
 msgstr "タイトルバーの挙動(&T)"
 
-#: main.cpp:195
+#: main.cpp:201
 #, kde-format
 msgid "Window Actio&ns"
 msgstr "ウィンドウの挙動(&N)"
@@ -1308,7 +1308,7 @@ msgstr "スクリーン中央のスナップゾーン(&C):"
 msgid "&Snap windows:"
 msgstr "すべての浮遊ウィンドウを前後させる"
 
-#: windows.cpp:93
+#: windows.cpp:100
 #, fuzzy, kde-format
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus:"
@@ -1323,7 +1323,7 @@ msgstr ""
 "カス:</span> クリックしたウィンドウがアクティブになります。この挙動は他の OS "
 "と共通であり、あなたの想定と同じように動作します。</p></body></html>"
 
-#: windows.cpp:97
+#: windows.cpp:104
 #, fuzzy, kde-format
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus "
@@ -1348,7 +1348,7 @@ msgstr ""
 "style=\" font-style:italic;\">クリックしてフォーカス</span>の変化形です。</"
 "p></body></html>"
 
-#: windows.cpp:102
+#: windows.cpp:109
 #, fuzzy, kde-format
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-style:italic;\">Focus follows "
@@ -1370,7 +1370,7 @@ msgstr ""
 "リックする必要のない<span style=\" font-style:italic;\">クリックしてフォーカ"
 "ス</span> だと思ってください</p></body></html>"
 
-#: windows.cpp:106
+#: windows.cpp:113
 #, fuzzy, kde-format
 #| msgid ""
 #| "<html><head/><body><p>This is mostly the same as <span style=\" font-"
@@ -1390,7 +1390,7 @@ msgstr ""
 "れているウィンドウが優先的な候補となります。フォーカスをホバーで操作したい場"
 "合はこちらを選択してください。</p></body></html>"
 
-#: windows.cpp:111
+#: windows.cpp:118
 #, fuzzy, kde-format
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-style:italic;\">Focus under "
@@ -1416,7 +1416,7 @@ msgstr ""
 "に<span style=\" font-style:italic;\">マウスに従ってフォーカス (マウス優先)</"
 "span>を使用するべきでしょう。</p></body></html>"
 
-#: windows.cpp:115
+#: windows.cpp:122
 #, fuzzy, kde-format
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-style:italic;\">Focus under "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-15 09:24+0200\n"
+"POT-Creation-Date: 2020-06-19 06:47+0200\n"
 "PO-Revision-Date: 2019-12-12 22:45+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
@@ -218,8 +218,8 @@ msgid ""
 "In this row you can customize left click behavior when clicking into the "
 "titlebar or the frame."
 msgstr ""
-"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ ഇടത് ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന ഇടത് ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ "
-"നിങ്ങള്‍ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
+"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ ഇടത് ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന ഇടത് ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ നിങ്ങള്‍"
+"ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
@@ -360,8 +360,8 @@ msgid ""
 "In this row you can customize middle click behavior when clicking into the "
 "titlebar or the frame."
 msgstr ""
-"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ മധ്യ ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന മധ്യ ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ "
-"നിങ്ങള്‍ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
+"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ മധ്യ ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന മധ്യ ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ നിങ്ങള്‍"
+"ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #. i18n: ectx: property (text), widget (QLabel, label_9)
@@ -377,8 +377,8 @@ msgid ""
 "In this row you can customize right click behavior when clicking into the "
 "titlebar or the frame."
 msgstr ""
-"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ വലത് ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന വലത് ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ "
-"നിങ്ങള്‍ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
+"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ വലത് ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന വലത് ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ നിങ്ങള്‍"
+"ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: actions.ui:458
@@ -818,90 +818,90 @@ msgstr "സ്ക്രീന്‍ ഫോക്കസ് &വേര്‍തി
 msgid "Window activation policy description"
 msgstr ""
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "&Focus"
 msgstr "&കേന്ദ്രീകരിക്കുക"
 
-#: main.cpp:89
+#: main.cpp:95
 #, fuzzy, kde-format
 #| msgid "&Titlebar Actions"
 msgid "Titlebar A&ctions"
 msgstr "&തലപ്പട്ടയിലുള്ള പ്രവൃത്തികള്‍"
 
-#: main.cpp:95
+#: main.cpp:101
 #, fuzzy, kde-format
 #| msgid "Window Actio&ns"
 msgid "W&indow Actions"
 msgstr "ജാലകത്തിലുള്ള പ്ര&വ‍ത്തികള്‍"
 
-#: main.cpp:101
+#: main.cpp:107
 #, kde-format
 msgid "Mo&vement"
 msgstr ""
 
-#: main.cpp:107
+#: main.cpp:113
 #, fuzzy, kde-format
 #| msgid "Ad&vanced"
 msgid "Adva&nced"
 msgstr "പു&രോഗമിച്ച"
 
-#: main.cpp:112
+#: main.cpp:118
 #, kde-format
 msgid "Window Behavior Configuration Module"
 msgstr "ജാലകസ്വഭാവ ക്രമീകരണ മൊഡ്യൂള്‍"
 
-#: main.cpp:114
+#: main.cpp:120
 #, kde-format
 msgid "(c) 1997 - 2002 KWin and KControl Authors"
 msgstr "(c) 1997 - 2002 KWin, KControl എന്നിവയുടെ രചയിതാക്കള്‍"
 
-#: main.cpp:116
+#: main.cpp:122
 #, kde-format
 msgid "Matthias Ettrich"
 msgstr "മത്തിയാസ് എട്രിയാക്"
 
-#: main.cpp:117
+#: main.cpp:123
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "വാള്‍ഡോ ബാസ്റ്റ്യന്‍"
 
-#: main.cpp:118
+#: main.cpp:124
 #, kde-format
 msgid "Cristian Tibirna"
 msgstr "ക്രിസ്റ്റ്യന്‍ ടിബിര്‍നാ"
 
-#: main.cpp:119
+#: main.cpp:125
 #, kde-format
 msgid "Matthias Kalle Dalheimer"
 msgstr "മത്തിയാസ് കാലേ ഡാല്‍ഹെയിമര്‍"
 
-#: main.cpp:120
+#: main.cpp:126
 #, kde-format
 msgid "Daniel Molkentin"
 msgstr "ഡാനിയേല്‍ മോല്‍ക്കെന്റിന്‍"
 
-#: main.cpp:121
+#: main.cpp:127
 #, kde-format
 msgid "Wynn Wilkes"
 msgstr "വിന്‍ വില്‍ക്സ്"
 
-#: main.cpp:122
+#: main.cpp:128
 #, kde-format
 msgid "Pat Dowler"
 msgstr "പാറ്റ് ഡൌളര്‍"
 
-#: main.cpp:123
+#: main.cpp:129
 #, kde-format
 msgid "Bernd Wuebben"
 msgstr "ബേര്‍ണ്ട് വ്യൂബന്‍"
 
-#: main.cpp:124
+#: main.cpp:130
 #, kde-format
 msgid "Matthias Hoelzer-Kluepfel"
 msgstr "മത്തിയാസ് ഹോയിസര്‍-ക്ല്യൂഫെല്‍"
 
-#: main.cpp:169
+#: main.cpp:175
 #, kde-format
 msgid ""
 "<p><h1>Window Behavior</h1> Here you can customize the way windows behave "
@@ -918,12 +918,12 @@ msgstr ""
 "മനസ്സിലാക്കുക. നിങ്ങള്‍ വേറെ ജാലകകാര്യസ്ഥനാണുപയോഗിക്കുന്നതെങ്കില്‍, ജാലകങ്ങളുടെ സ്വഭാവം "
 "ഇഷ്ടമുള്ളരീതിയിലാക്കാന്‍ അതിന്റെ വിവരണക്കുറിപ്പ് നോക്കുക.</p>"
 
-#: main.cpp:189
+#: main.cpp:195
 #, kde-format
 msgid "&Titlebar Actions"
 msgstr "&തലപ്പട്ടയിലുള്ള പ്രവൃത്തികള്‍"
 
-#: main.cpp:195
+#: main.cpp:201
 #, kde-format
 msgid "Window Actio&ns"
 msgstr "ജാലകത്തിലുള്ള പ്ര&വ‍ത്തികള്‍"
@@ -1214,14 +1214,14 @@ msgstr ""
 msgid "&Snap windows:"
 msgstr "ജാലകങ്ങള്‍"
 
-#: windows.cpp:93
+#: windows.cpp:100
 #, kde-format
 msgid ""
 "<em>Click to focus:</em> A window becomes active when you click into it. "
 "This behavior is common on other operating systems and likely what you want."
 msgstr ""
 
-#: windows.cpp:97
+#: windows.cpp:104
 #, kde-format
 msgid ""
 "<em>Click to focus (mouse precedence):</em> Mostly the same as <em>Click to "
@@ -1231,7 +1231,7 @@ msgid ""
 "em>."
 msgstr ""
 
-#: windows.cpp:102
+#: windows.cpp:109
 #, kde-format
 msgid ""
 "<em>Focus follows mouse:</em> Moving the mouse onto a window will activate "
@@ -1240,7 +1240,7 @@ msgid ""
 "to focus</em> just without having to actually click."
 msgstr ""
 
-#: windows.cpp:106
+#: windows.cpp:113
 #, kde-format
 msgid ""
 "This is mostly the same as <em>Focus follows mouse</em>. If an active window "
@@ -1249,7 +1249,7 @@ msgid ""
 "if you want a hover controlled focus."
 msgstr ""
 
-#: windows.cpp:111
+#: windows.cpp:118
 #, kde-format
 msgid ""
 "<em>Focus under mouse:</em> The focus always remains on the window under the "
@@ -1259,7 +1259,7 @@ msgid ""
 "precedence)</em> instead!"
 msgstr ""
 
-#: windows.cpp:115
+#: windows.cpp:122
 #, kde-format
 msgid ""
 "<em>Focus strictly under mouse:</em> The focus is always on the window under "

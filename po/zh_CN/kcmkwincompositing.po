@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-22 03:59+0200\n"
-"PO-Revision-Date: 2020-06-12 19:01\n"
+"POT-Creation-Date: 2020-06-23 07:42+0200\n"
+"PO-Revision-Date: 2020-06-21 18:48\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -193,40 +193,40 @@ msgstr ""
 msgid "Allow applications to block compositing"
 msgstr "允许应用程序阻止混成"
 
-#: main.cpp:96
+#: main.cpp:91
 #, kde-format
 msgid "Re-enable OpenGL detection"
 msgstr "重新启用 OpenGL 检测"
 
-#: main.cpp:148
+#: main.cpp:143
 #, kde-format
 msgid ""
 "\"Only when cheap\" only prevents tearing for full screen changes like a "
 "video."
 msgstr "”仅当占用资源少时“只阻止全屏幕变化带来的撕裂，例如视频。"
 
-#: main.cpp:152
+#: main.cpp:147
 #, kde-format
 msgid "\"Full screen repaints\" can cause performance problems."
 msgstr "”全场景重画“可能导致性能问题。"
 
-#: main.cpp:156
+#: main.cpp:151
 #, kde-format
 msgid ""
 "\"Re-use screen content\" causes severe performance problems on MESA drivers."
 msgstr "“重用窗口内容”可能在 MESA 驱动上导致严重的性能问题。"
 
-#: main.cpp:176
+#: main.cpp:171
 #, kde-format
 msgid "OpenGL 3.1"
 msgstr "OpenGL 3.1"
 
-#: main.cpp:177
+#: main.cpp:172
 #, kde-format
 msgid "OpenGL 2.0"
 msgstr "OpenGL 2.0"
 
-#: main.cpp:178
+#: main.cpp:173
 #, kde-format
 msgid "XRender"
 msgstr "XRender"

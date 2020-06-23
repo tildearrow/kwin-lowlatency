@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-15 09:24+0200\n"
+"POT-Creation-Date: 2020-06-19 06:47+0200\n"
 "PO-Revision-Date: 2015-02-08 13:59+0100\n"
 "Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -924,91 +924,91 @@ msgstr "&Ekran odaklanmasını ayır"
 msgid "Window activation policy description"
 msgstr ""
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "&Focus"
 msgstr "&Odaklama"
 
-#: main.cpp:89
+#: main.cpp:95
 #, fuzzy, kde-format
 #| msgid "&Titlebar Actions"
 msgid "Titlebar A&ctions"
 msgstr "&Başlık Çubuğu Eylemleri"
 
-#: main.cpp:95
+#: main.cpp:101
 #, fuzzy, kde-format
 #| msgid "Window Actio&ns"
 msgid "W&indow Actions"
 msgstr "Pencere &Eylemleri"
 
-#: main.cpp:101
+#: main.cpp:107
 #, fuzzy, kde-format
 #| msgid "&Placement:"
 msgid "Mo&vement"
 msgstr "&Yerleştirme:"
 
-#: main.cpp:107
+#: main.cpp:113
 #, fuzzy, kde-format
 #| msgid "Ad&vanced"
 msgid "Adva&nced"
 msgstr "&Gelişmiş"
 
-#: main.cpp:112
+#: main.cpp:118
 #, kde-format
 msgid "Window Behavior Configuration Module"
 msgstr "Pencere Davranışı Yapılandırma Modülü"
 
-#: main.cpp:114
+#: main.cpp:120
 #, kde-format
 msgid "(c) 1997 - 2002 KWin and KControl Authors"
 msgstr "(c) 1997 - 2002 KWin ve KControl Yazarları"
 
-#: main.cpp:116
+#: main.cpp:122
 #, kde-format
 msgid "Matthias Ettrich"
 msgstr "Matthias Ettrich"
 
-#: main.cpp:117
+#: main.cpp:123
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:118
+#: main.cpp:124
 #, kde-format
 msgid "Cristian Tibirna"
 msgstr "Cristian Tibirna"
 
-#: main.cpp:119
+#: main.cpp:125
 #, kde-format
 msgid "Matthias Kalle Dalheimer"
 msgstr "Matthias Kalle Dalheimer"
 
-#: main.cpp:120
+#: main.cpp:126
 #, kde-format
 msgid "Daniel Molkentin"
 msgstr "Daniel Molkentin"
 
-#: main.cpp:121
+#: main.cpp:127
 #, kde-format
 msgid "Wynn Wilkes"
 msgstr "Wynn Wilkes"
 
-#: main.cpp:122
+#: main.cpp:128
 #, kde-format
 msgid "Pat Dowler"
 msgstr "Pat Dowler"
 
-#: main.cpp:123
+#: main.cpp:129
 #, kde-format
 msgid "Bernd Wuebben"
 msgstr "Bernd Wuebben"
 
-#: main.cpp:124
+#: main.cpp:130
 #, kde-format
 msgid "Matthias Hoelzer-Kluepfel"
 msgstr "Matthias Hoelzer-Kluepfel"
 
-#: main.cpp:169
+#: main.cpp:175
 #, kde-format
 msgid ""
 "<p><h1>Window Behavior</h1> Here you can customize the way windows behave "
@@ -1026,12 +1026,12 @@ msgstr ""
 "etkin olmayacaktır. Başka bir pencere yöneticisi kullanıyorsanız, pencere "
 "davranışlarını değiştirmek için lütfen onun yardım belgelerine bakınız.</p>"
 
-#: main.cpp:189
+#: main.cpp:195
 #, kde-format
 msgid "&Titlebar Actions"
 msgstr "&Başlık Çubuğu Eylemleri"
 
-#: main.cpp:195
+#: main.cpp:201
 #, kde-format
 msgid "Window Actio&ns"
 msgstr "Pencere &Eylemleri"
@@ -1345,7 +1345,7 @@ msgstr "&Orta yapışma alanı:"
 msgid "&Snap windows:"
 msgstr "Pencere yükseltme"
 
-#: windows.cpp:93
+#: windows.cpp:100
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Click To Focus</b><br>\n"
@@ -1361,7 +1361,7 @@ msgstr ""
 "Bu davranış diğer işletim sistemlerindeki ile ortaktır ve muhtemelen<br>\n"
 "istediğiniz şeydir."
 
-#: windows.cpp:97
+#: windows.cpp:104
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Click To Focus - Mouse Precedence</b><br>\n"
@@ -1385,7 +1385,7 @@ msgstr ""
 "Farklı bir seçenektir ancak <i>Odaklanmak için Tıkla</i> için bir "
 "alternatiftir."
 
-#: windows.cpp:102
+#: windows.cpp:109
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Follows Mouse</b><br>\n"
@@ -1407,7 +1407,7 @@ msgstr ""
 "Odak çalma koruması, alışıldığı gibi kullanılır.<br><br>\n"
 "<i>Odaklanmak için Tıkla</i> olarak düşünün, sadece gerçekten tıklamadan."
 
-#: windows.cpp:106
+#: windows.cpp:113
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Follows Mouse - Mouse Precedence</b><br>\n"
@@ -1429,7 +1429,7 @@ msgstr ""
 "aday olarak farenin altındaki pencere tercih edilir.<br><br>\n"
 "Eğer fare ile belirtme denetimli odaklama isterseniz bunu seçin."
 
-#: windows.cpp:111
+#: windows.cpp:118
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Under Mouse</b><br>\n"
@@ -1456,7 +1456,7 @@ msgstr ""
 "Muhtemelen bunun yerine<br>\n"
 "<i>Odak Fareyi Takip Eder - Fare Önceliği</i> kullanmak isteyeceksiniz!"
 
-#: windows.cpp:115
+#: windows.cpp:122
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Strictly Under Mouse</b><br>\n"

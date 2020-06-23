@@ -2,22 +2,22 @@
 # Stephan Johach <hunsum@gmx.de>, 2005, 2006.
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008, 2009, 2010.
 # Burkhard Lück <lueck@hube-lueck.de>, 2008, 2013, 2015, 2017, 2019.
-# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010, 2011, 2012, 2013.
+# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010, 2011, 2012, 2013, 2020.
 # Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-15 09:24+0200\n"
-"PO-Revision-Date: 2019-11-05 12:03+0100\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"POT-Creation-Date: 2020-06-19 06:47+0200\n"
+"PO-Revision-Date: 2020-06-19 22:12+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 18.12.3\n"
+"X-Generator: Lokalize 20.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -467,7 +467,7 @@ msgstr ""
 #: advanced.ui:35
 #, kde-format
 msgid "On titlebar hover after:"
-msgstr ""
+msgstr "Beim Überfahren der Titelleiste nach:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_ShadeHoverInterval)
 #: advanced.ui:42
@@ -596,7 +596,7 @@ msgstr "Werkzeugfenster von inaktiven Programmen ausblenden"
 #: focus.ui:22
 #, kde-format
 msgid "Window &activation policy:"
-msgstr ""
+msgstr "Regeln zur Fenster&aktivierung:"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, windowFocusPolicy)
 #: focus.ui:32
@@ -893,88 +893,88 @@ msgstr "&Aktivierungsaktionen nur für aktiven Bildschirm anwenden"
 msgid "Window activation policy description"
 msgstr ""
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "&Focus"
 msgstr "&Aktivierung"
 
-#: main.cpp:89
+#: main.cpp:95
 #, kde-format
 msgid "Titlebar A&ctions"
 msgstr "&Titelleistenaktionen"
 
-#: main.cpp:95
+#: main.cpp:101
 #, kde-format
 msgid "W&indow Actions"
 msgstr "&Fensteraktionen"
 
-#: main.cpp:101
+#: main.cpp:107
 #, fuzzy, kde-format
 #| msgid "&Placement:"
 msgid "Mo&vement"
 msgstr "&Platzierung:"
 
-#: main.cpp:107
+#: main.cpp:113
 #, kde-format
 msgid "Adva&nced"
 msgstr "Erwei&tert"
 
-#: main.cpp:112
+#: main.cpp:118
 #, kde-format
 msgid "Window Behavior Configuration Module"
 msgstr "Einstellungsmodul für das Verhalten von Fenstern"
 
-#: main.cpp:114
+#: main.cpp:120
 #, kde-format
 msgid "(c) 1997 - 2002 KWin and KControl Authors"
 msgstr "© 1997–2002, die KWin- und KControl-Autoren"
 
-#: main.cpp:116
+#: main.cpp:122
 #, kde-format
 msgid "Matthias Ettrich"
 msgstr "Matthias Ettrich"
 
-#: main.cpp:117
+#: main.cpp:123
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:118
+#: main.cpp:124
 #, kde-format
 msgid "Cristian Tibirna"
 msgstr "Cristian Tibirna"
 
-#: main.cpp:119
+#: main.cpp:125
 #, kde-format
 msgid "Matthias Kalle Dalheimer"
 msgstr "Matthias Kalle Dalheimer"
 
-#: main.cpp:120
+#: main.cpp:126
 #, kde-format
 msgid "Daniel Molkentin"
 msgstr "Daniel Molkentin"
 
-#: main.cpp:121
+#: main.cpp:127
 #, kde-format
 msgid "Wynn Wilkes"
 msgstr "Wynn Wilkes"
 
-#: main.cpp:122
+#: main.cpp:128
 #, kde-format
 msgid "Pat Dowler"
 msgstr "Pat Dowler"
 
-#: main.cpp:123
+#: main.cpp:129
 #, kde-format
 msgid "Bernd Wuebben"
 msgstr "Bernd Wuebben"
 
-#: main.cpp:124
+#: main.cpp:130
 #, kde-format
 msgid "Matthias Hoelzer-Kluepfel"
 msgstr "Matthias Hoelzer-Kluepfel"
 
-#: main.cpp:169
+#: main.cpp:175
 #, kde-format
 msgid ""
 "<p><h1>Window Behavior</h1> Here you can customize the way windows behave "
@@ -993,12 +993,12 @@ msgstr ""
 "bitte in der zugehörigen Dokumentation nach, welche Einstellungen möglich "
 "sind.</p>"
 
-#: main.cpp:189
+#: main.cpp:195
 #, kde-format
 msgid "&Titlebar Actions"
 msgstr "&Titelleiste"
 
-#: main.cpp:195
+#: main.cpp:201
 #, kde-format
 msgid "Window Actio&ns"
 msgstr "&Fenster"
@@ -1307,7 +1307,7 @@ msgstr "Bildschirm&mitte-Einrastzone:"
 msgid "&Snap windows:"
 msgstr "Inaktive Fenster:"
 
-#: windows.cpp:93
+#: windows.cpp:100
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Click To Focus</b><br>\n"
@@ -1323,7 +1323,7 @@ msgstr ""
 "Dieses Verhalten ist in vielen Betriebssystemen bekannt<br>\n"
 "und wahrscheinlich die gewünschte Einstellung."
 
-#: windows.cpp:97
+#: windows.cpp:104
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Click To Focus - Mouse Precedence</b><br>\n"
@@ -1346,7 +1346,7 @@ msgstr ""
 "dann ist das Fenster unter dem Mauszeiger der bevorzugte Kandidat.<br><br>\n"
 "Ungewöhnliche aber mögliche Variante von <i>Aktivierung nach Klick</i>."
 
-#: windows.cpp:102
+#: windows.cpp:109
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Follows Mouse</b><br>\n"
@@ -1369,7 +1369,7 @@ msgstr ""
 "Dies ist wie <i>Aktivierung nach Klick</i> nur ohne tatsächlich klicken zu "
 "müssen."
 
-#: windows.cpp:106
+#: windows.cpp:113
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Follows Mouse - Mouse Precedence</b><br>\n"
@@ -1392,7 +1392,7 @@ msgstr ""
 "Wählen Sie diese Einstellung für eine durch Mauskontakt gesteuerte "
 "Aktivierung."
 
-#: windows.cpp:111
+#: windows.cpp:118
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Under Mouse</b><br>\n"
@@ -1421,7 +1421,7 @@ msgstr ""
 "Sie sollten stattdessen besser <br>\n"
 "<i>Aktivierung bei Mauskontakt - Vorrang für Maus</i> verwenden."
 
-#: windows.cpp:115
+#: windows.cpp:122
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Strictly Under Mouse</b><br>\n"

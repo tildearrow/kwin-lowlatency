@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-15 09:24+0200\n"
+"POT-Creation-Date: 2020-06-19 06:47+0200\n"
 "PO-Revision-Date: 2013-06-21 05:42+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -919,91 +919,91 @@ msgstr "Әрбір экранның назары &бөлек"
 msgid "Window activation policy description"
 msgstr ""
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "&Focus"
 msgstr "&Назар"
 
-#: main.cpp:89
+#: main.cpp:95
 #, fuzzy, kde-format
 #| msgid "&Titlebar Actions"
 msgid "Titlebar A&ctions"
 msgstr "&Айдар әрекеттері"
 
-#: main.cpp:95
+#: main.cpp:101
 #, fuzzy, kde-format
 #| msgid "Window Actio&ns"
 msgid "W&indow Actions"
 msgstr "Терезе әре&кеттері"
 
-#: main.cpp:101
+#: main.cpp:107
 #, fuzzy, kde-format
 #| msgid "&Placement:"
 msgid "Mo&vement"
 msgstr "Жаңа терезенің &орналасуы:"
 
-#: main.cpp:107
+#: main.cpp:113
 #, fuzzy, kde-format
 #| msgid "Ad&vanced"
 msgid "Adva&nced"
 msgstr "Қ&осымша"
 
-#: main.cpp:112
+#: main.cpp:118
 #, kde-format
 msgid "Window Behavior Configuration Module"
 msgstr "Терезе қасиеттерін баптау модулі"
 
-#: main.cpp:114
+#: main.cpp:120
 #, kde-format
 msgid "(c) 1997 - 2002 KWin and KControl Authors"
 msgstr "(c) 1997 - 2002 KWin және KControl авторлары"
 
-#: main.cpp:116
+#: main.cpp:122
 #, kde-format
 msgid "Matthias Ettrich"
 msgstr "Matthias Ettrich"
 
-#: main.cpp:117
+#: main.cpp:123
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:118
+#: main.cpp:124
 #, kde-format
 msgid "Cristian Tibirna"
 msgstr "Cristian Tibirna"
 
-#: main.cpp:119
+#: main.cpp:125
 #, kde-format
 msgid "Matthias Kalle Dalheimer"
 msgstr "Matthias Kalle Dalheimer"
 
-#: main.cpp:120
+#: main.cpp:126
 #, kde-format
 msgid "Daniel Molkentin"
 msgstr "Daniel Molkentin"
 
-#: main.cpp:121
+#: main.cpp:127
 #, kde-format
 msgid "Wynn Wilkes"
 msgstr "Wynn Wilkes"
 
-#: main.cpp:122
+#: main.cpp:128
 #, kde-format
 msgid "Pat Dowler"
 msgstr "Pat Dowler"
 
-#: main.cpp:123
+#: main.cpp:129
 #, kde-format
 msgid "Bernd Wuebben"
 msgstr "Bernd Wuebben"
 
-#: main.cpp:124
+#: main.cpp:130
 #, kde-format
 msgid "Matthias Hoelzer-Kluepfel"
 msgstr "Matthias Hoelzer-Kluepfel"
 
-#: main.cpp:169
+#: main.cpp:175
 #, kde-format
 msgid ""
 "<p><h1>Window Behavior</h1> Here you can customize the way windows behave "
@@ -1020,12 +1020,12 @@ msgstr ""
 "пайдалансаңыз ғана күшіне енеді. Егер Сіз өзге терезе менеджерін "
 "пайдалансаңыз, оның баптауын өзінің құжаттамасынан қараңыз.</p>"
 
-#: main.cpp:189
+#: main.cpp:195
 #, kde-format
 msgid "&Titlebar Actions"
 msgstr "&Айдар әрекеттері"
 
-#: main.cpp:195
+#: main.cpp:201
 #, kde-format
 msgid "Window Actio&ns"
 msgstr "Терезе әре&кеттері"
@@ -1346,7 +1346,7 @@ msgstr "&Ортасы жабысу төңірегі:"
 msgid "&Snap windows:"
 msgstr "Терезелерді алға шығару"
 
-#: windows.cpp:93
+#: windows.cpp:100
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Click To Focus</b><br>\n"
@@ -1362,7 +1362,7 @@ msgstr ""
 "Бұл басқа операциялық жүйелермен ортақ тәртіп.<br>\n"
 "Сіздің де қалауыңыз шығар."
 
-#: windows.cpp:97
+#: windows.cpp:104
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Click To Focus - Mouse Precedence</b><br>\n"
@@ -1385,7 +1385,7 @@ msgstr ""
 "тышқан меңзеп тұрғаны тағайындалады.<br><br>\n"
 "Біртүрлі, бірақ мүмкін <i>Түртуге еру</i>дегеннің варианты."
 
-#: windows.cpp:102
+#: windows.cpp:109
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Follows Mouse</b><br>\n"
@@ -1406,7 +1406,7 @@ msgstr ""
 "Назардан айырылуды болдырмау әдеттегідей істейді.<br><br>\n"
 "<i>Түртуге еру</i> дегендей, бірақ, түртусіз."
 
-#: windows.cpp:106
+#: windows.cpp:113
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Follows Mouse - Mouse Precedence</b><br>\n"
@@ -1428,7 +1428,7 @@ msgstr ""
 "тышқан меңзеп тұрғаны тағайындалады.<br><br>\n"
 "Егер назар меңзегенге ауыссын десеңіз - осыны таңдаңыз."
 
-#: windows.cpp:111
+#: windows.cpp:118
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Under Mouse</b><br>\n"
@@ -1455,7 +1455,7 @@ msgstr ""
 "дегендер бұнымен қайшы, сондықтан <b>істемейді</b>.<br><br>\n"
 "Мүмкін, бұдан гөрі <i>Тышқанға еру - Тышқан басымды</i><br> артық дейсіз!"
 
-#: windows.cpp:115
+#: windows.cpp:122
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Strictly Under Mouse</b><br>\n"

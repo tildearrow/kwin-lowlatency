@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-15 09:24+0200\n"
+"POT-Creation-Date: 2020-06-19 06:47+0200\n"
 "PO-Revision-Date: 2013-10-18 20:17+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -921,91 +921,91 @@ msgstr "&Razdvoji ekranski fokus"
 msgid "Window activation policy description"
 msgstr ""
 
-#: main.cpp:79
+#: main.cpp:85
 #, kde-format
 msgid "&Focus"
 msgstr "&Fokus"
 
-#: main.cpp:89
+#: main.cpp:95
 #, fuzzy, kde-format
 #| msgid "&Titlebar Actions"
 msgid "Titlebar A&ctions"
 msgstr "Radnje &naslovne trake"
 
-#: main.cpp:95
+#: main.cpp:101
 #, fuzzy, kde-format
 #| msgid "Window Actio&ns"
 msgid "W&indow Actions"
 msgstr "Radnje &prozora"
 
-#: main.cpp:101
+#: main.cpp:107
 #, fuzzy, kde-format
 #| msgid "&Placement:"
 msgid "Mo&vement"
 msgstr "&Pozicioniranje:"
 
-#: main.cpp:107
+#: main.cpp:113
 #, fuzzy, kde-format
 #| msgid "Ad&vanced"
 msgid "Adva&nced"
 msgstr "&Napredno"
 
-#: main.cpp:112
+#: main.cpp:118
 #, kde-format
 msgid "Window Behavior Configuration Module"
 msgstr "Modul za podešavanje ponašanja prozora"
 
-#: main.cpp:114
+#: main.cpp:120
 #, kde-format
 msgid "(c) 1997 - 2002 KWin and KControl Authors"
 msgstr "© 1997-2002, autori KWina i K‑kontrole"
 
-#: main.cpp:116
+#: main.cpp:122
 #, kde-format
 msgid "Matthias Ettrich"
 msgstr "Matijas Etrih"
 
-#: main.cpp:117
+#: main.cpp:123
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Valdo Bastijan"
 
-#: main.cpp:118
+#: main.cpp:124
 #, kde-format
 msgid "Cristian Tibirna"
 msgstr "Kristijan Tibirna"
 
-#: main.cpp:119
+#: main.cpp:125
 #, kde-format
 msgid "Matthias Kalle Dalheimer"
 msgstr "Matijas Kale Dalhajmer"
 
-#: main.cpp:120
+#: main.cpp:126
 #, kde-format
 msgid "Daniel Molkentin"
 msgstr "Danijel Molkentin"
 
-#: main.cpp:121
+#: main.cpp:127
 #, kde-format
 msgid "Wynn Wilkes"
 msgstr "Vin Vilks"
 
-#: main.cpp:122
+#: main.cpp:128
 #, kde-format
 msgid "Pat Dowler"
 msgstr "Patrik Douler"
 
-#: main.cpp:123
+#: main.cpp:129
 #, kde-format
 msgid "Bernd Wuebben"
 msgstr "Bernd Johanes Viben"
 
-#: main.cpp:124
+#: main.cpp:130
 #, kde-format
 msgid "Matthias Hoelzer-Kluepfel"
 msgstr "Matijas Helcer-Klipfel"
 
-#: main.cpp:169
+#: main.cpp:175
 #, kde-format
 msgid ""
 "<p><h1>Window Behavior</h1> Here you can customize the way windows behave "
@@ -1022,12 +1022,12 @@ msgstr ""
 "koristite drugi menadžer, pogledajte njegovu dokumentaciju za prilagođavanje "
 "ponašanja prozora.</p>"
 
-#: main.cpp:189
+#: main.cpp:195
 #, kde-format
 msgid "&Titlebar Actions"
 msgstr "Radnje &naslovne trake"
 
-#: main.cpp:195
+#: main.cpp:201
 #, kde-format
 msgid "Window Actio&ns"
 msgstr "Radnje &prozora"
@@ -1341,7 +1341,7 @@ msgstr "&Centralna zona namiještanja:"
 msgid "&Snap windows:"
 msgstr "Podizanje prozora"
 
-#: windows.cpp:93
+#: windows.cpp:100
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Click To Focus</b><br>\n"
@@ -1357,7 +1357,7 @@ msgstr ""
 "Ovo ponašanje je uobičajeno u drugim operativnim sistemima i <br>\n"
 "vjerovatno je ono što želite."
 
-#: windows.cpp:97
+#: windows.cpp:104
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Click To Focus - Mouse Precedence</b><br>\n"
@@ -1380,7 +1380,7 @@ msgstr ""
 "prozor pod mišem je preferirani kandidat.<br><br>\n"
 "Neobična, ali moguća varijanta <i>Klik na fokus</i>."
 
-#: windows.cpp:102
+#: windows.cpp:109
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Follows Mouse</b><br>\n"
@@ -1401,7 +1401,7 @@ msgstr ""
 "Sprečavanje krađe fokusa radi kao obično.<br><br>\n"
 "Gledajte na ovo kao <i>klik na fokus</i> bez potrebe za stvarnim klikom."
 
-#: windows.cpp:106
+#: windows.cpp:113
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Follows Mouse - Mouse Precedence</b><br>\n"
@@ -1423,7 +1423,7 @@ msgstr ""
 "prozor pod mišem je preferirani kandidat.<br><br>\n"
 "Odaberite ovo za fokus kontrolisan nadlijetanjem."
 
-#: windows.cpp:111
+#: windows.cpp:118
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Under Mouse</b><br>\n"
@@ -1450,7 +1450,7 @@ msgstr ""
 "Možda želite koristiti<br>\n"
 "<i>Fokus prati miša - prioritet mišem</i> umjesto toga!"
 
-#: windows.cpp:115
+#: windows.cpp:122
 #, fuzzy, kde-format
 #| msgid ""
 #| "<b>Focus Strictly Under Mouse</b><br>\n"

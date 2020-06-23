@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm-kwin-scripts\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-11-01 03:57+0100\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-03-14 03:43+0100\n"
 "PO-Revision-Date: 2017-10-14 23:06+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -44,17 +44,17 @@ msgid "Tamás Krutki"
 msgstr "Tamaš Krutki"
 
 # >> @title:window
-#: module.cpp:83
+#: module.cpp:84
 #, kde-format
 msgid "Import KWin Script"
 msgstr "Uvoz KWinove skripte"
 
-#: module.cpp:84
+#: module.cpp:85
 #, kde-format
 msgid "*.kwinscript|KWin scripts (*.kwinscript)"
 msgstr "*.kwinscript|KWinove skripte (*.kwinscript)"
 
-#: module.cpp:103
+#: module.cpp:104
 #, kde-format
 msgctxt "Placeholder is error message returned from the install service"
 msgid ""
@@ -64,7 +64,7 @@ msgstr ""
 "Ne mogu da uvezem izabranu skriptu.\n"
 "%1"
 
-#: module.cpp:117
+#: module.cpp:118
 #, kde-format
 msgctxt "Placeholder is name of the script that was imported"
 msgid "The script \"%1\" was successfully imported."
