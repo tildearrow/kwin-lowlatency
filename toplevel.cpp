@@ -813,7 +813,11 @@ bool Toplevel::updateUnredirectedState()
     bool should = options->isUnredirectFullscreen() && shouldUnredirect() && !unredirectSuspend &&
                   !shape() && !hasAlpha() && opacity() == 1.0 &&
                   !static_cast<EffectsHandlerImpl*>(effects)->activeFullScreenEffect();
-    if (should) usleep(50000);
+    if (should) {
+      if (Screens::self()->count()<2) {
+        usleep(50000);
+      }
+    }
     if (should == unredirect)
         return false;
     static QElapsedTimer lastUnredirect;
