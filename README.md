@@ -1,6 +1,6 @@
 # HUGE NOTE
 
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ BELOW.**
+**Manjaro uses Plasma 5.18. please read below.**
 
 # KWin-lowlatency
 
@@ -71,11 +71,11 @@ the reason why only up to 8ms is because any further would leave little room for
 
 # installation
 
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ BELOW.**
-
 ## Arch Linux
 
 [kwin-lowlatency is available in the AUR](https://aur.archlinux.org/packages/kwin-lowlatency).
+
+**if you are using Manjaro, please read below.**
 
 ## Fedora
 
@@ -87,19 +87,13 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 ## Manjaro
 
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD.**
+**yes, you are in the right place.**
 
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD.**
+Manjaro has not updated to Plasma 5.19 yet, which means you have to use the previous version.
 
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD.**
+I have made a [special repository](https://github.com/tildearrow/kwin-lowlatency-manjaro) with the PKGBUILD for Manjaro users.
 
-```
-git clone https://aur.archlinux.org/kwin-lowlatency.git
-cd kwin-lowlatency
-git checkout 16cccd1703d4f6ea8831ee2cc424f218acec95d3
-```
-
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
+this means you will have to build the package manually (i.e. cannot use Pamac), but I hope this is not a problem.
 
 ## NixOS
 
@@ -117,13 +111,9 @@ kwin-lowlatency can be found at [home:KAMiKAZOW:KDE](https://software.opensuse.o
 
 you can compile/install this yourself if your distro isn't listed here, or if you merely want to.
 
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
-
 ### installing dependencies
 
 you may need to install specific dependencies before compiling. [here](https://community.kde.org/Guidelines_and_HOWTOs/Build_from_source/Install_the_dependencies) you can find a list.
-
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
 
 ### acquiring the source
 
@@ -145,34 +135,30 @@ $ git checkout Plasma/5.19
 you may want to check the current stable version out:
 
 ```
-$ git checkout v5.19.0
+$ git checkout v5.19.3
 ```
-
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
 
 #### patch format
 
 download stock KWin source and patch file:
 
 ```
-$ wget https://download.kde.org/stable/plasma/5.19.0/kwin-5.19.0.tar.xz
-$ wget https://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.19.0.patch
+$ wget https://download.kde.org/stable/plasma/5.19.3/kwin-5.19.3.tar.xz
+$ wget https://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.19.3.patch
 ```
 
 extract:
 
 ```
-$ tar -xvf kwin-5.19.0.tar.xz
+$ tar -xvf kwin-5.19.3.tar.xz
 ```
 
 patch:
 
 ```
-$ cd kwin-5.19.0
-$ patch -p1 < ../kwin-lowlatency-5.19.0.patch
+$ cd kwin-5.19.3
+$ patch -p1 < ../kwin-lowlatency-5.19.3.patch
 ```
-
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
 
 ### building
 
@@ -188,8 +174,6 @@ $ make
 ```
 
 #### other distros
-
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
 
 ```
 $ mkdir build
@@ -246,7 +230,9 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
 update Plasma to 5.19 before building.
 this might include going back to vanilla KWin for the purpose of building the package.
 
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
+> I get a similar error but this time it fails on 'setWaylandDisplay'
+
+hi Manjaro user. i told you to read the Manjaro instructions, silly.
 
 > what's this "Paint cursor" effect in Desktop Effects?
 
@@ -285,9 +271,6 @@ please see [unredirect.md](https://github.com/tildearrow/kwin-lowlatency/blob/Pl
 use the issues section at the top. **but wait!** before reporting an issue, first test it again on [the official KWin](https://cgit.kde.org/kwin.git/) to determine whether this is really a KWin-lowlatency-only bug.
 
 if the bug also reproduces in official KWin, please file a bug on [their bug tracker](https://bugs.kde.org/enter_bug.cgi?product=kwin) instead.
-
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
-**MANJARO HAS NOT UPDATED TO PLASMA 5.19 YET. PLEASE USE THE 5.18 PKGBUILD. READ ABOVE.**
 
 # Developing on KWin
 
