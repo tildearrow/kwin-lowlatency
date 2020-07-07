@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-06-11 08:18+0200\n"
+"POT-Creation-Date: 2020-06-26 07:46+0200\n"
 "PO-Revision-Date: 2017-10-23 11:20+0000\n"
 "Last-Translator: İşbaran <isbaran@gmail.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -66,7 +66,7 @@ msgstr ""
 msgid "Application settings for %1"
 msgstr "%1 için uygulama ayarları"
 
-#: main.cpp:123 rulesmodel.cpp:215
+#: main.cpp:123 rulesmodel.cpp:218
 #, kde-format
 msgid "Window settings for %1"
 msgstr "%1 için pencere ayarları"
@@ -274,8 +274,8 @@ msgid "No"
 msgstr "Hayır"
 
 #: package/contents/ui/RulesEditor.qml:221
-#: package/contents/ui/ValueEditor.qml:140
-#: package/contents/ui/ValueEditor.qml:147
+#: package/contents/ui/ValueEditor.qml:141
+#: package/contents/ui/ValueEditor.qml:148
 #, kde-format
 msgid "%1 %"
 msgstr ""
@@ -361,7 +361,7 @@ msgstr "Kuralları İçeriye Aktar"
 msgid "Export Rules"
 msgstr "Kuralları Dışa Aktar"
 
-#: package/contents/ui/ValueEditor.qml:174
+#: package/contents/ui/ValueEditor.qml:175
 #, kde-format
 msgctxt "(x, y) coordinates separator in size/position"
 msgid "x"
@@ -372,18 +372,18 @@ msgstr ""
 msgid "Edit Window-Specific Settings"
 msgstr "Pencereye Özel Ayarlarını Yapılandır"
 
-#: rulesmodel.cpp:218
+#: rulesmodel.cpp:221
 #, kde-format
 msgid "Settings for %1"
 msgstr "%1 için ayarlar"
 
-#: rulesmodel.cpp:221
+#: rulesmodel.cpp:224
 #, fuzzy, kde-format
 #| msgid "Window settings for %1"
 msgid "New window settings"
 msgstr "%1 için pencere ayarları"
 
-#: rulesmodel.cpp:227
+#: rulesmodel.cpp:230
 #, kde-format
 msgid ""
 "You have specified the window class as unimportant.\n"
@@ -397,136 +397,136 @@ msgstr ""
 "genel bir ayar oluşturmak istiyorsanız, en azından pencere türünü belirterek "
 "özel pencereleri korumanızı öneririz."
 
-#: rulesmodel.cpp:356
+#: rulesmodel.cpp:358
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "Description"
 msgstr "&Açıklama:"
 
-#: rulesmodel.cpp:356 rulesmodel.cpp:364 rulesmodel.cpp:372 rulesmodel.cpp:378
-#: rulesmodel.cpp:386 rulesmodel.cpp:391 rulesmodel.cpp:397
+#: rulesmodel.cpp:358 rulesmodel.cpp:366 rulesmodel.cpp:374 rulesmodel.cpp:380
+#: rulesmodel.cpp:388 rulesmodel.cpp:393 rulesmodel.cpp:399
 #, fuzzy, kde-format
 #| msgid "&Window matching"
 msgid "Window matching"
 msgstr "Pence&re eşleme"
 
-#: rulesmodel.cpp:364
+#: rulesmodel.cpp:366
 #, fuzzy, kde-format
 #| msgid "Window &class (application):"
 msgid "Window class (application)"
 msgstr "Pen&cere sınıfı (uygulama):"
 
-#: rulesmodel.cpp:372
+#: rulesmodel.cpp:374
 #, fuzzy, kde-format
 #| msgid "Match w&hole window class"
 msgid "Match whole window class"
 msgstr "Tam pencere sınıfını eş&leştir"
 
-#: rulesmodel.cpp:378
+#: rulesmodel.cpp:380
 #, fuzzy, kde-format
 #| msgid "Window &types:"
 msgid "Window types"
 msgstr "Pencere &tipleri:"
 
-#: rulesmodel.cpp:386
+#: rulesmodel.cpp:388
 #, fuzzy, kde-format
 #| msgid "Window ro&le:"
 msgid "Window role"
 msgstr "Pence&re rolü:"
 
-#: rulesmodel.cpp:391
+#: rulesmodel.cpp:393
 #, fuzzy, kde-format
 #| msgid "Window t&itle:"
 msgid "Window title"
 msgstr "Pencere başl&ığı:"
 
-#: rulesmodel.cpp:397
+#: rulesmodel.cpp:399
 #, fuzzy, kde-format
 #| msgid "&Machine (hostname):"
 msgid "Machine (hostname)"
 msgstr "&Makine (sunucu adı):"
 
-#: rulesmodel.cpp:403
+#: rulesmodel.cpp:405
 #, fuzzy, kde-format
 #| msgid "&Position"
 msgid "Position"
 msgstr "Ye&r"
 
-#: rulesmodel.cpp:403 rulesmodel.cpp:408 rulesmodel.cpp:413 rulesmodel.cpp:418
-#: rulesmodel.cpp:423 rulesmodel.cpp:436 rulesmodel.cpp:450 rulesmodel.cpp:455
-#: rulesmodel.cpp:460 rulesmodel.cpp:465 rulesmodel.cpp:470 rulesmodel.cpp:476
-#: rulesmodel.cpp:485 rulesmodel.cpp:490 rulesmodel.cpp:495
+#: rulesmodel.cpp:405 rulesmodel.cpp:410 rulesmodel.cpp:415 rulesmodel.cpp:420
+#: rulesmodel.cpp:425 rulesmodel.cpp:438 rulesmodel.cpp:452 rulesmodel.cpp:457
+#: rulesmodel.cpp:462 rulesmodel.cpp:467 rulesmodel.cpp:472 rulesmodel.cpp:478
+#: rulesmodel.cpp:487 rulesmodel.cpp:492 rulesmodel.cpp:497
 #, fuzzy, kde-format
 #| msgid "&Size && Position"
 msgid "Size & Position"
 msgstr "&Boyut ve Konum"
 
-#: rulesmodel.cpp:408
+#: rulesmodel.cpp:410
 #, fuzzy, kde-format
 #| msgid "&Size"
 msgid "Size"
 msgstr "Boyu&t"
 
-#: rulesmodel.cpp:413
+#: rulesmodel.cpp:415
 #, fuzzy, kde-format
 #| msgid "Maximized &horizontally"
 msgid "Maximized horizontally"
 msgstr "Yatay büyütü&lmüş"
 
-#: rulesmodel.cpp:418
+#: rulesmodel.cpp:420
 #, fuzzy, kde-format
 #| msgid "Maximized &vertically"
 msgid "Maximized vertically"
 msgstr "Dike&y büyütülmüş"
 
-#: rulesmodel.cpp:423
+#: rulesmodel.cpp:425
 #, fuzzy, kde-format
 #| msgid "All Desktops"
 msgid "Virtual Desktop"
 msgstr "Tüm Masaüstleri"
 
-#: rulesmodel.cpp:436
+#: rulesmodel.cpp:438
 #, fuzzy, kde-format
 #| msgid "Activit&y"
 msgid "Activity"
 msgstr "&Etkinlik"
 
-#: rulesmodel.cpp:450
+#: rulesmodel.cpp:452
 #, kde-format
 msgid "Screen"
 msgstr "Ekran"
 
-#: rulesmodel.cpp:455
+#: rulesmodel.cpp:457
 #, fuzzy, kde-format
 #| msgid "&Fullscreen"
 msgid "Fullscreen"
 msgstr "Tam &Ekran"
 
-#: rulesmodel.cpp:460
+#: rulesmodel.cpp:462
 #, fuzzy, kde-format
 #| msgid "M&inimized"
 msgid "Minimized"
 msgstr "Kü&çültülmüş"
 
-#: rulesmodel.cpp:465
+#: rulesmodel.cpp:467
 #, fuzzy, kde-format
 #| msgid "Sh&aded"
 msgid "Shaded"
 msgstr "Gölg&eli"
 
-#: rulesmodel.cpp:470
+#: rulesmodel.cpp:472
 #, fuzzy, kde-format
 #| msgid "Initial p&lacement"
 msgid "Initial placement"
 msgstr "İlk yer&leştirme"
 
-#: rulesmodel.cpp:476
+#: rulesmodel.cpp:478
 #, fuzzy, kde-format
 #| msgid "Ignore requested &geometry"
 msgid "Ignore requested geometry"
 msgstr "İstenen ko&numu yoksay"
 
-#: rulesmodel.cpp:478
+#: rulesmodel.cpp:480
 #, kde-format
 msgid ""
 "Windows can ask to appear in a certain position.\n"
@@ -539,24 +539,24 @@ msgstr ""
 "ve bu durumda bir istemci özelliği istismar ederek ekranın\n"
 "ortasında koşulsuz olarak çıkması kötü olabilir."
 
-#: rulesmodel.cpp:485
+#: rulesmodel.cpp:487
 #, fuzzy, kde-format
 #| msgid "M&inimum size"
 msgid "Minimum Size"
 msgstr "&En az boyut"
 
-#: rulesmodel.cpp:490
+#: rulesmodel.cpp:492
 #, fuzzy, kde-format
 #| msgid "M&aximum size"
 msgid "Maximum Size"
 msgstr "En f&azla boyut"
 
-#: rulesmodel.cpp:495
+#: rulesmodel.cpp:497
 #, kde-format
 msgid "Obey geometry restrictions"
 msgstr "Geometri kısıtlamalarına itaat et"
 
-#: rulesmodel.cpp:497
+#: rulesmodel.cpp:499
 #, kde-format
 msgid ""
 "Eg. terminals or video players can ask to keep a certain aspect ratio\n"
@@ -571,102 +571,102 @@ msgstr ""
 "Bu anlamsız olabilir ve kısıtlama, tüm ekran alanınız gibi keyfi ölçüleri\n"
 "önler."
 
-#: rulesmodel.cpp:506
+#: rulesmodel.cpp:508
 #, fuzzy, kde-format
 #| msgid "Keep &above"
 msgid "Keep above"
 msgstr "Üstt&e tut"
 
-#: rulesmodel.cpp:506 rulesmodel.cpp:511 rulesmodel.cpp:516 rulesmodel.cpp:522
-#: rulesmodel.cpp:528 rulesmodel.cpp:534
+#: rulesmodel.cpp:508 rulesmodel.cpp:513 rulesmodel.cpp:518 rulesmodel.cpp:524
+#: rulesmodel.cpp:530 rulesmodel.cpp:536
 #, fuzzy, kde-format
 #| msgid "&Arrangement && Access"
 msgid "Arrangement & Access"
 msgstr "&Düzenleme ve Erişim"
 
-#: rulesmodel.cpp:511
+#: rulesmodel.cpp:513
 #, fuzzy, kde-format
 #| msgid "Keep &below"
 msgid "Keep below"
 msgstr "&Altta tut"
 
-#: rulesmodel.cpp:516
+#: rulesmodel.cpp:518
 #, fuzzy, kde-format
 #| msgid "Skip &taskbar"
 msgid "Skip taskbar"
 msgstr "Görev çubuğunu a&tla"
 
-#: rulesmodel.cpp:518
+#: rulesmodel.cpp:520
 #, kde-format
 msgid "Window shall (not) appear in the taskbar."
 msgstr "Pencereler sanal masaüstleri için görev çubuğunda görül(me)meli"
 
-#: rulesmodel.cpp:522
+#: rulesmodel.cpp:524
 #, fuzzy, kde-format
 #| msgid "Skip pa&ger"
 msgid "Skip pager"
 msgstr "Say&falayıcıyı atla"
 
-#: rulesmodel.cpp:524
+#: rulesmodel.cpp:526
 #, kde-format
 msgid "Window shall (not) appear in the manager for virtual desktops"
 msgstr "Pencereler sanal masaüstleri için yönetici içerisinde görül(me)meli"
 
-#: rulesmodel.cpp:528
+#: rulesmodel.cpp:530
 #, fuzzy, kde-format
 #| msgid "Skip &switcher"
 msgid "Skip switcher"
 msgstr "&Değiştiriciyi atla"
 
-#: rulesmodel.cpp:530
+#: rulesmodel.cpp:532
 #, kde-format
 msgid "Window shall (not) appear in the Alt+Tab list"
 msgstr "Pencereler sanal masaüstleri için Alt+Sekme listesinde görül(me)meli"
 
-#: rulesmodel.cpp:534
+#: rulesmodel.cpp:536
 #, kde-format
 msgid "Shortcut"
 msgstr "Kısayol"
 
-#: rulesmodel.cpp:540
+#: rulesmodel.cpp:542
 #, fuzzy, kde-format
 #| msgid "&No titlebar and frame"
 msgid "No titlebar and frame"
 msgstr "&Başlık çubuğu ve çerçeve yok"
 
-#: rulesmodel.cpp:540 rulesmodel.cpp:545 rulesmodel.cpp:551 rulesmodel.cpp:556
-#: rulesmodel.cpp:561 rulesmodel.cpp:572 rulesmodel.cpp:583 rulesmodel.cpp:591
-#: rulesmodel.cpp:604 rulesmodel.cpp:609 rulesmodel.cpp:615 rulesmodel.cpp:620
+#: rulesmodel.cpp:542 rulesmodel.cpp:547 rulesmodel.cpp:553 rulesmodel.cpp:558
+#: rulesmodel.cpp:563 rulesmodel.cpp:574 rulesmodel.cpp:585 rulesmodel.cpp:593
+#: rulesmodel.cpp:606 rulesmodel.cpp:611 rulesmodel.cpp:617 rulesmodel.cpp:622
 #, fuzzy, kde-format
 #| msgid "Appearance && &Fixes"
 msgid "Appearance & Fixes"
 msgstr "Görünüm ve &Düzeltmeler"
 
-#: rulesmodel.cpp:545
+#: rulesmodel.cpp:547
 #, fuzzy, kde-format
 #| msgid "Titlebar color &scheme"
 msgid "Titlebar color scheme"
 msgstr "Başlık çubuğu renk &düzeni"
 
-#: rulesmodel.cpp:551
+#: rulesmodel.cpp:553
 #, fuzzy, kde-format
 #| msgid "A&ctive opacity"
 msgid "Active opacity"
 msgstr "&Etkin matlık"
 
-#: rulesmodel.cpp:556
+#: rulesmodel.cpp:558
 #, fuzzy, kde-format
 #| msgid "I&nactive opacity"
 msgid "Inactive opacity"
 msgstr "&Pasif matlık"
 
-#: rulesmodel.cpp:561
+#: rulesmodel.cpp:563
 #, fuzzy, kde-format
 #| msgid "&Focus stealing prevention"
 msgid "Focus stealing prevention"
 msgstr "O&dak çalma koruması"
 
-#: rulesmodel.cpp:563
+#: rulesmodel.cpp:565
 #, kde-format
 msgid ""
 "KWin tries to prevent windows from taking the focus\n"
@@ -681,12 +681,12 @@ msgstr ""
 "\"Hiçbiri\" şartsız olarak bu pencerenin odağı almasına izin verirken\n"
 "\"Çok Yüksek\" tamamen odağı almasını önleyecektir."
 
-#: rulesmodel.cpp:572
+#: rulesmodel.cpp:574
 #, kde-format
 msgid "Focus protection"
 msgstr "Odak koruması"
 
-#: rulesmodel.cpp:574
+#: rulesmodel.cpp:576
 #, kde-format
 msgid ""
 "This controls the focus protection of the currently active window.\n"
@@ -701,13 +701,13 @@ msgstr ""
 "Aksi halde, odaklamayı isteyen pencereye\n"
 "atandığında çalınmasını önler."
 
-#: rulesmodel.cpp:583
+#: rulesmodel.cpp:585
 #, fuzzy, kde-format
 #| msgid "Accept &focus"
 msgid "Accept focus"
 msgstr "O&daklamayı kabul et"
 
-#: rulesmodel.cpp:585
+#: rulesmodel.cpp:587
 #, kde-format
 msgid ""
 "Windows may prevent to get the focus (activate) when being clicked.\n"
@@ -718,12 +718,12 @@ msgstr ""
 "Diğer bir yandan bir pencereye fare tıklaması ile odaklanılmasını\n"
 "önlemek isteyebilirsiniz."
 
-#: rulesmodel.cpp:591
+#: rulesmodel.cpp:593
 #, kde-format
 msgid "Ignore global shortcuts"
 msgstr "Genel kısayolları yoksay"
 
-#: rulesmodel.cpp:593
+#: rulesmodel.cpp:595
 #, kde-format
 msgid ""
 "When used, a window will receive\n"
@@ -744,160 +744,160 @@ msgstr ""
 "evrensel kısayol (KRunner'ı göstermek için Alt+F2 gibi)\n"
 "kullanamayacaksınız!"
 
-#: rulesmodel.cpp:604
+#: rulesmodel.cpp:606
 #, fuzzy, kde-format
 #| msgid "&Closeable"
 msgid "Closeable"
 msgstr "Kapatıla&bilir"
 
-#: rulesmodel.cpp:609
+#: rulesmodel.cpp:611
 #, fuzzy, kde-format
 #| msgid "Window &type"
 msgid "Set window type"
 msgstr "Pencere &türü"
 
-#: rulesmodel.cpp:615
+#: rulesmodel.cpp:617
 #, kde-format
 msgid "Desktop file name"
 msgstr ""
 
-#: rulesmodel.cpp:620
+#: rulesmodel.cpp:622
 #, kde-format
 msgid "Block compositing"
 msgstr "Birleşikliği engelle"
 
-#: rulesmodel.cpp:693
+#: rulesmodel.cpp:697
 #, kde-format
 msgid "Normal Window"
 msgstr "Normal Pencere"
 
-#: rulesmodel.cpp:694
+#: rulesmodel.cpp:698
 #, kde-format
 msgid "Dialog Window"
 msgstr "İletişim Penceresi"
 
-#: rulesmodel.cpp:695
+#: rulesmodel.cpp:699
 #, kde-format
 msgid "Utility Window"
 msgstr "Yardımcı Yazılım Penceresi"
 
-#: rulesmodel.cpp:696
+#: rulesmodel.cpp:700
 #, kde-format
 msgid "Dock (panel)"
 msgstr "Panel"
 
-#: rulesmodel.cpp:697
+#: rulesmodel.cpp:701
 #, kde-format
 msgid "Toolbar"
 msgstr "Araç Çubuğu"
 
-#: rulesmodel.cpp:698
+#: rulesmodel.cpp:702
 #, kde-format
 msgid "Torn-Off Menu"
 msgstr "Menüyü Kapat"
 
-#: rulesmodel.cpp:699
+#: rulesmodel.cpp:703
 #, kde-format
 msgid "Splash Screen"
 msgstr "Açılış Ekranı"
 
-#: rulesmodel.cpp:700
+#: rulesmodel.cpp:704
 #, kde-format
 msgid "Desktop"
 msgstr "Masaüstü"
 
 #. i18n("Unmanaged Window")   },  deprecated
-#: rulesmodel.cpp:702
+#: rulesmodel.cpp:706
 #, kde-format
 msgid "Standalone Menubar"
 msgstr "Bağımsız Menü Çubuğu"
 
-#: rulesmodel.cpp:717
+#: rulesmodel.cpp:721
 #, kde-format
 msgid "All Desktops"
 msgstr "Tüm Masaüstleri"
 
-#: rulesmodel.cpp:730
+#: rulesmodel.cpp:734
 #, kde-format
 msgid "All Activities"
 msgstr "Tüm Etkinlikler"
 
-#: rulesmodel.cpp:751
+#: rulesmodel.cpp:755
 #, kde-format
 msgid "Default"
 msgstr "Öntanımlı"
 
-#: rulesmodel.cpp:752
+#: rulesmodel.cpp:756
 #, kde-format
 msgid "No Placement"
 msgstr "Yerleştirme Yok"
 
-#: rulesmodel.cpp:753
+#: rulesmodel.cpp:757
 #, kde-format
 msgid "Minimal Overlapping"
 msgstr ""
 
-#: rulesmodel.cpp:754
+#: rulesmodel.cpp:758
 #, fuzzy, kde-format
 #| msgid "Maximizing"
 msgid "Maximized"
 msgstr "Büyütme"
 
-#: rulesmodel.cpp:755
+#: rulesmodel.cpp:759
 #, fuzzy, kde-format
 #| msgid "Cascade"
 msgid "Cascaded"
 msgstr "Basamakla"
 
-#: rulesmodel.cpp:756
+#: rulesmodel.cpp:760
 #, kde-format
 msgid "Centered"
 msgstr "Ortala"
 
-#: rulesmodel.cpp:757
+#: rulesmodel.cpp:761
 #, kde-format
 msgid "Random"
 msgstr "Rastgele"
 
-#: rulesmodel.cpp:758
+#: rulesmodel.cpp:762
 #, fuzzy, kde-format
 #| msgid "Top-Left Corner"
 msgid "In Top-Left Corner"
 msgstr "Üst-Sol Köşe"
 
-#: rulesmodel.cpp:759
+#: rulesmodel.cpp:763
 #, kde-format
 msgid "Under Mouse"
 msgstr "Farenin Altı"
 
-#: rulesmodel.cpp:760
+#: rulesmodel.cpp:764
 #, kde-format
 msgid "On Main Window"
 msgstr "Ana Pencerede"
 
-#: rulesmodel.cpp:768
+#: rulesmodel.cpp:772
 #, fuzzy, kde-format
 #| msgctxt "no focus stealing prevention"
 #| msgid "None"
 msgid "None"
 msgstr "Hiçbiri"
 
-#: rulesmodel.cpp:769
+#: rulesmodel.cpp:773
 #, kde-format
 msgid "Low"
 msgstr "Düşük"
 
-#: rulesmodel.cpp:770
+#: rulesmodel.cpp:774
 #, kde-format
 msgid "Normal"
 msgstr "Normal"
 
-#: rulesmodel.cpp:771
+#: rulesmodel.cpp:775
 #, kde-format
 msgid "High"
 msgstr "Yüksek"
 
-#: rulesmodel.cpp:772
+#: rulesmodel.cpp:776
 #, kde-format
 msgid "Extreme"
 msgstr "Çok Yüksek"

@@ -6,7 +6,7 @@
 # Ilpo Kantonen <ilpo@iki.fi>, 2005.
 # Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2010, 2011, 2012, 2013, 2014, 2015.
-# Tommi Nieminen <translator@legisign.org>, 2012, 2018, 2019.
+# Tommi Nieminen <translator@legisign.org>, 2012, 2018, 2019, 2020.
 #
 # KDE Finnish translation sprint participants:
 # Author: Lliehu
@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-07 03:54+0200\n"
-"PO-Revision-Date: 2019-07-29 16:58+0200\n"
+"PO-Revision-Date: 2020-06-23 10:28+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:22:23+0000\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 20.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -141,11 +141,12 @@ msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "Otsikkopalkin painikkeet"
 
+# Alkuperäinenkin selite on niin pitkä, että se tahtoo valua yli
 #: package/contents/ui/main.qml:90
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
-msgstr "Käytä teeman oletusta ikkunareunuksen koolle"
+msgstr "Käytä ikkunareunukseen teeman oletuskokoa"
 
 #: package/contents/ui/main.qml:121
 #, kde-format

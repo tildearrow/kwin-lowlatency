@@ -8,7 +8,7 @@
 # Ilpo Kantonen <ilpo@iki.fi>, 2005.
 # Teemu Rytilahti <tpr@d5k.net>, 2005.
 # Niklas Laxström <niklas.laxstrom+kdetrans@gmail.com>, 2007.
-# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011, 2013, 2014, 2019.
+# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011, 2013, 2014, 2019, 2020.
 # Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016.
 #
@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-06-19 06:47+0200\n"
-"PO-Revision-Date: 2019-10-14 19:22+0300\n"
+"PO-Revision-Date: 2020-06-23 10:49+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:22:23+0000\n"
-"X-Generator: Lokalize 18.12.3\n"
+"X-Generator: Lokalize 20.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -894,10 +894,9 @@ msgstr "&Erillinen näytön kohdistus"
 
 #. i18n: ectx: property (text), widget (QLabel, windowFocusPolicyDescriptionLabel)
 #: focus.ui:229
-#, fuzzy, kde-format
-#| msgid "Window &activation policy:"
+#, kde-format
 msgid "Window activation policy description"
-msgstr "Ikkunoiden &aktivointikäytäntö:"
+msgstr "Ikkunoiden aktivointikäytäntö"
 
 #: main.cpp:85
 #, kde-format
@@ -1301,30 +1300,17 @@ msgid "&Snap windows:"
 msgstr "Ikkunoiden &kiinnitys:"
 
 #: windows.cpp:100
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus:"
-#| "</span> A window becomes active when you click into it. This behavior is "
-#| "common on other operating systems and likely what you want.</p></body></"
-#| "html>"
+#, kde-format
 msgid ""
 "<em>Click to focus:</em> A window becomes active when you click into it. "
 "This behavior is common on other operating systems and likely what you want."
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Kohdista "
-"napsauttamalla:</span> Ikkuna aktivoituu, kun napsautat sitä. Tämä on muista "
-"järjestelmistä tuttu tapa ja luultavasti tutuin.</p></body></html>"
+"<em>Kohdistus hiiren painikkeella:</em> Ikkuna aktivoituu, kun napsautat "
+"sitä. Tämä toiminta on yleinen muissa käyttöjärjestelmissä sekä "
+"todennäköisesti haluamasi."
 
 #: windows.cpp:104
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus "
-#| "(mouse precedence):</span> Mostly the same as <span style=\" font-style:"
-#| "italic;\">Click to focus</span>. If an active window has to be chosen by "
-#| "the system (eg. because the currently active one was closed) the window "
-#| "under the mouse is the preferred candidate. Unusual, but possible variant "
-#| "of <span style=\" font-style:italic;\">Click to focus</span>.</p></body></"
-#| "html>"
+#, kde-format
 msgid ""
 "<em>Click to focus (mouse precedence):</em> Mostly the same as <em>Click to "
 "focus</em>. If an active window has to be chosen by the system (eg. because "
@@ -1332,68 +1318,42 @@ msgid ""
 "preferred candidate. Unusual, but possible variant of <em>Click to focus</"
 "em>."
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Kohdista "
-"napsauttamalla (hiiren etusija):</span> Paljolti sama kuin <span style=\" "
-"font-style:italic;\">Kohdista napsauttamalla</span>. Jos järjestelmä joutuu "
-"valitsemaan aktiivisen ikkunan (esim. koska aiemmin aktiivinen on suljettu), "
-"suositaan hiiriosoittimen alla olevaa ikkunaa. Epätavallinen mutta "
-"mahdollinen muunnelma <span style=\" font-style:italic;\">Kohdista "
-"napsauttamalla</span> -käytännöstä.</p></body></html>"
+"<em>Kohdistus hiiren painikkeella – hiiren ensisijaisuus:</em> Tämä on "
+"suunnilleen sama kuin <em>kohdistus hiiren painikkeella</em>. Jos "
+"järjestelmän tarvitsee valita aktiivinen ikkuna (esimerkiksi koska "
+"parhaillaan aktiivinen suljettiin), hiiren alla oleva on ensisijainen "
+"ehdokas. Epätavallinen, mutta mahdollinen muunnelma <em>kohdistuksesta "
+"hiiren painikkeella</em>."
 
 #: windows.cpp:109
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus follows "
-#| "mouse:</span> Moving the mouse onto a window will activate it. Eg. "
-#| "windows randomly appearing under the mouse will not gain the focus. <span "
-#| "style=\" font-style:italic;\">Focus stealing prevention</span> takes "
-#| "place as usual. Think as <span style=\" font-style:italic;\">Click to "
-#| "focus</span> just without having to actually click.</p></body></html>"
+#, kde-format
 msgid ""
 "<em>Focus follows mouse:</em> Moving the mouse onto a window will activate "
 "it. Eg. windows randomly appearing under the mouse will not gain the focus. "
 "<em>Focus stealing prevention</em> takes place as usual. Think as <em>Click "
 "to focus</em> just without having to actually click."
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Kohdistus seuraa "
-"hiiriosoitinta:</span> Ikkuna aktivoidaan osoittamalla sitä "
-"hiiriosoittimella. Satunnaisesti hiiriosoittimen kohdalle avautuvia "
-"ikkunoita ei kohdisteta. <span style=\" font-style:italic;\">Kohdistuksen "
-"varastamisen esto</span> toteutuu tavalliseen tapaan. Tämä on kuin <span "
-"style=\" font-style:italic;\">Kohdista napsauttamalla</span> ilman "
-"varsinaista napsautusta.</p></body></html>"
+"<em>Kohdistus seuraa osoitinta:</em> Hiiriosoittimen siirtäminen ikkunaan "
+"aktivoi kyseisen ikkunan. Satunnaisesti osoittimen alle ilmestyvät ikkunat "
+"eivät kuitenkaan saa kohdistusta. Kohdistuksen varastamisen esto toimii "
+"tavanomaisesti. Kuin <em>kohdistus hiiren painikkeella</em> tarvitsematta "
+"napsauttaa ikkunaa."
 
 #: windows.cpp:113
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p>This is mostly the same as <span style=\" font-"
-#| "style:italic;\">Focus follows mouse</span>. If an active window has to be "
-#| "chosen by the system (eg. because the currently active one was closed) "
-#| "the window under the mouse is the preferred candidate. Choose this, if "
-#| "you want a hover controlled focus.</p></body></html>"
+#, kde-format
 msgid ""
 "This is mostly the same as <em>Focus follows mouse</em>. If an active window "
 "has to be chosen by the system (eg. because the currently active one was "
 "closed) the window under the mouse is the preferred candidate. Choose this, "
 "if you want a hover controlled focus."
 msgstr ""
-"<html><head/><body><p>Tämä on enimmäkseen kuin <span style=\" font-style:"
-"italic;\">Kohdistus seuraa hiiriosoitinta</span>. Jos järjestelmän on "
-"valittava aktiivinen ikkuna (esim. koska aiemmin aktiivinen on suljettu), "
-"suositaan hiiriosoittimen alla olevaa ikkunaa. Valitse tämä, jos haluat "
-"osoittamalla toimivan kohdistuksen.</p></body></html>"
+"Tämä on enimmäkseen sama kuin <em>Kohdistus seuraa hiiriosoitinta</em>. Jos "
+"järjestelmän on valittava aktiivinen ikkuna (esimerkiksi koska aiemmin "
+"aktiivinen on suljettu), suositaan hiiriosoittimen alla olevaa. Valitse "
+"tämä, jos haluat osoittamalla toimivan kohdistuksen."
 
 #: windows.cpp:118
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus under "
-#| "mouse:</span> The focus always remains on the window under the mouse.<br/"
-#| "><span style=\" font-weight:600;\">Warning: </span><span style=\" font-"
-#| "style:italic;\">Focus stealing prevention</span> and the <span style=\" "
-#| "font-style:italic;\">tabbox ('Alt+Tab') </span>contradict the activation "
-#| "policy and will not work. You very likely want to use <span style=\" font-"
-#| "style:italic;\">Focus follows mouse (mouse precedence)</span> instead!</"
-#| "p></body></html>"
+#, kde-format
 msgid ""
 "<em>Focus under mouse:</em> The focus always remains on the window under the "
 "mouse.<br/><strong>Warning:</strong> <em>Focus stealing prevention</em> and "
@@ -1401,27 +1361,15 @@ msgid ""
 "not work. You very likely want to use <em>Focus follows mouse (mouse "
 "precedence)</em> instead!"
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Kohdistus aina "
-"hiiriosoittimen alle:</span> Kohdistus pystyy hiiriosoittimen osoittamassa "
-"ikkunassa.<br/><span style=\" font-weight:600;\">Varoitus: </span><span "
-"style=\" font-style:italic;\">Kohdistuksen varastamisen esto</span> ja <span "
-"style=\" font-style:italic;\">sarkausvaihto (Alt+Sarkain)</span> ovat tämän "
-"kanssa ristiriidassa eivätkä toimi. Haluat todennäköisimmin asetuksen <span "
-"style=\" font-style:italic;\">Kohdistus seuraa hiiriosoitinta</span>!</p></"
-"body></html>"
+"<em>Kohdistus osoittimen alle:</em> Kohdistus pysyy aina hiiriosoittimen "
+"alla olevassa ikkunassa.<br/><strong>Varoitus:</strong> <em>Kohdistuksen "
+"varastamisen esto</em> ja <em>ikkunavalitsin (”Alt+Sarkain”)</em> ovat tämän "
+"kanssa ristiriidassa eivätkä toimi. Haluat todennäköisesti käyttää "
+"mieluummin käytäntöä <em>kohdistus seuraa osoitinta – hiiren ensisijaisuus</"
+"em>!"
 
 #: windows.cpp:122
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus strictly "
-#| "under mouse:</span> The focus is always on the window under the mouse (in "
-#| "doubt nowhere) very much like the focus behavior in an unmanaged legacy "
-#| "X11 environment.<br/><span style=\" font-weight:600;\">Warning: </"
-#| "span><span style=\" font-style:italic;\">Focus stealing prevention</span> "
-#| "and the <span style=\" font-style:italic;\">tabbox ('Alt+Tab') </"
-#| "span>contradict the activation policy and will not work. You very likely "
-#| "want to use <span style=\" font-style:italic;\">Focus follows mouse "
-#| "(mouse precedence)</span> instead!</p></body></html>"
+#, kde-format
 msgid ""
 "<em>Focus strictly under mouse:</em> The focus is always on the window under "
 "the mouse (in doubt nowhere) very much like the focus behavior in an "
@@ -1430,11 +1378,11 @@ msgid ""
 "activation policy and will not work. You very likely want to use <em>Focus "
 "follows mouse (mouse precedence)</em> instead!"
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Kohdistus aina "
-"hiiriosoittimen alle:</span> Kohdistus on aina hiiriosoittimen alla olevassa "
-"ikkunassa (tai ei missään) kuten vanhassa X11-ympäristössä.<br/><span style="
-"\" font-weight:600;\">Varoitus: </span><span style=\" font-style:italic;"
-"\">Kohdistuksen varastamisen esto</span> ja <span style=\" font-style:italic;"
-"\">sarkausvaihto (Alt+Sarkain)</span> ovat tämän kanssa ristiriidassa "
-"eivätkä toimi. Haluat todennäköisimmin asetuksen <span style=\" font-style:"
-"italic;\">Kohdistus seuraa hiirtä</span>!</p></body></html>"
+"<em>Kohdistus tiukasti osoittimen alle:</em> Kohdistus on aina "
+"hiiriosoittimen alla olevassa ikkunassa, epäselvissä tapauksissa ei missään. "
+"Toimii vähän samoin kuin<br>kohdistus vanhassa X11-ympäristössä ilman "
+"ikkunointiohjelmaa.<br/> <strong>Varoitus:</strong> <em>Kohdistuksen "
+"varastamisen esto</em> ja <em>ikkunavalitsin (”Alt+Sarkain”)</em> ovat tämän "
+"kanssa ristiriidassa eivätkä toimi. Haluat todennäköisesti käyttää "
+"mieluummin käytäntöä <em>kohdistus seuraa osoitinta – hiiren ensisijaisuus</"
+"em>!"
