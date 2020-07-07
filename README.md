@@ -2,6 +2,8 @@
 
 KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
 
+this is the LTS branch.
+
 ## old background
 
 stock KWin has a major issue regarding stuttering. it stutters heavily, and if you don't want that, then you have the latency problem (of up to 50ms!).
@@ -81,7 +83,13 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 ## Manjaro
 
-follow the Arch Linux instructions. Manjaro is providing Plasma 5.18 now.
+I have made a [special repository](https://github.com/tildearrow/kwin-lowlatency-manjaro) with the PKGBUILD for Manjaro users.
+
+this means you will have to build the package manually (i.e. cannot use Pamac), but I hope this is not a problem.
+
+## NixOS
+
+check out pasqui23's [kwin-ll](https://github.com/pasqui23/nixpkgs/tree/kwin-ll) branch.
 
 ## openSUSE Tumbleweed
 
@@ -119,7 +127,7 @@ $ git checkout Plasma/5.18
 you may want to check the current stable version out:
 
 ```
-$ git checkout v5.18.5
+$ git checkout v5.18.5-3
 ```
 
 #### patch format
@@ -128,7 +136,7 @@ download stock KWin source and patch file:
 
 ```
 $ wget https://download.kde.org/stable/plasma/5.18.5/kwin-5.18.5.tar.xz
-$ wget https://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.18.5.patch
+$ wget https://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.18.5-3.patch
 ```
 
 extract:
@@ -141,7 +149,7 @@ patch:
 
 ```
 $ cd kwin-5.18.5
-$ patch -p1 < ../kwin-lowlatency-5.18.5.patch
+$ patch -p1 < ../kwin-lowlatency-5.18.5-3.patch
 ```
 
 ### building
@@ -208,6 +216,16 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
   - if none of these options solve any problems, please open a bug report. thanks.
 
 # misc/FAQ
+
+> I can't build it and it fails on the class ScreenLocker::KSldApp has no member named 'setWaylandFd'
+
+you must have Plasma 5.18. are you sure you checked this branch out well?
+
+> I get a similar error but this time it fails on 'setWaylandDisplay'
+
+...what?
+
+then you are using Plasma 5.19. you should check the other branch.
 
 > what's this "Paint cursor" effect in Desktop Effects?
 
