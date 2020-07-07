@@ -93,7 +93,7 @@ check out pasqui23's [kwin-ll](https://github.com/pasqui23/nixpkgs/tree/kwin-ll)
 
 ## openSUSE Tumbleweed
 
-kwin-lowlatency can be found at [home:KAMiKAZOW:KDE](https://software.opensuse.org/download.html?project=home%3AKAMiKAZOW%3AKDE&package=kwin-lowlatency) (OBS).
+kwin-lowlatency can be found at [home:DarkWav:kwin-lowlatency](https://software.opensuse.org/download.html?project=home%3ADarkWav%3Akwin-lowlatency&package=kwin-lowlatency) (OBS).
 
 ## Ubuntu
 
