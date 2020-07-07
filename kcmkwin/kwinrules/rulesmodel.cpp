@@ -71,6 +71,7 @@ QHash< int, QByteArray > RulesModel::roleNames() const
         {PolicyRole,         QByteArrayLiteral("policy")},
         {PolicyModelRole,    QByteArrayLiteral("policyModel")},
         {OptionsModelRole,   QByteArrayLiteral("options")},
+        {OptionsMaskRole,    QByteArrayLiteral("optionsMask")},
         {SuggestedValueRole, QByteArrayLiteral("suggested")},
     };
 }
@@ -118,6 +119,8 @@ QVariant RulesModel::data(const QModelIndex &index, int role) const
         return rule->policyModel();
     case OptionsModelRole:
         return rule->options();
+    case OptionsMaskRole:
+        return rule->optionsMask();
     case SuggestedValueRole:
         return rule->suggestedValue();
     }
@@ -232,7 +235,6 @@ QString RulesModel::warningMessage() const
 
     return QString();
 }
-
 
 bool RulesModel::wmclassWarning() const
 {
@@ -374,7 +376,7 @@ void RulesModel::populateRuleList()
     wmclasscomplete->setFlag(RuleItem::AlwaysEnabled);
 
     auto types = addRule(new RuleItem(QLatin1String("types"),
-                                      RulePolicy::NoPolicy, RuleItem::FlagsOption,
+                                      RulePolicy::NoPolicy, RuleItem::NetTypes,
                                       i18n("Window types"), i18n("Window matching"),
                                       QIcon::fromTheme("window-duplicate")));
     types->setOptionsData(windowTypesModelData());
@@ -625,11 +627,6 @@ void RulesModel::populateRuleList()
 const QHash<QString, QString> RulesModel::x11PropertyHash()
 {
     static const auto propertyToRule = QHash<QString, QString> {
-        /* The original detection dialog allows to choose depending on "Match complete window class":
-         *     if Match Complete == false: wmclass = "resourceClass"
-         *     if Match Complete == true:  wmclass = "resourceName" + " " + "resourceClass"
-         */
-        { "resourceName",       "wmclass"       },
         { "caption",            "title"         },
         { "role",               "windowrole"    },
         { "clientMachine",      "clientmachine" },
@@ -666,7 +663,14 @@ void RulesModel::setWindowProperties(const QVariantMap &info, bool forceValue)
     if (window_type == NET::Unknown) {
         window_type = NET::Normal;
     }
-    m_rules["types"]->setSuggestedValue(1 << window_type, forceValue);
+    m_rules["types"]->setSuggestedValue(1 << window_type);
+
+    const QString wmsimpleclass = info.value("resourceClass").toString();
+    const QString wmcompleteclass = QStringLiteral("%1 %2").arg(info.value("resourceName").toString(),
+                                                                info.value("resourceClass").toString());
+    const bool isComplete = m_rules.value("wmclasscomplete")->value().toBool();
+
+    m_rules["wmclass"]->setSuggestedValue(isComplete ? wmcompleteclass : wmsimpleclass, forceValue);
 
     const auto ruleForProperty = x11PropertyHash();
     for (QString &property : info.keys()) {
