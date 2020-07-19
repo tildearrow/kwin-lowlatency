@@ -1,7 +1,3 @@
-# HUGE NOTE
-
-**Manjaro uses Plasma 5.18. please read below.**
-
 # KWin-lowlatency
 
 KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
@@ -75,8 +71,6 @@ the reason why only up to 8ms is because any further would leave little room for
 
 [kwin-lowlatency is available in the AUR](https://aur.archlinux.org/packages/kwin-lowlatency).
 
-**if you are using Manjaro, please read below.**
-
 ## Fedora
 
 ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracloud.org/coprs/zawertun/kde/package/kwin-lowlatency/).
@@ -87,13 +81,7 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 ## Manjaro
 
-**yes, you are in the right place.**
-
-Manjaro has not updated to Plasma 5.19 yet, which means you have to use the previous version.
-
-I have made a [special repository](https://github.com/tildearrow/kwin-lowlatency-manjaro) with the PKGBUILD for Manjaro users.
-
-this means you will have to build the package manually (i.e. cannot use Pamac), but I hope this is not a problem.
+Manjaro has updated to Plasma 5.19 now. please follow the Arch Linux instructions.
 
 ## NixOS
 
@@ -229,10 +217,6 @@ KWin-lowlatency introduces few extra options in System Settings > Display and Mo
 
 update Plasma to 5.19 before building.
 this might include going back to vanilla KWin for the purpose of building the package.
-
-> I get a similar error but this time it fails on 'setWaylandDisplay'
-
-hi Manjaro user. i told you to read the Manjaro instructions, silly.
 
 > what's this "Paint cursor" effect in Desktop Effects?
 
