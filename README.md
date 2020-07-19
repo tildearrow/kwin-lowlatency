@@ -83,9 +83,8 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 ## Manjaro
 
-I have made a [special repository](https://github.com/tildearrow/kwin-lowlatency-manjaro) with the PKGBUILD for Manjaro users.
-
-this means you will have to build the package manually (i.e. cannot use Pamac), but I hope this is not a problem.
+Manjaro has updated to Plasma 5.19 and therefore the special Manjaro PKGBUILD is not needed anymore.
+follow the Arch Linux instructions.
 
 ## NixOS
 
