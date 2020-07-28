@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-13 03:54+0200\n"
-"PO-Revision-Date: 2020-06-24 08:02\n"
+"POT-Creation-Date: 2020-07-16 07:43+0200\n"
+"PO-Revision-Date: 2020-07-14 08:57\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -39,7 +39,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-china@kde.org"
 
-#: abstract_client.cpp:2644
+#: abstract_client.cpp:2650
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"

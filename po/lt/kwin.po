@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-13 03:54+0200\n"
+"POT-Creation-Date: 2020-07-16 07:43+0200\n"
 "PO-Revision-Date: 2020-03-18 15:37+0200\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -30,7 +30,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "rch@richard.eu.org,dgvirtual@akl.lt, <>"
 
-#: abstract_client.cpp:2644
+#: abstract_client.cpp:2650
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
