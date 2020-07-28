@@ -549,7 +549,7 @@ public:
     void setupWindowRules(bool ignore_temporary);
     void evaluateWindowRules();
     virtual void applyWindowRules();
-    virtual void takeFocus() = 0;
+    virtual bool takeFocus() = 0;
     virtual bool wantsInput() const = 0;
     /**
      * Whether a dock window wants input.
@@ -926,6 +926,7 @@ protected:
     void setIcon(const QIcon &icon);
     void startAutoRaise();
     void autoRaise();
+    bool isMostRecentlyRaised() const;
     /**
      * Whether the window accepts focus.
      * The difference to wantsInput is that the implementation should not check rules and return
