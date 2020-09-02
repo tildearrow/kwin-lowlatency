@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-06-26 07:46+0200\n"
-"PO-Revision-Date: 2020-07-14 08:57\n"
+"PO-Revision-Date: 2020-08-12 20:42\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -37,17 +37,17 @@ msgstr "kde-china@kde.org"
 #: kcmrules.cpp:42
 #, kde-format
 msgid "Window Rules"
-msgstr ""
+msgstr "窗口规则"
 
 #: kcmrules.cpp:46
 #, kde-format
 msgid "Ismael Asensio"
-msgstr ""
+msgstr "Ismael Asensio"
 
 #: kcmrules.cpp:47
 #, kde-format
 msgid "Author"
-msgstr ""
+msgstr "作者"
 
 #: kcmrules.cpp:51
 #, kde-format
@@ -199,7 +199,7 @@ msgstr ""
 #: package/contents/ui/FileDialogLoader.qml:28
 #, kde-format
 msgid "Select File"
-msgstr ""
+msgstr "选择文件"
 
 #: package/contents/ui/FileDialogLoader.qml:40
 #, kde-format
@@ -209,7 +209,7 @@ msgstr "KWin 规则 (*.kwinrule)"
 #: package/contents/ui/OptionsComboBox.qml:46
 #, kde-format
 msgid "None selected"
-msgstr ""
+msgstr "未选中"
 
 #: package/contents/ui/OptionsComboBox.qml:51
 #, kde-format
