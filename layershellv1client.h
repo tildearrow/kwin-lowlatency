@@ -48,6 +48,7 @@ public:
 protected:
     Layer belongsToLayer() const override;
     bool acceptsFocus() const override;
+    bool shouldUnredirect() const override { return false; }
     void requestGeometry(const QRect &rect) override;
     void addDamage(const QRegion &region) override;
 

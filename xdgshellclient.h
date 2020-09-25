@@ -63,6 +63,7 @@ public:
     virtual void installPlasmaShellSurface(KWaylandServer::PlasmaShellSurfaceInterface *shellSurface) = 0;
 
 protected:
+    bool shouldUnredirect() const override { return false; }
     void requestGeometry(const QRect &rect) override;
     void addDamage(const QRegion &damage) override;
 

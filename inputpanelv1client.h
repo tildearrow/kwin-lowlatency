@@ -35,6 +35,7 @@ public:
     bool isResizable() const override { return false; }
     bool isMovable() const override { return false; }
     bool isMovableAcrossScreens() const override { return false; }
+    bool shouldUnredirect() const override { return false; }
     bool acceptsFocus() const override { return false; }
     void closeWindow() override {}
     bool takeFocus() override { return false; }
