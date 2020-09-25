@@ -107,6 +107,9 @@ private:
     bool m_haveINTELSwapEvent = false;
     bool haveSwapInterval = false;
     bool haveWaitSync = false;
+    bool useHorribleHack = false;
+    bool useWaitSync = false;
+    bool hopeBest = false;
     Display *m_x11Display;
     SwapProfiler m_swapProfiler;
     friend class GlxTexture;

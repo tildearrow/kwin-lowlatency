@@ -21,13 +21,16 @@ The best way to test changes in KWin is through using the nested KWin Wayland in
 
 To start a nested KWin Wayland use:
 
-    cd build
-    cd bin
-    QT_PLUGIN_PATH=`pwd` dbus-run-session ./kwin_wayland --xwayland --socket=wayland-1
+```
+cd build
+QT_PLUGIN_PATH="$PWD/bin" dbus-run-session ./bin/kwin_wayland --xwayland --socket=wayland-1
+```
 
 The socket option is not required if KWin is started from an X11 session. On Wayland of course a socket not matching the session's socket must be chosen. To show windows in the nested KWin adjust the environment variables DISPLAY (for X11 windows) and WAYLAND_DISPLAY (for Wayland windows). Alternatively it's possible to pass applications to launch as command line arguments to kwin_wayland command. E.g.
 
-    QT_PLUGIN_PATH=`pwd` dbus-run-session ./kwin_wayland --xwayland --socket=wayland-1 konsole
+```
+QT_PLUGIN_PATH="$PWD/bin" dbus-run-session ./bin/kwin_wayland --xwayland --socket=wayland-1 konsole
+```
 
 Will start a konsole in the nested KWin.
 
@@ -47,9 +50,10 @@ The nested setup only works for the X11 and Wayland platform plugins. Changes in
 
 KWin for the X11 windowing system cannot be tested with a nested Wayland setup. Instead the common way is to run KWin and replace the existing window manager of the X session:
 
-    cd build
-    cd bin
-    QT_PLUGIN_PATH=`pwd` ./kwin_x11 --replace
+```
+cd build
+QT_PLUGIN_PATH="$PWD/bin" ./bin/kwin_x11 --replace
+```
 
 In this case also the current DBus session should be used and dbus-run-session should not be used. Of course it's only possible to start kwin_x11 in an X session. On Wayland kwin_x11 will refuse to start.
 

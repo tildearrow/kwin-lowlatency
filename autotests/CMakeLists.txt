@@ -181,6 +181,7 @@ set(testScriptedEffectLoader_SRCS
 kconfig_add_kcfg_files(testScriptedEffectLoader_SRCS ../settings.kcfgc)
 add_executable(testScriptedEffectLoader ${testScriptedEffectLoader_SRCS})
 
+target_compile_definitions(testScriptedEffectLoader PUBLIC KWINLL_NO_OPTIONS)
 target_link_libraries(testScriptedEffectLoader
     Qt5::Concurrent
     Qt5::Qml

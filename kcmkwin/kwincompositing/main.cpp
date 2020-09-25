@@ -15,6 +15,7 @@
 #include <QAction>
 #include <QApplication>
 #include <QLayout>
+#include <QSpinBox>
 
 #include <kcmodule.h>
 #include <kservice.h>
@@ -100,6 +101,7 @@ void KWinCompositingKCM::reenableGl()
 void KWinCompositingKCM::init()
 {
     auto currentIndexChangedSignal = static_cast<void(QComboBox::*)(int)>(&QComboBox::currentIndexChanged);
+    auto valueChangedSignal = static_cast<void(QSpinBox::*)(int)>(&QSpinBox::valueChanged);
 
     // animation speed
     m_form.animationDurationFactor->setMaximum(s_animationMultipliers.size() - 1);

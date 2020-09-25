@@ -170,6 +170,8 @@ public:
     bool isOutline() const override {
         return m_wasOutline;
     }
+protected:
+    bool shouldUnredirect() const override;
 
 private Q_SLOTS:
     void mainClientClosed(KWin::Toplevel *client);

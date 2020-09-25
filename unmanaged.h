@@ -43,6 +43,7 @@ public:
 public Q_SLOTS:
     void release(ReleaseReason releaseReason = ReleaseReason::Release);
 protected:
+    bool shouldUnredirect() const override;
     void addDamage(const QRegion &damage) override;
 private:
     ~Unmanaged() override; // use release()

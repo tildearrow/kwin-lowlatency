@@ -43,6 +43,7 @@
 #include "magnifier/magnifier.h"
 #include "mouseclick/mouseclick.h"
 #include "mousemark/mousemark.h"
+#include "mousepos/mousepos.h"
 #include "sheet/sheet.h"
 #include "snaphelper/snaphelper.h"
 #include "startupfeedback/startupfeedback.h"
@@ -367,6 +368,21 @@ EFFECT_FALLBACK
         false,
 #ifdef EFFECT_BUILTINS
         &createHelper<MouseMarkEffect>,
+        nullptr,
+        nullptr
+#endif
+EFFECT_FALLBACK
+    }, {
+        QStringLiteral("mousepos"),
+        i18ndc("kwin_effects", "Name of a KWin Effect", "Paint cursor"),
+        i18ndc("kwin_effects", "Comment describing the KWin Effect", "Redraw the mouse cursor for capturing the display using kmsgrab in FFmpeg"),
+        QStringLiteral("Tools"),
+        QString(),
+        QUrl(),
+        false,
+        false,
+#ifdef EFFECT_BUILTINS
+        &createHelper<MousePosEffect>,
         nullptr,
         nullptr
 #endif

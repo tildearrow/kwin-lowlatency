@@ -163,6 +163,7 @@ class KWIN_EXPORT Options : public QObject
     Q_PROPERTY(int compositingMode READ compositingMode WRITE setCompositingMode NOTIFY compositingModeChanged)
     Q_PROPERTY(bool useCompositing READ isUseCompositing WRITE setUseCompositing NOTIFY useCompositingChanged)
     Q_PROPERTY(int hiddenPreviews READ hiddenPreviews WRITE setHiddenPreviews NOTIFY hiddenPreviewsChanged)
+    Q_PROPERTY(bool unredirectFullscreen READ isUnredirectFullscreen WRITE setUnredirectFullscreen NOTIFY unredirectFullscreenChanged)
     /**
      * 0 = no, 1 = yes when transformed,
      * 2 = try trilinear when transformed; else 1,
@@ -545,6 +546,7 @@ public:
     HiddenPreviews hiddenPreviews() const {
         return m_hiddenPreviews;
     }
+    bool isUnredirectFullscreen() const;
     // OpenGL
     // 0 = no, 1 = yes when transformed,
     // 2 = try trilinear when transformed; else 1,
@@ -589,6 +591,23 @@ public:
     {
         return m_windowsBlockCompositing;
     }
+    
+    int animationCurve() const {
+      return m_animationCurve;
+    }
+    int latencyControl() const {
+      return m_latencyControl;
+    }
+    int maxLatency() const {
+      return m_maxLatency;
+    }
+    int minLatency() const {
+      return m_minLatency;
+    }
+    int vsyncMechanism() const {
+      return m_vsyncMechanism;
+    }
+
 
     QStringList modifierOnlyDBusShortcut(Qt::KeyboardModifier mod) const;
 
@@ -640,6 +659,7 @@ public:
     void setCompositingMode(int compositingMode);
     void setUseCompositing(bool useCompositing);
     void setHiddenPreviews(int hiddenPreviews);
+    void setUnredirectFullscreen(bool unredirectFullscreen);
     void setGlSmoothScale(int glSmoothScale);
     void setXrenderSmoothScale(bool xrenderSmoothScale);
     void setMaxFpsInterval(qint64 maxFpsInterval);
@@ -651,6 +671,11 @@ public:
     void setGlPreferBufferSwap(char glPreferBufferSwap);
     void setGlPlatformInterface(OpenGLPlatformInterface interface);
     void setWindowsBlockCompositing(bool set);
+    void setAnimationCurve(int curve);
+    void setLatencyControl(int index);
+    void setMaxLatency(int val);
+    void setMinLatency(int val);
+    void setVsyncMechanism(int val);
 
     // default values
     static WindowOperation defaultOperationTitlebarDblClick() {
@@ -722,6 +747,9 @@ public:
     static HiddenPreviews defaultHiddenPreviews() {
         return HiddenPreviewsShown;
     }
+    static bool defaultUnredirectFullscreen() {
+        return true;
+    }
     static int defaultGlSmoothScale() {
         return 2;
     }
@@ -760,6 +788,21 @@ public:
     }
     static int defaultXwaylandMaxCrashCount() {
         return 3;
+    }
+    static int defaultAnimationCurve() {
+      return 2;
+    }
+    static int defaultLatencyControl() {
+      return 1;
+    }
+    static int defaultMaxLatency() {
+      return 8;
+    }
+    static int defaultMinLatency() {
+      return 0;
+    }
+    static int defaultVsyncMechanism() {
+      return 0;
     }
     /**
      * Performs loading all settings except compositing related.
@@ -824,6 +867,7 @@ Q_SIGNALS:
     void compositingModeChanged();
     void useCompositingChanged();
     void hiddenPreviewsChanged();
+    void unredirectFullscreenChanged();
     void glSmoothScaleChanged();
     void xrenderSmoothScaleChanged();
     void maxFpsIntervalChanged();
@@ -836,6 +880,11 @@ Q_SIGNALS:
     void glPlatformInterfaceChanged();
     void windowsBlockCompositingChanged();
     void animationSpeedChanged();
+    void animationCurveChanged();
+    void latencyControlChanged();
+    void maxLatencyChanged();
+    void minLatencyChanged();
+    void vsyncMechanismChanged();
 
     void configChanged();
 
@@ -869,6 +918,7 @@ private:
     CompositingType m_compositingMode;
     bool m_useCompositing;
     HiddenPreviews m_hiddenPreviews;
+    bool m_unredirectFullscreen;
     int m_glSmoothScale;
     bool m_xrenderSmoothScale;
     qint64 m_maxFpsInterval;
@@ -881,6 +931,11 @@ private:
     GlSwapStrategy m_glPreferBufferSwap;
     OpenGLPlatformInterface m_glPlatformInterface;
     bool m_windowsBlockCompositing;
+    int m_animationCurve;
+    int m_latencyControl;
+    int m_maxLatency;
+    int m_minLatency;
+    int m_vsyncMechanism;
 
     WindowOperation OpTitlebarDblClick;
     WindowOperation opMaxButtonRightClick = defaultOperationMaxButtonRightClick();

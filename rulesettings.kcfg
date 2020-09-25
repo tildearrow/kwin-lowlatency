@@ -328,6 +328,15 @@
       <default code="true">Rules::UnusedForceRule</default>
     </entry>
 
+    <entry name="allowunredirect" type="Bool">
+      <label>Full-screen unredirection</label>
+      <default>false</default>
+    </entry>
+    <entry name="allowunredirectrule" type="Int">
+      <label>Full-screen unredirection rule type</label>
+      <default code="true">Rules::UnusedForceRule</default>
+    </entry>
+
     <entry name="fsplevel" type="Int">
       <label>Focus stealing prevention</label>
       <default>0</default>

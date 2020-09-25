@@ -555,4 +555,9 @@ void InternalClient::updateInternalWindowGeometry()
     commitGeometry(clientRectToFrameRect(m_internalWindow->geometry()));
 }
 
+bool InternalClient::shouldUnredirect() const
+{
+    return false;
+}
+
 }

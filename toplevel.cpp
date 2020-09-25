@@ -25,6 +25,8 @@
 
 #include <QDebug>
 
+#include <unistd.h>
+
 namespace KWin
 {
 
@@ -292,6 +294,7 @@ bool Toplevel::setupCompositing()
     effect_window = new EffectWindowImpl(this);
 
     Compositor::self()->scene()->addToplevel(this);
+    Compositor::self()->checkUnredirect(true);
 
     return true;
 }
@@ -300,6 +303,7 @@ void Toplevel::finishCompositing(ReleaseReason releaseReason)
 {
     if (kwinApp()->operationMode() == Application::OperationModeX11 && damage_handle == XCB_NONE)
         return;
+    Compositor::self()->checkUnredirect(true);
     if (effect_window->window() == this) { // otherwise it's already passed to Deleted, don't free data
         discardWindowPixmap();
         delete effect_window;
@@ -816,6 +820,46 @@ QMargins Toplevel::bufferMargins() const
 QMargins Toplevel::frameMargins() const
 {
     return QMargins();
+}
+
+bool Toplevel::updateUnredirectedState()
+{
+    assert(compositing());
+    bool should = options->isUnredirectFullscreen() && shouldUnredirect() && !unredirectSuspend &&
+                  !shape() && !hasAlpha() && opacity() == 1.0 &&
+                  !static_cast<EffectsHandlerImpl*>(effects)->activeFullScreenEffect();
+    if (should) {
+      if (Screens::self()->count()<2) {
+        usleep(50000);
+      }
+    }
+    if (should == unredirect)
+        return false;
+    static QElapsedTimer lastUnredirect;
+    static const qint64 msecRedirectInterval = 100;
+    if (!lastUnredirect.hasExpired(msecRedirectInterval)) {
+        QTimer::singleShot(msecRedirectInterval, Compositor::self(), static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
+        return false;
+    }
+    lastUnredirect.start();
+    unredirect = should;
+    if (unredirect) {
+        qCDebug(KWIN_CORE) << "Unredirecting:" << this;
+        xcb_composite_unredirect_window(connection(), frameId(), XCB_COMPOSITE_REDIRECT_MANUAL);
+    } else {
+        qCDebug(KWIN_CORE) << "Redirecting:" << this;
+        xcb_composite_redirect_window(connection(), frameId(), XCB_COMPOSITE_REDIRECT_MANUAL);
+        discardWindowPixmap();
+    }
+    return true;
+}
+
+void Toplevel::suspendUnredirect(bool suspend)
+{
+    if (unredirectSuspend == suspend)
+        return;
+    unredirectSuspend = suspend;
+    Compositor::self()->checkUnredirect();
 }
 
 } // namespace
