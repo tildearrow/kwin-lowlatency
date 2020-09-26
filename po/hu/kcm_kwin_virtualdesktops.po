@@ -1,0 +1,133 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Tamas Szanto <tszanto@interware.hu>, 2007.
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2012, 2014, 2019.
+# Balázs Úr <urbalazs@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE 4.0\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2019-11-23 22:29+0100\n"
+"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.03.70\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kiszel Kristóf"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ulysses@kubuntu.org"
+
+#: desktopsmodel.cpp:455
+#, kde-format
+msgid "There was an error connecting to the compositor."
+msgstr "Hiba történt a kompozitorhoz csatlakozás során."
+
+#: desktopsmodel.cpp:657
+#, kde-format
+msgid "There was an error saving the settings to the compositor."
+msgstr "Hiba történt a kompozitor beállításainak mentése során."
+
+#: desktopsmodel.cpp:660
+#, kde-format
+msgid "There was an error requesting information from the compositor."
+msgstr "Hiba történt a kompozitortól történi információlekérés során."
+
+#: package/contents/ui/main.qml:18
+#, kde-format
+msgid ""
+"This module lets you configure the navigation, number and layout of virtual "
+"desktops."
+msgstr ""
+"Ebben a modulban állíthatja be a virtuális asztalok számát, elrendezését és "
+"az azok közötti navigációt."
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Rename"
+msgstr "Átnevezés"
+
+#: package/contents/ui/main.qml:78
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: package/contents/ui/main.qml:104
+#, kde-format
+msgid ""
+"Virtual desktops have been changed outside this settings application. Saving "
+"now will overwrite the changes."
+msgstr ""
+"A virtuális asztalok beállítását a modul hatáskörén kívül módosították. A "
+"mentés felül fogja írni ezeket a változtatásokat."
+
+#: package/contents/ui/main.qml:118
+#, kde-format
+msgid "Row %1"
+msgstr "%1. sor"
+
+#: package/contents/ui/main.qml:131
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: package/contents/ui/main.qml:134
+#, kde-format
+msgid "New Desktop"
+msgstr "Új asztal"
+
+#: package/contents/ui/main.qml:148
+#, kde-format
+msgid "1 Row"
+msgid_plural "%1 Rows"
+msgstr[0] "1 sor"
+msgstr[1] "%1 sor"
+
+#: package/contents/ui/main.qml:160
+#, kde-format
+msgid "Options:"
+msgstr "Beállítások:"
+
+#: package/contents/ui/main.qml:162
+#, kde-format
+msgid "Navigation wraps around"
+msgstr "Körkörös navigáció"
+
+#: package/contents/ui/main.qml:177
+#, kde-format
+msgid "Show animation when switching:"
+msgstr "Animáció váltáskor:"
+
+#: package/contents/ui/main.qml:220
+#, kde-format
+msgid "Show on-screen display when switching:"
+msgstr "Miniatűr megjelenítése váltáskor:"
+
+#: package/contents/ui/main.qml:238
+#, kde-format
+msgid "%1 ms"
+msgstr "%1 ms"
+
+#: package/contents/ui/main.qml:256
+#, kde-format
+msgid "Show desktop layout indicators"
+msgstr "Asztalelrendezés-jelzők megjelenítése"
+
+#: virtualdesktops.cpp:30
+#, kde-format
+msgid "Virtual Desktops"
+msgstr "Virtuális asztalok"

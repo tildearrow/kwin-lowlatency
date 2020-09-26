@@ -1,0 +1,220 @@
+# Translation of kcmkwincompositing into Japanese.
+# This file is distributed under the same license as the kdebase package.
+# Yukiko Bando <ybando@k6.dion.ne.jp>, 2007, 2008, 2009, 2010.
+# Fuminobu TAKEYAMA <ftake@geeko.jp>, 2015.
+# TAKANO Yuji <takachan@running-dog.net>, 2015.
+# Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwincompositing\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2015-05-22 22:20-0700\n"
+"Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
+"Language-Team: Japanese <kde-jp@kde.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. i18n: ectx: property (text), widget (KMessageWidget, glCrashedWarning)
+#: compositing.ui:32
+#, kde-format
+msgid ""
+"OpenGL compositing (the default) has crashed KWin in the past.\n"
+"This was most likely due to a driver bug.\n"
+"If you think that you have meanwhile upgraded to a stable driver,\n"
+"you can reset this protection but be aware that this might result in an "
+"immediate crash!\n"
+"Alternatively, you might want to use the XRender backend instead."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KMessageWidget, scaleWarning)
+#: compositing.ui:45
+#, kde-format
+msgid ""
+"Scale method \"Accurate\" is not supported by all hardware and can cause "
+"performance regressions and rendering artifacts."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KMessageWidget, windowThumbnailWarning)
+#: compositing.ui:68
+#, kde-format
+msgid ""
+"Keeping the window thumbnail always interferes with the minimized state of "
+"windows. This can result in windows not suspending their work when minimized."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Enabled)
+#: compositing.ui:80
+#, kde-format
+msgid "Enable compositor on startup"
+msgstr "コンポジタを起動時に有効にする"
+
+#. i18n: ectx: property (text), widget (QLabel, animationSpeedLabel)
+#: compositing.ui:87
+#, kde-format
+msgid "Animation speed:"
+msgstr "アニメーションの速度:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: compositing.ui:124
+#, kde-format
+msgid "Very slow"
+msgstr "非常に遅く"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: compositing.ui:144
+#, kde-format
+msgid "Instant"
+msgstr "即時"
+
+#. i18n: ectx: property (text), widget (QLabel, scaleMethodLabel)
+#: compositing.ui:156
+#, kde-format
+msgid "Scale method:"
+msgstr "拡大方法:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_XRenderSmoothScale)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:166 compositing.ui:180
+#, kde-format
+msgid "Crisp"
+msgstr "鮮明"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_XRenderSmoothScale)
+#: compositing.ui:171
+#, kde-format
+msgid "Smooth (slower)"
+msgstr "スムーズ (低速)"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:185
+#, kde-format
+msgid "Smooth"
+msgstr "スムーズ"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:190
+#, kde-format
+msgid "Accurate"
+msgstr "正確"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: compositing.ui:207
+#, kde-format
+msgid "Rendering backend:"
+msgstr "レンダリングバックエンド:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: compositing.ui:224
+#, kde-format
+msgid "Tearing prevention (\"vsync\"):"
+msgstr "ティアリング防止 (\"vsync\"):"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:232 compositing.ui:268
+#, kde-format
+msgid "Never"
+msgstr "しない"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:237
+#, kde-format
+msgid "Automatic"
+msgstr "自動"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:242
+#, kde-format
+msgid "Only when cheap"
+msgstr "チープな場合のみ"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:247
+#, kde-format
+msgid "Full screen repaints"
+msgstr "フルスクリーン再描画"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:252
+#, kde-format
+msgid "Re-use screen content"
+msgstr "画面の内容を再利用"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: compositing.ui:260
+#, kde-format
+msgid "Keep window thumbnails:"
+msgstr "ウィンドウのサムネイルを保つ:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:273
+#, kde-format
+msgid "Only for Shown Windows"
+msgstr "表示されているウィンドウのみ"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:278
+#, kde-format
+msgid "Always"
+msgstr "常に"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:288
+#, kde-format
+msgid ""
+"Applications can set a hint to block compositing when the window is open.\n"
+" This brings performance improvements for e.g. games.\n"
+" The setting can be overruled by window-specific rules."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:291
+#, kde-format
+msgid "Allow applications to block compositing"
+msgstr ""
+
+#: main.cpp:80
+#, kde-format
+msgid "Re-enable OpenGL detection"
+msgstr ""
+
+#: main.cpp:132
+#, kde-format
+msgid ""
+"\"Only when cheap\" only prevents tearing for full screen changes like a "
+"video."
+msgstr ""
+
+#: main.cpp:136
+#, kde-format
+msgid "\"Full screen repaints\" can cause performance problems."
+msgstr ""
+
+#: main.cpp:140
+#, kde-format
+msgid ""
+"\"Re-use screen content\" causes severe performance problems on MESA drivers."
+msgstr ""
+
+#: main.cpp:160
+#, kde-format
+msgid "OpenGL 3.1"
+msgstr "OpenGL 3.1"
+
+#: main.cpp:161
+#, kde-format
+msgid "OpenGL 2.0"
+msgstr "OpenGL 2.0"
+
+#: main.cpp:162
+#, kde-format
+msgid "XRender"
+msgstr "XRender"

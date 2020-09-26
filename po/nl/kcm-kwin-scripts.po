@@ -1,0 +1,93 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Freek de Kruijf <f.de.kruijf@gmail.com>, 2012.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2012, 2013, 2017, 2018, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-09-01 02:29+0200\n"
+"PO-Revision-Date: 2020-08-29 22:48+0200\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.08.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Freek de Kruijf - t/m 2020"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "freekdekruijf@kde.nl"
+
+#: module.cpp:38
+#, kde-format
+msgid "KWin Scripts"
+msgstr "KWin-scripts"
+
+#: module.cpp:40
+#, kde-format
+msgid "Configure KWin scripts"
+msgstr "KWin-scripts instellen"
+
+#: module.cpp:43
+#, kde-format
+msgid "Tamás Krutki"
+msgstr "Tamás Krutki"
+
+#: module.cpp:79
+#, kde-format
+msgid "Error when uninstalling KWin Script: %1"
+msgstr "Fout bij installatie ongedaan maken van KWin Script: %1"
+
+#: module.cpp:100
+#, kde-format
+msgid "Import KWin Script"
+msgstr "KWin-script importeren"
+
+#: module.cpp:101
+#, kde-format
+msgid "*.kwinscript|KWin scripts (*.kwinscript)"
+msgstr "*.kwinscript|KWin-scripts (*.kwinscript)"
+
+#: module.cpp:120
+#, kde-format
+msgctxt "Placeholder is error message returned from the install service"
+msgid ""
+"Cannot import selected script.\n"
+"%1"
+msgstr ""
+"Kan geselecteerd script niet importeren.\n"
+"%1"
+
+#: module.cpp:134
+#, kde-format
+msgctxt "Placeholder is name of the script that was imported"
+msgid "The script \"%1\" was successfully imported."
+msgstr "Het script \"%1\" is met succes geïmporteerd."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, Module)
+#: module.ui:14
+#, kde-format
+msgid "KWin script configuration"
+msgstr "Instellingen van KWin-script"
+
+#. i18n: ectx: property (text), widget (QPushButton, importScriptButton)
+#: module.ui:55
+#, kde-format
+msgid "Install from File..."
+msgstr "Uit bestand installeren..."
+
+#. i18n: ectx: property (text), widget (KNS3::Button, ghnsButton)
+#: module.ui:67
+#, kde-format
+msgid "Get New Scripts..."
+msgstr "Nieuwe scripts ophalen..."

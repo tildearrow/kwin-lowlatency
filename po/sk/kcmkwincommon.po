@@ -1,0 +1,79 @@
+# translation of kcmkwincommon.po to Slovak
+# Roman Paholik <wizzardsk@gmail.com>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwincommon\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2019-01-10 21:36+0100\n"
+"Last-Translator: iRoman Paholík <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 18.12.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Roman Paholík"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "wizzardsk@gmail.com"
+
+#: effectsmodel.cpp:51
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Accessibility"
+msgstr "Prístupnosť"
+
+#: effectsmodel.cpp:52
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Appearance"
+msgstr "Vzhľad"
+
+#: effectsmodel.cpp:53
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Focus"
+msgstr "Zameranie"
+
+#: effectsmodel.cpp:54
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Show Desktop Animation"
+msgstr "Zobrazovať animáciu pluchy"
+
+#: effectsmodel.cpp:55
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Tools"
+msgstr "Nástroje"
+
+#: effectsmodel.cpp:56
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Virtual Desktop Switching Animation"
+msgstr "Animácia prepínania virtuálnych plôch"
+
+#: effectsmodel.cpp:57
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Window Management"
+msgstr "Správa okien"
+
+#: effectsmodel.cpp:58
+#, kde-format
+msgctxt "Category of Desktop Effects, used as section header"
+msgid "Window Open/Close Animation"
+msgstr "Animácia otvorenia/zatvorenia okna"
+
+#: effectsmodel.cpp:226
+#, kde-format
+msgid "KWin development team"
+msgstr "Vývojový tím KWin"

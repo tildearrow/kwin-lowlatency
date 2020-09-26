@@ -1,0 +1,863 @@
+# translation of kcmkwinrules.po to Estonian
+# Copyright (C) 2004 Free Software Foundation, Inc.
+#
+# Marek Laane <bald@smail.ee>, 2004-2005,2007-2008.
+# Marek Laane <bald@smail.ee>, 2009, 2010, 2011, 2012, 2014, 2016, 2019, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwinrules\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2020-06-05 22:36+0300\n"
+"Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
+"Language-Team: Estonian <kde-et@lists.linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.12.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Marek Laane"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "qiilaq69@gmail.com"
+
+#: kcmrules.cpp:28
+#, kde-format
+msgid "Window Rules"
+msgstr "Aknareeglid"
+
+#: kcmrules.cpp:32
+#, kde-format
+msgid "Ismael Asensio"
+msgstr "Ismael Asensio"
+
+#: kcmrules.cpp:33
+#, kde-format
+msgid "Author"
+msgstr "Autor"
+
+#: kcmrules.cpp:37
+#, kde-format
+msgid ""
+"<p><h1>Window-specific Settings</h1> Here you can customize window settings "
+"specifically only for some windows.</p> <p>Please note that this "
+"configuration will not take effect if you do not use KWin as your window "
+"manager. If you do use a different window manager, please refer to its "
+"documentation for how to customize window behavior.</p>"
+msgstr ""
+"<p><h1>Akende spetsiifilised seadistused</h1> Siin saab muuta asju, mis "
+"kehtivad konkreetselt ainult teatud akende puhul.</p> <p>Palun arvesta, et "
+"siin määratu ei avalda mingit mõju, kui sa ei kasuta aknahaldurina KWini. "
+"Kui kasutad mõnda muud aknahaldurit, uuri selle dokumentatsioonist, kuidas "
+"akende käitumist muuta.</p>"
+
+#: main.cpp:91
+#, kde-format
+msgid "Application settings for %1"
+msgstr "%1 rakenduse seadistused"
+
+#: main.cpp:111 rulesmodel.cpp:216
+#, kde-format
+msgid "Window settings for %1"
+msgstr "%1 akna seadistused"
+
+#: main.cpp:163
+#, kde-format
+msgctxt "Window caption for the application wide rules dialog"
+msgid "Edit Application-Specific Settings"
+msgstr "Rakenduse spetsiifiliste seadistuste muutmine"
+
+#: main.cpp:194
+#, kde-format
+msgid "KWin"
+msgstr "KWin"
+
+#: main.cpp:201
+#, kde-format
+msgid "KWin helper utility"
+msgstr "KWin'i abiutiliit"
+
+#: main.cpp:202
+#, kde-format
+msgid "KWin id of the window for special window settings."
+msgstr "Akna KWini ID akende spetsiaalsetele seadistustele."
+
+#: main.cpp:203
+#, kde-format
+msgid "Whether the settings should affect all windows of the application."
+msgstr "Kas seadistused peavad mõjutama rakenduse kõiki aknaid."
+
+#: main.cpp:212
+#, kde-format
+msgid "This helper utility is not supposed to be called directly."
+msgstr "See abiutiliit ei ole mõeldud otseseks väljakutsumiseks."
+
+#: optionsmodel.cpp:145
+#, kde-format
+msgid "Unimportant"
+msgstr "Ebaoluline"
+
+#: optionsmodel.cpp:146
+#, kde-format
+msgid "Exact Match"
+msgstr "Täpne sobivus"
+
+#: optionsmodel.cpp:147
+#, kde-format
+msgid "Substring Match"
+msgstr "Alamstringi sobivus"
+
+#: optionsmodel.cpp:148
+#, kde-format
+msgid "Regular Expression"
+msgstr "Regulaaravaldis"
+
+#: optionsmodel.cpp:153
+#, kde-format
+msgid "Do Not Affect"
+msgstr "Ei mõjuta"
+
+#: optionsmodel.cpp:154
+#, kde-format
+msgid ""
+"The window property will not be affected and therefore the default handling "
+"for it will be used.\n"
+"Specifying this will block more generic window settings from taking effect."
+msgstr ""
+"Akna omadust ei mõjutata ja seepärast kasutatakse selle korral vaikimisi "
+"käitlemist.\n"
+"Selle määramise korral tõkestatakse üldisemate aknaseadistuste rakendamine."
+
+#: optionsmodel.cpp:157
+#, kde-format
+msgid "Apply Initially"
+msgstr "Rakendatakse algselt"
+
+#: optionsmodel.cpp:158
+#, kde-format
+msgid ""
+"The window property will be only set to the given value after the window is "
+"created.\n"
+"No further changes will be affected."
+msgstr ""
+"Akna omadus määratakse määratud väärtusele alles pärast akna loomist.\n"
+"Edasisi muutusi see ei mõjuta."
+
+#: optionsmodel.cpp:161
+#, kde-format
+msgid "Remember"
+msgstr "Jäetakse meelde"
+
+#: optionsmodel.cpp:162
+#, kde-format
+msgid ""
+"The value of the window property will be remembered and, every time the "
+"window is created, the last remembered value will be applied."
+msgstr ""
+"Akna omaduse väärtus jäetakse meelde ja iga kord, kui aken luuakse, "
+"rakendatakse viimast meelde jäetud väärtust."
+
+#: optionsmodel.cpp:165
+#, kde-format
+msgid "Force"
+msgstr "Sunnitakse peale"
+
+#: optionsmodel.cpp:166
+#, kde-format
+msgid "The window property will be always forced to the given value."
+msgstr "Akna omadus sunnitakse alati määratud väärtust kasutama."
+
+#: optionsmodel.cpp:168
+#, kde-format
+msgid "Apply Now"
+msgstr "Rakendatakse kohe"
+
+#: optionsmodel.cpp:169
+#, kde-format
+msgid ""
+"The window property will be set to the given value immediately and will not "
+"be affected later\n"
+"(this action will be deleted afterwards)."
+msgstr ""
+"Akna omadusele määratakse määratud väärtus kohe ja seda ei mõjutata hiljem\n"
+"(toiming hiljem kustutatakse)"
+
+#: optionsmodel.cpp:172
+#, kde-format
+msgid "Force Temporarily"
+msgstr "Sunnitakse ajutiselt peale"
+
+#: optionsmodel.cpp:173
+#, kde-format
+msgid ""
+"The window property will be forced to the given value until it is hidden\n"
+"(this action will be deleted after the window is hidden)."
+msgstr ""
+"Akna omadus sunnitakse määratud väärtust kasutama, kuni aken peidetakse\n"
+"(toiming kustutatakse, kui aken on peidetud)"
+
+#: package/contents/ui/FileDialogLoader.qml:14
+#, kde-format
+msgid "Select File"
+msgstr "Faili valimine"
+
+#: package/contents/ui/FileDialogLoader.qml:26
+#, kde-format
+msgid "KWin Rules (*.kwinrule)"
+msgstr "KWini reegel (*.kwinrule)"
+
+#: package/contents/ui/OptionsComboBox.qml:32
+#, kde-format
+msgid "None selected"
+msgstr "Midagi pole valitud"
+
+#: package/contents/ui/OptionsComboBox.qml:37
+#, kde-format
+msgid "All selected"
+msgstr "Kõik on valitud"
+
+#: package/contents/ui/OptionsComboBox.qml:39
+#, kde-format
+msgid "%1 selected"
+msgid_plural "%1 selected"
+msgstr[0] "%1 on valitud"
+msgstr[1] "%1 on valitud"
+
+#: package/contents/ui/RulesEditor.qml:48
+#: package/contents/ui/RulesEditor.qml:67
+#, kde-format
+msgid "Add Properties..."
+msgstr "Lisa omadusi ..."
+
+#: package/contents/ui/RulesEditor.qml:67
+#, kde-format
+msgid "Close"
+msgstr "Sulge"
+
+#: package/contents/ui/RulesEditor.qml:80
+#, kde-format
+msgid "Detect Window Properties"
+msgstr "Akna omaduste tuvastamine"
+
+#: package/contents/ui/RulesEditor.qml:93
+#, kde-format
+msgid "Instantly"
+msgstr "Kohe"
+
+#: package/contents/ui/RulesEditor.qml:94
+#, kde-format
+msgid "After %1 second"
+msgid_plural "After %1 seconds"
+msgstr[0] "%1 sekundi järel"
+msgstr[1] "%1 sekundi järel"
+
+#: package/contents/ui/RulesEditor.qml:113
+#, kde-format
+msgid "Select properties"
+msgstr "Omaduste valimine"
+
+#: package/contents/ui/RulesEditor.qml:205
+#: package/contents/ui/ValueEditor.qml:53
+#, kde-format
+msgid "Yes"
+msgstr "Jah"
+
+#: package/contents/ui/RulesEditor.qml:205
+#: package/contents/ui/ValueEditor.qml:59
+#, kde-format
+msgid "No"
+msgstr "Ei"
+
+#: package/contents/ui/RulesEditor.qml:207
+#: package/contents/ui/ValueEditor.qml:127
+#: package/contents/ui/ValueEditor.qml:134
+#, kde-format
+msgid "%1 %"
+msgstr "%1 %"
+
+#: package/contents/ui/RulesEditor.qml:209
+#, kde-format
+msgctxt "Coordinates (x, y)"
+msgid "(%1, %2)"
+msgstr "(%1, %2)"
+
+#: package/contents/ui/RulesEditor.qml:211
+#, kde-format
+msgctxt "Size (width, height)"
+msgid "(%1, %2)"
+msgstr "(%1, %2)"
+
+#: package/contents/ui/RulesList.qml:59
+#, kde-format
+msgid "No rules for specific windows are currently set"
+msgstr "Konkreetsetele akendele ei ole praegu reegleid määratud"
+
+#: package/contents/ui/RulesList.qml:67
+#, kde-format
+msgid "Select the rules to export"
+msgstr "Vali eksporditavad reeglid"
+
+#: package/contents/ui/RulesList.qml:71
+#, kde-format
+msgid "Unselect All"
+msgstr "Tühista kõigi valimine"
+
+#: package/contents/ui/RulesList.qml:71
+#, kde-format
+msgid "Select All"
+msgstr "Vali kõik"
+
+#: package/contents/ui/RulesList.qml:85
+#, kde-format
+msgid "Save Rules"
+msgstr "Reeglite salvestamine"
+
+#: package/contents/ui/RulesList.qml:96
+#, kde-format
+msgid "Add New..."
+msgstr "Lisa uus ..."
+
+#: package/contents/ui/RulesList.qml:107
+#, kde-format
+msgid "Import..."
+msgstr "Impordi ..."
+
+#: package/contents/ui/RulesList.qml:115
+#, kde-format
+msgid "Cancel Export"
+msgstr "Katkesta eksport"
+
+#: package/contents/ui/RulesList.qml:115
+#, kde-format
+msgid "Export..."
+msgstr "Ekspordi ..."
+
+#: package/contents/ui/RulesList.qml:196
+#, kde-format
+msgid "Edit"
+msgstr "Muuda"
+
+#: package/contents/ui/RulesList.qml:205
+#, kde-format
+msgid "Delete"
+msgstr "&Kustuta"
+
+#: package/contents/ui/RulesList.qml:218
+#, kde-format
+msgid "Import Rules"
+msgstr "Reeglite import"
+
+#: package/contents/ui/RulesList.qml:230
+#, kde-format
+msgid "Export Rules"
+msgstr "Reegli eksport"
+
+#: package/contents/ui/ValueEditor.qml:161
+#, kde-format
+msgctxt "(x, y) coordinates separator in size/position"
+msgid "x"
+msgstr "x"
+
+#: rulesdialog.cpp:28
+#, kde-format
+msgid "Edit Window-Specific Settings"
+msgstr "Akende spetsiifiliste seadistuste muutmine"
+
+#: rulesmodel.cpp:219
+#, kde-format
+msgid "Settings for %1"
+msgstr "%1 seadistused"
+
+#: rulesmodel.cpp:222
+#, kde-format
+msgid "New window settings"
+msgstr "Uue akna seadistused"
+
+#: rulesmodel.cpp:236
+#, kde-format
+msgid ""
+"You have specified the window class as unimportant.\n"
+"This means the settings will possibly apply to windows from all "
+"applications. If you really want to create a generic setting, it is "
+"recommended you at least limit the window types to avoid special window "
+"types."
+msgstr ""
+"Oled määranud akna klassi ebaoluliseks.\n"
+"See tähendab, et seadistused rakenduvad ilmselt kõigi rakenduste akendele. "
+"Kui soovid tõesti luua mingi üldisema seadistuse, oleks soovitav piirata "
+"vähemalt akna tüüpi, et vältida spetsiaalseid akna tüüpe."
+
+#: rulesmodel.cpp:366
+#, kde-format
+msgid "Description"
+msgstr "Kirjeldus"
+
+#: rulesmodel.cpp:366 rulesmodel.cpp:374 rulesmodel.cpp:382 rulesmodel.cpp:389
+#: rulesmodel.cpp:395 rulesmodel.cpp:403 rulesmodel.cpp:408 rulesmodel.cpp:414
+#, kde-format
+msgid "Window matching"
+msgstr "Akende sobivus"
+
+#: rulesmodel.cpp:374
+#, kde-format
+msgid "Window class (application)"
+msgstr "Akna klass (rakendus)"
+
+#: rulesmodel.cpp:382
+#, kde-format
+msgid "Match whole window class"
+msgstr "Kogu akna klassi sobivus"
+
+#: rulesmodel.cpp:389
+#, kde-format
+msgid "Whole window class"
+msgstr "Kogu akna klass"
+
+#: rulesmodel.cpp:395
+#, kde-format
+msgid "Window types"
+msgstr "Akna tüübid"
+
+#: rulesmodel.cpp:403
+#, kde-format
+msgid "Window role"
+msgstr "Akna roll"
+
+#: rulesmodel.cpp:408
+#, kde-format
+msgid "Window title"
+msgstr "Akna tiitel"
+
+#: rulesmodel.cpp:414
+#, kde-format
+msgid "Machine (hostname)"
+msgstr "Masin (masinanimi)"
+
+#: rulesmodel.cpp:420
+#, kde-format
+msgid "Position"
+msgstr "Asukoht"
+
+#: rulesmodel.cpp:420 rulesmodel.cpp:425 rulesmodel.cpp:430 rulesmodel.cpp:435
+#: rulesmodel.cpp:440 rulesmodel.cpp:453 rulesmodel.cpp:467 rulesmodel.cpp:472
+#: rulesmodel.cpp:477 rulesmodel.cpp:482 rulesmodel.cpp:487 rulesmodel.cpp:493
+#: rulesmodel.cpp:502 rulesmodel.cpp:507 rulesmodel.cpp:512
+#, kde-format
+msgid "Size & Position"
+msgstr "Suurus ja asukoht"
+
+#: rulesmodel.cpp:425
+#, kde-format
+msgid "Size"
+msgstr "Suurus"
+
+#: rulesmodel.cpp:430
+#, kde-format
+msgid "Maximized horizontally"
+msgstr "Maksimeeritud horisontaalselt"
+
+#: rulesmodel.cpp:435
+#, kde-format
+msgid "Maximized vertically"
+msgstr "Maksimeeritud vertikaalselt"
+
+#: rulesmodel.cpp:440
+#, kde-format
+msgid "Virtual Desktop"
+msgstr "Virtuaalne töölaud"
+
+#: rulesmodel.cpp:453
+#, kde-format
+msgid "Activity"
+msgstr "Tegevus"
+
+#: rulesmodel.cpp:467
+#, kde-format
+msgid "Screen"
+msgstr "Ekraan"
+
+#: rulesmodel.cpp:472
+#, kde-format
+msgid "Fullscreen"
+msgstr "Täisekraan"
+
+#: rulesmodel.cpp:477
+#, kde-format
+msgid "Minimized"
+msgstr "Minimeeritud"
+
+#: rulesmodel.cpp:482
+#, kde-format
+msgid "Shaded"
+msgstr "Kokku keritud"
+
+#: rulesmodel.cpp:487
+#, kde-format
+msgid "Initial placement"
+msgstr "Algasetus"
+
+#: rulesmodel.cpp:493
+#, kde-format
+msgid "Ignore requested geometry"
+msgstr "Nõutava geomeetria eiramine"
+
+#: rulesmodel.cpp:495
+#, kde-format
+msgid ""
+"Windows can ask to appear in a certain position.\n"
+"By default this overrides the placement strategy\n"
+"what might be nasty if the client abuses the feature\n"
+"to unconditionally popup in the middle of your screen."
+msgstr ""
+"Aknaid võib panna ilmuma kindlasse asukohta.\n"
+"Vaikimisi tühistab see asetamisstrateegia,\n"
+"mis võib olla inetu, kui klient kuritarvitab seda\n"
+"ja laseb aknal tingimusteta ilmuda keset ekraani."
+
+#: rulesmodel.cpp:502
+#, kde-format
+msgid "Minimum Size"
+msgstr "Minimaalne suurus"
+
+#: rulesmodel.cpp:507
+#, kde-format
+msgid "Maximum Size"
+msgstr "Maksimaalne suurus"
+
+#: rulesmodel.cpp:512
+#, kde-format
+msgid "Obey geometry restrictions"
+msgstr "Geomeetriapiirangute arvestamine"
+
+#: rulesmodel.cpp:514
+#, kde-format
+msgid ""
+"Eg. terminals or video players can ask to keep a certain aspect ratio\n"
+"or only grow by values larger than one\n"
+"(eg. by the dimensions of one character).\n"
+"This may be pointless and the restriction prevents arbitrary dimensions\n"
+"like your complete screen area."
+msgstr ""
+"Näiteks terminalid või videomängijad võib panna säilitama kindlat\n"
+"proportsiooni või kasvama ainult ühest suurema väärtuste võrra\n"
+"(näiteks ühe märgi mõõtmete võrra).\n"
+"See võib olla mõttetu ning piirang takistada suvalisi mõõtmeid.\n"
+"näiteks kogu sinu ekraani ala."
+
+#: rulesmodel.cpp:523
+#, kde-format
+msgid "Keep above"
+msgstr "Teiste peal"
+
+#: rulesmodel.cpp:523 rulesmodel.cpp:528 rulesmodel.cpp:533 rulesmodel.cpp:539
+#: rulesmodel.cpp:545 rulesmodel.cpp:551
+#, kde-format
+msgid "Arrangement & Access"
+msgstr "Paigutus ja ligipääs"
+
+#: rulesmodel.cpp:528
+#, kde-format
+msgid "Keep below"
+msgstr "Teiste all"
+
+#: rulesmodel.cpp:533
+#, kde-format
+msgid "Skip taskbar"
+msgstr "Puudub tegumiribalt"
+
+#: rulesmodel.cpp:535
+#, kde-format
+msgid "Window shall (not) appear in the taskbar."
+msgstr "Aken tohib/ei tohi olla näha tegumiribal."
+
+#: rulesmodel.cpp:539
+#, kde-format
+msgid "Skip pager"
+msgstr "Puudub töölaua vahetajalt"
+
+#: rulesmodel.cpp:541
+#, kde-format
+msgid "Window shall (not) appear in the manager for virtual desktops"
+msgstr "Aken tohib/ei tohi olla näha virtuaalsete töölaudade halduris"
+
+#: rulesmodel.cpp:545
+#, kde-format
+msgid "Skip switcher"
+msgstr "Puudub lülitajalt"
+
+#: rulesmodel.cpp:547
+#, kde-format
+msgid "Window shall (not) appear in the Alt+Tab list"
+msgstr "Aken tohib/ei tohi olla näha Alt+Tab nimekirjas"
+
+#: rulesmodel.cpp:551
+#, kde-format
+msgid "Shortcut"
+msgstr "Kiirklahv"
+
+#: rulesmodel.cpp:557
+#, kde-format
+msgid "No titlebar and frame"
+msgstr "Tiitliriba ja raamita"
+
+#: rulesmodel.cpp:557 rulesmodel.cpp:562 rulesmodel.cpp:568 rulesmodel.cpp:573
+#: rulesmodel.cpp:578 rulesmodel.cpp:589 rulesmodel.cpp:600 rulesmodel.cpp:608
+#: rulesmodel.cpp:621 rulesmodel.cpp:626 rulesmodel.cpp:632 rulesmodel.cpp:637
+#, kde-format
+msgid "Appearance & Fixes"
+msgstr "Välimus ja parandused"
+
+#: rulesmodel.cpp:562
+#, kde-format
+msgid "Titlebar color scheme"
+msgstr "Tiitliriba värviskeem"
+
+#: rulesmodel.cpp:568
+#, kde-format
+msgid "Active opacity"
+msgstr "Aktiivse läbipaistmatus"
+
+#: rulesmodel.cpp:573
+#, kde-format
+msgid "Inactive opacity"
+msgstr "Mitteaktiivse läbipaistmatus"
+
+#: rulesmodel.cpp:578
+#, kde-format
+msgid "Focus stealing prevention"
+msgstr "Fookuse röövimise vältimine"
+
+#: rulesmodel.cpp:580
+#, kde-format
+msgid ""
+"KWin tries to prevent windows from taking the focus\n"
+"(\"activate\") while you're working in another window,\n"
+"but this may sometimes fail or superact.\n"
+"\"None\" will unconditionally allow this window to get the focus while\n"
+"\"Extreme\" will completely prevent it from taking the focus."
+msgstr ""
+"KWin üritab takistada akendel saamast fookust\n"
+"(muutumast aktiivseks), kui töötad mõnes muus aknas,\n"
+"aga see võib mõnikord nurjuda või siis liigagi hästi õnnestuda.\n"
+"\"Puudub\" võimaldab aknal tingimusteta saada fookuse,\n"
+"\"Äärmuslik\" aga välistab täielikult fookuse saamise."
+
+#: rulesmodel.cpp:589
+#, kde-format
+msgid "Focus protection"
+msgstr "Fookuse kaitse"
+
+#: rulesmodel.cpp:591
+#, kde-format
+msgid ""
+"This controls the focus protection of the currently active window.\n"
+"None will always give the focus away,\n"
+"Extreme will keep it.\n"
+"Otherwise it's interleaved with the stealing prevention\n"
+"assigned to the window that wants the focus."
+msgstr ""
+"See määrab kindlaks aktiivse akna fookuse kaitse.\n"
+"Puudub tähendab, et fookus loovutatakse alati.\n"
+"Äärmusliku korral säilitatakse fookus alati.\n"
+"Muudel juhtudel sõltub see röövimise vältimise määrangust.\n"
+"mis on omistatud aknale, mis fookust soovib."
+
+#: rulesmodel.cpp:600
+#, kde-format
+msgid "Accept focus"
+msgstr "Fookusega nõustumine"
+
+#: rulesmodel.cpp:602
+#, kde-format
+msgid ""
+"Windows may prevent to get the focus (activate) when being clicked.\n"
+"On the other hand you might wish to prevent a window\n"
+"from getting focused on a mouse click."
+msgstr ""
+"Aknaid võib lasta mitte fookusse tulla (aktiivseks muutuda), kui\n"
+"neile klõpsatakse. Samas võib ka tahta, et aken ei saaks\n"
+"hiireklõpsu peale fookust."
+
+#: rulesmodel.cpp:608
+#, kde-format
+msgid "Ignore global shortcuts"
+msgstr "Globaalsete kiirklahvide eiramine"
+
+#: rulesmodel.cpp:610
+#, kde-format
+msgid ""
+"When used, a window will receive\n"
+"all keyboard inputs while it is active, including Alt+Tab etc.\n"
+"This is especially interesting for emulators or virtual machines.\n"
+"\n"
+"Be warned:\n"
+"you won't be able to Alt+Tab out of the window\n"
+"nor use any other global shortcut (such as Alt+F2 to show KRunner)\n"
+"while it's active!"
+msgstr ""
+"Märkimise korral saab aken, kui ta\n"
+"on aktiivne, kõik klaviatuurisisendid, sealhulgas Alt+Tab jne.\n"
+"See on eriti huvitav emulaatorite või virtuaalmasinate korral.\n"
+"\n"
+"Ettevaatust:\n"
+"sul pole võimalik kasutada Alt+Tab väljaspool akent\n"
+"ega teisi globaalseid kiirklahve (nt. Alt+F2 KRunneri käivitamiseks),\n"
+"kui see valik on aktiivne!"
+
+#: rulesmodel.cpp:621
+#, kde-format
+msgid "Closeable"
+msgstr "Suletav"
+
+#: rulesmodel.cpp:626
+#, kde-format
+msgid "Set window type"
+msgstr "Aknatüübiks määratakse"
+
+#: rulesmodel.cpp:632
+#, kde-format
+msgid "Desktop file name"
+msgstr "Töölauafaili nimi"
+
+#: rulesmodel.cpp:637
+#, kde-format
+msgid "Block compositing"
+msgstr "Komposiidi blokeerimine"
+
+#: rulesmodel.cpp:717
+#, kde-format
+msgid "Normal Window"
+msgstr "Tavaline aken"
+
+#: rulesmodel.cpp:718
+#, kde-format
+msgid "Dialog Window"
+msgstr "Dialoogiaken"
+
+#: rulesmodel.cpp:719
+#, kde-format
+msgid "Utility Window"
+msgstr "Utiliidi aken"
+
+#: rulesmodel.cpp:720
+#, kde-format
+msgid "Dock (panel)"
+msgstr "Dokk (paneel)"
+
+#: rulesmodel.cpp:721
+#, kde-format
+msgid "Toolbar"
+msgstr "Tööriistariba"
+
+#: rulesmodel.cpp:722
+#, kde-format
+msgid "Torn-Off Menu"
+msgstr "Eraldatud menüü"
+
+#: rulesmodel.cpp:723
+#, kde-format
+msgid "Splash Screen"
+msgstr "Käivitusekraan"
+
+#: rulesmodel.cpp:724
+#, kde-format
+msgid "Desktop"
+msgstr "Töölaud"
+
+#. i18n("Unmanaged Window")   },  deprecated
+#: rulesmodel.cpp:726
+#, kde-format
+msgid "Standalone Menubar"
+msgstr "Eraldi menüüriba"
+
+#: rulesmodel.cpp:741
+#, kde-format
+msgid "All Desktops"
+msgstr "Kõik töölauad"
+
+#: rulesmodel.cpp:754
+#, kde-format
+msgid "All Activities"
+msgstr "Kõik tegevused"
+
+#: rulesmodel.cpp:775
+#, kde-format
+msgid "Default"
+msgstr "Vaikimisi"
+
+#: rulesmodel.cpp:776
+#, kde-format
+msgid "No Placement"
+msgstr "Paigutus puudub"
+
+#: rulesmodel.cpp:777
+#, kde-format
+msgid "Minimal Overlapping"
+msgstr "Minimaalne kattuvus"
+
+#: rulesmodel.cpp:778
+#, kde-format
+msgid "Maximized"
+msgstr "Maksimeeritud"
+
+#: rulesmodel.cpp:779
+#, kde-format
+msgid "Cascaded"
+msgstr "Kaskaadis"
+
+#: rulesmodel.cpp:780
+#, kde-format
+msgid "Centered"
+msgstr "Keskjoondatud"
+
+#: rulesmodel.cpp:781
+#, kde-format
+msgid "Random"
+msgstr "Juhuslik"
+
+#: rulesmodel.cpp:782
+#, kde-format
+msgid "In Top-Left Corner"
+msgstr "Üleval vasakus nurgas"
+
+#: rulesmodel.cpp:783
+#, kde-format
+msgid "Under Mouse"
+msgstr "Hiire all"
+
+#: rulesmodel.cpp:784
+#, kde-format
+msgid "On Main Window"
+msgstr "Peaaknas"
+
+#: rulesmodel.cpp:792
+#, kde-format
+msgid "None"
+msgstr "Puudub"
+
+#: rulesmodel.cpp:793
+#, kde-format
+msgid "Low"
+msgstr "Madal"
+
+#: rulesmodel.cpp:794
+#, kde-format
+msgid "Normal"
+msgstr "Normaalne"
+
+#: rulesmodel.cpp:795
+#, kde-format
+msgid "High"
+msgstr "Kõrge"
+
+#: rulesmodel.cpp:796
+#, kde-format
+msgid "Extreme"
+msgstr "Äärmuslik"

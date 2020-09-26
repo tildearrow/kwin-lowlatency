@@ -1,0 +1,133 @@
+# translation of kcm_kwindesktop.po to Slovak
+# Richard Fric <Richard.Fric@kdemail.net>, 2007, 2009.
+# sparc3 <sparc3@azet.sk>, 2008.
+# Michal Sulek <misurel@gmail.com>, 2010.
+# Roman Paholík <wizzardsk@gmail.com>, 2013, 2014.
+# Matej Mrenica <matejm98mthw@gmail.com>, 2018, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_kwindesktop\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2019-08-17 11:23+0200\n"
+"Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
+"Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.07.90\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Michal Šulek"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "misurel@gmail.com"
+
+#: desktopsmodel.cpp:455
+#, kde-format
+msgid "There was an error connecting to the compositor."
+msgstr "Nastala chyba pri pripájaní sa ku kompozítoru."
+
+#: desktopsmodel.cpp:657
+#, kde-format
+msgid "There was an error saving the settings to the compositor."
+msgstr "Nastala chyba pri ukladaní nastavení do kompozítora."
+
+#: desktopsmodel.cpp:660
+#, kde-format
+msgid "There was an error requesting information from the compositor."
+msgstr "Nastala chyba pri žiadaní informácií od kompozítora."
+
+#: package/contents/ui/main.qml:18
+#, kde-format
+msgid ""
+"This module lets you configure the navigation, number and layout of virtual "
+"desktops."
+msgstr ""
+"Tento modul vám umožňuje konfiguráciu navigácie, počtu a rozloženia "
+"virtuálnych pracovných plôch."
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Rename"
+msgstr "Premenovať"
+
+#: package/contents/ui/main.qml:78
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Remove"
+msgstr "Odstrániť"
+
+#: package/contents/ui/main.qml:104
+#, kde-format
+msgid ""
+"Virtual desktops have been changed outside this settings application. Saving "
+"now will overwrite the changes."
+msgstr ""
+"Virtuálne plochy boli zmenené inou aplikáciou. Uloženie prepíše tieto zmeny."
+
+#: package/contents/ui/main.qml:118
+#, kde-format
+msgid "Row %1"
+msgstr "Riadok %1"
+
+#: package/contents/ui/main.qml:131
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Pridať"
+
+#: package/contents/ui/main.qml:134
+#, kde-format
+msgid "New Desktop"
+msgstr "Nová plocha"
+
+#: package/contents/ui/main.qml:148
+#, kde-format
+msgid "1 Row"
+msgid_plural "%1 Rows"
+msgstr[0] "1 riadok"
+msgstr[1] "%1 riadky"
+msgstr[2] "%1 riadkov"
+
+#: package/contents/ui/main.qml:160
+#, kde-format
+msgid "Options:"
+msgstr "Možnosti:"
+
+#: package/contents/ui/main.qml:162
+#, kde-format
+msgid "Navigation wraps around"
+msgstr "Navigovať v plochách dookola"
+
+#: package/contents/ui/main.qml:177
+#, kde-format
+msgid "Show animation when switching:"
+msgstr "Zobraziť animáciu pri prepínaní:"
+
+#: package/contents/ui/main.qml:220
+#, kde-format
+msgid "Show on-screen display when switching:"
+msgstr "Zobraziť OSD pri prepínaní:"
+
+#: package/contents/ui/main.qml:238
+#, kde-format
+msgid "%1 ms"
+msgstr "%1 ms"
+
+#: package/contents/ui/main.qml:256
+#, kde-format
+msgid "Show desktop layout indicators"
+msgstr "Zobraziť indikátory rozloženia plochy"
+
+#: virtualdesktops.cpp:30
+#, kde-format
+msgid "Virtual Desktops"
+msgstr "Virtuálne plochy"

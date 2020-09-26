@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kwin package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2019-09-30 11:24+0100\n"
+"Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
+"Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-POFile-SpellExtra: Vlad Zagorodniy Zahorodnii\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "José Nuno Pires"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zepires@gmail.com"
+
+#: kcm.cpp:33
+#, kde-format
+msgid "Desktop Effects"
+msgstr "Efeitos do Ecrã"
+
+#: kcm.cpp:38
+#, kde-format
+msgid "Vlad Zahorodnii"
+msgstr "Vlad Zahorodnii"
+
+#: kcm.cpp:77
+#, kde-format
+msgid "Download New Desktop Effects"
+msgstr "Obter Novos Efeitos do Ecrã"
+
+#: package/contents/ui/Effect.qml:77
+#, kde-format
+msgid ""
+"Author: %1\n"
+"License: %2"
+msgstr ""
+"Autor: %1\n"
+"Licença: %2"
+
+#: package/contents/ui/Effect.qml:106
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Show/Hide Video"
+msgstr "Mostrar/Esconder o Vídeo"
+
+#: package/contents/ui/Effect.qml:113
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Configure..."
+msgstr "Configurar..."
+
+#: package/contents/ui/main.qml:18
+#, kde-format
+msgid "This module lets you configure desktop effects."
+msgstr "Este módulo permite-lhe configurar os efeitos do ecrã."
+
+#: package/contents/ui/main.qml:25
+#, kde-format
+msgid ""
+"Hint: To find out or configure how to activate an effect, look at the "
+"effect's settings."
+msgstr ""
+"Sugestão: Para descobrir ou configurar como se activa um efeito, veja a "
+"configuração do efeito."
+
+#: package/contents/ui/main.qml:45
+#, kde-format
+msgid "Configure Filter"
+msgstr "Configurar o Filtro"
+
+#: package/contents/ui/main.qml:57
+#, kde-format
+msgid "Exclude unsupported effects"
+msgstr "Excluir os efeitos não suportados"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgid "Exclude internal effects"
+msgstr "Excluir os efeitos internos"
+
+#: package/contents/ui/main.qml:124
+#, kde-format
+msgid "Get New Desktop Effects..."
+msgstr "Obter Novos Efeitos do Ecrã..."

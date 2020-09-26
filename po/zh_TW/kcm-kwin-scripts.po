@@ -1,0 +1,94 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Franklin Weng <franklin@goodhorse.idv.tw>, 2012, 2013.
+# Jeff Huang <s8321414@gmail.com>, 2017.
+# pan93412 <pan93412@gmail.com>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-09-01 02:29+0200\n"
+"PO-Revision-Date: 2018-12-02 19:39+0800\n"
+"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Frank Weng (a.k.a. Franklin), Jeff Huang"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "franklin@goodhorse.idv.tw, s8321414@gmail.com"
+
+#: module.cpp:38
+#, kde-format
+msgid "KWin Scripts"
+msgstr "KWin 文稿"
+
+#: module.cpp:40
+#, kde-format
+msgid "Configure KWin scripts"
+msgstr "設定 KWin 文稿"
+
+#: module.cpp:43
+#, kde-format
+msgid "Tamás Krutki"
+msgstr "Tamás Krutki"
+
+#: module.cpp:79
+#, kde-format
+msgid "Error when uninstalling KWin Script: %1"
+msgstr ""
+
+#: module.cpp:100
+#, kde-format
+msgid "Import KWin Script"
+msgstr "匯入 KWin 文稿"
+
+#: module.cpp:101
+#, kde-format
+msgid "*.kwinscript|KWin scripts (*.kwinscript)"
+msgstr "*.kwinscript|KWin 文稿 (*.kwinscript)"
+
+#: module.cpp:120
+#, kde-format
+msgctxt "Placeholder is error message returned from the install service"
+msgid ""
+"Cannot import selected script.\n"
+"%1"
+msgstr ""
+"無法匯入已選取的指令稿。\n"
+"%1"
+
+#: module.cpp:134
+#, kde-format
+msgctxt "Placeholder is name of the script that was imported"
+msgid "The script \"%1\" was successfully imported."
+msgstr "指令稿「%1」成功匯入。"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, Module)
+#: module.ui:14
+#, kde-format
+msgid "KWin script configuration"
+msgstr "KWin 文稿設定"
+
+#. i18n: ectx: property (text), widget (QPushButton, importScriptButton)
+#: module.ui:55
+#, kde-format
+msgid "Install from File..."
+msgstr "從檔案安裝…"
+
+#. i18n: ectx: property (text), widget (KNS3::Button, ghnsButton)
+#: module.ui:67
+#, kde-format
+msgid "Get New Scripts..."
+msgstr "取得新文稿..."

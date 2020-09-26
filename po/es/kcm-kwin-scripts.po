@@ -1,0 +1,92 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Eloy Cuadra <ecuadra@eloihr.net>, 2012, 2013, 2017, 2018, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-09-01 02:29+0200\n"
+"PO-Revision-Date: 2020-08-29 20:15+0200\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.08.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Eloy Cuadra"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ecuadra@eloihr.net"
+
+#: module.cpp:38
+#, kde-format
+msgid "KWin Scripts"
+msgstr "Guiones de KWin"
+
+#: module.cpp:40
+#, kde-format
+msgid "Configure KWin scripts"
+msgstr "Configurar los guiones de KWin"
+
+#: module.cpp:43
+#, kde-format
+msgid "Tamás Krutki"
+msgstr "Tamás Krutki"
+
+#: module.cpp:79
+#, kde-format
+msgid "Error when uninstalling KWin Script: %1"
+msgstr "Ha ocurrido un error al desinstalar el guion de KWin: %1"
+
+#: module.cpp:100
+#, kde-format
+msgid "Import KWin Script"
+msgstr "Importar guion de KWin"
+
+#: module.cpp:101
+#, kde-format
+msgid "*.kwinscript|KWin scripts (*.kwinscript)"
+msgstr "*.kwinscript|Guiones de KWin (*.kwinscript)"
+
+#: module.cpp:120
+#, kde-format
+msgctxt "Placeholder is error message returned from the install service"
+msgid ""
+"Cannot import selected script.\n"
+"%1"
+msgstr ""
+"No se puede importar el guion.\n"
+"%1"
+
+#: module.cpp:134
+#, kde-format
+msgctxt "Placeholder is name of the script that was imported"
+msgid "The script \"%1\" was successfully imported."
+msgstr "El guion «%1» se ha importado con éxito."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, Module)
+#: module.ui:14
+#, kde-format
+msgid "KWin script configuration"
+msgstr "Configuración de los guiones de KWin"
+
+#. i18n: ectx: property (text), widget (QPushButton, importScriptButton)
+#: module.ui:55
+#, kde-format
+msgid "Install from File..."
+msgstr "Instalar desde archivo..."
+
+#. i18n: ectx: property (text), widget (KNS3::Button, ghnsButton)
+#: module.ui:67
+#, kde-format
+msgid "Get New Scripts..."
+msgstr "Obtener nuevos guiones..."

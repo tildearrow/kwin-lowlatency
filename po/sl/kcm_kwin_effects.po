@@ -1,0 +1,99 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kwin package.
+#
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2020-06-08 18:45+0200\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.12.2\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Matjaž Jeran"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "matjaz.jeran@amis.net"
+
+#: kcm.cpp:33
+#, kde-format
+msgid "Desktop Effects"
+msgstr "Namizni učinki"
+
+#: kcm.cpp:38
+#, kde-format
+msgid "Vlad Zahorodnii"
+msgstr "Vlad Zahorodnii"
+
+#: kcm.cpp:77
+#, kde-format
+msgid "Download New Desktop Effects"
+msgstr "Prenesi nove učinke namizja"
+
+#: package/contents/ui/Effect.qml:77
+#, kde-format
+msgid ""
+"Author: %1\n"
+"License: %2"
+msgstr ""
+"Avtor: %1\n"
+"Licenca: %2"
+
+#: package/contents/ui/Effect.qml:106
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Show/Hide Video"
+msgstr "Prikaži/skrij video"
+
+#: package/contents/ui/Effect.qml:113
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Configure..."
+msgstr "Nastavi..."
+
+#: package/contents/ui/main.qml:18
+#, kde-format
+msgid "This module lets you configure desktop effects."
+msgstr "Ta modul omogoča nastavljanje namiznih učinkov."
+
+#: package/contents/ui/main.qml:25
+#, kde-format
+msgid ""
+"Hint: To find out or configure how to activate an effect, look at the "
+"effect's settings."
+msgstr ""
+"Namig: Če želite izvedeti ali nastaviti, kako aktivirati učinek, poglejte "
+"nastavitve učinka."
+
+#: package/contents/ui/main.qml:45
+#, kde-format
+msgid "Configure Filter"
+msgstr "Nastavi filter"
+
+#: package/contents/ui/main.qml:57
+#, kde-format
+msgid "Exclude unsupported effects"
+msgstr "Izvzemi nepodprte učinke"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgid "Exclude internal effects"
+msgstr "Izvzemi notranje učinke"
+
+#: package/contents/ui/main.qml:124
+#, kde-format
+msgid "Get New Desktop Effects..."
+msgstr "Pridobi nove namizne učinke..."

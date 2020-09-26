@@ -1,0 +1,132 @@
+# translation of kcm_kwindesktop.po to Swedish
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2007, 2009, 2010, 2013, 2014, 2018, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_kwindesktop\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2019-08-06 09:22+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stefan Asserhäll"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "stefan.asserhall@bredband.net"
+
+#: desktopsmodel.cpp:455
+#, kde-format
+msgid "There was an error connecting to the compositor."
+msgstr "Ett fel uppstod vid försök att ansluta till sammansättaren."
+
+#: desktopsmodel.cpp:657
+#, kde-format
+msgid "There was an error saving the settings to the compositor."
+msgstr "Ett fel uppstod när inställningarna skulle sparas i sammansättaren."
+
+#: desktopsmodel.cpp:660
+#, kde-format
+msgid "There was an error requesting information from the compositor."
+msgstr "Ett fel uppstod vid begäran av information från sammansättaren."
+
+#: package/contents/ui/main.qml:18
+#, kde-format
+msgid ""
+"This module lets you configure the navigation, number and layout of virtual "
+"desktops."
+msgstr ""
+"Modulen låter dig ställa in navigering, antal och layout av virtuella "
+"skrivbord."
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Rename"
+msgstr "Byt namn"
+
+#: package/contents/ui/main.qml:78
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Remove"
+msgstr "Ta bort"
+
+#: package/contents/ui/main.qml:104
+#, kde-format
+msgid ""
+"Virtual desktops have been changed outside this settings application. Saving "
+"now will overwrite the changes."
+msgstr ""
+"Virtuella skrivbord har ändrats utanför det här inställningsprogrammet. Att "
+"spara nu skriver över ändringarna."
+
+#: package/contents/ui/main.qml:118
+#, kde-format
+msgid "Row %1"
+msgstr "Rad %1"
+
+#: package/contents/ui/main.qml:131
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Lägg till"
+
+#: package/contents/ui/main.qml:134
+#, kde-format
+msgid "New Desktop"
+msgstr "Nytt skrivbord"
+
+#: package/contents/ui/main.qml:148
+#, kde-format
+msgid "1 Row"
+msgid_plural "%1 Rows"
+msgstr[0] "1 rad "
+msgstr[1] "%1 rader"
+
+#: package/contents/ui/main.qml:160
+#, kde-format
+msgid "Options:"
+msgstr "Alternativ:"
+
+#: package/contents/ui/main.qml:162
+#, kde-format
+msgid "Navigation wraps around"
+msgstr "Navigering går runt"
+
+#: package/contents/ui/main.qml:177
+#, kde-format
+msgid "Show animation when switching:"
+msgstr "Visa animering vid byte:"
+
+#: package/contents/ui/main.qml:220
+#, kde-format
+msgid "Show on-screen display when switching:"
+msgstr "Visa på skärmen vid byte:"
+
+#: package/contents/ui/main.qml:238
+#, kde-format
+msgid "%1 ms"
+msgstr "%1 ms"
+
+#: package/contents/ui/main.qml:256
+#, kde-format
+msgid "Show desktop layout indicators"
+msgstr "Visa indikering av skrivbordslayout"
+
+#: virtualdesktops.cpp:30
+#, kde-format
+msgid "Virtual Desktops"
+msgstr "Virtuella skrivbord"

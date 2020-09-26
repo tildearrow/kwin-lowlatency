@@ -1,0 +1,137 @@
+# translation of kcm_kwindesktop.po to Lithuanian
+# This file is distributed under the same license as the kcm_kwindesktop package.
+# Gintautas Miselis <gintautas@miselis.lt>, 2008.
+# Donatas Glodenis <dgvirtual@akl.lt>, 2009.
+# Tomas Straupis <tomasstraupis@gmail.com>, 2010.
+# Liudas Alisauskas <liudas@akmc.lt>, 2013.
+# liudas@aksioma.lt <liudas@aksioma.lt>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_kwindesktop\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2019-08-10 00:32+0300\n"
+"Last-Translator: Moo\n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Andrius Štikonas, Donatas Glodenis, Moo"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "andrius@stikonas.eu, dgvirtual@akl.lt, <>"
+
+#: desktopsmodel.cpp:455
+#, kde-format
+msgid "There was an error connecting to the compositor."
+msgstr "Jungiantis prie kompozitoriaus, įvyko klaida."
+
+#: desktopsmodel.cpp:657
+#, kde-format
+msgid "There was an error saving the settings to the compositor."
+msgstr "Įrašant nuostatas į kompozitorių, įvyko klaida."
+
+#: desktopsmodel.cpp:660
+#, kde-format
+msgid "There was an error requesting information from the compositor."
+msgstr "Užklausiant informaciją iš kompozitoriaus, įvyko klaida."
+
+#: package/contents/ui/main.qml:18
+#, kde-format
+msgid ""
+"This module lets you configure the navigation, number and layout of virtual "
+"desktops."
+msgstr ""
+"Šis modulis leidžia jums konfigūruoti virtualių darbalaukių naršymą, skaičių "
+"ir išdėstymą."
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Rename"
+msgstr "Pervadinti"
+
+#: package/contents/ui/main.qml:78
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Remove"
+msgstr "Šalinti"
+
+#: package/contents/ui/main.qml:104
+#, kde-format
+msgid ""
+"Virtual desktops have been changed outside this settings application. Saving "
+"now will overwrite the changes."
+msgstr ""
+"Virtualūs darbalaukiai buvo pakeisti už šios nuostatų programos ribų. "
+"Įrašius dabar, pakeitimai bus nustelbti."
+
+#: package/contents/ui/main.qml:118
+#, kde-format
+msgid "Row %1"
+msgstr "Eilutė %1"
+
+#: package/contents/ui/main.qml:131
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Pridėti"
+
+#: package/contents/ui/main.qml:134
+#, kde-format
+msgid "New Desktop"
+msgstr "Naujas darbalaukis"
+
+#: package/contents/ui/main.qml:148
+#, kde-format
+msgid "1 Row"
+msgid_plural "%1 Rows"
+msgstr[0] "1 eilutė"
+msgstr[1] "%1 eilutės"
+msgstr[2] "%1 eilučių"
+msgstr[3] "%1 eilutė"
+
+#: package/contents/ui/main.qml:160
+#, kde-format
+msgid "Options:"
+msgstr "Parinktys:"
+
+#: package/contents/ui/main.qml:162
+#, kde-format
+msgid "Navigation wraps around"
+msgstr "Naršymas sukasi ratu"
+
+#: package/contents/ui/main.qml:177
+#, kde-format
+msgid "Show animation when switching:"
+msgstr "Perjungiant, rodyti animaciją:"
+
+#: package/contents/ui/main.qml:220
+#, kde-format
+msgid "Show on-screen display when switching:"
+msgstr "Perjungiant, rodyti į kurį ekraną perjungiama:"
+
+#: package/contents/ui/main.qml:238
+#, kde-format
+msgid "%1 ms"
+msgstr "%1 ms"
+
+#: package/contents/ui/main.qml:256
+#, kde-format
+msgid "Show desktop layout indicators"
+msgstr "Rodyti darbalaukio išdėstymo indikatorius"
+
+#: virtualdesktops.cpp:30
+#, kde-format
+msgid "Virtual Desktops"
+msgstr "Virtualūs darbalaukiai"

@@ -1,0 +1,245 @@
+# translation of kcmkwincompositing.po to Greek
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Spiros Georgaras <sng@hellug.gr>, 2007.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2007, 2008, 2009.
+# George Pantsis <gpantsis@gmail.com>, 2008.
+# Petros Vidalis <p_vidalis@hotmail.com>, 2009.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2011, 2012.
+# Antonis Geralis <capoiosct@gmail.com>, 2012.
+# Stelios <sstavra@gmail.com>, 2012, 2013.
+# Dimitris Kardarakos <dimkard@gmail.com>, 2014, 2015, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwincompositing\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2016-09-16 14:32+0200\n"
+"Last-Translator: Dimitris Kardarakos <dimkard@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: ectx: property (text), widget (KMessageWidget, glCrashedWarning)
+#: compositing.ui:32
+#, kde-format
+msgid ""
+"OpenGL compositing (the default) has crashed KWin in the past.\n"
+"This was most likely due to a driver bug.\n"
+"If you think that you have meanwhile upgraded to a stable driver,\n"
+"you can reset this protection but be aware that this might result in an "
+"immediate crash!\n"
+"Alternatively, you might want to use the XRender backend instead."
+msgstr ""
+"Η σύνθεση OpenGL (η προκαθορισμένη) προκάλεσε την κατάρρευση του KWin στο "
+"παρελθόν.\n"
+"Αυτό πιθανότατα οφείλεται σε ένα σφάλμα του οδηγού.\n"
+"Αν πιστεύετε ότι έχετε πλέον αναβαθμίσει σε έναν σταθερό οδηγό,\n"
+"μπορείτε να επαναφέρετε αυτήν την προστασία αλλά \n"
+"θα πρέπει να γνωρίζετε ότι μπορεί να προκαλέσει άμεση κατάρρευση!\n"
+"Εναλλακτικά, μπορείτε να χρησιμοποιήσετε το σύστημα υποστήριξης XRender."
+
+#. i18n: ectx: property (text), widget (KMessageWidget, scaleWarning)
+#: compositing.ui:45
+#, kde-format
+msgid ""
+"Scale method \"Accurate\" is not supported by all hardware and can cause "
+"performance regressions and rendering artifacts."
+msgstr ""
+"Η μέθοδος κλιμάκωσης \"Ακριβείας\" δεν υποστηρίζεται από όλες τις συσκευές "
+"γραφικών και μπορεί να προκαλέσει χειροτέρευση των επιδόσεων και σφάλματα "
+"απεικόνισης."
+
+#. i18n: ectx: property (text), widget (KMessageWidget, windowThumbnailWarning)
+#: compositing.ui:68
+#, kde-format
+msgid ""
+"Keeping the window thumbnail always interferes with the minimized state of "
+"windows. This can result in windows not suspending their work when minimized."
+msgstr ""
+"Η διατήρηση της εικόνας επισκόπησης παραθύρου πάντοτε επιδρά στην κατάσταση "
+"ελαχιστοποίησης των παραθύρων. Αυτό μπορεί να έχει ως αποτέλεσμα τα παράθυρα "
+"να μην μπαίνουν σε αδράνεια όταν ελαχιστοποιούνται."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Enabled)
+#: compositing.ui:80
+#, kde-format
+msgid "Enable compositor on startup"
+msgstr "Ενεργοποίηση του συνθέτη κατά την εκκίνηση"
+
+#. i18n: ectx: property (text), widget (QLabel, animationSpeedLabel)
+#: compositing.ui:87
+#, kde-format
+msgid "Animation speed:"
+msgstr "Ταχύτητα κίνησης:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: compositing.ui:124
+#, kde-format
+msgid "Very slow"
+msgstr "Πολύ αργά"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: compositing.ui:144
+#, kde-format
+msgid "Instant"
+msgstr "Στιγμιαία"
+
+#. i18n: ectx: property (text), widget (QLabel, scaleMethodLabel)
+#: compositing.ui:156
+#, kde-format
+msgid "Scale method:"
+msgstr "Μέθοδος κλιμάκωσης:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_XRenderSmoothScale)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:166 compositing.ui:180
+#, kde-format
+msgid "Crisp"
+msgstr "Απευθείας"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_XRenderSmoothScale)
+#: compositing.ui:171
+#, kde-format
+msgid "Smooth (slower)"
+msgstr "Με εξομάλυνση (αργό)"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:185
+#, kde-format
+msgid "Smooth"
+msgstr "Με εξομάλυνση"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:190
+#, kde-format
+msgid "Accurate"
+msgstr "Ακριβείας"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: compositing.ui:207
+#, kde-format
+msgid "Rendering backend:"
+msgstr "Σύστημα υποστήριξης αποτύπωσης:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: compositing.ui:224
+#, kde-format
+msgid "Tearing prevention (\"vsync\"):"
+msgstr "Αποτροπή κοψίματος εικόνας (VSync):"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:232 compositing.ui:268
+#, kde-format
+msgid "Never"
+msgstr "Ποτέ"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:237
+#, kde-format
+msgid "Automatic"
+msgstr "Αυτόματα"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:242
+#, kde-format
+msgid "Only when cheap"
+msgstr "Μόνο όταν είναι φθηνό"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:247
+#, kde-format
+msgid "Full screen repaints"
+msgstr "Πλήρης ανασχεδίαση οθόνης"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:252
+#, kde-format
+msgid "Re-use screen content"
+msgstr "Επαναχρησιμοποίηση περιεχομένου οθόνης"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: compositing.ui:260
+#, kde-format
+msgid "Keep window thumbnails:"
+msgstr "Διατήρηση επισκόπησης παραθύρων:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:273
+#, kde-format
+msgid "Only for Shown Windows"
+msgstr "Μόνο για ορατά παράθυρα"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:278
+#, kde-format
+msgid "Always"
+msgstr "Πάντα"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:288
+#, kde-format
+msgid ""
+"Applications can set a hint to block compositing when the window is open.\n"
+" This brings performance improvements for e.g. games.\n"
+" The setting can be overruled by window-specific rules."
+msgstr ""
+"Οι εφαρμογές μπορούν να καθορίζουν μια υπόδειξη για τη φραγή της σύνθεσης "
+"όταν το παράθυρο είναι ανοιχτό\n"
+" Αυτό έχει ως αποτέλεσμα τη βελτίωση της απόδοσης π.χ. στα παιχνίδια.\n"
+" Η επιλογή μπορεί να παρακαμφθεί από κανόνες παραθύρων."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:291
+#, kde-format
+msgid "Allow applications to block compositing"
+msgstr "Να επιτρέπεται στις εφαρμογές η φραγή σύνθεσης"
+
+#: main.cpp:80
+#, kde-format
+msgid "Re-enable OpenGL detection"
+msgstr "Επανενεργοποίηση ανίχνευσης OpenGL"
+
+#: main.cpp:132
+#, kde-format
+msgid ""
+"\"Only when cheap\" only prevents tearing for full screen changes like a "
+"video."
+msgstr ""
+"Το \"Μόνο όταν είναι φθηνό\" αποτρέπει τα κοψίματα στην εικόνα μόνο για "
+"αλλαγές πλήρους οθόνης, όπως το βίντεο."
+
+#: main.cpp:136
+#, kde-format
+msgid "\"Full screen repaints\" can cause performance problems."
+msgstr ""
+"Η \"Πλήρης ανασχεδίαση οθόνης\" μπορεί να προκαλέσει προβλήματα επιδόσεων."
+
+#: main.cpp:140
+#, kde-format
+msgid ""
+"\"Re-use screen content\" causes severe performance problems on MESA drivers."
+msgstr ""
+"Η \"Επαναχρησιμοποίηση περιεχομένου οθόνης\" προκαλεί σοβαρά προβλήματα "
+"επιδόσεων στους οδηγούς MESA."
+
+#: main.cpp:160
+#, kde-format
+msgid "OpenGL 3.1"
+msgstr "OpenGL 3.1"
+
+#: main.cpp:161
+#, kde-format
+msgid "OpenGL 2.0"
+msgstr "OpenGL 2.0"
+
+#: main.cpp:162
+#, kde-format
+msgid "XRender"
+msgstr "XRender"

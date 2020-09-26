@@ -1,0 +1,224 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Marek Laane <bald@smail.ee>, 2009, 2010, 2011, 2012, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-15 02:23+0200\n"
+"PO-Revision-Date: 2019-10-30 14:30+0200\n"
+"Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
+"Language-Team: Estonian <kde-et@lists.linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.08.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: kwintabboxconfigform.cpp:77
+#, kde-format
+msgid "KWin"
+msgstr "KWin"
+
+#: layoutpreview.cpp:147
+#, kde-format
+msgctxt "An example Desktop Name"
+msgid "Desktop 1"
+msgstr "Töölaud 1"
+
+#: main.cpp:65
+#, kde-format
+msgid "Main"
+msgstr "Peamine"
+
+#: main.cpp:66
+#, kde-format
+msgid "Alternative"
+msgstr "Alternatiiv"
+
+#: main.cpp:68
+#, kde-format
+msgid "Get New Task Switchers..."
+msgstr "Hangi uusi aknavahetaja paigutusi ..."
+
+#: main.cpp:78
+#, kde-format
+msgid ""
+"Focus policy settings limit the functionality of navigating through windows."
+msgstr "Fookuse reegel piirab akende vahel liikumise võimalusi."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: main.ui:32
+#, kde-format
+msgid "Content"
+msgstr "Sisu"
+
+#. i18n: ectx: property (text), widget (QCheckBox, showDesktop)
+#: main.ui:41
+#, kde-format
+msgid "Include \"Show Desktop\" icon"
+msgstr "Kaasa arvatud \"Näita töölauda\" ikoon"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, switchingModeCombo)
+#: main.ui:55
+#, kde-format
+msgid "Recently used"
+msgstr "Viimati kasutatud"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, switchingModeCombo)
+#: main.ui:60
+#, kde-format
+msgid "Stacking order"
+msgstr "Virnastamise järjekord"
+
+#. i18n: ectx: property (text), widget (QCheckBox, oneAppWindow)
+#: main.ui:68
+#, kde-format
+msgid "Only one window per application"
+msgstr "Ainult üks aken rakenduse kohta"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: main.ui:78
+#, kde-format
+msgid "Sort order:"
+msgstr "Sortimise alus:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: main.ui:104
+#, kde-format
+msgid "Filter windows by"
+msgstr "Akende filtreerimise alus"
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterDesktops)
+#: main.ui:113
+#, kde-format
+msgid "Virtual desktops"
+msgstr "Virtuaalsed töölauad"
+
+#. i18n: ectx: property (text), widget (QRadioButton, currentDesktop)
+#: main.ui:157
+#, kde-format
+msgid "Current desktop"
+msgstr "Aktiivne töölaud"
+
+#. i18n: ectx: property (text), widget (QRadioButton, otherDesktops)
+#: main.ui:164
+#, kde-format
+msgid "All other desktops"
+msgstr "Kõik muud töölauad"
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterActivities)
+#: main.ui:174
+#, kde-format
+msgid "Activities"
+msgstr "Tegevused"
+
+#. i18n: ectx: property (text), widget (QRadioButton, currentActivity)
+#: main.ui:218
+#, kde-format
+msgid "Current activity"
+msgstr "Aktiivne tegevus"
+
+#. i18n: ectx: property (text), widget (QRadioButton, otherActivities)
+#: main.ui:225
+#, kde-format
+msgid "All other activities"
+msgstr "Kõik muud tegevused"
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterScreens)
+#: main.ui:235
+#, kde-format
+msgid "Screens"
+msgstr "Ekraanid"
+
+#. i18n: ectx: property (text), widget (QRadioButton, currentScreen)
+#: main.ui:279
+#, kde-format
+msgid "Current screen"
+msgstr "Aktiivne ekraan"
+
+#. i18n: ectx: property (text), widget (QRadioButton, otherScreens)
+#: main.ui:286
+#, kde-format
+msgid "All other screens"
+msgstr "Kõik muud ekraanid"
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterMinimization)
+#: main.ui:296
+#, kde-format
+msgid "Minimization"
+msgstr "Minimeerimine"
+
+#. i18n: ectx: property (text), widget (QRadioButton, visibleWindows)
+#: main.ui:340
+#, kde-format
+msgid "Visible windows"
+msgstr "Nähtavad aknad"
+
+#. i18n: ectx: property (text), widget (QRadioButton, hiddenWindows)
+#: main.ui:347
+#, kde-format
+msgid "Hidden windows"
+msgstr "Peidetud aknad"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: main.ui:386
+#, kde-format
+msgid "Shortcuts"
+msgstr "Kiirklahvid"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: main.ui:395 main.ui:438
+#, kde-format
+msgid "Forward"
+msgstr "Edasi"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: main.ui:418
+#, kde-format
+msgid "All windows"
+msgstr "Kõik aknad"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: main.ui:428 main.ui:448
+#, kde-format
+msgid "Reverse"
+msgstr "Vastupidi"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: main.ui:470
+#, kde-format
+msgid "Current application"
+msgstr "Aktiivne rakendus"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: main.ui:489
+#, kde-format
+msgid "Visualization"
+msgstr "Kuvamine"
+
+#. i18n: ectx: property (toolTip), widget (QComboBox, effectCombo)
+#: main.ui:519
+#, kde-format
+msgid "The effect to replace the list window when desktop effects are active."
+msgstr "Loendiakna asendamise efekt, kui töölauaefektid on sisse lülitatud."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_HighlightWindows)
+#: main.ui:549
+#, kde-format
+msgid ""
+"The currently selected window will be highlighted by fading out all other "
+"windows. This option requires desktop effects to be active."
+msgstr ""
+"Parajasti valitud aken tõstetakse esile, teised aknad muudetakse tuhmiks. "
+"See valik eeldab töölauaefektide sisselülitamist."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightWindows)
+#: main.ui:552
+#, kde-format
+msgid "Show selected window"
+msgstr "Valitud akna näitamine"

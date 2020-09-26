@@ -1,0 +1,108 @@
+# Translation of kcm_kwin_effects.po to Catalan (Valencian)
+# Copyright (C) 2019 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+# or the same license as the source of its messages in English.
+#
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2019-03-19 19:42+0100\n"
+"Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca@valencia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Generator: Lokalize 2.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Josep Ma. Ferrer"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "txemaq@gmail.com"
+
+#: kcm.cpp:33
+#, fuzzy, kde-format
+#| msgid "Configure Desktop Effects"
+msgid "Desktop Effects"
+msgstr "Configuració dels efectes d'escriptori"
+
+#: kcm.cpp:38
+#, fuzzy, kde-format
+#| msgid "Vlad Zagorodniy"
+msgid "Vlad Zahorodnii"
+msgstr "Vlad Zagorodniy"
+
+#: kcm.cpp:77
+#, kde-format
+msgid "Download New Desktop Effects"
+msgstr "Baixa efectes nous d'escriptori"
+
+#: package/contents/ui/Effect.qml:77
+#, kde-format
+msgid ""
+"Author: %1\n"
+"License: %2"
+msgstr ""
+"Autor: %1\n"
+"Llicència: %2"
+
+#: package/contents/ui/Effect.qml:106
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Show/Hide Video"
+msgstr ""
+
+#: package/contents/ui/Effect.qml:113
+#, fuzzy, kde-format
+#| msgid "Configure filter"
+msgctxt "@info:tooltip"
+msgid "Configure..."
+msgstr "Configura el filtre"
+
+#: package/contents/ui/main.qml:18
+#, kde-format
+msgid "This module lets you configure desktop effects."
+msgstr "Aquest mòdul permet configurar els efectes de l'escriptori."
+
+#: package/contents/ui/main.qml:25
+#, kde-format
+msgid ""
+"Hint: To find out or configure how to activate an effect, look at the "
+"effect's settings."
+msgstr ""
+"Consell: per trobar els detalls o configurar la manera d'activar un efecte, "
+"examineu l'arranjament dels efectes."
+
+#: package/contents/ui/main.qml:45
+#, fuzzy, kde-format
+#| msgid "Configure filter"
+msgid "Configure Filter"
+msgstr "Configura el filtre"
+
+#: package/contents/ui/main.qml:57
+#, fuzzy, kde-format
+#| msgid "Exclude internal Desktop Effects"
+msgid "Exclude unsupported effects"
+msgstr "Exclou els efectes d'escriptori interns"
+
+#: package/contents/ui/main.qml:65
+#, fuzzy, kde-format
+#| msgid "Exclude internal Desktop Effects"
+msgid "Exclude internal effects"
+msgstr "Exclou els efectes d'escriptori interns"
+
+#: package/contents/ui/main.qml:124
+#, kde-format
+msgid "Get New Desktop Effects..."
+msgstr "Obtén efectes nous d'escriptori..."

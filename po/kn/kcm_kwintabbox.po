@@ -1,0 +1,241 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ashok <ashok567@gmail.com>, 2010.
+# Shankar Prasad <svenkate@redhat.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-15 02:23+0200\n"
+"PO-Revision-Date: 2010-01-15 13:41+0530\n"
+"Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
+"Language-Team: Kannada <kde-l10n-kn@kde.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: kwintabboxconfigform.cpp:77
+#, kde-format
+msgid "KWin"
+msgstr ""
+
+#: layoutpreview.cpp:147
+#, fuzzy, kde-format
+#| msgid "All Desktops"
+msgctxt "An example Desktop Name"
+msgid "Desktop 1"
+msgstr "ಎಲ್ಲಾ ಗಣಕತೆರೆಗಳು"
+
+#: main.cpp:65
+#, kde-format
+msgid "Main"
+msgstr "ಪ್ರಮುಖ"
+
+#: main.cpp:66
+#, kde-format
+msgid "Alternative"
+msgstr "ಪರ್ಯಾಯ"
+
+#: main.cpp:68
+#, kde-format
+msgid "Get New Task Switchers..."
+msgstr ""
+
+#: main.cpp:78
+#, kde-format
+msgid ""
+"Focus policy settings limit the functionality of navigating through windows."
+msgstr ""
+"ಗಮನ ಕೇಂದ್ರೀಕರಿಸುವ ನಿಯಮದ ಸಂಯೋಜನೆಗಳು ಕಿಟಕಿಗಳ ನಡುವೆ ಸಂಚರಿಸುವ ಸೌಕರ್ಯವನ್ನು "
+"ಮಿತಿಗೊಳಿಸುತ್ತದೆ."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: main.ui:32
+#, kde-format
+msgid "Content"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, showDesktop)
+#: main.ui:41
+#, fuzzy, kde-format
+#| msgid "Current Desktop"
+msgid "Include \"Show Desktop\" icon"
+msgstr "ಪ್ರಸ್ತುತ ಗಣಕತೆರೆ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, switchingModeCombo)
+#: main.ui:55
+#, kde-format
+msgid "Recently used"
+msgstr "ಇತ್ತೀಚೆಗೆ ಬಳಸಲ್ಪಟ್ಟ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, switchingModeCombo)
+#: main.ui:60
+#, kde-format
+msgid "Stacking order"
+msgstr "ಜೋಡಿಸಲಾದ ಕ್ರಮ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, oneAppWindow)
+#: main.ui:68
+#, kde-format
+msgid "Only one window per application"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: main.ui:78
+#, kde-format
+msgid "Sort order:"
+msgstr "ವಿಂಗಡಿಸುವ ಕ್ರಮ:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: main.ui:104
+#, fuzzy, kde-format
+#| msgid "List windows:"
+msgid "Filter windows by"
+msgstr "ಕಿಟಕಿಗಳ ಪಟ್ಟಿ:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterDesktops)
+#: main.ui:113
+#, fuzzy, kde-format
+#| msgid "All Desktops"
+msgid "Virtual desktops"
+msgstr "ಎಲ್ಲಾ ಗಣಕತೆರೆಗಳು"
+
+#. i18n: ectx: property (text), widget (QRadioButton, currentDesktop)
+#: main.ui:157
+#, fuzzy, kde-format
+#| msgid "Current Desktop"
+msgid "Current desktop"
+msgstr "ಪ್ರಸ್ತುತ ಗಣಕತೆರೆ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, otherDesktops)
+#: main.ui:164
+#, fuzzy, kde-format
+#| msgid "All Desktops"
+msgid "All other desktops"
+msgstr "ಎಲ್ಲಾ ಗಣಕತೆರೆಗಳು"
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterActivities)
+#: main.ui:174
+#, kde-format
+msgid "Activities"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, currentActivity)
+#: main.ui:218
+#, kde-format
+msgid "Current activity"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, otherActivities)
+#: main.ui:225
+#, kde-format
+msgid "All other activities"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterScreens)
+#: main.ui:235
+#, kde-format
+msgid "Screens"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, currentScreen)
+#: main.ui:279
+#, fuzzy, kde-format
+#| msgid "Current Desktop"
+msgid "Current screen"
+msgstr "ಪ್ರಸ್ತುತ ಗಣಕತೆರೆ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, otherScreens)
+#: main.ui:286
+#, kde-format
+msgid "All other screens"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterMinimization)
+#: main.ui:296
+#, fuzzy, kde-format
+#| msgid "Minimum Size"
+msgid "Minimization"
+msgstr "ಕನಿಷ್ಟ ಗಾತ್ರ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, visibleWindows)
+#: main.ui:340
+#, fuzzy, kde-format
+#| msgid "List windows:"
+msgid "Visible windows"
+msgstr "ಕಿಟಕಿಗಳ ಪಟ್ಟಿ:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, hiddenWindows)
+#: main.ui:347
+#, fuzzy, kde-format
+#| msgid "List windows:"
+msgid "Hidden windows"
+msgstr "ಕಿಟಕಿಗಳ ಪಟ್ಟಿ:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: main.ui:386
+#, kde-format
+msgid "Shortcuts"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: main.ui:395 main.ui:438
+#, kde-format
+msgid "Forward"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: main.ui:418
+#, fuzzy, kde-format
+#| msgid "List windows:"
+msgid "All windows"
+msgstr "ಕಿಟಕಿಗಳ ಪಟ್ಟಿ:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: main.ui:428 main.ui:448
+#, kde-format
+msgid "Reverse"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: main.ui:470
+#, fuzzy, kde-format
+#| msgid "Current Desktop Grouped by Applications"
+msgid "Current application"
+msgstr "ಪ್ರಸ್ತುತ ಗಣಕತೆರೆಯನ್ನು ಅನ್ವಯಿಕದಿಂದ ಗುಂಪಾಗೂಡಿಸಲಾಗಿದೆ."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: main.ui:489
+#, fuzzy, kde-format
+#| msgid "Navigation"
+msgid "Visualization"
+msgstr "ಸಂಚಾರ"
+
+#. i18n: ectx: property (toolTip), widget (QComboBox, effectCombo)
+#: main.ui:519
+#, kde-format
+msgid "The effect to replace the list window when desktop effects are active."
+msgstr "ಗಣಕತೆರೆ ಪರಿಣಾಮಗಳು ಸಕ್ರಿಯವಾಗಿದ್ದಾಗ ಪಟ್ಟಿ ಕಿಟಕಿಯನ್ನು ಬದಲಾಯಿಸಬೇಕಿರುವ ಪರಿಣಾಮ."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_HighlightWindows)
+#: main.ui:549
+#, kde-format
+msgid ""
+"The currently selected window will be highlighted by fading out all other "
+"windows. This option requires desktop effects to be active."
+msgstr ""
+"ಪ್ರಸ್ತುತ ಆಯ್ದ ಕಿಟಕಿಯನ್ನು ತೋರಿಸಲು ಇತರ ಕಿಟಕಿಗಳನ್ನು ಮಬ್ಬುಗೊಳಿಸಲಾಗುವುದು. ಈ ಆಯ್ಕೆಯು ಕೆಲಸ "
+"ಮಾಡಲು ಗಣಕತೆರೆ ಪರಿಣಾಮ ಸಕ್ರಿಯವಾಗಿರಬೇಕು."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightWindows)
+#: main.ui:552
+#, fuzzy, kde-format
+#| msgid "Show outline of selected window"
+msgid "Show selected window"
+msgstr "ಆಯ್ದ ವಿಂಡೋವಿನ ಹೊರನಕಾಶೆಯನ್ನು ತೋರಿಸು"

@@ -1,0 +1,243 @@
+# translation of kcmkwinscreenedges.po to Khmer
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2009, 2010, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwinscreenedges\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2012-06-13 15:35+0700\n"
+"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
+"Language-Team: Khmer\n"
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: main.cpp:123 touch.cpp:122
+#, kde-format
+msgid "No Action"
+msgstr "គ្មាន​សកម្មភាព"
+
+#: main.cpp:124 touch.cpp:123
+#, kde-format
+msgid "Show Desktop"
+msgstr "បង្ហាញ​ផ្ទៃតុ"
+
+#: main.cpp:125 touch.cpp:124
+#, kde-format
+msgid "Lock Screen"
+msgstr "ចាក់សោ​អេក្រង់"
+
+#: main.cpp:126 touch.cpp:125
+#, kde-format
+msgid "Show KRunner"
+msgstr ""
+
+#: main.cpp:127 touch.cpp:126
+#, kde-format
+msgid "Activity Manager"
+msgstr ""
+
+#: main.cpp:128 touch.cpp:127
+#, kde-format
+msgid "Application Launcher"
+msgstr ""
+
+#: main.cpp:132 touch.cpp:131
+#, fuzzy, kde-format
+#| msgid "All Desktops"
+msgid "%1 - All Desktops"
+msgstr "ផ្ទៃតុ​ទាំងអស់"
+
+#: main.cpp:133 touch.cpp:132
+#, fuzzy, kde-format
+#| msgid "Current Desktop"
+msgid "%1 - Current Desktop"
+msgstr "ផ្ទៃតុ​បច្ចុប្បន្ន"
+
+#: main.cpp:134 touch.cpp:133
+#, fuzzy, kde-format
+#| msgid "Current Application"
+msgid "%1 - Current Application"
+msgstr "កម្មវិធី​បច្ចុប្បន្ន"
+
+#: main.cpp:137 touch.cpp:136
+#, fuzzy, kde-format
+#| msgid "Cube"
+msgid "%1 - Cube"
+msgstr "គូប"
+
+#: main.cpp:138 touch.cpp:137
+#, fuzzy, kde-format
+#| msgid "Cylinder"
+msgid "%1 - Cylinder"
+msgstr "ស៊ីឡាំង"
+
+#: main.cpp:139 touch.cpp:138
+#, fuzzy, kde-format
+#| msgid "Sphere"
+msgid "%1 - Sphere"
+msgstr "ស្វ៊ែរ"
+
+#: main.cpp:141 touch.cpp:140
+#, kde-format
+msgid "Toggle window switching"
+msgstr ""
+
+#: main.cpp:142 touch.cpp:141
+#, kde-format
+msgid "Toggle alternative window switching"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, infoLabel)
+#: main.ui:23
+#, fuzzy, kde-format
+#| msgid ""
+#| "To trigger an action push your mouse cursor against the edge of the "
+#| "screen in the action's direction."
+msgid ""
+"You can trigger an action by pushing the mouse cursor against the "
+"corresponding screen edge or corner."
+msgstr "ដើម្បីកេះ​សកម្មភាព​ចុចកណ្ដុររបស់​អ្នក​នៅ​គែម​អេក្រង់​នៅ​ក្នុង​ទិស​សកម្មភាព ។"
+
+#. i18n: ectx: property (text), widget (QLabel, quickMaximizeLabel)
+#: main.ui:67
+#, kde-format
+msgid "&Maximize:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ElectricBorderMaximize)
+#: main.ui:77
+#, kde-format
+msgid "Windows dragged to top edge"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, quickTileLabel)
+#: main.ui:84
+#, kde-format
+msgid "&Tile:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ElectricBorderTiling)
+#: main.ui:94
+#, fuzzy, kde-format
+#| msgid "Tile windows by dragging them to the side of the screen"
+msgid "Windows dragged to left or right edge"
+msgstr "បង្អួច​ក្រឡា​ក្បឿង​ដោយ​អូស​ពួកវា​ទៅ​​ផ្នែក​របស់បង្អួច"
+
+#. i18n: ectx: property (text), widget (QLabel, electricBorderCornerRatioLabel)
+#: main.ui:101
+#, kde-format
+msgid "Trigger &quarter tiling in:"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, electricBorderCornerRatioSpin)
+#: main.ui:116
+#, no-c-format, kde-format
+msgid "%"
+msgstr ""
+
+#. i18n: ectx: property (prefix), widget (QSpinBox, electricBorderCornerRatioSpin)
+#: main.ui:119
+#, kde-format
+msgid "Outer "
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_1)
+#: main.ui:135
+#, kde-format
+msgid "of the screen"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLabel, desktopSwitchLabel)
+#: main.ui:144
+#, kde-format
+msgid ""
+"Change desktop when the mouse cursor is pushed against the edge of the screen"
+msgstr "ផ្លាស់ប្ដូរ​ផ្ទៃតុ នៅពេលចុច​​​ទស្សន៍​ទ្រនិច្ច​កណ្ដុរ​​នៅ​ជ្រុង​របស់​អេក្រង់"
+
+#. i18n: ectx: property (text), widget (QLabel, desktopSwitchLabel)
+#: main.ui:147
+#, kde-format
+msgid "&Switch desktop on edge:"
+msgstr "ប្ដូរ​ផ្ទៃតុ​នៅគែ​ម ៖"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ElectricBorders)
+#: main.ui:158
+#, kde-format
+msgctxt "Switch desktop on edge"
+msgid "Disabled"
+msgstr "បាន​បិទ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ElectricBorders)
+#: main.ui:163
+#, kde-format
+msgid "Only When Moving Windows"
+msgstr "តែ​នៅពេល​ផ្លាស់ទី​បង្អួច​ប៉ុណ្ណោះ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ElectricBorders)
+#: main.ui:168
+#, kde-format
+msgid "Always Enabled"
+msgstr "បើក​ជា​និច្ច"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, activationDelayLabel)
+#: main.ui:176
+#, kde-format
+msgid ""
+"Amount of time required for the mouse cursor to be pushed against the edge "
+"of the screen before the action is triggered"
+msgstr "ចំនួន​ពេលវេលា​ដែល​ត្រូវ​ការ​សម្រាប់​ចុច​ទស្សន៍ទ្រនិច្ច​លើ​ជ្រុង​នៃ​អេក្រង់​មុននឹង​សកម្មភាពត្រូវ​បាន​កេះ"
+
+#. i18n: ectx: property (text), widget (QLabel, activationDelayLabel)
+#: main.ui:179
+#, kde-format
+msgid "Activation &delay:"
+msgstr "ការ​ពន្យារ​កា​រធ្វើ​ឲ្យ​សកម្ម ៖"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_ElectricBorderDelay)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_ElectricBorderCooldown)
+#: main.ui:189 main.ui:224
+#, kde-format
+msgid " ms"
+msgstr " មិល្លីវិនាទី"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, triggerCooldownLabel)
+#: main.ui:208
+#, kde-format
+msgid ""
+"Amount of time required after triggering an action until the next trigger "
+"can occur"
+msgstr "ចំនួន​ពេលវេលា​ដែល​ត្រូវការ​សម្រាប់កេះ​សកម្មភាព រហូត​ដល់​ការ​កេះ​លើកក្រោយ​កើត​ឡើង"
+
+#. i18n: ectx: property (text), widget (QLabel, triggerCooldownLabel)
+#: main.ui:211
+#, kde-format
+msgid "&Reactivation delay:"
+msgstr "​ពន្យារ​កា​រធ្វើ​ឲ្យ​សកម្ម​ឡើង​វិញ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, label_1)
+#: touch.ui:17
+#, fuzzy, kde-format
+#| msgid ""
+#| "To trigger an action push your mouse cursor against the edge of the "
+#| "screen in the action's direction."
+msgid ""
+"You can trigger an action by swiping from the screen edge towards the center "
+"of the screen."
+msgstr "ដើម្បីកេះ​សកម្មភាព​ចុចកណ្ដុររបស់​អ្នក​នៅ​គែម​អេក្រង់​នៅ​ក្នុង​ទិស​សកម្មភាព ។"

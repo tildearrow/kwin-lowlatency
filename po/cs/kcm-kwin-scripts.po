@@ -1,0 +1,93 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Vít Pelčák <vit@pelcak.org>, 2012, 2013, 2017.
+# Vit Pelcak <vpelcak@suse.cz>, 2017, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-09-01 02:29+0200\n"
+"PO-Revision-Date: 2020-09-01 16:42+0200\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.08.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Vít Pelčák"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "vit@pelcak.org"
+
+#: module.cpp:38
+#, kde-format
+msgid "KWin Scripts"
+msgstr "Skripty KWinu"
+
+#: module.cpp:40
+#, kde-format
+msgid "Configure KWin scripts"
+msgstr "Nastavit skripty KWinu"
+
+#: module.cpp:43
+#, kde-format
+msgid "Tamás Krutki"
+msgstr "Tamás Krutki"
+
+#: module.cpp:79
+#, kde-format
+msgid "Error when uninstalling KWin Script: %1"
+msgstr "Chyba odinstalování skriptu KWin: %1"
+
+#: module.cpp:100
+#, kde-format
+msgid "Import KWin Script"
+msgstr "Importovat skript KWinu"
+
+#: module.cpp:101
+#, kde-format
+msgid "*.kwinscript|KWin scripts (*.kwinscript)"
+msgstr "*.kwinscript|Skripty KWinu (*.kwinscript)"
+
+#: module.cpp:120
+#, kde-format
+msgctxt "Placeholder is error message returned from the install service"
+msgid ""
+"Cannot import selected script.\n"
+"%1"
+msgstr ""
+"Nelze importovat zvolený skript.\n"
+"%1"
+
+#: module.cpp:134
+#, kde-format
+msgctxt "Placeholder is name of the script that was imported"
+msgid "The script \"%1\" was successfully imported."
+msgstr "Skript \"%1\" byl úspěšně importován."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, Module)
+#: module.ui:14
+#, kde-format
+msgid "KWin script configuration"
+msgstr "Nastavení skriptu KWinu"
+
+#. i18n: ectx: property (text), widget (QPushButton, importScriptButton)
+#: module.ui:55
+#, kde-format
+msgid "Install from File..."
+msgstr "Instalovat ze souboru..."
+
+#. i18n: ectx: property (text), widget (KNS3::Button, ghnsButton)
+#: module.ui:67
+#, kde-format
+msgid "Get New Scripts..."
+msgstr "Získat nové skripty..."

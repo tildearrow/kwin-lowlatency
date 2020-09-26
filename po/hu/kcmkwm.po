@@ -1,0 +1,1450 @@
+#
+# John Zero <johnzero@telnet.hu>, 1997.
+# Balazs Nagy <julian7@kva.hu>, 1998.
+# Csaba Major <major@terrasoft.hu>, 1998.
+# Marcell Lengyel <miketkf@yahoo.com>, 1998.
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012, 2014, 2015, 2019.
+# Balázs Úr <urbalazs@gmail.com>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE 4.2\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-29 02:26+0200\n"
+"PO-Revision-Date: 2019-12-08 18:28+0100\n"
+"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.03.70\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kiszel Kristóf,Szántó Tamás"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ulysses@kubuntu.org,tszanto@interware.hu"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
+#: actions.ui:17
+#, kde-format
+msgid "Inactive Inner Window Actions"
+msgstr "Inaktív ablakok műveletei"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: ectx: property (text), widget (QLabel, label_1)
+#: actions.ui:26 mouse.ui:177
+#, kde-format
+msgid "&Left click:"
+msgstr "&Bal kattintás:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandWindow1)
+#: actions.ui:39
+#, kde-format
+msgid ""
+"In this row you can customize left click behavior when clicking into an "
+"inactive inner window ('inner' means: not titlebar, not frame)."
+msgstr ""
+"Ebben a sorban lehet testre szabni a bal gombbal történő, az inaktív ablakok "
+"belsejébe (a címsor és a keret által határolt területre) eső kattintások "
+"hatását."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow3)
+#: actions.ui:43 actions.ui:83 actions.ui:123
+#, kde-format
+msgid "Activate, raise and pass click"
+msgstr "Aktiválás, felemelés és a kattintás átadása"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow3)
+#: actions.ui:48 actions.ui:88 actions.ui:128
+#, kde-format
+msgid "Activate and pass click"
+msgstr "Aktiválás és a kattintás átadása"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow3)
+#: actions.ui:53 actions.ui:93 actions.ui:133 mouse.ui:293 mouse.ui:408
+#: mouse.ui:523
+#, kde-format
+msgid "Activate"
+msgstr "Aktiválás"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow3)
+#: actions.ui:58 actions.ui:98 actions.ui:138 mouse.ui:283 mouse.ui:398
+#: mouse.ui:513
+#, kde-format
+msgid "Activate and raise"
+msgstr "Aktiválás és felemelés"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: actions.ui:66 mouse.ui:200
+#, kde-format
+msgid "&Middle click:"
+msgstr "&Középső gombos kattintás:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandWindow2)
+#: actions.ui:79
+#, kde-format
+msgid ""
+"In this row you can customize middle click behavior when clicking into an "
+"inactive inner window ('inner' means: not titlebar, not frame)."
+msgstr ""
+"Ebben a sorban lehet testre szabni a középső gombbal történő, az inaktív "
+"ablakok belsejébe (a címsor és a keret által határolt területre) eső "
+"kattintások hatását."
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: actions.ui:106 mouse.ui:213
+#, kde-format
+msgid "&Right click:"
+msgstr "&Jobb gombos kattintás:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandWindow3)
+#: actions.ui:119
+#, kde-format
+msgid ""
+"In this row you can customize right click behavior when clicking into an "
+"inactive inner window ('inner' means: not titlebar, not frame)."
+msgstr ""
+"Ebben a sorban lehet testre szabni a jobb gombbal történő, az inaktív "
+"ablakok belsejébe (a címsor és a keret által határolt területre) eső "
+"kattintások hatását."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: actions.ui:146 mouse.ui:88
+#, kde-format
+msgid "Mouse &wheel:"
+msgstr "Egér&görgő:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandWindowWheel)
+#: actions.ui:159
+#, kde-format
+msgid ""
+"In this row you can customize behavior when scrolling into an inactive inner "
+"window ('inner' means: not titlebar, not frame)."
+msgstr ""
+"Ebben a sorban lehet testre szabni az inaktív ablakok belsejébe (a címsor és "
+"a keret által határolt területre) eső görgetések hatását."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindowWheel)
+#: actions.ui:163
+#, kde-format
+msgid "Scroll"
+msgstr "Görgetés"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindowWheel)
+#: actions.ui:168
+#, kde-format
+msgid "Activate and scroll"
+msgstr "Aktiválás és görgetés"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindowWheel)
+#: actions.ui:173
+#, kde-format
+msgid "Activate, raise and scroll"
+msgstr "Aktiválás, felemelés és görgetés"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: actions.ui:184
+#, kde-format
+msgid "Inner Window, Titlebar and Frame Actions"
+msgstr "Ablakok, címsorok és keretek műveletei"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: actions.ui:195
+#, kde-format
+msgid "Mo&difier key:"
+msgstr "Mó&dosítóbillentyű:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandAllKey)
+#: actions.ui:205
+#, kde-format
+msgid ""
+"Here you select whether holding the Meta key or Alt key will allow you to "
+"perform the following actions."
+msgstr ""
+"Itt lehet beállítani, hogy az Alt vagy a Meta billentyű lenyomva tartásával "
+"elvégezhetők-e a következő műveletek."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllKey)
+#: actions.ui:209
+#, kde-format
+msgid "Meta"
+msgstr "Meta"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllKey)
+#: actions.ui:214
+#, kde-format
+msgid "Alt"
+msgstr "Alt"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: actions.ui:236
+#, kde-format
+msgid "  + "
+msgstr "  + "
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: actions.ui:248 mouse.ui:601
+#, kde-format
+msgid "L&eft click:"
+msgstr "B&al kattintás:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandAll1)
+#: actions.ui:261
+#, kde-format
+msgid ""
+"In this row you can customize left click behavior when clicking into the "
+"titlebar or the frame."
+msgstr ""
+"Ebben a sorban lehet testre szabni a bal gombbal történő, a címsorra vagy a "
+"keretre eső kattintások hatását."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
+#: actions.ui:265 actions.ui:335 actions.ui:405
+#, kde-format
+msgid "Move"
+msgstr "Mozgatás"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
+#: actions.ui:270 actions.ui:340 actions.ui:410
+#, kde-format
+msgid "Activate, raise and move"
+msgstr "Aktiválás, felemelés és mozgatás"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
+#: actions.ui:275 actions.ui:345 actions.ui:415 mouse.ui:246 mouse.ui:308
+#: mouse.ui:361 mouse.ui:423 mouse.ui:476 mouse.ui:538
+#, kde-format
+msgid "Toggle raise and lower"
+msgstr "A felemelés és a lesüllyesztés átkapcsolása"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
+#: actions.ui:280 actions.ui:350 actions.ui:420
+#, kde-format
+msgid "Resize"
+msgstr "Átméretezés"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
+#: actions.ui:285 actions.ui:355 actions.ui:425 mouse.ui:236 mouse.ui:298
+#: mouse.ui:351 mouse.ui:413 mouse.ui:466 mouse.ui:528
+#, kde-format
+msgid "Raise"
+msgstr "Felemelés"
+
+#. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
+#: actions.ui:290 actions.ui:360 actions.ui:430 mouse.ui:65 mouse.ui:241
+#: mouse.ui:303 mouse.ui:356 mouse.ui:418 mouse.ui:471 mouse.ui:533
+#, kde-format
+msgid "Lower"
+msgstr "Lesüllyesztés"
+
+#. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
+#: actions.ui:295 actions.ui:365 actions.ui:435 mouse.ui:55 mouse.ui:251
+#: mouse.ui:313 mouse.ui:366 mouse.ui:428 mouse.ui:481 mouse.ui:543
+#, kde-format
+msgid "Minimize"
+msgstr "Minimalizálás"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
+#: actions.ui:300 actions.ui:370 actions.ui:440
+#, kde-format
+msgid "Decrease opacity"
+msgstr "Átlátszatlanság csökkentése"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
+#: actions.ui:305 actions.ui:375 actions.ui:445
+#, kde-format
+msgid "Increase opacity"
+msgstr "Átlátszatlanság növelése"
+
+#. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
+#: actions.ui:310 actions.ui:380 actions.ui:450 actions.ui:505 mouse.ui:80
+#: mouse.ui:132 mouse.ui:271 mouse.ui:333 mouse.ui:386 mouse.ui:448
+#: mouse.ui:501 mouse.ui:563
+#, kde-format
+msgid "Do nothing"
+msgstr "Ne tegyen semmit"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: actions.ui:318
+#, kde-format
+msgid "Middle &click:"
+msgstr "&Középső gombos kattintás:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandAll2)
+#: actions.ui:331
+#, kde-format
+msgid ""
+"In this row you can customize middle click behavior when clicking into the "
+"titlebar or the frame."
+msgstr ""
+"Ebben a sorban lehet testre szabni a középső gombbal történő, a címsorra "
+"vagy a keretre eső kattintások hatását."
+
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: actions.ui:388 mouse.ui:671
+#, kde-format
+msgid "Right clic&k:"
+msgstr "&Jobb gombos kattintás:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandAll3)
+#: actions.ui:401
+#, kde-format
+msgid ""
+"In this row you can customize right click behavior when clicking into the "
+"titlebar or the frame."
+msgstr ""
+"Ebben a sorban lehet testre szabni a jobb gombbal történő, a címsorra vagy a "
+"keretre eső kattintások hatását."
+
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: actions.ui:458
+#, kde-format
+msgid "Mo&use wheel:"
+msgstr "&Egérgörgő:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandAllWheel)
+#: actions.ui:471
+#, kde-format
+msgid ""
+"Here you can customize KDE's behavior when scrolling with the mouse wheel in "
+"a window while pressing the modifier key."
+msgstr ""
+"Itt lehet testre szabni az egérgörgős görgetés hatását, ha le van nyomva egy "
+"módosító billentyű és a görgetés ablakban történik"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
+#: actions.ui:475 mouse.ui:102
+#, kde-format
+msgid "Raise/lower"
+msgstr "Előre hozás/hátratevés"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
+#: actions.ui:480 mouse.ui:107
+#, kde-format
+msgid "Shade/unshade"
+msgstr "Felgördítés/legördítés"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
+#: actions.ui:485 mouse.ui:112
+#, kde-format
+msgid "Maximize/restore"
+msgstr "Maximalizálás/visszaállítás"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
+#: actions.ui:490 mouse.ui:117
+#, kde-format
+msgid "Keep above/below"
+msgstr "A többi ablak felett/alatt"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
+#: actions.ui:495 mouse.ui:122
+#, kde-format
+msgid "Move to previous/next desktop"
+msgstr "Áthelyezés az előző/következő asztalra"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
+#: actions.ui:500 mouse.ui:127
+#, kde-format
+msgid "Change opacity"
+msgstr "Az áttetszőség módosítása"
+
+#. i18n: ectx: property (text), widget (QLabel, shadeHoverLabel)
+#: advanced.ui:20
+#, kde-format
+msgid "Window &unshading:"
+msgstr "Ablakok legö&rdítése:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShadeHover)
+#: advanced.ui:32
+#, kde-format
+msgid ""
+"<html><head/><body><p>If this option is enabled, a shaded window will "
+"unshade automatically when the mouse pointer has been over the titlebar for "
+"some time.</p></body></html>"
+msgstr ""
+"<html><head/><body><p>Az automatikus legördítés bekapcsolása esetén a "
+"felgördített ablakok automatikusan legördülnek, ha az egérmutató bizonyos "
+"ideig a címsoruk fölött marad.</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShadeHover)
+#: advanced.ui:35
+#, kde-format
+msgid "On titlebar hover after:"
+msgstr "A címsorra mutatás után ennyivel:"
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_ShadeHoverInterval)
+#: advanced.ui:42
+#, kde-format
+msgid ""
+"Sets the time in milliseconds before the window unshades when the mouse "
+"pointer goes over the shaded window."
+msgstr ""
+"Az a késleltetési idő (ezredmásodpercben), amely eltelte után az ablak "
+"legördül, ha az egérmutató a címsor felett marad."
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_ShadeHoverInterval)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_DelayFocusInterval)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_AutoRaiseInterval)
+#: advanced.ui:45 focus.ui:85 focus.ui:178
+#, kde-format
+msgid " ms"
+msgstr " ms"
+
+#. i18n: ectx: property (text), widget (QLabel, windowPlacementLabel)
+#: advanced.ui:66
+#, kde-format
+msgid "Window &placement:"
+msgstr "Ablak&elhelyezés:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_Placement)
+#: advanced.ui:76
+#, kde-format
+msgid ""
+"<html><head/><body><p>The placement policy determines where a new window "
+"will appear on the desktop.</p><ul style=\"margin-top: 0px; margin-bottom: "
+"0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\"><li style=\" "
+"margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Smart</span> will try to achieve a minimum overlap of windows</li><li "
+"style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Maximizing</span> will try to maximize every window to fill the "
+"whole screen. It might be useful to selectively affect placement of some "
+"windows using the window-specific settings.</li><li style=\" margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-style:italic;\">Cascade</span> will "
+"cascade the windows</li><li style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span style=\" font-style:italic;\">Random</span> will use a random "
+"position</li><li style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Centered</span> will place the window "
+"centered</li><li style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Zero-cornered</span> will place the window in "
+"the top-left corner</li><li style=\" margin-top:0px; margin-bottom:12px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span style=\" font-style:italic;\">Under mouse</span> will place the "
+"window under the pointer</li></ul></body></html>"
+msgstr ""
+"<html><head/><body><p>Az elhelyezési szabály meghatározza, hol jelenjenek "
+"meg az új ablakok az asztalon.</p><ul style=\"margin-top: 0px; margin-"
+"bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\"><li "
+"style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Az <span style=\" font-"
+"style:italic;\">Intelligens</span> mód megpróbálja a lehető legkisebb "
+"átlapolással elhelyezni az ablakokat.</li><li style=\" margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\">A <span style=\" font-style:italic;\">Maximalizáló</span> "
+"mód megpróbálja maximalizálni az összes ablakot a teljes képernyő "
+"kitöltéséhez. Egyes ablakok elhelyezését érdemes lehet ablakspecifikus "
+"szabályokkal megadni.</li><li style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">A "
+"<span style=\" font-style:italic;\">Lépcsőzetes</span> mód lépcsőzetesen "
+"helyezi el az ablakokat.</li><li style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">A "
+"<span style=\" font-style:italic;\">Véletlenszerű</span> mód véletlenszerűen "
+"helyezi el az ablakokat.</li><li style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">A "
+"<span style=\" font-style:italic;\">Középre</span> mód középre igazítva "
+"helyezi el az ablakokat.</li><li style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Az "
+"<span style=\" font-style:italic;\">Origó</span> mód a bal felső sarokban "
+"helyezi el az ablakokat.</li><li style=\" margin-top:0px; margin-"
+"bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\">Az <span style=\" font-style:italic;\">Egér alá</span> mód a "
+"kurzor alatt helyezi el az ablakokat.</li></ul></body></html>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
+#: advanced.ui:80
+#, kde-format
+msgid "Minimal Overlapping"
+msgstr "Minimális átfedés"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
+#: advanced.ui:85
+#, kde-format
+msgid "Maximized"
+msgstr "Maximalizált"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
+#: advanced.ui:90
+#, kde-format
+msgid "Cascaded"
+msgstr "Lépcsőzetes"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
+#: advanced.ui:95
+#, kde-format
+msgid "Random"
+msgstr "véletlenszerű"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
+#: advanced.ui:100
+#, kde-format
+msgid "Centered"
+msgstr "középre igazított"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
+#: advanced.ui:105
+#, kde-format
+msgid "In Top-Left Corner"
+msgstr "Bal felső sarokban"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
+#: advanced.ui:110
+#, kde-format
+msgid "Under mouse"
+msgstr "Az egér alatt"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AllowKDEAppsToRememberWindowPositions)
+#: advanced.ui:118
+#, kde-format
+msgid ""
+"When turned on, KDE apps which are able to remember the positions of their "
+"windows are allowed to do so. This will override the window placement mode "
+"defined above."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowKDEAppsToRememberWindowPositions)
+#: advanced.ui:121
+#, kde-format
+msgid "Allow KDE apps to remember the positions of their own windows"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, specialWindowsLabel)
+#: advanced.ui:128
+#, kde-format
+msgid "&Special windows:"
+msgstr "&Speciális ablakok:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_HideUtilityWindowsForInactive)
+#: advanced.ui:138
+#, kde-format
+msgid ""
+"When turned on, utility windows (tool windows, torn-off menus,...) of "
+"inactive applications will be hidden and will be shown only when the "
+"application becomes active. Note that applications have to mark the windows "
+"with the proper window type for this feature to work."
+msgstr ""
+"Ha be van kapcsolva, az eszközablakok és leválasztott menük el lesznek "
+"rejtve inaktív alkalmazásoknál és csak akkor jelennek meg újra, ha az "
+"alkalmazás aktívvá válik. Ez a funkció csak azokra az ablakokra vonatkozik, "
+"amelyeket az alkalmazás eszköztípusúnak jelölt meg."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HideUtilityWindowsForInactive)
+#: advanced.ui:141
+#, kde-format
+msgid "Hide utility windows for inactive applications"
+msgstr "Az eszközablakok elrejtése inaktív alkalmazásoknál"
+
+#. i18n: ectx: property (text), widget (QLabel, windowFocusPolicyLabel)
+#: focus.ui:22
+#, kde-format
+msgid "Window &activation policy:"
+msgstr "Ablak&aktiválási szabály:"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, windowFocusPolicy)
+#: focus.ui:32
+#, kde-format
+msgid "With this option you can specify how and when windows will be focused."
+msgstr ""
+"Ezzel a beállítással megadhatja, hogyan és mikor kapják meg az ablakok a "
+"fókuszt."
+
+#. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
+#: focus.ui:36
+#, kde-format
+msgctxt "sassa asas"
+msgid "Click to focus"
+msgstr "Kattintás fókuszáláshoz"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
+#: focus.ui:41
+#, kde-format
+msgid "Click to focus (mouse precedence)"
+msgstr "Kattintás fókuszáláshoz (egérprecedencia)"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
+#: focus.ui:46
+#, kde-format
+msgid "Focus follows mouse"
+msgstr "Fókuszálás egérkövetéssel"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
+#: focus.ui:51
+#, kde-format
+msgid "Focus follows mouse (mouse precedence)"
+msgstr "Fókuszálás egérkövetéssel (egérprecedencia)"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
+#: focus.ui:56
+#, kde-format
+msgid "Focus under mouse"
+msgstr "A fókusz az egér alatt"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
+#: focus.ui:61
+#, kde-format
+msgid "Focus strictly under mouse"
+msgstr "A fókusz szigorúan az egér alatt"
+
+#. i18n: ectx: property (text), widget (QLabel, delayFocusOnLabel)
+#: focus.ui:69
+#, kde-format
+msgid "&Delay focus by:"
+msgstr "&Fókuszváltási késleltetés:"
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_DelayFocusInterval)
+#: focus.ui:82
+#, kde-format
+msgid ""
+"This is the delay after which the window the mouse pointer is over will "
+"automatically receive focus."
+msgstr ""
+"Ez az a várakozási idő, melynek letelte után az egérmutató alatti ablak "
+"megkapja a fókuszt."
+
+#. i18n: ectx: property (text), widget (QLabel, focusStealingLabel)
+#: focus.ui:101
+#, kde-format
+msgid "Focus &stealing prevention:"
+msgstr "A fókuszel&vétel megakadályozása:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_FocusStealingPreventionLevel)
+#: focus.ui:114
+#, kde-format
+msgid ""
+"<html><head/><body><p>This option specifies how much KWin will try to "
+"prevent unwanted focus stealing caused by unexpected activation of new "
+"windows. (Note: This feature does not work with the <span style=\" font-"
+"style:italic;\">Focus under mouse</span> or <span style=\" font-style:italic;"
+"\">Focus strictly under mouse</span> focus policies.) </p><ul style=\"margin-"
+"top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-"
+"indent: 1;\"><li style=\" margin-top:12px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">None:</span> Prevention is turned off and new "
+"windows always become activated.</li><li style=\" margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">Low:</span> Prevention is "
+"enabled; when some window does not have support for the underlying mechanism "
+"and KWin cannot reliably decide whether to activate the window or not, it "
+"will be activated. This setting may have both worse and better results than "
+"the medium level, depending on the applications.</li><li style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Medium:</"
+"span> Prevention is enabled.</li><li style=\" margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">High:</span> New windows "
+"get activated only if no window is currently active or if they belong to the "
+"currently active application. This setting is probably not really usable "
+"when not using mouse focus policy.</li><li style=\" margin-top:0px; margin-"
+"bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">Extreme:</span> All "
+"windows must be explicitly activated by the user.</li></ul><p>Windows that "
+"are prevented from stealing focus are marked as demanding attention, which "
+"by default means their taskbar entry will be highlighted. This can be "
+"changed in the Notifications control module.</p></body></html>"
+msgstr ""
+"<html><head/><body><p>Ezzel az opcióval lehet beállítani, hogy a KWin milyen "
+"esetben akadályozza meg az újonnan megjelenő ablakokat abban, hogy elvegyék "
+"a fókuszt az aktív ablaktól (megjegyzés: a beállításnak nincs hatása a <span "
+"style=\" font-style:italic;\">Fókusz az egérmutató alatt</span> és <span "
+"style=\" font-style:italic;\">A fókusz szigorúan követi az egeret</span> mód "
+"esetén.)</p><ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: "
+"0px; margin-right: 0px; -qt-list-indent: 1;\"><li style=\" margin-top:12px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-style:italic;\">Nincs:</span> Nincs "
+"akadályozás, az ablakkezelő az új ablakokat aktiválni fogja.</li><li style="
+"\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Alacsony:</span> A KWin megpróbálja megakadályozni, hogy az új ablakok "
+"elvegyék a fókuszt, de ha az ablak nem kezeli a szükséges hívásokat, és "
+"ezért az ablakkezelő nem tudja eldönteni, hogy biztonságos-e az aktiválás "
+"kikapcsolása, akkor az új ablak mégis aktívvá válik. Az alkalmazástól "
+"függően ez a beállítás általában jobb, de esetleg rosszabb fókuszkezelést "
+"eredményez, mint a „Közepes” választása esetén.</li><li style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Közepes:</"
+"span> A fókusz elvétele meg lesz akadályozva.</li><li style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Magas:</"
+"span> Az új ablakok csak akkor lesznek aktiválva, ha nincs más aktív ablak "
+"vagy ha az éppen aktív alkalmazáshoz tartoznak. Ez a beállítás nem igazán "
+"használható, ha egérkattintásra történő fókuszváltási mód van bekapcsolva.</"
+"li><li style=\" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Nagyon magas:</span> A felhasználónak az összes ablak aktiválását "
+"magának kell elvégeznie.</li></ul><p>A rendszer a fókuszelvételben "
+"megakadályozott ablakokat figyelemfelhívó ablaknak jelöli meg, azaz "
+"alapértelmezés szerint a címsoruk kiemelt lesz. Ez a beállítás "
+"megváltoztatható a Rendszerüzenetek beállítómodulban.</p></body></html>"
+
+#. i18n: Focus Stealing Prevention Level
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_FocusStealingPreventionLevel)
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_BorderSnapZone)
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_WindowSnapZone)
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_CenterSnapZone)
+#: focus.ui:118 moving.ui:53 moving.ui:75 moving.ui:97
+#, kde-format
+msgid "None"
+msgstr "Nincs"
+
+#. i18n: Focus Stealing Prevention Level
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_FocusStealingPreventionLevel)
+#: focus.ui:123
+#, kde-format
+msgid "Low"
+msgstr "Alacsony"
+
+#. i18n: Focus Stealing Prevention Level
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_FocusStealingPreventionLevel)
+#: focus.ui:128
+#, kde-format
+msgid "Medium"
+msgstr "Közepes"
+
+#. i18n: Focus Stealing Prevention Level
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_FocusStealingPreventionLevel)
+#: focus.ui:133
+#, kde-format
+msgid "High"
+msgstr "Magas"
+
+#. i18n: Focus Stealing Prevention Level
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_FocusStealingPreventionLevel)
+#: focus.ui:138
+#, kde-format
+msgid "Extreme"
+msgstr "Nagyon magas"
+
+#. i18n: ectx: property (text), widget (QLabel, raisingWindowsLabel)
+#: focus.ui:146
+#, kde-format
+msgid "Raising windows:"
+msgstr "Ablakok előtérbe hozása:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ClickRaise)
+#: focus.ui:153
+#, kde-format
+msgid ""
+"When this option is enabled, the active window will be brought to the front "
+"when you click somewhere into the window contents. To change it for inactive "
+"windows, you need to change the settings in the Actions tab."
+msgstr ""
+"Ha bejelöli ezt az opciót, akkor az ablakok automatikusan az előtérbe "
+"kerülnek, ha a belsejükre kattint. Ha ugyanezt szeretné inaktív ablakoknál, "
+"váltson át a Műveletek lapra."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ClickRaise)
+#: focus.ui:156
+#, kde-format
+msgid "&Click raises active window"
+msgstr "Az aktí&v ablak rákattintáskor felemelkedik"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoRaise)
+#: focus.ui:165
+#, kde-format
+msgid ""
+"When this option is enabled, a window in the background will automatically "
+"come to the front when the mouse pointer has been over it for some time."
+msgstr ""
+"Az opció bekapcsolása esetén a háttérben levő ablakok automatikusan "
+"felemelkednek az előtérbe, ha az egérmutató bizonyos ideig fölöttük marad."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoRaise)
+#: focus.ui:168
+#, kde-format
+msgid "&Raise on hover, delayed by:"
+msgstr "&Előtérbe hozás rámutatáskor, késleltetve:"
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_AutoRaiseInterval)
+#: focus.ui:175
+#, kde-format
+msgid ""
+"This is the delay after which the window that the mouse pointer is over will "
+"automatically come to the front."
+msgstr ""
+"Ez az a várakozási idő, melynek letelte után egy ablak az előtérbe jön, ha "
+"az egérmutató végig fölötte maradt."
+
+#. i18n: ectx: property (text), widget (QLabel, multiscreenBehaviorLabel)
+#: focus.ui:196
+#, kde-format
+msgid "Multiscreen behavior:"
+msgstr "Több képernyős működés:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ActiveMouseScreen)
+#: focus.ui:203
+#, kde-format
+msgid ""
+"When this option is enabled, the active Xinerama screen (where new windows "
+"appear, for example) is the screen containing the mouse pointer. When "
+"disabled, the active Xinerama screen is the screen containing the focused "
+"window. By default this option is disabled for Click to focus and enabled "
+"for other focus policies."
+msgstr ""
+"Ha ez be van jelölve, akkor az lesz az aktív Xinerama-képernyő (ahol az új "
+"ablakok is megjelennek), ahol az egérmutató van. Ha nincs bejelölve, az az "
+"aktív Xinerama-képernyő, ahol a fókuszált ablak van. Alapértelmezésben nincs "
+"bejelölve „Fókusz kattintásra” mód esetén, a többi fókuszálási módban "
+"azonban igen."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ActiveMouseScreen)
+#: focus.ui:206
+#, kde-format
+msgid "Active screen follows &mouse"
+msgstr "Az aktív képe&rnyő az legyen, ahol az egérmutató van"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_SeparateScreenFocus)
+#: focus.ui:213
+#, kde-format
+msgid ""
+"When this option is enabled, focus operations are limited only to the active "
+"Xinerama screen"
+msgstr ""
+"Ha be van jelölve, a fókuszálási műveletek az aktív Xinerama-képernyőre "
+"korlátozódnak."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SeparateScreenFocus)
+#: focus.ui:216
+#, kde-format
+msgid "&Separate screen focus"
+msgstr "Fókuszálás csak az &aktív képernyőn"
+
+#. i18n: ectx: property (text), widget (QLabel, windowFocusPolicyDescriptionLabel)
+#: focus.ui:229
+#, fuzzy, kde-format
+#| msgid "Window &activation policy:"
+msgid "Window activation policy description"
+msgstr "Ablak&aktiválási szabály:"
+
+#: main.cpp:73
+#, kde-format
+msgid "&Focus"
+msgstr "Fók&uszálás"
+
+#: main.cpp:84
+#, kde-format
+msgid "Titlebar A&ctions"
+msgstr "Cí&msorműveletek"
+
+#: main.cpp:91
+#, kde-format
+msgid "W&indow Actions"
+msgstr "Ablakműv&eletek"
+
+#: main.cpp:98
+#, kde-format
+msgid "Mo&vement"
+msgstr "Mo&zgatás"
+
+#: main.cpp:105
+#, kde-format
+msgid "Adva&nced"
+msgstr "&Speciális"
+
+#: main.cpp:110
+#, kde-format
+msgid "Window Behavior Configuration Module"
+msgstr "Ablakműveletek beállítómodul"
+
+#: main.cpp:112
+#, kde-format
+msgid "(c) 1997 - 2002 KWin and KControl Authors"
+msgstr "© A KWin és a KControl szerzői, 1997-2002."
+
+#: main.cpp:114
+#, kde-format
+msgid "Matthias Ettrich"
+msgstr "Matthias Ettrich"
+
+#: main.cpp:115
+#, kde-format
+msgid "Waldo Bastian"
+msgstr "Waldo Bastian"
+
+#: main.cpp:116
+#, kde-format
+msgid "Cristian Tibirna"
+msgstr "Cristian Tibirna"
+
+#: main.cpp:117
+#, kde-format
+msgid "Matthias Kalle Dalheimer"
+msgstr "Matthias Kalle Dalheimer"
+
+#: main.cpp:118
+#, kde-format
+msgid "Daniel Molkentin"
+msgstr "Daniel Molkentin"
+
+#: main.cpp:119
+#, kde-format
+msgid "Wynn Wilkes"
+msgstr "Wynn Wilkes"
+
+#: main.cpp:120
+#, kde-format
+msgid "Pat Dowler"
+msgstr "Pat Dowler"
+
+#: main.cpp:121
+#, kde-format
+msgid "Bernd Wuebben"
+msgstr "Bernd Wuebben"
+
+#: main.cpp:122
+#, kde-format
+msgid "Matthias Hoelzer-Kluepfel"
+msgstr "Matthias Hoelzer-Kluepfel"
+
+#: main.cpp:167
+#, kde-format
+msgid ""
+"<p><h1>Window Behavior</h1> Here you can customize the way windows behave "
+"when being moved, resized or clicked on. You can also specify a focus policy "
+"as well as a placement policy for new windows.</p> <p>Please note that this "
+"configuration will not take effect if you do not use KWin as your window "
+"manager. If you do use a different window manager, please refer to its "
+"documentation for how to customize window behavior.</p>"
+msgstr ""
+"<p><h1>Ablakműveletek</h1> Itt lehet módosítani az ablakok mozgatásával, "
+"átméretezésével kapcsolatos beállításokat, az egérműveletek hatását. Meg "
+"lehet adni, hogy melyik fókuszálási és ablakelhelyezési módszer legyen "
+"érvényes. </p> <p>Ezek a beállítások csak a KWin ablakkezelőre vonatkoznak, "
+"ha más ablakkezelőt használ, akkor annak dokumentációjában próbálja "
+"megkeresni a szükséges beállítási lehetőségeket.</p>"
+
+#: main.cpp:187
+#, kde-format
+msgid "&Titlebar Actions"
+msgstr "A &címsor műveletei"
+
+#: main.cpp:193
+#, kde-format
+msgid "Window Actio&ns"
+msgstr "Ablakműv&eletek"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
+#: mouse.ui:17
+#, kde-format
+msgid "Titlebar Actions"
+msgstr "Címsorműveletek"
+
+#. i18n: ectx: property (text), widget (QLabel, label_1)
+#: mouse.ui:26
+#, kde-format
+msgid "&Double-click:"
+msgstr "&Dupla kattintás:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
+#: mouse.ui:36
+#, kde-format
+msgid "Behavior on <em>double</em> click into the titlebar."
+msgstr "A <em>dupla</em> kattintás hatása, ha az a címsorra történik."
+
+#. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonLeftClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonMiddleClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonRightClickCommand)
+#: mouse.ui:40 mouse.ui:615 mouse.ui:650 mouse.ui:685
+#, kde-format
+msgid "Maximize"
+msgstr "Maximalizálás"
+
+#. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonLeftClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonMiddleClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonRightClickCommand)
+#: mouse.ui:45 mouse.ui:620 mouse.ui:655 mouse.ui:690
+#, kde-format
+msgid "Vertically maximize"
+msgstr ""
+
+#. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonLeftClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonMiddleClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MaximizeButtonRightClickCommand)
+#: mouse.ui:50 mouse.ui:625 mouse.ui:660 mouse.ui:695
+#, kde-format
+msgid "Horizontally maximize"
+msgstr ""
+
+#. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#: mouse.ui:60 mouse.ui:256 mouse.ui:318 mouse.ui:371 mouse.ui:433 mouse.ui:486
+#: mouse.ui:548
+#, kde-format
+msgid "Shade"
+msgstr "Felgördítés"
+
+#. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#: mouse.ui:70 mouse.ui:261 mouse.ui:323 mouse.ui:376 mouse.ui:438 mouse.ui:491
+#: mouse.ui:553
+#, kde-format
+msgid "Close"
+msgstr "Bezárás"
+
+#. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
+#: mouse.ui:75
+#, kde-format
+msgid "Show on all desktops"
+msgstr "Megjelenítés az összes asztalon"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandTitlebarWheel)
+#: mouse.ui:98
+#, kde-format
+msgid "Behavior on <em>mouse wheel</em> scroll over the titlebar."
+msgstr "Az <em>egérgörgő</em> hatása a címsor fölött görgetéskor."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: mouse.ui:143
+#, kde-format
+msgid "Titlebar and Frame Actions"
+msgstr "Címsor- és keretműveletek"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: mouse.ui:167
+#, kde-format
+msgid "Active"
+msgstr "Aktív"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: mouse.ui:190
+#, kde-format
+msgid "Inactive"
+msgstr "Inaktív"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandActiveTitlebar1)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandActiveTitlebar2)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandActiveTitlebar3)
+#: mouse.ui:232 mouse.ui:347 mouse.ui:462
+#, kde-format
+msgid ""
+"Behavior on <em>left</em> click into the titlebar or frame of an <em>active</"
+"em> window."
+msgstr ""
+"Ebben az oszlopban az aktív ablakok címsorára és keretére történő "
+"kattintások hatását lehet testre szabni. A <em>bal</em> gombbal történő "
+"kattintás hatása, ha az egy <em>aktív</em> ablak címsorára vagy keretére "
+"történik."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar3)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#: mouse.ui:266 mouse.ui:328 mouse.ui:381 mouse.ui:443 mouse.ui:496
+#: mouse.ui:558
+#, kde-format
+msgid "Show actions menu"
+msgstr "Műveletek menü megjelenítése"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#: mouse.ui:279 mouse.ui:394 mouse.ui:509
+#, kde-format
+msgid ""
+"Behavior on <em>left</em> click into the titlebar or frame of an "
+"<em>inactive</em> window."
+msgstr ""
+"A <em>bal</em> gombbal történő kattintás hatása, ha az egy <em>inaktív</em> "
+"ablak címsorára vagy keretére történik."
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
+#: mouse.ui:288 mouse.ui:403 mouse.ui:518
+#, kde-format
+msgid "Activate and lower"
+msgstr "Aktiválás és lesüllyesztés"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: mouse.ui:589
+#, kde-format
+msgid "Maximize Button Actions"
+msgstr "Maximalizáló gomb műveletei"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_8)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_MaximizeButtonLeftClickCommand)
+#: mouse.ui:598 mouse.ui:611
+#, kde-format
+msgid "Behavior on <em>left</em> click onto the maximize button."
+msgstr "A maximalizáló gombra történő <em>bal</em> kattintás hatása."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_9)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_MaximizeButtonMiddleClickCommand)
+#: mouse.ui:633 mouse.ui:646
+#, kde-format
+msgid "Behavior on <em>middle</em> click onto the maximize button."
+msgstr "A maximalizáló gombra történő <em>középső</em> kattintás hatása."
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: mouse.ui:636
+#, kde-format
+msgid "Middle c&lick:"
+msgstr "&Középső gombos kattintás:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_10)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_MaximizeButtonRightClickCommand)
+#: mouse.ui:668 mouse.ui:681
+#, kde-format
+msgid "Behavior on <em>right</em> click onto the maximize button."
+msgstr "A maximalizáló gombra történő <em>jobb</em> kattintás hatása."
+
+#. i18n: ectx: property (text), widget (QLabel, geometryTipLabel)
+#: moving.ui:20
+#, kde-format
+msgid "Window &geometry:"
+msgstr "Ablak&geometria:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_GeometryTip)
+#: moving.ui:30
+#, kde-format
+msgid ""
+"Enable this option if you want a window's geometry to be displayed while it "
+"is being moved or resized. The window position relative to the top-left "
+"corner of the screen is displayed together with its size."
+msgstr ""
+"Jelölje be ezt az opciót, ha azt szeretné, hogy ablak mozgatása és "
+"átméretezése közben látszódjanak az ablak méretei. A méreten kívül az "
+"ablaknak a képernyő bal felső sarkától számított pozíciója is megjelenik."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_GeometryTip)
+#: moving.ui:33
+#, kde-format
+msgid "Display when moving or resizing"
+msgstr "Megjelenítés mozgatáskor vagy átméretezéskor"
+
+#. i18n: ectx: property (text), widget (QLabel, borderSnapLabel)
+#: moving.ui:40
+#, kde-format
+msgid "Screen &edge snap zone:"
+msgstr "A ké&pernyőszélek vonzási távolsága:"
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_BorderSnapZone)
+#: moving.ui:50
+#, kde-format
+msgid ""
+"Here you can set the snap zone for screen edges, i.e. the 'strength' of the "
+"magnetic field which will make windows snap to the border when moved near it."
+msgstr ""
+"Itt lehet beállítani a képernyőszélek vonzási távolságát. Ha egy ablak ezen "
+"a távolságon belülre kerül, akkor automatikusan illeszkedni fog a képernyő "
+"széléhez."
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_BorderSnapZone)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_WindowSnapZone)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_CenterSnapZone)
+#: moving.ui:56 moving.ui:78 moving.ui:100
+#, kde-format
+msgid " px"
+msgstr " képpont"
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_WindowSnapZone)
+#: moving.ui:72
+#, kde-format
+msgid ""
+"Here you can set the snap zone for windows, i.e. the 'strength' of the "
+"magnetic field which will make windows snap to each other when they are "
+"moved near another window."
+msgstr ""
+"Itt lehet beállítani az ablakok vonzási távolságát. Ha két ablak ezen a "
+"távolságon belülre kerül, akkor széleik automatikusan illeszkedni fognak "
+"egymáshoz."
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_CenterSnapZone)
+#: moving.ui:94
+#, kde-format
+msgid ""
+"Here you can set the snap zone for the screen center, i.e. the 'strength' of "
+"the magnetic field which will make windows snap to the center of the screen "
+"when moved near it."
+msgstr ""
+"Itt lehet beállítani a képernyő közepének vonzási távolságát. Ha egy ablak "
+"ezen a távolságon belülre kerül, akkor automatikusan illeszkedni fog a "
+"képernyő közepéhez."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_SnapOnlyWhenOverlapping)
+#: moving.ui:113
+#, kde-format
+msgid ""
+"Here you can set that windows will be only snapped if you try to overlap "
+"them, i.e. they will not be snapped if the windows comes only near another "
+"window or border."
+msgstr ""
+"Ha bejelöli ezt az opciót, akkor az ablakok csak akkor fogják egymást "
+"vonzani, ha átfedik egymást, ha kívülről érnek egymás közelébe, akkor nem."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SnapOnlyWhenOverlapping)
+#: moving.ui:116
+#, kde-format
+msgid "Only when overlapping"
+msgstr "Csak átfedéskor"
+
+#. i18n: ectx: property (text), widget (QLabel, windowSnapLabel)
+#: moving.ui:123
+#, kde-format
+msgid "&Window snap zone:"
+msgstr "&Ablakvonzási távolsága:"
+
+#. i18n: ectx: property (text), widget (QLabel, centerSnaplabel)
+#: moving.ui:133
+#, kde-format
+msgid "&Center snap zone:"
+msgstr "Közé&pső vonzási távolság:"
+
+#. i18n: ectx: property (text), widget (QLabel, OverlapSnapLabel)
+#: moving.ui:143
+#, kde-format
+msgid "&Snap windows:"
+msgstr "Ablakok &dokkolása:"
+
+#: windows.cpp:87
+#, fuzzy, kde-format
+#| msgid ""
+#| "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus:"
+#| "</span> A window becomes active when you click into it. This behavior is "
+#| "common on other operating systems and likely what you want.</p></body></"
+#| "html>"
+msgid ""
+"<em>Click to focus:</em> A window becomes active when you click into it. "
+"This behavior is common on other operating systems and likely what you want."
+msgstr ""
+"<html><head/><body><p><span style=\" font-style:italic;\">Kattintás "
+"fókuszáláshoz:</span> Egy ablak akkor válik aktívvá, ha rákattint. Ez a "
+"működés általános más operációs rendszereken, és valószínűleg ezt szeretné.</"
+"p></body></html>"
+
+#: windows.cpp:91
+#, fuzzy, kde-format
+#| msgid ""
+#| "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus "
+#| "(mouse precedence):</span> Mostly the same as <span style=\" font-style:"
+#| "italic;\">Click to focus</span>. If an active window has to be chosen by "
+#| "the system (eg. because the currently active one was closed) the window "
+#| "under the mouse is the preferred candidate. Unusual, but possible variant "
+#| "of <span style=\" font-style:italic;\">Click to focus</span>.</p></body></"
+#| "html>"
+msgid ""
+"<em>Click to focus (mouse precedence):</em> Mostly the same as <em>Click to "
+"focus</em>. If an active window has to be chosen by the system (eg. because "
+"the currently active one was closed) the window under the mouse is the "
+"preferred candidate. Unusual, but possible variant of <em>Click to focus</"
+"em>."
+msgstr ""
+"<html><head/><body><p><span style=\" font-style:italic;\">Kattintás "
+"fókuszáláshoz - Egérprecedencia:</span> Szinte teljesen megegyezik a <span "
+"style=\" font-style:italic;\">Kattintás fókuszáláshoz</span> működésével. Ha "
+"a rendszernek ki kell választania az aktív ablakot (például az aktuális "
+"bezárása miatt), az egér alatti ablak az előnyben részesített jelölt. "
+"Szokatlan, de lehetséges változata a <span style=\" font-style:italic;"
+"\">Kattintás fókuszálásra</span> működésének.</p></body></html>"
+
+#: windows.cpp:96
+#, fuzzy, kde-format
+#| msgid ""
+#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus follows "
+#| "mouse:</span> Moving the mouse onto a window will activate it. Eg. "
+#| "windows randomly appearing under the mouse will not gain the focus. <span "
+#| "style=\" font-style:italic;\">Focus stealing prevention</span> takes "
+#| "place as usual. Think as <span style=\" font-style:italic;\">Click to "
+#| "focus</span> just without having to actually click.</p></body></html>"
+msgid ""
+"<em>Focus follows mouse:</em> Moving the mouse onto a window will activate "
+"it. Eg. windows randomly appearing under the mouse will not gain the focus. "
+"<em>Focus stealing prevention</em> takes place as usual. Think as <em>Click "
+"to focus</em> just without having to actually click."
+msgstr ""
+"<html><head/><body><p><span style=\" font-style:italic;\">Fókuszálás "
+"egérkövetéssel</span> Az egér mozgatása egy ablakba aktiválja azt. Az egér "
+"alatt véletlenszerűen megjelenő ablakok például nem kapják meg a fókuszt. A "
+"<span style=\" font-style:italic;\">fókuszlopás megakadályozása</span> "
+"ugyanúgy működik, mint máskor. Olyan, mint a <span style=\" font-style:"
+"italic;\">Kattintás fókuszálásra</span>, csak kattintás nélkül.</p></body></"
+"html>"
+
+#: windows.cpp:100
+#, fuzzy, kde-format
+#| msgid ""
+#| "<html><head/><body><p>This is mostly the same as <span style=\" font-"
+#| "style:italic;\">Focus follows mouse</span>. If an active window has to be "
+#| "chosen by the system (eg. because the currently active one was closed) "
+#| "the window under the mouse is the preferred candidate. Choose this, if "
+#| "you want a hover controlled focus.</p></body></html>"
+msgid ""
+"This is mostly the same as <em>Focus follows mouse</em>. If an active window "
+"has to be chosen by the system (eg. because the currently active one was "
+"closed) the window under the mouse is the preferred candidate. Choose this, "
+"if you want a hover controlled focus."
+msgstr ""
+"<html><head/><body><p>Szinte teljesen ugyanaz, mint a <span style=\" font-"
+"style:italic;\">Fókuszálás egérkövetéssel</span>. Ha a rendszernek ki kell "
+"választania az aktív ablakot (az aktuális bezárása miatt), az egér alatti "
+"ablak az előnyben részesített jelölt. Válassza ezt, ha rámutatással szeretné "
+"irányítani a fókuszálást.</p></body></html>"
+
+#: windows.cpp:105
+#, fuzzy, kde-format
+#| msgid ""
+#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus under "
+#| "mouse:</span> The focus always remains on the window under the mouse.<br/"
+#| "><span style=\" font-weight:600;\">Warning: </span><span style=\" font-"
+#| "style:italic;\">Focus stealing prevention</span> and the <span style=\" "
+#| "font-style:italic;\">tabbox ('Alt+Tab') </span>contradict the activation "
+#| "policy and will not work. You very likely want to use <span style=\" font-"
+#| "style:italic;\">Focus follows mouse (mouse precedence)</span> instead!</"
+#| "p></body></html>"
+msgid ""
+"<em>Focus under mouse:</em> The focus always remains on the window under the "
+"mouse.<br/><strong>Warning:</strong> <em>Focus stealing prevention</em> and "
+"the <em>tabbox ('Alt+Tab')</em> contradict the activation policy and will "
+"not work. You very likely want to use <em>Focus follows mouse (mouse "
+"precedence)</em> instead!"
+msgstr ""
+"<html><head/><body><p><span style=\" font-style:italic;\">Fókusz az egér "
+"alatt:</span> A fókusz mindig az egér alatti ablaké.<br/><span style=\" font-"
+"weight:600;\">Megjegyzés: A </span><span style=\" font-style:italic;"
+"\">Fókuszlopás megakadályozása</span> és a <span style=\" font-style:italic;"
+"\">tabdoboz („Alt+Tab”)</span> sérti a szabályokat, és nem fog működni. "
+"Valószínűleg inkább a <span style=\" font-style:italic;\">Fókuszálás "
+"egérkövetéssel - Egérprecedencia</span> az Önnek való!</p></body></html>"
+
+#: windows.cpp:109
+#, fuzzy, kde-format
+#| msgid ""
+#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus strictly "
+#| "under mouse:</span> The focus is always on the window under the mouse (in "
+#| "doubt nowhere) very much like the focus behavior in an unmanaged legacy "
+#| "X11 environment.<br/><span style=\" font-weight:600;\">Warning: </"
+#| "span><span style=\" font-style:italic;\">Focus stealing prevention</span> "
+#| "and the <span style=\" font-style:italic;\">tabbox ('Alt+Tab') </"
+#| "span>contradict the activation policy and will not work. You very likely "
+#| "want to use <span style=\" font-style:italic;\">Focus follows mouse "
+#| "(mouse precedence)</span> instead!</p></body></html>"
+msgid ""
+"<em>Focus strictly under mouse:</em> The focus is always on the window under "
+"the mouse (in doubt nowhere) very much like the focus behavior in an "
+"unmanaged legacy X11 environment.<br/><strong>Warning:</strong> <em>Focus "
+"stealing prevention</em> and the <em>tabbox ('Alt+Tab')</em> contradict the "
+"activation policy and will not work. You very likely want to use <em>Focus "
+"follows mouse (mouse precedence)</em> instead!"
+msgstr ""
+"<html><head/><body><p><span style=\" font-style:italic;\">Fókusz szigorúan "
+"az egér alatt</span>A fókusz mindig az egér alatti ablaké  - kétség esetén "
+"sehol -, hasonlóan egy nem kezelt, elavult X11 környezethez.<br/><span style="
+"\" font-weight:600;\">Megjegyzés:</span><span style=\" font-style:italic;"
+"\">A Fókuszlopás megakadályozása</span> és a <span style=\" font-style:"
+"italic;\">tabdoboz („Alt+Tab”)</span> sérti a szabályokat, és nem fog "
+"működni. Valószínűleg inkább a <span style=\" font-style:italic;"
+"\">Fókuszálás egérkövetéssel - Egérprecedencia</span> az Önnek való!</p></"
+"body></html>"

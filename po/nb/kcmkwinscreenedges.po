@@ -1,0 +1,234 @@
+# Translation of kcmkwinscreenedges to Norwegian Bokmål
+#
+# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2009, 2010, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2014-08-09 12:23+0200\n"
+"Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
+"Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Bjørn Steensrud"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "bjornst@skogkatt.homelinux.org"
+
+#: main.cpp:123 touch.cpp:122
+#, kde-format
+msgid "No Action"
+msgstr "Ingen handling"
+
+#: main.cpp:124 touch.cpp:123
+#, kde-format
+msgid "Show Desktop"
+msgstr "Vis skrivebord"
+
+#: main.cpp:125 touch.cpp:124
+#, kde-format
+msgid "Lock Screen"
+msgstr "Lås skjermen"
+
+#: main.cpp:126 touch.cpp:125
+#, kde-format
+msgid "Show KRunner"
+msgstr ""
+
+#: main.cpp:127 touch.cpp:126
+#, kde-format
+msgid "Activity Manager"
+msgstr "Aktivitetsbehandler"
+
+#: main.cpp:128 touch.cpp:127
+#, kde-format
+msgid "Application Launcher"
+msgstr "Programstarter"
+
+#: main.cpp:132 touch.cpp:131
+#, kde-format
+msgid "%1 - All Desktops"
+msgstr "%1 – Alle skrivebord"
+
+#: main.cpp:133 touch.cpp:132
+#, kde-format
+msgid "%1 - Current Desktop"
+msgstr "%1 – Gjeldende skrivebord"
+
+#: main.cpp:134 touch.cpp:133
+#, kde-format
+msgid "%1 - Current Application"
+msgstr "%1 – Gjeldende program"
+
+#: main.cpp:137 touch.cpp:136
+#, kde-format
+msgid "%1 - Cube"
+msgstr "%1 – Terning"
+
+#: main.cpp:138 touch.cpp:137
+#, kde-format
+msgid "%1 - Cylinder"
+msgstr "%1 – Sylinder"
+
+#: main.cpp:139 touch.cpp:138
+#, kde-format
+msgid "%1 - Sphere"
+msgstr "%1 – Kule"
+
+#: main.cpp:141 touch.cpp:140
+#, kde-format
+msgid "Toggle window switching"
+msgstr "Slå på/av vindusbytting"
+
+#: main.cpp:142 touch.cpp:141
+#, kde-format
+msgid "Toggle alternative window switching"
+msgstr "Slå på/av alternativ vindusveksling"
+
+#. i18n: ectx: property (text), widget (QLabel, infoLabel)
+#: main.ui:23
+#, kde-format
+msgid ""
+"You can trigger an action by pushing the mouse cursor against the "
+"corresponding screen edge or corner."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, quickMaximizeLabel)
+#: main.ui:67
+#, kde-format
+msgid "&Maximize:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ElectricBorderMaximize)
+#: main.ui:77
+#, kde-format
+msgid "Windows dragged to top edge"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, quickTileLabel)
+#: main.ui:84
+#, kde-format
+msgid "&Tile:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ElectricBorderTiling)
+#: main.ui:94
+#, kde-format
+msgid "Windows dragged to left or right edge"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, electricBorderCornerRatioLabel)
+#: main.ui:101
+#, kde-format
+msgid "Trigger &quarter tiling in:"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, electricBorderCornerRatioSpin)
+#: main.ui:116
+#, no-c-format, kde-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (prefix), widget (QSpinBox, electricBorderCornerRatioSpin)
+#: main.ui:119
+#, kde-format
+msgid "Outer "
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_1)
+#: main.ui:135
+#, kde-format
+msgid "of the screen"
+msgstr "av skjermen"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, desktopSwitchLabel)
+#: main.ui:144
+#, kde-format
+msgid ""
+"Change desktop when the mouse cursor is pushed against the edge of the screen"
+msgstr "Bytt skrivebord når musepekeren skyves mot kanten av skjermen"
+
+#. i18n: ectx: property (text), widget (QLabel, desktopSwitchLabel)
+#: main.ui:147
+#, kde-format
+msgid "&Switch desktop on edge:"
+msgstr "&Bytt skrivebord ved kant:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ElectricBorders)
+#: main.ui:158
+#, kde-format
+msgctxt "Switch desktop on edge"
+msgid "Disabled"
+msgstr "Slått av"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ElectricBorders)
+#: main.ui:163
+#, kde-format
+msgid "Only When Moving Windows"
+msgstr "Bare ved flytting av vinduer"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ElectricBorders)
+#: main.ui:168
+#, kde-format
+msgid "Always Enabled"
+msgstr "Alltid aktiv"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, activationDelayLabel)
+#: main.ui:176
+#, kde-format
+msgid ""
+"Amount of time required for the mouse cursor to be pushed against the edge "
+"of the screen before the action is triggered"
+msgstr ""
+"Hvor lenge musepekeren må skyves mot kanten av skjermen før handlingen "
+"utløses"
+
+#. i18n: ectx: property (text), widget (QLabel, activationDelayLabel)
+#: main.ui:179
+#, kde-format
+msgid "Activation &delay:"
+msgstr "&Forsinkelse for aktivering:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_ElectricBorderDelay)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_ElectricBorderCooldown)
+#: main.ui:189 main.ui:224
+#, kde-format
+msgid " ms"
+msgstr " ms"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, triggerCooldownLabel)
+#: main.ui:208
+#, kde-format
+msgid ""
+"Amount of time required after triggering an action until the next trigger "
+"can occur"
+msgstr ""
+"Hvor lang tid må gå etter en utløst handling før neste handling kan utløses"
+
+#. i18n: ectx: property (text), widget (QLabel, triggerCooldownLabel)
+#: main.ui:211
+#, kde-format
+msgid "&Reactivation delay:"
+msgstr "Forsinkelse for &reaktivering:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_1)
+#: touch.ui:17
+#, kde-format
+msgid ""
+"You can trigger an action by swiping from the screen edge towards the center "
+"of the screen."
+msgstr ""

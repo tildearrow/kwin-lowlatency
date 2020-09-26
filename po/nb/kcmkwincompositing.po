@@ -1,0 +1,229 @@
+# Translation of kcmkwincompositing to Norwegian Bokmål
+#
+# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwincompositing\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2014-08-09 17:52+0200\n"
+"Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
+"Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#. i18n: ectx: property (text), widget (KMessageWidget, glCrashedWarning)
+#: compositing.ui:32
+#, kde-format
+msgid ""
+"OpenGL compositing (the default) has crashed KWin in the past.\n"
+"This was most likely due to a driver bug.\n"
+"If you think that you have meanwhile upgraded to a stable driver,\n"
+"you can reset this protection but be aware that this might result in an "
+"immediate crash!\n"
+"Alternatively, you might want to use the XRender backend instead."
+msgstr ""
+"OpenGL-sammensetting (standarden) har krasjet KWin tidlgere.\n"
+"Dette skyldtes sannsynligvis en feil i driveren.\n"
+"Hvis du mener at du i mellomtiden har oppgradert til en stabil driver,\n"
+"så kan du slå av denne beskyttelsen, men vær oppmerksom på at det kan føre "
+"til et øyeblikkelig krasj!\n"
+"Ellers kan du kanskje bruke XRender-motoren i stedet."
+
+#. i18n: ectx: property (text), widget (KMessageWidget, scaleWarning)
+#: compositing.ui:45
+#, kde-format
+msgid ""
+"Scale method \"Accurate\" is not supported by all hardware and can cause "
+"performance regressions and rendering artifacts."
+msgstr ""
+"Ikke all maskinvare støtter skaleringsmetoden «Presis», og det kan føre til "
+"dårlig ytelse og artefakter ved opptegning."
+
+#. i18n: ectx: property (text), widget (KMessageWidget, windowThumbnailWarning)
+#: compositing.ui:68
+#, kde-format
+msgid ""
+"Keeping the window thumbnail always interferes with the minimized state of "
+"windows. This can result in windows not suspending their work when minimized."
+msgstr ""
+"Å beholde vinduers småbilder vil alltid kollidere med vinduenes minimering. "
+"Dette kan føre til at vinduer ikke suspenderer arbeidet når de minimeres."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Enabled)
+#: compositing.ui:80
+#, kde-format
+msgid "Enable compositor on startup"
+msgstr "Slå på sammensetting ved oppstart"
+
+#. i18n: ectx: property (text), widget (QLabel, animationSpeedLabel)
+#: compositing.ui:87
+#, kde-format
+msgid "Animation speed:"
+msgstr "Animeringshastighet:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: compositing.ui:124
+#, kde-format
+msgid "Very slow"
+msgstr "Meget langsom"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: compositing.ui:144
+#, kde-format
+msgid "Instant"
+msgstr "Øyeblikkelig"
+
+#. i18n: ectx: property (text), widget (QLabel, scaleMethodLabel)
+#: compositing.ui:156
+#, kde-format
+msgid "Scale method:"
+msgstr "Skaleringsmetode:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_XRenderSmoothScale)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:166 compositing.ui:180
+#, kde-format
+msgid "Crisp"
+msgstr "Skarp"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_XRenderSmoothScale)
+#: compositing.ui:171
+#, kde-format
+msgid "Smooth (slower)"
+msgstr "Jevn (langsommere)"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:185
+#, kde-format
+msgid "Smooth"
+msgstr "Jevn"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:190
+#, kde-format
+msgid "Accurate"
+msgstr "Presis"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: compositing.ui:207
+#, kde-format
+msgid "Rendering backend:"
+msgstr "Opptegningsmotor:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: compositing.ui:224
+#, kde-format
+msgid "Tearing prevention (\"vsync\"):"
+msgstr "Rift-forebygging («vsync»):"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:232 compositing.ui:268
+#, kde-format
+msgid "Never"
+msgstr "Aldri"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:237
+#, kde-format
+msgid "Automatic"
+msgstr "Automatisk"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:242
+#, kde-format
+msgid "Only when cheap"
+msgstr "Bare ved lav kostnad"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:247
+#, kde-format
+msgid "Full screen repaints"
+msgstr "Full skjerm nyopptegning"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:252
+#, kde-format
+msgid "Re-use screen content"
+msgstr "Bruk skjerminnhold på nytt"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: compositing.ui:260
+#, kde-format
+msgid "Keep window thumbnails:"
+msgstr "Behold småbilder av vinduer:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:273
+#, kde-format
+msgid "Only for Shown Windows"
+msgstr "Bare for viste vinduer"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:278
+#, kde-format
+msgid "Always"
+msgstr "Alltid"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:288
+#, kde-format
+msgid ""
+"Applications can set a hint to block compositing when the window is open.\n"
+" This brings performance improvements for e.g. games.\n"
+" The setting can be overruled by window-specific rules."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:291
+#, kde-format
+msgid "Allow applications to block compositing"
+msgstr ""
+
+#: main.cpp:80
+#, kde-format
+msgid "Re-enable OpenGL detection"
+msgstr "Slå på OpenGL-oppdagelse"
+
+#: main.cpp:132
+#, kde-format
+msgid ""
+"\"Only when cheap\" only prevents tearing for full screen changes like a "
+"video."
+msgstr ""
+"«Bare ved lav kostnad» hindrer bare rifting for fullskjerm-endringer slik "
+"som en video."
+
+#: main.cpp:136
+#, kde-format
+msgid "\"Full screen repaints\" can cause performance problems."
+msgstr "«Full skjerm nyopptegning» kan føre til ytelsesproblemer."
+
+#: main.cpp:140
+#, kde-format
+msgid ""
+"\"Re-use screen content\" causes severe performance problems on MESA drivers."
+msgstr ""
+
+#: main.cpp:160
+#, kde-format
+msgid "OpenGL 3.1"
+msgstr "OpenGL 3.1"
+
+#: main.cpp:161
+#, kde-format
+msgid "OpenGL 2.0"
+msgstr "OpenGL 2.0"
+
+#: main.cpp:162
+#, kde-format
+msgid "XRender"
+msgstr "XRender"

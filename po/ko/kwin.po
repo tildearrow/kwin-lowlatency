@@ -1,0 +1,2573 @@
+# Translation of kwin to Korean.
+# Copyright (C) 2001-2004, 2007-2008 Free Software Foundation, Inc.
+# Sae-keun Kim <segni@susekorea.net>, 2001.
+# Yeo SunHwa <sunwt@mizi.com>, 2001.
+# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-09-10 02:31+0200\n"
+"PO-Revision-Date: 2020-09-06 01:19+0200\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "박신조"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde@peremen.name"
+
+#: abstract_client.cpp:2724
+#, kde-format
+msgctxt "Application is not responding, appended to window title"
+msgid "(Not Responding)"
+msgstr "(응답 없음)"
+
+#: abstract_wayland_output.cpp:252
+#, kde-format
+msgid "unknown"
+msgstr "알 수 없음"
+
+#: colorcorrection/manager.cpp:58
+#, kde-format
+msgctxt "Night Color was disabled"
+msgid "Night Color Off"
+msgstr "야간 색상 꺼짐"
+
+#: colorcorrection/manager.cpp:59
+#, kde-format
+msgctxt "Night Color was enabled"
+msgid "Night Color On"
+msgstr "야간 색상 켜짐"
+
+#: colorcorrection/manager.cpp:229 colorcorrection/manager.cpp:230
+#, kde-format
+msgid "Toggle Night Color"
+msgstr "야간 색상 전환"
+
+#: composite.cpp:923
+#, kde-format
+msgid ""
+"Desktop effects have been suspended by another application.<br/>You can "
+"resume using the '%1' shortcut."
+msgstr ""
+"다른 프로그램이 데스크톱 효과를 중지했습니다.<br/>'%1' 키를 눌러서 다시 시작"
+"할 수 있습니다."
+
+#: debug_console.cpp:65
+#, kde-format
+msgid "Timestamp"
+msgstr "타임스탬프"
+
+#: debug_console.cpp:70
+#, kde-format
+msgid "Timestamp (µsec)"
+msgstr "타임스탬프(µsec)"
+
+#: debug_console.cpp:77
+#, kde-format
+msgctxt "A mouse button"
+msgid "Left"
+msgstr "왼쪽"
+
+#: debug_console.cpp:79
+#, kde-format
+msgctxt "A mouse button"
+msgid "Right"
+msgstr "오른쪽"
+
+#: debug_console.cpp:81
+#, kde-format
+msgctxt "A mouse button"
+msgid "Middle"
+msgstr "가운데"
+
+#: debug_console.cpp:83
+#, kde-format
+msgctxt "A mouse button"
+msgid "Back"
+msgstr "뒤로"
+
+#: debug_console.cpp:85
+#, kde-format
+msgctxt "A mouse button"
+msgid "Forward"
+msgstr "앞으로"
+
+#: debug_console.cpp:87
+#, kde-format
+msgctxt "A mouse button"
+msgid "Task"
+msgstr "작업"
+
+#: debug_console.cpp:89
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 4"
+msgstr "추가 단추 4"
+
+#: debug_console.cpp:91
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 5"
+msgstr "추가 단추 5"
+
+#: debug_console.cpp:93
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 6"
+msgstr "추가 단추 6"
+
+#: debug_console.cpp:95
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 7"
+msgstr "추가 단추 7"
+
+#: debug_console.cpp:97
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 8"
+msgstr "추가 단추 8"
+
+#: debug_console.cpp:99
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 9"
+msgstr "추가 단추 9"
+
+#: debug_console.cpp:101
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 10"
+msgstr "추가 단추 10"
+
+#: debug_console.cpp:103
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 11"
+msgstr "추가 단추 11"
+
+#: debug_console.cpp:105
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 12"
+msgstr "추가 단추 12"
+
+#: debug_console.cpp:107
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 13"
+msgstr "추가 단추 13"
+
+#: debug_console.cpp:109
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 14"
+msgstr "추가 단추 14"
+
+#: debug_console.cpp:111
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 15"
+msgstr "추가 단추 15"
+
+#: debug_console.cpp:113
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 16"
+msgstr "추가 단추 16"
+
+#: debug_console.cpp:115
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 17"
+msgstr "추가 단추 17"
+
+#: debug_console.cpp:117
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 18"
+msgstr "추가 단추 18"
+
+#: debug_console.cpp:119
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 19"
+msgstr "추가 단추 19"
+
+#: debug_console.cpp:121
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 20"
+msgstr "추가 단추 20"
+
+#: debug_console.cpp:123
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 21"
+msgstr "추가 단추 21"
+
+#: debug_console.cpp:125
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 22"
+msgstr "추가 단추 22"
+
+#: debug_console.cpp:127
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 23"
+msgstr "추가 단추 23"
+
+#: debug_console.cpp:129
+#, kde-format
+msgctxt "A mouse button"
+msgid "Extra Button 24"
+msgstr "추가 단추 24"
+
+#: debug_console.cpp:138 debug_console.cpp:140
+#, kde-format
+msgid "Input Device"
+msgstr "입력 장치"
+
+#: debug_console.cpp:138
+#, kde-format
+msgctxt "The input device of the event is not known"
+msgid "Unknown"
+msgstr "알 수 없음"
+
+#: debug_console.cpp:175
+#, kde-format
+msgctxt "A mouse pointer motion event"
+msgid "Pointer Motion"
+msgstr "포인터 움직임"
+
+#: debug_console.cpp:182
+#, kde-format
+msgctxt "The relative mouse movement"
+msgid "Delta"
+msgstr "상대 위치"
+
+#: debug_console.cpp:186
+#, kde-format
+msgctxt "The relative mouse movement"
+msgid "Delta (not accelerated)"
+msgstr "상대 위치(가속 없음)"
+
+#: debug_console.cpp:189
+#, kde-format
+msgctxt "The global mouse pointer position"
+msgid "Global Position"
+msgstr "절대 위치"
+
+#: debug_console.cpp:193
+#, kde-format
+msgctxt "A mouse pointer button press event"
+msgid "Pointer Button Press"
+msgstr "포인터 단추 누름"
+
+#: debug_console.cpp:196 debug_console.cpp:204
+#, kde-format
+msgctxt "A button in a mouse press/release event"
+msgid "Button"
+msgstr "단추"
+
+#: debug_console.cpp:197 debug_console.cpp:205
+#, kde-format
+msgctxt "A button in a mouse press/release event"
+msgid "Native Button code"
+msgstr "네이티브 단추 코드"
+
+#: debug_console.cpp:198 debug_console.cpp:206
+#, kde-format
+msgctxt "All currently pressed buttons in a mouse press/release event"
+msgid "Pressed Buttons"
+msgstr "눌린 단추"
+
+#: debug_console.cpp:201
+#, kde-format
+msgctxt "A mouse pointer button release event"
+msgid "Pointer Button Release"
+msgstr "포인터 단추 놓기"
+
+#: debug_console.cpp:221
+#, kde-format
+msgctxt "A mouse pointer axis (wheel) event"
+msgid "Pointer Axis"
+msgstr "포인터 축"
+
+#: debug_console.cpp:225
+#, kde-format
+msgctxt "The orientation of a pointer axis event"
+msgid "Orientation"
+msgstr "방향"
+
+#: debug_console.cpp:226
+#, kde-format
+msgctxt "An orientation of a pointer axis event"
+msgid "Horizontal"
+msgstr "수평"
+
+#: debug_console.cpp:227
+#, kde-format
+msgctxt "An orientation of a pointer axis event"
+msgid "Vertical"
+msgstr "수직"
+
+#: debug_console.cpp:228
+#, kde-format
+msgctxt "The angle delta of a pointer axis event"
+msgid "Delta"
+msgstr "차이"
+
+#: debug_console.cpp:243
+#, kde-format
+msgctxt "A key press event"
+msgid "Key Press"
+msgstr "키 눌림"
+
+#: debug_console.cpp:246
+#, kde-format
+msgctxt "A key release event"
+msgid "Key Release"
+msgstr "키 놓음"
+
+#: debug_console.cpp:255
+#, kde-format
+msgctxt "A keyboard modifier"
+msgid "Shift"
+msgstr "Shift"
+
+#: debug_console.cpp:259
+#, kde-format
+msgctxt "A keyboard modifier"
+msgid "Control"
+msgstr "Control"
+
+#: debug_console.cpp:263
+#, kde-format
+msgctxt "A keyboard modifier"
+msgid "Alt"
+msgstr "Alt"
+
+#: debug_console.cpp:267
+#, kde-format
+msgctxt "A keyboard modifier"
+msgid "Meta"
+msgstr "Meta"
+
+#: debug_console.cpp:271
+#, kde-format
+msgctxt "A keyboard modifier"
+msgid "Keypad"
+msgstr "키패드"
+
+#: debug_console.cpp:275
+#, kde-format
+msgctxt "A keyboard modifier"
+msgid "Group-switch"
+msgstr "그룹 전환"
+
+#: debug_console.cpp:281
+#, kde-format
+msgctxt "Whether the event is an automatic key repeat"
+msgid "Repeat"
+msgstr "반복"
+
+#: debug_console.cpp:285
+#, kde-format
+msgctxt "The code as read from the input device"
+msgid "Scan code"
+msgstr "스캔 코드"
+
+#: debug_console.cpp:286
+#, kde-format
+msgctxt "Key according to Qt"
+msgid "Qt::Key code"
+msgstr "Qt::Key 코드"
+
+#: debug_console.cpp:288
+#, kde-format
+msgctxt "The translated code to an Xkb symbol"
+msgid "Xkb symbol"
+msgstr "Xkb 기호"
+
+#: debug_console.cpp:289
+#, kde-format
+msgctxt "The translated code interpreted as text"
+msgid "Utf8"
+msgstr "UTF-8"
+
+#: debug_console.cpp:290
+#, kde-format
+msgctxt "The currently active modifiers"
+msgid "Modifiers"
+msgstr "수정자"
+
+#: debug_console.cpp:302
+#, kde-format
+msgctxt "A touch down event"
+msgid "Touch down"
+msgstr "터치 눌림"
+
+#: debug_console.cpp:304 debug_console.cpp:319 debug_console.cpp:334
+#, kde-format
+msgctxt "The id of the touch point in the touch event"
+msgid "Point identifier"
+msgstr "지점 식별자"
+
+#: debug_console.cpp:305 debug_console.cpp:320
+#, kde-format
+msgctxt "The global position of the touch point"
+msgid "Global position"
+msgstr "전역 위치"
+
+#: debug_console.cpp:317
+#, kde-format
+msgctxt "A touch motion event"
+msgid "Touch Motion"
+msgstr "터치 움직임"
+
+#: debug_console.cpp:332
+#, kde-format
+msgctxt "A touch up event"
+msgid "Touch Up"
+msgstr "터치 놓음"
+
+#: debug_console.cpp:345
+#, kde-format
+msgctxt "A pinch gesture is started"
+msgid "Pinch start"
+msgstr "핀치 시작"
+
+#: debug_console.cpp:347
+#, kde-format
+msgctxt "Number of fingers in this pinch gesture"
+msgid "Finger count"
+msgstr "손가락 개수"
+
+#: debug_console.cpp:358
+#, kde-format
+msgctxt "A pinch gesture is updated"
+msgid "Pinch update"
+msgstr "핀치 업데이트"
+
+#: debug_console.cpp:360
+#, kde-format
+msgctxt "Current scale in pinch gesture"
+msgid "Scale"
+msgstr "크기"
+
+#: debug_console.cpp:361
+#, kde-format
+msgctxt "Current angle in pinch gesture"
+msgid "Angle delta"
+msgstr "각도 차이"
+
+#: debug_console.cpp:362
+#, kde-format
+msgctxt "Current delta in pinch gesture"
+msgid "Delta x"
+msgstr "x 차이"
+
+#: debug_console.cpp:363
+#, kde-format
+msgctxt "Current delta in pinch gesture"
+msgid "Delta y"
+msgstr "y 차이"
+
+#: debug_console.cpp:374
+#, kde-format
+msgctxt "A pinch gesture ended"
+msgid "Pinch end"
+msgstr "핀치 끝"
+
+#: debug_console.cpp:386
+#, kde-format
+msgctxt "A pinch gesture got cancelled"
+msgid "Pinch cancelled"
+msgstr "핀치 취소됨"
+
+#: debug_console.cpp:398
+#, kde-format
+msgctxt "A swipe gesture is started"
+msgid "Swipe start"
+msgstr "문지르기 시작"
+
+#: debug_console.cpp:400
+#, kde-format
+msgctxt "Number of fingers in this swipe gesture"
+msgid "Finger count"
+msgstr "손가락 개수"
+
+#: debug_console.cpp:411
+#, kde-format
+msgctxt "A swipe gesture is updated"
+msgid "Swipe update"
+msgstr "문지르기 업데이트"
+
+#: debug_console.cpp:413
+#, kde-format
+msgctxt "Current delta in swipe gesture"
+msgid "Delta x"
+msgstr "x 차이"
+
+#: debug_console.cpp:414
+#, kde-format
+msgctxt "Current delta in swipe gesture"
+msgid "Delta y"
+msgstr "y 차이"
+
+#: debug_console.cpp:425
+#, kde-format
+msgctxt "A swipe gesture ended"
+msgid "Swipe end"
+msgstr "문지르기 끝"
+
+#: debug_console.cpp:437
+#, kde-format
+msgctxt "A swipe gesture got cancelled"
+msgid "Swipe cancelled"
+msgstr "문지르기 취소됨"
+
+#: debug_console.cpp:449
+#, kde-format
+msgctxt "A hardware switch (e.g. notebook lid) got toggled"
+msgid "Switch toggled"
+msgstr "하드웨어 스위치 전환됨"
+
+#: debug_console.cpp:457
+#, kde-format
+msgctxt "Name of a hardware switch"
+msgid "Notebook lid"
+msgstr "노트북 덮개"
+
+#: debug_console.cpp:459
+#, kde-format
+msgctxt "Name of a hardware switch"
+msgid "Tablet mode"
+msgstr "태블릿 모드"
+
+#: debug_console.cpp:461
+#, kde-format
+msgctxt "A hardware switch"
+msgid "Switch"
+msgstr "전환"
+
+#: debug_console.cpp:465
+#, kde-format
+msgctxt "The hardware switch got turned off"
+msgid "Off"
+msgstr "꺼짐"
+
+#: debug_console.cpp:468
+#, kde-format
+msgctxt "The hardware switch got turned on"
+msgid "On"
+msgstr "켜짐"
+
+#: debug_console.cpp:473
+#, kde-format
+msgctxt "State of a hardware switch (on/off)"
+msgid "State"
+msgstr "상태"
+
+#: debug_console.cpp:488
+#, kde-format
+msgid "Tablet Tool"
+msgstr "태블릿 도구"
+
+#: debug_console.cpp:489
+#, kde-format
+msgid "EventType"
+msgstr "이벤트 형식"
+
+#: debug_console.cpp:490 debug_console.cpp:537 debug_console.cpp:549
+#, kde-format
+msgid "Position"
+msgstr "위치"
+
+#: debug_console.cpp:492
+#, kde-format
+msgid "Tilt"
+msgstr "기울기"
+
+#: debug_console.cpp:494
+#, kde-format
+msgid "Rotation"
+msgstr "회전"
+
+#: debug_console.cpp:495
+#, kde-format
+msgid "Pressure"
+msgstr "압력"
+
+#: debug_console.cpp:496
+#, kde-format
+msgid "Buttons"
+msgstr "단추"
+
+#. i18n: ectx: property (title), widget (QGroupBox, modifiersBox)
+#: debug_console.cpp:497 debug_console.ui:356
+#, kde-format
+msgid "Modifiers"
+msgstr "수정자"
+
+#: debug_console.cpp:510
+#, kde-format
+msgid "Tablet Tool Button"
+msgstr "태블릿 도구 단추"
+
+#: debug_console.cpp:511 debug_console.cpp:526
+#, kde-format
+msgid "Pressed Buttons"
+msgstr "눌린 단추"
+
+#: debug_console.cpp:525
+#, kde-format
+msgid "Tablet Pad Button"
+msgstr "태블릿 패드 단추"
+
+#: debug_console.cpp:535
+#, kde-format
+msgid "Tablet Pad Strip"
+msgstr "태블릿 패드 스트립"
+
+#: debug_console.cpp:536 debug_console.cpp:548
+#, kde-format
+msgid "Number"
+msgstr "번호"
+
+#: debug_console.cpp:538 debug_console.cpp:550
+#, kde-format
+msgid "isFinger"
+msgstr "isFinger"
+
+#: debug_console.cpp:547
+#, kde-format
+msgid "Tablet Pad Ring"
+msgstr "태블릿 패드 링"
+
+#: debug_console.cpp:735
+#, kde-format
+msgid "No Mouse Buttons"
+msgstr "마우스 단추 없음"
+
+#: debug_console.cpp:739
+#, kde-format
+msgctxt "Mouse Button"
+msgid "left"
+msgstr "왼쪽"
+
+#: debug_console.cpp:742
+#, kde-format
+msgctxt "Mouse Button"
+msgid "right"
+msgstr "오른쪽"
+
+#: debug_console.cpp:745
+#, kde-format
+msgctxt "Mouse Button"
+msgid "middle"
+msgstr "가운데"
+
+#: debug_console.cpp:748
+#, kde-format
+msgctxt "Mouse Button"
+msgid "back"
+msgstr "뒤로"
+
+#: debug_console.cpp:751
+#, kde-format
+msgctxt "Mouse Button"
+msgid "forward"
+msgstr "앞으로"
+
+#: debug_console.cpp:754
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 1"
+msgstr "추가 1"
+
+#: debug_console.cpp:757
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 2"
+msgstr "추가 2"
+
+#: debug_console.cpp:760
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 3"
+msgstr "추가 3"
+
+#: debug_console.cpp:763
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 4"
+msgstr "추가 4"
+
+#: debug_console.cpp:766
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 5"
+msgstr "추가 5"
+
+#: debug_console.cpp:769
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 6"
+msgstr "추가 6"
+
+#: debug_console.cpp:772
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 7"
+msgstr "추가 7"
+
+#: debug_console.cpp:775
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 8"
+msgstr "추가 8"
+
+#: debug_console.cpp:778
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 9"
+msgstr "추가 9"
+
+#: debug_console.cpp:781
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 10"
+msgstr "추가 10"
+
+#: debug_console.cpp:784
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 11"
+msgstr "추가 11"
+
+#: debug_console.cpp:787
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 12"
+msgstr "추가 12"
+
+#: debug_console.cpp:790
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 13"
+msgstr "추가 13"
+
+#: debug_console.cpp:793
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 14"
+msgstr "추가 14"
+
+#: debug_console.cpp:796
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 15"
+msgstr "추가 15"
+
+#: debug_console.cpp:799
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 16"
+msgstr "추가 16"
+
+#: debug_console.cpp:802
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 17"
+msgstr "추가 17"
+
+#: debug_console.cpp:805
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 18"
+msgstr "추가 18"
+
+#: debug_console.cpp:808
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 19"
+msgstr "추가 19"
+
+#: debug_console.cpp:811
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 20"
+msgstr "추가 20"
+
+#: debug_console.cpp:814
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 21"
+msgstr "추가 21"
+
+#: debug_console.cpp:817
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 22"
+msgstr "추가 22"
+
+#: debug_console.cpp:820
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 23"
+msgstr "추가 23"
+
+#: debug_console.cpp:823
+#, kde-format
+msgctxt "Mouse Button"
+msgid "extra 24"
+msgstr "추가 24"
+
+#: debug_console.cpp:826
+#, kde-format
+msgctxt "Mouse Button"
+msgid "task"
+msgstr "작업"
+
+#: debug_console.cpp:1176
+#, kde-format
+msgid "X11 Client Windows"
+msgstr "X11 클라이언트 창"
+
+#: debug_console.cpp:1178
+#, kde-format
+msgid "X11 Unmanaged Windows"
+msgstr "X11 관리되지 않는 창"
+
+#: debug_console.cpp:1180
+#, kde-format
+msgid "Wayland Windows"
+msgstr "Wayland 창"
+
+#: debug_console.cpp:1182
+#, kde-format
+msgid "Internal Windows"
+msgstr "내부 창"
+
+#. i18n: ectx: property (text), widget (QPushButton, quitButton)
+#: debug_console.ui:32
+#, kde-format
+msgid "Quit Debug Console"
+msgstr "디버그 콘솔 끝내기"
+
+#. i18n: ectx: attribute (title), widget (QWidget, windows)
+#: debug_console.ui:45
+#, kde-format
+msgid "Windows"
+msgstr "창"
+
+#. i18n: ectx: attribute (title), widget (QWidget, surfaces)
+#: debug_console.ui:59
+#, kde-format
+msgid "Surfaces"
+msgstr "표면"
+
+#. i18n: ectx: attribute (title), widget (QWidget, input)
+#: debug_console.ui:69
+#, kde-format
+msgid "Input Events"
+msgstr "입력 이벤트"
+
+#. i18n: ectx: attribute (title), widget (QWidget, inputDevices)
+#: debug_console.ui:86
+#, kde-format
+msgid "Input Devices"
+msgstr "입력 장치"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: debug_console.ui:96
+#, kde-format
+msgid "OpenGL"
+msgstr "OpenGL"
+
+#. i18n: ectx: property (text), widget (QLabel, noOpenGLLabel)
+#: debug_console.ui:102
+#, kde-format
+msgid "No OpenGL compositor running"
+msgstr "OpenGL 컴포지터가 실행 중이 아님"
+
+#. i18n: ectx: property (title), widget (QGroupBox, driverInfoBox)
+#: debug_console.ui:130
+#, kde-format
+msgid "OpenGL (ES) driver information"
+msgstr "OpenGL (ES) 드라이버 정보"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: debug_console.ui:136
+#, kde-format
+msgid "Vendor:"
+msgstr "제조사:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: debug_console.ui:143
+#, kde-format
+msgid "Renderer:"
+msgstr "렌더러:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: debug_console.ui:150
+#, kde-format
+msgid "Version:"
+msgstr "버전:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: debug_console.ui:157
+#, kde-format
+msgid "Shading Language Version:"
+msgstr "셰이더 언어 버전:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: debug_console.ui:164
+#, kde-format
+msgid "Driver:"
+msgstr "드라이버:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: debug_console.ui:171
+#, kde-format
+msgid "GPU class:"
+msgstr "GPU 클래스:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: debug_console.ui:178
+#, kde-format
+msgid "OpenGL Version:"
+msgstr "OpenGL 버전:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: debug_console.ui:185
+#, kde-format
+msgid "GLSL Version:"
+msgstr "GLSL 버전:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, platformExtensionsBox)
+#: debug_console.ui:251
+#, kde-format
+msgid "Platform Extensions"
+msgstr "플랫폼 확장"
+
+#. i18n: ectx: property (title), widget (QGroupBox, glExtensionsBox)
+#: debug_console.ui:267
+#, kde-format
+msgid "OpenGL (ES) Extensions"
+msgstr "OpenGL (ES) 확장"
+
+#. i18n: ectx: attribute (title), widget (QWidget, keyboard)
+#: debug_console.ui:288
+#, kde-format
+msgid "Keyboard"
+msgstr "키보드"
+
+#. i18n: ectx: property (title), widget (QGroupBox, layoutBox)
+#: debug_console.ui:315
+#, kde-format
+msgid "Keymap Layouts"
+msgstr "키보드 레이아웃"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: debug_console.ui:337
+#, kde-format
+msgid "Current Layout:"
+msgstr "현재 레이아웃:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, activeModifiersBox)
+#: debug_console.ui:372
+#, kde-format
+msgid "Active Modifiers"
+msgstr "활성 수정자"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ledsBox)
+#: debug_console.ui:388
+#, kde-format
+msgid "LEDs"
+msgstr "LED"
+
+#. i18n: ectx: property (title), widget (QGroupBox, activeLedsBox)
+#: debug_console.ui:404
+#, kde-format
+msgid "Active LEDs"
+msgstr "켜진 LED"
+
+#: helpers/killer/killer.cpp:30
+#, kde-format
+msgid "Window Manager"
+msgstr "창 관리자"
+
+#: helpers/killer/killer.cpp:35
+#, kde-format
+msgid "PID of the application to terminate"
+msgstr "종료할 프로그램의 프로세스 ID"
+
+#: helpers/killer/killer.cpp:35
+#, kde-format
+msgid "pid"
+msgstr "pid"
+
+#: helpers/killer/killer.cpp:37
+#, kde-format
+msgid "Hostname on which the application is running"
+msgstr "프로그램이 실행 중인 호스트 이름"
+
+#: helpers/killer/killer.cpp:37
+#, kde-format
+msgid "hostname"
+msgstr "호스트 이름"
+
+#: helpers/killer/killer.cpp:39
+#, kde-format
+msgid "Caption of the window to be terminated"
+msgstr "종료할 창의 제목"
+
+#: helpers/killer/killer.cpp:39
+#, kde-format
+msgid "caption"
+msgstr "캡션"
+
+#: helpers/killer/killer.cpp:41
+#, kde-format
+msgid "Name of the application to be terminated"
+msgstr "종료할 프로그램의 이름"
+
+#: helpers/killer/killer.cpp:41
+#, kde-format
+msgid "name"
+msgstr "이름"
+
+#: helpers/killer/killer.cpp:43
+#, kde-format
+msgid "ID of resource belonging to the application"
+msgstr "프로그램에 속한 자원의 ID"
+
+#: helpers/killer/killer.cpp:43
+#, kde-format
+msgid "id"
+msgstr "id"
+
+#: helpers/killer/killer.cpp:45
+#, kde-format
+msgid "Time of user action causing termination"
+msgstr "사용자가 종료 동작을 실행한 시간"
+
+#: helpers/killer/killer.cpp:45
+#, kde-format
+msgid "time"
+msgstr "시간"
+
+#: helpers/killer/killer.cpp:47
+#, kde-format
+msgid "KWin helper utility"
+msgstr "KWin 도우미"
+
+#: helpers/killer/killer.cpp:71
+#, kde-format
+msgid "This helper utility is not supposed to be called directly."
+msgstr "이 도우미 프로그램은 직접 호출되지 않습니다."
+
+#: helpers/killer/killer.cpp:81
+#, kde-format
+msgctxt "@info"
+msgid "<b>Application \"%1\" is not responding</b>"
+msgstr "<b>프로그램 \"%1\"이(가) 응답하지 않음</b>"
+
+#: helpers/killer/killer.cpp:83
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<p>You tried to close window \"%1\" from application \"%2\" (Process ID: %3) "
+"but the application is not responding.</p>"
+msgstr ""
+"<p>프로그램 \"%2\" (프로세스 ID %3)에서 연 창 \"%1\"을(를) 닫으려고 했으나 프"
+"로그램이 응답하지 않습니다.</p>"
+
+#: helpers/killer/killer.cpp:85
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<p>You tried to close window \"%1\" from application \"%2\" (Process ID: "
+"%3), running on host \"%4\", but the application is not responding.</p>"
+msgstr ""
+"<p>호스트 \"%4\"에서 실행 중인 프로그램 \"%2\" (프로세스 ID %3)에서 연 창 "
+"\"%1\"을(를) 닫으려고 했으나 프로그램이 응답하지 않습니다.</p>"
+
+#: helpers/killer/killer.cpp:88
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<p>Do you want to terminate this application?</p><p><warning>Terminating the "
+"application will close all of its child windows. Any unsaved data will be "
+"lost.</warning></p>"
+msgstr ""
+"<p>이 프로그램을 강제로 종료하시겠습니까?</p><p><warning>프로그램을 종료하면 "
+"자식 창도 종료됩니다. 저장하지 않은 데이터는 손실됩니다.</warning></p>"
+
+#: helpers/killer/killer.cpp:92
+#, kde-format
+msgid "&Terminate Application %1"
+msgstr "프로그램 %1 끝내기(&T)"
+
+#: helpers/killer/killer.cpp:93
+#, kde-format
+msgid "Wait Longer"
+msgstr "더 기다리기"
+
+#: keyboard_layout.cpp:110 keyboard_layout.cpp:111
+#, kde-format
+msgctxt "tooltip title"
+msgid "Keyboard Layout"
+msgstr "키보드 레이아웃"
+
+#: keyboard_layout.cpp:258
+#, kde-format
+msgid "Configure Layouts..."
+msgstr "레이아웃 설정..."
+
+#: killwindow.cpp:33
+#, kde-format
+msgid ""
+"Select window to force close with left click or enter.\n"
+"Escape or right click to cancel."
+msgstr ""
+"왼쪽 단추를 누르거나 Enter 키를 눌러서 강제로 닫을 창을 선택합니다.\n"
+"Esc 키나 오른쪽 단추를 누르면 취소합니다."
+
+#: kwinbindings.cpp:38
+#, kde-format
+msgid "Window Operations Menu"
+msgstr "창 동작 메뉴"
+
+#: kwinbindings.cpp:40
+#, kde-format
+msgid "Close Window"
+msgstr "창 닫기"
+
+#: kwinbindings.cpp:42
+#, kde-format
+msgid "Maximize Window"
+msgstr "창 최대화"
+
+#: kwinbindings.cpp:44
+#, kde-format
+msgid "Maximize Window Vertically"
+msgstr "창 수직 최대화"
+
+#: kwinbindings.cpp:46
+#, kde-format
+msgid "Maximize Window Horizontally"
+msgstr "창 수평 최대화"
+
+#: kwinbindings.cpp:48
+#, kde-format
+msgid "Minimize Window"
+msgstr "창 최소화"
+
+#: kwinbindings.cpp:50
+#, kde-format
+msgid "Shade Window"
+msgstr "창 말아 올리기"
+
+#: kwinbindings.cpp:52
+#, kde-format
+msgid "Move Window"
+msgstr "창 이동"
+
+#: kwinbindings.cpp:54
+#, kde-format
+msgid "Resize Window"
+msgstr "창 크기 조정"
+
+#: kwinbindings.cpp:56
+#, kde-format
+msgid "Raise Window"
+msgstr "창 올리기"
+
+#: kwinbindings.cpp:58
+#, kde-format
+msgid "Lower Window"
+msgstr "창 내리기"
+
+#: kwinbindings.cpp:60
+#, kde-format
+msgid "Toggle Window Raise/Lower"
+msgstr "창 올리거나 내리기"
+
+#: kwinbindings.cpp:62
+#, kde-format
+msgid "Make Window Fullscreen"
+msgstr "창을 전체 화면으로"
+
+#: kwinbindings.cpp:64
+#, kde-format
+msgid "Hide Window Border"
+msgstr "창 테두리 숨기기"
+
+#: kwinbindings.cpp:66
+#, kde-format
+msgid "Keep Window Above Others"
+msgstr "창을 항상 위에 표시"
+
+#: kwinbindings.cpp:68
+#, kde-format
+msgid "Keep Window Below Others"
+msgstr "창을 항상 아래에 표시"
+
+#: kwinbindings.cpp:70
+#, kde-format
+msgid "Activate Window Demanding Attention"
+msgstr "활성 창이 주목을 기다림"
+
+#: kwinbindings.cpp:72
+#, kde-format
+msgid "Setup Window Shortcut"
+msgstr "창 단축키 설정"
+
+#: kwinbindings.cpp:74
+#, kde-format
+msgid "Pack Window to the Right"
+msgstr "창을 맨 오른쪽으로 보내기"
+
+#: kwinbindings.cpp:76
+#, kde-format
+msgid "Pack Window to the Left"
+msgstr "창을 맨 왼쪽으로 보내기"
+
+#: kwinbindings.cpp:78
+#, kde-format
+msgid "Pack Window Up"
+msgstr "창을 맨 위로 보내기"
+
+#: kwinbindings.cpp:80
+#, kde-format
+msgid "Pack Window Down"
+msgstr "창을 맨 아래로 보내기"
+
+#: kwinbindings.cpp:82
+#, kde-format
+msgid "Pack Grow Window Horizontally"
+msgstr "창을 수평으로 늘리기"
+
+#: kwinbindings.cpp:84
+#, kde-format
+msgid "Pack Grow Window Vertically"
+msgstr "창을 수직으로 늘리기"
+
+#: kwinbindings.cpp:86
+#, kde-format
+msgid "Pack Shrink Window Horizontally"
+msgstr "창을 수평으로 줄이기"
+
+#: kwinbindings.cpp:88
+#, kde-format
+msgid "Pack Shrink Window Vertically"
+msgstr "창을 수직으로 줄이기"
+
+#: kwinbindings.cpp:90
+#, kde-format
+msgid "Quick Tile Window to the Left"
+msgstr "창을 왼쪽 위로 보내기"
+
+#: kwinbindings.cpp:92
+#, kde-format
+msgid "Quick Tile Window to the Right"
+msgstr "창을 오른쪽 위로 보내기"
+
+#: kwinbindings.cpp:94
+#, kde-format
+msgid "Quick Tile Window to the Top"
+msgstr "창을 위로 보내기"
+
+#: kwinbindings.cpp:96
+#, kde-format
+msgid "Quick Tile Window to the Bottom"
+msgstr "창을 아래로 보내기"
+
+#: kwinbindings.cpp:98
+#, kde-format
+msgid "Quick Tile Window to the Top Left"
+msgstr "창을 왼쪽 위로 보내기"
+
+#: kwinbindings.cpp:100
+#, kde-format
+msgid "Quick Tile Window to the Bottom Left"
+msgstr "창을 왼쪽 아래로 보내기"
+
+#: kwinbindings.cpp:102
+#, kde-format
+msgid "Quick Tile Window to the Top Right"
+msgstr "창을 오른쪽 위로 보내기"
+
+#: kwinbindings.cpp:104
+#, kde-format
+msgid "Quick Tile Window to the Bottom Right"
+msgstr "창을 오른쪽 아래로 보내기"
+
+#: kwinbindings.cpp:106
+#, kde-format
+msgid "Switch to Window Above"
+msgstr "위쪽 창으로 전환"
+
+#: kwinbindings.cpp:108
+#, kde-format
+msgid "Switch to Window Below"
+msgstr "아래쪽 창으로 전환"
+
+#: kwinbindings.cpp:110
+#, kde-format
+msgid "Switch to Window to the Right"
+msgstr "오른쪽 창으로 전환"
+
+#: kwinbindings.cpp:112
+#, kde-format
+msgid "Switch to Window to the Left"
+msgstr "왼쪽 창으로 전환"
+
+#: kwinbindings.cpp:114
+#, kde-format
+msgid "Increase Opacity of Active Window by 5 %"
+msgstr "활성 창 불투명도 5% 증가"
+
+#: kwinbindings.cpp:116
+#, kde-format
+msgid "Decrease Opacity of Active Window by 5 %"
+msgstr "활성 창 불투명도 5% 감소"
+
+#: kwinbindings.cpp:119
+#, kde-format
+msgid "Keep Window on All Desktops"
+msgstr "창을 모든 바탕 화면에 표시하기"
+
+#: kwinbindings.cpp:123
+#, kde-format
+msgid "Window to Desktop %1"
+msgstr "창을 바탕 화면 %1(으)로 보내기"
+
+#: kwinbindings.cpp:125
+#, kde-format
+msgid "Window to Next Desktop"
+msgstr "다음 바탕 화면으로 창 이동"
+
+#: kwinbindings.cpp:126
+#, kde-format
+msgid "Window to Previous Desktop"
+msgstr "이전 바탕 화면으로 창 이동"
+
+#: kwinbindings.cpp:127
+#, kde-format
+msgid "Window One Desktop to the Right"
+msgstr "오른쪽 바탕 화면으로 창 이동"
+
+#: kwinbindings.cpp:128
+#, kde-format
+msgid "Window One Desktop to the Left"
+msgstr "왼쪽 바탕 화면으로 창 이동"
+
+#: kwinbindings.cpp:129
+#, kde-format
+msgid "Window One Desktop Up"
+msgstr "위쪽 바탕 화면으로 창 이동"
+
+#: kwinbindings.cpp:130
+#, kde-format
+msgid "Window One Desktop Down"
+msgstr "아래쪽 바탕 화면으로 창 이동"
+
+#: kwinbindings.cpp:133
+#, kde-format
+msgid "Window to Screen %1"
+msgstr "창을 화면 %1(으)로 보내기"
+
+#: kwinbindings.cpp:135
+#, kde-format
+msgid "Window to Next Screen"
+msgstr "다음 데스크톱으로 창 이동"
+
+#: kwinbindings.cpp:136
+#, kde-format
+msgid "Window to Previous Screen"
+msgstr "이전 화면으로 창 이동"
+
+#: kwinbindings.cpp:137
+#, kde-format
+msgid "Show Desktop"
+msgstr "바탕 화면 표시"
+
+#: kwinbindings.cpp:140
+#, kde-format
+msgid "Switch to Screen %1"
+msgstr "화면 %1(으)로 전환"
+
+#: kwinbindings.cpp:143
+#, kde-format
+msgid "Switch to Next Screen"
+msgstr "다음 화면으로 전환"
+
+#: kwinbindings.cpp:144
+#, kde-format
+msgid "Switch to Previous Screen"
+msgstr "이전 화면으로 전환"
+
+#: kwinbindings.cpp:146
+#, kde-format
+msgid "Kill Window"
+msgstr "창 강제 종료"
+
+#: kwinbindings.cpp:147
+#, kde-format
+msgid "Suspend Compositing"
+msgstr "컴포지팅 중단하기"
+
+#: kwinbindings.cpp:148
+#, kde-format
+msgid "Invert Screen Colors"
+msgstr "화면 색 반전"
+
+#: main.cpp:184 main.cpp:214
+#, kde-format
+msgid "KDE window manager"
+msgstr "KDE 창 관리자"
+
+#: main.cpp:189
+#, kde-format
+msgid "KWin"
+msgstr "KWin"
+
+#: main.cpp:193
+#, kde-format
+msgid "(c) 1999-2019, The KDE Developers"
+msgstr "(c) 1999-2019, The KDE Developers"
+
+#: main.cpp:195
+#, kde-format
+msgid "Matthias Ettrich"
+msgstr "Matthias Ettrich"
+
+#: main.cpp:196
+#, kde-format
+msgid "Cristian Tibirna"
+msgstr "Cristian Tibirna"
+
+#: main.cpp:197
+#, kde-format
+msgid "Daniel M. Duley"
+msgstr "Daniel M. Duley"
+
+#: main.cpp:198
+#, kde-format
+msgid "Luboš Luňák"
+msgstr "Luboš Luňák"
+
+#: main.cpp:199
+#, kde-format
+msgid "Martin Flöser"
+msgstr "Martin Flöser"
+
+#: main.cpp:200
+#, kde-format
+msgid "David Edmundson"
+msgstr "David Edmundson"
+
+#: main.cpp:201
+#, kde-format
+msgid "Roman Gilg"
+msgstr "Roman Gilg"
+
+#: main.cpp:202
+#, kde-format
+msgid "Vlad Zahorodnii"
+msgstr "Vlad Zahorodnii"
+
+#: main.cpp:211
+#, kde-format
+msgid "Disable configuration options"
+msgstr "설정 옵션 사용하지 않기"
+
+#: main.cpp:212
+#, kde-format
+msgid "Indicate that KWin has recently crashed n times"
+msgstr "KWin이 최근 n번 충돌했다는 것을 알리기"
+
+#: main_wayland.cpp:459
+#, kde-format
+msgid "Start a rootless Xwayland server."
+msgstr "루트 창이 없는 Xwayland 서버를 시작합니다."
+
+#: main_wayland.cpp:461
+#, kde-format
+msgid ""
+"Name of the Wayland socket to listen on. If not set \"wayland-0\" is used."
+msgstr ""
+"들을 Wayland 소켓을 지정합니다. 설정하지 않으면 \"wayland-0\"을 사용합니다."
+
+#: main_wayland.cpp:464
+#, kde-format
+msgid "Render to framebuffer."
+msgstr "프레임버퍼에 렌더링합니다."
+
+#: main_wayland.cpp:466
+#, kde-format
+msgid "The framebuffer device to render to."
+msgstr "렌더링할 프레임버퍼 장치입니다."
+
+#: main_wayland.cpp:469
+#, kde-format
+msgid "The X11 Display to use in windowed mode on platform X11."
+msgstr "X11 플랫폼의 창 모드에서 사용할 X11 디스플레이입니다."
+
+#: main_wayland.cpp:472
+#, kde-format
+msgid "The Wayland Display to use in windowed mode on platform Wayland."
+msgstr "Wayland 플랫폼의 창 모드에서 사용할 Wayland 디스플레이입니다."
+
+#: main_wayland.cpp:474
+#, kde-format
+msgid "Render to a virtual framebuffer."
+msgstr "가상 프레임버퍼에 렌더링합니다."
+
+#: main_wayland.cpp:476
+#, kde-format
+msgid "The width for windowed mode. Default width is 1024."
+msgstr "창 모드의 폭입니다. 기본 폭은 1024입니다."
+
+#: main_wayland.cpp:480
+#, kde-format
+msgid "The height for windowed mode. Default height is 768."
+msgstr "창 모드의 높이입니다. 기본 높이는 768입니다."
+
+#: main_wayland.cpp:485
+#, kde-format
+msgid "The scale for windowed mode. Default value is 1."
+msgstr "창 모드의 크기 조정 비율입니다. 기본값은 1입니다."
+
+#: main_wayland.cpp:490
+#, kde-format
+msgid ""
+"The number of windows to open as outputs in windowed mode. Default value is 1"
+msgstr "창 모드에서 출력으로 열 창 개수입니다. 기본값은 1입니다."
+
+#: main_wayland.cpp:520
+#, kde-format
+msgid "Use libhybris hwcomposer"
+msgstr "libhybris hwcomposer 사용"
+
+#: main_wayland.cpp:526
+#, kde-format
+msgid ""
+"Enable libinput support for input events processing. Note: never use in a "
+"nested session.\t(deprecated)"
+msgstr ""
+"입력 이벤트 처리에 libinput 지원을 활성화합니다. 메모: 세션 안의 세션에서는 "
+"사용하지 마십시오.\t(폐기 예고됨)"
+
+#: main_wayland.cpp:529
+#, kde-format
+msgid "Render through drm node."
+msgstr "DRM 노드로 렌더링합니다."
+
+#: main_wayland.cpp:536
+#, kde-format
+msgid "Input method that KWin starts."
+msgstr "KWin에서 불러오는 입력기입니다."
+
+#: main_wayland.cpp:541
+#, kde-format
+msgid "List all available backends and quit."
+msgstr "사용 가능한 백엔드를 출력하고 끝냅니다."
+
+#: main_wayland.cpp:545
+#, kde-format
+msgid "Starts the session in locked mode."
+msgstr "세션을 잠긴 상태로 시작합니다."
+
+#: main_wayland.cpp:549
+#, kde-format
+msgid "Starts the session without lock screen support."
+msgstr "잠금 화면 지원 없이 세션을 시작합니다."
+
+#: main_wayland.cpp:553
+#, kde-format
+msgid "Starts the session without global shortcuts support."
+msgstr "전역 단축키 지원 없이 세션을 시작합니다."
+
+#: main_wayland.cpp:557
+#, kde-format
+msgid "Exit after the session application, which is started by KWin, closed."
+msgstr "KWin에서 시작한 세션 프로그램이 끝난 후에 닫습니다."
+
+#: main_wayland.cpp:562
+#, kde-format
+msgid "Applications to start once Wayland and Xwayland server are started"
+msgstr "Wayland 및 Xwayland 서버가 시작되었을 때 시작할 프로그램"
+
+#: main_x11.cpp:65
+#, kde-format
+msgid ""
+"KWin is unstable.\n"
+"It seems to have crashed several times in a row.\n"
+"You can select another window manager to run:"
+msgstr ""
+"KWin이 불안정합니다.\n"
+"연속으로 몇 번 충돌한 것 같습니다.\n"
+"실행할 또 다른 창 관리자를 선택하실 수 있습니다:"
+
+#: main_x11.cpp:224
+#, kde-format
+msgid ""
+"kwin: unable to claim manager selection, another wm running? (try using --"
+"replace)\n"
+msgstr ""
+"kwin: 창 관리자 영역을 사용할 수 없습니다. 또 다른 창 관리자가 있습니까? (--"
+"replace 옵션을 사용해 보십시오)\n"
+
+#: main_x11.cpp:241
+#, kde-format
+msgid "kwin: another window manager is running (try using --replace)\n"
+msgstr ""
+"kwin: 또 다른 창 관리자가 실행 중입니다 (--replace 옵션을 사용해 보십시오)\n"
+
+#: main_x11.cpp:437
+#, kde-format
+msgid "Replace already-running ICCCM2.0-compliant window manager"
+msgstr "이미 실행 중인 ICCCM 2.0 호환 창 관리자를 대체하기"
+
+#: main_x11.cpp:444
+#, kde-format
+msgid "Disable KActivities integration."
+msgstr "KActivities 통합을 사용하지 않습니다."
+
+#: plugins/scenes/opengl/scene_opengl.cpp:535
+#, kde-format
+msgid "Desktop effects were restarted due to a graphics reset"
+msgstr "그래픽 초기화로 인하여 데스크톱 효과가 다시 시작됨"
+
+#. i18n: ectx: label, entry (count), group (General)
+#: rulebooksettingsbase.kcfg:9
+#, kde-format
+msgid "Total rules count"
+msgstr "전체 규칙 개수"
+
+#. i18n: ectx: label, entry (description), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:10
+#, kde-format
+msgid "Rule description"
+msgstr "규칙 설명"
+
+#. i18n: ectx: label, entry (descriptionLegacy), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:13
+#, kde-format
+msgid "Rule description (legacy)"
+msgstr "규칙 설명(레거시)"
+
+#. i18n: ectx: label, entry (DeleteRule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:16
+#, kde-format
+msgid "Delete this rule (for use in imports)"
+msgstr "이 규칙 삭제(가져올 때 사용)"
+
+#. i18n: ectx: label, entry (wmclass), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:20
+#, kde-format
+msgid "Window class (application)"
+msgstr "창 클래스(프로그램)"
+
+#. i18n: ectx: label, entry (wmclassmatch), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:23
+#, kde-format
+msgid "Window class string match type"
+msgstr "창 클래스 문자열 일치 형식"
+
+#. i18n: ectx: label, entry (wmclasscomplete), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:29
+#, kde-format
+msgid "Match whole window class"
+msgstr "전체 창 클래스 일치"
+
+#. i18n: ectx: label, entry (windowrole), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:34
+#, kde-format
+msgid "Window role"
+msgstr "창 역할"
+
+#. i18n: ectx: label, entry (windowrolematch), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:37
+#, kde-format
+msgid "Window role string match type"
+msgstr "창 역할 문자열 일치 형식"
+
+#. i18n: ectx: label, entry (title), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:44
+#, kde-format
+msgid "Window title"
+msgstr "창 제목"
+
+#. i18n: ectx: label, entry (titlematch), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:47
+#, kde-format
+msgid "Window title string match type"
+msgstr "창 제목 문자열 일치 형식"
+
+#. i18n: ectx: label, entry (clientmachine), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:54
+#, kde-format
+msgid "Machine (hostname)"
+msgstr "머신(호스트 이름)"
+
+#. i18n: ectx: label, entry (clientmachinematch), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:57
+#, kde-format
+msgid "Machine string match type"
+msgstr "머신 문자열 일치 형식"
+
+#. i18n: ectx: label, entry (types), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:64
+#, kde-format
+msgid "Window types that match"
+msgstr "일치하는 창 종류"
+
+#. i18n: ectx: label, entry (placement), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:69
+#, kde-format
+msgid "Initial placement"
+msgstr "초기 배치"
+
+#. i18n: ectx: label, entry (placementrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:74
+#, kde-format
+msgid "Initial placement rule type"
+msgstr "초기 배치 규칙 종류"
+
+#. i18n: ectx: label, entry (position), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:79
+#, kde-format
+msgid "Window position"
+msgstr "창 위치"
+
+#. i18n: ectx: label, entry (positionrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:83
+#, kde-format
+msgid "Window position rule type"
+msgstr "창 위치 규칙 종류"
+
+#. i18n: ectx: label, entry (size), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:90
+#, kde-format
+msgid "Window size"
+msgstr "창 크기"
+
+#. i18n: ectx: label, entry (sizerule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:93
+#, kde-format
+msgid "Window size rule type"
+msgstr "창 크기 규칙 종류"
+
+#. i18n: ectx: label, entry (minsize), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:100
+#, kde-format
+msgid "Window minimum size"
+msgstr "창 최소 크기"
+
+#. i18n: ectx: label, entry (minsizerule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:104
+#, kde-format
+msgid "Window minimum size rule type"
+msgstr "창 최소 크기 규칙 종류"
+
+#. i18n: ectx: label, entry (maxsize), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:109
+#, kde-format
+msgid "Window maximum size"
+msgstr "창 최대 크기"
+
+#. i18n: ectx: label, entry (maxsizerule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:113
+#, kde-format
+msgid "Window maximum size rule type"
+msgstr "창 최대 크기 규칙 종류"
+
+#. i18n: ectx: label, entry (opacityactive), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:118
+#, kde-format
+msgid "Active opacity"
+msgstr "활성 불투명도"
+
+#. i18n: ectx: label, entry (opacityactiverule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:124
+#, kde-format
+msgid "Active opacity rule type"
+msgstr "활성 불투명도 규칙 종류"
+
+#. i18n: ectx: label, entry (opacityinactive), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:129
+#, kde-format
+msgid "Inactive opacity"
+msgstr "비활성 불투명도"
+
+#. i18n: ectx: label, entry (opacityinactiverule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:135
+#, kde-format
+msgid "Inactive opacity rule type"
+msgstr "비활성 불투명도 규칙 종류"
+
+#. i18n: ectx: label, entry (ignoregeometry), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:140
+#, kde-format
+msgid "Ignore requested geometry"
+msgstr "요청한 크기 및 위치 무시"
+
+#. i18n: ectx: label, entry (ignoregeometryrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:144
+#, kde-format
+msgid "Ignore requested geometry rule type"
+msgstr "요청한 크기 및 위치 무시 규칙 종류"
+
+#. i18n: ectx: label, entry (desktop), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:151
+#, kde-format
+msgid "Desktop number"
+msgstr "바탕 화면 번호"
+
+#. i18n: ectx: label, entry (desktoprule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:155
+#, kde-format
+msgid "Desktop number rule type"
+msgstr "바탕 화면 번호 규칙 종류"
+
+#. i18n: ectx: label, entry (screen), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:162
+#, kde-format
+msgid "Screen number"
+msgstr "화면 번호"
+
+#. i18n: ectx: label, entry (screenrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:166
+#, kde-format
+msgid "Screen number rule type"
+msgstr "화면 번호 규칙 종류"
+
+#. i18n: ectx: label, entry (activity), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:173
+#, kde-format
+msgid "Activity"
+msgstr "활동"
+
+#. i18n: ectx: label, entry (activityrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:176
+#, kde-format
+msgid "Activity rule type"
+msgstr "활동 규칙 종류"
+
+#. i18n: ectx: label, entry (type), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:183
+#, kde-format
+msgid "Set window type to"
+msgstr "다음으로 창 종류 설정"
+
+#. i18n: ectx: label, entry (typerule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:189
+#, kde-format
+msgid "Set window type rule type"
+msgstr "다음으로 창 종류 설정 규칙 종류"
+
+#. i18n: ectx: label, entry (maximizevert), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:194
+#, kde-format
+msgid "Maximized vertically"
+msgstr "수직 최대화"
+
+#. i18n: ectx: label, entry (maximizevertrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:198
+#, kde-format
+msgid "Maximized vertically rule type"
+msgstr "수직 최대화 규칙 종류"
+
+#. i18n: ectx: label, entry (maximizehoriz), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:205
+#, kde-format
+msgid "Maximized horizontally"
+msgstr "수평 최대화"
+
+#. i18n: ectx: label, entry (maximizehorizrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:209
+#, kde-format
+msgid "Maximized horizontally rule type"
+msgstr "수평 최대화 규칙 종류"
+
+#. i18n: ectx: label, entry (minimize), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:216
+#, kde-format
+msgid "Minimized"
+msgstr "최소화됨"
+
+#. i18n: ectx: label, entry (minimizerule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:220
+#, kde-format
+msgid "Minimized rule type"
+msgstr "최소화됨 규칙 종류"
+
+#. i18n: ectx: label, entry (shade), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:227
+#, kde-format
+msgid "Shaded"
+msgstr "말아 올려짐"
+
+#. i18n: ectx: label, entry (shaderule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:231
+#, kde-format
+msgid "Shaded rule type"
+msgstr "말아 올려짐 규칙 종류"
+
+#. i18n: ectx: label, entry (skiptaskbar), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:238
+#, kde-format
+msgid "Skip taskbar"
+msgstr "작업 표시줄 건너뛰기"
+
+#. i18n: ectx: label, entry (skiptaskbarrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:242
+#, kde-format
+msgid "Skip taskbar rule type"
+msgstr "작업 표시줄 건너뛰기 규칙 종류"
+
+#. i18n: ectx: label, entry (skippager), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:249
+#, kde-format
+msgid "Skip pager"
+msgstr "호출기 건너뛰기"
+
+#. i18n: ectx: label, entry (skippagerrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:253
+#, kde-format
+msgid "Skip pager rule type"
+msgstr "호출기 건너뛰기 규칙 종류"
+
+#. i18n: ectx: label, entry (skipswitcher), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:260
+#, kde-format
+msgid "Skip switcher"
+msgstr "전환기 건너뛰기"
+
+#. i18n: ectx: label, entry (skipswitcherrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:264
+#, kde-format
+msgid "Skip switcher rule type"
+msgstr "전환기 건너뛰기 규칙 종류"
+
+#. i18n: ectx: label, entry (above), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:271
+#, kde-format
+msgid "Keep above"
+msgstr "항상 위"
+
+#. i18n: ectx: label, entry (aboverule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:275
+#, kde-format
+msgid "Keep above rule type"
+msgstr "항상 위 규칙 종류"
+
+#. i18n: ectx: label, entry (below), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:282
+#, kde-format
+msgid "Keep below"
+msgstr "항상 아래"
+
+#. i18n: ectx: label, entry (belowrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:286
+#, kde-format
+msgid "Keep below rule type"
+msgstr "항상 아래 규칙 종류"
+
+#. i18n: ectx: label, entry (fullscreen), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:293
+#, kde-format
+msgid "Fullscreen"
+msgstr "전체 화면"
+
+#. i18n: ectx: label, entry (fullscreenrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:297
+#, kde-format
+msgid "Fullscreen rule type"
+msgstr "전체 화면 규칙 종류"
+
+#. i18n: ectx: label, entry (noborder), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:304
+#, kde-format
+msgid "No titlebar and frame"
+msgstr "제목 표시줄과 프레임 없음"
+
+#. i18n: ectx: label, entry (noborderrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:308
+#, kde-format
+msgid "No titlebar rule type"
+msgstr "제목 표시줄 없음 규칙 종류"
+
+#. i18n: ectx: label, entry (decocolor), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:315
+#, kde-format
+msgid "Titlebar color and scheme"
+msgstr "제목 표시줄 색과 색 배열"
+
+#. i18n: ectx: label, entry (decocolorrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:318
+#, kde-format
+msgid "Titlebar color rule type"
+msgstr "제목 표시줄 색 규칙 종류"
+
+#. i18n: ectx: label, entry (blockcompositing), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:323
+#, kde-format
+msgid "Block Compositing"
+msgstr "컴포지팅 중단하기"
+
+#. i18n: ectx: label, entry (blockcompositingrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:327
+#, kde-format
+msgid "Block Compositing rule type"
+msgstr "컴포지팅 중단하기 규칙 종류"
+
+#. i18n: ectx: label, entry (fsplevel), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:332
+#, kde-format
+msgid "Focus stealing prevention"
+msgstr "초점 훔치기 방지"
+
+#. i18n: ectx: label, entry (fsplevelrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:338
+#, kde-format
+msgid "Focus stealing prevention rule type"
+msgstr "초점 훔치기 방지 규칙 종류"
+
+#. i18n: ectx: label, entry (fpplevel), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:343
+#, kde-format
+msgid "Focus protection"
+msgstr "초점 보호"
+
+#. i18n: ectx: label, entry (fpplevelrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:349
+#, kde-format
+msgid "Focus protection rule type"
+msgstr "초점 보호 규칙 종류"
+
+#. i18n: ectx: label, entry (acceptfocus), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:354
+#, kde-format
+msgid "Accept Focus"
+msgstr "초점 받아들이기"
+
+#. i18n: ectx: label, entry (acceptfocusrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:358
+#, kde-format
+msgid "Accept Focus rule type"
+msgstr "초점 받아들이기 규칙 종류"
+
+#. i18n: ectx: label, entry (closeable), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:363
+#, kde-format
+msgid "Closeable"
+msgstr "닫을 수 있음"
+
+#. i18n: ectx: label, entry (closeablerule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:367
+#, kde-format
+msgid "Closeable rule type"
+msgstr "닫을 수 있음 규칙 종류"
+
+#. i18n: ectx: label, entry (autogroup), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:372
+#, kde-format
+msgid "Autogroup with identical"
+msgstr "같은 속성으로 자동으로 묶기"
+
+#. i18n: ectx: label, entry (autogrouprule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:376
+#, kde-format
+msgid "Autogroup with identical rule type"
+msgstr "같은 속성으로 자동으로 묶기 규칙 종류"
+
+#. i18n: ectx: label, entry (autogroupfg), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:381
+#, kde-format
+msgid "Autogroup in foreground"
+msgstr "배경에 있는 창 자동으로 묶기"
+
+#. i18n: ectx: label, entry (autogroupfgrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:385
+#, kde-format
+msgid "Autogroup in foreground rule type"
+msgstr "배경에 있는 창 자동으로 묶기 규칙 종류"
+
+#. i18n: ectx: label, entry (autogroupid), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:390
+#, kde-format
+msgid "Autogroup by ID"
+msgstr "ID로 자동으로 묶기"
+
+#. i18n: ectx: label, entry (autogroupidrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:393
+#, kde-format
+msgid "Autogroup by ID rule type"
+msgstr "ID로 자동으로 묶기 규칙 종류"
+
+#. i18n: ectx: label, entry (strictgeometry), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:398
+#, kde-format
+msgid "Obey geometry restrictions"
+msgstr "크기 제한 받아들이기"
+
+#. i18n: ectx: label, entry (strictgeometryrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:402
+#, kde-format
+msgid "Obey geometry restrictions rule type"
+msgstr "크기 제한 받아들이기 규칙 종류"
+
+#. i18n: ectx: label, entry (shortcut), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:407
+#, kde-format
+msgid "Shortcut"
+msgstr "단축키"
+
+#. i18n: ectx: label, entry (shortcutrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:410
+#, kde-format
+msgid "Shortcut rule type"
+msgstr "단축키 규칙 종류"
+
+#. i18n: ectx: label, entry (disableglobalshortcuts), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:417
+#, kde-format
+msgid "Ignore global shortcuts"
+msgstr "전역 단축키 무시"
+
+#. i18n: ectx: label, entry (disableglobalshortcutsrule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:421
+#, kde-format
+msgid "Ignore global shortcuts rule type"
+msgstr "전역 단축키 무시 규칙 종류"
+
+#. i18n: ectx: label, entry (desktopfile), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:426
+#, kde-format
+msgid "Desktop file name"
+msgstr "데스크톱 파일 이름"
+
+#. i18n: ectx: label, entry (desktopfilerule), group ($(ruleDescriptionOrNumber))
+#: rulesettings.kcfg:429
+#, kde-format
+msgid "Desktop file name rule type"
+msgstr "데스크톱 파일 이름 규칙 종류"
+
+#: scripting/genericscriptedconfig.cpp:70
+#, kde-format
+msgctxt "Error message"
+msgid "Plugin does not provide configuration file in expected location"
+msgstr "플러그인의 설정 파일이 예상한 위치에 없음"
+
+#: scripting/scripting.cpp:117
+#, kde-format
+msgctxt "Assertion failed in KWin script with given value"
+msgid "Assertion failed: %1 is not null"
+msgstr "가정 실패: %1이(가) null이 아님"
+
+#: scripting/scripting.cpp:135
+#, kde-format
+msgctxt "Assertion failed in KWin script"
+msgid "Assertion failed: argument is null"
+msgstr "가정 실패: 인자가 null임"
+
+#: scripting/scripting.cpp:177
+#, kde-format
+msgctxt "Error in KWin Script"
+msgid ""
+"Invalid number of arguments. At least service, path, interface and method "
+"need to be provided"
+msgstr ""
+"인자 개수가 잘못됨. 최소한 service, path, interface, method를 지정해야 함"
+
+#: scripting/scripting.cpp:183
+#, kde-format
+msgctxt "Error in KWin Script"
+msgid ""
+"Invalid type. Service, path, interface and method need to be string values"
+msgstr "형식이 잘못됨. service, path, interface, method는 문자열 값이어야 함"
+
+#: scripting/scriptingutils.cpp:17
+#, kde-format
+msgctxt "syntax error in KWin script"
+msgid "Invalid number of arguments"
+msgstr "인자 개수가 잘못됨"
+
+#: scripting/scriptingutils.cpp:30
+#, kde-format
+msgctxt "KWin Scripting function received incorrect value for an expected type"
+msgid "%1 is not a variant type"
+msgstr "%1은(는) variant 형식이 아님"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, ShortcutDialog)
+#: shortcutdialog.ui:14
+#, kde-format
+msgid "Dialog"
+msgstr "대화 상자"
+
+#. i18n: ectx: property (text), widget (QToolButton, clearButton)
+#: shortcutdialog.ui:25
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#: tabbox/tabbox.cpp:372
+#, kde-format
+msgctxt "Special entry in alt+tab list for minimizing all windows"
+msgid "Show Desktop"
+msgstr "바탕 화면 표시"
+
+#: tabbox/tabbox.cpp:521
+#, kde-format
+msgid "Walk Through Windows"
+msgstr "창간 이동"
+
+#: tabbox/tabbox.cpp:522
+#, kde-format
+msgid "Walk Through Windows (Reverse)"
+msgstr "창간 거꾸로 이동"
+
+#: tabbox/tabbox.cpp:523
+#, kde-format
+msgid "Walk Through Windows Alternative"
+msgstr "창간 다르게 이동"
+
+#: tabbox/tabbox.cpp:524
+#, kde-format
+msgid "Walk Through Windows Alternative (Reverse)"
+msgstr "창간 거꾸로 다르게 이동"
+
+#: tabbox/tabbox.cpp:525
+#, kde-format
+msgid "Walk Through Windows of Current Application"
+msgstr "현재 프로그램의 창간 이동"
+
+#: tabbox/tabbox.cpp:526
+#, kde-format
+msgid "Walk Through Windows of Current Application (Reverse)"
+msgstr "현재 프로그램의 창간 거꾸로 이동"
+
+#: tabbox/tabbox.cpp:527
+#, kde-format
+msgid "Walk Through Windows of Current Application Alternative"
+msgstr "현재 프로그램의 창간 다르게 이동"
+
+#: tabbox/tabbox.cpp:528
+#, kde-format
+msgid "Walk Through Windows of Current Application Alternative (Reverse)"
+msgstr "현재 프로그램의 창간 거꾸로 다르게 이동"
+
+#: tabbox/tabbox.cpp:529
+#, kde-format
+msgid "Walk Through Desktops"
+msgstr "바탕 화면간 이동"
+
+#: tabbox/tabbox.cpp:530
+#, kde-format
+msgid "Walk Through Desktops (Reverse)"
+msgstr "바탕 화면간 거꾸로 이동"
+
+#: tabbox/tabbox.cpp:531
+#, kde-format
+msgid "Walk Through Desktop List"
+msgstr "바탕 화면 목록에서 이동"
+
+#: tabbox/tabbox.cpp:532
+#, kde-format
+msgid "Walk Through Desktop List (Reverse)"
+msgstr "바탕 화면 목록에서 거꾸로 이동"
+
+#: tabbox/tabboxhandler.cpp:272
+#, kde-format
+msgid ""
+"The Window Switcher installation is broken, resources are missing.\n"
+"Contact your distribution about this."
+msgstr ""
+"창 전환기 설치 상태가 올바르지 않습니다. 자원이 없습니다.\n"
+"배포판 관리자에게 문의하십시오."
+
+#: useractions.cpp:167
+#, kde-format
+msgid ""
+"You have selected to show a window without its border.\n"
+"Without the border, you will not be able to enable the border again using "
+"the mouse: use the window operations menu instead, activated using the %1 "
+"keyboard shortcut."
+msgstr ""
+"창의 경계선이 보이지 않게 하도록 설정했습니다.\n"
+"경계선이 없을 때는 마우스를 사용해서 경계선을 다시 보이게 할 수 없습니다: 키"
+"보드 단축키 %1을(를) 사용해서 창 동작 메뉴를 부르십시오."
+
+#: useractions.cpp:175
+#, kde-format
+msgid ""
+"You have selected to show a window in fullscreen mode.\n"
+"If the application itself does not have an option to turn the fullscreen "
+"mode off you will not be able to disable it again using the mouse: use the "
+"window operations menu instead, activated using the %1 keyboard shortcut."
+msgstr ""
+"창을 전체 화면 모드로 보이도록 설정했습니다.\n"
+"프로그램에서 전체 화면 모드를 제어할 수 없을 때에는 마우스를 사용해서 전체 화"
+"면 모드에서 벗어날 수 없습니다: 키보드 단축키 %1을(를) 사용해서 창 동작 메뉴"
+"를 부르십시오."
+
+#: useractions.cpp:240
+#, kde-format
+msgid "&Move"
+msgstr "이동(&M)"
+
+#: useractions.cpp:245
+#, kde-format
+msgid "&Resize"
+msgstr "크기 조정(&R)"
+
+#: useractions.cpp:250
+#, kde-format
+msgid "Keep &Above Others"
+msgstr "항상 위(&A)"
+
+#: useractions.cpp:256
+#, kde-format
+msgid "Keep &Below Others"
+msgstr "항상 아래(&B)"
+
+#: useractions.cpp:262
+#, kde-format
+msgid "&Fullscreen"
+msgstr "전체 화면(&F)"
+
+#: useractions.cpp:268
+#, kde-format
+msgid "&Shade"
+msgstr "말아 올리기(&S)"
+
+#: useractions.cpp:274
+#, kde-format
+msgid "&No Border"
+msgstr "테두리 없음(&N)"
+
+#: useractions.cpp:282
+#, kde-format
+msgid "Set Window Short&cut..."
+msgstr "창 단축키 설정(&C)..."
+
+#: useractions.cpp:287
+#, kde-format
+msgid "Configure Special &Window Settings..."
+msgstr "창 특별 설정(&W)..."
+
+#: useractions.cpp:292
+#, kde-format
+msgid "Configure S&pecial Application Settings..."
+msgstr "프로그램 특별 설정(&P)..."
+
+#: useractions.cpp:300
+#, kde-format
+msgctxt ""
+"Entry in context menu of window decoration to open the configuration module "
+"of KWin"
+msgid "Configure W&indow Manager..."
+msgstr "창 관리자 설정(&I)..."
+
+#: useractions.cpp:328
+#, kde-format
+msgid "Ma&ximize"
+msgstr "최대화(&X)"
+
+#: useractions.cpp:334
+#, kde-format
+msgid "Mi&nimize"
+msgstr "최소화(&N)"
+
+#: useractions.cpp:340
+#, kde-format
+msgid "&More Actions"
+msgstr "더 많은 동작(&M)"
+
+#: useractions.cpp:343
+#, kde-format
+msgid "&Close"
+msgstr "닫기(&C)"
+
+#: useractions.cpp:410
+#, kde-format
+msgid "&Extensions"
+msgstr "확장(&E)"
+
+#: useractions.cpp:451
+#, kde-format
+msgid "&Desktops"
+msgstr "바탕 화면(&D)"
+
+#: useractions.cpp:465
+#, kde-format
+msgid "Move to &Desktop"
+msgstr "다음 바탕 화면으로 이동(&D)"
+
+#: useractions.cpp:483
+#, kde-format
+msgid "Move to &Screen"
+msgstr "다음 화면으로 이동(&S)"
+
+#: useractions.cpp:499
+#, kde-format
+msgid "Show in &Activities"
+msgstr "다음 활동에 표시(&A)"
+
+#: useractions.cpp:514 useractions.cpp:559
+#, kde-format
+msgid "&All Desktops"
+msgstr "모든 바탕 화면(&A)"
+
+#: useractions.cpp:542 useractions.cpp:595
+#, kde-format
+msgctxt "Create a new desktop and move there the window"
+msgid "&New Desktop"
+msgstr "새 바탕 화면(&N)"
+
+#: useractions.cpp:618
+#, kde-format
+msgctxt ""
+"@item:inmenu List of all Screens to send a window to. First argument is a "
+"number, second the output identifier. E.g. Screen 1 (HDMI1)"
+msgid "Screen &%1 (%2)"
+msgstr "화면 %1(%2)(&%1)"
+
+#: useractions.cpp:641
+#, kde-format
+msgid "&All Activities"
+msgstr "모든 활동(&A)"
+
+#: useractions.cpp:887
+#, kde-format
+msgctxt "'%1' is a keyboard shortcut like 'ctrl+w'"
+msgid "<b>%1</b> is already in use"
+msgstr "<b>%1</b>이(가) 이미 사용 중"
+
+#: useractions.cpp:889
+#, kde-format
+msgctxt "keyboard shortcut '%1' is used by action '%2' in application '%3'"
+msgid "<b>%1</b> is used by %2 in %3"
+msgstr "<b>%1</b>이(가) %3의 %2에서 사용 중"
+
+#: useractions.cpp:1021
+#, kde-format
+msgid "Activate Window (%1)"
+msgstr "창 활성화(%1)"
+
+#: useractions.cpp:1163
+#, kde-format
+msgid ""
+"The window manager is configured to consider the screen with the mouse on it "
+"as active one.\n"
+"Therefore it is not possible to switch to a screen explicitly."
+msgstr ""
+"창 관리자는 마우스가 있는 화면을 활성 화면으로 간주합니다.\n"
+"따라서 화면을 명시적으로 전환할 수 없습니다."
+
+#: virtualdesktops.cpp:698 virtualdesktops.cpp:767
+#, kde-format
+msgid "Desktop %1"
+msgstr "바탕 화면 %1"
+
+#: virtualdesktops.cpp:802
+#, kde-format
+msgid "Switch to Next Desktop"
+msgstr "다음 바탕 화면으로 전환"
+
+#: virtualdesktops.cpp:804
+#, kde-format
+msgid "Switch to Previous Desktop"
+msgstr "이전 바탕 화면으로 전환"
+
+#: virtualdesktops.cpp:806
+#, kde-format
+msgid "Switch One Desktop to the Right"
+msgstr "오른쪽 바탕 화면으로 전환"
+
+#: virtualdesktops.cpp:808
+#, kde-format
+msgid "Switch One Desktop to the Left"
+msgstr "왼쪽 바탕 화면으로 전환"
+
+#: virtualdesktops.cpp:810
+#, kde-format
+msgid "Switch One Desktop Up"
+msgstr "위쪽 바탕 화면으로 전환"
+
+#: virtualdesktops.cpp:812
+#, kde-format
+msgid "Switch One Desktop Down"
+msgstr "아래쪽 바탕 화면으로 전환"
+
+#: virtualdesktops.cpp:825
+#, kde-format
+msgid "Switch to Desktop %1"
+msgstr "바탕 화면 %1(으)로 전환"
+
+#: virtualkeyboard.cpp:84
+#, kde-format
+msgid "Virtual Keyboard"
+msgstr "가상 키보드"
+
+#: virtualkeyboard.cpp:350
+#, kde-format
+msgid "Virtual Keyboard: enabled"
+msgstr "가상 키보드: 활성"
+
+#: virtualkeyboard.cpp:353
+#, kde-format
+msgid "Virtual Keyboard: disabled"
+msgstr "가상 키보드: 비활성"
+
+#: virtualkeyboard.cpp:355
+#, kde-format
+msgid "Whether to show the virtual keyboard on demand."
+msgstr "필요할 때 가상 키보드를 보일지 여부입니다."
+
+#: workspace.cpp:1349
+#, kde-format
+msgctxt "Introductory text shown in the support information."
+msgid ""
+"KWin Support Information:\n"
+"The following information should be used when requesting support on e.g. "
+"https://forum.kde.org.\n"
+"It provides information about the currently running instance, which options "
+"are used,\n"
+"what OpenGL driver and which effects are running.\n"
+"Please post the information provided underneath this introductory text to a "
+"paste bin service\n"
+"like https://paste.kde.org instead of pasting into support threads.\n"
+msgstr ""
+"KWin 지원 정보:\n"
+"포럼 (예: https://forum.kde.org) 등에 지원을 요청하려면 다음 정보를 사용하십"
+"시오.\n"
+"현재 실행 중인 창 관리자의 옵션, 사용 중인 OpenGL 드라이버, 실행 중인 효과와 "
+"같은\n"
+"창 관리자의 상태 정보를 제공합니다.\n"
+"이 메시지 아래에 있는 지원 정보를 글에 바로 붙여넣기보다는\n"
+"https://paste.kde.org 등 외부 사이트에 링크하는 것을 권장합니다.\n"

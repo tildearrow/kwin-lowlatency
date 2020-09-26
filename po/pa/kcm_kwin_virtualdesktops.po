@@ -1,0 +1,128 @@
+# translation of kcm_kwindesktop.po to Punjabi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# A S Alam <aalam@users.sf.net>, 2007, 2009, 2010, 2012, 2014, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_kwindesktop\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2019-12-28 09:13-0800\n"
+"Last-Translator: A S Alam <alam.yellow@gmail.com>\n"
+"Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.04.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "alam.yellow@gmail.com"
+
+#: desktopsmodel.cpp:455
+#, kde-format
+msgid "There was an error connecting to the compositor."
+msgstr "ਕੰਪੋਜ਼ਟਰ ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਸੀ।"
+
+#: desktopsmodel.cpp:657
+#, kde-format
+msgid "There was an error saving the settings to the compositor."
+msgstr "ਕੰਪੋਜ਼ਟਰ ਨਾਲ ਸੈਟਿੰਗਾਂ ਸੰਭਾਲਣ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਸੀ।"
+
+#: desktopsmodel.cpp:660
+#, kde-format
+msgid "There was an error requesting information from the compositor."
+msgstr ""
+
+#: package/contents/ui/main.qml:18
+#, kde-format
+msgid ""
+"This module lets you configure the navigation, number and layout of virtual "
+"desktops."
+msgstr ""
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Rename"
+msgstr "ਨਾਂ ਬਦਲੋ"
+
+#: package/contents/ui/main.qml:78
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Remove"
+msgstr "ਹਟਾਓ"
+
+#: package/contents/ui/main.qml:104
+#, kde-format
+msgid ""
+"Virtual desktops have been changed outside this settings application. Saving "
+"now will overwrite the changes."
+msgstr ""
+
+#: package/contents/ui/main.qml:118
+#, kde-format
+msgid "Row %1"
+msgstr "ਕਤਾਰ %1"
+
+#: package/contents/ui/main.qml:131
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr "ਜੋੜੋ"
+
+#: package/contents/ui/main.qml:134
+#, kde-format
+msgid "New Desktop"
+msgstr "ਨਵਾਂ ਡੈਸਕਟਾਪ"
+
+#: package/contents/ui/main.qml:148
+#, kde-format
+msgid "1 Row"
+msgid_plural "%1 Rows"
+msgstr[0] "1 ਕਤਾਰ"
+msgstr[1] "%1 ਕਤਾਰਾਂ"
+
+#: package/contents/ui/main.qml:160
+#, kde-format
+msgid "Options:"
+msgstr "ਚੋਣਾਂ:"
+
+#: package/contents/ui/main.qml:162
+#, kde-format
+msgid "Navigation wraps around"
+msgstr "ਨੇਵੀਗੇਸ਼ਨ ਪਾਸਿਓ ਸਮੇਟੋ"
+
+#: package/contents/ui/main.qml:177
+#, kde-format
+msgid "Show animation when switching:"
+msgstr ""
+
+#: package/contents/ui/main.qml:220
+#, kde-format
+msgid "Show on-screen display when switching:"
+msgstr ""
+
+#: package/contents/ui/main.qml:238
+#, kde-format
+msgid "%1 ms"
+msgstr "%1 ਮਿਲੀਸਕਿੰਟ"
+
+#: package/contents/ui/main.qml:256
+#, kde-format
+msgid "Show desktop layout indicators"
+msgstr "ਡੈਸਕਟਾਪ ਲੇਆਉਟ ਇੰਡੀਕੇਟਰ ਵੇਖੋ"
+
+#: virtualdesktops.cpp:30
+#, kde-format
+msgid "Virtual Desktops"
+msgstr "ਫ਼ਰਜ਼ੀ ਡੈਸਕਟਾਪ"

@@ -1,0 +1,157 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Dutch "INCLUDE">
+]>
+<article id="kwintabbox" lang="&language;">
+<articleinfo>
+<title
+>Taakomschakelaar</title>
+<authorgroup>
+<author
+>&Martin.Graesslin;&Martin.Graesslin.mail;</author>
+&Freek.de.Kruijf; 
+</authorgroup>
+
+<date
+>2015-07-24</date>
+<releaseinfo
+>&plasma; 5.4</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systeeminstellingen</keyword>
+<keyword
+>bureaublad</keyword>
+<keyword
+>venster</keyword>
+<keyword
+>navigatie</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="windows-navigating">
+<title
+>Door vensters wandelen</title>
+
+<para
+>Deze module biedt de mogelijkheid om het gedrag in te stellen voor het navigeren door vensters vaak gerefereerd als <keycombo
+>&Alt;&Tab;</keycombo
+>. Er zijn twee onafhankelijke sets effecten die verschillende instellingen hebben. Voor elk van deze sets is er een eigen tabblad (<guilabel
+>Hoofd</guilabel
+> en <guilabel
+>Alternatief</guilabel
+>) in deze module. </para>
+
+<note
+><para
+>De eerste set effecten op het tabblad <guilabel
+>Hoofd</guilabel
+> heeft voorgedefinieerde sneltoetsen. Als u de tweede set effecten wilt gebruiken op het tabblad <guilabel
+>Alternatief</guilabel
+>, dan moet u een sneltoets voor deze effecten handmatig in de sneltoetsbewerker instellen.</para
+></note>
+
+<note
+><para
+>Voor navigeren door vensters zonder <keycombo
+>&Alt;&Tab;</keycombo
+> kunt u acties voor schermrandeffecten in de module &systemsettings; <ulink url="help:/kcontrol/kwinscreenedges/index.html"
+><guilabel
+>Schermranden</guilabel
+></ulink
+> definiëren. </para
+></note>
+
+<para
+>De volgende documentatie over opties is van toepassing op de algemene alsook de alternatieve instellingen.</para>
+
+<sect2 id="visualization">
+<title
+>Visualisatie</title>
+<para
+>Er zijn verschillende effecten die gebruikt kunnen worden in plaats van de normale vensterlijst wanneer schermeffecten is ingeschakeld. Standaard wordt het effect <guilabel
+>Breeze</guilabel
+> gebruikt. Dit effect toont een miniatuur in een lijst links op het scherm en het nu geselecteerde venster is geaccentueerd. Er zijn verschillende extra voorgedefinieerde indelingen die een informatieve of compacte weergave tonen, kleine of grote pictogrammen, een raster en alleen titels van vensters. </para>
+<para
+>Selecteren van een van deze layouts biedt u een knop om een voorbeeld te tonen.</para
+> 
+<para
+>Als u <guilabel
+>Geselecteerde venster tonen</guilabel
+> inschakelt zal het huidige geselecteerde venster oplichten door het uitvagen van alle andere vensters. Deze optie vereist dat bureaubladeffecten actief is.</para>
+
+<para
+>De effecten <guilabel
+>Omslagtonen</guilabel
+> en <guilabel
+>Omslaan</guilabel
+> zijn geavanceerde effecten die OpenGL vereisen. <guilabel
+>Omslagtonen</guilabel
+> vertoont de vensters in een galerij met een grote miniatuur voor het nu actieve venster in het centrum van het scherm terwijl alle andere vensters links en rechts draaien. <guilabel
+>Omslaan</guilabel
+> vertoont alle vensters op een 3D stapel. Het actieve venster is aan de top van de stapel en navigeren door de vensters beweegt de stapel zodat het nieuwe actieve venster zich aan de top bevindt. </para>
+<para
+>Als het effect extra instellingen biedt dan zal de configuratieknop worden geactiveerd. Door op deze knop te klikken wordt een configuratiedialoog getoond. </para>
+<note
+><para
+>Als schermeffecten niet actief of uitgesteld is, zal de normale vensterlijst worden getoond. Er is geen verlies van functionaliteit als een effect wordt geselecteerd en schermeffecten is niet actief.</para
+></note>
+</sect2>
+
+<sect2 id="shortcuts">
+<title
+>Sneltoetsen</title>
+<para
+>De sneltoetsbewerker levert het configuratieinterface voor de sneltoetsen voor het navigeren door vensters. Elk van de twee mogelijke sets effecten heeft twee sneltoetsen: een voor de voorwaartse richting en een voor de omgekeerde richting. Merk op dat de vensterlijst alleen getoond kan worden als u een sneltoets selecteert met een toetsenbordmodifier zoals de &Alt;- of &Ctrl;-toets. Deze modifier moet ingedrukt blijven tijdens het omschakelen. Een sneltoets zonder modifier-toets kan het gedrag van navigeren door vensters breken. </para>
+</sect2>
+
+<sect2 id="content-and-sort-order">
+<title
+>Inhoud</title>
+<para
+>Het is mogelijk de volgorde van sorteren te beïnvloeden, u kunt ofwel een sorteervolgorde gebruiken gebaseerd op de laatst gebruikte vensters of de stapelvolgorde van de vensters. </para>
+<para
+>Als u <guilabel
+>Pictogram "Bureaublad tonen" meenemen</guilabel
+> activeert dan wordt er een item voor het bureaublad toegevoegd aan de lijst met toepassingsvensters. Daarna kunt u dit item in de lijst selecteren om alle vensters te minimaliseren.</para>
+<para
+>Als <guilabel
+>Alleen één venster per toepassing</guilabel
+> is geselecteerd dan is alleen het laatst gebruikte exemplaar van een toepassing aanwezig in de lijst. Schakelen naar andere exemplaren is dan alleen mogelijk via het paneel.</para>
+</sect2>
+
+<sect2 id="filter">
+<title
+>Vensters filteren op</title>
+<para
+>U kunt configureren welke vensters in de lijst getoond moeten worden door het indrukken van <keycombo
+>&Alt;&Tab;</keycombo
+> (voorgedefineerd voor de instellingen op het tabblad <guilabel
+>Hoofd</guilabel
+>) of de gebruiker-gedefinieerde sneltoets voor de alternatieve instellingen. </para>
+<para
+>Het is dus mogelijk om alleen vensters te tonen op het huidige virtuele bureaublad of vensters van alle andere bureaubladen. Het is ook mogelijk om vergelijkbare regels toe te passen op vensters in activiteiten of op schermen voor systeem net meerdere schermen. </para>
+<para
+>De laatste optie stelt u in staat om te filteren op de geminimaliseerde status van vensters. </para>
+</sect2>
+
+</sect1>
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
+

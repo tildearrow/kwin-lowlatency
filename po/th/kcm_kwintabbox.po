@@ -1,0 +1,239 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Thanomsub Noppaburana <donga.nb@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-15 02:23+0200\n"
+"PO-Revision-Date: 2010-03-27 23:18+0700\n"
+"Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: kwintabboxconfigform.cpp:77
+#, kde-format
+msgid "KWin"
+msgstr ""
+
+#: layoutpreview.cpp:147
+#, fuzzy, kde-format
+#| msgid "All Desktops"
+msgctxt "An example Desktop Name"
+msgid "Desktop 1"
+msgstr "หน้าต่างที่อยู่บนพื้นที่ทำงานทั้งหมด"
+
+#: main.cpp:65
+#, kde-format
+msgid "Main"
+msgstr "ค่าหลัก ๆ"
+
+#: main.cpp:66
+#, kde-format
+msgid "Alternative"
+msgstr "ทางเลือกอื่น"
+
+#: main.cpp:68
+#, kde-format
+msgid "Get New Task Switchers..."
+msgstr ""
+
+#: main.cpp:78
+#, kde-format
+msgid ""
+"Focus policy settings limit the functionality of navigating through windows."
+msgstr ""
+"การตั้งค่าต่าง ๆ ของนโยบายการได้รับโฟกัส จะจำกัดความสามารถของการท่องผ่านแต่ละหน้าต่าง"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: main.ui:32
+#, kde-format
+msgid "Content"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, showDesktop)
+#: main.ui:41
+#, fuzzy, kde-format
+#| msgid "Include desktop"
+msgid "Include \"Show Desktop\" icon"
+msgstr "รวมพื้นที่ทำงานด้วย"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, switchingModeCombo)
+#: main.ui:55
+#, kde-format
+msgid "Recently used"
+msgstr "ตามลำดับการใช้งานล่าสุด"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, switchingModeCombo)
+#: main.ui:60
+#, kde-format
+msgid "Stacking order"
+msgstr "ตามลำดับการจัดกองซ้อน"
+
+#. i18n: ectx: property (text), widget (QCheckBox, oneAppWindow)
+#: main.ui:68
+#, kde-format
+msgid "Only one window per application"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: main.ui:78
+#, kde-format
+msgid "Sort order:"
+msgstr "การเรียงลำดับของหน้าต่าง:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: main.ui:104
+#, fuzzy, kde-format
+#| msgid "List windows:"
+msgid "Filter windows by"
+msgstr "รายการของหน้าต่างต่าง ๆ:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterDesktops)
+#: main.ui:113
+#, fuzzy, kde-format
+#| msgid "All Desktops"
+msgid "Virtual desktops"
+msgstr "หน้าต่างที่อยู่บนพื้นที่ทำงานทั้งหมด"
+
+#. i18n: ectx: property (text), widget (QRadioButton, currentDesktop)
+#: main.ui:157
+#, fuzzy, kde-format
+#| msgid "Current Desktop"
+msgid "Current desktop"
+msgstr "หน้าต่างที่อยู่บนพื้นที่ทำงานปัจจุบัน"
+
+#. i18n: ectx: property (text), widget (QRadioButton, otherDesktops)
+#: main.ui:164
+#, fuzzy, kde-format
+#| msgid "All Desktops"
+msgid "All other desktops"
+msgstr "หน้าต่างที่อยู่บนพื้นที่ทำงานทั้งหมด"
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterActivities)
+#: main.ui:174
+#, kde-format
+msgid "Activities"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, currentActivity)
+#: main.ui:218
+#, kde-format
+msgid "Current activity"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, otherActivities)
+#: main.ui:225
+#, kde-format
+msgid "All other activities"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterScreens)
+#: main.ui:235
+#, kde-format
+msgid "Screens"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, currentScreen)
+#: main.ui:279
+#, fuzzy, kde-format
+#| msgid "Current Desktop"
+msgid "Current screen"
+msgstr "หน้าต่างที่อยู่บนพื้นที่ทำงานปัจจุบัน"
+
+#. i18n: ectx: property (text), widget (QRadioButton, otherScreens)
+#: main.ui:286
+#, kde-format
+msgid "All other screens"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterMinimization)
+#: main.ui:296
+#, fuzzy, kde-format
+#| msgid "Minimum Size"
+msgid "Minimization"
+msgstr "ขนาดเล็กสุด"
+
+#. i18n: ectx: property (text), widget (QRadioButton, visibleWindows)
+#: main.ui:340
+#, fuzzy, kde-format
+#| msgid "List windows:"
+msgid "Visible windows"
+msgstr "รายการของหน้าต่างต่าง ๆ:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, hiddenWindows)
+#: main.ui:347
+#, fuzzy, kde-format
+#| msgid "List windows:"
+msgid "Hidden windows"
+msgstr "รายการของหน้าต่างต่าง ๆ:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: main.ui:386
+#, kde-format
+msgid "Shortcuts"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: main.ui:395 main.ui:438
+#, kde-format
+msgid "Forward"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: main.ui:418
+#, fuzzy, kde-format
+#| msgid "List windows:"
+msgid "All windows"
+msgstr "รายการของหน้าต่างต่าง ๆ:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: main.ui:428 main.ui:448
+#, kde-format
+msgid "Reverse"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: main.ui:470
+#, fuzzy, kde-format
+#| msgid "Current Desktop Grouped by Applications"
+msgid "Current application"
+msgstr "หน้าต่างที่อยู่บนพื้นที่ทำงานปัจจุบัน โดยจัดกลุ่มตามโปรแกรม"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: main.ui:489
+#, fuzzy, kde-format
+#| msgid "Navigation"
+msgid "Visualization"
+msgstr "การนำทาง"
+
+#. i18n: ectx: property (toolTip), widget (QComboBox, effectCombo)
+#: main.ui:519
+#, kde-format
+msgid "The effect to replace the list window when desktop effects are active."
+msgstr "ลูกเล่นที่จะใช้แทนที่รายการหน้าต่างเมื่อมีการเปิดใช้งานลูกเล่นของพื้นที่ทำงาน"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_HighlightWindows)
+#: main.ui:549
+#, kde-format
+msgid ""
+"The currently selected window will be highlighted by fading out all other "
+"windows. This option requires desktop effects to be active."
+msgstr ""
+"หน้าต่างที่เลือกไว้ในปัจจุบันจะถูกเน้นด้วยการค่อย ๆ จางหายไปจากหน้าต่างอื่น ๆ "
+"ตัวเลือกนี้ต้องการการเปิดใช้งานลูกเล่นของพื้นที่ทำงานด้วย"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightWindows)
+#: main.ui:552
+#, fuzzy, kde-format
+#| msgid "Show outline of selected window"
+msgid "Show selected window"
+msgstr "แสดงเส้นโดยรอบของหน้าต่างที่ถูกเลือก"

@@ -1,0 +1,98 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kwin package.
+#
+# enolp <enolp@softastur.org>, 2019, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"PO-Revision-Date: 2020-02-19 16:11+0100\n"
+"Last-Translator: enolp <enolp@softastur.org>\n"
+"Language-Team: Asturian <alministradores@softastur.org>\n"
+"Language: ast\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 19.12.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Softastur"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "alministradores@softastur.org"
+
+#: kcm.cpp:33
+#, kde-format
+msgid "Desktop Effects"
+msgstr "Efeutos pal escritoriu"
+
+#: kcm.cpp:38
+#, kde-format
+msgid "Vlad Zahorodnii"
+msgstr "Vlad Zahorodnii"
+
+#: kcm.cpp:77
+#, kde-format
+msgid "Download New Desktop Effects"
+msgstr "Descarga d'efeutos nuevos"
+
+#: package/contents/ui/Effect.qml:77
+#, kde-format
+msgid ""
+"Author: %1\n"
+"License: %2"
+msgstr ""
+"Autor: %1\n"
+"Llicencia: %2"
+
+#: package/contents/ui/Effect.qml:106
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Show/Hide Video"
+msgstr "Amosar/anubrir el videu"
+
+#: package/contents/ui/Effect.qml:113
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Configure..."
+msgstr "Configurar…"
+
+#: package/contents/ui/main.qml:18
+#, kde-format
+msgid "This module lets you configure desktop effects."
+msgstr "Esti módulu déxate configurar los efeutos pal escritoriu."
+
+#: package/contents/ui/main.qml:25
+#, kde-format
+msgid ""
+"Hint: To find out or configure how to activate an effect, look at the "
+"effect's settings."
+msgstr ""
+"Pista: Pa descubrir o configurar cómo activar efeutos, mira los axutes de "
+"los efeutos"
+
+#: package/contents/ui/main.qml:45
+#, kde-format
+msgid "Configure Filter"
+msgstr "Configurar la peñera"
+
+#: package/contents/ui/main.qml:57
+#, kde-format
+msgid "Exclude unsupported effects"
+msgstr "Escluyir los efeutos que nun se sofiten"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgid "Exclude internal effects"
+msgstr "Escluyir los efeutos internos"
+
+#: package/contents/ui/main.qml:124
+#, kde-format
+msgid "Get New Desktop Effects..."
+msgstr "Consiguir efeutos nuevos…"
