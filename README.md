@@ -69,31 +69,13 @@ the reason why only up to 8ms is because any further would leave little room for
 
 ## Arch Linux
 
-[kwin-lowlatency is available in the AUR](https://aur.archlinux.org/packages/kwin-lowlatency).
-
-## Fedora
-
-ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracloud.org/coprs/zawertun/kde/package/kwin-lowlatency/).
-
-## Gentoo
-
-[an overlay](https://github.com/agates/kwin-lowlatency-overlay) is available, courtesy of agates.
+use the PKGBUILD in the Releases page until the beta is over.
 
 ## Manjaro
 
-Manjaro has updated to Plasma 5.19 now. please follow the Arch Linux instructions.
+nope.
 
-## NixOS
-
-check out pasqui23's [kwin-ll](https://github.com/pasqui23/nixpkgs/tree/kwin-ll) branch.
-
-## openSUSE Tumbleweed
-
-kwin-lowlatency can be found at [home:DarkWav:kwin-lowlatency](https://software.opensuse.org/download.html?project=home%3ADarkWav%3Akwin-lowlatency&package=kwin-lowlatency) (OBS).
-
-## Ubuntu
-
-[kwin-lowlatency PPA](https://launchpad.net/~maxiberta/+archive/ubuntu/kwin-lowlatency). thanks maxiberta!
+after the beta is over, I guess I'll have to repeat the same script for Manjaro...
 
 ## other distributions/manual method
 
@@ -117,13 +99,13 @@ $ cd kwin-lowlatency
 if you are not using the latest major version of Plasma (you can check by doing `kwin_x11 --version`), you may want to check out the branch for your version, e.g.:
 
 ```
-$ git checkout Plasma/5.19
+$ git checkout Plasma/5.20
 ```
 
 you may want to check the current stable version out:
 
 ```
-$ git checkout v5.19.3
+$ git checkout v5.19.90
 ```
 
 #### patch format
