@@ -14,20 +14,21 @@
 # Ludovic Grossard <ludovic.grossard@unilim.fr>, 2014.
 # Sebastien Renard <renard@kde.org>, 2015.
 # Simon Depiets <sdepiets@gmail.com>, 2019, 2020.
+# Xavier Besnard <xavier.besnard@neuf.fr>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-20 03:31+0200\n"
-"PO-Revision-Date: 2020-05-02 15:07+0800\n"
-"Last-Translator: Simon Depiets <sdepiets@gmail.com>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"PO-Revision-Date: 2020-06-28 22:29+0200\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
+"Language-Team: FR\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 20.07.70\n"
+"X-Generator: Lokalize 20.08.0\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -184,10 +185,9 @@ msgstr "Activer, placer dessus et défiler"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: actions.ui:184
-#, fuzzy, kde-format
-#| msgid "Inner Window, Titlebar & Frame"
+#, kde-format
 msgid "Inner Window, Titlebar and Frame Actions"
-msgstr "Intérieur de la fenêtre, barre de titre et cadre"
+msgstr "Intérieur de la fenêtre, barre de titre et actions sur le cadre"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: actions.ui:195
@@ -221,7 +221,7 @@ msgstr "Méta"
 #: actions.ui:236
 #, kde-format
 msgid "  + "
-msgstr "  + "
+msgstr "+ "
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
@@ -461,31 +461,27 @@ msgstr "Modifier l'opacité"
 
 #. i18n: ectx: property (text), widget (QLabel, shadeHoverLabel)
 #: advanced.ui:20
-#, fuzzy, kde-format
-#| msgid "Window Tabbing"
+#, kde-format
 msgid "Window &unshading:"
-msgstr "Onglets des fenêtres"
+msgstr "&Dé-ombrage de fenêtres"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, shadeHoverOn)
 #: advanced.ui:32
-#, fuzzy, kde-format
-#| msgid ""
-#| "If Shade Hover is enabled, a shaded window will un-shade automatically "
-#| "when the mouse pointer has been over the title bar for some time."
+#, kde-format
 msgid ""
 "<html><head/><body><p>If this option is enabled, a shaded window will "
 "unshade automatically when the mouse pointer has been over the titlebar for "
 "some time.</p></body></html>"
 msgstr ""
-"Si l'option « Dérouler au survol » est sélectionnée, une fenêtre enroulée "
-"sera déroulée automatiquement lorsque le pointeur de la souris passe sur la "
-"barre de titre un certain temps."
+"<html><head/><body><p>Si cette option est activée, une fenêtre ombrée sera "
+"non ombrée automatiquement quand le pointeur de souris passera pendant un "
+"certain temps au dessus de la barre de titre.</p></body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, shadeHoverOn)
 #: advanced.ui:35
 #, kde-format
 msgid "On titlebar hover after:"
-msgstr ""
+msgstr "Au survol de la barre de titre après :"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, shadeHover)
 #: advanced.ui:42
@@ -542,6 +538,32 @@ msgid ""
 "\"><span style=\" font-style:italic;\">Under mouse</span> will place the "
 "window under the pointer</li></ul></body></html>"
 msgstr ""
+"<html><head/><body><p>La politique de placement détermine où la nouvelle "
+"fenêtre apparaîtra sur le bureau.</p><ul style=\"margin-top: 0px; margin-"
+"bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\"><li "
+"style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Élégant</span> essaiera de trouver un recouvrement minimal des "
+"fenêtres.</li><li style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Maximiser</span> essaiera de maximiser chaque "
+"fenêtre pour remplir la totalité de l'écran.</li><li style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Cascade</"
+"span> organisera les fenêtres avec un placement en cascade</li><li style=\" "
+"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Aléatoire</span> organisera les fenêtres avec une position aléatoire.</"
+"li><li style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Centré</span> positionnera la fenêtre au centre.</li><li style=\" "
+"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Coin "
+"Zéro</span>placera la fenêtre sur le coin supérieur gauche.</li><li style=\" "
+"margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Sous "
+"la souris</span> positionnera la fenêtre sous le pointeur.</li></ul></body></"
+"html>"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:80
@@ -623,6 +645,8 @@ msgstr "Politique d'&activation des fenêtres :"
 #, kde-format
 msgid "With this option you can specify how and when windows will be focused."
 msgstr ""
+"Avec cette option, vous pouvez spécifier comment et quand les fenêtres "
+"prennent le focus."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:36
@@ -635,7 +659,7 @@ msgstr "Cliquer pour avoir le focus"
 #: focus.ui:41
 #, kde-format
 msgid "Click to focus (mouse precedence)"
-msgstr ""
+msgstr "Cliquer pour prendre le focus (Précédence de la souris)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:46
@@ -647,7 +671,7 @@ msgstr "Le focus suit la souris"
 #: focus.ui:51
 #, kde-format
 msgid "Focus follows mouse (mouse precedence)"
-msgstr ""
+msgstr "Le focus suit la souris (Précédence de la souris)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:56
@@ -685,31 +709,7 @@ msgstr "Niveau de prévention de vol du focu&s :"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, focusStealing)
 #: focus.ui:114
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p>This option specifies how much KWin will try to prevent unwanted focus "
-#| "stealing caused by unexpected activation of new windows. (Note: This "
-#| "feature does not work with the Focus Under Mouse or Focus Strictly Under "
-#| "Mouse focus policies.)\n"
-#| "<ul>\n"
-#| "<li><em>None:</em> Prevention is turned off and new windows always become "
-#| "activated.</li>\n"
-#| "<li><em>Low:</em> Prevention is enabled; when some window does not have "
-#| "support for the underlying mechanism and KWin cannot reliably decide "
-#| "whether to activate the window or not, it will be activated. This setting "
-#| "may have both worse and better results than the medium level, depending "
-#| "on the applications.</li>\n"
-#| "<li><em>Medium:</em> Prevention is enabled.</li>\n"
-#| "<li><em>High:</em> New windows get activated only if no window is "
-#| "currently active or if they belong to the currently active application. "
-#| "This setting is probably not really usable when not using mouse focus "
-#| "policy.</li>\n"
-#| "<li><em>Extreme:</em> All windows must be explicitly activated by the "
-#| "user.</li>\n"
-#| "</ul></p>\n"
-#| "<p>Windows that are prevented from stealing focus are marked as demanding "
-#| "attention, which by default means their taskbar entry will be "
-#| "highlighted. This can be changed in the Notifications control module.</p>"
+#, kde-format
 msgid ""
 "<html><head/><body><p>This option specifies how much KWin will try to "
 "prevent unwanted focus stealing caused by unexpected activation of new "
@@ -742,30 +742,40 @@ msgid ""
 "by default means their taskbar entry will be highlighted. This can be "
 "changed in the Notifications control module.</p></body></html>"
 msgstr ""
-"<p>Cette option spécifie comment KWin empêchera le vol non voulu du focus, "
-"causé par l'activation d'une nouvelle fenêtre (remarque : cette option ne "
-"fonctionne pas avec les règles existantes « Le focus est sous la souris » ou "
-"« Le focus est strictement sous la souris »).\n"
-"<ul>\n"
-"<li><em>Aucun :</em> la prévention est désactivée et les nouvelles fenêtres "
-"sont toujours activées.</li> \n"
-"<li><em>Bas :</em> la prévention est activée ; quand une fenêtre n'a pas de "
-"gestion d'un mécanisme sous-jacent et que KWin ne peut valablement décider "
-"si la fenêtre doit être activée ou non, elle sera activée. Ce réglage peut "
-"avoir de plus ou moins bons résultats par rapport au niveau normal, selon "
-"les applications.</li> \n"
-"<li><em>Moyen :</em> la prévention est activée.</li> \n"
-"<li><em>Haut :</em> les nouvelles fenêtres ne deviennent actives que si "
-"aucune fenêtre n'est actuellement active ou si elles appartiennent à "
-"l'application active. Ce réglage n'est probablement pas vraiment utilisable "
-"lorsqu'il n'y a pas d'utilisation d'une politique de focus avec la souris.</"
-"li><li><em>Extrême :</em> toutes les fenêtres doivent être explicitement "
-"activées par l'utilisateur.</li> \n"
-"</ul></p>\n"
-"<p>Les fenêtres empêchant le vol de focus sont marquées comme demandant "
-"l'attention, ce qui, par défaut, signifie leur mise en évidence dans la "
-"barre de tâches. Ceci peut être modifié dans le module de configuration des "
-"notifications.</p>"
+"<html><head/><body> <p>Cette option spécifie combien de temps, KWin essaiera "
+"de prévenir le vol non intentionnel du focus, causé par l'activation non "
+"prévue de nouvelles fenêtres. Veuillez prendre note que cette option ne "
+"fonctionne pas avec les règles existantes, <span style=\" font-style:italic;"
+"\">Le focus est sous la souris</span> ou <span style=\" font-style:italic;"
+"\">Le focus est strictement sous la souris</span>. </p> <ul style=\"margin-"
+"top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-"
+"indent: 1;\"><li style=\" margin-top:12px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Aucun :</span> La prévention est désactivée et "
+"toutes les nouvelles fenêtres seront toujours activées. </li><li style=\" "
+"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Bas :"
+"</span> La prévention est activée quand certaines fenêtres ne prennent pas "
+"en charge les mécanismes sous-jacents et que KWin ne peut décider de façon "
+"fiable d'activer la fenêtre ou non. Alors elle sera activée. Ce paramétrage "
+"peut offrir des résultats soit bons soit mauvais que le fonctionnement "
+"moyen, dépendant des applications. </li><li style=\" margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">Médium :</span> La "
+"prévention est activée. </li><li style=\" margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+"\"><span style=\" font-style:italic;\">Haut :</span> Les nouvelles fenêtres "
+"sont activés uniquement si aucune fenêtre n'est actuellement active ou si "
+"elle appartiennent à une application actuellement active. Ce paramétrage "
+"n'est probablement pas réellement utilisable quand la stratégie de focus "
+"avec la souris n'est pas utilisée.</li><li style=\" margin-top:0px; margin-"
+"bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-style:italic;\">Extrême :</span> Toutes "
+"les fenêtres doivent être explicitement activées par l'utilisateur.</li></"
+"ul><p> Les fenêtres qui sont préservées par le vol de focus sont marquées "
+"comme demande de l'attention, ce qui signifie par défaut que leurs entrées "
+"de barres de tâches seront surlignées. Cela peut être modifié dans le module "
+"« Contrôle de notification ».</p></body></html>"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
@@ -807,10 +817,9 @@ msgstr "Extrême"
 
 #. i18n: ectx: property (text), widget (QLabel, raisingWindowsLabel)
 #: focus.ui:146
-#, fuzzy, kde-format
-#| msgid "Raising windows"
+#, kde-format
 msgid "Raising windows:"
-msgstr "Mise sur le dessus des fenêtres"
+msgstr "Empilage de fenêtres :"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, clickRaiseOn)
 #: focus.ui:153
@@ -1088,17 +1097,17 @@ msgstr "Afficher sur tous les bureaux"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coTiAct4)
 #: mouse.ui:98
-#, fuzzy, kde-format
-#| msgid "Behavior on <em>double</em> click into the titlebar."
+#, kde-format
 msgid "Behavior on <em>mouse wheel</em> scroll over the titlebar."
-msgstr "Comportement lors d'un <em>double clic</em> dans la barre de titre."
+msgstr ""
+"Comportement lors d'un défilement <em> avec la roulette de souris</em> sur "
+"la barre de titre."
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: mouse.ui:143
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar and Frame Actions"
-msgstr "Actions de la barre de &titre"
+msgstr "Actions sur la barre de titre et le cadre"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: mouse.ui:167
@@ -1132,10 +1141,9 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #: mouse.ui:266 mouse.ui:328 mouse.ui:381 mouse.ui:443 mouse.ui:496
 #: mouse.ui:558
-#, fuzzy, kde-format
-#| msgid "Operations Menu"
+#, kde-format
 msgid "Show actions menu"
-msgstr "Menu des opérations"
+msgstr "Afficher le menu des actions"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coTiInAct1)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, coTiInAct2)
@@ -1159,10 +1167,9 @@ msgstr "Activer et placer dessous"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: mouse.ui:589
-#, fuzzy, kde-format
-#| msgid "Maximize Button"
+#, kde-format
 msgid "Maximize Button Actions"
-msgstr "Bouton de maximisation"
+msgstr "Actions du bouton de maximisation"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_8)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, leftClickMaximizeButton)
@@ -1221,23 +1228,18 @@ msgstr "Afficher lors d'un déplacement ou d'un redimensionnement"
 
 #. i18n: ectx: property (text), widget (QLabel, borderSnapLabel)
 #: moving.ui:40
-#, fuzzy, kde-format
-#| msgid "&Border snap zone:"
+#, kde-format
 msgid "Screen &edge snap zone:"
-msgstr "Zone d'attraction des &bords :"
+msgstr "Zone d'attraction de l'écran et des &bords :"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, borderSnap)
 #: moving.ui:50
-#, fuzzy, kde-format
-#| msgid ""
-#| "Here you can set the snap zone for screen borders, i.e. the 'strength' of "
-#| "the magnetic field which will make windows snap to the border when moved "
-#| "near it."
+#, kde-format
 msgid ""
 "Here you can set the snap zone for screen edges, i.e. the 'strength' of the "
 "magnetic field which will make windows snap to the border when moved near it."
 msgstr ""
-"Vous pouvez préciser ici la taille de la zone d'attraction des bords de "
+"Vous pouvez définir ici la taille de la zone d'attraction des bords de "
 "l'écran, c'est-à-dire l'intensité du « champ magnétique » attirant les "
 "fenêtres vers les bords de l'écran lorsqu'elles se trouvent près d'eux."
 
@@ -1245,10 +1247,9 @@ msgstr ""
 #. i18n: ectx: property (suffix), widget (QSpinBox, windowSnap)
 #. i18n: ectx: property (suffix), widget (QSpinBox, centerSnap)
 #: moving.ui:56 moving.ui:78 moving.ui:100
-#, fuzzy, kde-format
-#| msgid " pixel"
+#, kde-format
 msgid " px"
-msgstr " pixel"
+msgstr " px"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, windowSnap)
 #: moving.ui:72
@@ -1288,10 +1289,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, OverlapSnap)
 #: moving.ui:116
-#, fuzzy, kde-format
-#| msgid "Snap windows onl&y when overlapping"
+#, kde-format
 msgid "Only when overlapping"
-msgstr "Attirer les fenêtres uniquement en cas de chevauchement"
+msgstr "Uniquement en cas de chevauchement"
 
 #. i18n: ectx: property (text), widget (QLabel, windowSnapLabel)
 #: moving.ui:123
@@ -1307,37 +1307,24 @@ msgstr "Zone d'attraction du &centre :"
 
 #. i18n: ectx: property (text), widget (QLabel, OverlapSnapLabel)
 #: moving.ui:143
-#, fuzzy, kde-format
-#| msgid "Raising windows"
+#, kde-format
 msgid "&Snap windows:"
-msgstr "Mise sur le dessus des fenêtres"
+msgstr "Empiler le&s fenêtres"
 
 #: windows.cpp:172
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Click To Focus</b><br>\n"
-#| "A window becomes active when you click into it.<br><br>\n"
-#| "This behaviour is common on other operating systems and<br>\n"
-#| "likely what you want."
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus:</"
 "span> A window becomes active when you click into it. This behavior is "
 "common on other operating systems and likely what you want.</p></body></html>"
 msgstr ""
-"<b>Cliquer pour avoir le focus</b><br>\n"
-"Une fenêtre devient active quand vous cliquez dedans.<br><br>\n"
-"Ce comportement est commun aux autres systèmes d'exploitation et <br>\n"
-"plutôt ce que vous souhaitez."
+"<html><head/><body><p><span style=\" font-style:italic;\">Cliquer pour avoir "
+"le focus : </span>Une fenêtre devient active quand vous cliquez dedans. Ce "
+"comportement est commun avec d'autres systèmes d'exploitation et plutôt ce "
+"que vous souhaitez."
 
 #: windows.cpp:175
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Click To Focus - Mouse Precedence</b><br>\n"
-#| "This is mostly the same as <i>Click To Focus</i><br><br>\n"
-#| "If an active window has to be chosen by the system<br>\n"
-#| "(eg. because the currently active one was closed) <br>\n"
-#| "the window under the mouse is the preferred candidate.<br><br>\n"
-#| "Unusual, but possible variant of <i>Click To Focus</i>."
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus "
 "(mouse precedence):</span> Mostly the same as <span style=\" font-style:"
@@ -1346,23 +1333,17 @@ msgid ""
 "the mouse is the preferred candidate. Unusual, but possible variant of <span "
 "style=\" font-style:italic;\">Click to focus</span>.</p></body></html>"
 msgstr ""
-"<b>Cliquer pour avoir le focus - Précédence de souris</b><br>\n"
-"Ceci est globalement identique à <i>Cliquer pour avoir le focus</i><br><br>\n"
-"Si une fenêtre active doit être sélectionnée par le système<br>\n"
-"(par exemple lorsque la fenêtre active a été fermée) <br>\n"
-"la fenêtre sous la souris est la candidate toute désignée.<br><br>\n"
-"De façon non habituelle mais une variante possible de <i>Cliquer pour avoir "
-"le focus</i>."
+"<html><head/><body><p><spafont-style:italic;\">Cliquer pour avoir le focus "
+"(Précédence de la souris) :</span> Ceci est globalement identique à <span "
+"style=\" font-style:italic;\">Cliquer pour avoir le focus</span>. Si une "
+"fenêtre active doit être sélectionnée par le système (par exemple lorsque la "
+"fenêtre active a été fermée), la fenêtre sous la souris est la candidate "
+"toute désignée. De façon inhabituelle mais une variante possible de <span "
+"style=\" font-style:italic;\">Cliquer pour avoir le focus</span>.</p></"
+"body></html>"
 
 #: windows.cpp:178
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Follows Mouse</b><br>\n"
-#| "Moving the mouse onto a window will activate it.<br><br>\n"
-#| "Eg. windows randomly appearing under the mouse will not gain the focus."
-#| "<br>\n"
-#| "Focus stealing prevention takes place as usual.<br><br>\n"
-#| "Think as <i>Click To Focus</i> just without having to actually click."
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Focus follows "
 "mouse:</span> Moving the mouse onto a window will activate it. Eg. windows "
@@ -1371,24 +1352,16 @@ msgid ""
 "Think as <span style=\" font-style:italic;\">Click to focus</span> just "
 "without having to actually click.</p></body></html>"
 msgstr ""
-"<b>Le focus suit la souris</b><br>\n"
-"Le déplacement de la souris au dessus d'une fenêtre va activer celle-ci."
-"<br><br>\n"
-"Par exemple, les fenêtres apparaissant de façon aléatoire sous la souris ne "
-"recevront pas le focus.<br>\n"
-"La prévention de vol de focus est appliquée de façon classique.<br><br>\n"
-"Pensez à <i>Cliquez pour avoir le focus</i> juste sans avoir à cliquer "
-"vraiment."
+"<html><head/><body><p><span style=\" font-style:italic;\">Le focus suit la "
+"souris :</span> Le déplacement de la souris au dessus d'une fenêtre va "
+"activer celle-ci. Par exemple, les fenêtres apparaissant de façon aléatoire "
+"sous la souris ne recevront pas le focus.<span style=\" font-style:italic;"
+"\">La prévention de vol de focus </span> est appliquée de façon classique. "
+"Veuillez penser à <span style=\" font-style:italic;\">Cliquez pour avoir le "
+"focus</span> juste sans avoir à cliquer vraiment. </p> </body></html>"
 
 #: windows.cpp:181
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Follows Mouse - Mouse Precedence</b><br>\n"
-#| "This is mostly the same as <i>Focus Follows Mouse</i><br><br>\n"
-#| "If an active window has to be chosen by the system<br>\n"
-#| "(eg. because the currently active one was closed) <br>\n"
-#| "the window under the mouse is the preferred candidate.<br><br>\n"
-#| "Choose this, if you want a hover controlled focus."
+#, kde-format
 msgid ""
 "<html><head/><body><p>This is mostly the same as <span style=\" font-style:"
 "italic;\">Focus follows mouse</span>. If an active window has to be chosen "
@@ -1396,24 +1369,15 @@ msgid ""
 "under the mouse is the preferred candidate. Choose this, if you want a hover "
 "controlled focus.</p></body></html>"
 msgstr ""
-"<b>Le focus suit la souris - Précédence de la souris</b><br>\n"
-"Ceci est globalement identique à <i>Le focus suit la souris</i><br><br>\n"
-"Si une fenêtre active doit être sélectionnée par le système<br>\n"
-"(par exemple lorsque la fenêtre active a été fermée) <br>\n"
-"la fenêtre sous la souris est la candidate toute désignée.<br><br>\n"
-"Choisissez ceci, si vous voulez un focus piloté par le survol."
+"<html><head/><body><p>Cecilement identique à <span style=\" font-style:"
+"italic;\">Le focus suit la souris</span><br>Si une fenêtre active doit être "
+"sélectionnée par le système (par exemple lorsque la fenêtre active a été "
+"fermée), la fenêtre sous la souris est la candidate toute désignée. "
+"Choisissez ceci, si vous voulez un focus piloté par le survol. </p></body></"
+"html>"
 
 #: windows.cpp:184
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Under Mouse</b><br>\n"
-#| "The focus always remains on the window under the mouse.<br><br>\n"
-#| "\n"
-#| "Notice:<br>\n"
-#| "<b>Focus stealing prevention</b> and the <b>tabbox (\"Alt+Tab\")</b><br>\n"
-#| "contradict the policy and <b>will not work</b>.<br><br>\n"
-#| "You very likely want to use<br>\n"
-#| "<i>Focus Follows Mouse - Mouse Precedence</i> instead!"
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Focus under mouse:"
 "</span> The focus always remains on the window under the mouse.<br/><span "
@@ -1423,31 +1387,18 @@ msgid ""
 "work. You very likely want to use <span style=\" font-style:italic;\">Focus "
 "follows mouse (mouse precedence)</span> instead!</p></body></html>"
 msgstr ""
-"<b>Focus sous la souris</b><br>\n"
-"Le focus reste toujours sur la fenêtre sous la souris.<br><br>\n"
-"\n"
-"Remarque : <br>\n"
-"<b>La prévention de vol de focus</b> et la <b>barre d'onglets (« Alt » + "
-"« Tab »)</b><br>\n"
-"sont contradictoires vis à vis des règles et <b>ne fonctionneront pas</b>."
-"<br><br>\n"
-"Vous aimerez très probablement utiliser<br>\n"
-"<i>Le focus suit la souris - Précédence de souris</i> à la place !"
+"<html><head/><body><p><span style=\" font-style:italic;\">Focus sous la "
+"souris :</span> Le focus reste toujours sur la fenêtre en dessous de la "
+"fenêtre.<br/><span style=\" font-weight:600;\">Attention : </span><span "
+"style=\" font-style:italic;\">La prévention du vol du focus</span> et le "
+"<span style=\" font-style:italic;\">défilement des fenêtres (« Alt » + "
+"« Tab ») </span>sont en contradiction de la politique d'activation et ne "
+"fonctionnera pas. Vous pourriez être fortement tenté d'utiliser <span style="
+"\" font-style:italic;\">Le focus suit la souris (Précédence de la souris)</"
+"span> à la place !</p></body></html>"
 
 #: windows.cpp:187
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Strictly Under Mouse</b><br>\n"
-#| "The focus is always on the window under the mouse - in doubt nowhere -"
-#| "<br>\n"
-#| "very much like the focus behaviour in an unmanaged legacy X11 environment."
-#| "<br><br>\n"
-#| "\n"
-#| "Notice:<br>\n"
-#| "<b>Focus stealing prevention</b> and the <b>tabbox (\"Alt+Tab\")</b><br>\n"
-#| "contradict the policy and <b>will not work</b>.<br><br>\n"
-#| "You very likely want to use<br>\n"
-#| "<i>Focus Follows Mouse - Mouse Precedence</i> instead!"
+#, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Focus strictly "
 "under mouse:</span> The focus is always on the window under the mouse (in "
@@ -1459,15 +1410,13 @@ msgid ""
 "\" font-style:italic;\">Focus follows mouse (mouse precedence)</span> "
 "instead!</p></body></html>"
 msgstr ""
-"<b>Focus strictement sous la souris</b><br> \n"
-"Le focus est toujours sur la fenêtre sous la souris - en cas de doute, nulle "
-"part -,<br>\n"
-"très similaire au comportement pour le focus associé à un environnement X11 "
-"ancien et sans gestion de focus.<br><br>\n"
-"\n"
-"Remarque : <br>\n"
-"<b> La prévention de vol de focus</b> et la <b>barre d'onglets (« Alt » + "
-"« Tab »)</b><br> sont contradictoires vis à vis des règles et ne "
-"fonctionneront pas</b>.<br><br>\n"
-"Vous aimerez très probablement utiliser<br>\n"
-"<i>Le focus suit la souris - Précédence de la souris</i> à la place !"
+"<html><head/><body><p><span style=\" font-style:italic;\">Focus strictement "
+"sous la souris :</span> Le focus est toujours sur la fenêtre sous la souris "
+"(en cas de doute, nul par, tout à fait comme le comportement du focus dans "
+"l'environnement « X11 » ancien et non géré.<br/><span style=\" font-"
+"weight:600;\">Attention : </span><span style=\" font-style:italic;\">La "
+"prévention de vol de focus</span> et la <span style=\" font-style:italic;"
+"\">navigation entre fenêtres (« Alt » + « Tab ») </span>est en contradiction "
+"avec la politique d'activation et ne fonctionnera pas. Vous pourriez "
+"largement préféré utiliser <span style=\" font-style:italic;\">Le focus suit "
+"la souris (Précédence de la souris)</span> à la place !</p></body></html> "

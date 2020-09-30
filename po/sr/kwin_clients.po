@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin_clients\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-11-09 04:05+0100\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2015-01-17 13:25+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -20,49 +20,49 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
 
-#: aurorae/src/aurorae.cpp:722
+#: aurorae/src/aurorae.cpp:692
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Tiny"
 msgstr "сићушна"
 
-#: aurorae/src/aurorae.cpp:723
+#: aurorae/src/aurorae.cpp:693
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Normal"
 msgstr "нормална"
 
-#: aurorae/src/aurorae.cpp:724
+#: aurorae/src/aurorae.cpp:694
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Large"
 msgstr "велика"
 
-#: aurorae/src/aurorae.cpp:725
+#: aurorae/src/aurorae.cpp:695
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Very Large"
 msgstr "врло велика"
 
-#: aurorae/src/aurorae.cpp:726
+#: aurorae/src/aurorae.cpp:696
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Huge"
 msgstr "огромна"
 
-#: aurorae/src/aurorae.cpp:727
+#: aurorae/src/aurorae.cpp:697
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Very Huge"
 msgstr "врло огромна"
 
-#: aurorae/src/aurorae.cpp:728
+#: aurorae/src/aurorae.cpp:698
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Oversized"
 msgstr "неизмерна"
 
-#: aurorae/src/aurorae.cpp:731
+#: aurorae/src/aurorae.cpp:701
 #, kde-format
 msgid "Button size:"
 msgstr "Величина дугмади:"
@@ -119,26 +119,10 @@ msgstr ""
 msgid "Colored window border"
 msgstr "Обојена ивица прозора"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_titleShadow)
-#: aurorae/themes/plastik/package/contents/ui/config.ui:66
-#, kde-format
-msgid ""
-"Check this option if you want the titlebar text to have a 3D look with a "
-"shadow behind it."
-msgstr ""
-"Укључите да би текст насловне траке имао 3Д изглед, помоћу сенке иза њега."
-
-# >> @option:check
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_titleShadow)
-#: aurorae/themes/plastik/package/contents/ui/config.ui:69
-#, kde-format
-msgid "Use shadowed &text"
-msgstr "&Засенчени текст"
-
 # rewrite-msgid: /fade in/cross-fade/
 # rewrite-msgid: /and fade out.*//
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_animateButtons)
-#: aurorae/themes/plastik/package/contents/ui/config.ui:76
+#: aurorae/themes/plastik/package/contents/ui/config.ui:66
 #, kde-format
 msgid ""
 "Check this option if you want the buttons to fade in when the mouse pointer "
@@ -148,7 +132,7 @@ msgstr ""
 
 # >> @option:check
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_animateButtons)
-#: aurorae/themes/plastik/package/contents/ui/config.ui:79
+#: aurorae/themes/plastik/package/contents/ui/config.ui:69
 #, kde-format
 msgid "Animate buttons"
 msgstr "Анимирана дугмад"

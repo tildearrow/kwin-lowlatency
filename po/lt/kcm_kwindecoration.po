@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-15 03:48+0100\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2019-07-30 22:25+0300\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -167,7 +167,7 @@ msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
 msgstr "Rodyti antraštės juostos mygtukų paaiškinimus"
 
-#: package/contents/ui/Themes.qml:99
+#: package/contents/ui/Themes.qml:100
 #, kde-format
 msgid "Edit %1 Theme"
 msgstr "Taisyti %1 apipavidalinimą"

@@ -9,9 +9,9 @@
 # Alfredo vicente <alviboi@gmail.com>, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: kcm_kwin_virtualdesktops\n"
+"Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-03-30 09:08+0200\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2019-07-22 11:29+0200\n"
 "Last-Translator: Alfredo vicente <alviboi@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"

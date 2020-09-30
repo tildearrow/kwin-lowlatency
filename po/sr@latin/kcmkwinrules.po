@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-01-01 03:11+0100\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2017-10-30 23:08+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -273,45 +273,45 @@ msgctxt "Window caption for the application wide rules dialog"
 msgid "Edit Application-Specific Settings"
 msgstr "Uređivanje posebnih postavki za program"
 
-#: main.cpp:240
+#: main.cpp:241
 #, kde-format
 msgid "KWin"
 msgstr "KWin"
 
-#: main.cpp:247
+#: main.cpp:248
 #, kde-format
 msgid "KWin helper utility"
 msgstr "Pomoćna alatka za KWin"
 
-#: main.cpp:248
+#: main.cpp:249
 #, fuzzy, kde-format
 #| msgid "WId of the window for special window settings."
 msgid "KWin id of the window for special window settings."
 msgstr "ID prozora za posebne postavke po prozoru."
 
-#: main.cpp:249
+#: main.cpp:250
 #, kde-format
 msgid "Whether the settings should affect all windows of the application."
 msgstr "Da li postavke utiču na sve prozore istog programa."
 
-#: main.cpp:258
+#: main.cpp:259
 #, kde-format
 msgid "This helper utility is not supposed to be called directly."
 msgstr "Ova pomoćna alatka ne bi trebalo da se poziva direktno."
 
 # >> @title:window
-#: ruleslist.cpp:153
+#: ruleslist.cpp:152
 #, kde-format
 msgid "Export Rules"
 msgstr "Izvoz pravila"
 
-#: ruleslist.cpp:154 ruleslist.cpp:166
+#: ruleslist.cpp:153 ruleslist.cpp:165
 #, kde-format
 msgid "KWin Rules (*.kwinrule)"
 msgstr "KWinova pravila (*.kwinrule)"
 
 # >> @title:window
-#: ruleslist.cpp:165
+#: ruleslist.cpp:164
 #, kde-format
 msgid "Import Rules"
 msgstr "Uvoz pravila"
@@ -359,7 +359,7 @@ msgstr "&Uvezi"
 msgid "&Export"
 msgstr "&Izvezi"
 
-#: ruleswidget.cpp:67
+#: ruleswidget.cpp:66
 #, kde-format
 msgid ""
 "Enable this checkbox to alter this window property for the specified "
@@ -367,7 +367,7 @@ msgid ""
 msgstr ""
 "Popunite ovu kućicu da biste izmenili ovo svojstvo za navedene prozore."
 
-#: ruleswidget.cpp:69
+#: ruleswidget.cpp:68
 #, kde-format
 msgid ""
 "Specify how the window property should be affected:<ul><li><em>Do Not Affect:"
@@ -398,7 +398,7 @@ msgstr ""
 "nametnuta data vrednost dok se prozor ne sakrije (kada ova radnja biva "
 "obrisana).</li></ul>"
 
-#: ruleswidget.cpp:84
+#: ruleswidget.cpp:83
 #, kde-format
 msgid ""
 "Specify how the window property should be affected:<ul><li><em>Do Not Affect:"
@@ -416,27 +416,27 @@ msgstr ""
 "privremeno</em>: svojstvu će biti nametnuta data vrednost dok se prozor ne "
 "sakrije (kada ova radnja biva obrisana).</li></ul>"
 
-#: ruleswidget.cpp:152
+#: ruleswidget.cpp:151
 #, kde-format
 msgid "All Desktops"
 msgstr "Sve površi"
 
-#: ruleswidget.cpp:346
+#: ruleswidget.cpp:345
 #, kde-format
 msgid "All Activities"
 msgstr "Sve aktivnosti"
 
-#: ruleswidget.cpp:791
+#: ruleswidget.cpp:790
 #, kde-format
 msgid "Settings for %1"
 msgstr "Postavke klase %1"
 
-#: ruleswidget.cpp:793
+#: ruleswidget.cpp:792
 #, kde-format
 msgid "Unnamed entry"
 msgstr "Neimenovana stavka"
 
-#: ruleswidget.cpp:803
+#: ruleswidget.cpp:802
 #, kde-format
 msgid ""
 "You have specified the window class as unimportant.\n"
@@ -450,12 +450,12 @@ msgstr ""
 "stvarno želite da napravite opšte postavke, preporučljivo je da barem "
 "ograničite tipove prozora kako biste izbegli posebne tipove."
 
-#: ruleswidget.cpp:832
+#: ruleswidget.cpp:831
 #, kde-format
 msgid "Edit Window-Specific Settings"
 msgstr "Uredi posebne postavke za prozor"
 
-#: ruleswidget.cpp:864
+#: ruleswidget.cpp:863
 #, kde-format
 msgid ""
 "This configuration dialog allows altering settings only for the selected "
@@ -468,12 +468,12 @@ msgstr ""
 "popunom kućice, pa izaberite način uticaja na postavku i na koju vrednost je "
 "postaviti."
 
-#: ruleswidget.cpp:868
+#: ruleswidget.cpp:867
 #, kde-format
 msgid "Consult the documentation for more details."
 msgstr "Pogledajte dokumentaciju za više detalja."
 
-#: ruleswidget.cpp:907
+#: ruleswidget.cpp:906
 #, kde-format
 msgid "Edit Shortcut"
 msgstr "Uredi prečicu"
@@ -938,25 +938,26 @@ msgstr "podrazumevano"
 msgid "No Placement"
 msgstr "bez postavljanja"
 
-# >> @item:inlistbox Placement->Force
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1066
 #, kde-format
-msgid "Smart"
-msgstr "pametno"
+msgid "Minimal Overlapping"
+msgstr ""
 
 # >> @item:inlistbox Placement->Force
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1071
-#, kde-format
-msgid "Maximizing"
+#, fuzzy, kde-format
+#| msgid "Maximizing"
+msgid "Maximized"
 msgstr "maksimizovano"
 
 # >> @item:inlistbox Placement->Force
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1076
-#, kde-format
-msgid "Cascade"
+#, fuzzy, kde-format
+#| msgid "Cascade"
+msgid "Cascaded"
 msgstr "naslagano"
 
 # >> @item:inlistbox Placement->Force
@@ -976,8 +977,9 @@ msgstr "nasumično"
 # >> @item:inlistbox Placement->Force
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1091
-#, kde-format
-msgid "Top-Left Corner"
+#, fuzzy, kde-format
+#| msgid "Top-Left Corner"
+msgid "In Top-Left Corner"
 msgstr "gornji levi ugao"
 
 # >> @item:inlistbox Placement->Force

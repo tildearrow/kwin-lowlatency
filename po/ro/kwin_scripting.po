@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
+# Sergiu Bivol <sergiu@cip.md>, 2013, 2020.
 #
-# Sergiu Bivol <sergiu@ase.md>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 03:25+0200\n"
-"PO-Revision-Date: 2013-10-05 14:31+0300\n"
-"Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"PO-Revision-Date: 2020-08-31 01:44+0100\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 19.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -54,7 +54,7 @@ msgid ""
 "need to be provided"
 msgstr ""
 "Număr nevalid de argumente. Trebuiesc furnizate cel puțin serviciul, calea, "
-"interfața și metoda."
+"interfața și metoda"
 
 #: scripting.cpp:194
 #, kde-format

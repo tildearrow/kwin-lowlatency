@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-20 03:31+0200\n"
-"PO-Revision-Date: 2020-03-25 19:56\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"PO-Revision-Date: 2020-05-09 13:51\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -1248,6 +1248,9 @@ msgid ""
 "the mouse is the preferred candidate. Unusual, but possible variant of <span "
 "style=\" font-style:italic;\">Click to focus</span>.</p></body></html>"
 msgstr ""
+"<html>单击聚焦(鼠标优先)：<head/>非常类似于<body>单击聚焦<p>。如果一个活动窗"
+"口需要由系统选中(例如，由于当前活动窗口被关闭) 鼠标下的窗口将是优先候选。不常"
+"见，但是 <span style=\" font-style:italic;\">单击聚焦</span>的可能的变换。"
 
 #: windows.cpp:178
 #, kde-format
@@ -1259,6 +1262,9 @@ msgid ""
 "Think as <span style=\" font-style:italic;\">Click to focus</span> just "
 "without having to actually click.</p></body></html>"
 msgstr ""
+"<html>焦点跟随鼠标：<head/>移动鼠标到窗口上将激活该窗口。例如，随机出现在鼠标"
+"下的窗口将不回获得焦点。<body>阻止焦点抢占<p>正常生效。类似 <span style=\" "
+"font-style:italic;\">点击聚焦</span> 只是不需要真的点击。"
 
 #: windows.cpp:181
 #, kde-format
@@ -1269,6 +1275,8 @@ msgid ""
 "under the mouse is the preferred candidate. Choose this, if you want a hover "
 "controlled focus.</p></body></html>"
 msgstr ""
+"类似于<em>焦点跟随鼠标</em>。如果需要由系统选择一个活动窗体(例如，由于当前窗"
+"口被关闭)鼠标下的窗口会是优先候选。如果你想使用鼠标悬停控制焦点，选择此项。"
 
 #: windows.cpp:184
 #, kde-format
@@ -1281,6 +1289,12 @@ msgid ""
 "work. You very likely want to use <span style=\" font-style:italic;\">Focus "
 "follows mouse (mouse precedence)</span> instead!</p></body></html>"
 msgstr ""
+"<html><head/><body><p><span style=\" font-style:italic;\">聚焦鼠标下方：</"
+"span>焦点始终在鼠标下方的窗口上。<br/><span style=\" font-weight:600;\">警"
+"告：</span><span style=\" font-style:italic;\">防止窃取焦点</span>和<span "
+"style=\" font-style:italic;\">Alt+Tab</span>与此激活策略冲突而无效。您可能想"
+"用<span style=\" font-style:italic;\">焦点跟随鼠标(鼠标优先)</span>代替！</"
+"p></body></html>"
 
 #: windows.cpp:187
 #, kde-format
@@ -1295,3 +1309,9 @@ msgid ""
 "\" font-style:italic;\">Focus follows mouse (mouse precedence)</span> "
 "instead!</p></body></html>"
 msgstr ""
+"<html><head/><body><p><span style=\" font-style:italic;\">严格聚焦鼠标下方："
+"</span>焦点始终在鼠标下方的窗口上，就像旧式 X11 无管理模式一样。<br/><span "
+"style=\" font-weight:600;\">警告：</span><span style=\" font-style:italic;\">"
+"防止窃取焦点</span>和<span style=\" font-style:italic;\">Alt+Tab</span>与此激"
+"活策略冲突而无效。您可能想用<span style=\" font-style:italic;\">焦点跟随鼠标"
+"(鼠标优先)</span>代替！</p></body></html>"

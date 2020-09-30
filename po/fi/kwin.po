@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-29 09:25+0200\n"
-"PO-Revision-Date: 2020-01-17 19:09+0200\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"PO-Revision-Date: 2020-08-21 15:55+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:22:29+0000\n"
-"X-Generator: Lokalize 18.12.3\n"
+"X-Generator: Lokalize 20.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -41,7 +41,7 @@ msgstr ""
 "ilpo@iki.fi, mikko.piippo@helsinki.fi, lliehu@kolumbus.fi, "
 "translator@legisign.org"
 
-#: abstract_client.cpp:2542
+#: abstract_client.cpp:2544
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -56,18 +56,18 @@ msgstr "tuntematon"
 #, kde-format
 msgctxt "Night Color was disabled"
 msgid "Night Color Off"
-msgstr ""
+msgstr "Yöväri ei käytössä"
 
 #: colorcorrection/manager.cpp:70
 #, kde-format
 msgctxt "Night Color was enabled"
 msgid "Night Color On"
-msgstr ""
+msgstr "Yöväri käytössä"
 
 #: colorcorrection/manager.cpp:240 colorcorrection/manager.cpp:241
 #, kde-format
 msgid "Toggle Night Color"
-msgstr ""
+msgstr "Käännä yöväriasetus"
 
 #: composite.cpp:948
 #, kde-format
@@ -654,12 +654,13 @@ msgstr "Painetut painikkeet"
 #: debug_console.cpp:535
 #, kde-format
 msgid "Tablet Pad Button"
-msgstr ""
+msgstr "Tabletin painike"
 
+# *** TARKISTA: Onko strip-sanalle mitään olemassa olevaa käännöstä tässä yhteydessä?
 #: debug_console.cpp:545
 #, kde-format
 msgid "Tablet Pad Strip"
-msgstr ""
+msgstr "Tabletin nauha"
 
 #: debug_console.cpp:546 debug_console.cpp:558
 #, kde-format
@@ -672,11 +673,9 @@ msgid "isFinger"
 msgstr "onSormi"
 
 #: debug_console.cpp:557
-#, fuzzy, kde-format
-#| msgctxt "Name of a hardware switch"
-#| msgid "Tablet mode"
+#, kde-format
 msgid "Tablet Pad Ring"
-msgstr "Tablettitila"
+msgstr "Tabletin rengas"
 
 #: debug_console.cpp:745
 #, kde-format

@@ -6,9 +6,9 @@
 # Josep Ma. Ferrer <txemaq@gmail.com>, 2013, 2017.
 msgid ""
 msgstr ""
-"Project-Id-Version: kwin_scripting\n"
+"Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 03:25+0200\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2017-04-08 10:59+0100\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"

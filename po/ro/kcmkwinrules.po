@@ -1,35 +1,34 @@
 # Traducerea kcmkwinrules.po în Română
 # translation of kcmkwinrules.po to Romanian
 # Claudiu Costin <claudiuc@kde.org>, 2004, 2005.
-# Sergiu Bivol <sergiu@ase.md>, 2008, 2009, 2010, 2012, 2013.
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013, 2020.
 # Cristian Oneț <onet.cristian@gmail.com>, 2011, 2012.
 # Cristian Buzduga <cristianbzdg@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-20 03:31+0200\n"
-"PO-Revision-Date: 2013-01-11 11:13+0200\n"
-"Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
-"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"PO-Revision-Date: 2020-09-25 00:22+0100\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"\n"
+"X-Generator: Lokalize 19.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Claudiu Costin"
+msgstr "Claudiu Costin,Sergiu Bivol"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "claudiuc@kde.org"
+msgstr ",sergiu@cip.md"
 
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #. i18n: ectx: property (text), item, widget (QComboBox, type)
@@ -76,7 +75,7 @@ msgstr "Fereastră de dialog"
 #: detectwidget.cpp:81
 #, kde-format
 msgid "Override Type"
-msgstr "Tip corecție"
+msgstr "Supradefinește tipul"
 
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #. i18n: ectx: property (text), item, widget (QComboBox, type)
@@ -179,16 +178,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: editshortcut.ui:18
-#, fuzzy, kde-format
-#| msgid ""
-#| "A single shortcut can be easily assigned or cleared using the two "
-#| "buttons. Only shortcuts with modifiers can be used.<p>\n"
-#| "It is possible to have several possible shortcuts, and the first "
-#| "available shortcut will be used. The shortcuts are specified using space-"
-#| "separated shortcut sets. One set is specified as <i>base</i>+(<i>list</"
-#| "i>), where base are modifiers and list is a list of keys.<br>\n"
-#| "For example \"<b>Shift+Alt+(123) Shift+Ctrl+(ABC)</b>\" will first try "
-#| "<b>Shift+Alt+1</b>, then others with <b>Shift+Ctrl+C</b> as the last one."
+#, kde-format
 msgid ""
 "A single shortcut can be easily assigned or cleared using the two buttons. "
 "Only shortcuts with modifiers can be used.<p>\n"
@@ -199,14 +189,14 @@ msgid ""
 "For example \"<b>Shift+Alt+(123) Shift+Ctrl+(ABC)</b>\" will first try "
 "<b>Shift+Alt+1</b>, then others with <b>Shift+Ctrl+C</b> as the last one."
 msgstr ""
-"Un singur accelerator poate fi atribuit sau eliminat ușor utilizând cele "
-"două butoane. Pot fi utilizate numai acceleratori cu taste modificator.<p>\n"
-"Este posibil să aveți mai mulți acceleratori, dar primul din ele va fi "
-"utilizat. Ei sunt specificați utilizând seturi separate prin spații. Un set "
-"este specificat astfel: <i>bază</i>+(<i>listă</i>), unde bază reprezintă "
-"modificatori și listă o listă de taste.<br>\n"
-"Exemplu: \"<b>Shift+Alt+(123) Shift+Ctrl+(ABC)</b>\" va încerca mai întâi "
-"<b>Shift+Alt+1</b> iar apoi până la <b>Shift+Ctrl+C</b>."
+"O singură scurtătură poate fi atribuită sau eliminată ușor utilizând cele "
+"două butoane. Pot fi utilizate numai scurtături cu modificatori.<p>\n"
+"Este posibil să aveți mai multe scurtături, dar prima din ele va fi "
+"utilizată. Scurtăturile sunt specificate utilizând seturi separate prin „- "
+"”. Un set este specificat astfel: <i>bază</i>+(<i>listă</i>), unde bază sunt "
+"modificatori și lista e o listă de taste.<br>\n"
+"Exemplu: „<b>Shift+Alt+(123) Shift+Ctrl+(ABC)</b>” va încerca mai întâi "
+"<b>Shift+Alt+1</b> iar apoi altele până la <b>Shift+Ctrl+C</b>."
 
 #. i18n: ectx: property (text), widget (QPushButton, pushButton1)
 #: editshortcut.ui:62
@@ -292,10 +282,9 @@ msgid "KWin helper utility"
 msgstr "Utilitar KWin"
 
 #: main.cpp:249
-#, fuzzy, kde-format
-#| msgid "WId of the window for special window settings."
+#, kde-format
 msgid "KWin id of the window for special window settings."
-msgstr "Identificatorul ferestrei, pentru configurări speciale."
+msgstr "Identificatorul KWin al ferestrei, pentru configurări speciale."
 
 #: main.cpp:250
 #, kde-format
@@ -308,20 +297,19 @@ msgid "This helper utility is not supposed to be called directly."
 msgstr "Acest utilitar ajutător nu este proiectat pentru a fi apelat direct."
 
 #: ruleslist.cpp:152
-#, fuzzy, kde-format
-#| msgid "Export Rule"
+#, kde-format
 msgid "Export Rules"
-msgstr "Regulă de export"
+msgstr "Export reguli"
 
 #: ruleslist.cpp:153 ruleslist.cpp:165
 #, kde-format
 msgid "KWin Rules (*.kwinrule)"
-msgstr ""
+msgstr "Reguli KWin (*.kwinrule)"
 
 #: ruleslist.cpp:164
 #, kde-format
 msgid "Import Rules"
-msgstr "Reguli de import"
+msgstr "Import reguli"
 
 #. i18n: ectx: property (text), widget (QPushButton, new_button)
 #: ruleslist.ui:32
@@ -466,7 +454,7 @@ msgstr ""
 #: ruleswidget.cpp:831
 #, kde-format
 msgid "Edit Window-Specific Settings"
-msgstr "Editează configurări specifice ferestrei"
+msgstr "Modifică configurări specifice ferestrei"
 
 #: ruleswidget.cpp:863
 #, kde-format
@@ -489,7 +477,7 @@ msgstr "Consultați documentația pentru mai multe detalii."
 #: ruleswidget.cpp:906
 #, kde-format
 msgid "Edit Shortcut"
-msgstr "Editează scurtătură"
+msgstr "Modifică scurtătura"
 
 #. i18n: ectx: attribute (title), widget (QWidget, TabPage1)
 #: ruleswidgetbase.ui:21
@@ -499,10 +487,9 @@ msgstr "&Potrivire fereastră"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: ruleswidgetbase.ui:27
-#, fuzzy, kde-format
-#| msgid "De&scription:"
+#, kde-format
 msgid "&Description:"
-msgstr "De&scriere:"
+msgstr "&Descriere:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: ruleswidgetbase.ui:46
@@ -558,7 +545,7 @@ msgstr "Expresie regulată"
 #: ruleswidgetbase.ui:274
 #, kde-format
 msgid "Edit"
-msgstr "Editare"
+msgstr "Modifică"
 
 #. i18n: ectx: property (text), widget (QCheckBox, whole_wmclass)
 #: ruleswidgetbase.ui:102
@@ -568,28 +555,27 @@ msgstr "Se potrivește cu &toată clasa ferestrei"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: ruleswidgetbase.ui:109
-#, fuzzy, kde-format
-#| msgid "Window &role:"
+#, kde-format
 msgid "Window ro&le:"
-msgstr "&Rol fereastră:"
+msgstr "Ro&l fereastră:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
 #: ruleswidgetbase.ui:162
 #, kde-format
 msgid "Window &types:"
-msgstr "T&ipuri fereastră:"
+msgstr "&Tipuri fereastră:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
 #: ruleswidgetbase.ui:178
 #, kde-format
 msgid "Window t&itle:"
-msgstr "&Titlu fereastră:"
+msgstr "T&itlu fereastră:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel7)
 #: ruleswidgetbase.ui:231
 #, kde-format
 msgid "&Machine (hostname):"
-msgstr "&Mașină (nume calculator):"
+msgstr "&Mașină (nume gazdă):"
 
 #. i18n: ectx: property (text), widget (QPushButton, detect)
 #: ruleswidgetbase.ui:318
@@ -613,7 +599,7 @@ msgstr "Fereastră neadministrată"
 #: ruleswidgetbase.ui:489
 #, kde-format
 msgid "&Size && Position"
-msgstr "&Mărime && Poziție"
+msgstr "Dimen&siune și poziție"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_position)
 #: ruleswidgetbase.ui:495
@@ -671,7 +657,7 @@ msgstr "&Poziție"
 #: ruleswidgetbase.ui:2437 ruleswidgetbase.ui:2521 ruleswidgetbase.ui:2582
 #, kde-format
 msgid "Do Not Affect"
-msgstr "Nu afectează"
+msgstr "Nu afecta"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, rule_position)
 #. i18n: ectx: property (text), item, widget (QComboBox, rule_size)
@@ -887,7 +873,7 @@ msgstr "0123456789-+,xX:"
 #: ruleswidgetbase.ui:552
 #, kde-format
 msgid "&Size"
-msgstr "&Mărime"
+msgstr "Dimen&siune"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, size)
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, minsize)
@@ -955,21 +941,19 @@ msgstr "Fără plasare"
 #: ruleswidgetbase.ui:1066
 #, kde-format
 msgid "Minimal Overlapping"
-msgstr ""
+msgstr "Suprapunere minimă"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1071
-#, fuzzy, kde-format
-#| msgid "Maximizing"
+#, kde-format
 msgid "Maximized"
-msgstr "Maximizând"
+msgstr "Maximizat"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1076
-#, fuzzy, kde-format
-#| msgid "Cascade"
+#, kde-format
 msgid "Cascaded"
-msgstr "Cascadă"
+msgstr "În cascadă"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1081
@@ -985,10 +969,9 @@ msgstr "Aleator"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1091
-#, fuzzy, kde-format
-#| msgid "Top-Left Corner"
+#, kde-format
 msgid "In Top-Left Corner"
-msgstr "Colțul stânga sus"
+msgstr "În colțul din stânga sus"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1096
@@ -1006,7 +989,7 @@ msgstr "În fereastra principală"
 #: ruleswidgetbase.ui:1112
 #, kde-format
 msgid "Initial p&lacement"
-msgstr "&Plasare inițială"
+msgstr "P&lasare inițială"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_ignoregeometry)
 #: ruleswidgetbase.ui:1122
@@ -1033,13 +1016,13 @@ msgstr "Ignoră &geometria cerută"
 #: ruleswidgetbase.ui:1205
 #, kde-format
 msgid "M&inimum size"
-msgstr "Mărimea m&inimă"
+msgstr "Dimensiune m&inimă"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_maxsize)
 #: ruleswidgetbase.ui:1225
 #, kde-format
 msgid "M&aximum size"
-msgstr "Mărimea m&aximă"
+msgstr "Dimensiune m&aximă"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_strictgeometry)
 #: ruleswidgetbase.ui:1271
@@ -1073,7 +1056,7 @@ msgstr "Ecran"
 #: ruleswidgetbase.ui:1377
 #, kde-format
 msgid "&Arrangement && Access"
-msgstr "&Aranjament && acces"
+msgstr "&Aranjament și acces"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_skippager)
 #: ruleswidgetbase.ui:1420
@@ -1085,7 +1068,7 @@ msgstr "Fereastra (nu) va apărea în administratorul birourilor virtuale"
 #: ruleswidgetbase.ui:1423
 #, kde-format
 msgid "Skip pa&ger"
-msgstr "Nu folosește &paginatorul"
+msgstr "Nu folosi pa&ginatorul"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_skiptaskbar)
 #: ruleswidgetbase.ui:1481
@@ -1097,7 +1080,7 @@ msgstr "Fereastra (nu) va apărea în bara de procese."
 #: ruleswidgetbase.ui:1484
 #, kde-format
 msgid "Skip &taskbar"
-msgstr "Nu folosește &bara de procese"
+msgstr "Nu folosi &bara de sarcini"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_skipswitcher)
 #: ruleswidgetbase.ui:1498
@@ -1115,19 +1098,19 @@ msgstr "Nu folosește &comutatorul"
 #: ruleswidgetbase.ui:1511
 #, kde-format
 msgid "Edit..."
-msgstr "Editează..."
+msgstr "Modifică..."
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_shortcut)
 #: ruleswidgetbase.ui:1627
 #, kde-format
 msgid "Shortcut"
-msgstr "Accelerator"
+msgstr "Scurtătură"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_above)
 #: ruleswidgetbase.ui:1725
 #, kde-format
 msgid "Keep &above"
-msgstr "Menține de&asupra"
+msgstr "Ține de&asupra"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_autogroupfg)
 #: ruleswidgetbase.ui:1745
@@ -1139,7 +1122,7 @@ msgstr "Auto-g&rupare în prim plan"
 #: ruleswidgetbase.ui:1788
 #, kde-format
 msgid "Keep &below"
-msgstr "Menține d&edesubt"
+msgstr "Ține dedesu&bt"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_autogroupid)
 #: ruleswidgetbase.ui:1843
@@ -1157,7 +1140,7 @@ msgstr "Auto-grupare cu cele &identice"
 #: ruleswidgetbase.ui:1902
 #, kde-format
 msgid "Appearance && &Fixes"
-msgstr "Aspect && &Fixări"
+msgstr "Aspect și r&emedieri"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_noborder)
 #: ruleswidgetbase.ui:1908
@@ -1169,7 +1152,7 @@ msgstr "&Fără bara de titlu și cadru"
 #: ruleswidgetbase.ui:1959
 #, kde-format
 msgid "Titlebar color &scheme"
-msgstr ""
+msgstr "&Schemă de culori pentru bara de titlu"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_opacityactive)
 #: ruleswidgetbase.ui:2024
@@ -1259,13 +1242,17 @@ msgid ""
 "Otherwise it's interleaved with the stealing prevention\n"
 "assigned to the window that wants the focus."
 msgstr ""
+"Aceasta controlează protecția focalizării pentru  fereastra activă acum.\n"
+"Niciuna – va ceda focalizarea mereu,\n"
+"Extremă – o va păstra.\n"
+"Altfel, se întrețese cu prevenirea furtului atribuită\n"
+"ferestrei ce vrea focalizarea."
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_fpplevel)
 #: ruleswidgetbase.ui:2232
-#, fuzzy, kde-format
-#| msgid "&Focus stealing prevention"
+#, kde-format
 msgid "Focus protection"
-msgstr "Prevenire captură foc&us"
+msgstr "Protecție focalizare"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_acceptfocus)
 #: ruleswidgetbase.ui:2295
@@ -1330,28 +1317,26 @@ msgstr "&Tip fereastră"
 #: ruleswidgetbase.ui:2507
 #, kde-format
 msgid "Desktop file name"
-msgstr ""
+msgstr "Denumire fișier de birou"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, desktopfile)
 #: ruleswidgetbase.ui:2557
 #, kde-format
 msgid "org.kde.kwin"
-msgstr ""
+msgstr "org.kde.kwin"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_blockcompositing)
 #: ruleswidgetbase.ui:2571
 #, kde-format
 msgid "Block compositing"
-msgstr "Compoziționare în bloc"
+msgstr "Blochează compoziționarea"
 
 #: yesnobox.h:35
 #, kde-format
 msgid "Yes"
-msgstr ""
+msgstr "Da"
 
 #: yesnobox.h:36
-#, fuzzy, kde-format
-#| msgctxt "no focus stealing prevention"
-#| msgid "None"
+#, kde-format
 msgid "No"
-msgstr "Niciuna"
+msgstr "Nu"

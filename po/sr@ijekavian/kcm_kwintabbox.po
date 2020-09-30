@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwintabbox\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-11-01 03:57+0100\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2016-03-20 15:24+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -19,31 +19,31 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Associated-UI-Catalogs: kwin\n"
 
-#: layoutpreview.cpp:165
+#: layoutpreview.cpp:159
 #, kde-format
 msgctxt "An example Desktop Name"
 msgid "Desktop 1"
 msgstr "површ 1"
 
 # >> @title:tab
-#: main.cpp:76
+#: main.cpp:74
 #, kde-format
 msgid "Main"
 msgstr "Главно"
 
 # >> @title:tab
-#: main.cpp:77
+#: main.cpp:75
 #, kde-format
 msgid "Alternative"
 msgstr "Алтернативно"
 
-#: main.cpp:79
+#: main.cpp:77
 #, fuzzy, kde-format
 #| msgid "Get New Window Switcher Layout"
 msgid "Get New Task Switchers..."
 msgstr "Добави нови распоред мењача прозора"
 
-#: main.cpp:89
+#: main.cpp:87
 #, kde-format
 msgid ""
 "Focus policy settings limit the functionality of navigating through windows."
@@ -51,7 +51,7 @@ msgstr ""
 "Поставке смјернице фокусирања ограничавају функционалност кретања између "
 "прозора."
 
-#: main.cpp:107
+#: main.cpp:105
 #, kde-format
 msgid "KWin"
 msgstr ""

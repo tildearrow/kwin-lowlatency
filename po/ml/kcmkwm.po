@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-20 03:31+0200\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2019-12-12 22:45+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
@@ -218,8 +218,8 @@ msgid ""
 "In this row you can customize left click behavior when clicking into the "
 "titlebar or the frame."
 msgstr ""
-"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ ഇടത് ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന ഇടത് ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ "
-"നിങ്ങള്‍ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
+"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ ഇടത് ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന ഇടത് ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ നിങ്ങള്‍"
+"ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
@@ -360,8 +360,8 @@ msgid ""
 "In this row you can customize middle click behavior when clicking into the "
 "titlebar or the frame."
 msgstr ""
-"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ മധ്യ ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന മധ്യ ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ "
-"നിങ്ങള്‍ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
+"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ മധ്യ ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന മധ്യ ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ നിങ്ങള്‍"
+"ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #. i18n: ectx: property (text), widget (QLabel, label_9)
@@ -377,8 +377,8 @@ msgid ""
 "In this row you can customize right click behavior when clicking into the "
 "titlebar or the frame."
 msgstr ""
-"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ വലത് ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന വലത് ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ "
-"നിങ്ങള്‍ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
+"തലപ്പട്ടയിലോ ഫ്രെയിമിലോ വലത് ക്ലിക്ക് ചെയ്യുമ്പോളുണ്ടാവുന്ന വലത് ക്ലിക്ക് സ്വഭാവം ഈ വരിയില്‍ നിങ്ങള്‍"
+"ക്ക് ഇഷ്ടമുള്ളരീതിയിലാക്കാം."
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: actions.ui:458

@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-03-15 03:39+0100\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2015-10-14 18:13+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -81,39 +81,40 @@ msgstr "Drži ispod"
 msgid "Keep above"
 msgstr "Drži iznad"
 
-#: kcm.cpp:92
+#: kcm.cpp:62
 #, fuzzy, kde-format
 #| msgid "Get New Decorations..."
 msgid "Window Decorations"
 msgstr "Dobavi nove dekoracije..."
 
-#: kcm.cpp:96
+#: kcm.cpp:66
 #, kde-format
 msgid "Valerio Pilo"
 msgstr ""
 
-#: kcm.cpp:97
+#: kcm.cpp:67
 #, kde-format
 msgid "Author"
 msgstr ""
 
-#: kcm.cpp:135
+#: kcm.cpp:122
 #, fuzzy, kde-format
 #| msgid "Get New Decorations..."
 msgid "Download New Window Decorations"
 msgstr "Dobavi nove dekoracije..."
 
-#: package/contents/ui/Buttons.qml:83
+#: package/contents/ui/Buttons.qml:87
 #, kde-format
 msgid "Titlebar"
 msgstr "Naslovna traka"
 
-#: package/contents/ui/Buttons.qml:225
-#, kde-format
-msgid "Drop here to remove button"
+#: package/contents/ui/Buttons.qml:228
+#, fuzzy, kde-format
+#| msgid "Drop here to remove button"
+msgid "Drop button here to remove it"
 msgstr "Uklonite dugme ispuštanjem ovde."
 
-#: package/contents/ui/Buttons.qml:251
+#: package/contents/ui/Buttons.qml:246
 #, kde-format
 msgid "Drag buttons between here and the titlebar"
 msgstr "Prevlačite dugmad između ovog mesta i naslovne trake."
@@ -123,42 +124,41 @@ msgstr "Prevlačite dugmad između ovog mesta i naslovne trake."
 msgid "This module lets you configure the window decorations."
 msgstr ""
 
-#: package/contents/ui/main.qml:54
+#: package/contents/ui/main.qml:61
 #, fuzzy, kde-format
 #| msgid "Theme"
 msgctxt "tab label"
 msgid "Theme"
 msgstr "Tema"
 
-#: package/contents/ui/main.qml:58
+#: package/contents/ui/main.qml:65
 #, fuzzy, kde-format
 #| msgid "Titlebar"
 msgctxt "tab label"
 msgid "Titlebar Buttons"
 msgstr "Naslovna traka"
 
-#: package/contents/ui/main.qml:79
-#, fuzzy, kde-format
-#| msgid "Border si&ze:"
-msgctxt "combobox label"
-msgid "Window border size:"
-msgstr "Veličina &ivica:"
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgctxt "checkbox label"
+msgid "Use theme's default window border size"
+msgstr ""
 
-#: package/contents/ui/main.qml:94
+#: package/contents/ui/main.qml:121
 #, fuzzy, kde-format
 #| msgid "Get New Decorations..."
 msgctxt "button text"
 msgid "Get New Window Decorations..."
 msgstr "Dobavi nove dekoracije..."
 
-#: package/contents/ui/main.qml:110
+#: package/contents/ui/main.qml:138
 #, fuzzy, kde-format
 #| msgid "Close windows by double clicking &the menu button"
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
 msgstr "Zatvori prozor dvoklikom na &dugme menija"
 
-#: package/contents/ui/main.qml:122
+#: package/contents/ui/main.qml:151
 #, fuzzy, kde-format
 #| msgid ""
 #| "Close by double clicking:\n"
@@ -171,13 +171,13 @@ msgstr ""
 "Zatvorite dvoklikom.\n"
 "Da otvorite meni, držite dugme pritisnuto dok se ne pojavi."
 
-#: package/contents/ui/main.qml:129
+#: package/contents/ui/main.qml:158
 #, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
 msgstr ""
 
-#: package/contents/ui/Themes.qml:97
+#: package/contents/ui/Themes.qml:100
 #, kde-format
 msgid "Edit %1 Theme"
 msgstr ""

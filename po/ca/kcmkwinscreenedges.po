@@ -7,9 +7,9 @@
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2015, 2016, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: kcmkwinscreenedges\n"
+"Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-11-11 03:36+0100\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2019-08-05 10:32+0100\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"

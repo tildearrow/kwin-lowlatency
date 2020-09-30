@@ -1,4 +1,4 @@
-# Translation of kcmkwinrules to Norwegian Bokmål
+# Translation of kcm_kwinrules to Norwegian Bokmål
 #
 # Torstein Dybdahl <torsted@runbox.no>, 2004.
 # Knut Yrvin <knut.yrvin@gmail.com>, 2005.
@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-20 03:31+0200\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2014-01-07 11:23+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"

@@ -5,12 +5,13 @@
 # Luciano Montanaro <mikelima@cirulla.net>, 2007, 2008, 2009, 2010, 2011, 2012.
 # Luigi Toscano <luigi.toscano@tiscali.it>, 2013.
 # Vincenzo Reale <smart2128@baslug.org>, 2015, 2018, 2019, 2020.
+# Paolo Zamponi <zapaolo@email.it>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-20 03:31+0200\n"
-"PO-Revision-Date: 2020-02-06 21:00+0100\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"PO-Revision-Date: 2020-06-04 16:58+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 19.12.1\n"
+"X-Generator: Lokalize 20.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -34,7 +35,7 @@ msgstr "smart2128@baslug.org,,"
 #: actions.ui:17
 #, kde-format
 msgid "Inactive Inner Window Actions"
-msgstr "Azioni interno finestra inattiva"
+msgstr "Azioni relative all'interno della finestra inattiva"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_1)
@@ -50,9 +51,9 @@ msgid ""
 "In this row you can customize left click behavior when clicking into an "
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
-"In questa riga puoi configurare il comportamento del clic col pulsante "
-"sinistro sulla parte interna di una finestra (non barra del titolo o "
-"cornice)."
+"In questa riga puoi configurare il comportamento del clic con il pulsante "
+"sinistro sull'interno (cioè non sulla barra del titolo o sulla cornice) di "
+"una finestra."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
@@ -108,9 +109,9 @@ msgid ""
 "In this row you can customize middle click behavior when clicking into an "
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
-"In questa riga puoi configurare il comportamento del clic col pulsante "
-"centrale sulla parte interna di una finestra (non barra del titolo o "
-"cornice)."
+"In questa riga puoi configurare il comportamento del clic con il pulsante "
+"centrale sull'interno (cioè non sulla barra del titolo o sulla cornice) di "
+"una finestra."
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -126,9 +127,9 @@ msgid ""
 "In this row you can customize right click behavior when clicking into an "
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
-"In questa riga puoi configurare il comportamento del clic col pulsante "
-"destro sulla parte interna di una finestra inattiva (non barra del titolo o "
-"cornice)."
+"In questa riga puoi configurare il comportamento del clic con il pulsante "
+"destro sull'interno (cioè non sulla barra del titolo o sulla cornice) di una "
+"finestra."
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -144,8 +145,9 @@ msgid ""
 "In this row you can customize behavior when scrolling into an inactive inner "
 "window ('inner' means: not titlebar, not frame)."
 msgstr ""
-"In questa riga puoi configurare il comportamento dello scorrimento sulla "
-"parte interna di una finestra inattiva (non barra del titolo o cornice)."
+"In questa riga puoi configurare il comportamento dello scorrimento "
+"sull'interno (cioè non sulla barra del titolo o sulla cornice) di una "
+"finestra."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coWinWheel)
 #: actions.ui:163
@@ -169,7 +171,7 @@ msgstr "Attiva, alza e scorri"
 #: actions.ui:184
 #, kde-format
 msgid "Inner Window, Titlebar and Frame Actions"
-msgstr "Azioni interno finestra, barra del titolo e cornice"
+msgstr "Azioni interno della finestra, barra del titolo e cornice"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: actions.ui:195
@@ -251,7 +253,7 @@ msgstr "Attiva, alza e sposta"
 #: mouse.ui:361 mouse.ui:423 mouse.ui:476 mouse.ui:538
 #, kde-format
 msgid "Toggle raise and lower"
-msgstr "Commuta alza e abbassa"
+msgstr "Alza/abbassa"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
@@ -459,7 +461,7 @@ msgstr ""
 #: advanced.ui:35
 #, kde-format
 msgid "On titlebar hover after:"
-msgstr "Al passaggio sulla barra del titolo dopo:"
+msgstr "Al passaggio del mouse sulla barra del titolo dopo:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, shadeHover)
 #: advanced.ui:42
@@ -539,11 +541,10 @@ msgstr ""
 "finestra al centro</li><li style=\" margin-top:0px; margin-bottom:0px; "
 "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
 "\"><span style=\" font-style:italic;\">Angolo-zero</span> posizionerà la "
-"finestra nell'angolo in alto a sinistra the top-left corner</li><li style=\" "
-"margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-"
-"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Sotto "
-"il mouse</span> posizionerà la finestra sotto il puntatore</li></ul></body></"
-"html>"
+"finestra nell'angolo in alto a sinistra</li><li style=\" margin-top:0px; "
+"margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-style:italic;\">Sotto il mouse</span> "
+"posizionerà la finestra sotto il puntatore</li></ul></body></html>"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:80
@@ -573,7 +574,7 @@ msgstr "Casuale"
 #: advanced.ui:100
 #, kde-format
 msgid "Centered"
-msgstr "Centrata"
+msgstr "Centrato"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:105
@@ -602,11 +603,11 @@ msgid ""
 "application becomes active. Note that applications have to mark the windows "
 "with the proper window type for this feature to work."
 msgstr ""
-"Quando questa funzione viene attivata, le finestre accessorie (finestre "
-"degli strumenti, menu staccati, ...) delle applicazioni non attive saranno "
-"nascosti e verranno mostrati nuovamente solo quando l'applicazione torna ad "
-"essere attiva. Nota bene che l'applicazione deve segnare le finestre con il "
-"tipo corretto affinché questa funzione sia efficace."
+"Quando questa funzione è attivata, le finestre accessorie (finestre degli "
+"strumenti, menu staccati,...) delle applicazioni non attive saranno nascoste "
+"e saranno mostrate nuovamente solo quando l'applicazione torna a essere "
+"attiva. Nota bene che l'applicazione deve marcare le finestre con il tipo "
+"corretto affinché questa funzione sia efficace."
 
 #. i18n: ectx: property (text), widget (QCheckBox, hideUtilityWindowsForInactive)
 #: advanced.ui:131
@@ -679,7 +680,7 @@ msgid ""
 "automatically receive focus."
 msgstr ""
 "Questo è il tempo dopo il quale la finestra che ha sopra il mouse riceverà "
-"il focus."
+"il fuoco."
 
 #. i18n: ectx: property (text), widget (QLabel, focusStealingLabel)
 #: focus.ui:101
@@ -731,25 +732,25 @@ msgstr ""
 "margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\"><li style=\" "
 "margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
 "block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
-"\">Nessuno:</span> la prevenzione è disattivata e le nuove finestre "
+"\">Nessuna:</span> la prevenzione è disattivata e le nuove finestre "
 "diventano sempre attive.</li><li style=\" margin-top:0px; margin-bottom:0px; "
 "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"\"><span style=\" font-style:italic;\">Basso:</span> la prevenzione è "
+"\"><span style=\" font-style:italic;\">Bassa:</span> la prevenzione è "
 "abilitata; quando delle finestre non hanno il supporto per il meccanismo "
 "sottostante e KWin non può decidere in modo affidabile se attivare o meno la "
 "finestra, la finestra sarà attivata. Questa impostazione può avere sia "
 "risultati migliori che peggiori rispetto al livello medio, in base "
 "all'applicazione.</li><li style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-style:italic;\">Medio:</span> la prevenzione è abilitata.</"
+"style=\" font-style:italic;\">Media:</span> la prevenzione è abilitata.</"
 "li><li style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
-"italic;\">Alto:</span> le nuove finestre vengono attivate solo se non ci "
+"italic;\">Alta:</span> le nuove finestre vengono attivate solo se non ci "
 "sono altre finestre attive o se appartengono alla applicazione attiva. "
 "Questa impostazione probabilmente non è usabile quando non si usa il "
 "criterio di fuoco del mouse.</li><li style=\" margin-top:0px; margin-"
 "bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px;\"><span style=\" font-style:italic;\">Estremo:</span> tutte le "
+"indent:0px;\"><span style=\" font-style:italic;\">Estrema:</span> tutte le "
 "finestre devono essere esplicitamente attivate dall'utente.</li></ul><p>Le "
 "finestre che non possono sottrarre il fuoco sono marcate come «richiedenti "
 "attenzione», il che significa che nella barra delle applicazioni saranno "
@@ -764,35 +765,35 @@ msgstr ""
 #: focus.ui:118 moving.ui:53 moving.ui:75 moving.ui:97
 #, kde-format
 msgid "None"
-msgstr "Nessuno"
+msgstr "Nessuna"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
 #: focus.ui:123
 #, kde-format
 msgid "Low"
-msgstr "Basso"
+msgstr "Bassa"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
 #: focus.ui:128
 #, kde-format
 msgid "Medium"
-msgstr "Medio"
+msgstr "Media"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
 #: focus.ui:133
 #, kde-format
 msgid "High"
-msgstr "Alto"
+msgstr "Alta"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
 #: focus.ui:138
 #, kde-format
 msgid "Extreme"
-msgstr "Estremo"
+msgstr "Estrema"
 
 #. i18n: ectx: property (text), widget (QLabel, raisingWindowsLabel)
 #: focus.ui:146
@@ -825,14 +826,14 @@ msgid ""
 "When this option is enabled, a window in the background will automatically "
 "come to the front when the mouse pointer has been over it for some time."
 msgstr ""
-"Quando questa opzione è abilitata una finestra sullo sfondo sarà portata in "
+"Quando questa opzione è abilitata, una finestra sullo sfondo sarà portata in "
 "primo piano se il puntatore del mouse vi si sofferma per un certo tempo."
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoRaiseOn)
 #: focus.ui:168
 #, kde-format
 msgid "&Raise on hover, delayed by:"
-msgstr "Solleva allo passaggio, &ritardato di:"
+msgstr "Solleva al passaggio del mouse, con un &ritardo di:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, autoRaise)
 #: focus.ui:175
@@ -864,7 +865,7 @@ msgstr ""
 "esempio appaiono le nuove finestre) è lo schermo contenente il puntatore del "
 "mouse. Quando è disabilitata, lo schermo Xinerama attivo è quello contenente "
 "la finestra attiva. Questa opzione è normalmente inattiva quando è adottata "
-"la regola Clic per il focus e attiva per le altre politiche del focus."
+"la regola Clic per il fuoco e attiva per le altre politiche del fuoco."
 
 #. i18n: ectx: property (text), widget (QCheckBox, activeMouseScreen)
 #: focus.ui:206
@@ -879,24 +880,24 @@ msgid ""
 "When this option is enabled, focus operations are limited only to the active "
 "Xinerama screen"
 msgstr ""
-"Quando questa opzione è abilitata, le operazioni di focus sono limitate allo "
+"Quando questa opzione è abilitata, le operazioni di fuoco sono limitate allo "
 "schermo Xinerama attivo"
 
 #. i18n: ectx: property (text), widget (QCheckBox, separateScreenFocus)
 #: focus.ui:216
 #, kde-format
 msgid "&Separate screen focus"
-msgstr "Focus degli schermi &separati"
+msgstr "Fuoco degli schermi &separati"
 
 #: main.cpp:78
 #, kde-format
 msgid "&Focus"
-msgstr "&Focus"
+msgstr "&Fuoco"
 
 #: main.cpp:83
 #, kde-format
 msgid "Titlebar A&ctions"
-msgstr "Azioni della &barra del titolo"
+msgstr "Azioni &barra del titolo"
 
 #: main.cpp:88
 #, kde-format
@@ -980,20 +981,21 @@ msgid ""
 msgstr ""
 "<h1>Comportamento delle finestre</h1><p>Qui puoi modificare il modo in cui "
 "le finestre si comportano quando sono spostate, ridimensionate o ricevono un "
-"clic. Puoi anche impostare le regole sul piazzamento e sul focus delle nuove "
+"clic. Puoi anche impostare le regole sul piazzamento e sul fuoco delle nuove "
 "finestre.</p><p>Nota che cambiamenti in questo modulo si applicano solo se "
-"usi KWin come gestore delle finestre. Se utilizzi un window manager diverso "
-"consulta la sua documentazione su come cambiarne il comportamento.</p>"
+"usi KWin come gestore delle finestre. Se utilizzi un gestore delle finestre "
+"diverso consulta la sua documentazione su come cambiarne il comportamento.</"
+"p>"
 
 #: main.cpp:191
 #, kde-format
 msgid "&Titlebar Actions"
-msgstr "Azioni sulla barra del &titolo"
+msgstr "Azioni barra del &titolo"
 
 #: main.cpp:196
 #, kde-format
 msgid "Window Actio&ns"
-msgstr "A&zioni finestra"
+msgstr "Az&ioni finestra"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
@@ -1081,7 +1083,7 @@ msgstr ""
 #: mouse.ui:143
 #, kde-format
 msgid "Titlebar and Frame Actions"
-msgstr "Azioni sulla barra del titolo e sulla cornice"
+msgstr "Azioni per barra del titolo e cornice"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: mouse.ui:167
@@ -1346,7 +1348,7 @@ msgstr ""
 "italic;\">Il fuoco segue il mouse</span>. Se una finestra attiva dev'essere "
 "scelta dal sistema (ad es. perché quella attuale è stata chiusa) quella "
 "sotto il puntatore è la candidata preferita. Scegli questa opzione se vuoi "
-"che il fuoco sia controllato dallo sfioramento.</p></body></html>"
+"che il fuoco sia controllato dal passaggio del mouse.</p></body></html>"
 
 #: windows.cpp:184
 #, kde-format

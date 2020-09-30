@@ -1,11 +1,11 @@
-# Translation of kcmkwinrules to Northern Sami
+# Translation of kcm_kwinrules to Northern Sami
 #
 # Børre Gaup <boerre@skolelinux.no>, 2004, 2005, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-20 03:31+0200\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2006-01-10 20:20+0100\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"

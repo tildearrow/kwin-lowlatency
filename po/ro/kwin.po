@@ -2,27 +2,27 @@
 # translation of kwin to Romanian
 # Copyright (C) 2008 This_file_is_part_of_KDE
 # This file is distributed under the same license as the kwrite package.
-#
 # Laurenţiu Buzdugan <lbuz@rolix.org>, 2008, 2009".
-# Sergiu Bivol <sergiu@ase.md>, 2008.
-# Sergiu Bivol <sergiu@ase.md>, 2008, 2009.
-# Sergiu Bivol <sergiu@ase.md>, 2009, 2010, 2011, 2012, 2013.
+# Sergiu Bivol <sergiu@cip.md>, 2008.
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009.
+# Sergiu Bivol <sergiu@cip.md>, 2009, 2010, 2011, 2012, 2013, 2020.
 # Cristian Oneț <onet.cristian@gmail.com>, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-29 09:25+0200\n"
-"PO-Revision-Date: 2013-11-26 23:23+0200\n"
-"Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
-"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"PO-Revision-Date: 2020-09-24 22:20+0100\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 19.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -32,9 +32,9 @@ msgstr "Sergiu Bivol,Laurențiu Buzdugan"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sergiu@ase.md,lbuz@rolix.org"
+msgstr "sergiu@cip.md,lbuz@rolix.org"
 
-#: abstract_client.cpp:2542
+#: abstract_client.cpp:2544
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -43,24 +43,24 @@ msgstr ""
 #: abstract_wayland_output.cpp:296
 #, kde-format
 msgid "unknown"
-msgstr ""
+msgstr "necunoscut"
 
 #: colorcorrection/manager.cpp:69
 #, kde-format
 msgctxt "Night Color was disabled"
 msgid "Night Color Off"
-msgstr ""
+msgstr "Culoare nocturnă oprită"
 
 #: colorcorrection/manager.cpp:70
 #, kde-format
 msgctxt "Night Color was enabled"
 msgid "Night Color On"
-msgstr ""
+msgstr "Culoare nocturnă pornită"
 
 #: colorcorrection/manager.cpp:240 colorcorrection/manager.cpp:241
 #, kde-format
 msgid "Toggle Night Color"
-msgstr ""
+msgstr "Comută culoarea nocturnă"
 
 #: composite.cpp:948
 #, kde-format
@@ -74,213 +74,209 @@ msgstr ""
 #: debug_console.cpp:75
 #, kde-format
 msgid "Timestamp"
-msgstr ""
+msgstr "Amprentă temporală"
 
 #: debug_console.cpp:80
 #, kde-format
 msgid "Timestamp (µsec)"
-msgstr ""
+msgstr "Amprentă temporală (µsec)"
 
 #: debug_console.cpp:87
-#, fuzzy, kde-format
-#| msgid "Top-Left"
+#, kde-format
 msgctxt "A mouse button"
 msgid "Left"
-msgstr "Stânga-sus"
+msgstr "Stâng"
 
 #: debug_console.cpp:89
-#, fuzzy, kde-format
-#| msgid "Top-Right"
+#, kde-format
 msgctxt "A mouse button"
 msgid "Right"
-msgstr "Dreapta-sus"
+msgstr "Drept"
 
 #: debug_console.cpp:91
 #, kde-format
 msgctxt "A mouse button"
 msgid "Middle"
-msgstr ""
+msgstr "Mijloc"
 
 #: debug_console.cpp:93
 #, kde-format
 msgctxt "A mouse button"
 msgid "Back"
-msgstr ""
+msgstr "Înapoi"
 
 #: debug_console.cpp:95
 #, kde-format
 msgctxt "A mouse button"
 msgid "Forward"
-msgstr ""
+msgstr "Înainte"
 
 #: debug_console.cpp:97
 #, kde-format
 msgctxt "A mouse button"
 msgid "Task"
-msgstr ""
+msgstr "Sarcină"
 
 #: debug_console.cpp:99
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 4"
-msgstr ""
+msgstr "Buton extra 4"
 
 #: debug_console.cpp:101
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 5"
-msgstr ""
+msgstr "Buton extra 5"
 
 #: debug_console.cpp:103
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 6"
-msgstr ""
+msgstr "Buton extra 6"
 
 #: debug_console.cpp:105
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 7"
-msgstr ""
+msgstr "Buton extra 7"
 
 #: debug_console.cpp:107
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 8"
-msgstr ""
+msgstr "Buton extra 8"
 
 #: debug_console.cpp:109
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 9"
-msgstr ""
+msgstr "Buton extra 9"
 
 #: debug_console.cpp:111
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 10"
-msgstr ""
+msgstr "Buton extra 10"
 
 #: debug_console.cpp:113
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 11"
-msgstr ""
+msgstr "Buton extra 11"
 
 #: debug_console.cpp:115
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 12"
-msgstr ""
+msgstr "Buton extra 12"
 
 #: debug_console.cpp:117
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 13"
-msgstr ""
+msgstr "Buton extra 13"
 
 #: debug_console.cpp:119
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 14"
-msgstr ""
+msgstr "Buton extra 14"
 
 #: debug_console.cpp:121
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 15"
-msgstr ""
+msgstr "Buton extra 15"
 
 #: debug_console.cpp:123
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 16"
-msgstr ""
+msgstr "Buton extra 16"
 
 #: debug_console.cpp:125
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 17"
-msgstr ""
+msgstr "Buton extra 17"
 
 #: debug_console.cpp:127
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 18"
-msgstr ""
+msgstr "Buton extra 18"
 
 #: debug_console.cpp:129
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 19"
-msgstr ""
+msgstr "Buton extra 19"
 
 #: debug_console.cpp:131
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 20"
-msgstr ""
+msgstr "Buton extra 20"
 
 #: debug_console.cpp:133
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 21"
-msgstr ""
+msgstr "Buton extra 21"
 
 #: debug_console.cpp:135
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 22"
-msgstr ""
+msgstr "Buton extra 22"
 
 #: debug_console.cpp:137
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 23"
-msgstr ""
+msgstr "Buton extra 23"
 
 #: debug_console.cpp:139
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 24"
-msgstr ""
+msgstr "Buton extra 24"
 
 #: debug_console.cpp:148 debug_console.cpp:150
 #, kde-format
 msgid "Input Device"
-msgstr ""
+msgstr "Dispozitiv de introducere"
 
 #: debug_console.cpp:148
 #, kde-format
 msgctxt "The input device of the event is not known"
 msgid "Unknown"
-msgstr ""
+msgstr "Necunoscut"
 
 #: debug_console.cpp:185
-#, fuzzy, kde-format
-#| msgid "Slow Motion"
+#, kde-format
 msgctxt "A mouse pointer motion event"
 msgid "Pointer Motion"
-msgstr "Mișcare încetinită"
+msgstr "Mișcare indicator"
 
 #: debug_console.cpp:192
 #, kde-format
 msgctxt "The relative mouse movement"
 msgid "Delta"
-msgstr ""
+msgstr "Delta"
 
 #: debug_console.cpp:196
 #, kde-format
 msgctxt "The relative mouse movement"
 msgid "Delta (not accelerated)"
-msgstr ""
+msgstr "Delta (neaccelerat)"
 
 #: debug_console.cpp:199
-#, fuzzy, kde-format
-#| msgid "Slow Motion"
+#, kde-format
 msgctxt "The global mouse pointer position"
 msgid "Global Position"
-msgstr "Mișcare încetinită"
+msgstr "Poziție globală"
 
 #: debug_console.cpp:203
 #, kde-format
@@ -292,7 +288,7 @@ msgstr ""
 #, kde-format
 msgctxt "A button in a mouse press/release event"
 msgid "Button"
-msgstr ""
+msgstr "Buton"
 
 #: debug_console.cpp:207 debug_console.cpp:215
 #, kde-format
@@ -304,7 +300,7 @@ msgstr ""
 #, kde-format
 msgctxt "All currently pressed buttons in a mouse press/release event"
 msgid "Pressed Buttons"
-msgstr ""
+msgstr "Butoane apăsate"
 
 #: debug_console.cpp:211
 #, kde-format
@@ -316,67 +312,67 @@ msgstr ""
 #, kde-format
 msgctxt "A mouse pointer axis (wheel) event"
 msgid "Pointer Axis"
-msgstr ""
+msgstr "Axă indicator"
 
 #: debug_console.cpp:235
 #, kde-format
 msgctxt "The orientation of a pointer axis event"
 msgid "Orientation"
-msgstr ""
+msgstr "Orientare"
 
 #: debug_console.cpp:236
 #, kde-format
 msgctxt "An orientation of a pointer axis event"
 msgid "Horizontal"
-msgstr ""
+msgstr "Orizontal"
 
 #: debug_console.cpp:237
 #, kde-format
 msgctxt "An orientation of a pointer axis event"
 msgid "Vertical"
-msgstr ""
+msgstr "Vertical"
 
 #: debug_console.cpp:238
 #, kde-format
 msgctxt "The angle delta of a pointer axis event"
 msgid "Delta"
-msgstr ""
+msgstr "Delta"
 
 #: debug_console.cpp:253
 #, kde-format
 msgctxt "A key press event"
 msgid "Key Press"
-msgstr ""
+msgstr "Apăsare tastă"
 
 #: debug_console.cpp:256
 #, kde-format
 msgctxt "A key release event"
 msgid "Key Release"
-msgstr ""
+msgstr "Eliberare tastă"
 
 #: debug_console.cpp:265
 #, kde-format
 msgctxt "A keyboard modifier"
 msgid "Shift"
-msgstr ""
+msgstr "Shift"
 
 #: debug_console.cpp:269
 #, kde-format
 msgctxt "A keyboard modifier"
 msgid "Control"
-msgstr ""
+msgstr "Control"
 
 #: debug_console.cpp:273
 #, kde-format
 msgctxt "A keyboard modifier"
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: debug_console.cpp:277
 #, kde-format
 msgctxt "A keyboard modifier"
 msgid "Meta"
-msgstr ""
+msgstr "Meta"
 
 #: debug_console.cpp:281
 #, kde-format
@@ -394,7 +390,7 @@ msgstr ""
 #, kde-format
 msgctxt "Whether the event is an automatic key repeat"
 msgid "Repeat"
-msgstr ""
+msgstr "Repetare"
 
 #: debug_console.cpp:295
 #, kde-format
@@ -406,25 +402,25 @@ msgstr ""
 #, kde-format
 msgctxt "Key according to Qt"
 msgid "Qt::Key code"
-msgstr ""
+msgstr "Cod Qt::Key"
 
 #: debug_console.cpp:298
 #, kde-format
 msgctxt "The translated code to an Xkb symbol"
 msgid "Xkb symbol"
-msgstr ""
+msgstr "Simbol Xkb"
 
 #: debug_console.cpp:299
 #, kde-format
 msgctxt "The translated code interpreted as text"
 msgid "Utf8"
-msgstr ""
+msgstr "Utf8"
 
 #: debug_console.cpp:300
 #, kde-format
 msgctxt "The currently active modifiers"
 msgid "Modifiers"
-msgstr ""
+msgstr "Modificatori"
 
 #: debug_console.cpp:312
 #, kde-format
@@ -439,11 +435,10 @@ msgid "Point identifier"
 msgstr ""
 
 #: debug_console.cpp:315 debug_console.cpp:330
-#, fuzzy, kde-format
-#| msgid "Slow Motion"
+#, kde-format
 msgctxt "The global position of the touch point"
 msgid "Global position"
-msgstr "Mișcare încetinită"
+msgstr "Poziție globală"
 
 #: debug_console.cpp:327
 #, fuzzy, kde-format
@@ -492,13 +487,13 @@ msgstr ""
 #, kde-format
 msgctxt "Current delta in pinch gesture"
 msgid "Delta x"
-msgstr ""
+msgstr "Delta x"
 
 #: debug_console.cpp:373
 #, kde-format
 msgctxt "Current delta in pinch gesture"
 msgid "Delta y"
-msgstr ""
+msgstr "Delta y"
 
 #: debug_console.cpp:384
 #, kde-format
@@ -522,7 +517,7 @@ msgstr ""
 #, kde-format
 msgctxt "Number of fingers in this swipe gesture"
 msgid "Finger count"
-msgstr ""
+msgstr "Număr de degete"
 
 #: debug_console.cpp:421
 #, kde-format
@@ -534,13 +529,13 @@ msgstr ""
 #, kde-format
 msgctxt "Current delta in swipe gesture"
 msgid "Delta x"
-msgstr ""
+msgstr "Delta x"
 
 #: debug_console.cpp:424
 #, kde-format
 msgctxt "Current delta in swipe gesture"
 msgid "Delta y"
-msgstr ""
+msgstr "Delta y"
 
 #: debug_console.cpp:435
 #, kde-format
@@ -565,38 +560,37 @@ msgstr "Comută la fila"
 #, kde-format
 msgctxt "Name of a hardware switch"
 msgid "Notebook lid"
-msgstr ""
+msgstr "Capac al laptopului"
 
 #: debug_console.cpp:469
 #, kde-format
 msgctxt "Name of a hardware switch"
 msgid "Tablet mode"
-msgstr ""
+msgstr "Regim tabletă"
 
 #: debug_console.cpp:471
-#, fuzzy, kde-format
-#| msgid "Switch to Tab"
+#, kde-format
 msgctxt "A hardware switch"
 msgid "Switch"
-msgstr "Comută la fila"
+msgstr "Întrerupător"
 
 #: debug_console.cpp:475
 #, kde-format
 msgctxt "The hardware switch got turned off"
 msgid "Off"
-msgstr ""
+msgstr "Oprit"
 
 #: debug_console.cpp:478
 #, kde-format
 msgctxt "The hardware switch got turned on"
 msgid "On"
-msgstr ""
+msgstr "Pornit"
 
 #: debug_console.cpp:483
 #, kde-format
 msgctxt "State of a hardware switch (on/off)"
 msgid "State"
-msgstr ""
+msgstr "Stare"
 
 #: debug_console.cpp:498
 #, kde-format
@@ -609,38 +603,35 @@ msgid "EventType"
 msgstr ""
 
 #: debug_console.cpp:500 debug_console.cpp:547 debug_console.cpp:559
-#, fuzzy, kde-format
-#| msgid "Slow Motion"
+#, kde-format
 msgid "Position"
-msgstr "Mișcare încetinită"
+msgstr "Poziție"
 
 #: debug_console.cpp:502
 #, kde-format
 msgid "Tilt"
-msgstr ""
+msgstr "Înclinare"
 
 #: debug_console.cpp:504
-#, fuzzy, kde-format
-#| msgid "caption"
+#, kde-format
 msgid "Rotation"
-msgstr "legendă"
+msgstr "Rotire"
 
 #: debug_console.cpp:505
 #, kde-format
 msgid "Pressure"
-msgstr ""
+msgstr "Presiune"
 
 #: debug_console.cpp:506
-#, fuzzy, kde-format
-#| msgid "Mouse Emulation"
+#, kde-format
 msgid "Buttons"
-msgstr "Emulare maus"
+msgstr "Butoane"
 
 #. i18n: ectx: property (title), widget (QGroupBox, modifiersBox)
 #: debug_console.cpp:507 debug_console.ui:356
 #, kde-format
 msgid "Modifiers"
-msgstr ""
+msgstr "Modificatori"
 
 #: debug_console.cpp:520
 #, kde-format
@@ -648,10 +639,9 @@ msgid "Tablet Tool Button"
 msgstr ""
 
 #: debug_console.cpp:521 debug_console.cpp:536
-#, fuzzy, kde-format
-#| msgid "Mouse Emulation"
+#, kde-format
 msgid "Pressed Buttons"
-msgstr "Emulare maus"
+msgstr "Butoane apăsate"
 
 #: debug_console.cpp:535
 #, kde-format
@@ -666,7 +656,7 @@ msgstr ""
 #: debug_console.cpp:546 debug_console.cpp:558
 #, kde-format
 msgid "Number"
-msgstr ""
+msgstr "Număr"
 
 #: debug_console.cpp:548 debug_console.cpp:560
 #, kde-format
@@ -688,182 +678,181 @@ msgstr "Emulare maus"
 #, kde-format
 msgctxt "Mouse Button"
 msgid "left"
-msgstr ""
+msgstr "stâng"
 
 #: debug_console.cpp:752
-#, fuzzy, kde-format
-#| msgid "Top-Right"
+#, kde-format
 msgctxt "Mouse Button"
 msgid "right"
-msgstr "Dreapta-sus"
+msgstr "drept"
 
 #: debug_console.cpp:755
 #, kde-format
 msgctxt "Mouse Button"
 msgid "middle"
-msgstr ""
+msgstr "mijloc"
 
 #: debug_console.cpp:758
 #, kde-format
 msgctxt "Mouse Button"
 msgid "back"
-msgstr ""
+msgstr "înapoi"
 
 #: debug_console.cpp:761
 #, kde-format
 msgctxt "Mouse Button"
 msgid "forward"
-msgstr ""
+msgstr "înainte"
 
 #: debug_console.cpp:764
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 1"
-msgstr ""
+msgstr "extra 1"
 
 #: debug_console.cpp:767
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 2"
-msgstr ""
+msgstr "extra 2"
 
 #: debug_console.cpp:770
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 3"
-msgstr ""
+msgstr "extra 3"
 
 #: debug_console.cpp:773
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 4"
-msgstr ""
+msgstr "extra 4"
 
 #: debug_console.cpp:776
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 5"
-msgstr ""
+msgstr "extra 5"
 
 #: debug_console.cpp:779
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 6"
-msgstr ""
+msgstr "extra 6"
 
 #: debug_console.cpp:782
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 7"
-msgstr ""
+msgstr "extra 7"
 
 #: debug_console.cpp:785
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 8"
-msgstr ""
+msgstr "extra 8"
 
 #: debug_console.cpp:788
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 9"
-msgstr ""
+msgstr "extra 9"
 
 #: debug_console.cpp:791
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 10"
-msgstr ""
+msgstr "extra 10"
 
 #: debug_console.cpp:794
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 11"
-msgstr ""
+msgstr "extra 11"
 
 #: debug_console.cpp:797
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 12"
-msgstr ""
+msgstr "extra 12"
 
 #: debug_console.cpp:800
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 13"
-msgstr ""
+msgstr "extra 13"
 
 #: debug_console.cpp:803
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 14"
-msgstr ""
+msgstr "extra 14"
 
 #: debug_console.cpp:806
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 15"
-msgstr ""
+msgstr "extra 15"
 
 #: debug_console.cpp:809
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 16"
-msgstr ""
+msgstr "extra 16"
 
 #: debug_console.cpp:812
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 17"
-msgstr ""
+msgstr "extra 17"
 
 #: debug_console.cpp:815
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 18"
-msgstr ""
+msgstr "extra 18"
 
 #: debug_console.cpp:818
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 19"
-msgstr ""
+msgstr "extra 19"
 
 #: debug_console.cpp:821
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 20"
-msgstr ""
+msgstr "extra 20"
 
 #: debug_console.cpp:824
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 21"
-msgstr ""
+msgstr "extra 21"
 
 #: debug_console.cpp:827
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 22"
-msgstr ""
+msgstr "extra 22"
 
 #: debug_console.cpp:830
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 23"
-msgstr ""
+msgstr "extra 23"
 
 #: debug_console.cpp:833
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 24"
-msgstr ""
+msgstr "extra 24"
 
 #: debug_console.cpp:836
 #, kde-format
 msgctxt "Mouse Button"
 msgid "task"
-msgstr ""
+msgstr "sarcină"
 
 #: debug_console.cpp:1183
 #, fuzzy, kde-format
@@ -877,16 +866,14 @@ msgid "X11 Unmanaged Windows"
 msgstr ""
 
 #: debug_console.cpp:1187
-#, fuzzy, kde-format
-#| msgid "Shade Window"
+#, kde-format
 msgid "Wayland Windows"
-msgstr "Strânge fereastra"
+msgstr "Ferestre Wayland"
 
 #: debug_console.cpp:1189
-#, fuzzy, kde-format
-#| msgid "Inactive windows:"
+#, kde-format
 msgid "Internal Windows"
-msgstr "Ferestre inactive:"
+msgstr "Ferestre interne"
 
 #. i18n: ectx: property (text), widget (QPushButton, quitButton)
 #: debug_console.ui:32
@@ -904,25 +891,25 @@ msgstr "Ferestre"
 #: debug_console.ui:59
 #, kde-format
 msgid "Surfaces"
-msgstr ""
+msgstr "Suprafețe"
 
 #. i18n: ectx: attribute (title), widget (QWidget, input)
 #: debug_console.ui:69
 #, kde-format
 msgid "Input Events"
-msgstr ""
+msgstr "Evenimente de introducere"
 
 #. i18n: ectx: attribute (title), widget (QWidget, inputDevices)
 #: debug_console.ui:86
 #, kde-format
 msgid "Input Devices"
-msgstr ""
+msgstr "Dispozitive de introducere"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: debug_console.ui:96
 #, kde-format
 msgid "OpenGL"
-msgstr ""
+msgstr "OpenGL"
 
 #. i18n: ectx: property (text), widget (QLabel, noOpenGLLabel)
 #: debug_console.ui:102
@@ -940,19 +927,19 @@ msgstr ""
 #: debug_console.ui:136
 #, kde-format
 msgid "Vendor:"
-msgstr ""
+msgstr "Vânzător:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: debug_console.ui:143
 #, kde-format
 msgid "Renderer:"
-msgstr ""
+msgstr "Randor:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: debug_console.ui:150
 #, kde-format
 msgid "Version:"
-msgstr ""
+msgstr "Versiune:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: debug_console.ui:157
@@ -964,25 +951,25 @@ msgstr ""
 #: debug_console.ui:164
 #, kde-format
 msgid "Driver:"
-msgstr ""
+msgstr "Driver:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: debug_console.ui:171
 #, kde-format
 msgid "GPU class:"
-msgstr ""
+msgstr "Clasă GPU:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: debug_console.ui:178
 #, kde-format
 msgid "OpenGL Version:"
-msgstr ""
+msgstr "Versiune OpenGL:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: debug_console.ui:185
 #, kde-format
 msgid "GLSL Version:"
-msgstr ""
+msgstr "Versiune GLSL:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, platformExtensionsBox)
 #: debug_console.ui:251
@@ -1000,10 +987,9 @@ msgstr "&Extensii"
 
 #. i18n: ectx: attribute (title), widget (QWidget, keyboard)
 #: debug_console.ui:288
-#, fuzzy, kde-format
-#| msgid "Next Layout"
+#, kde-format
 msgid "Keyboard"
-msgstr "Aranjamentul următor"
+msgstr "Tastatură"
 
 #. i18n: ectx: property (title), widget (QGroupBox, layoutBox)
 #: debug_console.ui:315
@@ -1014,28 +1000,27 @@ msgstr "Aranjamentul următor"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: debug_console.ui:337
-#, fuzzy, kde-format
-#| msgid "Configur&e Window Behavior..."
+#, kde-format
 msgid "Current Layout:"
-msgstr "Configurar&e ferestre..."
+msgstr "Aranjament actual:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, activeModifiersBox)
 #: debug_console.ui:372
 #, kde-format
 msgid "Active Modifiers"
-msgstr ""
+msgstr "Modificatori activi"
 
 #. i18n: ectx: property (title), widget (QGroupBox, ledsBox)
 #: debug_console.ui:388
 #, kde-format
 msgid "LEDs"
-msgstr ""
+msgstr "LED-uri"
 
 #. i18n: ectx: property (title), widget (QGroupBox, activeLedsBox)
 #: debug_console.ui:404
 #, kde-format
 msgid "Active LEDs"
-msgstr ""
+msgstr "LED-uri active"
 
 #: helpers/killer/killer.cpp:47
 #, kde-format
@@ -1075,7 +1060,7 @@ msgstr "legendă"
 #: helpers/killer/killer.cpp:58
 #, kde-format
 msgid "Name of the application to be terminated"
-msgstr "Numele aplicației de terminat"
+msgstr "Denumirea aplicației de terminat"
 
 #: helpers/killer/killer.cpp:58
 #, kde-format
@@ -1154,17 +1139,15 @@ msgid "Wait Longer"
 msgstr "Mai așteaptă"
 
 #: keyboard_layout.cpp:119 keyboard_layout.cpp:120
-#, fuzzy, kde-format
-#| msgid "Next Layout"
+#, kde-format
 msgctxt "tooltip title"
 msgid "Keyboard Layout"
-msgstr "Aranjamentul următor"
+msgstr "Aranjament de tastatură"
 
 #: keyboard_layout.cpp:264
-#, fuzzy, kde-format
-#| msgid "Configur&e Window Behavior..."
+#, kde-format
 msgid "Configure Layouts..."
-msgstr "Configurar&e ferestre..."
+msgstr "Configurare aranjamente..."
 
 #: killwindow.cpp:44
 #, kde-format
@@ -1476,10 +1459,9 @@ msgid "KWin"
 msgstr "KWin"
 
 #: main.cpp:203
-#, fuzzy, kde-format
-#| msgid "(c) 1999-2013, The KDE Developers"
+#, kde-format
 msgid "(c) 1999-2019, The KDE Developers"
-msgstr "(c) 1999-2013, Dezvoltatorii KDE"
+msgstr "(c) 1999-2019, Dezvoltatorii KDE"
 
 #: main.cpp:205
 #, kde-format
@@ -1504,22 +1486,22 @@ msgstr "Luboš Luňák"
 #: main.cpp:209
 #, kde-format
 msgid "Martin Flöser"
-msgstr ""
+msgstr "Martin Flöser"
 
 #: main.cpp:210
 #, kde-format
 msgid "David Edmundson"
-msgstr ""
+msgstr "David Edmundson"
 
 #: main.cpp:211
 #, kde-format
 msgid "Roman Gilg"
-msgstr ""
+msgstr "Roman Gilg"
 
 #: main.cpp:212
 #, kde-format
 msgid "Vlad Zahorodnii"
-msgstr ""
+msgstr "Vlad Zahorodnii"
 
 #: main.cpp:221
 #, kde-format
@@ -1534,7 +1516,7 @@ msgstr "Indică faptul că KWin a eșuat recent de n ori"
 #: main_wayland.cpp:433
 #, kde-format
 msgid "Start a rootless Xwayland server."
-msgstr ""
+msgstr "Pornește un server Xwayland fără root."
 
 #: main_wayland.cpp:435
 #, kde-format
@@ -1565,22 +1547,22 @@ msgstr ""
 #: main_wayland.cpp:448
 #, kde-format
 msgid "Render to a virtual framebuffer."
-msgstr ""
+msgstr "Randează pe framebuffer virtual."
 
 #: main_wayland.cpp:450
 #, kde-format
 msgid "The width for windowed mode. Default width is 1024."
-msgstr ""
+msgstr "Lățimea regimului de fereastră. Lățimea implicită e 1024."
 
 #: main_wayland.cpp:454
 #, kde-format
 msgid "The height for windowed mode. Default height is 768."
-msgstr ""
+msgstr "Înălțimea regimului de fereastră. Înălțimea implicită e 768."
 
 #: main_wayland.cpp:459
 #, kde-format
 msgid "The scale for windowed mode. Default value is 1."
-msgstr ""
+msgstr "Scara regimului de fereastră. Valoarea implicită e 1."
 
 #: main_wayland.cpp:464
 #, kde-format
@@ -1591,7 +1573,7 @@ msgstr ""
 #: main_wayland.cpp:494
 #, kde-format
 msgid "Use libhybris hwcomposer"
-msgstr ""
+msgstr "Folosește hwcomposer libhybris"
 
 #: main_wayland.cpp:500
 #, kde-format
@@ -1603,32 +1585,32 @@ msgstr ""
 #: main_wayland.cpp:503
 #, kde-format
 msgid "Render through drm node."
-msgstr ""
+msgstr "Randează prin nod DRM."
 
 #: main_wayland.cpp:510
 #, kde-format
 msgid "Input method that KWin starts."
-msgstr ""
+msgstr "Metoda de introducere pornită de KWin."
 
 #: main_wayland.cpp:515
 #, kde-format
 msgid "List all available backends and quit."
-msgstr ""
+msgstr "Enumeră toate platformele disponibile și termină."
 
 #: main_wayland.cpp:519
 #, kde-format
 msgid "Starts the session in locked mode."
-msgstr ""
+msgstr "Pornește sesiunea în regim blocat."
 
 #: main_wayland.cpp:523
 #, kde-format
 msgid "Starts the session without lock screen support."
-msgstr ""
+msgstr "Pornește sesiunea fără suport pentru blocarea ecranului."
 
 #: main_wayland.cpp:527
 #, kde-format
 msgid "Starts the session without global shortcuts support."
-msgstr ""
+msgstr "Pornește sesiunea fără suport pentru scurtături globale."
 
 #: main_wayland.cpp:531
 #, kde-format
@@ -1680,12 +1662,12 @@ msgstr ""
 #: main_x11.cpp:443
 #, kde-format
 msgid "Disable KActivities integration."
-msgstr ""
+msgstr "Dezactivează integrarea KActivities"
 
 #: orientation_sensor.cpp:100
 #, kde-format
 msgid "Allow Rotation"
-msgstr ""
+msgstr "Permite rotirea"
 
 #: orientation_sensor.cpp:101
 #, kde-format
@@ -1695,24 +1677,24 @@ msgstr ""
 #: orientation_sensor.cpp:111
 #, kde-format
 msgid "Undefined"
-msgstr ""
+msgstr "Nedefinit"
 
 #: orientation_sensor.cpp:115
 #, kde-format
 msgctxt "Portrait oriented display"
 msgid "Vertical"
-msgstr ""
+msgstr "Vertical"
 
 #: orientation_sensor.cpp:119
 #, kde-format
 msgctxt "Landscape oriented display"
 msgid "Horizontal"
-msgstr ""
+msgstr "Orizontal"
 
 #: orientation_sensor.cpp:123
 #, kde-format
 msgid "Automatic screen rotation is disabled"
-msgstr ""
+msgstr "Rotirea automată a ecranului e dezactivată"
 
 #: plugins/scenes/opengl/scene_opengl.cpp:545
 #, kde-format
@@ -1723,19 +1705,19 @@ msgstr "Efectele de birou au fost repornite din cauza reinițializării graficii
 #, kde-format
 msgctxt "Error message"
 msgid "Plugin does not provide configuration file in expected location"
-msgstr ""
+msgstr "Extensia nu furnizează fișierul de configurare în locul așteptat"
 
 #: scripting/scripting.cpp:128
 #, kde-format
 msgctxt "Assertion failed in KWin script with given value"
 msgid "Assertion failed: %1 is not null"
-msgstr ""
+msgstr "Aserțiunea a eșuat: %1 nu este nul"
 
 #: scripting/scripting.cpp:146
 #, kde-format
 msgctxt "Assertion failed in KWin script"
 msgid "Assertion failed: argument is null"
-msgstr ""
+msgstr "Aserțiunea a eșuat: argumentul este nul"
 
 #: scripting/scripting.cpp:188
 #, kde-format
@@ -1744,6 +1726,8 @@ msgid ""
 "Invalid number of arguments. At least service, path, interface and method "
 "need to be provided"
 msgstr ""
+"Număr nevalid de argumente. Trebuiesc furnizate cel puțin serviciul, calea, "
+"interfața și metoda"
 
 #: scripting/scripting.cpp:194
 #, kde-format
@@ -1751,31 +1735,31 @@ msgctxt "Error in KWin Script"
 msgid ""
 "Invalid type. Service, path, interface and method need to be string values"
 msgstr ""
+"Tip nevalid. Serviciul, calea, interfața și metoda trebuie să fie valori șir"
 
 #: scripting/scriptingutils.cpp:28
 #, kde-format
 msgctxt "syntax error in KWin script"
 msgid "Invalid number of arguments"
-msgstr ""
+msgstr "Număr nevalid de argumente"
 
 #: scripting/scriptingutils.cpp:41
 #, kde-format
 msgctxt "KWin Scripting function received incorrect value for an expected type"
 msgid "%1 is not a variant type"
-msgstr ""
+msgstr "%1 nu este un tip variabil"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, ShortcutDialog)
 #: shortcutdialog.ui:14
-#, fuzzy, kde-format
-#| msgid "Dialogs:"
+#, kde-format
 msgid "Dialog"
-msgstr "Dialoguri:"
+msgstr "Dialog"
 
 #. i18n: ectx: property (text), widget (QToolButton, clearButton)
 #: shortcutdialog.ui:25
 #, kde-format
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: tabbox/tabbox.cpp:387
 #, kde-format
@@ -1885,10 +1869,9 @@ msgid "&Move"
 msgstr "&Mută"
 
 #: useractions.cpp:257
-#, fuzzy, kde-format
-#| msgid "Re&size"
+#, kde-format
 msgid "&Resize"
-msgstr "Redimen&sionează"
+msgstr "&Redimensionează"
 
 #: useractions.cpp:262
 #, kde-format
@@ -1906,10 +1889,9 @@ msgid "&Fullscreen"
 msgstr "&Ecran complet"
 
 #: useractions.cpp:280
-#, fuzzy, kde-format
-#| msgid "Shade"
+#, kde-format
 msgid "&Shade"
-msgstr "Strânge"
+msgstr "&Strânge"
 
 #: useractions.cpp:286
 #, kde-format
@@ -1923,25 +1905,22 @@ msgid "Set Window Short&cut..."
 msgstr "Accelerator ferea&stră..."
 
 #: useractions.cpp:299
-#, fuzzy, kde-format
-#| msgid "&Special Window Settings..."
+#, kde-format
 msgid "Configure Special &Window Settings..."
 msgstr "Configurări &speciale fereastră..."
 
 #: useractions.cpp:304
-#, fuzzy, kde-format
-#| msgid "S&pecial Application Settings..."
+#, kde-format
 msgid "Configure S&pecial Application Settings..."
 msgstr "Configurări s&peciale aplicație..."
 
 #: useractions.cpp:312
-#, fuzzy, kde-format
-#| msgid "Window Manager"
+#, kde-format
 msgctxt ""
 "Entry in context menu of window decoration to open the configuration module "
 "of KWin"
 msgid "Configure W&indow Manager..."
-msgstr "Gestionar de ferestre"
+msgstr "Conf&igurare gestionar de ferestre..."
 
 #: useractions.cpp:340
 #, kde-format
@@ -1956,7 +1935,7 @@ msgstr "Mi&nimizează"
 #: useractions.cpp:352
 #, kde-format
 msgid "&More Actions"
-msgstr "&Mai multe acțiuni"
+msgstr "&Acțiuni suplimentare"
 
 #: useractions.cpp:355
 #, kde-format
@@ -1969,33 +1948,29 @@ msgid "&Extensions"
 msgstr "&Extensii"
 
 #: useractions.cpp:463
-#, fuzzy, kde-format
-#| msgid "&All Desktops"
+#, kde-format
 msgid "&Desktops"
-msgstr "&Toate birourile"
+msgstr "&Birouri"
 
 #: useractions.cpp:477
-#, fuzzy, kde-format
-#| msgid "Move To &Desktop"
+#, kde-format
 msgid "Move to &Desktop"
-msgstr "Mută în &biroul"
+msgstr "M&ută la biroul"
 
 #: useractions.cpp:495
-#, fuzzy, kde-format
-#| msgid "Move To &Screen"
+#, kde-format
 msgid "Move to &Screen"
 msgstr "Mută la &ecranul"
 
 #: useractions.cpp:511
-#, fuzzy, kde-format
-#| msgid "Ac&tivities"
+#, kde-format
 msgid "Show in &Activities"
-msgstr "Ac&tivități"
+msgstr "&Arată în activități"
 
 #: useractions.cpp:526 useractions.cpp:571
 #, kde-format
 msgid "&All Desktops"
-msgstr "&Toate birourile"
+msgstr "To&ate birourile"
 
 #: useractions.cpp:554 useractions.cpp:607
 #, kde-format
@@ -2004,14 +1979,12 @@ msgid "&New Desktop"
 msgstr "Birou &nou"
 
 #: useractions.cpp:630
-#, fuzzy, kde-format
-#| msgctxt "@item:inmenu List of all Screens to send a window to"
-#| msgid "Screen &%1"
+#, kde-format
 msgctxt ""
 "@item:inmenu List of all Screens to send a window to. First argument is a "
 "number, second the output identifier. E.g. Screen 1 (HDMI1)"
 msgid "Screen &%1 (%2)"
-msgstr "Ecranul &%1"
+msgstr "Ecranul &%1 (%2)"
 
 #: useractions.cpp:653
 #, kde-format
@@ -2086,17 +2059,17 @@ msgstr "Comută la biroul %1"
 #: virtualkeyboard.cpp:106
 #, kde-format
 msgid "Virtual Keyboard"
-msgstr ""
+msgstr "Tastatură virtuală"
 
 #: virtualkeyboard.cpp:230
 #, kde-format
 msgid "Virtual Keyboard: enabled"
-msgstr ""
+msgstr "Tastatură virtuală: activă"
 
 #: virtualkeyboard.cpp:233
 #, kde-format
 msgid "Virtual Keyboard: disabled"
-msgstr ""
+msgstr "Tastatură virtuală: inactivă"
 
 #: virtualkeyboard.cpp:235
 #, kde-format

@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwindesktop\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-03-19 03:40+0100\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2014-05-03 22:24+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -29,100 +29,106 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "caslav.ilic@gmx.net"
 
-#: desktopsmodel.cpp:427
+#: desktopsmodel.cpp:466
 #, kde-format
 msgid "There was an error connecting to the compositor."
 msgstr ""
 
-#: desktopsmodel.cpp:629
+#: desktopsmodel.cpp:668
 #, kde-format
 msgid "There was an error saving the settings to the compositor."
 msgstr ""
 
-#: desktopsmodel.cpp:632
+#: desktopsmodel.cpp:671
 #, kde-format
 msgid "There was an error requesting information from the compositor."
 msgstr ""
 
-#: package/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Desktops"
-msgid "Virtual Desktops"
-msgstr "Површи"
+#: package/contents/ui/main.qml:31
+#, kde-format
+msgid ""
+"This module lets you configure the navigation, number and layout of virtual "
+"desktops."
+msgstr ""
 
-#: package/contents/ui/main.qml:78
+#: package/contents/ui/main.qml:81
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rename"
 msgstr ""
 
-#: package/contents/ui/main.qml:88
+#: package/contents/ui/main.qml:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove"
 msgstr ""
 
-#: package/contents/ui/main.qml:114
+#: package/contents/ui/main.qml:117
 #, kde-format
 msgid ""
 "Virtual desktops have been changed outside this settings application. Saving "
 "now will overwrite the changes."
 msgstr ""
 
-#: package/contents/ui/main.qml:121
+#: package/contents/ui/main.qml:131
 #, kde-format
-msgid "Rows:"
+msgid "Row %1"
 msgstr ""
 
-#: package/contents/ui/main.qml:140
+#: package/contents/ui/main.qml:144
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr ""
 
-#: package/contents/ui/main.qml:143
+#: package/contents/ui/main.qml:147
 #, fuzzy, kde-format
 #| msgid "Desktops"
 msgid "New Desktop"
 msgstr "Површи"
 
-#: package/contents/ui/main.qml:166
+#: package/contents/ui/main.qml:161
 #, kde-format
-msgid "Row %1"
-msgstr ""
+msgid "1 Row"
+msgid_plural "%1 Rows"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
-#: package/contents/ui/main.qml:191
+#: package/contents/ui/main.qml:173
 #, kde-format
 msgid "Options:"
 msgstr ""
 
-#: package/contents/ui/main.qml:193
+#: package/contents/ui/main.qml:175
 #, fuzzy, kde-format
 #| msgid "Desktop navigation wraps around"
 msgid "Navigation wraps around"
 msgstr "Кретање кроз површи омотава"
 
-#: package/contents/ui/main.qml:206
+#: package/contents/ui/main.qml:190
 #, kde-format
 msgid "Show animation when switching:"
 msgstr ""
 
-#: package/contents/ui/main.qml:249
+#: package/contents/ui/main.qml:233
 #, kde-format
 msgid "Show on-screen display when switching:"
 msgstr ""
 
-#: package/contents/ui/main.qml:265
+#: package/contents/ui/main.qml:251
 #, kde-format
 msgid "%1 ms"
 msgstr ""
 
-#: package/contents/ui/main.qml:285
+#: package/contents/ui/main.qml:269
 #, kde-format
 msgid "Show desktop layout indicators"
 msgstr "Показатељи распореда површи"
 
-#: virtualdesktops.cpp:44
-#, kde-format
-msgid "Configure Virtual Desktops"
-msgstr ""
+#: virtualdesktops.cpp:41
+#, fuzzy, kde-format
+#| msgid "Desktops"
+msgid "Virtual Desktops"
+msgstr "Површи"
