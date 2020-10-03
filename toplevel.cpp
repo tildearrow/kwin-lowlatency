@@ -587,6 +587,7 @@ void Toplevel::updateShadow()
 {
     QRect dirtyRect;  // old & new shadow region
     const QRect oldVisibleRect = visibleRect();
+    addWorkspaceRepaint(oldVisibleRect);
     if (shadow()) {
         dirtyRect = shadow()->shadowRegion().boundingRect();
         if (!effectWindow()->sceneWindow()->shadow()->updateShadow()) {

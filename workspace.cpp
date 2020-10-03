@@ -66,6 +66,16 @@ namespace KWin
 extern int screen_number;
 extern bool is_multihead;
 
+X11EventFilterContainer::X11EventFilterContainer(X11EventFilter *filter)
+    : m_filter(filter)
+{
+}
+
+X11EventFilter *X11EventFilterContainer::filter() const
+{
+    return m_filter;
+}
+
 ColorMapper::ColorMapper(QObject *parent)
     : QObject(parent)
     , m_default(kwinApp()->x11DefaultScreen()->default_colormap)
@@ -1815,8 +1825,9 @@ void Workspace::addInternalClient(InternalClient *client)
     setupClientConnections(client);
     client->updateLayer();
 
-    if (client->isDecorated()) {
-        client->keepInArea(clientArea(FullScreenArea, client));
+    if (client->isPlaceable()) {
+        const QRect area = clientArea(PlacementArea, screens()->current(), client->desktop());
+        client->placeIn(area);
     }
 
     markXStackingOrderAsDirty();
