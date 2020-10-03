@@ -220,24 +220,12 @@ bool Workspace::workspaceEvent(xcb_generic_event_t *e)
         xcb_ge_generic_event_t *ge = reinterpret_cast<xcb_ge_generic_event_t *>(e);
 
         foreach (X11EventFilter *filter, m_genericEventFilters) {
-            if (ge==NULL) {
-              printf("pwcrash NOTICE: GE IS NULL!!\n");
-              return false;
-            }
-            if (filter==NULL) {
-              printf("pwcrash NOTICE: FILTER IS NULL!!\n");
-              return false;
-            }
             if (filter->extension() == ge->extension && filter->genericEventTypes().contains(ge->event_type) && filter->event(e)) {
                 return true;
             }
         }
     } else {
         foreach (X11EventFilter *filter, m_eventFilters) {
-            if (filter==NULL) {
-              printf("pwcrash NOTICE: FILTER IS NULL and event is NOT GENERIC!!\n");
-              return false;
-            }
             if (filter->eventTypes().contains(eventType) && filter->event(e)) {
                 return true;
             }
