@@ -5,11 +5,13 @@ minorVer=1
 tinyPatch=0
 version=$(sed -rn "s/^set\(PROJECT_VERSION \"([0-9.]+)\"\)$/\1/p" CMakeLists.txt)
 
-if [ $tinyPatch -gt 0 ]; then
-  downversion=$version"."$tinyPatch
-else
-  downversion=$version
-fi
+#if [ $tinyPatch -gt 0 ]; then
+#  downversion=$version"."$tinyPatch
+#else
+#  downversion=$version
+#fi
+
+downversion=5.19.90
 
 cd ..
 if [ ! -e kwin-$downversion.tar.xz ]
