@@ -49,7 +49,7 @@ msgid ""
 "In this row you can customize left click behavior when clicking into an "
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
-"Trong hàng này, bạn có thể tùy chỉnh ứng dụng nhắp trái khi nhắp bên trong "
+"Trong hàng này, bạn có thể tuỳ chỉnh ứng dụng nhắp trái khi nhắp bên trong "
 "một cửa sổ bị động."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow1)
@@ -110,7 +110,7 @@ msgid ""
 "In this row you can customize middle click behavior when clicking into an "
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
-"Trong hàng này, bạn có thể tùy chỉnh ứng dụng nhắp giữa khi nhắp bên trong "
+"Trong hàng này, bạn có thể tuỳ chỉnh ứng dụng nhắp giữa khi nhắp bên trong "
 "một cửa sổ bị động."
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
@@ -127,7 +127,7 @@ msgid ""
 "In this row you can customize right click behavior when clicking into an "
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
-"Trong hàng này, bạn có thể tùy chỉnh ứng dụng nhắp phải khi nhắp bên trong "
+"Trong hàng này, bạn có thể tuỳ chỉnh ứng dụng nhắp phải khi nhắp bên trong "
 "một cửa sổ bị động."
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -148,7 +148,7 @@ msgid ""
 "In this row you can customize behavior when scrolling into an inactive inner "
 "window ('inner' means: not titlebar, not frame)."
 msgstr ""
-"Trong hàng này, bạn có thể tùy chỉnh ứng dụng nhắp trái khi nhắp bên trong "
+"Trong hàng này, bạn có thể tuỳ chỉnh ứng dụng nhắp trái khi nhắp bên trong "
 "một cửa sổ bị động."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindowWheel)
@@ -227,7 +227,7 @@ msgid ""
 "In this row you can customize left click behavior when clicking into the "
 "titlebar or the frame."
 msgstr ""
-"Trong hàng này, bạn có tùy chỉnh ứng dụng nhắp-trái khi nhắp trên thanh tựa "
+"Trong hàng này, bạn có tuỳ chỉnh ứng dụng nhắp-trái khi nhắp trên thanh tựa "
 "hay khung của cửa sổ."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
@@ -373,7 +373,7 @@ msgid ""
 "In this row you can customize middle click behavior when clicking into the "
 "titlebar or the frame."
 msgstr ""
-"Trong hàng này, bạn có tùy chỉnh ứng dụng nhắp-giữa khi nhắp trên thanh tựa "
+"Trong hàng này, bạn có tuỳ chỉnh ứng dụng nhắp-giữa khi nhắp trên thanh tựa "
 "hay khung của cửa sổ."
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
@@ -390,7 +390,7 @@ msgid ""
 "In this row you can customize right click behavior when clicking into the "
 "titlebar or the frame."
 msgstr ""
-"Trong hàng này, bạn có tùy chỉnh ứng dụng nhắp-phải khi nhắp trên thanh tựa "
+"Trong hàng này, bạn có tuỳ chỉnh ứng dụng nhắp-phải khi nhắp trên thanh tựa "
 "hay khung của cửa sổ."
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
@@ -410,7 +410,7 @@ msgid ""
 "Here you can customize KDE's behavior when scrolling with the mouse wheel in "
 "a window while pressing the modifier key."
 msgstr ""
-"Ở đây bạn có thể tùy chỉnh ứng dụng của KDE khi bạn cuộn bằng bánh xe chuột "
+"Ở đây bạn có thể tuỳ chỉnh ứng dụng của KDE khi bạn cuộn bằng bánh xe chuột "
 "trong cửa sổ, trong khi bấm một phím sửa đổi."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
@@ -648,7 +648,7 @@ msgstr ""
 #| "minimized or restored."
 msgid "With this option you can specify how and when windows will be focused."
 msgstr ""
-"Bật tùy chọn này nếu bạn muốn hoạt cảnh được hiển thị khi cửa sổ được thu "
+"Bật tuỳ chọn này nếu bạn muốn hoạt cảnh được hiển thị khi cửa sổ được thu "
 "nhỏ hay phục hồi."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
@@ -768,7 +768,7 @@ msgid ""
 "by default means their taskbar entry will be highlighted. This can be "
 "changed in the Notifications control module.</p></body></html>"
 msgstr ""
-"<p>Tùy chọn này xác định cách KWin sẽ cố ngăn cản tiêu điểm bị ăn cấp do sự "
+"<p>Tuỳ chọn này xác định cách KWin sẽ cố ngăn cản tiêu điểm bị ăn cấp do sự "
 "kích hoạt cửa sổ mới không mong đợi. (Ghi chú : tính năng này không hoạt "
 "động với chính sách tiêu điểm « Tiêu điểm dưới chuột » hay « Tiêu điểm dưới "
 "chính sách chuột ».)<ul><li><em>Không có:</em> ngăn cản bị tắt nên cửa sổ "
@@ -784,7 +784,7 @@ msgstr ""
 "người dùng kích hoạt dứt khoát.</li></ul></p><p>Cửa sổ bị ngăn cản ăn cấp "
 "tiêu điểm có được đánh dấu như là yêu cầu hoạt động. mà theo mặc định có "
 "nghĩa là mục nhập của nó trên thanh tác vụ sẽ được tô sáng. Có thể thay đổi "
-"ứng xử này trong mô-đun điều khiển « Thông báo ».</p>"
+"ứng xử này trong khối điều khiển « Thông báo ».</p>"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_FocusStealingPreventionLevel)
@@ -848,7 +848,7 @@ msgid ""
 "windows, you need to change the settings in the Actions tab."
 msgstr ""
 "Khi bật, cửa sổ hoạt động sẽ lên trước khi bạn nhắp vào nơi nào trong nội "
-"dung cửa sổ. Để bật tùy chọn này cho cửa sổ bị động, bạn cần phải thay đổi "
+"dung cửa sổ. Để bật tuỳ chọn này cho cửa sổ bị động, bạn cần phải thay đổi "
 "thiết lập trong phần Hành động."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ClickRaise)
@@ -904,9 +904,9 @@ msgid ""
 "window. By default this option is disabled for Click to focus and enabled "
 "for other focus policies."
 msgstr ""
-"Bật tùy chọn này thì màn hình Xinerama hoạt động (trên nó, chẳng hạn, các "
+"Bật tuỳ chọn này thì màn hình Xinerama hoạt động (trên nó, chẳng hạn, các "
 "cửa sổ mới xuất hiện) là màn hình hiển thị con trỏ chuột. Tắt thì màn hình "
-"Xinerama hoạt động là màn hình có cửa sổ có tiêu điểm. Mặc định là tùy chọn "
+"Xinerama hoạt động là màn hình có cửa sổ có tiêu điểm. Mặc định là tuỳ chọn "
 "này bị tắt cho « Nhấn để lấy tiêu điểm » và được bật cho các chính sách tiêu "
 "điểm khác."
 
@@ -923,7 +923,7 @@ msgid ""
 "When this option is enabled, focus operations are limited only to the active "
 "Xinerama screen"
 msgstr ""
-"Bật tùy chọn này thì thao tác tiêu điểm bị giới hạn thành chỉ màn hình "
+"Bật tuỳ chọn này thì thao tác tiêu điểm bị giới hạn thành chỉ màn hình "
 "Xinerama hoạt động."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SeparateScreenFocus)
@@ -971,7 +971,7 @@ msgstr "Cấp c&ao"
 #: main.cpp:110
 #, kde-format
 msgid "Window Behavior Configuration Module"
-msgstr "Mô-đun cấu hình ứng xử cửa sổ"
+msgstr "Khối cấu hình ứng xử cửa sổ"
 
 #: main.cpp:112
 #, kde-format
@@ -1040,13 +1040,13 @@ msgid ""
 "manager. If you do use a different window manager, please refer to its "
 "documentation for how to customize window behavior.</p>"
 msgstr ""
-"<h1>Ứng dụng cửa sổ</h1>Ở đây bạn có thể tùy chỉnh cách cửa sổ ứng xử khi "
+"<h1>Ứng dụng cửa sổ</h1>Ở đây bạn có thể tuỳ chỉnh cách cửa sổ ứng xử khi "
 "được di chuyển, khi có kích cỡ được thay đổi hay khi được nhắp vào. Bạn cũng "
 "có thể xác định một chính sách tiêu điểm, cũng như một chính sách định vị "
 "cho cửa sổ mới.<p>Hãy ghi chú rằng cấu hình này sẽ không có tác động nếu bạn "
-"không sử dụng KWin là bộ quản lý cửa sổ. Nếu bạn có phải sử dụng một bộ quản "
-"lý cửa sổ khác, vui lòng tham khảo tài liệu hướng dẫn để tìm thông tin về "
-"cách tùy chỉnh ứng dụng cửa sổ."
+"không sử dụng KWin là bộ quản lí cửa sổ. Nếu bạn có phải sử dụng một bộ quản "
+"lí cửa sổ khác, vui lòng tham khảo tài liệu hướng dẫn để tìm thông tin về "
+"cách tuỳ chỉnh ứng dụng cửa sổ."
 
 #: main.cpp:187
 #, kde-format
@@ -1267,7 +1267,7 @@ msgid ""
 "is being moved or resized. The window position relative to the top-left "
 "corner of the screen is displayed together with its size."
 msgstr ""
-"Hãy bật tùy chọn này nếu khi bạn di chuyển hay thay đổi kích cỡ của cửa sổ, "
+"Hãy bật tuỳ chọn này nếu khi bạn di chuyển hay thay đổi kích cỡ của cửa sổ, "
 "bạn muốn vị trí và các chiều của cửa sổ được hiển thị. Vị trí của cửa sổ cân "
 "xứng với góc trái bên trên màn hình được hiển thị cùng với kích cỡ của sổ."
 
@@ -1432,173 +1432,3 @@ msgid ""
 "activation policy and will not work. You very likely want to use <em>Focus "
 "follows mouse (mouse precedence)</em> instead!"
 msgstr ""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Name: don't translate / Tên: đừng dịch

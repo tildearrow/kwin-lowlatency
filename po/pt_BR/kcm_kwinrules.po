@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"POT-Creation-Date: 2020-10-02 08:19+0200\n"
 "PO-Revision-Date: 2020-06-24 15:33-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -81,27 +81,27 @@ msgctxt "Window caption for the application wide rules dialog"
 msgid "Edit Application-Specific Settings"
 msgstr "Editar as configurações específicas do aplicativo"
 
-#: main.cpp:194
+#: main.cpp:197
 #, kde-format
 msgid "KWin"
 msgstr "KWin"
 
-#: main.cpp:201
+#: main.cpp:204
 #, kde-format
 msgid "KWin helper utility"
 msgstr "Utilitário de ajuda do KWin"
 
-#: main.cpp:202
+#: main.cpp:205
 #, kde-format
 msgid "KWin id of the window for special window settings."
 msgstr "O ID do KWin da janela para configurações especiais de janela."
 
-#: main.cpp:203
+#: main.cpp:206
 #, kde-format
 msgid "Whether the settings should affect all windows of the application."
 msgstr "Se as configurações deverão afetar todas as janelas de aplicativos."
 
-#: main.cpp:212
+#: main.cpp:215
 #, kde-format
 msgid "This helper utility is not supposed to be called directly."
 msgstr "Este assistente não pode ser chamado diretamente."

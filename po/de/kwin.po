@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-10 02:31+0200\n"
+"POT-Creation-Date: 2020-10-10 08:33+0200\n"
 "PO-Revision-Date: 2020-09-14 11:12+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -30,7 +30,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "thd@kde.org"
 
-#: abstract_client.cpp:2724
+#: abstract_client.cpp:2725
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -2597,7 +2597,7 @@ msgstr "Virtuelle Tastatur: Deaktiviert"
 msgid "Whether to show the virtual keyboard on demand."
 msgstr ""
 
-#: workspace.cpp:1349
+#: workspace.cpp:1363
 #, kde-format
 msgctxt "Introductory text shown in the support information."
 msgid ""

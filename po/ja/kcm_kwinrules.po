@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"POT-Creation-Date: 2020-10-02 08:19+0200\n"
 "PO-Revision-Date: 2015-05-23 16:23-0700\n"
 "Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -79,28 +79,28 @@ msgctxt "Window caption for the application wide rules dialog"
 msgid "Edit Application-Specific Settings"
 msgstr "アプリケーション固有の設定を編集"
 
-#: main.cpp:194
+#: main.cpp:197
 #, kde-format
 msgid "KWin"
 msgstr "KWin"
 
-#: main.cpp:201
+#: main.cpp:204
 #, kde-format
 msgid "KWin helper utility"
 msgstr "KWin ヘルパーユーティリティ"
 
-#: main.cpp:202
+#: main.cpp:205
 #, fuzzy, kde-format
 #| msgid "WId of the window for special window settings."
 msgid "KWin id of the window for special window settings."
 msgstr "特別なウィンドウ設定を適用するウィンドウの WId。"
 
-#: main.cpp:203
+#: main.cpp:206
 #, kde-format
 msgid "Whether the settings should affect all windows of the application."
 msgstr "この設定をアプリケーションのすべてのウィンドウに適用するかどうか。"
 
-#: main.cpp:212
+#: main.cpp:215
 #, kde-format
 msgid "This helper utility is not supposed to be called directly."
 msgstr "このヘルパーユーティリティは、直接実行されるものではありません。"

@@ -5,17 +5,15 @@ minorVer=1
 tinyPatch=0
 version=$(sed -rn "s/^set\(PROJECT_VERSION \"([0-9.]+)\"\)$/\1/p" CMakeLists.txt)
 
-#if [ $tinyPatch -gt 0 ]; then
-#  downversion=$version"."$tinyPatch
-#else
-#  downversion=$version
-#fi
-
-downversion=5.19.90
+if [ $tinyPatch -gt 0 ]; then
+  downversion=$version"."$tinyPatch
+else
+  downversion=$version
+fi
 
 cd ..
 if [ ! -e kwin-$downversion.tar.xz ]
-  then wget https://download.kde.org/unstable/plasma/$version/kwin-$downversion.tar.xz || exit 1
+  then wget https://download.kde.org/stable/plasma/$version/kwin-$downversion.tar.xz || exit 1
 fi
 
 tar -xf kwin-$downversion.tar.xz

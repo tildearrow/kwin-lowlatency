@@ -19,16 +19,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"POT-Creation-Date: 2020-10-02 08:19+0200\n"
 "PO-Revision-Date: 2020-07-03 20:44+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
-"Language-Team: French <kde-i18n-doc@kde.org>\n"
+"Language-Team: FR\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 20.08.1\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -96,31 +96,31 @@ msgctxt "Window caption for the application wide rules dialog"
 msgid "Edit Application-Specific Settings"
 msgstr "Modifier les réglages spécifiques à l'application"
 
-#: main.cpp:194
+#: main.cpp:197
 #, kde-format
 msgid "KWin"
 msgstr "KWin"
 
-#: main.cpp:201
+#: main.cpp:204
 #, kde-format
 msgid "KWin helper utility"
 msgstr "Assistant de KWin"
 
-#: main.cpp:202
+#: main.cpp:205
 #, kde-format
 msgid "KWin id of the window for special window settings."
 msgstr ""
 "Identifiant « Kwin » de la fenêtre pour des paramètres spécifiques de "
 "fenêtre."
 
-#: main.cpp:203
+#: main.cpp:206
 #, kde-format
 msgid "Whether the settings should affect all windows of the application."
 msgstr ""
 "Définit si les paramètres doivent s'appliquer à toutes les fenêtres de "
 "l'application."
 
-#: main.cpp:212
+#: main.cpp:215
 #, kde-format
 msgid "This helper utility is not supposed to be called directly."
 msgstr "Cet assistant n'est pas censé être appelé directement."

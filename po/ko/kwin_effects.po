@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-08-22 02:24+0200\n"
-"PO-Revision-Date: 2020-06-15 19:46+0200\n"
+"PO-Revision-Date: 2020-10-04 18:11+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -1001,13 +1001,13 @@ msgstr "실행 피드백 효과"
 #, kde-format
 msgctxt "Name of a KWin Effect"
 msgid "Thumbnail Aside"
-msgstr "미리 보기 그림"
+msgstr "옆쪽에 축소판"
 
 #: effect_builtins.cpp:557
 #, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Display window thumbnails on the edge of the screen"
-msgstr "화면의 모서리에 창의 미리 보기 그림을 표시합니다"
+msgstr "화면 모서리에 창의 축소판을 표시합니다"
 
 #: effect_builtins.cpp:571
 #, kde-format
@@ -1761,7 +1761,7 @@ msgstr "바탕 화면 배경 슬라이드"
 #: thumbnailaside/thumbnailaside_config.cpp:62
 #, kde-format
 msgid "Toggle Thumbnail for Current Window"
-msgstr "현재 창의 미리 보기 그림 켬/끔"
+msgstr "현재 창의 축소판 켬/끔"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: thumbnailaside/thumbnailaside_config.ui:23

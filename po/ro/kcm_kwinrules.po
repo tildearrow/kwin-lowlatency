@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-08 02:22+0200\n"
-"PO-Revision-Date: 2020-08-31 01:43+0100\n"
+"POT-Creation-Date: 2020-10-02 08:19+0200\n"
+"PO-Revision-Date: 2020-09-29 21:41+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
-"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
+"Language-Team: Romanian\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,27 +76,27 @@ msgctxt "Window caption for the application wide rules dialog"
 msgid "Edit Application-Specific Settings"
 msgstr "Editează configurări specifice aplicației"
 
-#: main.cpp:194
+#: main.cpp:197
 #, kde-format
 msgid "KWin"
 msgstr "KWin"
 
-#: main.cpp:201
+#: main.cpp:204
 #, kde-format
 msgid "KWin helper utility"
 msgstr "Utilitar KWin"
 
-#: main.cpp:202
+#: main.cpp:205
 #, kde-format
 msgid "KWin id of the window for special window settings."
 msgstr "Identificatorul KWin al ferestrei, pentru configurări speciale."
 
-#: main.cpp:203
+#: main.cpp:206
 #, kde-format
 msgid "Whether the settings should affect all windows of the application."
 msgstr "Dacă configurările să afecteze toate ferestrele aplicației."
 
-#: main.cpp:212
+#: main.cpp:215
 #, kde-format
 msgid "This helper utility is not supposed to be called directly."
 msgstr "Acest utilitar ajutător nu este proiectat pentru a fi apelat direct."
@@ -124,7 +124,7 @@ msgstr "Expresie regulată"
 #: optionsmodel.cpp:153
 #, kde-format
 msgid "Do Not Affect"
-msgstr "Nu afectează"
+msgstr "Nu afecta"
 
 #: optionsmodel.cpp:154
 #, kde-format
@@ -329,7 +329,7 @@ msgstr "Salvează regulile"
 #: package/contents/ui/RulesList.qml:96
 #, kde-format
 msgid "Add New..."
-msgstr "Adăugare noi..."
+msgstr "Adaugă noi..."
 
 #: package/contents/ui/RulesList.qml:107
 #, kde-format
@@ -579,7 +579,7 @@ msgstr "Ține dedesubt"
 #: rulesmodel.cpp:533
 #, kde-format
 msgid "Skip taskbar"
-msgstr "Nu folosi bara de sarcini"
+msgstr "Sari bara de sarcini"
 
 #: rulesmodel.cpp:535
 #, kde-format
@@ -589,7 +589,7 @@ msgstr "Fereastra (nu) va apărea în bara de procese."
 #: rulesmodel.cpp:539
 #, kde-format
 msgid "Skip pager"
-msgstr "Nu folosi paginatorul"
+msgstr "Sari paginatorul"
 
 #: rulesmodel.cpp:541
 #, kde-format
@@ -599,7 +599,7 @@ msgstr "Fereastra (nu) va apărea în administratorul birourilor virtuale"
 #: rulesmodel.cpp:545
 #, kde-format
 msgid "Skip switcher"
-msgstr "Nu folosi comutatorul"
+msgstr "Sari comutatorul"
 
 #: rulesmodel.cpp:547
 #, kde-format

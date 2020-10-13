@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"POT-Creation-Date: 2020-10-02 08:19+0200\n"
 "PO-Revision-Date: 2020-07-21 18:35+0400\n"
 "Last-Translator: Xəyyam Qocayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -73,27 +73,27 @@ msgctxt "Window caption for the application wide rules dialog"
 msgid "Edit Application-Specific Settings"
 msgstr "Göstərilən tətbiqlər üçün parametrləri ayarlamaq"
 
-#: main.cpp:194
+#: main.cpp:197
 #, kde-format
 msgid "KWin"
 msgstr "KWin"
 
-#: main.cpp:201
+#: main.cpp:204
 #, kde-format
 msgid "KWin helper utility"
 msgstr "KWin köməkçi vasitəsi"
 
-#: main.cpp:202
+#: main.cpp:205
 #, kde-format
 msgid "KWin id of the window for special window settings."
 msgstr "Xüsusi pəncərə ayarları üçün pəncərənin KWin İD-si"
 
-#: main.cpp:203
+#: main.cpp:206
 #, kde-format
 msgid "Whether the settings should affect all windows of the application."
 msgstr "Ayarların tətbiqin bütün pəncərələrinə təsir edib etməməsi."
 
-#: main.cpp:212
+#: main.cpp:215
 #, kde-format
 msgid "This helper utility is not supposed to be called directly."
 msgstr "Bu köməkçi vasitə müstəqil proqram kimi başladıla bilməz."

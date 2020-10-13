@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-10 02:31+0200\n"
+"POT-Creation-Date: 2020-10-10 08:33+0200\n"
 "PO-Revision-Date: 2020-09-03 14:01-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 "diniz.bortolotto@gmail.com, rodrigo@conectiva.com.br, lisiane@kdemail.net, "
 "alvarenga@kde.org, camila.moura@kde.org, elchevive@opensuse.org"
 
-#: abstract_client.cpp:2724
+#: abstract_client.cpp:2725
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -2584,7 +2584,7 @@ msgstr "Teclado virtual: desabilitado"
 msgid "Whether to show the virtual keyboard on demand."
 msgstr "Se deve mostrar ou não o teclado virtual por solicitação."
 
-#: workspace.cpp:1349
+#: workspace.cpp:1363
 #, kde-format
 msgctxt "Introductory text shown in the support information."
 msgid ""

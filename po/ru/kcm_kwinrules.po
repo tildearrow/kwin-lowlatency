@@ -4,7 +4,7 @@
 # Gregory Mokhin <mok@kde.ru>, 2005.
 # Leonid Kanter <leon@asplinux.ru>, 2005.
 # Andrey Cherepanov <skull@kde.ru>, 2009.
-# Alexander Potashev <aspotashev@gmail.com>, 2010, 2011, 2012, 2014, 2015, 2016, 2017, 2019.
+# Alexander Potashev <aspotashev@gmail.com>, 2010, 2011, 2012, 2014, 2015, 2016, 2017, 2019, 2020.
 # Alexey D. <lq07829icatm@rambler.ru>, 2012.
 # Yuri Efremov <yur.arh@gmail.com>, 2012, 2013.
 # Alexander Lakhin <exclusion@gmail.com>, 2013.
@@ -13,15 +13,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-08 02:22+0200\n"
-"PO-Revision-Date: 2020-05-07 16:49+0300\n"
-"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"POT-Creation-Date: 2020-10-02 08:19+0200\n"
+"PO-Revision-Date: 2020-10-04 14:18+0200\n"
+"Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.04.0\n"
+"X-Generator: Lokalize 19.12.2\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Environment: kde\n"
@@ -84,27 +84,27 @@ msgctxt "Window caption for the application wide rules dialog"
 msgid "Edit Application-Specific Settings"
 msgstr "Настройка параметров для указанных приложений"
 
-#: main.cpp:194
+#: main.cpp:197
 #, kde-format
 msgid "KWin"
 msgstr "KWin"
 
-#: main.cpp:201
+#: main.cpp:204
 #, kde-format
 msgid "KWin helper utility"
 msgstr "Вспомогательная утилита KWin"
 
-#: main.cpp:202
+#: main.cpp:205
 #, kde-format
 msgid "KWin id of the window for special window settings."
 msgstr "Идентификатор окна KWin"
 
-#: main.cpp:203
+#: main.cpp:206
 #, kde-format
 msgid "Whether the settings should affect all windows of the application."
 msgstr "Применять параметры для всех окон приложения"
 
-#: main.cpp:212
+#: main.cpp:215
 #, kde-format
 msgid "This helper utility is not supposed to be called directly."
 msgstr ""
@@ -303,15 +303,13 @@ msgstr "%1 %"
 #, kde-format
 msgctxt "Coordinates (x, y)"
 msgid "(%1, %2)"
-msgstr "(%1, %2)"
+msgstr "(%1; %2)"
 
 #: package/contents/ui/RulesEditor.qml:211
-#, fuzzy, kde-format
-#| msgctxt "Coordinates (x, y)"
-#| msgid "(%1, %2)"
+#, kde-format
 msgctxt "Size (width, height)"
 msgid "(%1, %2)"
-msgstr "(%1, %2)"
+msgstr "(%1; %2)"
 
 #: package/contents/ui/RulesList.qml:59
 #, kde-format

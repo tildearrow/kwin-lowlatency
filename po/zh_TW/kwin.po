@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-10 02:31+0200\n"
+"POT-Creation-Date: 2020-10-10 08:33+0200\n"
 "PO-Revision-Date: 2020-03-18 20:58+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
@@ -38,7 +38,7 @@ msgstr ""
 "kenduest@i18n.linux.org.tw,iitze@hotmail.com, s8321414@gmail.com, "
 "pan93412@gmail.com"
 
-#: abstract_client.cpp:2724
+#: abstract_client.cpp:2725
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -2551,7 +2551,7 @@ msgstr "虛擬鍵盤狀態：停用"
 msgid "Whether to show the virtual keyboard on demand."
 msgstr "設定是否要在需要時顯示虛擬鍵盤。"
 
-#: workspace.cpp:1349
+#: workspace.cpp:1363
 #, kde-format
 msgctxt "Introductory text shown in the support information."
 msgid ""

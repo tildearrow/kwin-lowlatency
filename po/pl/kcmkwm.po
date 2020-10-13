@@ -1,6 +1,6 @@
 # translation of kcmkwm.po to Polish
 # translation of kcmkwm.po to
-# Version: $Revision: 1577989 $
+# Version: $Revision: 1580266 $
 # Previous translations Piotr Roszatycki <dexter@debian.org>
 # Michał Rudolf <mrudolf@kdewebdev.org>, 2002.
 # Michal Rudolf <mrudolf@kdewebdev.org>, 2002, 2003, 2004.
@@ -8,38 +8,41 @@
 # Krzysztof Lichota <lichota@mimuw.edu.pl>, 2005, 2006.
 # Marta Rybczyńska <kde-i18n@rybczynska.net>, 2008, 2009, 2010, 2013.
 # Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2019.
+# Ignacy Kajdan <ignacy.kajdan@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-08-29 02:26+0200\n"
-"PO-Revision-Date: 2019-12-02 09:51+0100\n"
-"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"PO-Revision-Date: 2020-09-20 10:27+0200\n"
+"Last-Translator: Ignacy Kajdan <ignacy.kajdan@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 ">\n"
-"X-Generator: Lokalize 19.07.70\n"
+"X-Generator: Lokalize 20.07.70\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Michał Rudolf, Piotr Roszatycki, Łukasz Wojniłowicz"
+msgstr "Michał Rudolf, Piotr Roszatycki, Łukasz Wojniłowicz, Ignacy Kajdan"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "mrudolf@kdewebdev.org, dexter@debian.org, lukasz.wojnilowicz@gmail.com"
+msgstr ""
+"mrudolf@kdewebdev.org, dexter@debian.org, lukasz.wojnilowicz@gmail.com, "
+"ignacy.kajdan@gmail.com"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
 #: actions.ui:17
 #, kde-format
 msgid "Inactive Inner Window Actions"
-msgstr "Działania wnętrze nieaktywnego okna"
+msgstr "Działania wewnątrz nieaktywnego okna"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_1)
@@ -56,7 +59,7 @@ msgid ""
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
 "Tu możesz ustawić zachowanie przy kliknięciu lewym przyciskiem myszy we "
-"wnętrzu nieaktywnego okna ('wnętrze' oznacza: nie pasek tytułu, nie "
+"wnętrzu nieaktywnego okna („wnętrze” oznacza: nie pasek tytułu, nie "
 "obramowanie)."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow1)
@@ -65,7 +68,7 @@ msgstr ""
 #: actions.ui:43 actions.ui:83 actions.ui:123
 #, kde-format
 msgid "Activate, raise and pass click"
-msgstr "Uaktywnij, przywołaj i kliknij"
+msgstr "Uaktywnia, przywołuje i klika"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow1)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow2)
@@ -73,7 +76,7 @@ msgstr "Uaktywnij, przywołaj i kliknij"
 #: actions.ui:48 actions.ui:88 actions.ui:128
 #, kde-format
 msgid "Activate and pass click"
-msgstr "Uaktywnij i kliknij"
+msgstr "Uaktywnia i klika"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
@@ -97,7 +100,7 @@ msgstr "Uaktywnia"
 #: mouse.ui:513
 #, kde-format
 msgid "Activate and raise"
-msgstr "Uaktywnij i przywołaj"
+msgstr "Uaktywnia i przywołuje"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -114,7 +117,7 @@ msgid ""
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
 "Tu możesz ustawić zachowanie przy kliknięciu środkowym przyciskiem myszy we "
-"wnętrzu nieaktywnego okna ('wnętrze' oznacza: nie pasek tytułu, nie "
+"wnętrzu nieaktywnego okna („wnętrze” oznacza: nie pasek tytułu, nie "
 "obramowanie)."
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
@@ -132,7 +135,7 @@ msgid ""
 "inactive inner window ('inner' means: not titlebar, not frame)."
 msgstr ""
 "Tu możesz ustawić zachowanie przy kliknięciu prawym przyciskiem myszy we "
-"wnętrzu nieaktywnego okna ('wnętrze' oznacza: nie pasek tytułu, nie "
+"wnętrzu nieaktywnego okna („wnętrze” oznacza: nie pasek tytułu, nie "
 "obramowanie)."
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -140,7 +143,7 @@ msgstr ""
 #: actions.ui:146 mouse.ui:88
 #, kde-format
 msgid "Mouse &wheel:"
-msgstr "&Rolka myszy:"
+msgstr "R&olka myszy:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandWindowWheel)
 #: actions.ui:159
@@ -150,7 +153,7 @@ msgid ""
 "window ('inner' means: not titlebar, not frame)."
 msgstr ""
 "Tu możesz ustawić działanie przewijania rolką myszy we wnętrzu nieaktywnego "
-"okna ('wnętrze' oznacza: nie pasek tytułu, nie obramowanie)."
+"okna („wnętrze” oznacza: nie pasek tytułu, nie obramowanie)."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindowWheel)
 #: actions.ui:163
@@ -162,13 +165,13 @@ msgstr "Przewija"
 #: actions.ui:168
 #, kde-format
 msgid "Activate and scroll"
-msgstr "Uaktywnij i przewiń"
+msgstr "Uaktywnia i przewija"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindowWheel)
 #: actions.ui:173
 #, kde-format
 msgid "Activate, raise and scroll"
-msgstr "Uaktywnij, przywołaj i przewiń"
+msgstr "Uaktywnia, przywołuje i przewija"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: actions.ui:184
@@ -239,7 +242,7 @@ msgstr "Przesuwa"
 #: actions.ui:270 actions.ui:340 actions.ui:410
 #, kde-format
 msgid "Activate, raise and move"
-msgstr "Uaktywnij, przywołaj i przesuń"
+msgstr "Uaktywnia, przywołuje i przesuwa"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar1)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
@@ -254,7 +257,7 @@ msgstr "Uaktywnij, przywołaj i przesuń"
 #: mouse.ui:361 mouse.ui:423 mouse.ui:476 mouse.ui:538
 #, kde-format
 msgid "Toggle raise and lower"
-msgstr "Przywołaj/odwołaj"
+msgstr "Przywołuje/odwołuje"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
@@ -319,7 +322,7 @@ msgstr "Minimalizuje"
 #: actions.ui:300 actions.ui:370 actions.ui:440
 #, kde-format
 msgid "Decrease opacity"
-msgstr "Zmniejsz nieprzezroczystość"
+msgstr "Zmniejsza nieprzezroczystość"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
@@ -327,7 +330,7 @@ msgstr "Zmniejsz nieprzezroczystość"
 #: actions.ui:305 actions.ui:375 actions.ui:445
 #, kde-format
 msgid "Increase opacity"
-msgstr "Zwiększ nieprzezroczystość"
+msgstr "Zwiększa nieprzezroczystość"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
@@ -347,7 +350,7 @@ msgstr "Zwiększ nieprzezroczystość"
 #: mouse.ui:501 mouse.ui:563
 #, kde-format
 msgid "Do nothing"
-msgstr "Nic nie rób"
+msgstr "Nic nie robi"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: actions.ui:318
@@ -395,7 +398,7 @@ msgid ""
 "Here you can customize KDE's behavior when scrolling with the mouse wheel in "
 "a window while pressing the modifier key."
 msgstr ""
-"Tu możesz ustawić działanie kółka myszy w oknie, jeśli wciśnięty jest "
+"Tu możesz ustawić działanie rolki myszy w oknie, jeśli wciśnięty jest "
 "klawisz odmieniający."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
@@ -403,42 +406,42 @@ msgstr ""
 #: actions.ui:475 mouse.ui:102
 #, kde-format
 msgid "Raise/lower"
-msgstr "Przywołaj/odwołaj"
+msgstr "Przywołuje/odwołuje"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
 #: actions.ui:480 mouse.ui:107
 #, kde-format
 msgid "Shade/unshade"
-msgstr "Zwiń/rozwiń"
+msgstr "Zwija/rozwija"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
 #: actions.ui:485 mouse.ui:112
 #, kde-format
 msgid "Maximize/restore"
-msgstr "Maksymalizuj/przywróć"
+msgstr "Maksymalizuje/przywraca"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
 #: actions.ui:490 mouse.ui:117
 #, kde-format
 msgid "Keep above/below"
-msgstr "Przesuń na wierzch/spód"
+msgstr "Przesuwa na wierzch/spód"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
 #: actions.ui:495 mouse.ui:122
 #, kde-format
 msgid "Move to previous/next desktop"
-msgstr "Przenieś na poprzedni/następny pulpit"
+msgstr "Przenosi na poprzedni/następny pulpit"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
 #: actions.ui:500 mouse.ui:127
 #, kde-format
 msgid "Change opacity"
-msgstr "Zmień nieprzezroczystość"
+msgstr "Zmienia nieprzezroczystość"
 
 #. i18n: ectx: property (text), widget (QLabel, shadeHoverLabel)
 #: advanced.ui:20
@@ -562,7 +565,7 @@ msgstr "Zmaksymalizowane"
 #: advanced.ui:90
 #, kde-format
 msgid "Cascaded"
-msgstr "Kaskadowo"
+msgstr "Kaskadowe"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
 #: advanced.ui:95
@@ -596,12 +599,15 @@ msgid ""
 "windows are allowed to do so. This will override the window placement mode "
 "defined above."
 msgstr ""
+"Po włączeniu, aplikacje KDE, które są w stanie zapamiętać pozycje swoich "
+"okien, mogą to robić. Spowoduje to zastąpienie trybu umieszczania okna "
+"zdefiniowane powyżej."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowKDEAppsToRememberWindowPositions)
 #: advanced.ui:121
 #, kde-format
 msgid "Allow KDE apps to remember the positions of their own windows"
-msgstr ""
+msgstr "Pozwól aplikacjom KDE zapamiętywać pozycje okien"
 
 #. i18n: ectx: property (text), widget (QLabel, specialWindowsLabel)
 #: advanced.ui:128
@@ -760,7 +766,7 @@ msgstr ""
 "aplikacji. To ustawienie jest prawdopodobnie nieużyteczne bez ustawienia "
 "Uaktywniania myszą.</li><li style=\" margin-top:0px; margin-bottom:12px; "
 "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"\"><span style=\" font-style:italic;\">Ekstremalna:</span> Wszystkie okna "
+"\"><span style=\" font-style:italic;\">Najwyższa:</span> Wszystkie okna "
 "muszą być jednoznacznie uaktywnione przez użytkownika.</li></ul><p>Okna, "
 "którym uniemożliwiono uaktywnienie zostaną oznaczone jako te wymagające "
 "uwagi, co domyślnie oznacza, że na pasku zadań zostaną one podświetlone. "
@@ -802,7 +808,7 @@ msgstr "Wysoka"
 #: focus.ui:138
 #, kde-format
 msgid "Extreme"
-msgstr "Ekstremalna"
+msgstr "Najwyższa"
 
 #. i18n: ectx: property (text), widget (QLabel, raisingWindowsLabel)
 #: focus.ui:146
@@ -901,10 +907,9 @@ msgstr "O&sobno uaktywniaj każdy ekran"
 
 #. i18n: ectx: property (text), widget (QLabel, windowFocusPolicyDescriptionLabel)
 #: focus.ui:229
-#, fuzzy, kde-format
-#| msgid "Window &activation policy:"
+#, kde-format
 msgid "Window activation policy description"
-msgstr "Zasady u&aktywniania okien:"
+msgstr "Opis zasad aktywacji okien"
 
 #: main.cpp:73
 #, kde-format
@@ -996,7 +1001,7 @@ msgid ""
 "manager. If you do use a different window manager, please refer to its "
 "documentation for how to customize window behavior.</p>"
 msgstr ""
-"<p><h1>Zachowanie okien</h1>Tu możesz ustawić sposób zachowania okien "
+"<p><h1>Zachowanie okien</h1> Tu możesz ustawić sposób zachowania okien "
 "podczas ich przesuwania, zmiany rozmiaru lub po kliknięciu. Możesz też "
 "określić sposób uaktywniania okien i metodę rozmieszczania na ekranie nowych "
 "okien.</p><p>Uwaga: ustawienia dotyczą jedynie domyślnego programu do "
@@ -1029,7 +1034,7 @@ msgstr "&Dwukrotne kliknięcie:"
 #: mouse.ui:36
 #, kde-format
 msgid "Behavior on <em>double</em> click into the titlebar."
-msgstr "Zachowanie przy <em>dwukrotnym</em> kliknięciu na tytule okna."
+msgstr "Zachowanie przy <em>dwukrotnym</em> kliknięciu na pasku tytułu okna."
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
@@ -1049,7 +1054,7 @@ msgstr "Maksymalizuje"
 #: mouse.ui:45 mouse.ui:620 mouse.ui:655 mouse.ui:690
 #, kde-format
 msgid "Vertically maximize"
-msgstr ""
+msgstr "Maksymalizuj w pionie"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
@@ -1059,7 +1064,7 @@ msgstr ""
 #: mouse.ui:50 mouse.ui:625 mouse.ui:660 mouse.ui:695
 #, kde-format
 msgid "Horizontally maximize"
-msgstr ""
+msgstr "Maksymalizuj w poziomie"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
@@ -1094,13 +1099,13 @@ msgstr "Zamyka"
 #: mouse.ui:75
 #, kde-format
 msgid "Show on all desktops"
-msgstr "Pokaż na wszystkich pulpitach"
+msgstr "Pokazuje na wszystkich pulpitach"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandTitlebarWheel)
 #: mouse.ui:98
 #, kde-format
 msgid "Behavior on <em>mouse wheel</em> scroll over the titlebar."
-msgstr "Zachowanie dla <em>rolki myszy</em> przewijanej na pasku tytułu."
+msgstr "Zachowanie przy przewinięciu <em>rolką myszy</em> na pasku tytułu."
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: mouse.ui:143
@@ -1129,8 +1134,8 @@ msgid ""
 "Behavior on <em>left</em> click into the titlebar or frame of an <em>active</"
 "em> window."
 msgstr ""
-"Zachowanie przy kliknięciu <em>lewym</em> przyciskiem myszy na tytule lub "
-"brzegu <em>aktywnego</em> okna."
+"Zachowanie przy kliknięciu <em>lewym</em> przyciskiem myszy na pasku tytułu "
+"lub brzegu <em>aktywnego</em> okna."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandActiveTitlebar1)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
@@ -1142,7 +1147,7 @@ msgstr ""
 #: mouse.ui:558
 #, kde-format
 msgid "Show actions menu"
-msgstr "Pokaż menu działań"
+msgstr "Pokazuje menu działań"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandInactiveTitlebar1)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandInactiveTitlebar2)
@@ -1153,8 +1158,8 @@ msgid ""
 "Behavior on <em>left</em> click into the titlebar or frame of an "
 "<em>inactive</em> window."
 msgstr ""
-"Zachowanie przy kliknięciu <em>lewym</em> przyciskiem myszy na tytule lub "
-"brzegu <em>nieaktywnego</em> okna."
+"Zachowanie przy kliknięciu <em>lewym</em> przyciskiem myszy na pasku tytułu "
+"lub brzegu <em>nieaktywnego</em> okna."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar1)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
@@ -1240,7 +1245,7 @@ msgid ""
 "Here you can set the snap zone for screen edges, i.e. the 'strength' of the "
 "magnetic field which will make windows snap to the border when moved near it."
 msgstr ""
-"Tutaj możesz ustawić obszar przyciągania dla brzegów ekranu, tj. 'siłę' pola "
+"Tutaj możesz ustawić obszar przyciągania dla brzegów ekranu, tj. „siłę” pola "
 "magnetycznego, które sprawia, że okna zostają przyciągane do brzegów ekranu, "
 "będąc w ich pobliżu."
 
@@ -1260,7 +1265,7 @@ msgid ""
 "magnetic field which will make windows snap to each other when they are "
 "moved near another window."
 msgstr ""
-"Tutaj możesz ustawić strefę przyciągania dla okien, tj. 'siłę' pola "
+"Tutaj możesz ustawić strefę przyciągania dla okien, tj. „siłę” pola "
 "magnetycznego, które sprawia, że okna zostają przyciągane jedno do drugiego, "
 "będąc w swoim pobliżu."
 
@@ -1272,7 +1277,7 @@ msgid ""
 "the magnetic field which will make windows snap to the center of the screen "
 "when moved near it."
 msgstr ""
-"Tutaj możesz ustawić strefę przyciągania dla środka ekranu, tj. 'siłę' pola "
+"Tutaj możesz ustawić strefę przyciągania dla środka ekranu, tj. „siłę” pola "
 "magnetycznego, które sprawia, że okna zostają przyciągane do środka ekranu, "
 "będąc w jego pobliżu."
 
@@ -1313,31 +1318,17 @@ msgid "&Snap windows:"
 msgstr "&Przyciągaj okna:"
 
 #: windows.cpp:87
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus:"
-#| "</span> A window becomes active when you click into it. This behavior is "
-#| "common on other operating systems and likely what you want.</p></body></"
-#| "html>"
+#, kde-format
 msgid ""
 "<em>Click to focus:</em> A window becomes active when you click into it. "
 "This behavior is common on other operating systems and likely what you want."
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Kliknięcie "
-"uaktywnia</span>Okno uaktywnia się, po kliknięciu na nim. Zachowanie to jest "
-"powszechne na innych systemach operacyjnych i jest prawdopodobnie tym czego "
-"chcesz.</p></body></html>"
+"<em>Kliknięcie uaktywnia:</em> Okno uaktywnia się, po kliknięciu na nim. "
+"Zachowanie to jest powszechne na innych systemach operacyjnych i jest "
+"prawdopodobnie tym czego chcesz."
 
 #: windows.cpp:91
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus "
-#| "(mouse precedence):</span> Mostly the same as <span style=\" font-style:"
-#| "italic;\">Click to focus</span>. If an active window has to be chosen by "
-#| "the system (eg. because the currently active one was closed) the window "
-#| "under the mouse is the preferred candidate. Unusual, but possible variant "
-#| "of <span style=\" font-style:italic;\">Click to focus</span>.</p></body></"
-#| "html>"
+#, kde-format
 msgid ""
 "<em>Click to focus (mouse precedence):</em> Mostly the same as <em>Click to "
 "focus</em>. If an active window has to be chosen by the system (eg. because "
@@ -1345,68 +1336,41 @@ msgid ""
 "preferred candidate. Unusual, but possible variant of <em>Click to focus</"
 "em>."
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Kliknięcie "
-"uaktywnia (mysz ma pierwszeństwo)</span>Jest to odmiana trybu <span style=\" "
-"font-style:italic;\">Kliknięcie uaktywnia</span>. Gdy system wybiera okno, "
-"które uaktywnić (bo np. poprzednie zostało zamknięte), to okno pod "
-"wskaźnikiem myszy ma pierwszeństwo. Niezbyt powszechna, ale możliwa odmiana "
-"trybu <span style=\" font-style:italic;\">Kliknięcie uaktywnia</span>.</p></"
-"body></html>"
+"<em>Kliknięcie uaktywnia (mysz ma pierwszeństwo):</em> Jest to odmiana trybu "
+"<em>Kliknięcie uaktywnia</em>. Gdy system wybiera okno, które uaktywnić (bo "
+"np. poprzednie zostało zamknięte), to okno pod wskaźnikiem myszy ma "
+"pierwszeństwo. Niezbyt powszechna, ale możliwa odmiana trybu <em>Kliknięcie "
+"uaktywnia</em>."
 
 #: windows.cpp:96
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus follows "
-#| "mouse:</span> Moving the mouse onto a window will activate it. Eg. "
-#| "windows randomly appearing under the mouse will not gain the focus. <span "
-#| "style=\" font-style:italic;\">Focus stealing prevention</span> takes "
-#| "place as usual. Think as <span style=\" font-style:italic;\">Click to "
-#| "focus</span> just without having to actually click.</p></body></html>"
+#, kde-format
 msgid ""
 "<em>Focus follows mouse:</em> Moving the mouse onto a window will activate "
 "it. Eg. windows randomly appearing under the mouse will not gain the focus. "
 "<em>Focus stealing prevention</em> takes place as usual. Think as <em>Click "
 "to focus</em> just without having to actually click."
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Uaktywnienie "
-"podąża za myszą:</span>Najechanie wskaźnikiem myszy na okno, uaktywnia je. "
-"Okna losowo ukazujące się pod myszą nie zostaną uaktywnione. Jak zwykle "
-"<span style=\" font-style:italic;\">Zapobieganie przechwyceniu uaktywnienia</"
-"span> także jest brane pod uwagę. Jest to odmiana trybu <span style=\" font-"
-"style:italic;\">Kliknięcie uaktywnia</span>, lecz bez konieczności klikania."
-"</p></body></html>"
+"<em>Uaktywnienie podąża za myszą:</em> Najechanie wskaźnikiem myszy na okno, "
+"uaktywnia je. Okna losowo ukazujące się pod myszą nie zostaną uaktywnione. "
+"Jak zwykle <em>Zapobieganie przechwyceniu uaktywnienia</em> także jest brane "
+"pod uwagę. Jest to odmiana trybu <em>Kliknięcie uaktywnia</em>, lecz bez "
+"konieczności klikania."
 
 #: windows.cpp:100
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p>This is mostly the same as <span style=\" font-"
-#| "style:italic;\">Focus follows mouse</span>. If an active window has to be "
-#| "chosen by the system (eg. because the currently active one was closed) "
-#| "the window under the mouse is the preferred candidate. Choose this, if "
-#| "you want a hover controlled focus.</p></body></html>"
+#, kde-format
 msgid ""
 "This is mostly the same as <em>Focus follows mouse</em>. If an active window "
 "has to be chosen by the system (eg. because the currently active one was "
 "closed) the window under the mouse is the preferred candidate. Choose this, "
 "if you want a hover controlled focus."
 msgstr ""
-"<html><head/><body><p>Jest to odmiana trybu <span style=\" font-style:italic;"
-"\">Uaktywnienie podąża za myszą</span>Gdy system wybiera okno, które "
-"uaktywnić (bo np. poprzednie zostało zamknięte), to okno pod wskaźnikiem "
-"myszy ma pierwszeństwo. Wybierz, aby uaktywniać po najechaniu myszą.</p></"
-"body></html>"
+"Jest to odmiana trybu <em>Uaktywnienie podąża za myszą</em>. Gdy system "
+"wybiera okno, które uaktywnić (bo np. poprzednie zostało zamknięte), to okno "
+"pod wskaźnikiem myszy ma pierwszeństwo. Wybierz, aby uaktywniać po "
+"najechaniu myszą."
 
 #: windows.cpp:105
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus under "
-#| "mouse:</span> The focus always remains on the window under the mouse.<br/"
-#| "><span style=\" font-weight:600;\">Warning: </span><span style=\" font-"
-#| "style:italic;\">Focus stealing prevention</span> and the <span style=\" "
-#| "font-style:italic;\">tabbox ('Alt+Tab') </span>contradict the activation "
-#| "policy and will not work. You very likely want to use <span style=\" font-"
-#| "style:italic;\">Focus follows mouse (mouse precedence)</span> instead!</"
-#| "p></body></html>"
+#, kde-format
 msgid ""
 "<em>Focus under mouse:</em> The focus always remains on the window under the "
 "mouse.<br/><strong>Warning:</strong> <em>Focus stealing prevention</em> and "
@@ -1414,27 +1378,14 @@ msgid ""
 "not work. You very likely want to use <em>Focus follows mouse (mouse "
 "precedence)</em> instead!"
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Uaktywnienie pod "
-"myszą:</span>Uaktywnienie zawsze utrzymuje się na oknie pod wskaźnikiem "
-"myszy.<span style=\" font-weight:600;\">Uwaga:</span><span style=\" font-"
-"style:italic;\">Ochrona przed zmianą aktywnego okna</span> i <span style=\" "
-"font-style:italic;\">pole kart (\"Alt+Tab\")</span> zaprzecza tej zasadzie i "
-"nie zadziała. W tym przypadku lepiej wybrać <span style=\" font-style:italic;"
-"\">Uaktywnienie podąża za myszą (pierwszeństwo myszy)</span>!</p></body></"
-"html>"
+"<em>Uaktywnienie pod myszą:</em> Uaktywnienie zawsze utrzymuje się na oknie "
+"pod wskaźnikiem myszy.<br/><strong>Uwaga:</strong> <em>Ochrona przed zmianą "
+"aktywnego okna</em> i <em>pole kart („Alt+Tab”)</em> zaprzecza tej zasadzie "
+"i nie zadziała. W tym przypadku lepiej wybrać <em>Uaktywnienie podąża za "
+"myszą (pierwszeństwo myszy)</em>."
 
 #: windows.cpp:109
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus strictly "
-#| "under mouse:</span> The focus is always on the window under the mouse (in "
-#| "doubt nowhere) very much like the focus behavior in an unmanaged legacy "
-#| "X11 environment.<br/><span style=\" font-weight:600;\">Warning: </"
-#| "span><span style=\" font-style:italic;\">Focus stealing prevention</span> "
-#| "and the <span style=\" font-style:italic;\">tabbox ('Alt+Tab') </"
-#| "span>contradict the activation policy and will not work. You very likely "
-#| "want to use <span style=\" font-style:italic;\">Focus follows mouse "
-#| "(mouse precedence)</span> instead!</p></body></html>"
+#, kde-format
 msgid ""
 "<em>Focus strictly under mouse:</em> The focus is always on the window under "
 "the mouse (in doubt nowhere) very much like the focus behavior in an "
@@ -1443,13 +1394,9 @@ msgid ""
 "activation policy and will not work. You very likely want to use <em>Focus "
 "follows mouse (mouse precedence)</em> instead!"
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Uaktywnienie "
-"wyłącznie pod myszą:</span>Uaktywnione jest zawsze okno pod wskaźnikiem "
-"myszy - przy wątpliwościach nic nie jest uaktywnione -bardzo prawdopodobne, "
-"że zachowanie uaktywnienia jest niekontynuowanym przestarzałym środowiskiem "
-"X11.<br/><span style=\" font-weight:600;\">Uwaga:</span><span style=\" font-"
-"style:italic;\">Ochrona przed zmianą aktywnego okna</span> i <span style=\" "
-"font-style:italic;\">pole kart (\"Alt+Tab\")</span>zaprzecza tej zasadzie i "
-"nie zadziała. W tym przypadku prawdopodobnie chcesz użyć <span style=\" font-"
-"style:italic;\">Uaktywnienie podąża za myszą (mysz ma pierwszeństwo)</span>!"
-"</p></body></html>"
+"<em>Uaktywnienie wyłącznie pod myszą:</em> Uaktywnione jest zawsze okno pod "
+"wskaźnikiem myszy (w razie wątpliwości nic nie jest uaktywnione), podobnie "
+"jak w niezarządzanym środowisku X11.<br/><strong>Uwaga:</strong> <em>Ochrona "
+"przed zmianą aktywnego okna</em> i <em>pole kart („Alt+Tab”)</em> zaprzecza "
+"tej zasadzie i nie zadziała. W tym przypadku prawdopodobnie chcesz użyć "
+"<em>Uaktywnienie podąża za myszą (mysz ma pierwszeństwo)</em>."

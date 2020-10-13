@@ -8,7 +8,7 @@ rm -r po
 
 cd ..
 if [ ! -e kwin-$version.tar.xz ]
-  then wget https://download.kde.org/unstable/plasma/$version/kwin-$version.tar.xz || exit 1
+  then wget https://download.kde.org/stable/plasma/$version/kwin-$version.tar.xz || exit 1
 fi
 
 tar -xf kwin-$version.tar.xz

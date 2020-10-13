@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-06 02:25+0200\n"
+"POT-Creation-Date: 2020-10-10 08:33+0200\n"
 "PO-Revision-Date: 2015-08-27 20:54+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 "knut.yrvin@gmail.com,gluras@c2i.net,khollund@responze.net,"
 "zerodogg@skolelinux.no"
 
-#: abstract_client.cpp:2724
+#: abstract_client.cpp:2725
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -1507,12 +1507,12 @@ msgstr "Skru av oppsettsvalg"
 msgid "Indicate that KWin has recently crashed n times"
 msgstr "Vis at KWin har nylig krasjet n ganger"
 
-#: main_wayland.cpp:463
+#: main_wayland.cpp:459
 #, kde-format
 msgid "Start a rootless Xwayland server."
 msgstr "Start en rotløs Xwayland-tjener"
 
-#: main_wayland.cpp:465
+#: main_wayland.cpp:461
 #, kde-format
 msgid ""
 "Name of the Wayland socket to listen on. If not set \"wayland-0\" is used."
@@ -1520,100 +1520,100 @@ msgstr ""
 "Navn på Wayland-sokkelen det lyttes på. «wayland-0» brukes hvis ingenting er "
 "satt."
 
-#: main_wayland.cpp:468
+#: main_wayland.cpp:464
 #, kde-format
 msgid "Render to framebuffer."
 msgstr "Tegn opp til framebuffer."
 
-#: main_wayland.cpp:470
+#: main_wayland.cpp:466
 #, kde-format
 msgid "The framebuffer device to render to."
 msgstr "Framebuffer-enheten det skal tegnes til."
 
-#: main_wayland.cpp:473
+#: main_wayland.cpp:469
 #, kde-format
 msgid "The X11 Display to use in windowed mode on platform X11."
 msgstr "X11-displayet som ska brukes i vindusmodus på plattformen X11."
 
-#: main_wayland.cpp:476
+#: main_wayland.cpp:472
 #, kde-format
 msgid "The Wayland Display to use in windowed mode on platform Wayland."
 msgstr "Wayland-displayet som ska brukes i vindusmodus på plattformen Wayland."
 
-#: main_wayland.cpp:478
+#: main_wayland.cpp:474
 #, kde-format
 msgid "Render to a virtual framebuffer."
 msgstr ""
 
-#: main_wayland.cpp:480
+#: main_wayland.cpp:476
 #, kde-format
 msgid "The width for windowed mode. Default width is 1024."
 msgstr "Bredden for vindusmodus. Standardverdi er 1024."
 
-#: main_wayland.cpp:484
+#: main_wayland.cpp:480
 #, kde-format
 msgid "The height for windowed mode. Default height is 768."
 msgstr "Høyden for vindusmodus. Standardverdi er 768."
 
-#: main_wayland.cpp:489
+#: main_wayland.cpp:485
 #, kde-format
 msgid "The scale for windowed mode. Default value is 1."
 msgstr ""
 
-#: main_wayland.cpp:494
+#: main_wayland.cpp:490
 #, kde-format
 msgid ""
 "The number of windows to open as outputs in windowed mode. Default value is 1"
 msgstr ""
 
-#: main_wayland.cpp:524
+#: main_wayland.cpp:520
 #, kde-format
 msgid "Use libhybris hwcomposer"
 msgstr "Bruk libhybris hwcomposer"
 
-#: main_wayland.cpp:530
+#: main_wayland.cpp:526
 #, kde-format
 msgid ""
 "Enable libinput support for input events processing. Note: never use in a "
 "nested session.\t(deprecated)"
 msgstr ""
 
-#: main_wayland.cpp:533
+#: main_wayland.cpp:529
 #, kde-format
 msgid "Render through drm node."
 msgstr "Tegn opp gjennom drm-modus."
 
-#: main_wayland.cpp:540
+#: main_wayland.cpp:536
 #, kde-format
 msgid "Input method that KWin starts."
 msgstr "Inndata-metode som KWin starter."
 
-#: main_wayland.cpp:545
+#: main_wayland.cpp:541
 #, kde-format
 msgid "List all available backends and quit."
 msgstr ""
 
-#: main_wayland.cpp:549
+#: main_wayland.cpp:545
 #, kde-format
 msgid "Starts the session in locked mode."
 msgstr ""
 
-#: main_wayland.cpp:553
+#: main_wayland.cpp:549
 #, kde-format
 msgid "Starts the session without lock screen support."
 msgstr ""
 
-#: main_wayland.cpp:557
+#: main_wayland.cpp:553
 #, kde-format
 msgid "Starts the session without global shortcuts support."
 msgstr ""
 
-#: main_wayland.cpp:561
+#: main_wayland.cpp:557
 #, kde-format
 msgid "Exit after the session application, which is started by KWin, closed."
 msgstr ""
 
-#: main_wayland.cpp:566
+#: main_wayland.cpp:562
 #, kde-format
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr "Programmer som skal startes når Wayland og XWayland-tjener er startet"
@@ -2550,7 +2550,7 @@ msgstr ""
 msgid "Whether to show the virtual keyboard on demand."
 msgstr ""
 
-#: workspace.cpp:1350
+#: workspace.cpp:1363
 #, kde-format
 msgctxt "Introductory text shown in the support information."
 msgid ""

@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-08 02:22+0200\n"
-"PO-Revision-Date: 2020-09-05 05:17\n"
+"POT-Creation-Date: 2020-10-02 08:19+0200\n"
+"PO-Revision-Date: 2020-10-08 19:23\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -21,8 +21,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/kwin/kcm_kwinrules.pot\n"
-"X-Crowdin-File-ID: 4401\n"
+"X-Crowdin-File: /kf5-stable/messages/kwin/kcm_kwinrules.pot\n"
+"X-Crowdin-File-ID: 2546\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -78,27 +78,27 @@ msgctxt "Window caption for the application wide rules dialog"
 msgid "Edit Application-Specific Settings"
 msgstr "编辑程序的特定设置"
 
-#: main.cpp:194
+#: main.cpp:197
 #, kde-format
 msgid "KWin"
 msgstr "KWin"
 
-#: main.cpp:201
+#: main.cpp:204
 #, kde-format
 msgid "KWin helper utility"
 msgstr "KWin 助手工具"
 
-#: main.cpp:202
+#: main.cpp:205
 #, kde-format
 msgid "KWin id of the window for special window settings."
 msgstr "窗口特定设置的窗口编号(KWin ID)。"
 
-#: main.cpp:203
+#: main.cpp:206
 #, kde-format
 msgid "Whether the settings should affect all windows of the application."
 msgstr "此设置是否应用到该应用程序的所有窗口。"
 
-#: main.cpp:212
+#: main.cpp:215
 #, kde-format
 msgid "This helper utility is not supposed to be called directly."
 msgstr "此助手工具不应直接调用。"

@@ -1,21 +1,18 @@
 # Traducerea kwin.po în Română
-# translation of kwin to Romanian
 # Copyright (C) 2008 This_file_is_part_of_KDE
 # This file is distributed under the same license as the kwrite package.
 # Laurenţiu Buzdugan <lbuz@rolix.org>, 2008, 2009".
-# Sergiu Bivol <sergiu@cip.md>, 2008.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009.
-# Sergiu Bivol <sergiu@cip.md>, 2009, 2010, 2011, 2012, 2013, 2020.
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2011, 2012, 2013, 2020.
 # Cristian Oneț <onet.cristian@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-10 02:31+0200\n"
-"PO-Revision-Date: 2020-08-31 01:54+0100\n"
+"POT-Creation-Date: 2020-10-10 08:33+0200\n"
+"PO-Revision-Date: 2020-10-03 23:02+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
-"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
+"Language-Team: Romanian\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,11 +31,11 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sergiu@cip.md,lbuz@rolix.org"
 
-#: abstract_client.cpp:2724
+#: abstract_client.cpp:2725
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
-msgstr ""
+msgstr "(nu răspunde)"
 
 #: abstract_wayland_output.cpp:252
 #, kde-format
@@ -282,7 +279,7 @@ msgstr "Poziție globală"
 #, kde-format
 msgctxt "A mouse pointer button press event"
 msgid "Pointer Button Press"
-msgstr ""
+msgstr "Apăsare buton indicator"
 
 #: debug_console.cpp:196 debug_console.cpp:204
 #, kde-format
@@ -294,7 +291,7 @@ msgstr "Buton"
 #, kde-format
 msgctxt "A button in a mouse press/release event"
 msgid "Native Button code"
-msgstr ""
+msgstr "Cod buton nativ"
 
 #: debug_console.cpp:198 debug_console.cpp:206
 #, kde-format
@@ -306,7 +303,7 @@ msgstr "Butoane apăsate"
 #, kde-format
 msgctxt "A mouse pointer button release event"
 msgid "Pointer Button Release"
-msgstr ""
+msgstr "Eliberare buton indicator"
 
 #: debug_console.cpp:221
 #, kde-format
@@ -441,11 +438,10 @@ msgid "Global position"
 msgstr "Poziție globală"
 
 #: debug_console.cpp:317
-#, fuzzy, kde-format
-#| msgid "Slow Motion"
+#, kde-format
 msgctxt "A touch motion event"
 msgid "Touch Motion"
-msgstr "Mișcare încetinită"
+msgstr "Mișcare de atingere"
 
 #: debug_console.cpp:332
 #, kde-format
@@ -463,7 +459,7 @@ msgstr ""
 #, kde-format
 msgctxt "Number of fingers in this pinch gesture"
 msgid "Finger count"
-msgstr ""
+msgstr "Număr de degete"
 
 #: debug_console.cpp:358
 #, kde-format
@@ -475,7 +471,7 @@ msgstr ""
 #, kde-format
 msgctxt "Current scale in pinch gesture"
 msgid "Scale"
-msgstr ""
+msgstr "Scalare"
 
 #: debug_console.cpp:361
 #, kde-format
@@ -1060,7 +1056,7 @@ msgstr "legendă"
 #: helpers/killer/killer.cpp:41
 #, kde-format
 msgid "Name of the application to be terminated"
-msgstr "Numele aplicației de terminat"
+msgstr "Denumirea aplicației de terminat"
 
 #: helpers/killer/killer.cpp:41
 #, kde-format
@@ -1459,10 +1455,9 @@ msgid "KWin"
 msgstr "KWin"
 
 #: main.cpp:193
-#, fuzzy, kde-format
-#| msgid "(c) 1999-2013, The KDE Developers"
+#, kde-format
 msgid "(c) 1999-2019, The KDE Developers"
-msgstr "(c) 1999-2013, Dezvoltatorii KDE"
+msgstr "(c) 1999-2019, Dezvoltatorii KDE"
 
 #: main.cpp:195
 #, kde-format
@@ -1548,22 +1543,22 @@ msgstr ""
 #: main_wayland.cpp:474
 #, kde-format
 msgid "Render to a virtual framebuffer."
-msgstr ""
+msgstr "Randează pe framebuffer virtual."
 
 #: main_wayland.cpp:476
 #, kde-format
 msgid "The width for windowed mode. Default width is 1024."
-msgstr ""
+msgstr "Lățimea regimului de fereastră. Lățimea implicită e 1024."
 
 #: main_wayland.cpp:480
 #, kde-format
 msgid "The height for windowed mode. Default height is 768."
-msgstr ""
+msgstr "Înălțimea regimului de fereastră. Înălțimea implicită e 768."
 
 #: main_wayland.cpp:485
 #, kde-format
 msgid "The scale for windowed mode. Default value is 1."
-msgstr ""
+msgstr "Scara regimului de fereastră. Valoarea implicită e 1."
 
 #: main_wayland.cpp:490
 #, kde-format
@@ -1586,7 +1581,7 @@ msgstr ""
 #: main_wayland.cpp:529
 #, kde-format
 msgid "Render through drm node."
-msgstr ""
+msgstr "Randează prin nod DRM."
 
 #: main_wayland.cpp:536
 #, kde-format
@@ -1596,7 +1591,7 @@ msgstr "Metoda de introducere pornită de KWin."
 #: main_wayland.cpp:541
 #, kde-format
 msgid "List all available backends and quit."
-msgstr ""
+msgstr "Enumeră toate platformele disponibile și termină."
 
 #: main_wayland.cpp:545
 #, kde-format
@@ -1692,7 +1687,7 @@ msgstr "Descriere regulă (moștenit)"
 #: rulesettings.kcfg:16
 #, kde-format
 msgid "Delete this rule (for use in imports)"
-msgstr ""
+msgstr "Șterge această regulă (de folosit în importuri)"
 
 #. i18n: ectx: label, entry (wmclass), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:20
@@ -1955,7 +1950,7 @@ msgstr ""
 #: rulesettings.kcfg:238
 #, kde-format
 msgid "Skip taskbar"
-msgstr "Nu folosi bara de sarcini"
+msgstr "Sari bara de sarcini"
 
 #. i18n: ectx: label, entry (skiptaskbarrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:242
@@ -1967,7 +1962,7 @@ msgstr ""
 #: rulesettings.kcfg:249
 #, kde-format
 msgid "Skip pager"
-msgstr "Nu folosi paginatorul"
+msgstr "Sari paginatorul"
 
 #. i18n: ectx: label, entry (skippagerrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:253
@@ -1979,7 +1974,7 @@ msgstr ""
 #: rulesettings.kcfg:260
 #, kde-format
 msgid "Skip switcher"
-msgstr "Nu folosi comutatorul"
+msgstr "Sari comutatorul"
 
 #. i18n: ectx: label, entry (skipswitcherrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:264
@@ -2428,7 +2423,7 @@ msgstr "Mi&nimizează"
 #: useractions.cpp:340
 #, kde-format
 msgid "&More Actions"
-msgstr "&Mai multe acțiuni"
+msgstr "&Acțiuni suplimentare"
 
 #: useractions.cpp:343
 #, kde-format
@@ -2569,7 +2564,7 @@ msgstr "Tastatură virtuală: inactivă"
 msgid "Whether to show the virtual keyboard on demand."
 msgstr ""
 
-#: workspace.cpp:1349
+#: workspace.cpp:1363
 #, kde-format
 msgctxt "Introductory text shown in the support information."
 msgid ""

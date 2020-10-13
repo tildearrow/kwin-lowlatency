@@ -1,3 +1,7 @@
+# again, the Manjaro note.
+
+please do not upgrade to KWin-lowlatency 5.20 yet, or at least not until they upgrade Plasma first.
+
 # KWin-lowlatency
 
 KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
@@ -69,13 +73,35 @@ the reason why only up to 8ms is because any further would leave little room for
 
 ## Arch Linux
 
-use the PKGBUILD in the Releases page until the beta is over.
+[kwin-lowlatency is available in the AUR](https://aur.archlinux.org/packages/kwin-lowlatency).
+
+## Fedora
+
+ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracloud.org/coprs/zawertun/kde/package/kwin-lowlatency/).
+
+## Gentoo
+
+[an overlay](https://github.com/agates/kwin-lowlatency-overlay) is available, courtesy of agates.
 
 ## Manjaro
 
-nope.
+**please do not upgrade to KWin-lowlatency 5.20 yet, or at least not until they upgrade Plasma first.**
 
-after the beta is over, I guess I'll have to repeat the same script for Manjaro...
+in the meanwhile you can use the 5.19.5 version. I will open the Manjaro-specific repo soon.
+
+## NixOS
+
+check out pasqui23's [kwin-ll](https://github.com/pasqui23/nixpkgs/tree/kwin-ll) branch.
+
+please note that this is an old version.
+
+## openSUSE Leap and Tumbleweed
+
+kwin-lowlatency can be found at [home:DarkWav:kwin-lowlatency](https://software.opensuse.org/download.html?project=home%3ADarkWav%3Akwin-lowlatency&package=kwin-lowlatency) (OBS).
+
+## Ubuntu
+
+[kwin-lowlatency PPA](https://launchpad.net/~maxiberta/+archive/ubuntu/kwin-lowlatency). thanks maxiberta!
 
 ## other distributions/manual method
 
@@ -105,7 +131,7 @@ $ git checkout Plasma/5.20
 you may want to check the current stable version out:
 
 ```
-$ git checkout v5.19.90
+$ git checkout v5.20.0
 ```
 
 #### patch format
@@ -113,21 +139,21 @@ $ git checkout v5.19.90
 download stock KWin source and patch file:
 
 ```
-$ wget https://download.kde.org/stable/plasma/5.19.3/kwin-5.19.3.tar.xz
-$ wget https://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.19.3.patch
+$ wget https://download.kde.org/stable/plasma/5.20.0/kwin-5.20.0.tar.xz
+$ wget https://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5-20.0.patch
 ```
 
 extract:
 
 ```
-$ tar -xvf kwin-5.19.3.tar.xz
+$ tar -xvf kwin-5.20.0.tar.xz
 ```
 
 patch:
 
 ```
-$ cd kwin-5.19.3
-$ patch -p1 < ../kwin-lowlatency-5.19.3.patch
+$ cd kwin-5.20.0
+$ patch -p1 < ../kwin-lowlatency-5.20.0.patch
 ```
 
 ### building

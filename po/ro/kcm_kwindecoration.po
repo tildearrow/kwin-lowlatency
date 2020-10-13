@@ -1,10 +1,8 @@
 # Traducerea kcmkwindecoration.po în Română
 # translation of kcmkwindecoration.po to Romanian
-# translation of @PACKAGE.po to @LANGUAGE
 # Copyright (C) 2003, 2004, 2005, 2008 Free Software Foundation, Inc.
 # Claudiu Costin <claudiuc@kde.org>, 2003, 2004, 2005.
-# Sergiu Bivol <sergiu@cip.md>, 2008.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013.
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013, 2020.
 # Cristian Oneț <onet.cristian@gmail.com>, 2011.
 #
 msgid ""
@@ -12,25 +10,26 @@ msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-08-08 02:22+0200\n"
-"PO-Revision-Date: 2013-02-01 00:04+0200\n"
-"Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
-"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
+"PO-Revision-Date: 2020-09-27 13:41+0100\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
+"X-Generator: Lokalize 19.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Claudiu Costin"
+msgstr "Sergiu Bivol"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "claudiuc@kde.org"
+msgstr "sergiu@cip.md"
 
 #: declarative-plugin/buttonsmodel.cpp:54
 #, kde-format
@@ -38,15 +37,12 @@ msgid "Menu"
 msgstr "Meniu"
 
 #: declarative-plugin/buttonsmodel.cpp:56
-#, fuzzy, kde-format
-#| msgctxt "Button showing application menu imported from dbusmenu"
-#| msgid "Application Menu"
+#, kde-format
 msgid "Application menu"
-msgstr "Meniu aplicație"
+msgstr "Meniul aplicației"
 
 #: declarative-plugin/buttonsmodel.cpp:58
-#, fuzzy, kde-format
-#| msgid "On All Desktops"
+#, kde-format
 msgid "On all desktops"
 msgstr "Pe toate birourile"
 
@@ -68,7 +64,7 @@ msgstr "Închide"
 #: declarative-plugin/buttonsmodel.cpp:66
 #, kde-format
 msgid "Context help"
-msgstr ""
+msgstr "Ajutor contextual"
 
 #: declarative-plugin/buttonsmodel.cpp:68
 #, kde-format
@@ -76,172 +72,147 @@ msgid "Shade"
 msgstr "Strânge"
 
 #: declarative-plugin/buttonsmodel.cpp:70
-#, fuzzy, kde-format
-#| msgid "Keep Below Others"
+#, kde-format
 msgid "Keep below"
-msgstr "Ține sub celelalte"
+msgstr "Ține dedesubt"
 
 #: declarative-plugin/buttonsmodel.cpp:72
-#, fuzzy, kde-format
-#| msgid "Keep Above Others"
+#, kde-format
 msgid "Keep above"
-msgstr "Ține deasupra celorlalte"
+msgstr "Ține deasupra"
 
 #: kcm.cpp:50
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgid "Window Decorations"
-msgstr "Obținere decorații..."
+msgstr "Decorații fereastră"
 
 #: kcm.cpp:54
 #, kde-format
 msgid "Valerio Pilo"
-msgstr ""
+msgstr "Valerio Pilo"
 
 #: kcm.cpp:55
 #, kde-format
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: kcm.cpp:104
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgid "Download New Window Decorations"
-msgstr "Obținere decorații..."
+msgstr "Descarcă decorații de fereastră noi"
 
 #: package/contents/ui/Buttons.qml:73
 #, kde-format
 msgid "Titlebar"
-msgstr ""
+msgstr "Bară de titlu"
 
 #: package/contents/ui/Buttons.qml:214
 #, kde-format
 msgid "Drop button here to remove it"
-msgstr ""
+msgstr "Lăsați butonul aici pentru a-l elimina"
 
 #: package/contents/ui/Buttons.qml:232
 #, kde-format
 msgid "Drag buttons between here and the titlebar"
-msgstr ""
+msgstr "Trageți butoane între aici și bara de titlu"
 
 #: package/contents/ui/main.qml:15
 #, kde-format
 msgid "This module lets you configure the window decorations."
-msgstr ""
+msgstr "Acest modul vă permite să configurați decorațiile ferestrelor."
 
 #: package/contents/ui/main.qml:49
 #, kde-format
 msgctxt "tab label"
 msgid "Theme"
-msgstr ""
+msgstr "Tematică"
 
 #: package/contents/ui/main.qml:53
-#, fuzzy, kde-format
-#| msgid "Buttons"
+#, kde-format
 msgctxt "tab label"
 msgid "Titlebar Buttons"
-msgstr "Butoane"
+msgstr "Butoane pe bara de titlu"
 
 #: package/contents/ui/main.qml:78
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
-msgstr ""
+msgstr "Folosește dimensiunea de contur al ferestrei implicită a tematicii"
 
 #: package/contents/ui/main.qml:109
-#, fuzzy, kde-format
-#| msgid "Get New Decorations..."
+#, kde-format
 msgctxt "button text"
 msgid "Get New Window Decorations..."
-msgstr "Obținere decorații..."
+msgstr "Obține decorații de fereastră noi..."
 
 #: package/contents/ui/main.qml:126
-#, fuzzy, kde-format
-#| msgid "Close windows by double clicking the menu button"
+#, kde-format
 msgctxt "checkbox label"
 msgid "Close windows by double clicking the menu button"
-msgstr "Închide ferestrele prin dublu-clic pe butonul de meniu"
+msgstr "Închide ferestrele prin dublu clic pe butonul de meniu"
 
 #: package/contents/ui/main.qml:139
-#, fuzzy, kde-format
-#| msgid "Close windows by double clicking the menu button"
+#, kde-format
 msgctxt "popup tip"
 msgid ""
 "Close by double clicking: Keep the window's Menu button pressed until it "
 "appears."
-msgstr "Închide ferestrele prin dublu-clic pe butonul de meniu"
+msgstr ""
+"Închide prin dublu clic: țineți apăsat butonul de meniu al ferestrei până "
+"apare."
 
 #: package/contents/ui/main.qml:146
-#, fuzzy, kde-format
-#| msgid "&Show window button tooltips"
+#, kde-format
 msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
-msgstr "&Arată indicii pentru butoanele ferestrei"
+msgstr "Arată indicii pentru butoanele barei de titlu"
 
 #: package/contents/ui/Themes.qml:86
 #, kde-format
 msgid "Edit %1 Theme"
-msgstr ""
+msgstr "Modifică tematica %1"
 
 #: utils.cpp:26
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "No Border"
+#, kde-format
 msgid "No Borders"
-msgstr "Fără margine"
+msgstr "Fără contur"
 
 #: utils.cpp:27
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "No Side Border"
+#, kde-format
 msgid "No Side Borders"
-msgstr "Fără margine laterală"
+msgstr "Fără contur lateral"
 
 #: utils.cpp:28
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Tiny"
+#, kde-format
 msgid "Tiny"
-msgstr "Minusculă"
+msgstr "Minuscul"
 
 #: utils.cpp:29
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Normal"
+#, kde-format
 msgid "Normal"
-msgstr "Normală"
+msgstr "Normal"
 
 #: utils.cpp:30
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Large"
+#, kde-format
 msgid "Large"
 msgstr "Mare"
 
 #: utils.cpp:31
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Very Large"
+#, kde-format
 msgid "Very Large"
 msgstr "Foarte mare"
 
 #: utils.cpp:32
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Huge"
+#, kde-format
 msgid "Huge"
-msgstr "Imensă"
+msgstr "Imens"
 
 #: utils.cpp:33
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Very Huge"
+#, kde-format
 msgid "Very Huge"
-msgstr "Extrem de mare"
+msgstr "Foarte imens"
 
 #: utils.cpp:34
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox Border size:"
-#| msgid "Oversized"
+#, kde-format
 msgid "Oversized"
-msgstr "Supradimensionată"
+msgstr "Supradimensionat"
