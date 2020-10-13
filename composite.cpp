@@ -759,7 +759,6 @@ void Compositor::performCompositing()
           if (m_scene->syncsToVBlank()) {
             usleep(m_lastPaintFree);
           } else {
-            printf("no vsync\n");
             usleep(6000);
           }
           scheduleRepaint();
