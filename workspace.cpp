@@ -469,6 +469,8 @@ void Workspace::cleanupX11()
         stacking_order.removeOne(client);
     }
 
+    // We need a shadow copy because windows get removed as we go through them.
+    const QList<Unmanaged *> unmanaged = m_unmanaged;
     for (Unmanaged *overrideRedirect : unmanaged) {
         overrideRedirect->release(ReleaseReason::KWinShutsDown);
         unconstrained_stacking_order.removeOne(overrideRedirect);
@@ -510,7 +512,9 @@ Workspace::~Workspace()
         }
     }
 
-    for (InternalClient *client : m_internalClients) {
+    // We need a shadow copy because clients get removed as we go through them.
+    const QList<InternalClient *> internalClients = m_internalClients;
+    for (InternalClient *client : internalClients) {
         client->destroyClient();
     }
 
@@ -621,7 +625,7 @@ void Workspace::addClient(X11Client *c)
 
 void Workspace::addUnmanaged(Unmanaged* c)
 {
-    unmanaged.append(c);
+    m_unmanaged.append(c);
     markXStackingOrderAsDirty();
 }
 
@@ -672,8 +676,8 @@ void Workspace::removeClient(X11Client *c)
 
 void Workspace::removeUnmanaged(Unmanaged* c)
 {
-    Q_ASSERT(unmanaged.contains(c));
-    unmanaged.removeAll(c);
+    Q_ASSERT(m_unmanaged.contains(c));
+    m_unmanaged.removeAll(c);
     emit unmanagedRemoved(c);
     markXStackingOrderAsDirty();
 }
@@ -1685,7 +1689,7 @@ AbstractClient *Workspace::findAbstractClient(std::function<bool (const Abstract
 
 Unmanaged *Workspace::findUnmanaged(std::function<bool (const Unmanaged*)> func) const
 {
-    return Toplevel::findInList(unmanaged, func);
+    return Toplevel::findInList(m_unmanaged, func);
 }
 
 Unmanaged *Workspace::findUnmanaged(xcb_window_t w) const
@@ -1723,7 +1727,7 @@ Toplevel *Workspace::findToplevel(std::function<bool (const Toplevel*)> func) co
     if (auto *ret = Toplevel::findInList(m_allClients, func)) {
         return ret;
     }
-    if (Unmanaged *ret = Toplevel::findInList(unmanaged, func)) {
+    if (Unmanaged *ret = Toplevel::findInList(m_unmanaged, func)) {
         return ret;
     }
     if (InternalClient *ret = Toplevel::findInList(m_internalClients, func)) {
@@ -1743,7 +1747,7 @@ void Workspace::forEachToplevel(std::function<void (Toplevel *)> func)
 {
     std::for_each(m_allClients.constBegin(), m_allClients.constEnd(), func);
     std::for_each(deleted.constBegin(), deleted.constEnd(), func);
-    std::for_each(unmanaged.constBegin(), unmanaged.constEnd(), func);
+    std::for_each(m_unmanaged.constBegin(), m_unmanaged.constEnd(), func);
     std::for_each(m_internalClients.constBegin(), m_internalClients.constEnd(), func);
 }
 
