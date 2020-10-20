@@ -78,9 +78,9 @@
 > o <guibutton
 >Suprimeix</guibutton
 > sobre qualsevol dels perfils d'opcions desats, i tornar a ordenar la llista. El fet de tornar a ordenar la llista utilitzant els botons <guibutton
->Amunt</guibutton
+>Mou amunt</guibutton
 > i <guibutton
->Avall</guibutton
+>Mou avall</guibutton
 > no té cap efecte quant a com seran aplicats.</para>
 
 </chapter>
@@ -204,9 +204,9 @@
 >Garantir l'<link linkend="rule-evaluation"
 >avaluació de la regla</link
 > desitjada utilitzant <guilabel
->Amunt</guilabel
+>Mou amunt</guilabel
 > i <guilabel
->Avall</guilabel
+>Mou avall</guilabel
 >.</para
 ></listitem>
 </itemizedlist>
