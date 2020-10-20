@@ -413,10 +413,14 @@ void Platform::warpPointer(const QPointF &globalPos)
     Q_UNUSED(globalPos)
 }
 
-bool Platform::supportsQpaContext() const
+bool Platform::supportsSurfacelessContext() const
 {
-    if (Compositor *c = Compositor::self()) {
-        return c->scene()->openGLPlatformInterfaceExtensions().contains(QByteArrayLiteral("EGL_KHR_surfaceless_context"));
+    Compositor *compositor = Compositor::self();
+    if (Q_UNLIKELY(!compositor)) {
+        return false;
+    }
+    if (Scene *scene = compositor->scene()) {
+        return scene->supportsSurfacelessContext();
     }
     return false;
 }
@@ -561,6 +565,16 @@ void Platform::createEffectsHandler(Compositor *compositor, Scene *scene)
 QString Platform::supportInformation() const
 {
     return QStringLiteral("Name: %1\n").arg(metaObject()->className());
+}
+
+EGLContext Platform::sceneEglGlobalShareContext() const
+{
+    return m_globalShareContext;
+}
+
+void Platform::setSceneEglGlobalShareContext(EGLContext context)
+{
+    m_globalShareContext = context;
 }
 
 }

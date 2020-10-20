@@ -129,21 +129,6 @@ bool DrmOutput::showCursor()
     return ret;
 }
 
-QMatrix4x4 DrmOutput::matrixDisplay(const QSize &s) const
-{
-    QMatrix4x4 matrix;
-    const int angle = rotation();
-    if (angle) {
-        const QSize center = s / 2;
-
-        matrix.translate(center.width(), center.height());
-        matrix.rotate(-angle, 0, 0, 1);
-        matrix.translate(-center.width(), -center.height());
-    }
-    matrix.scale(scale());
-    return matrix;
-}
-
 void DrmOutput::updateCursor()
 {
     if (m_deleted) {
@@ -159,41 +144,19 @@ void DrmOutput::updateCursor()
 
     QPainter p;
     p.begin(c);
-    p.setWorldTransform(matrixDisplay(QSize(cursorImage.width(), cursorImage.height())).toTransform());
+    p.setWorldTransform(logicalToNativeMatrix(cursorImage.rect(), scale(), transform()).toTransform());
     p.drawImage(QPoint(0, 0), cursorImage);
     p.end();
 }
 
 void DrmOutput::moveCursor(Cursor* cursor, const QPoint &globalPos)
 {
-    const QMatrix4x4 hotspotMatrix = matrixDisplay(cursor->image().size());
+    const QMatrix4x4 hotspotMatrix = logicalToNativeMatrix(cursor->image().rect(), scale(), transform());
+    const QMatrix4x4 monitorMatrix = logicalToNativeMatrix(geometry(), scale(), transform());
 
-    const QPoint localPos = globalPos - AbstractWaylandOutput::globalPos();
-    QPoint pos = localPos;
-
-    // TODO: Do we need to handle the flipped cases differently?
-    switch (transform()) {
-    case Transform::Normal:
-    case Transform::Flipped:
-        break;
-    case Transform::Rotated90:
-    case Transform::Flipped90:
-        pos = QPoint(localPos.y(), pixelSize().width() / scale() - localPos.x());
-        break;
-    case Transform::Rotated270:
-    case Transform::Flipped270:
-        pos = QPoint(pixelSize().height() / scale() - localPos.y(), localPos.x());
-        break;
-    case Transform::Rotated180:
-    case Transform::Flipped180:
-        pos = QPoint(pixelSize().width() / scale() - localPos.x(),
-                     pixelSize().height() / scale() - localPos.y());
-        break;
-    default:
-        Q_UNREACHABLE();
-    }
-    pos *= scale();
+    QPoint pos = monitorMatrix.map(globalPos);
     pos -= hotspotMatrix.map(cursor->hotspot());
+
     drmModeMoveCursor(m_backend->fd(), m_crtc->id(), pos.x(), pos.y());
 }
 
