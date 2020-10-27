@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-02 08:19+0200\n"
+"POT-Creation-Date: 2020-10-27 08:25+0100\n"
 "PO-Revision-Date: 2017-10-23 11:20+0000\n"
 "Last-Translator: İşbaran <isbaran@gmail.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -361,7 +361,7 @@ msgstr "Kuralları İçeriye Aktar"
 msgid "Export Rules"
 msgstr "Kuralları Dışa Aktar"
 
-#: package/contents/ui/ValueEditor.qml:161
+#: package/contents/ui/ValueEditor.qml:162
 #, kde-format
 msgctxt "(x, y) coordinates separator in size/position"
 msgid "x"

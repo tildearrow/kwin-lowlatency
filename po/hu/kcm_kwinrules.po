@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-02 08:19+0200\n"
+"POT-Creation-Date: 2020-10-27 08:25+0100\n"
 "PO-Revision-Date: 2019-11-30 20:42+0100\n"
 "Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -356,7 +356,7 @@ msgstr "Szabályok importálása"
 msgid "Export Rules"
 msgstr "Szabályok exportálása"
 
-#: package/contents/ui/ValueEditor.qml:161
+#: package/contents/ui/ValueEditor.qml:162
 #, kde-format
 msgctxt "(x, y) coordinates separator in size/position"
 msgid "x"

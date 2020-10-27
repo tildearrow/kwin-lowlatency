@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-02 08:19+0200\n"
+"POT-Creation-Date: 2020-10-27 08:25+0100\n"
 "PO-Revision-Date: 2020-09-11 09:22+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -370,7 +370,7 @@ msgstr "Uvoz pravil"
 msgid "Export Rules"
 msgstr "Izvozi pravila"
 
-#: package/contents/ui/ValueEditor.qml:161
+#: package/contents/ui/ValueEditor.qml:162
 #, kde-format
 msgctxt "(x, y) coordinates separator in size/position"
 msgid "x"

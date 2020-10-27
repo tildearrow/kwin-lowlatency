@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-10 08:33+0200\n"
+"POT-Creation-Date: 2020-10-27 08:25+0100\n"
 "PO-Revision-Date: 2020-10-08 19:23\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -67,7 +67,7 @@ msgstr "夜间颜色开启"
 msgid "Toggle Night Color"
 msgstr "切换夜间颜色"
 
-#: composite.cpp:923
+#: composite.cpp:926
 #, kde-format
 msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "

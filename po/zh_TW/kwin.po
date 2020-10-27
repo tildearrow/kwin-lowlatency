@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-10 08:33+0200\n"
+"POT-Creation-Date: 2020-10-27 08:25+0100\n"
 "PO-Revision-Date: 2020-03-18 20:58+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
@@ -66,7 +66,7 @@ msgstr "夜色模式開啟"
 msgid "Toggle Night Color"
 msgstr "切換夜色模式"
 
-#: composite.cpp:923
+#: composite.cpp:926
 #, kde-format
 msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "

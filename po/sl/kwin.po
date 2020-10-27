@@ -1,7 +1,7 @@
 # translation of kwin.po to
 # Translation of kwin.po to Slovenian
 # Copyright (C) 2001, 2003, 2004, 2005, 2007 Free Software Foundation, Inc.
-# $Id: kwin.po 1582255 2020-10-10 07:32:41Z scripty $
+# $Id: kwin.po 1583766 2020-10-27 08:36:20Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@hermes.si>, 2000.
@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-10 08:33+0200\n"
+"POT-Creation-Date: 2020-10-27 08:25+0100\n"
 "PO-Revision-Date: 2020-07-17 10:33+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -67,7 +67,7 @@ msgstr "Vključi nočno barvo"
 msgid "Toggle Night Color"
 msgstr "Preklopi nočno barvo"
 
-#: composite.cpp:923
+#: composite.cpp:926
 #, kde-format
 msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "
