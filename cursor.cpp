@@ -145,7 +145,12 @@ void Cursor::slotKGlobalSettingsNotifyChange(int type, int arg)
 
 QRect Cursor::geometry() const
 {
-    return QRect(m_pos - hotspot(), image().size());
+    return rect().translated(m_pos - hotspot());
+}
+
+QRect Cursor::rect() const
+{
+    return QRect(QPoint(0, 0), image().size() / image().devicePixelRatio());
 }
 
 QPoint Cursor::pos()
