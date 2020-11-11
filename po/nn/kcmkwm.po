@@ -592,8 +592,8 @@ msgid ""
 "defined above."
 msgstr ""
 "Viss det er kryssa av her, får KDE-program som kan hugsa deira siste "
-"plassering på skjermen, løyve til å gjera dette. Dette vil overstyra "
-"vindaugs­plasserings­modusen definert ovanfor."
+"plassering på skjermen, løyve til å gjera dette. Dette vil overstyra vindaugs­"
+"plasserings­modusen definert ovanfor."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowKDEAppsToRememberWindowPositions)
 #: advanced.ui:121

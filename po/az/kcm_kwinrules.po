@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-27 08:25+0100\n"
+"POT-Creation-Date: 2020-11-03 08:14+0100\n"
 "PO-Revision-Date: 2020-07-21 18:35+0400\n"
 "Last-Translator: Xəyyam Qocayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -295,67 +295,67 @@ msgctxt "Size (width, height)"
 msgid "(%1, %2)"
 msgstr "(%1, %2)"
 
-#: package/contents/ui/RulesList.qml:59
+#: package/contents/ui/RulesList.qml:61
 #, kde-format
 msgid "No rules for specific windows are currently set"
 msgstr "Hal-hazırda xüsusi pəncərələr üçün qaydalar təyin edilməyib"
 
-#: package/contents/ui/RulesList.qml:67
+#: package/contents/ui/RulesList.qml:69
 #, kde-format
 msgid "Select the rules to export"
 msgstr "İxrac etmək üçün qaydaları seçmək"
 
-#: package/contents/ui/RulesList.qml:71
+#: package/contents/ui/RulesList.qml:73
 #, kde-format
 msgid "Unselect All"
 msgstr "Bütün seçimləri ləğv etmək"
 
-#: package/contents/ui/RulesList.qml:71
+#: package/contents/ui/RulesList.qml:73
 #, kde-format
 msgid "Select All"
 msgstr "Hamısını seçmək"
 
-#: package/contents/ui/RulesList.qml:85
+#: package/contents/ui/RulesList.qml:87
 #, kde-format
 msgid "Save Rules"
 msgstr "Qaydaları saxlamaq"
 
-#: package/contents/ui/RulesList.qml:96
+#: package/contents/ui/RulesList.qml:98
 #, kde-format
 msgid "Add New..."
 msgstr "Yenisini əlavə etmək..."
 
-#: package/contents/ui/RulesList.qml:107
+#: package/contents/ui/RulesList.qml:109
 #, kde-format
 msgid "Import..."
 msgstr "İdxal..."
 
-#: package/contents/ui/RulesList.qml:115
+#: package/contents/ui/RulesList.qml:117
 #, kde-format
 msgid "Cancel Export"
 msgstr "İxracı dayandırmaq..."
 
-#: package/contents/ui/RulesList.qml:115
+#: package/contents/ui/RulesList.qml:117
 #, kde-format
 msgid "Export..."
 msgstr "İxrac..."
 
-#: package/contents/ui/RulesList.qml:196
+#: package/contents/ui/RulesList.qml:198
 #, kde-format
 msgid "Edit"
 msgstr "Düzəliş etmək"
 
-#: package/contents/ui/RulesList.qml:205
+#: package/contents/ui/RulesList.qml:207
 #, kde-format
 msgid "Delete"
 msgstr "Silmək"
 
-#: package/contents/ui/RulesList.qml:218
+#: package/contents/ui/RulesList.qml:220
 #, kde-format
 msgid "Import Rules"
 msgstr "Qaydaları idxal etmək"
 
-#: package/contents/ui/RulesList.qml:230
+#: package/contents/ui/RulesList.qml:232
 #, kde-format
 msgid "Export Rules"
 msgstr "Qaydaları ixrac etmək"

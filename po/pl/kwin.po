@@ -1,5 +1,5 @@
 # translation of kwin.po to
-# Version: $Revision: 1583757 $
+# Version: $Revision: 1584967 $
 # translation of kwin.po to Polish
 # translation of kwin.po to
 # Norbert Popiołek <norbert@kde.com.pl>
@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-27 08:25+0100\n"
+"POT-Creation-Date: 2020-11-07 08:29+0100\n"
 "PO-Revision-Date: 2020-10-08 20:37+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -46,7 +46,7 @@ msgid "Your emails"
 msgstr ""
 "mrudolf@kdewebdev.org, norbert@kde.com.pl, lukasz.wojnilowicz@gmail.com"
 
-#: abstract_client.cpp:2725
+#: abstract_client.cpp:2729
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"

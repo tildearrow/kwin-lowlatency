@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-08-29 02:26+0200\n"
-"PO-Revision-Date: 2020-02-23 16:46+0100\n"
+"PO-Revision-Date: 2020-11-09 22:16+0100\n"
 "Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -569,7 +569,7 @@ msgstr ""
 #: advanced.ui:121
 #, kde-format
 msgid "Allow KDE apps to remember the positions of their own windows"
-msgstr ""
+msgstr "Permitte a apps de KDE de memorar le positiones de lor fenestras"
 
 #. i18n: ectx: property (text), widget (QLabel, specialWindowsLabel)
 #: advanced.ui:128
@@ -874,10 +874,9 @@ msgstr "&Separar foco de schermo"
 
 #. i18n: ectx: property (text), widget (QLabel, windowFocusPolicyDescriptionLabel)
 #: focus.ui:229
-#, fuzzy, kde-format
-#| msgid "Window &activation policy:"
+#, kde-format
 msgid "Window activation policy description"
-msgstr "Politica de &activation de fenestra:"
+msgstr "Description del politica de activation de fenestra"
 
 #: main.cpp:73
 #, kde-format
@@ -1023,7 +1022,7 @@ msgstr "Maximiza"
 #: mouse.ui:45 mouse.ui:620 mouse.ui:655 mouse.ui:690
 #, kde-format
 msgid "Vertically maximize"
-msgstr ""
+msgstr "Maximisa verticalmente"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
@@ -1033,7 +1032,7 @@ msgstr ""
 #: mouse.ui:50 mouse.ui:625 mouse.ui:660 mouse.ui:695
 #, kde-format
 msgid "Horizontally maximize"
-msgstr ""
+msgstr "Maximisa horizontalmente"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)

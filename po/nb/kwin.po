@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-10 08:33+0200\n"
+"POT-Creation-Date: 2020-11-07 08:29+0100\n"
 "PO-Revision-Date: 2015-08-27 20:54+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 "knut.yrvin@gmail.com,gluras@c2i.net,khollund@responze.net,"
 "zerodogg@skolelinux.no"
 
-#: abstract_client.cpp:2725
+#: abstract_client.cpp:2729
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -65,7 +65,7 @@ msgstr ""
 msgid "Toggle Night Color"
 msgstr ""
 
-#: composite.cpp:923
+#: composite.cpp:926
 #, kde-format
 msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "

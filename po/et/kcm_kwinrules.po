@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-27 08:25+0100\n"
+"POT-Creation-Date: 2020-11-03 08:14+0100\n"
 "PO-Revision-Date: 2020-06-05 22:36+0300\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -294,67 +294,67 @@ msgctxt "Size (width, height)"
 msgid "(%1, %2)"
 msgstr "(%1, %2)"
 
-#: package/contents/ui/RulesList.qml:59
+#: package/contents/ui/RulesList.qml:61
 #, kde-format
 msgid "No rules for specific windows are currently set"
 msgstr "Konkreetsetele akendele ei ole praegu reegleid määratud"
 
-#: package/contents/ui/RulesList.qml:67
+#: package/contents/ui/RulesList.qml:69
 #, kde-format
 msgid "Select the rules to export"
 msgstr "Vali eksporditavad reeglid"
 
-#: package/contents/ui/RulesList.qml:71
+#: package/contents/ui/RulesList.qml:73
 #, kde-format
 msgid "Unselect All"
 msgstr "Tühista kõigi valimine"
 
-#: package/contents/ui/RulesList.qml:71
+#: package/contents/ui/RulesList.qml:73
 #, kde-format
 msgid "Select All"
 msgstr "Vali kõik"
 
-#: package/contents/ui/RulesList.qml:85
+#: package/contents/ui/RulesList.qml:87
 #, kde-format
 msgid "Save Rules"
 msgstr "Reeglite salvestamine"
 
-#: package/contents/ui/RulesList.qml:96
+#: package/contents/ui/RulesList.qml:98
 #, kde-format
 msgid "Add New..."
 msgstr "Lisa uus ..."
 
-#: package/contents/ui/RulesList.qml:107
+#: package/contents/ui/RulesList.qml:109
 #, kde-format
 msgid "Import..."
 msgstr "Impordi ..."
 
-#: package/contents/ui/RulesList.qml:115
+#: package/contents/ui/RulesList.qml:117
 #, kde-format
 msgid "Cancel Export"
 msgstr "Katkesta eksport"
 
-#: package/contents/ui/RulesList.qml:115
+#: package/contents/ui/RulesList.qml:117
 #, kde-format
 msgid "Export..."
 msgstr "Ekspordi ..."
 
-#: package/contents/ui/RulesList.qml:196
+#: package/contents/ui/RulesList.qml:198
 #, kde-format
 msgid "Edit"
 msgstr "Muuda"
 
-#: package/contents/ui/RulesList.qml:205
+#: package/contents/ui/RulesList.qml:207
 #, kde-format
 msgid "Delete"
 msgstr "&Kustuta"
 
-#: package/contents/ui/RulesList.qml:218
+#: package/contents/ui/RulesList.qml:220
 #, kde-format
 msgid "Import Rules"
 msgstr "Reeglite import"
 
-#: package/contents/ui/RulesList.qml:230
+#: package/contents/ui/RulesList.qml:232
 #, kde-format
 msgid "Export Rules"
 msgstr "Reegli eksport"

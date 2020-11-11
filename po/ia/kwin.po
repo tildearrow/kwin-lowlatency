@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-27 08:25+0100\n"
-"PO-Revision-Date: 2020-05-05 23:30+0100\n"
+"POT-Creation-Date: 2020-11-07 08:29+0100\n"
+"PO-Revision-Date: 2020-11-09 22:06+0100\n"
 "Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -28,7 +28,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "g.sora@tiscali.it"
 
-#: abstract_client.cpp:2725
+#: abstract_client.cpp:2729
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -2070,9 +2070,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (acceptfocus), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:354
-#, fuzzy, kde-format
+#, kde-format
 msgid "Accept Focus"
-msgstr "Da acceptation a &foco"
+msgstr "Acceptar foco"
 
 #. i18n: ectx: label, entry (acceptfocusrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:358
@@ -2094,9 +2094,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (autogroup), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:372
-#, fuzzy, kde-format
+#, kde-format
 msgid "Autogroup with identical"
-msgstr "Gruppa automaticamente con &identic"
+msgstr "Gruppa automaticamente con identic"
 
 #. i18n: ectx: label, entry (autogrouprule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:376
@@ -2106,9 +2106,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (autogroupfg), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:381
-#, fuzzy, kde-format
+#, kde-format
 msgid "Autogroup in foreground"
-msgstr "G&ruppa automaticamente in fronte"
+msgstr "Gruppa automaticamente in fronte"
 
 #. i18n: ectx: label, entry (autogroupfgrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:385
@@ -2118,9 +2118,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (autogroupid), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:390
-#, fuzzy, kde-format
+#, kde-format
 msgid "Autogroup by ID"
-msgstr "Gruppa automaticamente per I&D"
+msgstr "Gruppa automaticamente per ID"
 
 #. i18n: ectx: label, entry (autogroupidrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:393
@@ -2142,7 +2142,7 @@ msgstr ""
 
 #. i18n: ectx: label, entry (shortcut), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:407
-#, fuzzy, kde-format
+#, kde-format
 msgid "Shortcut"
 msgstr "Via Breve"
 

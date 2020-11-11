@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-27 08:25+0100\n"
+"POT-Creation-Date: 2020-11-03 08:14+0100\n"
 "PO-Revision-Date: 2020-06-03 09:50+0100\n"
 "Last-Translator: José Nuno Pires <zepires@gmail.com>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
@@ -297,67 +297,67 @@ msgctxt "Size (width, height)"
 msgid "(%1, %2)"
 msgstr "(%1, %2)"
 
-#: package/contents/ui/RulesList.qml:59
+#: package/contents/ui/RulesList.qml:61
 #, kde-format
 msgid "No rules for specific windows are currently set"
 msgstr "Não estão definidas regras para janelas específicas"
 
-#: package/contents/ui/RulesList.qml:67
+#: package/contents/ui/RulesList.qml:69
 #, kde-format
 msgid "Select the rules to export"
 msgstr "Seleccione as regras a exportar"
 
-#: package/contents/ui/RulesList.qml:71
+#: package/contents/ui/RulesList.qml:73
 #, kde-format
 msgid "Unselect All"
 msgstr "Deseleccionar Tudo"
 
-#: package/contents/ui/RulesList.qml:71
+#: package/contents/ui/RulesList.qml:73
 #, kde-format
 msgid "Select All"
 msgstr "Seleccionar Tudo"
 
-#: package/contents/ui/RulesList.qml:85
+#: package/contents/ui/RulesList.qml:87
 #, kde-format
 msgid "Save Rules"
 msgstr "Gravar as Regras"
 
-#: package/contents/ui/RulesList.qml:96
+#: package/contents/ui/RulesList.qml:98
 #, kde-format
 msgid "Add New..."
 msgstr "Adicionar uma Nova..."
 
-#: package/contents/ui/RulesList.qml:107
+#: package/contents/ui/RulesList.qml:109
 #, kde-format
 msgid "Import..."
 msgstr "Importar..."
 
-#: package/contents/ui/RulesList.qml:115
+#: package/contents/ui/RulesList.qml:117
 #, kde-format
 msgid "Cancel Export"
 msgstr "Cancelar a Exportação"
 
-#: package/contents/ui/RulesList.qml:115
+#: package/contents/ui/RulesList.qml:117
 #, kde-format
 msgid "Export..."
 msgstr "Exportar..."
 
-#: package/contents/ui/RulesList.qml:196
+#: package/contents/ui/RulesList.qml:198
 #, kde-format
 msgid "Edit"
 msgstr "Editar"
 
-#: package/contents/ui/RulesList.qml:205
+#: package/contents/ui/RulesList.qml:207
 #, kde-format
 msgid "Delete"
 msgstr "Apagar"
 
-#: package/contents/ui/RulesList.qml:218
+#: package/contents/ui/RulesList.qml:220
 #, kde-format
 msgid "Import Rules"
 msgstr "Importar as Regras"
 
-#: package/contents/ui/RulesList.qml:230
+#: package/contents/ui/RulesList.qml:232
 #, kde-format
 msgid "Export Rules"
 msgstr "Exportar as Regras"

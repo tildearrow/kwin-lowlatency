@@ -11,14 +11,14 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-08-29 02:26+0200\n"
-"PO-Revision-Date: 2020-10-08 14:53+0200\n"
+"PO-Revision-Date: 2020-10-27 21:29+0100\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.08.1\n"
+"X-Generator: Lokalize 20.08.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -898,7 +898,7 @@ msgstr ""
 #: focus.ui:216
 #, kde-format
 msgid "&Separate screen focus"
-msgstr "&Eraldi ekraani fookus:"
+msgstr "&Eraldi ekraani fookus"
 
 #. i18n: ectx: property (text), widget (QLabel, windowFocusPolicyDescriptionLabel)
 #: focus.ui:229

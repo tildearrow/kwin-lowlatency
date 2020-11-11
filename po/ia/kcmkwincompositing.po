@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # g.sora <g.sora@tiscali.it>, 2010, 2011, 2012, 2013.
-# Giovanni Sora <g.sora@tioscali.it>, 2014.
+# Giovanni Sora <g.sora@tioscali.it>, 2014, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-08-08 02:22+0200\n"
-"PO-Revision-Date: 2014-07-25 14:43+0200\n"
+"PO-Revision-Date: 2020-11-09 22:19+0100\n"
 "Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 #. i18n: ectx: property (text), widget (KMessageWidget, glCrashedWarning)
 #: compositing.ui:32
@@ -175,7 +175,7 @@ msgstr ""
 #: compositing.ui:291
 #, kde-format
 msgid "Allow applications to block compositing"
-msgstr ""
+msgstr "Permitte a applicationes de blocar composition"
 
 #: main.cpp:80
 #, kde-format

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-10-23 08:49+0200\n"
-"PO-Revision-Date: 2020-01-03 22:46+0100\n"
+"PO-Revision-Date: 2020-11-09 22:14+0100\n"
 "Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -1256,12 +1256,12 @@ msgstr "Dextere"
 #: mouseclick/mouseclick.h:63
 #, kde-format
 msgid "↓"
-msgstr ""
+msgstr "↓"
 
 #: mouseclick/mouseclick.h:64
 #, kde-format
 msgid "↑"
-msgstr ""
+msgstr "↑"
 
 #. i18n: ectx: attribute (title), widget (QWidget, basic_tab)
 #: mouseclick/mouseclick_config.ui:21
@@ -2065,16 +2065,13 @@ msgstr "Factor de zoom:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EnableFocusTracking)
 #: zoom/zoom_config.ui:66
-#, fuzzy, kde-format
-#| msgid ""
-#| "Enable tracking of the focused location. This needs QAccessible to be "
-#| "enabled per application (\"export QT_ACCESSIBILITY=1\")."
+#, kde-format
 msgid ""
 "Enable tracking of the focused location. This needs QAccessible to be "
 "enabled per application (\"export QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1\")."
 msgstr ""
-"Activa tracia de location focalisate. Isto besonia QAccessible a esser "
-"activate pro le application (\"export QT_ACCESSIBILITY=1\")."
+"Activa tracia de location focalisate. Isto necessita que QAccessible es "
+"activate pro le application (\"export QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1\")."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableFocusTracking)
 #: zoom/zoom_config.ui:69
@@ -2084,23 +2081,19 @@ msgstr "Activa tracia de foco"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EnableTextCaretTracking)
 #: zoom/zoom_config.ui:76
-#, fuzzy, kde-format
-#| msgid ""
-#| "Enable tracking of the focused location. This needs QAccessible to be "
-#| "enabled per application (\"export QT_ACCESSIBILITY=1\")."
+#, kde-format
 msgid ""
 "Enable tracking of the text cursor. This needs QAccessible to be enabled per "
 "application (\"export QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1\")."
 msgstr ""
-"Activa tracia de location focalisate. Isto besonia QAccessible a esser "
-"activate pro le application (\"export QT_ACCESSIBILITY=1\")."
+"Activa tracia de location focalisate. Isto necessita que  QAccessible es "
+"activate pro le application (\"export QT_ACCESSIBILITY_ALWAYS_ON=1\")."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableTextCaretTracking)
 #: zoom/zoom_config.ui:79
-#, fuzzy, kde-format
-#| msgid "Enable Focus Tracking"
+#, kde-format
 msgid "Enable Text Cursor Tracking"
-msgstr "Activa tracia de foco"
+msgstr "Activa tracia de cursor de texto"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: zoom/zoom_config.ui:86
