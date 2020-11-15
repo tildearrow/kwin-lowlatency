@@ -123,7 +123,7 @@ $ git checkout Plasma/5.19
 you may want to check the current stable version out:
 
 ```
-$ git checkout v5.19.3
+$ git checkout v5.19.5
 ```
 
 #### patch format
@@ -131,21 +131,21 @@ $ git checkout v5.19.3
 download stock KWin source and patch file:
 
 ```
-$ wget https://download.kde.org/stable/plasma/5.19.3/kwin-5.19.3.tar.xz
-$ wget https://tildearrow.zapto.org/storage/kwin-lowlatency/kwin-lowlatency-5.19.3.patch
+$ wget https://download.kde.org/stable/plasma/5.19.5/kwin-5.19.5.tar.xz
+$ wget https://tildearrow.org/storage/kwin-lowlatency/kwin-lowlatency-5.19.5-3.patch
 ```
 
 extract:
 
 ```
-$ tar -xvf kwin-5.19.3.tar.xz
+$ tar -xvf kwin-5.19.5.tar.xz
 ```
 
 patch:
 
 ```
-$ cd kwin-5.19.3
-$ patch -p1 < ../kwin-lowlatency-5.19.3.patch
+$ cd kwin-5.19.5
+$ patch -p1 < ../kwin-lowlatency-5.19.5.patch
 ```
 
 ### building
