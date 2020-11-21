@@ -1,7 +1,3 @@
-# again, the Manjaro note.
-
-please do not upgrade to KWin-lowlatency 5.20 yet, or at least not until they upgrade Plasma first.
-
 # KWin-lowlatency
 
 KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
@@ -85,9 +81,7 @@ ZaWertun provides pre-compiled packages [in the Copr](https://copr.fedorainfracl
 
 ## Manjaro
 
-**please do not upgrade to KWin-lowlatency 5.20 yet, or at least not until they upgrade Plasma first.**
-
-in the meanwhile you can use the 5.19.5 version. I will open the Manjaro-specific repo soon.
+use the Arch Linux instructions. Manjaro has updated to Plasma 5.20.
 
 ## NixOS
 
