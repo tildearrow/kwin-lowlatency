@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-08-08 02:22+0200\n"
-"PO-Revision-Date: 2020-11-09 22:22+0100\n"
+"PO-Revision-Date: 2020-11-23 22:21+0100\n"
 "Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -40,7 +40,7 @@ msgstr "Vlad Zahorodnii"
 #: kcm.cpp:77
 #, kde-format
 msgid "Download New Desktop Effects"
-msgstr ""
+msgstr "Discarga nove effectos de scriptorio"
 
 #: package/contents/ui/Effect.qml:77
 #, kde-format
@@ -85,14 +85,14 @@ msgstr "Configura Filtro"
 #: package/contents/ui/main.qml:57
 #, kde-format
 msgid "Exclude unsupported effects"
-msgstr ""
+msgstr "Exclude effectosnon supportate"
 
 #: package/contents/ui/main.qml:65
 #, kde-format
 msgid "Exclude internal effects"
-msgstr ""
+msgstr "Exclude effectos interne"
 
 #: package/contents/ui/main.qml:124
 #, kde-format
 msgid "Get New Desktop Effects..."
-msgstr ""
+msgstr "Obtene nove effectos de scriptorio..."

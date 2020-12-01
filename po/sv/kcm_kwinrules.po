@@ -235,7 +235,6 @@ msgstr[1] "%1 valda"
 #: package/contents/ui/RulesEditor.qml:48
 #: package/contents/ui/RulesEditor.qml:67
 #, kde-format
-#| msgid "Add Property..."
 msgid "Add Properties..."
 msgstr "Lägg till egenskaper..."
 

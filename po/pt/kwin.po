@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-11-07 08:29+0100\n"
+"POT-Creation-Date: 2020-11-25 08:45+0100\n"
 "PO-Revision-Date: 2020-07-15 10:33+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
@@ -64,7 +64,8 @@ msgctxt "Night Color was enabled"
 msgid "Night Color On"
 msgstr "Cor Nocturna Ligada"
 
-#: colorcorrection/manager.cpp:229 colorcorrection/manager.cpp:230
+#: colorcorrection/manager.cpp:228 colorcorrection/manager.cpp:231
+#: colorcorrection/manager.cpp:238
 #, kde-format
 msgid "Toggle Night Color"
 msgstr "Comutar a Cor Nocturna"

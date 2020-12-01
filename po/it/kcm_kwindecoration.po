@@ -3,14 +3,14 @@
 # Andrea Rizzi <rizzi@kde.org>, 2003, 2005.
 # Andrea RIZZI <arizzi@pi.infn.it>, 2004.
 # Luciano Montanaro <mikelima@cirulla.net>, 2007, 2010, 2012.
-# Vincenzo Reale <smart2128@baslug.org>, 2015, 2018, 2019.
+# Vincenzo Reale <smart2128@baslug.org>, 2015, 2018, 2019, 2020.
 # Paolo Zamponi <zapaolo@email.it>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"POT-Creation-Date: 2020-11-17 08:20+0100\n"
 "PO-Revision-Date: 2019-06-10 15:29+0200\n"
 "Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 19.04.1\n"
+"X-Generator: Lokalize 20.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -168,7 +168,7 @@ msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
 msgstr "Mostra i suggerimenti per i pulsanti della barra del titolo"
 
-#: package/contents/ui/Themes.qml:86
+#: package/contents/ui/Themes.qml:89
 #, kde-format
 msgid "Edit %1 Theme"
 msgstr "Modifica tema %1"

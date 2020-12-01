@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-11-07 08:29+0100\n"
+"POT-Creation-Date: 2020-11-25 08:45+0100\n"
 "PO-Revision-Date: 2020-02-24 08:01+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -52,7 +52,8 @@ msgctxt "Night Color was enabled"
 msgid "Night Color On"
 msgstr "Warna Malam On"
 
-#: colorcorrection/manager.cpp:229 colorcorrection/manager.cpp:230
+#: colorcorrection/manager.cpp:228 colorcorrection/manager.cpp:231
+#: colorcorrection/manager.cpp:238
 #, kde-format
 msgid "Toggle Night Color"
 msgstr "Jungkitan Warna Malam"

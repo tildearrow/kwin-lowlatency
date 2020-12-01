@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"POT-Creation-Date: 2020-11-17 08:20+0100\n"
 "PO-Revision-Date: 2009-02-10 11:56+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -171,7 +171,7 @@ msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
 msgstr "विंडो बटन औजार-नुस्खे देखाव (&S)"
 
-#: package/contents/ui/Themes.qml:86
+#: package/contents/ui/Themes.qml:89
 #, kde-format
 msgid "Edit %1 Theme"
 msgstr ""

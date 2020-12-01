@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-11-07 08:29+0100\n"
+"POT-Creation-Date: 2020-11-25 08:45+0100\n"
 "PO-Revision-Date: 2020-08-21 15:55+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -64,7 +64,8 @@ msgctxt "Night Color was enabled"
 msgid "Night Color On"
 msgstr "Yöväri käytössä"
 
-#: colorcorrection/manager.cpp:229 colorcorrection/manager.cpp:230
+#: colorcorrection/manager.cpp:228 colorcorrection/manager.cpp:231
+#: colorcorrection/manager.cpp:238
 #, kde-format
 msgid "Toggle Night Color"
 msgstr "Käännä yöväriasetus"

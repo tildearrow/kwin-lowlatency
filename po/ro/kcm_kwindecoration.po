@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-08 02:22+0200\n"
+"POT-Creation-Date: 2020-11-17 08:20+0100\n"
 "PO-Revision-Date: 2020-09-27 13:41+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -167,7 +167,7 @@ msgctxt "checkbox label"
 msgid "Show titlebar button tooltips"
 msgstr "Arată indicii pentru butoanele barei de titlu"
 
-#: package/contents/ui/Themes.qml:86
+#: package/contents/ui/Themes.qml:89
 #, kde-format
 msgid "Edit %1 Theme"
 msgstr "Modifică tematica %1"

@@ -1,5 +1,5 @@
 # translation of kwin.po to
-# Version: $Revision: 1584967 $
+# Version: $Revision: 1586947 $
 # translation of kwin.po to Polish
 # translation of kwin.po to
 # Norbert Popiołek <norbert@kde.com.pl>
@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-11-07 08:29+0100\n"
+"POT-Creation-Date: 2020-11-25 08:45+0100\n"
 "PO-Revision-Date: 2020-10-08 20:37+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -69,7 +69,8 @@ msgctxt "Night Color was enabled"
 msgid "Night Color On"
 msgstr "Barwy nocne włączone"
 
-#: colorcorrection/manager.cpp:229 colorcorrection/manager.cpp:230
+#: colorcorrection/manager.cpp:228 colorcorrection/manager.cpp:231
+#: colorcorrection/manager.cpp:238
 #, kde-format
 msgid "Toggle Night Color"
 msgstr "Przełącz barwy nocne"
