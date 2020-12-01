@@ -72,7 +72,7 @@ void PipeWireStream::newStreamParams()
     spa_pod_builder pod_builder = SPA_POD_BUILDER_INIT (paramsBuffer, sizeof (paramsBuffer));
 
     spa_rectangle resolution = SPA_RECTANGLE(uint32_t(m_resolution.width()), uint32_t(m_resolution.height()));
-    const auto cursorSize = Cursors::self()->currentCursor()->themeSize();
+    const int cursorSize = Cursors::self()->currentCursor()->themeSize() * m_cursor.scale;
     const spa_pod *params[] = {
         (spa_pod*) spa_pod_builder_add_object(&pod_builder,
                                               SPA_TYPE_OBJECT_ParamBuffers, SPA_PARAM_Buffers,
@@ -235,7 +235,10 @@ bool PipeWireStream::createStream()
 
     spa_rectangle resolution = SPA_RECTANGLE(uint32_t(m_resolution.width()), uint32_t(m_resolution.height()));
 
-    const auto format = m_hasAlpha ? SPA_VIDEO_FORMAT_BGRA : SPA_VIDEO_FORMAT_BGR;
+    auto canCreateDmaBuf = [this] () -> bool {
+        return QSharedPointer<DmaBufTexture>(kwinApp()->platform()->createDmaBufTexture(m_resolution));
+    };
+    const auto format = m_hasAlpha || canCreateDmaBuf() ? SPA_VIDEO_FORMAT_BGRA : SPA_VIDEO_FORMAT_BGR;
 
     const spa_pod *param = (spa_pod*)spa_pod_builder_add_object(&podBuilder,
                                         SPA_TYPE_OBJECT_Format, SPA_PARAM_EnumFormat,
@@ -449,11 +452,17 @@ void PipeWireStream::sendCursorData(Cursor *cursor, spa_meta_cursor *spa_meta_cu
     spa_meta_bitmap->offset = sizeof (struct spa_meta_bitmap);
 
     uint8_t *bitmap_data = SPA_MEMBER (spa_meta_bitmap, spa_meta_bitmap->offset, uint8_t);
-    QImage dest(bitmap_data, image.width(), image.height(), QImage::Format_RGBA8888_Premultiplied);
-    spa_meta_bitmap->size.width = image.width();
-    spa_meta_bitmap->size.height = image.height();
+    const int bufferSideSize = Cursors::self()->currentCursor()->themeSize() * m_cursor.scale;
+    QImage dest(bitmap_data, std::min(bufferSideSize, image.width()), std::min(bufferSideSize, image.height()), QImage::Format_RGBA8888_Premultiplied);
+    spa_meta_bitmap->size.width = dest.width();
+    spa_meta_bitmap->size.height = dest.height();
     spa_meta_bitmap->stride = dest.bytesPerLine();
 
+    if (image.isNull()) {
+        return;
+    }
+
+    dest.fill(Qt::transparent);
     QPainter painter(&dest);
     painter.drawImage(QPoint(), image);
 }

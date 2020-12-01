@@ -66,6 +66,10 @@ Clipboard::Clipboard(xcb_atom_t atom, QObject *parent)
 
 void Clipboard::wlSelectionChanged(KWaylandServer::AbstractDataSource *dsi)
 {
+    if (m_waitingForTargets) {
+        return;
+    }
+
     if (dsi && !ownsSelection(dsi)) {
         // Wayland native client provides new selection
         if (!m_checkConnection) {
@@ -88,6 +92,10 @@ bool Clipboard::ownsSelection(KWaylandServer::AbstractDataSource *dsi) const
 
 void Clipboard::checkWlSource()
 {
+    if (m_waitingForTargets) {
+        return;
+    }
+
     auto dsi = waylandServer()->seat()->selection();
     auto removeSource = [this] {
         if (wlSource()) {
@@ -132,12 +140,11 @@ void Clipboard::checkWlSource()
 
 void Clipboard::doHandleXfixesNotify(xcb_xfixes_selection_notify_event_t *event)
 {
-    createX11Source(nullptr);
-
     const AbstractClient *client = workspace()->activeClient();
     if (!qobject_cast<const X11Client *>(client)) {
         // clipboard is only allowed to be acquired when Xwayland has focus
         // TODO: can we make this stronger (window id comparison)?
+        createX11Source(nullptr);
         return;
     }
 
@@ -145,13 +152,18 @@ void Clipboard::doHandleXfixesNotify(xcb_xfixes_selection_notify_event_t *event)
 
     if (X11Source *source = x11Source()) {
         source->getTargets();
+        m_waitingForTargets = true;
+    } else {
+        qCWarning(KWIN_XWL) << "Could not create a source from" << event << Qt::hex << (event ? event->owner : -1);
     }
 }
 
 void Clipboard::x11OffersChanged(const QStringList &added, const QStringList &removed)
 {
+    m_waitingForTargets = false;
     X11Source *source = x11Source();
     if (!source) {
+        qCWarning(KWIN_XWL) << "offers changed when not having an X11Source!?";
         return;
     }
 
