@@ -843,13 +843,7 @@ bool Toplevel::updateUnredirectedState()
     }
     if (should == unredirect)
         return false;
-    static QElapsedTimer lastUnredirect;
-    static const qint64 msecRedirectInterval = 100;
-    if (!lastUnredirect.hasExpired(msecRedirectInterval)) {
-        QTimer::singleShot(msecRedirectInterval, Compositor::self(), static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
-        return false;
-    }
-    lastUnredirect.start();
+
     unredirect = should;
     if (unredirect) {
         qCDebug(KWIN_CORE) << "Unredirecting:" << this;

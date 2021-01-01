@@ -935,6 +935,15 @@ void Compositor::delayedCheckUnredirect()
 {
     if (!isActive() || !m_scene->overlayWindow() || m_scene->overlayWindow()->window() == None || !(options->isUnredirectFullscreen() || sender() == options))
         return;
+
+    static QElapsedTimer lastUnredirect;
+    static const qint64 msecRedirectInterval = 100;
+    if (!lastUnredirect.hasExpired(msecRedirectInterval)) {
+        QTimer::singleShot(msecRedirectInterval, Compositor::self(), static_cast<void (Compositor::*)()>(&Compositor::checkUnredirect));
+        return;
+    }
+    lastUnredirect.start();
+
     QList<Toplevel*> list;
     bool changed = forceUnredirectCheck;
     foreach (X11Client * c, Workspace::self()->clientList())
