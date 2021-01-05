@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-11-03 08:14+0100\n"
-"PO-Revision-Date: 2020-11-10 15:04\n"
+"PO-Revision-Date: 2021-01-03 09:06\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -27,12 +27,13 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "KDE 中国"
+msgstr "KDE 中国,Guo Yunhe,Coelacanthus,Tyson Tan"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kde-china@kde.org"
+msgstr ""
+"kde-china@kde.org,i@guoyunhe.me,coelacanthus@kde.org,tysontan@tysontan.com"
 
 #: kcmrules.cpp:28
 #, kde-format
@@ -135,11 +136,13 @@ msgid ""
 "for it will be used.\n"
 "Specifying this will block more generic window settings from taking effect."
 msgstr ""
+"窗口属性将不受影响，它将按照默认方式进行处理。\n"
+"指定此项将会阻止更多常规窗口设置生效。"
 
 #: optionsmodel.cpp:157
 #, kde-format
 msgid "Apply Initially"
-msgstr "初始应用"
+msgstr "初始状态应用"
 
 #: optionsmodel.cpp:158
 #, kde-format
@@ -148,18 +151,20 @@ msgid ""
 "created.\n"
 "No further changes will be affected."
 msgstr ""
+"窗口属性将只在窗口创建后设置为给定的数值。\n"
+"这不会影响更多的更改。"
 
 #: optionsmodel.cpp:161
 #, kde-format
 msgid "Remember"
-msgstr "记住"
+msgstr "记忆"
 
 #: optionsmodel.cpp:162
 #, kde-format
 msgid ""
 "The value of the window property will be remembered and, every time the "
 "window is created, the last remembered value will be applied."
-msgstr ""
+msgstr "窗口属性的数值将被记忆，以后每次创建窗口时将会应用上次记忆的数值。"
 
 #: optionsmodel.cpp:165
 #, kde-format
@@ -169,7 +174,7 @@ msgstr "强制"
 #: optionsmodel.cpp:166
 #, kde-format
 msgid "The window property will be always forced to the given value."
-msgstr ""
+msgstr "窗口属性将总是被强制为给定的数值。"
 
 #: optionsmodel.cpp:168
 #, kde-format
@@ -183,6 +188,8 @@ msgid ""
 "be affected later\n"
 "(this action will be deleted afterwards)."
 msgstr ""
+"窗口属性将被立即设置为给定的数值，而且在以后不会受到影响 (此操作将在事后被删"
+"除)。"
 
 #: optionsmodel.cpp:172
 #, kde-format
@@ -195,6 +202,8 @@ msgid ""
 "The window property will be forced to the given value until it is hidden\n"
 "(this action will be deleted after the window is hidden)."
 msgstr ""
+"窗口属性将被强制为给定的数值，直到它被隐藏\n"
+"(此操作将在窗口隐藏后被删除)。"
 
 #: package/contents/ui/FileDialogLoader.qml:14
 #, kde-format
@@ -209,50 +218,50 @@ msgstr "KWin 规则 (*.kwinrule)"
 #: package/contents/ui/OptionsComboBox.qml:32
 #, kde-format
 msgid "None selected"
-msgstr "未选中"
+msgstr "没有选中的项"
 
 #: package/contents/ui/OptionsComboBox.qml:37
 #, kde-format
 msgid "All selected"
-msgstr ""
+msgstr "选中所有项"
 
 #: package/contents/ui/OptionsComboBox.qml:39
 #, kde-format
 msgid "%1 selected"
 msgid_plural "%1 selected"
-msgstr[0] ""
+msgstr[0] "%1 个选中的项"
 
 #: package/contents/ui/RulesEditor.qml:48
 #: package/contents/ui/RulesEditor.qml:67
 #, kde-format
 msgid "Add Properties..."
-msgstr ""
+msgstr "添加属性..."
 
 #: package/contents/ui/RulesEditor.qml:67
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 #: package/contents/ui/RulesEditor.qml:80
 #, kde-format
 msgid "Detect Window Properties"
-msgstr ""
+msgstr "检测窗口属性"
 
 #: package/contents/ui/RulesEditor.qml:93
 #, kde-format
 msgid "Instantly"
-msgstr ""
+msgstr "即时"
 
 #: package/contents/ui/RulesEditor.qml:94
 #, kde-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
-msgstr[0] ""
+msgstr[0] "在 %1 秒后"
 
 #: package/contents/ui/RulesEditor.qml:113
 #, kde-format
 msgid "Select properties"
-msgstr ""
+msgstr "选择属性"
 
 #: package/contents/ui/RulesEditor.qml:205
 #: package/contents/ui/ValueEditor.qml:53
@@ -271,64 +280,64 @@ msgstr "否"
 #: package/contents/ui/ValueEditor.qml:134
 #, kde-format
 msgid "%1 %"
-msgstr ""
+msgstr "%1 %"
 
 #: package/contents/ui/RulesEditor.qml:209
 #, kde-format
 msgctxt "Coordinates (x, y)"
 msgid "(%1, %2)"
-msgstr ""
+msgstr "(%1, %2)"
 
 #: package/contents/ui/RulesEditor.qml:211
 #, kde-format
 msgctxt "Size (width, height)"
 msgid "(%1, %2)"
-msgstr ""
+msgstr "(%1, %2)"
 
 #: package/contents/ui/RulesList.qml:61
 #, kde-format
 msgid "No rules for specific windows are currently set"
-msgstr ""
+msgstr "当前没有设置用于特定窗口的规则"
 
 #: package/contents/ui/RulesList.qml:69
 #, kde-format
 msgid "Select the rules to export"
-msgstr ""
+msgstr "选择要导出的规则"
 
 #: package/contents/ui/RulesList.qml:73
 #, kde-format
 msgid "Unselect All"
-msgstr ""
+msgstr "全部不选"
 
 #: package/contents/ui/RulesList.qml:73
 #, kde-format
 msgid "Select All"
-msgstr ""
+msgstr "全部选中"
 
 #: package/contents/ui/RulesList.qml:87
 #, kde-format
 msgid "Save Rules"
-msgstr ""
+msgstr "保存规则"
 
 #: package/contents/ui/RulesList.qml:98
 #, kde-format
 msgid "Add New..."
-msgstr ""
+msgstr "新增规则…"
 
 #: package/contents/ui/RulesList.qml:109
 #, kde-format
 msgid "Import..."
-msgstr ""
+msgstr "导入…"
 
 #: package/contents/ui/RulesList.qml:117
 #, kde-format
 msgid "Cancel Export"
-msgstr ""
+msgstr "取消导出"
 
 #: package/contents/ui/RulesList.qml:117
 #, kde-format
 msgid "Export..."
-msgstr ""
+msgstr "导出…"
 
 #: package/contents/ui/RulesList.qml:198
 #, kde-format
@@ -354,7 +363,7 @@ msgstr "导出规则"
 #, kde-format
 msgctxt "(x, y) coordinates separator in size/position"
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #: rulesdialog.cpp:28
 #, kde-format
@@ -369,7 +378,7 @@ msgstr "%1 的设置"
 #: rulesmodel.cpp:222
 #, kde-format
 msgid "New window settings"
-msgstr ""
+msgstr "新窗口设置"
 
 #: rulesmodel.cpp:236
 #, kde-format
@@ -380,60 +389,60 @@ msgid ""
 "recommended you at least limit the window types to avoid special window "
 "types."
 msgstr ""
-"您为窗口类指定了不重要。\n"
+"您已将窗口类指定为“不重要”。\n"
 "这意味着设置将可能应用到全部应用程序的窗口中。如果您真的想要创建常规设置的"
 "话，推荐您至少限制一种窗口类型，以避免特殊的窗口类型。"
 
 #: rulesmodel.cpp:366
 #, kde-format
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: rulesmodel.cpp:366 rulesmodel.cpp:374 rulesmodel.cpp:382 rulesmodel.cpp:389
 #: rulesmodel.cpp:395 rulesmodel.cpp:403 rulesmodel.cpp:408 rulesmodel.cpp:414
 #, kde-format
 msgid "Window matching"
-msgstr ""
+msgstr "窗口匹配"
 
 #: rulesmodel.cpp:374
 #, kde-format
 msgid "Window class (application)"
-msgstr ""
+msgstr "窗口类 (应用程序)"
 
 #: rulesmodel.cpp:382
 #, kde-format
 msgid "Match whole window class"
-msgstr ""
+msgstr "匹配整个窗口类"
 
 #: rulesmodel.cpp:389
 #, kde-format
 msgid "Whole window class"
-msgstr ""
+msgstr "整个窗口类"
 
 #: rulesmodel.cpp:395
 #, kde-format
 msgid "Window types"
-msgstr ""
+msgstr "窗口类型"
 
 #: rulesmodel.cpp:403
 #, kde-format
 msgid "Window role"
-msgstr ""
+msgstr "窗口角色"
 
 #: rulesmodel.cpp:408
 #, kde-format
 msgid "Window title"
-msgstr ""
+msgstr "窗口标题"
 
 #: rulesmodel.cpp:414
 #, kde-format
 msgid "Machine (hostname)"
-msgstr ""
+msgstr "计算机 (主机名)"
 
 #: rulesmodel.cpp:420
 #, kde-format
 msgid "Position"
-msgstr ""
+msgstr "位置"
 
 #: rulesmodel.cpp:420 rulesmodel.cpp:425 rulesmodel.cpp:430 rulesmodel.cpp:435
 #: rulesmodel.cpp:440 rulesmodel.cpp:453 rulesmodel.cpp:467 rulesmodel.cpp:472
@@ -441,32 +450,32 @@ msgstr ""
 #: rulesmodel.cpp:502 rulesmodel.cpp:507 rulesmodel.cpp:512
 #, kde-format
 msgid "Size & Position"
-msgstr ""
+msgstr "大小和位置"
 
 #: rulesmodel.cpp:425
 #, kde-format
 msgid "Size"
-msgstr ""
+msgstr "大小"
 
 #: rulesmodel.cpp:430
 #, kde-format
 msgid "Maximized horizontally"
-msgstr ""
+msgstr "水平最大化"
 
 #: rulesmodel.cpp:435
 #, kde-format
 msgid "Maximized vertically"
-msgstr ""
+msgstr "垂直最大化"
 
 #: rulesmodel.cpp:440
 #, kde-format
 msgid "Virtual Desktop"
-msgstr ""
+msgstr "虚拟桌面"
 
 #: rulesmodel.cpp:453
 #, kde-format
 msgid "Activity"
-msgstr ""
+msgstr "活动"
 
 #: rulesmodel.cpp:467
 #, kde-format
@@ -476,27 +485,27 @@ msgstr "屏幕"
 #: rulesmodel.cpp:472
 #, kde-format
 msgid "Fullscreen"
-msgstr ""
+msgstr "全屏"
 
 #: rulesmodel.cpp:477
 #, kde-format
 msgid "Minimized"
-msgstr ""
+msgstr "最小化"
 
 #: rulesmodel.cpp:482
 #, kde-format
 msgid "Shaded"
-msgstr ""
+msgstr "被遮蔽"
 
 #: rulesmodel.cpp:487
 #, kde-format
 msgid "Initial placement"
-msgstr ""
+msgstr "初始位置"
 
 #: rulesmodel.cpp:493
 #, kde-format
 msgid "Ignore requested geometry"
-msgstr ""
+msgstr "忽略程序请求的大小和位置"
 
 #: rulesmodel.cpp:495
 #, kde-format
@@ -514,12 +523,12 @@ msgstr ""
 #: rulesmodel.cpp:502
 #, kde-format
 msgid "Minimum Size"
-msgstr ""
+msgstr "最小尺寸"
 
 #: rulesmodel.cpp:507
 #, kde-format
 msgid "Maximum Size"
-msgstr ""
+msgstr "最大尺寸"
 
 #: rulesmodel.cpp:512
 #, kde-format
@@ -539,23 +548,23 @@ msgstr "例如，终端或者视频"
 #: rulesmodel.cpp:523
 #, kde-format
 msgid "Keep above"
-msgstr ""
+msgstr "保持在上方"
 
 #: rulesmodel.cpp:523 rulesmodel.cpp:528 rulesmodel.cpp:533 rulesmodel.cpp:539
 #: rulesmodel.cpp:545 rulesmodel.cpp:551
 #, kde-format
 msgid "Arrangement & Access"
-msgstr ""
+msgstr "布局和访问"
 
 #: rulesmodel.cpp:528
 #, kde-format
 msgid "Keep below"
-msgstr ""
+msgstr "保持在下方"
 
 #: rulesmodel.cpp:533
 #, kde-format
 msgid "Skip taskbar"
-msgstr ""
+msgstr "跳过任务栏"
 
 #: rulesmodel.cpp:535
 #, kde-format
@@ -565,7 +574,7 @@ msgstr "窗口(不)显示在任务栏中。"
 #: rulesmodel.cpp:539
 #, kde-format
 msgid "Skip pager"
-msgstr ""
+msgstr "跳过桌面切换"
 
 #: rulesmodel.cpp:541
 #, kde-format
@@ -575,7 +584,7 @@ msgstr "窗口(不)显示在虚拟桌面管理器中。"
 #: rulesmodel.cpp:545
 #, kde-format
 msgid "Skip switcher"
-msgstr ""
+msgstr "跳过程序切换"
 
 #: rulesmodel.cpp:547
 #, kde-format
@@ -590,34 +599,34 @@ msgstr "快捷键"
 #: rulesmodel.cpp:557
 #, kde-format
 msgid "No titlebar and frame"
-msgstr ""
+msgstr "无标题栏和边框"
 
 #: rulesmodel.cpp:557 rulesmodel.cpp:562 rulesmodel.cpp:568 rulesmodel.cpp:573
 #: rulesmodel.cpp:578 rulesmodel.cpp:589 rulesmodel.cpp:600 rulesmodel.cpp:608
 #: rulesmodel.cpp:621 rulesmodel.cpp:626 rulesmodel.cpp:632 rulesmodel.cpp:637
 #, kde-format
 msgid "Appearance & Fixes"
-msgstr ""
+msgstr "外观和修正"
 
 #: rulesmodel.cpp:562
 #, kde-format
 msgid "Titlebar color scheme"
-msgstr ""
+msgstr "标题栏配色"
 
 #: rulesmodel.cpp:568
 #, kde-format
 msgid "Active opacity"
-msgstr ""
+msgstr "活动不透明度"
 
 #: rulesmodel.cpp:573
 #, kde-format
 msgid "Inactive opacity"
-msgstr ""
+msgstr "非活动不透明度"
 
 #: rulesmodel.cpp:578
 #, kde-format
 msgid "Focus stealing prevention"
-msgstr ""
+msgstr "阻止焦点抢占"
 
 #: rulesmodel.cpp:580
 #, kde-format
@@ -657,7 +666,7 @@ msgstr ""
 #: rulesmodel.cpp:600
 #, kde-format
 msgid "Accept focus"
-msgstr ""
+msgstr "接受焦点"
 
 #: rulesmodel.cpp:602
 #, kde-format
@@ -697,12 +706,12 @@ msgstr ""
 #: rulesmodel.cpp:621
 #, kde-format
 msgid "Closeable"
-msgstr ""
+msgstr "可关闭"
 
 #: rulesmodel.cpp:626
 #, kde-format
 msgid "Set window type"
-msgstr ""
+msgstr "设置窗口类型"
 
 #: rulesmodel.cpp:632
 #, kde-format

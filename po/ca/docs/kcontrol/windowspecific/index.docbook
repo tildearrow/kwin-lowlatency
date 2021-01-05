@@ -30,7 +30,7 @@
 >Plasma 5.8</releaseinfo>
 <abstract>
 <para
->Aquí podreu personalitzar l'ajust de finestra específicament sols per algunes finestres.</para>
+>Aquí podreu personalitzar les opcions de finestra específicament sols per algunes finestres.</para>
       </abstract>
 <keywordset>
 <keyword
@@ -50,7 +50,7 @@
 >Arranjament específic de la finestra: Inici ràpid</title>
 
 <para
->Aquí podreu personalitzar l'ajust de finestra específicament sols per algunes finestres.</para>
+>Aquí podreu personalitzar les opcions de finestra específicament sols per algunes finestres.</para>
 
 <note>
 <para
@@ -303,7 +303,7 @@
 <para
 >Juntament amb els criteris de coincidència de la finestra, cada regla de la finestra té un conjunt d'<link linkend="window-attributes"
 >Atributs de la finestra</link
->. Els atributs substituiran l'ajustament de l'aplicació corresponent i s'aplicaran abans que &kwin; mostri la finestra. </para>
+>. Els atributs substituiran la configuració de l'aplicació corresponent i s'aplicaran abans que &kwin; mostri la finestra. </para>
 
 </sect2>
 </sect1>
@@ -632,7 +632,7 @@
 ></term>
     <listitem>
     <para
->Aplica/Força l'ajustament un cop i desfà l'atribut. La diferència entre els dos és en temps d'execució, <guilabel
+>Aplica/Força l'opció un cop i desfà l'atribut. La diferència entre els dos és en temps d'execució, <guilabel
 >Aplica ara</guilabel
 > permet que l'atribut sigui canviat i <guilabel
 >Força temporalment</guilabel
@@ -671,7 +671,7 @@
 ><para
 >Els arguments <guilabel
 >Sí/No</guilabel
-> s'utilitzen per activar o desactivar els atributs. Ser indulgents amb la gramàtica, ens ajudarà a comprendre com serà processat un ajustament. <inlinemediaobject
+> s'utilitzen per activar o desactivar els atributs. Ser indulgents amb la gramàtica, ens ajudarà a comprendre com serà processada una opció. <inlinemediaobject
 > <imageobject
 > <imagedata fileref="Face-smile.png" format="PNG"/> </imageobject
 ></inlinemediaobject

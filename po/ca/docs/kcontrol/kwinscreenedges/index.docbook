@@ -41,7 +41,7 @@
 >Feu clic amb qualsevol botó del ratolí sobre un quadrat i escolliu un efecte al menú contextual. Les vores amb un quadrat blau ja tenen un efecte associat, un quadrat de color gris indica que no hi ha efecte seleccionat per a aquesta vora.</para>
 
 <para
->El nombre d'elements accessibles en el menú contextual dependrà dels ajustos en el mòdul <ulink url="help:/kcontrol/kwineffects/index.html"
+>El nombre d'elements accessibles en el menú contextual dependrà de la configuració en el mòdul <ulink url="help:/kcontrol/kwineffects/index.html"
 ><guilabel
 >Efectes d'escriptori</guilabel
 ></ulink
@@ -52,7 +52,7 @@
 >. Això activarà els elements corresponents al menú contextual.</para>
 
 <para
->Si esteu cercant l'ajustament per activar el canvi d'escriptori empenyent el cursor del ratolí contra la vora de la pantalla, trieu un dels efectes <guilabel
+>Si esteu cercant l'opció per activar el canvi d'escriptori empenyent el cursor del ratolí contra la vora de la pantalla, trieu un dels efectes <guilabel
 >Presenta les finestres</guilabel
 > des del menú contextual.</para>
 

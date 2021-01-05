@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-11-03 08:14+0100\n"
-"PO-Revision-Date: 2020-11-28 18:08+0100\n"
+"PO-Revision-Date: 2020-12-01 13:52+0100\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -92,7 +92,7 @@ msgstr "Utilitat d'ajuda del KWin"
 #: main.cpp:205
 #, kde-format
 msgid "KWin id of the window for special window settings."
-msgstr "ID del KWin de la finestra per a configuracions especials d'aquesta."
+msgstr "ID del KWin de la finestra per a opcions especials d'aquesta."
 
 #: main.cpp:206
 #, kde-format
@@ -139,7 +139,8 @@ msgid ""
 msgstr ""
 "La propietat de la finestra no es veurà afectada i per tant s'usarà la "
 "gestió predeterminada per a ella.\n"
-"Specifying this will block more generic window settings from taking effect."
+"En especificar això, es blocaran que tinguin efecte les opcions més "
+"genèriques de finestra."
 
 #: optionsmodel.cpp:157
 #, kde-format

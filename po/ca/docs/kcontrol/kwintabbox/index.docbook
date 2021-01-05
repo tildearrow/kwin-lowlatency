@@ -40,7 +40,7 @@
 <para
 >Aquest mòdul ofereix la possibilitat de configurar el comportament de navegar a través de les finestres, sovint referida com a <keycombo
 >&Alt;&Tab;</keycombo
->. Hi ha dos conjunts independents d'efectes que poden tenir ajustaments diferents. En aquest mòdul, cadascun d'aquests conjunts disposa d'una pestanya pròpia (<guilabel
+>. Hi ha dos conjunts independents d'efectes que poden tenir opcions diferents. En aquest mòdul, cadascun d'aquests conjunts disposa d'una pestanya pròpia (<guilabel
 >Principal</guilabel
 > i <guilabel
 >Alternativa</guilabel
@@ -67,7 +67,7 @@
 ></note>
 
 <para
->La següent documentació de les opcions s'aplica a l'ajustament general i també a les alternatives.</para>
+>La següent documentació de les opcions s'aplica a la configuració general i també a les alternatives.</para>
 
 <sect2 id="visualization">
 <title
@@ -95,7 +95,7 @@
 >Canvi en roda</guilabel
 > mostra totes les finestres en una pila 3D. La finestra seleccionada resta a la part superior de la pila i en navegar a través de les finestres mourà la pila de manera que la nova finestra seleccionada resti a la part superior. </para>
 <para
->Si l'efecte proporciona ajustaments addicionals, el botó configura serà activat. En fer clic sobre aquest botó es mostrarà un diàleg de configuració. </para>
+>Si l'efecte proporciona opcions addicionals, el botó configura serà activat. En fer clic sobre aquest botó es mostrarà un diàleg de configuració. </para>
 <note
 ><para
 >Quan la composició no està activa o aquesta s'ha suspès, es mostrarà el llistat de finestres normal. No hi haurà pèrdua de funcionalitat si se selecciona un efecte i la composició no està activa.</para
@@ -130,9 +130,9 @@
 <para
 >Podeu configurar quines finestres s'han de mostrar en la llista inicial prement <keycombo
 >&Alt;&Tab;</keycombo
-> (predefinides per a l'ajustament de la pestanya <guilabel
+> (predefinides per a la configuració de la pestanya <guilabel
 >Principal</guilabel
->) o la drecera definida per l'usuari per a l'ajustament de les alternatives. </para>
+>) o la drecera definida per l'usuari per a la configuració de les alternatives. </para>
 <para
 >D'aquesta manera és possible només mostrar les finestres a l'escriptori virtual actual o les de tots els escriptoris. A més podeu aplicar regles similars per a les finestres de les activitats o per a les pantalles a una configuració de múltiples monitors. </para>
 <para
