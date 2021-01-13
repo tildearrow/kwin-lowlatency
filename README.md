@@ -85,9 +85,7 @@ use the Arch Linux instructions. Manjaro has updated to Plasma 5.20.
 
 ## NixOS
 
-check out pasqui23's [kwin-ll](https://github.com/pasqui23/nixpkgs/tree/kwin-ll) branch.
-
-please note that this is an old version.
+[an overlay and binary cache](https://github.com/InternetUnexplorer/kwin-lowlatency-overlay) are available, courtesy of InternetUnexplorer.
 
 ## openSUSE Leap and Tumbleweed
 
