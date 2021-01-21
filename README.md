@@ -2,6 +2,19 @@
 
 KWin-lowlatency is my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
 
+# is KWin-lowlatency reaching its final days?
+
+in the beginning of 2021, [a massive change set](https://invent.kde.org/plasma/kwin/-/merge_requests/507) has been merged to KWin which pretty much defeats the point of this project.
+
+so this means KWin-lowlatency is dead, right?
+
+the answer is...
+
+...no. it is not dead.
+or at least not until KWin regains full-screen unredirection capabilities on both X11 and Wayland.
+
+now... what if the change set does not work on some card for some reason?
+
 ## old background
 
 stock KWin has a major issue regarding stuttering. it stutters heavily, and if you don't want that, then you have the latency problem (of up to 50ms!).
