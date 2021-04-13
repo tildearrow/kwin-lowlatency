@@ -12,8 +12,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Language: Malayalam\n"
-"X-Poedit-Country: INDIA\n"
 
 #: compositing.cpp:392
 #, fuzzy, kde-format

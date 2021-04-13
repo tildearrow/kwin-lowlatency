@@ -2,7 +2,7 @@
 #
 # Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2007.
 # Håvard Korsvoll <korsvoll@skulelinux.no>, 2008.
-# Karl Ove Hufthammer <karl@huftis.org>, 2008, 2010, 2015, 2016, 2018, 2019, 2020.
+# Karl Ove Hufthammer <karl@huftis.org>, 2008, 2010, 2015, 2016, 2018, 2019, 2020, 2021.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2008, 2009, 2010.
 # Sveinung Kvilhaugsvik <sveinung84@users.sourceforge.net>, 2009.
 # Øystein Steffensen-Alværvik <ystein@posteo.net>, 2018.
@@ -10,15 +10,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-30 17:27+0200\n"
-"PO-Revision-Date: 2020-05-09 23:37+0200\n"
+"POT-Creation-Date: 2021-03-28 15:34+0000\n"
+"PO-Revision-Date: 2021-03-21 17:39+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.04.1\n"
+"X-Generator: Lokalize 20.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -75,8 +75,8 @@ msgctxt "Special entry in alt+tab list for minimizing all windows"
 msgid "Show Desktop"
 msgstr "Vis skrivebordet"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowTitle)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
 #: coverswitch/coverswitch_config.ui:17 flipswitch/flipswitch_config.ui:191
 #: presentwindows/presentwindows_config.ui:406
 #, kde-format
@@ -420,8 +420,8 @@ msgstr "Plan"
 msgid "Do not animate windows on all desktops"
 msgstr "Ikkje animer vindauge på alle skriveborda"
 
-#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingLife)
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RotationDuration)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingLife)
 #: cubeslide/cubeslide_config.ui:52 mouseclick/mouseclick_config.ui:132
 #, kde-format
 msgid " msec"
@@ -1322,8 +1322,8 @@ msgstr "Ringradius:"
 msgid "Ring Count:"
 msgstr "Mengd ringar:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, font)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: mouseclick/mouseclick_config.ui:210 showfps/showfps_config.ui:17
 #, kde-format
 msgid "Text"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"POT-Creation-Date: 2021-03-28 15:34+0000\n"
 "PO-Revision-Date: 2014-07-05 19:42+0300\n"
 "Last-Translator: Abdalrahim Fakhouri <abdilra7eem@yahoo.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org\n"
@@ -70,8 +70,8 @@ msgctxt "Special entry in alt+tab list for minimizing all windows"
 msgid "Show Desktop"
 msgstr "أظهر سطح المكتب"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowTitle)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
 #: coverswitch/coverswitch_config.ui:17 flipswitch/flipswitch_config.ui:191
 #: presentwindows/presentwindows_config.ui:406
 #, kde-format
@@ -414,8 +414,8 @@ msgstr "مسطّح"
 msgid "Do not animate windows on all desktops"
 msgstr "لا تحرّك النوافذ على كل أسطح المكتب"
 
-#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingLife)
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RotationDuration)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingLife)
 #: cubeslide/cubeslide_config.ui:52 mouseclick/mouseclick_config.ui:132
 #, kde-format
 msgid " msec"
@@ -1342,8 +1342,8 @@ msgstr "نصف قطر الحلقة:"
 msgid "Ring Count:"
 msgstr "عدد الحلقات:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, font)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: mouseclick/mouseclick_config.ui:210 showfps/showfps_config.ui:17
 #, kde-format
 msgid "Text"

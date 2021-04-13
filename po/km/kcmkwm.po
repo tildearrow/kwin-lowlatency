@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"POT-Creation-Date: 2021-03-28 15:34+0000\n"
 "PO-Revision-Date: 2012-06-13 15:40+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -35,8 +35,8 @@ msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.in
 msgid "Inactive Inner Window Actions"
 msgstr "បង្អួច​ខាង​ក្នុង​អសកម្ម"
 
-#. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_1)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
 #: actions.ui:26 mouse.ui:177
 #, fuzzy, kde-format
 #| msgid "&Titlebar double-click:"
@@ -71,24 +71,24 @@ msgstr "ធ្វើ​ឲ្យ​សកម្ម លើក​ឡើង និ�
 msgid "Activate and pass click"
 msgstr "ធ្វើ​ឲ្យ​សកម្ម និង​ចុច​"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #: actions.ui:53 actions.ui:93 actions.ui:133 mouse.ui:293 mouse.ui:408
 #: mouse.ui:523
 #, kde-format
 msgid "Activate"
 msgstr "ធ្វើ​ឲ្យ​សកម្ម"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #: actions.ui:58 actions.ui:98 actions.ui:138 mouse.ui:283 mouse.ui:398
 #: mouse.ui:513
 #, fuzzy, kde-format
@@ -96,8 +96,8 @@ msgstr "ធ្វើ​ឲ្យ​សកម្ម"
 msgid "Activate and raise"
 msgstr "ធ្វើ​ឲ្យ​សកម្ម និង​លើក​ឡើង"
 
-#. i18n: ectx: property (text), widget (QLabel, label_6)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label_6)
 #: actions.ui:66 mouse.ui:200
 #, fuzzy, kde-format
 #| msgid "&Titlebar double-click:"
@@ -114,8 +114,8 @@ msgstr ""
 "នៅ​ក្នុង​ជួរ​ដេក​នេះ អ្នក​អាច​ប្ដូរ​ឥរិយាបថ​ការ​ចុច​កណ្ដាល​តាម​បំណង នៅ​ពេល​ចុច​​ក្នុងបង្អួច​ខាង​ក្នុង​អសកម្ម ('ខាង​"
 "ក្នុង' មានន័យថា ៖ មិន​មែន​របារ​ចំណង​ជើង មិន​មែន​ស៊ុម​ឡើយ) ។"
 
-#. i18n: ectx: property (text), widget (QLabel, label_7)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_7)
 #: actions.ui:106 mouse.ui:213
 #, kde-format
 msgid "&Right click:"
@@ -131,8 +131,8 @@ msgstr ""
 "នៅ​ក្នុង​ជួរ​ដេក​នេះ អ្នក​អាច​ប្ដូរ​ឥរិយាបថ​ការ​ចុច​ខាង​ស្ដាំ​តាម​បំណង នៅ​ពេល​ចុច​ក្នុង​បង្អួច​ខាង​ក្នុង​អសកម្ម​ "
 "('ខាង​ក្នុង' មាន​ន័យ​ថា ៖ មិន​មែន​របារ​ចំណង​ជើង មិន​មែន​ស៊ុម​ឡើយ) ។"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: actions.ui:146 mouse.ui:88
 #, fuzzy, kde-format
 #| msgid "Mouse wheel:"
@@ -211,8 +211,8 @@ msgstr "មេតា"
 msgid "  + "
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_8)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
 #: actions.ui:248 mouse.ui:601
 #, fuzzy, kde-format
 #| msgid "&Titlebar double-click:"
@@ -244,15 +244,15 @@ msgstr "ផ្លាស់ទី"
 msgid "Activate, raise and move"
 msgstr "ធ្វើ​ឲ្យ​សកម្ម លើក​ឡើង និង​ផ្លាស់ទី"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:275 actions.ui:345 actions.ui:415 mouse.ui:246 mouse.ui:308
 #: mouse.ui:361 mouse.ui:423 mouse.ui:476 mouse.ui:538
 #, fuzzy, kde-format
@@ -268,15 +268,15 @@ msgstr "បិទ​បើក លើក​ឡើង និង​បន្ទា�
 msgid "Resize"
 msgstr "ប្តូរ​ទំហំ"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:285 actions.ui:355 actions.ui:425 mouse.ui:236 mouse.ui:298
 #: mouse.ui:351 mouse.ui:413 mouse.ui:466 mouse.ui:528
 #, kde-format
@@ -284,6 +284,9 @@ msgid "Raise"
 msgstr "លើក​ឡើង"
 
 #. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
@@ -291,9 +294,6 @@ msgstr "លើក​ឡើង"
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:290 actions.ui:360 actions.ui:430 mouse.ui:65 mouse.ui:241
 #: mouse.ui:303 mouse.ui:356 mouse.ui:418 mouse.ui:471 mouse.ui:533
 #, kde-format
@@ -301,6 +301,9 @@ msgid "Lower"
 msgstr "ទាប​ជាង"
 
 #. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
@@ -308,9 +311,6 @@ msgstr "ទាប​ជាង"
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:295 actions.ui:365 actions.ui:435 mouse.ui:55 mouse.ui:251
 #: mouse.ui:313 mouse.ui:366 mouse.ui:428 mouse.ui:481 mouse.ui:543
 #, kde-format
@@ -336,6 +336,10 @@ msgid "Increase opacity"
 msgstr "បង្កើន​ភាព​ស្រអាប់"
 
 #. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct1)
@@ -344,10 +348,6 @@ msgstr "បង្កើន​ភាព​ស្រអាប់"
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #: actions.ui:310 actions.ui:380 actions.ui:450 actions.ui:505 mouse.ui:80
 #: mouse.ui:132 mouse.ui:271 mouse.ui:333 mouse.ui:386 mouse.ui:448
 #: mouse.ui:501 mouse.ui:563
@@ -371,8 +371,8 @@ msgid ""
 "titlebar or the frame."
 msgstr "​ក្នុង​ជួរ​ដេក​នេះ អ្នក​អាច​ប្តូរ​ឥរិយាបថ​ចុច​កណ្តុរ​កណ្តាល​តាម​បំណង ​ពេល​ចុច​លើ​របារ​ចំណង​ជើង ឬ​ស៊ុម ។"
 
-#. i18n: ectx: property (text), widget (QLabel, label_10)
 #. i18n: ectx: property (text), widget (QLabel, label_9)
+#. i18n: ectx: property (text), widget (QLabel, label_10)
 #: actions.ui:388 mouse.ui:653
 #, kde-format
 msgid "Right clic&k:"
@@ -403,48 +403,48 @@ msgstr ""
 "នៅ​ទីនេះ អ្នក​អាច​ប្ដូរ​ឥរិយាបថ​របស់ KDE តាម​បំណង នៅពេល​រមូរ​ដោយ​ប្រើកង់កណ្ដុរ​នៅ​ក្នុង​បង្អួច​ ខណៈពេល​ចុច​"
 "គ្រាប់ចុច​កែប្រែ ។"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:475 mouse.ui:102
 #, fuzzy, kde-format
 #| msgid "Raise/Lower"
 msgid "Raise/lower"
 msgstr "លើក​ឡើង/បន្ទាប​ចុះ"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:480 mouse.ui:107
 #, fuzzy, kde-format
 #| msgid "Shade/Unshade"
 msgid "Shade/unshade"
 msgstr "ដាក់​ស្រមោល/ដោះ​ស្រមោល"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:485 mouse.ui:112
 #, fuzzy, kde-format
 #| msgid "Maximize/Restore"
 msgid "Maximize/restore"
 msgstr "ពង្រីក​អតិបរមា/ស្តារ"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:490 mouse.ui:117
 #, fuzzy, kde-format
 #| msgid "Keep Above/Below"
 msgid "Keep above/below"
 msgstr "លើ​គេ/ក្រោម​គេ"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:495 mouse.ui:122
 #, fuzzy, kde-format
 #| msgid "Move to Previous/Next Desktop"
 msgid "Move to previous/next desktop"
 msgstr "ផ្លាស់ទី​ទៅ​ផ្ទៃតុ មុន/បន្ទាប់"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:500 mouse.ui:127
 #, fuzzy, kde-format
 #| msgid "Change Opacity"
@@ -487,9 +487,9 @@ msgid ""
 msgstr ""
 "កំណត់​ពេលវេលា​ជា​មិល្លីវិនាទី មុន​ពេល​បង្អួចមិន​​ដោះ​​ស្រមោល ពេល​ព្រួញ​កណ្ដុរ​ទៅ​​លើ​បង្អួច​ដែល​មាន​ស្រមោល ។"
 
-#. i18n: ectx: property (suffix), widget (QSpinBox, shadeHover)
 #. i18n: ectx: property (suffix), widget (QSpinBox, delayFocus)
 #. i18n: ectx: property (suffix), widget (QSpinBox, autoRaise)
+#. i18n: ectx: property (suffix), widget (QSpinBox, shadeHover)
 #: advanced.ui:45 focus.ui:85 focus.ui:178
 #, kde-format
 msgid " ms"
@@ -751,10 +751,10 @@ msgstr ""
 "ការជូន​ដំណឹង ។ </p>​"
 
 #. i18n: Focus Stealing Prevention Level
-#. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, borderSnap)
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, windowSnap)
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, centerSnap)
+#. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
 #: focus.ui:118 moving.ui:53 moving.ui:75 moving.ui:97
 #, fuzzy, kde-format
 #| msgctxt "Focus Stealing Prevention Level"

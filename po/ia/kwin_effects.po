@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"POT-Creation-Date: 2021-03-28 15:34+0000\n"
 "PO-Revision-Date: 2020-01-03 22:46+0100\n"
 "Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -68,8 +68,8 @@ msgctxt "Special entry in alt+tab list for minimizing all windows"
 msgid "Show Desktop"
 msgstr "Monstra Scriptorio"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowTitle)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
 #: coverswitch/coverswitch_config.ui:17 flipswitch/flipswitch_config.ui:191
 #: presentwindows/presentwindows_config.ui:406
 #, kde-format
@@ -412,8 +412,8 @@ msgstr "Plane"
 msgid "Do not animate windows on all desktops"
 msgstr "Non anima fenestras super omne scriptorios"
 
-#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingLife)
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RotationDuration)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingLife)
 #: cubeslide/cubeslide_config.ui:52 mouseclick/mouseclick_config.ui:132
 #, kde-format
 msgid " msec"
@@ -1323,8 +1323,8 @@ msgstr "Radius de circulo:"
 msgid "Ring Count:"
 msgstr "Conto de circulo:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, font)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: mouseclick/mouseclick_config.ui:210 showfps/showfps_config.ui:17
 #, kde-format
 msgid "Text"

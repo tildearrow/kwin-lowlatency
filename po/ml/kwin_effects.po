@@ -7,17 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"POT-Creation-Date: 2021-03-28 15:34+0000\n"
 "PO-Revision-Date: 2019-12-12 22:14+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
-"Language-Team: Malayalam <smc-discuss@googlegroups.com>\n"
+"Language-Team: SMC <smc.org.in>\n"
 "Language: ml\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.9.1\n"
-"X-Poedit-Country: INDIA\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -68,8 +66,8 @@ msgctxt "Special entry in alt+tab list for minimizing all windows"
 msgid "Show Desktop"
 msgstr "പണിയിട വിതരണ ശ്രംഖല (ഗ്രിഡ്) കാണിക്കുക"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowTitle)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
 #: coverswitch/coverswitch_config.ui:17 flipswitch/flipswitch_config.ui:191
 #: presentwindows/presentwindows_config.ui:406
 #, kde-format
@@ -412,8 +410,8 @@ msgstr "നിലം"
 msgid "Do not animate windows on all desktops"
 msgstr "നിലവിലുള്ള ജാലകങ്ങള്‍ ടോഗിള്‍ ചെയ്യുക (എല്ലാ പണിയിടങ്ങള്‍ക്കുമായി)"
 
-#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingLife)
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RotationDuration)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingLife)
 #: cubeslide/cubeslide_config.ui:52 mouseclick/mouseclick_config.ui:132
 #, kde-format
 msgid " msec"
@@ -1307,8 +1305,8 @@ msgstr "&റേഡിയസ് (വ്യാസാര്‍ദ്ധം):"
 msgid "Ring Count:"
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, font)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: mouseclick/mouseclick_config.ui:210 showfps/showfps_config.ui:17
 #, kde-format
 msgid "Text"

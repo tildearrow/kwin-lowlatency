@@ -1,6 +1,6 @@
 # Translation of kcmkwincompositing to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2007, 2008, 2010, 2015, 2016, 2018, 2019.
+# Karl Ove Hufthammer <karl@huftis.org>, 2007, 2008, 2010, 2015, 2016, 2018, 2019, 2020, 2021.
 # Håvard Korsvoll <korsvoll@skulelinux.no>, 2009.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2009, 2010.
 # Øystein Steffensen-Alværvik <ystein@posteo.net>, 2018.
@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: kcmkwincompositing\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-30 17:27+0200\n"
-"PO-Revision-Date: 2019-01-05 12:50+0100\n"
+"PO-Revision-Date: 2020-10-23 20:42+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.03.70\n"
+"X-Generator: Lokalize 20.12.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -49,6 +49,7 @@ msgctxt "OpenGL Platform Interface"
 msgid "GLX"
 msgstr "GLX"
 
+# \n fører til faktiske linjeskift, så avsnittet bør vera balansert.
 #. i18n: ectx: property (text), widget (KMessageWidget, glCrashedWarning)
 #: compositing.ui:29
 #, kde-format
@@ -60,12 +61,11 @@ msgid ""
 "immediate crash!\n"
 "Alternatively, you might want to use the XRender backend instead."
 msgstr ""
-"OpenGL-samansetjing (standarden) har krasja KWin tidlgere.\n"
+"OpenGL-samansetjing (som er standard) har krasja KWin tidlegare.\n"
 "Dette kjem truleg av ein feil i drivaren.\n"
 "Viss du meiner at du i mellomtida har oppgradert til ein stabil drivar,\n"
-"kan du slå av dette vernet, men ver merksam på at det kan føra til krasj med "
-"ein gong.\n"
-"Elles kan du kanskje bruka XRender-motoren i staden."
+"kan du slå av dette vernet, men ver merksam på at det kan føra til krasj\n"
+"med ein gong. Elles kan du kanskje bruka XRender-motoren i staden."
 
 #. i18n: ectx: property (text), widget (KMessageWidget, scaleWarning)
 #: compositing.ui:42

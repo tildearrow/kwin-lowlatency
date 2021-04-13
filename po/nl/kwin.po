@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"POT-Creation-Date: 2020-09-30 10:59+0200\n"
 "PO-Revision-Date: 2020-01-13 11:25+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -2088,7 +2088,7 @@ msgstr "Virtueel toetsenbord: uitgeschakeld"
 msgid "Whether to show the virtual keyboard on demand."
 msgstr "Of het virtuele toetsenbord op aanvraag wordt getoond."
 
-#: workspace.cpp:1348
+#: workspace.cpp:1358
 #, kde-format
 msgctxt "Introductory text shown in the support information."
 msgid ""

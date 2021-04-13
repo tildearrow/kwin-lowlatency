@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-30 17:27+0200\n"
-"PO-Revision-Date: 2020-04-21 00:27+0200\n"
+"POT-Creation-Date: 2021-03-28 15:34+0000\n"
+"PO-Revision-Date: 2020-10-04 18:11+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -69,8 +69,8 @@ msgctxt "Special entry in alt+tab list for minimizing all windows"
 msgid "Show Desktop"
 msgstr "바탕 화면 표시"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowTitle)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
 #: coverswitch/coverswitch_config.ui:17 flipswitch/flipswitch_config.ui:191
 #: presentwindows/presentwindows_config.ui:406
 #, kde-format
@@ -413,8 +413,8 @@ msgstr "평면"
 msgid "Do not animate windows on all desktops"
 msgstr "모든 바탕 화면에 보이는 창 움직이지 않기"
 
-#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingLife)
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RotationDuration)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingLife)
 #: cubeslide/cubeslide_config.ui:52 mouseclick/mouseclick_config.ui:132
 #, kde-format
 msgid " msec"
@@ -1001,13 +1001,13 @@ msgstr "실행 피드백 효과"
 #, kde-format
 msgctxt "Name of a KWin Effect"
 msgid "Thumbnail Aside"
-msgstr "미리 보기 그림"
+msgstr "옆쪽에 축소판"
 
 #: effect_builtins.cpp:568
 #, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Display window thumbnails on the edge of the screen"
-msgstr "화면의 모서리에 창의 미리 보기 그림을 표시합니다"
+msgstr "화면 모서리에 창의 축소판을 표시합니다"
 
 #: effect_builtins.cpp:582
 #, kde-format
@@ -1309,8 +1309,8 @@ msgstr "알림 반지름:"
 msgid "Ring Count:"
 msgstr "알림 개수:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, font)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: mouseclick/mouseclick_config.ui:210 showfps/showfps_config.ui:17
 #, kde-format
 msgid "Text"
@@ -1751,7 +1751,7 @@ msgstr "바탕 화면 배경 슬라이드"
 #: thumbnailaside/thumbnailaside_config.cpp:73
 #, kde-format
 msgid "Toggle Thumbnail for Current Window"
-msgstr "현재 창의 미리 보기 그림 켬/끔"
+msgstr "현재 창의 축소판 켬/끔"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: thumbnailaside/thumbnailaside_config.ui:23

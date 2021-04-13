@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"POT-Creation-Date: 2021-03-28 15:34+0000\n"
 "PO-Revision-Date: 2019-07-11 12:28+0200\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -42,8 +42,8 @@ msgstr "sps@sastia.com"
 msgid "Inactive Inner Window Actions"
 msgstr "Finestra interior inactiva"
 
-#. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_1)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
 #: actions.ui:26 mouse.ui:177
 #, fuzzy, kde-format
 #| msgid "&Double-click:"
@@ -79,24 +79,24 @@ msgstr "Activa, eleva i passa el clic"
 msgid "Activate and pass click"
 msgstr "Activa i passa el clic"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #: actions.ui:53 actions.ui:93 actions.ui:133 mouse.ui:293 mouse.ui:408
 #: mouse.ui:523
 #, kde-format
 msgid "Activate"
 msgstr "Activa"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coWin3)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
 #: actions.ui:58 actions.ui:98 actions.ui:138 mouse.ui:283 mouse.ui:398
 #: mouse.ui:513
 #, fuzzy, kde-format
@@ -104,8 +104,8 @@ msgstr "Activa"
 msgid "Activate and raise"
 msgstr "Activa i eleva"
 
-#. i18n: ectx: property (text), widget (QLabel, label_6)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label_6)
 #: actions.ui:66 mouse.ui:200
 #, fuzzy, kde-format
 #| msgid "&Double-click:"
@@ -123,8 +123,8 @@ msgstr ""
 "ratolí en clicar a una finestra inactiva interna («interna» significa: ni la "
 "barra de títol, ni el marc)."
 
-#. i18n: ectx: property (text), widget (QLabel, label_7)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_7)
 #: actions.ui:106 mouse.ui:213
 #, kde-format
 msgid "&Right click:"
@@ -141,8 +141,8 @@ msgstr ""
 "en clicar a una finestra inactiva interna («interna» significa: ni la barra "
 "de títol, ni el marc)."
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: actions.ui:146 mouse.ui:88
 #, fuzzy, kde-format
 #| msgid "M&ouse wheel:"
@@ -223,8 +223,8 @@ msgstr "Meta"
 msgid "  + "
 msgstr "   + "
 
-#. i18n: ectx: property (text), widget (QLabel, label_8)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
 #: actions.ui:248 mouse.ui:601
 #, fuzzy, kde-format
 #| msgid "&Double-click:"
@@ -258,15 +258,15 @@ msgstr "Mou"
 msgid "Activate, raise and move"
 msgstr "Activa, eleva i mou"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:275 actions.ui:345 actions.ui:415 mouse.ui:246 mouse.ui:308
 #: mouse.ui:361 mouse.ui:423 mouse.ui:476 mouse.ui:538
 #, fuzzy, kde-format
@@ -282,15 +282,15 @@ msgstr "Canvia entre eleva i abaixa"
 msgid "Resize"
 msgstr "Redimensiona"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:285 actions.ui:355 actions.ui:425 mouse.ui:236 mouse.ui:298
 #: mouse.ui:351 mouse.ui:413 mouse.ui:466 mouse.ui:528
 #, kde-format
@@ -298,6 +298,9 @@ msgid "Raise"
 msgstr "Eleva"
 
 #. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
@@ -305,9 +308,6 @@ msgstr "Eleva"
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:290 actions.ui:360 actions.ui:430 mouse.ui:65 mouse.ui:241
 #: mouse.ui:303 mouse.ui:356 mouse.ui:418 mouse.ui:471 mouse.ui:533
 #, kde-format
@@ -315,6 +315,9 @@ msgid "Lower"
 msgstr "Abaixa"
 
 #. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct1)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct1)
@@ -322,9 +325,6 @@ msgstr "Abaixa"
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
 #: actions.ui:295 actions.ui:365 actions.ui:435 mouse.ui:55 mouse.ui:251
 #: mouse.ui:313 mouse.ui:366 mouse.ui:428 mouse.ui:481 mouse.ui:543
 #, kde-format
@@ -350,6 +350,10 @@ msgid "Increase opacity"
 msgstr "Augmenta l'opacitat"
 
 #. i18n: @item:inlistbox behavior on double click
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
+#. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiDbl)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct1)
@@ -358,10 +362,6 @@ msgstr "Augmenta l'opacitat"
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct2)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct3)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiInAct3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll1)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll2)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAll3)
-#. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #: actions.ui:310 actions.ui:380 actions.ui:450 actions.ui:505 mouse.ui:80
 #: mouse.ui:132 mouse.ui:271 mouse.ui:333 mouse.ui:386 mouse.ui:448
 #: mouse.ui:501 mouse.ui:563
@@ -387,8 +387,8 @@ msgstr ""
 "En aquesta fila podeu personalitzar el comportament del clic del mig en "
 "clicar a la barra de títol o el marc."
 
-#. i18n: ectx: property (text), widget (QLabel, label_10)
 #. i18n: ectx: property (text), widget (QLabel, label_9)
+#. i18n: ectx: property (text), widget (QLabel, label_10)
 #: actions.ui:388 mouse.ui:653
 #, kde-format
 msgid "Right clic&k:"
@@ -421,48 +421,48 @@ msgstr ""
 "Ací podeu personalitzar el comportament del KDE en desplaçar-se amb la roda "
 "del ratolí dins d'una finestra mentre premeu la tecla modificadora."
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:475 mouse.ui:102
 #, fuzzy, kde-format
 #| msgid "Raise/Lower"
 msgid "Raise/lower"
 msgstr "Eleva/Abaixa"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:480 mouse.ui:107
 #, fuzzy, kde-format
 #| msgid "Shade/Unshade"
 msgid "Shade/unshade"
 msgstr "Plega/Desplega"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:485 mouse.ui:112
 #, fuzzy, kde-format
 #| msgid "Maximize/Restore"
 msgid "Maximize/restore"
 msgstr "Maximitza/Restaura"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:490 mouse.ui:117
 #, fuzzy, kde-format
 #| msgid "Keep Above/Below"
 msgid "Keep above/below"
 msgstr "Mantén damunt/a sota"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:495 mouse.ui:122
 #, fuzzy, kde-format
 #| msgid "Move to Previous/Next Desktop"
 msgid "Move to previous/next desktop"
 msgstr "Mou a l'escriptori anterior/següent"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
+#. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:500 mouse.ui:127
 #, fuzzy, kde-format
 #| msgid "Change Opacity"
@@ -507,9 +507,9 @@ msgstr ""
 "Estableix el temps en mil·lisegons abans que la finestra es desplegui si "
 "l'apuntador del ratolí està per sobre de la finestra plegada."
 
-#. i18n: ectx: property (suffix), widget (QSpinBox, shadeHover)
 #. i18n: ectx: property (suffix), widget (QSpinBox, delayFocus)
 #. i18n: ectx: property (suffix), widget (QSpinBox, autoRaise)
+#. i18n: ectx: property (suffix), widget (QSpinBox, shadeHover)
 #: advanced.ui:45 focus.ui:85 focus.ui:178
 #, kde-format
 msgid " ms"
@@ -787,10 +787,10 @@ msgstr ""
 "de Notificacions.</p>"
 
 #. i18n: Focus Stealing Prevention Level
-#. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, borderSnap)
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, windowSnap)
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, centerSnap)
+#. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
 #: focus.ui:118 moving.ui:53 moving.ui:75 moving.ui:97
 #, kde-format
 msgid "None"

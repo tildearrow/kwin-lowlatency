@@ -1,7 +1,7 @@
 # Translation of kcm_kwindecoration to Norwegian Nynorsk
 #
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 1999, 2000, 2001, 2002, 2004, 2005.
-# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2010, 2012, 2015, 2016, 2018, 2019.
+# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2010, 2012, 2015, 2016, 2018, 2019, 2020, 2021.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2008, 2010.
 # Øystein Steffensen-Alværvik <ystein@posteo.net>, 2018, 2019.
 msgid ""
@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-30 17:27+0200\n"
-"PO-Revision-Date: 2019-06-28 23:01+0200\n"
+"PO-Revision-Date: 2020-11-22 12:33+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.04.2\n"
+"X-Generator: Lokalize 20.12.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -40,7 +40,7 @@ msgstr "Meny"
 #: declarative-plugin/buttonsmodel.cpp:70
 #, kde-format
 msgid "Application menu"
-msgstr "Programmeny"
+msgstr "Program­meny"
 
 #: declarative-plugin/buttonsmodel.cpp:72
 #, kde-format
@@ -65,7 +65,7 @@ msgstr "Lukk"
 #: declarative-plugin/buttonsmodel.cpp:80
 #, kde-format
 msgid "Context help"
-msgstr "Emnehjelp"
+msgstr "Emne­hjelp"
 
 # «Fald saman» er rett omsetjing her
 #: declarative-plugin/buttonsmodel.cpp:82
@@ -139,7 +139,7 @@ msgstr "Knappar på tittellinja"
 #, kde-format
 msgctxt "checkbox label"
 msgid "Use theme's default window border size"
-msgstr "Bruk standard vindaugsstorleik i temaet"
+msgstr "Bruk standard vindaugsstorleik frå temaet"
 
 #: package/contents/ui/main.qml:121
 #, kde-format
@@ -175,12 +175,12 @@ msgstr "Rediger temaet %1"
 #: utils.cpp:38
 #, kde-format
 msgid "No Borders"
-msgstr "Ingen kantlinjer"
+msgstr "Inga ramme"
 
 #: utils.cpp:39
 #, kde-format
 msgid "No Side Borders"
-msgstr "Ingen sidekantlinjer"
+msgstr "Inga ramme på sidene"
 
 #: utils.cpp:40
 #, kde-format

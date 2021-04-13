@@ -10,21 +10,22 @@
 # xavier <ktranslator31@yahoo.fr>, 2013.
 # Vincent PINON <vincent.pinon@st.com>, 2013.
 # Simon Depiets <sdepiets@gmail.com>, 2018, 2019.
+# Xavier Besnard <xavier.besnard@neuf.fr>, 2020, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-30 17:27+0200\n"
-"PO-Revision-Date: 2019-07-21 16:16+0800\n"
-"Last-Translator: Simon Depiets <sdepiets@gmail.com>\n"
+"PO-Revision-Date: 2021-02-20 18:04+0100\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 19.07.70\n"
+"X-Generator: Lokalize 20.12.2\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -32,14 +33,16 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Thibaut Cousin, Nicolas Ternisien, Sébastien Renard, Simon Depiets"
+msgstr ""
+"Thibaut Cousin, Nicolas Ternisien, Sébastien Renard, Simon Depiets, Xavier "
+"Besnard"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "cousin@kde.org, nicolas.ternisien@gmail.com, renard@kde.org, sdepiets@gmail."
-"com"
+"com, xavier.besnard@neuf.fr"
 
 #: declarative-plugin/buttonsmodel.cpp:68
 #, kde-format
@@ -168,7 +171,7 @@ msgid ""
 "Close by double clicking: Keep the window's Menu button pressed until it "
 "appears."
 msgstr ""
-"Ferme les fenêtres avec un double clic : Maintenir le bouton de menu de la "
+"Ferme les fenêtres avec un double clic : maintenir le bouton de menu de la "
 "fenêtre enfoncé jusqu'à son apparition."
 
 #: package/contents/ui/main.qml:158

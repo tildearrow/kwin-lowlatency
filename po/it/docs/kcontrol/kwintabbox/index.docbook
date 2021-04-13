@@ -13,6 +13,20 @@
 >&Martin.Graesslin;&Martin.Graesslin.mail;</author>
 <othercredit role="translator"
 ><firstname
+>Paolo</firstname
+><surname
+>Zamponi</surname
+><affiliation
+><address
+><email
+>zapaolo@email.it</email
+></address
+></affiliation
+><contrib
+>Traduzione in italiano</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
 >Federico</firstname
 ><surname
 >Zenith</surname
@@ -29,7 +43,7 @@
 </authorgroup>
 
 <date
->2015-07-24</date>
+>24/07/2015</date>
 <releaseinfo
 >&plasma; 5.4</releaseinfo>
 
@@ -52,9 +66,9 @@
 >Navigare tra le finestre</title>
 
 <para
->Questo modulo dà la possibilità di configurare il comportamento della navigazione tra finestre, spesso indicata come <keycombo action="simul"
+>Questo modulo dà la possibilità di configurare il comportamento della navigazione tra le finestre, spesso indicata come <keycombo action="simul"
 >&Alt;&Tab;</keycombo
->. Ci sono due insiemi di effetti indipendenti che possono avere impostazioni diverse. Ciascuno di questi insiemi ha la sua scheda (<guilabel
+>. Ci sono due insiemi di effetti indipendenti che possono avere delle impostazioni diverse; ciascuno di questi ha la sua scheda (<guilabel
 >Principale</guilabel
 > e <guilabel
 >Alternativo</guilabel
@@ -66,18 +80,18 @@
 >Principale</guilabel
 > ha delle scorciatoie predefinite. Se vuoi usare il secondo insieme di effetti nella scheda <guilabel
 >Alternativo</guilabel
->, devi impostare manualmente una scorciatoia per questi effetti nell'editor delle scorciatoie.</para
+> devi impostare manualmente una scorciatoia per questi effetti nell'editor delle scorciatoie.</para
 ></note>
 
 <note
 ><para
->Per cambiare finestra senza <keycombo
+>Per navigare tra le finestre senza <keycombo
 >&Alt;&Tab;</keycombo
->, puoi definire delle azioni per i bordi dello schermo nel modulo delle &systemsettings; <ulink url="help:/kcontrol/kwinscreenedges/index.html"
+> puoi definire delle azioni per i bordi dello schermo nel modulo <ulink url="help:/kcontrol/kwinscreenedges/index.html"
 ><guilabel
 >Bordi dello schermo</guilabel
 ></ulink
->. </para
+> delle &systemsettings;. </para
 ></note>
 
 <para
@@ -87,11 +101,11 @@
 <title
 >Visualizzazione</title>
 <para
->Ci sono diversi effetti che possono essere usati al posto del normale elenco di finestre quando la composizione è attiva. Come impostazione predefinita, si usa l'effetto <guilabel
+>Ci sono diversi effetti che possono essere usati al posto del normale elenco di finestre quando la composizione è attiva. Come impostazione predefinita si usa l'effetto <guilabel
 >Brezza</guilabel
->. Questo effetto mostra una miniatura di ogni finestra in un elenco sulla sinistra dello schermo, con in evidenza la finestra attualmente selezionata. Ci sono diverse altre disposizioni predefinite che producono una vista ricca di informazioni o compatta, icone grandi o piccole, o solo una griglia e un titolo di finestra.</para>
+>, che mostra una miniatura di ogni finestra in un elenco sulla sinistra dello schermo ed evidenzia la finestra attualmente selezionata. Ci sono molte altre disposizioni predefinite che forniscono una vista ricca di informazioni oppure compatta, icone grandi o piccole, oppure solo una griglia e un titolo della finestra.</para>
 <para
->Dopo aver selezionato una di queste disposizioni, avrai un pulsante per mostrarne un'anteprima.</para
+>Dopo aver selezionato una di queste disposizioni c'è un pulsante che ne mostra un'anteprima.</para
 > 
 <para
 >Se abiliti <guilabel
@@ -111,10 +125,10 @@
 >Scambiafinestre a pila</guilabel
 > mostra tutte le finestre impilate in tre dimensioni. La finestra selezionata è in cima alla pila, e navigando tra le finestre la pila viene avanzata in modo da portare il cima la nuova finestra selezionata. </para>
 <para
->Se l'effetto fornisce impostazioni aggiuntive, sarà attivato il pulsante di configurazione. Facendo clic su questo pulsante verrà mostrata una finestra di configurazione. </para>
+>Se l'effetto fornisce impostazioni aggiuntive, il pulsante di configurazione verrà attivato. Facendo clic su di esso verrà mostrata una finestra di configurazione. </para>
 <note
 ><para
->Quando la composizione non è attiva o viene sospesa, verrà mostrato il normale elenco delle finestre. Non c'è perdita di funzionalità se un effetto viene selezionato e la composizione non è attiva.</para
+>Quando la composizione non è attiva o viene sospesa, verrà mostrato il normale elenco delle finestre. Non c'è perdita di funzionalità se un effetto viene selezionato ma la composizione non è attiva.</para
 ></note>
 </sect2>
 
@@ -122,22 +136,22 @@
 <title
 >Scorciatoie</title>
 <para
->L'editor delle scorciatoie fornisce l'interfaccia di configurazione per le scorciatoie da tastiera per navigare tra le finestre. Ciascuno dei due insiemi di effetti possibili ha due scorciatoie: una per andare avanti e una per tornare indietro. Nota che l'elenco delle finestre può venire mostrato solo se selezioni una scorciatoia con un modificatore come i tasti &Alt; e &Ctrl;. Questo modificatore deve essere mantenuto premuto durante il cambio. Selezionare una scorciatoia senza modificatore può rovinare il comportamento dello scambiafinestre. </para>
+>L'editor delle scorciatoie fornisce l'interfaccia di configurazione delle scorciatoie di tastiera per navigare tra le finestre. Ciascuno dei due insiemi di effetti possibili ha due scorciatoie: una per andare avanti e una per tornare indietro. Nota che l'elenco delle finestre può venire mostrato solo se selezioni una scorciatoia con un modificatore come i tasti &Alt; o &Ctrl;, che deve essere mantenuto premuto durante il cambio. Selezionare una scorciatoia senza un modificatore può interrompere il comportamento di navigazione tra le finestre. </para>
 </sect2>
 
 <sect2 id="content-and-sort-order">
 <title
 >Contenuto</title>
 <para
->È possibile determinare l'ordinamento: puoi basarti sull'ultimo uso delle finestre o sul loro impilamento. </para>
+>È possibile influenzare l'ordinamento: puoi basarlo sull'ultimo uso delle finestre, oppure sul loro ordine di impilamento. </para>
 <para
 >Se spunti <guilabel
 >Includi l'icona «Mostra il desktop»</guilabel
->, verrà aggiunta una voce per il desktop all'elenco delle finestre delle applicazioni; la puoi quindi selezionare nell'elenco per minimizzare tutte le finestre.</para>
+>, all'elenco delle finestre delle applicazioni verrà aggiunta una voce per il desktop; la puoi quindi selezionare dall'elenco per minimizzare tutte le finestre.</para>
 <para
->Se <guilabel
+>Se è selezionato <guilabel
 >Solo una finestra per applicazione</guilabel
-> è selezionato, l'elenco contiene solo l'ultima istanza usata di ciascuna applicazione. La selezione di altre istanze è possibile quindi solo attraverso il pannello.</para>
+>, allora l'elenco contiene solo l'ultima istanza usata di ciascuna applicazione. Il passaggio alle altre istanze è quindi possibile solo dal pannello.</para>
 </sect2>
 
 <sect2 id="filter">
@@ -150,9 +164,9 @@
 >Principale</guilabel
 >) o dalla scorciatoia definita dall'utente per le impostazioni alternative. </para>
 <para
->È possibile mostrare solo finestre sul desktop virtuale attuale o da tutti i desktop. Inoltre puoi applicare regole simili per le finestre su attività o schermi diversi, se ne hai più di uno. </para>
+>È possibile mostrare solo finestre nel desktop virtuale attuale, oppure quelle di tutti gli altri desktop, inoltre puoi applicare regole simili per le finestre nelle attività o negli schermi nelle configurazioni a più schermi. </para>
 <para
->L'ultima opzione permette di filtrare secondo lo stato di minimizzazione delle finestre. </para>
+>L'ultima opzione ti permette di filtrare a seconda dello stato di minimizzazione delle finestre. </para>
 </sect2>
 
 </sect1>

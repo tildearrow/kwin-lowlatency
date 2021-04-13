@@ -530,7 +530,7 @@ Minimize, Shade, Close
 ></title>
 
 <para
->Dieser unterste Abschnitt ermöglicht die Einstellung zusätzlicher Aktionen, wenn beim Mausklick eine Sondertaste (&Alt; ist der Standard) gedrückt wird.</para>
+>This bottom section, allows you to configure additional actions, when a modifier key (by default &Meta;) is pressed, and a mouse click is made on a window.</para>
 
 <para
 >Sie können auch hier unterschiedliche Aktionen für die &LMB;, &MMB;, &RMB; und das Mausrad festlegen. </para>

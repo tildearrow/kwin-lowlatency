@@ -2,7 +2,7 @@
 #
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 1999, 2000, 2001, 2002, 2003, 2004, 2005.
 # Håvard Korsvoll <korsvoll@skulelinux.no>, 2004, 2005.
-# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2010, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
+# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2010, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
 # Sven Harald Klein Bakke <sirius@nonline.org>, 2005, 2008.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2008, 2009, 2010.
 # Olav Selseng Vestreim <o.vest@operamail.com>, 2015.
@@ -10,15 +10,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-30 17:27+0200\n"
-"PO-Revision-Date: 2020-06-20 00:21+0200\n"
+"POT-Creation-Date: 2020-09-30 10:59+0200\n"
+"PO-Revision-Date: 2021-02-18 22:28+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.08.0\n"
+"X-Generator: Lokalize 20.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -1848,7 +1848,7 @@ msgid ""
 msgstr ""
 "Du har valt å visa vindauget utan kantlinje.\n"
 "Når kantlinja er gøymd, vil du ikkje kunna visa ho att ved å bruka musa. Du "
-"må i staden bruka menyen for vindaugsoperasjonar, ved hjelp av "
+"må i staden bruka menyen for vindaugs­operasjonar, ved hjelp av "
 "snøggtasten «%1»."
 
 #: useractions.cpp:187
@@ -1860,9 +1860,9 @@ msgid ""
 "window operations menu instead, activated using the %1 keyboard shortcut."
 msgstr ""
 "Du har valt å visa eit vindauge i fullskjerm.\n"
-"Dersom programmet sjølv ikkje har nokon måte å slå av fullskjermsmodusen, "
+"Dersom programmet sjølv ikkje har nokon måte å slå av fullskjerms­modusen, "
 "vil du ikkje kunna gå tilbake ved å bruka musa. Du må i staden bruka menyen "
-"for vindaugsoperasjonar, ved hjelp av snøggtasten «%1»."
+"for vindaugs­operasjonar, ved hjelp av snøggtasten «%1»."
 
 #: useractions.cpp:252
 #, kde-format
@@ -2079,7 +2079,7 @@ msgstr "Virtuelt tastatur: av"
 msgid "Whether to show the virtual keyboard on demand."
 msgstr "Om det virtuelle tastaturet skal visast ved behov."
 
-#: workspace.cpp:1348
+#: workspace.cpp:1358
 #, kde-format
 msgctxt "Introductory text shown in the support information."
 msgid ""

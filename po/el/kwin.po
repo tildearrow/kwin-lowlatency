@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-30 17:27+0200\n"
+"POT-Creation-Date: 2020-09-30 10:59+0200\n"
 "PO-Revision-Date: 2017-06-12 16:22+0200\n"
 "Last-Translator: Dimitris Kardarakos <dimkard@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -2140,7 +2140,7 @@ msgstr "Το εικονικό πληκτρολόγιο είναι απενεργ
 msgid "Whether to show the virtual keyboard on demand."
 msgstr ""
 
-#: workspace.cpp:1348
+#: workspace.cpp:1358
 #, fuzzy, kde-format
 #| msgctxt "Introductory text shown in the support information."
 #| msgid ""

@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Federico Zenith <federico.zenith@member.fsf.org>, 2010, 2011, 2012.
-# Paolo Zamponi <zapaolo@email.it>, 2018.
+# Paolo Zamponi <zapaolo@email.it>, 2018, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwintabbox\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-30 17:27+0200\n"
-"PO-Revision-Date: 2018-11-07 18:43+0100\n"
+"PO-Revision-Date: 2021-02-01 12:19+0100\n"
 "Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 20.12.1\n"
 
 #: layoutpreview.cpp:159
 #, kde-format
@@ -37,7 +37,7 @@ msgstr "Alternativo"
 #: main.cpp:77
 #, kde-format
 msgid "Get New Task Switchers..."
-msgstr "Recupera nuovi cambiafinestre..."
+msgstr "Recupera nuovi scambiafinestre..."
 
 #: main.cpp:87
 #, kde-format
@@ -68,7 +68,7 @@ msgstr "Includi l'icona «Mostra il desktop»"
 #: main.ui:55
 #, kde-format
 msgid "Recently used"
-msgstr "Usati di recente"
+msgstr "Usate di recente"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, switchingModeCombo)
 #: main.ui:60
@@ -110,7 +110,7 @@ msgstr "Desktop attuale"
 #: main.ui:164
 #, kde-format
 msgid "All other desktops"
-msgstr "Altri desktop"
+msgstr "Tutti gli altri desktop"
 
 #. i18n: ectx: property (text), widget (QCheckBox, filterActivities)
 #: main.ui:174
@@ -128,7 +128,7 @@ msgstr "Attività attuale"
 #: main.ui:225
 #, kde-format
 msgid "All other activities"
-msgstr "Altre attività"
+msgstr "Tutte le altre attività"
 
 #. i18n: ectx: property (text), widget (QCheckBox, filterScreens)
 #: main.ui:235
@@ -146,7 +146,7 @@ msgstr "Schermo attuale"
 #: main.ui:286
 #, kde-format
 msgid "All other screens"
-msgstr "Altri schermi"
+msgstr "Tutti gli altri schermi"
 
 #. i18n: ectx: property (text), widget (QCheckBox, filterMinimization)
 #: main.ui:296
@@ -209,7 +209,7 @@ msgstr "Visualizzazione"
 #, kde-format
 msgid "The effect to replace the list window when desktop effects are active."
 msgstr ""
-"L'effetto per sostituire la finestra di elenco quando gli effetti del "
+"L'effetto per sostituire la finestra dell'elenco quando gli effetti del "
 "desktop sono attivi."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, highlightWindowCheck)
@@ -220,8 +220,8 @@ msgid ""
 "windows. This option requires desktop effects to be active."
 msgstr ""
 "La finestra attualmente selezionata verrà evidenziata facendo dissolvere "
-"tutte le altre. Questa opzione richiede che siano attivi gli effetti del "
-"desktop."
+"tutte le altre. Questa opzione richiede che gli effetti del desktop siano "
+"attivi."
 
 #. i18n: ectx: property (text), widget (QCheckBox, highlightWindowCheck)
 #: main.ui:552
