@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KCModule
+
+X-KDE-Library=kwin_mousepos_config
+X-KDE-ParentComponents=mousepos
+
+Name=Paint cursor
+Name[es]=Pintar cursor
+Name[x-test]=xxPaint Cursorxx

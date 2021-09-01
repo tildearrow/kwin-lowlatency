@@ -47,6 +47,7 @@
 #include "snaphelper/snaphelper.h"
 #include "startupfeedback/startupfeedback.h"
 #include "trackmouse/trackmouse.h"
+#include "mousepos/mousepos.h"
 #include "wobblywindows/wobblywindows.h"
 #endif
 
@@ -631,6 +632,22 @@ EFFECT_FALLBACK
 #endif
 EFFECT_FALLBACK
         QStringLiteral("kwin_trackmouse_config")
+    }, {
+        QStringLiteral("mousepos"),
+        i18ndc("kwin_effects", "Name of a KWin Effect", "Paint nouse"),
+        i18ndc("kwin_effects", "Comment describing the KWin Effect", "Display a mouse cursor"),
+        QStringLiteral("Accessibility"),
+        QString(),
+        QUrl(QStringLiteral("https://files.kde.org/plasma/kwin/effect-videos/track_mouse.mp4")),
+        false,
+        false,
+#ifdef EFFECT_BUILTINS
+        &createHelper<MousePosEffect>,
+        nullptr,
+        nullptr,
+#endif
+EFFECT_FALLBACK
+        QStringLiteral("kwin_mousepos_config")
     }, {
         QStringLiteral("windowgeometry"),
         i18ndc("kwin_effects", "Name of a KWin Effect", "Window Geometry"),

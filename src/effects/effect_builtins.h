@@ -57,6 +57,7 @@ enum class BuiltInEffect
     ThumbnailAside,
     TouchPoints,
     TrackMouse,
+    MousePos,
     WindowGeometry,
     WobblyWindows,
     Zoom
