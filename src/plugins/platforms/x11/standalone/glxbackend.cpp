@@ -756,7 +756,7 @@ void GlxBackend::endFrame(int screenId, const QRegion &renderedRegion, const QRe
 
     present(renderedRegion);
 
-    if (overlayWindow()->window())  // show the window only after the first pass,
+    if (overlayWindow()->window() && m_lastUnredirectedWindow==-1)  // show the window only after the first pass,
         overlayWindow()->show();   // since that pass may take long
 
     // Save the damaged region to history
@@ -770,7 +770,8 @@ bool GlxBackend::scanout(int screenId, SurfaceItem *surfaceItem)
       if (m_lastUnredirectedWindow!=-1) {
         printf("Null redirecting\n");
         xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
-        xcb_composite_redirect_subwindows(connection(), kwinApp()->x11RootWindow(), XCB_COMPOSITE_REDIRECT_MANUAL);
+        overlayWindow()->show();
+        //xcb_composite_redirect_subwindows(connection(), kwinApp()->x11RootWindow(), XCB_COMPOSITE_REDIRECT_MANUAL);
         m_lastUnredirectedWindow=-1;
       }
       return false;
@@ -780,13 +781,14 @@ bool GlxBackend::scanout(int screenId, SurfaceItem *surfaceItem)
     //if (item->m_toplevel==NULL) return false;
     long long frameId=item->m_toplevel->frameId();
     if (m_lastUnredirectedWindow!=frameId) {
+      overlayWindow()->hide();
       if (m_lastUnredirectedWindow!=-1) {
         printf("Prev win redirecting\n");
         xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
       }
       printf("Unredirecting\n");
       xcb_composite_unredirect_window(connection(), item->m_toplevel->frameId(), XCB_COMPOSITE_REDIRECT_MANUAL);
-      xcb_composite_unredirect_subwindows(connection(), kwinApp()->x11RootWindow(), XCB_COMPOSITE_REDIRECT_MANUAL);
+      //xcb_composite_unredirect_subwindows(connection(), kwinApp()->x11RootWindow(), XCB_COMPOSITE_REDIRECT_MANUAL);
       m_lastUnredirectedWindow=frameId;
     }
     return false;

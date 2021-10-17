@@ -4,7 +4,7 @@ KWin uses CMake. This means that KWin can be build in a normal cmake-style out o
 
     mkdir build
     cd build
-    cmake ../
+    cmake ..
     make
 
 # Dependencies
@@ -48,8 +48,7 @@ The nested setup only works for the X11 and Wayland platform plugins. Changes in
 KWin for the X11 windowing system cannot be tested with a nested Wayland setup. Instead the common way is to run KWin and replace the existing window manager of the X session:
 
     cd build
-    cd bin
-    QT_PLUGIN_PATH=`pwd` ./kwin_x11 --replace
+    QT_PLUGIN_PATH="$PWD/bin" ./bin/kwin_x11 --replace
 
 In this case also the current DBus session should be used and dbus-run-session should not be used. Of course it's only possible to start kwin_x11 in an X session. On Wayland kwin_x11 will refuse to start.
 

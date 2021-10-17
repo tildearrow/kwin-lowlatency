@@ -1,13 +1,13 @@
 # \*noises\*
 
-...wha? KWin-lowlatency 5.22?!
+...wha? KWin-lowlatency 5.22/5.23?!
 
-# COMING SOON
+# ALMOST THERE
 
-or maybe not...
+unredirection is almost done!!!
 
 ## notice
 
 KWin-lowlatency 5.22 isn't ready yet, and even though it is mostly pointless, unredirection is one reason why is it still a thing...
 
-do not attempt to compile this yet. it doesn't have any features.
+do not attempt to compile this yet. it's in test stage.
