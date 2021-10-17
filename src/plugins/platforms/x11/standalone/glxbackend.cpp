@@ -28,6 +28,7 @@
 #include "renderloop_p.h"
 #include "scene.h"
 #include "screens.h"
+#include "surfaceitem_x11.h"
 #include "xcbutils.h"
 // kwin libs
 #include <kwinglplatform.h>
@@ -103,6 +104,7 @@ GlxBackend::GlxBackend(Display *display, X11StandalonePlatform *backend)
     , glxWindow(None)
     , ctx(nullptr)
     , m_bufferAge(0)
+    , m_lastUnredirectedWindow(-1)
     , m_x11Display(display)
     , m_backend(backend)
 {
@@ -760,6 +762,40 @@ void GlxBackend::endFrame(int screenId, const QRegion &renderedRegion, const QRe
     // Save the damaged region to history
     if (supportsBufferAge())
         addToDamageHistory(damagedRegion);
+}
+
+bool GlxBackend::scanout(int screenId, SurfaceItem *surfaceItem)
+{
+    if (surfaceItem==NULL) {
+      if (m_lastUnredirectedWindow!=-1) {
+        printf("Null redirecting\n");
+        xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
+        xcb_composite_redirect_subwindows(connection(), kwinApp()->x11RootWindow(), XCB_COMPOSITE_REDIRECT_MANUAL);
+        m_lastUnredirectedWindow=-1;
+      }
+      return false;
+    }
+    SurfaceItemX11* item = static_cast<SurfaceItemX11 *>(surfaceItem);
+    //printf("The toplevel is: %p\n",item->m_toplevel);
+    //if (item->m_toplevel==NULL) return false;
+    long long frameId=item->m_toplevel->frameId();
+    if (m_lastUnredirectedWindow!=frameId) {
+      if (m_lastUnredirectedWindow!=-1) {
+        printf("Prev win redirecting\n");
+        xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
+      }
+      printf("Unredirecting\n");
+      xcb_composite_unredirect_window(connection(), item->m_toplevel->frameId(), XCB_COMPOSITE_REDIRECT_MANUAL);
+      xcb_composite_unredirect_subwindows(connection(), kwinApp()->x11RootWindow(), XCB_COMPOSITE_REDIRECT_MANUAL);
+      m_lastUnredirectedWindow=frameId;
+    }
+    return false;
+}
+
+bool GlxBackend::directScanoutAllowed(int screen) const
+{
+    Q_UNUSED(screen)
+    return true;
 }
 
 void GlxBackend::vblank(std::chrono::nanoseconds timestamp)

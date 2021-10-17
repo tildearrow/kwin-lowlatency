@@ -44,6 +44,8 @@ public:
     virtual void reconfigure(ReconfigureFlags);
     virtual bool isActive() const;
 
+    bool blocksDirectScanout() const override;
+
     // for properties
     bool isMousePolling() const {
         return m_mousePolling;

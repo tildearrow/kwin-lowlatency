@@ -78,6 +78,10 @@ void MousePosEffect::reconfigure(ReconfigureFlags)
     MousePosConfig::self()->read();
 }
 
+bool MousePosEffect::blocksDirectScanout() const {
+  return false;
+}
+
 void MousePosEffect::prePaintScreen(ScreenPrePaintData& data, std::chrono::milliseconds time)
 {
     if (m_active) {

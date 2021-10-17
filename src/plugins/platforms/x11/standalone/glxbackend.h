@@ -66,10 +66,12 @@ public:
     SceneOpenGLTexturePrivate *createBackendTexture(SceneOpenGLTexture *texture) override;
     QRegion beginFrame(int screenId) override;
     void endFrame(int screenId, const QRegion &damage, const QRegion &damagedRegion) override;
+    bool scanout(int screenId, SurfaceItem *surfaceItem) override;
     bool makeCurrent() override;
     void doneCurrent() override;
     OverlayWindow* overlayWindow() const override;
     void init() override;
+    bool directScanoutAllowed(int screen) const override;
 
 private:
     void vblank(std::chrono::nanoseconds timestamp);
@@ -104,6 +106,7 @@ private:
     bool m_haveMESASwapControl = false;
     bool m_haveEXTSwapControl = false;
     bool m_haveSGISwapControl = false;
+    long long m_lastUnredirectedWindow;
     Display *m_x11Display;
     X11StandalonePlatform *m_backend;
     VsyncMonitor *m_vsyncMonitor = nullptr;

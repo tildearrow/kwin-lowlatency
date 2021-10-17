@@ -13,6 +13,7 @@ SurfaceItemX11::SurfaceItemX11(Scene::Window *window, Item *parent)
     : SurfaceItem(window, parent)
 {
     Toplevel *toplevel = window->window();
+    m_toplevel = toplevel;
 
     connect(toplevel, &Toplevel::bufferGeometryChanged,
             this, &SurfaceItemX11::handleBufferGeometryChanged);
