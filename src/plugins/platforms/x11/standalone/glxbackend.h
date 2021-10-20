@@ -10,6 +10,7 @@
 #define KWIN_GLX_BACKEND_H
 #include "openglbackend.h"
 #include "texture.h"
+#include "toplevel.h"
 #include "x11eventfilter.h"
 
 #include <xcb/glx.h>
@@ -107,6 +108,7 @@ private:
     bool m_haveEXTSwapControl = false;
     bool m_haveSGISwapControl = false;
     long long m_lastUnredirectedWindow;
+    Toplevel* m_lastUnredirectedToplevel;
     Display *m_x11Display;
     X11StandalonePlatform *m_backend;
     VsyncMonitor *m_vsyncMonitor = nullptr;

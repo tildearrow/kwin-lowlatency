@@ -769,10 +769,11 @@ bool GlxBackend::scanout(int screenId, SurfaceItem *surfaceItem)
     if (surfaceItem==NULL) {
       if (m_lastUnredirectedWindow!=-1) {
         printf("Null redirecting\n");
-        xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
         overlayWindow()->show();
-        //xcb_composite_redirect_subwindows(connection(), kwinApp()->x11RootWindow(), XCB_COMPOSITE_REDIRECT_MANUAL);
+        xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
+        m_lastUnredirectedToplevel->discardWindowPixmap();
         m_lastUnredirectedWindow=-1;
+        m_lastUnredirectedToplevel=NULL;
       }
       return false;
     }
@@ -781,15 +782,15 @@ bool GlxBackend::scanout(int screenId, SurfaceItem *surfaceItem)
     //if (item->m_toplevel==NULL) return false;
     long long frameId=item->m_toplevel->frameId();
     if (m_lastUnredirectedWindow!=frameId) {
-      overlayWindow()->hide();
       if (m_lastUnredirectedWindow!=-1) {
         printf("Prev win redirecting\n");
         xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
       }
       printf("Unredirecting\n");
       xcb_composite_unredirect_window(connection(), item->m_toplevel->frameId(), XCB_COMPOSITE_REDIRECT_MANUAL);
-      //xcb_composite_unredirect_subwindows(connection(), kwinApp()->x11RootWindow(), XCB_COMPOSITE_REDIRECT_MANUAL);
+      overlayWindow()->hide();
       m_lastUnredirectedWindow=frameId;
+      m_lastUnredirectedToplevel=item->m_toplevel;
     }
     return false;
 }

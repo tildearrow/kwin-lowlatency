@@ -298,6 +298,7 @@ public:
     explicit Toplevel();
     virtual xcb_window_t frameId() const;
     xcb_window_t window() const;
+    void discardWindowPixmap();
     /**
      * Returns the geometry of the pixmap or buffer attached to this Toplevel.
      *
@@ -673,7 +674,6 @@ protected:
     void detectShape(xcb_window_t id);
     virtual void propertyNotifyEvent(xcb_property_notify_event_t *e);
     virtual void clientMessageEvent(xcb_client_message_event_t *e);
-    void discardWindowPixmap();
     Xcb::Property fetchWmClientLeader() const;
     void readWmClientLeader(Xcb::Property &p);
     void getWmClientLeader();
