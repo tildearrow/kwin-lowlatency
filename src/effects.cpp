@@ -1516,6 +1516,7 @@ QStringList EffectsHandlerImpl::activeEffects() const
 
 bool EffectsHandlerImpl::blocksDirectScanout() const
 {
+    if (fullscreen_effect != NULL) return true;
     for(QVector< KWin::EffectPair >::const_iterator it = loaded_effects.constBegin(),
                                                     end = loaded_effects.constEnd(); it != end; ++it) {
         if (it->second->isActive() && it->second->blocksDirectScanout()) {

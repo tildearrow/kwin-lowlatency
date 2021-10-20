@@ -675,8 +675,12 @@ void SceneOpenGL::paint(int screenId, const QRegion &damage, const QList<Topleve
         renderLoop->setFullscreenSurface(fullscreenSurface);
 
         bool directScanout = false;
-        if (m_backend->directScanoutAllowed(screenId) && !static_cast<EffectsHandlerImpl*>(effects)->blocksDirectScanout()) {
+        if (m_backend->directScanoutAllowed(screenId)) {
+          if (!static_cast<EffectsHandlerImpl*>(effects)->blocksDirectScanout()) {
             directScanout = m_backend->scanout(screenId, fullscreenSurface);
+          } else {
+            directScanout = m_backend->scanout(screenId, NULL);
+          }
         }
         if (directScanout) {
             renderLoop->endFrame();
