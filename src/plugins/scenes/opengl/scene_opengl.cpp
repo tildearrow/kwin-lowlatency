@@ -646,6 +646,7 @@ void SceneOpenGL::paint(int screenId, const QRegion &damage, const QList<Topleve
         for (int i = stacking_order.count() - 1; i >=0; i--) {
             Window *window = stacking_order[i];
             Toplevel *toplevel = window->window();
+            if (window->width()<32 || window->height()<32) continue;
             if ((toplevel->isOnScreen(screenId) || screenId == -1) && window->isVisible() && toplevel->opacity() > 0) {
                 AbstractClient *c = dynamic_cast<AbstractClient*>(toplevel);
                 if (!c || !c->isFullScreen()) {
@@ -677,8 +678,10 @@ void SceneOpenGL::paint(int screenId, const QRegion &damage, const QList<Topleve
         bool directScanout = false;
         if (m_backend->directScanoutAllowed(screenId)) {
           if (!static_cast<EffectsHandlerImpl*>(effects)->blocksDirectScanout()) {
+            printf("Scanning %p\n",fullscreenSurface);
             directScanout = m_backend->scanout(screenId, fullscreenSurface);
           } else {
+            printf("Effect blocks DS\n");
             directScanout = m_backend->scanout(screenId, NULL);
           }
         }
