@@ -8,6 +8,6 @@ unredirection is almost done!!!
 
 ## notice
 
-KWin-lowlatency 5.22 isn't ready yet, and even though it is mostly pointless, unredirection is one reason why is it still a thing...
+KWin-lowlatency 5.22 is almost ready!
 
-do not attempt to compile this yet. it's in test stage.
+it's still in test stage though. NVIDIA not tested.
