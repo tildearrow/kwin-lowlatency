@@ -798,7 +798,7 @@ bool GlxBackend::scanout(int screenId, SurfaceItem *surfaceItem)
 bool GlxBackend::directScanoutAllowed(int screen) const
 {
     Q_UNUSED(screen)
-    return true;
+    return options->unredirectFullscreen();
 }
 
 void GlxBackend::vblank(std::chrono::nanoseconds timestamp)
