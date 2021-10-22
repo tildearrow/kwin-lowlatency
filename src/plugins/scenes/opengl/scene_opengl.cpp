@@ -678,10 +678,10 @@ void SceneOpenGL::paint(int screenId, const QRegion &damage, const QList<Topleve
         bool directScanout = false;
         if (m_backend->directScanoutAllowed(screenId)) {
           if (!static_cast<EffectsHandlerImpl*>(effects)->blocksDirectScanout()) {
-            printf("Scanning %p\n",fullscreenSurface);
+            //printf("Scanning %p\n",fullscreenSurface);
             directScanout = m_backend->scanout(screenId, fullscreenSurface);
           } else {
-            printf("Effect blocks DS\n");
+            //printf("Effect blocks DS\n");
             directScanout = m_backend->scanout(screenId, NULL);
           }
         }
