@@ -245,6 +245,12 @@
         <entry name="WindowsBlockCompositing" type="Bool">
             <default>true</default>
         </entry>
+        <entry name="UnredirectFullscreen" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="DrmDirectScanout" type="Bool">
+            <default>true</default>
+        </entry>
         <entry name="LatencyPolicy" type="Enum">
             <choices name="KWin::LatencyPolicy">
                 <choice name="LatencyExtremelyLow" value="ExtremelyLow"/>
