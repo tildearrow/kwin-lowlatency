@@ -3,7 +3,7 @@
 # Andrea Rizzi <rizzi@kde.org>, 2003, 2005.
 # Andrea RIZZI <arizzi@pi.infn.it>, 2004.
 # Luciano Montanaro <mikelima@cirulla.net>, 2007, 2010, 2012.
-# Vincenzo Reale <smart2128@baslug.org>, 2015, 2018, 2019, 2020, 2021.
+# Vincenzo Reale <smart2128vr@gmail.com>, 2015, 2018, 2019, 2020, 2021.
 # Paolo Zamponi <zapaolo@email.it>, 2019.
 #
 msgid ""
@@ -11,25 +11,25 @@ msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-30 17:27+0200\n"
-"PO-Revision-Date: 2019-06-10 15:29+0200\n"
-"Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
+"PO-Revision-Date: 2021-06-10 15:09+0200\n"
+"Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.12.2\n"
+"X-Generator: Lokalize 21.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Paolo Zamponi,Luciano Montanaro,Andrea Rizzi"
+msgstr "Vincenzo Reale,Paolo Zamponi,Luciano Montanaro,Andrea Rizzi"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "zapaolo@email.it,,"
+msgstr "smart2128vr@gmail.com,,,"
 
 #: declarative-plugin/buttonsmodel.cpp:68
 #, kde-format

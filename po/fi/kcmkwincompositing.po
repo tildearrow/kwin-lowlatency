@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: kcmkwincompositing\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-30 17:27+0200\n"
-"PO-Revision-Date: 2019-01-23 12:10+0200\n"
+"PO-Revision-Date: 2021-06-11 12:35+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -70,9 +70,9 @@ msgstr ""
 "OpenGL-koostaminen (oletus) on kaatanut KWinin.\n"
 "Tämä johtui todennäköisesti ajurivirheestä.\n"
 "Jos arvelet päivittäneesi sittemmin vakaaseen ajuriin,\n"
-"voit nollata tämän suojauksen, mutta tiedä, että tästä saattaa seurata "
-"välitön kaatuminen!\n"
-"Vaihtoehtoisesti voit käyttää XRender-koostamistyyppiä."
+"suojauksen voi poistaa käytöstä, mutta tämä voi johtaa välittömään "
+"kaatumiseen!\n"
+"Vaihtoehtoisesti voi käyttää XRender-koostamistyyppiä."
 
 #. i18n: ectx: property (text), widget (KMessageWidget, scaleWarning)
 #: compositing.ui:42
@@ -255,8 +255,8 @@ msgstr ""
 msgid ""
 "\"Re-use screen content\" causes severe performance problems on MESA drivers."
 msgstr ""
-"”Käytä näytön sisältöä uudelleen” aiheuttaa vakavia suorituskykyongelmia "
-"MESA-ajureilla."
+"”Käytä näytön sisältöä uudelleen” aiheuttaa MESA-ajureilla vakavia "
+"suorituskykyongelmia."
 
 
 

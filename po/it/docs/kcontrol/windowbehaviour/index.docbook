@@ -25,7 +25,7 @@
 ><affiliation
 ><address
 ><email
->smart2128@baslug.org</email
+>smart2128vr@gmail.com</email
 > </address
 ></affiliation
 ><contrib
@@ -169,7 +169,7 @@
 
 <para
 >In altri gestori di finestre, a volte questa modalità viene chiamata <quote
->fuoco sloppy</quote
+>fuoco disordinato segue il mouse</quote
 >. </para>
 </listitem>
 </varlistentry>
@@ -183,7 +183,7 @@
 <para
 >Simile al <guilabel
 >Il fuoco segue il mouse</guilabel
->. Se una finestra attiva deve essere scelta dal sistema (&eg;, perché quella attualmente attiva è stata chiusa) la finestra sotto il puntatore è la candidata preferita. Scegliere questa opzione, se si desidera che il fuoco sia contrallato dal passaggio del puntatore. </para>
+>. Se una finestra attiva deve essere scelta dal sistema (&eg;, perché quella attualmente attiva è stata chiusa) la finestra sotto il puntatore è la candidata preferita. Scegliere questa opzione, se si desidera che il fuoco sia controllato dal passaggio del puntatore. </para>
 </listitem>
 </varlistentry>
 
@@ -194,11 +194,11 @@
 ></term>
 <listitem>
 <para
->La finestra sotto il cursore del mouse è quella attiva. Se il mouse non è su una finestra (ad esempio è sul desktop), la finestra attiva è l'ultima su cui è passato il puntatore del mouse. Le nuove finestre, come la mini riga di comando attivata con <keycombo action="simul"
+>La finestra sotto il puntatore del mouse è quella attiva. Se il mouse non è su una finestra (ad esempio è sul desktop), la finestra attiva è l'ultima su cui è passato il puntatore del mouse. Le nuove finestre, come la mini riga di comando attivata con <keycombo action="simul"
 >&Alt;<keycap
 >F2</keycap
 ></keycombo
-> non riceveranno automaticamente il fuoco, bisogna spostare il cursore del mouse sopra di esse per poter digitare. </para>
+> non riceveranno automaticamente il fuoco, bisogna spostare il puntatore del mouse sopra di esse per poter digitare. </para>
 </listitem>
 </varlistentry>
 
@@ -211,11 +211,11 @@
 <para
 >Simile a <guilabel
 >Fuoco sotto il mouse</guilabel
->, ma con un'interpretazione ancora più stretta. Solo la finestra sotto il cursore del mouse è attiva. Se il cursore del mouse non è su nessuna finestra, nessuna finestra è attiva. Le nuove finestre, come la mini riga di comando attivata con <keycombo action="simul"
+>, ma con un'interpretazione ancora più stretta. Solo la finestra sotto il puntatore del mouse è attiva. Se il puntatore del mouse non è su nessuna finestra, nessuna finestra è attiva. Le nuove finestre, come la mini riga di comando attivata con <keycombo action="simul"
 >&Alt;<keycap
 >F2</keycap
 ></keycombo
-> non riceveranno automaticamente il fuoco, bisogna spostare il cursore del mouse sopra di esse per poter digitare. </para>
+> non riceveranno automaticamente il fuoco, bisogna spostare il puntatore del mouse sopra di esse per poter digitare. </para>
 
 </listitem>
 </varlistentry>
@@ -315,7 +315,7 @@
 <para
 >Con una regola di passa per il fuoco, è possibile utilizzare in alternativa il fuoco automatico. Piazzando un spunta davanti a <guilabel
 >Alza al passaggio, con un ritardo di</guilabel
->, &kde; può portare una finestra in primo piamo se il mouse sorvola tale finestra per un periodo di tempo specificato. Si può determinare il ritardo per questa opzione utilizzando il la controllo della casella di selezione. </para>
+>, &kde; può portare una finestra in primo piano se il mouse sorvola tale finestra per un periodo di tempo specificato. Si può determinare il ritardo per questa opzione utilizzando il la controllo della casella di selezione. </para>
 
 <tip>
 <para
@@ -373,7 +373,7 @@
 
 <tip>
 <para
->Si può impostare lo srotolamento automatico delle finestre quando si posiziona il cursore sulla barra del titolo. Basta marcare la casella <guilabel
+>Si può impostare lo srotolamento automatico delle finestre quando si posiziona il puntatore sulla barra del titolo. Basta marcare la casella <guilabel
 >Abilita srotolamento al passaggio del mouse</guilabel
 > nella scheda <guilabel
 >Avanzate</guilabel

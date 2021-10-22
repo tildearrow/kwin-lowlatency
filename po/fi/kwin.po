@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-09-30 10:59+0200\n"
-"PO-Revision-Date: 2020-08-21 15:55+0300\n"
+"PO-Revision-Date: 2021-07-05 19:40+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -283,7 +283,7 @@ msgstr "Delta (kiihdyttämätön)"
 #, kde-format
 msgctxt "The global mouse pointer position"
 msgid "Global Position"
-msgstr "Globaali sijainti"
+msgstr "Järjestelmänlaajuinen sijainti"
 
 #: debug_console.cpp:203
 #, kde-format
@@ -1166,8 +1166,8 @@ msgid ""
 "Select window to force close with left click or enter.\n"
 "Escape or right click to cancel."
 msgstr ""
-"Pakota ikkunan sulkeminen napsauttamalla hiirellä tai Enterillä.\n"
-"Peru hiiren oikealla painikkeella tai Esc-näppäimellä."
+"Pakota ikkunan sulkeminen hiiripainikkeella tai Enterillä.\n"
+"Peru hiiren oikealla painikkeella tai Esc:llä."
 
 #: kwinbindings.cpp:49
 #, kde-format
@@ -1477,7 +1477,7 @@ msgstr "KWin"
 #: main.cpp:203
 #, kde-format
 msgid "(c) 1999-2019, The KDE Developers"
-msgstr "© 1999-2019 KDE-kehittäjät"
+msgstr "© 1999–2019 KDE-kehittäjät"
 
 #: main.cpp:205
 #, kde-format
@@ -1540,17 +1540,17 @@ msgstr ""
 msgid ""
 "Name of the Wayland socket to listen on. If not set \"wayland-0\" is used."
 msgstr ""
-"Kuunneltavan Wayland-pistokkeen nimi. ”wayland-0” käyettään, jos ei asetettu."
+"Kuunneltavan Wayland-pistokkeen nimi. Ellei aseteta, käytetään ”wayland-0”."
 
 #: main_wayland.cpp:438
 #, kde-format
 msgid "Render to framebuffer."
-msgstr "Renderöitävä framebuffer."
+msgstr "Hahmonna kehyspuskuriin."
 
 #: main_wayland.cpp:440
 #, kde-format
 msgid "The framebuffer device to render to."
-msgstr "Framebuffer-laite, johon renderöidään."
+msgstr "Kehyspuskurilaite, johon hahmonnetaan."
 
 #: main_wayland.cpp:443
 #, kde-format
@@ -1560,12 +1560,12 @@ msgstr "X11-näyttö, jota käytetään ikkunoidussa tilassa X11-alustalla."
 #: main_wayland.cpp:446
 #, kde-format
 msgid "The Wayland Display to use in windowed mode on platform Wayland."
-msgstr "Wayland-näyttö, jota käytetään ikkunoidussa tilassa alustalla Wayland."
+msgstr "Wayland-alustan ikkunoituun tilaan käytettävä Wayland-näyttö."
 
 #: main_wayland.cpp:448
 #, kde-format
 msgid "Render to a virtual framebuffer."
-msgstr "Renderöi virtuaaliseen framebufferiin."
+msgstr "Hahmonna virtuaalikehyspuskuriin."
 
 #: main_wayland.cpp:450
 #, kde-format
@@ -1607,7 +1607,7 @@ msgstr ""
 #: main_wayland.cpp:503
 #, kde-format
 msgid "Render through drm node."
-msgstr "Renderöi DRM-noden läpi."
+msgstr "Hahmonna DRM-solmun kautta."
 
 #: main_wayland.cpp:510
 #, kde-format
@@ -1700,13 +1700,13 @@ msgstr "Ei määritetty"
 #, kde-format
 msgctxt "Portrait oriented display"
 msgid "Vertical"
-msgstr "Pystysuuntainen"
+msgstr "Pysty"
 
 #: orientation_sensor.cpp:119
 #, kde-format
 msgctxt "Landscape oriented display"
 msgid "Horizontal"
-msgstr "Vaakasuuntainen"
+msgstr "Vaaka"
 
 #: orientation_sensor.cpp:123
 #, kde-format
@@ -2095,7 +2095,7 @@ msgstr "Näyttönäppäimistö: ei käytössä"
 #: virtualkeyboard.cpp:235
 #, kde-format
 msgid "Whether to show the virtual keyboard on demand."
-msgstr "Näytetäänkö kysyttäessä näyttönäppäimistö."
+msgstr "Näytetäänkö näyttönäppäimistö pyydettäessä."
 
 #: workspace.cpp:1358
 #, kde-format

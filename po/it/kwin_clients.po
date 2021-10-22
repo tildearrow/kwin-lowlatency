@@ -2,7 +2,7 @@
 # Andrea Rizzi <rizzi@kde.org>, 2004, 2005.
 # Luciano Montanaro <mikelima@cirulla.net>, 2007, 2008, 2009, 2010, 2011, 2012.
 # Andrea Rizzi <rizzi@sns.it>, 2007.
-# Vincenzo Reale <smart2128@baslug.org>, 2015.
+# Vincenzo Reale <smart2128vr@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin_clients\n"

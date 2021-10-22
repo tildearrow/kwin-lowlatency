@@ -16,6 +16,20 @@
 >&Mike.McBride; &Mike.McBride.mail;</author>
 <othercredit role="translator"
 ><firstname
+>Paolo</firstname
+><surname
+>Zamponi</surname
+><affiliation
+><address
+><email
+>zapaolo@email.it</email
+></address
+></affiliation
+><contrib
+>Aggiornamento della traduzione</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
 >Federico</firstname
 ><surname
 >Zenith</surname
@@ -32,7 +46,7 @@
 </authorgroup>
 
 <date
->2015-07-14</date>
+>14/07/2015</date>
 <releaseinfo
 >Plasma 5.3</releaseinfo>
 
@@ -49,7 +63,7 @@
 </articleinfo>
 
 <para
->I bordi dello schermo attivi permettono di attivare degli effetti spingendo il puntatore del mouse sui bordi dello schermo. Qui puoi configurare quali effetti verranno attivati da ogni bordo e angolo dello schermo. </para>
+>I bordi attivi dello schermo permettono di attivare degli effetti spingendo il puntatore del mouse sui bordi dello schermo. Qui puoi configurare quali effetti verranno attivati su ogni bordo o angolo dello schermo. </para>
 
 <para
 >Fai clic con qualsiasi pulsante del mouse su un quadratino e seleziona un effetto nel menu contestuale. I bordi con un quadratino blu hanno già un effetto associato, un quadratino grigio indica invece che non vi è stato associato nessun effetto.</para>
@@ -72,7 +86,7 @@
 
 <para
 >Nella sezione <guilabel
->Gestione delle finestra</guilabel
+>Gestione delle finestre</guilabel
 > puoi abilitare <guilabel
 >Massimizza le finestre trascinandole in alto nello schermo</guilabel
 > o <guilabel
@@ -82,13 +96,13 @@
 <para
 >Nella sezione <guilabel
 >Altre impostazioni</guilabel
-> configura se vuoi passare ad un altro desktop quando spingi il puntatore del mouse su un bordo dello schermo, per esempio quando sposti una finestra. </para>
+> configura se vuoi passare ad un altro desktop quando spingi il puntatore del mouse su un bordo dello schermo, per esempio solo quando sposti una finestra. </para>
 <para
 >Il <guilabel
 >Ritardo di attivazione</guilabel
-> è il tempo necessario per cui il puntatore del mouse va spinto contro un bordo prima che sia attivata l'azione. </para>
+> è il tempo necessario in cui il puntatore del mouse deve essere spinto contro un bordo prima che l'azione venga attivata. </para>
 <para
 >Il <guilabel
->Ritardo di riattivazione</guilabel
+>Ritardo riattivazione</guilabel
 > è il tempo necessario dopo aver attivato un'azione perché ne possa essere attivata un'altra. </para>
 </article>

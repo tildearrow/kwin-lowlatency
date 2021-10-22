@@ -4,7 +4,7 @@
 # Luciano Montanaro <mikelima@cirulla.net>, 2007, 2008, 2010, 2012.
 # Andrea Rizzi <rizzi@sns.it>, 2007.
 # Federico Zenith <federico.zenith@member.fsf.org>, 2009.
-# Vincenzo Reale <smart2128@baslug.org>, 2015, 2017, 2018, 2019.
+# Vincenzo Reale <smart2128vr@gmail.com>, 2015, 2017, 2018, 2019.
 #
 msgid ""
 msgstr ""
@@ -12,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-30 17:27+0200\n"
 "PO-Revision-Date: 2019-01-05 14:11+0100\n"
-"Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
+"Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,7 @@ msgstr "Vincenzo Reale,Luciano Montanaro"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "smart2128@baslug.org,"
+msgstr "smart2128vr@gmail.com,"
 
 #: effectsmodel.cpp:63
 #, kde-format

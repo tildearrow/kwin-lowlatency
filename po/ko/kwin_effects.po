@@ -1,14 +1,14 @@
 # Translation of kwin_effects to Korean.
 # Copyright (C) 2007, 2008 This_file_is_part_of_KDE
 # This file is distributed under the same license as the kdebase package.
-# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2010, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020.
+# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2010, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-03-28 15:34+0000\n"
-"PO-Revision-Date: 2020-10-04 18:11+0200\n"
+"PO-Revision-Date: 2021-05-17 00:46+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 19.12.3\n"
+"X-Generator: Lokalize 20.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -1289,7 +1289,7 @@ msgstr "선 너비:"
 #, kde-format
 msgid " pixel"
 msgid_plural " pixels"
-msgstr[0] " 픽셀"
+msgstr[0] "픽셀"
 
 #. i18n: ectx: property (text), widget (QLabel, ring_duration_label)
 #: mouseclick/mouseclick_config.ui:145

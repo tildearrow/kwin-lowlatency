@@ -8,7 +8,7 @@
 # Ilpo Kantonen <ilpo@iki.fi>, 2005.
 # Teemu Rytilahti <tpr@d5k.net>, 2005.
 # Niklas Laxström <niklas.laxstrom+kdetrans@gmail.com>, 2007.
-# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011, 2013, 2014, 2019, 2020.
+# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011, 2013, 2014, 2019, 2020, 2021.
 # Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016.
 #
@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-03-28 15:34+0000\n"
-"PO-Revision-Date: 2020-06-23 10:49+0300\n"
+"PO-Revision-Date: 2021-09-05 14:50+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -490,11 +490,12 @@ msgstr ""
 msgid " ms"
 msgstr " ms"
 
+# Muotoilussa yritetty tehdä selväksi, mistä oikeasti on kyse
 #. i18n: ectx: property (text), widget (QLabel, windowPlacementLabel)
 #: advanced.ui:66
 #, kde-format
 msgid "Window &placement:"
-msgstr "Sijoitust&yyli:"
+msgstr "S&ijoita uudet ikkunat:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, placementCombo)
 #: advanced.ui:76
@@ -553,47 +554,48 @@ msgstr ""
 "text-indent:0px;\"><span style=\" font-style:italic;\">Osoittimen alle</"
 "span> sijoittaa ikkunan hiiriosoittimen alle</li></ul></body></html>"
 
+# Kohdat Minimal Overlapping…Under mouse ovat KWinin eri tavat sijoitella uusia ikkunoita. Yritin nyt yhdenmukaistaa niiden muodon niin, että ne toimivat pudotusvalikossa paremmin.
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:80
 #, kde-format
 msgid "Minimal Overlapping"
-msgstr "Pienin lomitus"
+msgstr "lomittaen mahdollisimman vähän"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:85
 #, kde-format
 msgid "Maximized"
-msgstr "Suurentaminen"
+msgstr "suurentaen"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:90
 #, kde-format
 msgid "Cascaded"
-msgstr "Porrastus"
+msgstr "porrastaen"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:95
 #, kde-format
 msgid "Random"
-msgstr "Satunnainen"
+msgstr "satunnaisesti"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:100
 #, kde-format
 msgid "Centered"
-msgstr "Keskitetty"
+msgstr "keskittäen"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:105
 #, kde-format
 msgid "In Top-Left Corner"
-msgstr "Vasempaan yläkulmaan"
+msgstr "ylävasempaan kulmaan"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, placementCombo)
 #: advanced.ui:110
 #, kde-format
 msgid "Under mouse"
-msgstr "Osoittimen alle"
+msgstr "osoittimen kohdalle"
 
 #. i18n: ectx: property (text), widget (QLabel, specialWindowsLabel)
 #: advanced.ui:118

@@ -1337,7 +1337,7 @@ msgstr "幅(&W):"
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingSize)
 #: mouseclick/mouseclick_config.ui:119 mouseclick/mouseclick_config.ui:171
 #: mousemark/mousemark_config.cpp:56
-#, kde-format
+#, fuzzy, kde-format
 msgid " pixel"
 msgid_plural " pixels"
 msgstr[0] " ピクセル"

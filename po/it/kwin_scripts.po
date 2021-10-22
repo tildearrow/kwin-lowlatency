@@ -1,7 +1,7 @@
 # translation of kwin_scripts.po to Italian
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Vincenzo Reale <smart2128@baslug.org>, 2015.
+# Vincenzo Reale <smart2128vr@gmail.com>, 2015.
 #
 msgid ""
 msgstr ""

@@ -1,7 +1,7 @@
 # Traducerea kcmkwinrules.po în Română
 # translation of kcmkwinrules.po to Romanian
 # Claudiu Costin <claudiuc@kde.org>, 2004, 2005.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013, 2020.
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013, 2020, 2021.
 # Cristian Oneț <onet.cristian@gmail.com>, 2011, 2012.
 # Cristian Buzduga <cristianbzdg@gmail.com>, 2011.
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-30 17:27+0200\n"
-"PO-Revision-Date: 2020-09-25 00:22+0100\n"
+"PO-Revision-Date: 2021-06-02 21:10+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
 "Language: ro\n"
@@ -1068,7 +1068,7 @@ msgstr "Fereastra (nu) va apărea în administratorul birourilor virtuale"
 #: ruleswidgetbase.ui:1423
 #, kde-format
 msgid "Skip pa&ger"
-msgstr "Nu folosi pa&ginatorul"
+msgstr "Sari pa&ginatorul"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_skiptaskbar)
 #: ruleswidgetbase.ui:1481
@@ -1080,7 +1080,7 @@ msgstr "Fereastra (nu) va apărea în bara de procese."
 #: ruleswidgetbase.ui:1484
 #, kde-format
 msgid "Skip &taskbar"
-msgstr "Nu folosi &bara de sarcini"
+msgstr "Sari &bara de sarcini"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_skipswitcher)
 #: ruleswidgetbase.ui:1498
@@ -1092,7 +1092,7 @@ msgstr "Fereastra (nu) va apărea în lista Alt+Tab"
 #: ruleswidgetbase.ui:1501
 #, kde-format
 msgid "Skip &switcher"
-msgstr "Nu folosește &comutatorul"
+msgstr "&Sari comutatorul"
 
 #. i18n: ectx: property (text), widget (QPushButton, shortcut_edit)
 #: ruleswidgetbase.ui:1511
@@ -1183,18 +1183,18 @@ msgid ""
 "\"None\" will unconditionally allow this window to get the focus while\n"
 "\"Extreme\" will completely prevent it from taking the focus."
 msgstr ""
-"KWin încearcă să oprească ferestrele să obțină focusul\n"
+"KWin încearcă să oprească ferestrele să obțină focalizarea\n"
 "(„să se activeze”) în timp ce lucrați în altă fereastră,\n"
 "dar aceasta câteodată poate eșua sau să aibă efect prea puternic.\n"
-"„Niciuna” va permite în mod necondiționat acestei ferestre să obțină focusul "
-"în timp ce\n"
-"„Extrem” va opri complet obținerea lui."
+"„Niciuna” va permite în mod necondiționat acestei ferestre să obțină "
+"focalizarea, în timp ce\n"
+"„Extremă” va opri complet obținerea acesteia."
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_fsplevel)
 #: ruleswidgetbase.ui:2151
 #, kde-format
 msgid "&Focus stealing prevention"
-msgstr "Prevenire captură foc&us"
+msgstr "Previne captura &focalizării"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, fsplevel)
 #. i18n: ectx: property (text), item, widget (KComboBox, fpplevel)
@@ -1242,7 +1242,7 @@ msgid ""
 "Otherwise it's interleaved with the stealing prevention\n"
 "assigned to the window that wants the focus."
 msgstr ""
-"Aceasta controlează protecția focalizării pentru  fereastra activă acum.\n"
+"Aceasta controlează protecția focalizării pentru fereastra activă acum.\n"
 "Niciuna – va ceda focalizarea mereu,\n"
 "Extremă – o va păstra.\n"
 "Altfel, se întrețese cu prevenirea furtului atribuită\n"
@@ -1262,15 +1262,15 @@ msgid ""
 "On the other hand you might wish to prevent a window\n"
 "from getting focused on a mouse click."
 msgstr ""
-"Ferestrele pot opri obținerea focusului (activare) când se face clic.\n"
-"Pe de altă parte poate doriți să opriți o fereastră să obțină\n"
-"focusul la un clic de maus."
+"Ferestrele pot preveni obținerea focalizării (activare) când sunt apăsate.\n"
+"Pe de altă parte, poate doriți să opriți o fereastră să obțină\n"
+"focalizarea la clic de maus."
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_acceptfocus)
 #: ruleswidgetbase.ui:2298
 #, kde-format
 msgid "Accept &focus"
-msgstr "Acceptă &focusul"
+msgstr "Acceptă &focalizare"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_disableglobalshortcuts)
 #: ruleswidgetbase.ui:2341

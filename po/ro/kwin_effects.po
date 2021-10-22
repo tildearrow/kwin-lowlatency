@@ -3,8 +3,7 @@
 # Copyright (C) 2008 This_file_is_part_of_KDE
 # This file is distributed under the same license as the kwin_effects package.
 # Laurenţiu Buzdugan <lbuz@rolix.org>, 2008, 2009".
-# Sergiu Bivol <sergiu@cip.md>, 2008.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2012, 2013, 2020.
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2012, 2013, 2020, 2021.
 # Cristian Oneț <onet.cristian@gmail.com>, 2011, 2012.
 # Cristian Buzduga <cristianbzdg@gmail.com>, 2011.
 #
@@ -13,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-03-28 15:34+0000\n"
-"PO-Revision-Date: 2020-09-26 19:06+0100\n"
+"PO-Revision-Date: 2021-07-25 12:34+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
 "Language: ro\n"
@@ -36,10 +35,9 @@ msgstr "sergiu@cip.md"
 
 #. i18n: ectx: property (text), widget (QLabel, labelConstantBlurDescription)
 #: blur/blur_config.ui:17
-#, fuzzy, kde-format
-#| msgid "&Strength:"
+#, kde-format
 msgid "Blur strength:"
-msgstr "&Tărie:"
+msgstr "Intensitatea estompării:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelConstantBlurLight)
 #. i18n: ectx: property (text), widget (QLabel, labelConstantNoiseLight)
@@ -57,10 +55,9 @@ msgstr "Puternică"
 
 #. i18n: ectx: property (text), widget (QLabel, labelConstantNoiseDescription)
 #: blur/blur_config.ui:83
-#, fuzzy, kde-format
-#| msgid "&Strength:"
+#, kde-format
 msgid "Noise strength:"
-msgstr "&Tărie:"
+msgstr "Intensitatea zgomotului:"
 
 #: colorpicker/colorpicker.cpp:118
 #, kde-format
@@ -68,6 +65,8 @@ msgid ""
 "Select a position for color picking with left click or enter.\n"
 "Escape or right click to cancel."
 msgstr ""
+"Alegeți o poziție pentru alegerea culorii cu clic stâng sau Enter.\n"
+"Apăsați Escape sau clic drept pentru a anula."
 
 #: coverswitch/coverswitch.cpp:956 flipswitch/flipswitch.cpp:936
 #, kde-format
@@ -88,7 +87,7 @@ msgstr "Afișează &titlurile ferestrelor"
 #: coverswitch/coverswitch_config.ui:29 cube/cube_config.ui:344
 #, kde-format
 msgid "Zoom"
-msgstr "Scalează"
+msgstr "Apropiere"
 
 #. i18n: ectx: property (toolTip), widget (QSlider, kcfg_zPosition)
 #: coverswitch/coverswitch_config.ui:39
@@ -100,13 +99,13 @@ msgstr "Definește cât de departe să apară ferestrele"
 #: coverswitch/coverswitch_config.ui:66 cube/cube_config.ui:350
 #, kde-format
 msgid "Near"
-msgstr "Apropiat"
+msgstr "Aproape"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: coverswitch/coverswitch_config.ui:86 cube/cube_config.ui:357
 #, kde-format
 msgid "Far"
-msgstr "Îndepărtat"
+msgstr "Departe"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: coverswitch/coverswitch_config.ui:110
@@ -118,7 +117,7 @@ msgstr "Animație"
 #: coverswitch/coverswitch_config.ui:116
 #, kde-format
 msgid "Animate switch"
-msgstr "Comutator animație"
+msgstr "Animează schimbarea"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AnimateStart)
 #: coverswitch/coverswitch_config.ui:123
@@ -199,7 +198,7 @@ msgstr "De bază"
 #, kde-format
 msgctxt "@title:tab Advanced Settings"
 msgid "Advanced"
-msgstr "Avansat"
+msgstr "Avansate"
 
 #: cube/cube_config.cpp:65 desktopgrid/desktopgrid_config.cpp:63
 #: flipswitch/flipswitch_config.cpp:67 invert/invert_config.cpp:49
@@ -212,7 +211,7 @@ msgstr "Avansat"
 #: windowgeometry/windowgeometry_config.cpp:56 zoom/zoom_config.cpp:65
 #, kde-format
 msgid "KWin"
-msgstr ""
+msgstr "KWin"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: cube/cube_config.ui:21
@@ -532,10 +531,9 @@ msgstr "Implicită"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: desktopgrid/desktopgrid_config.ui:55
-#, fuzzy, kde-format
-#| msgid "&Border width:"
+#, kde-format
 msgid "Border wid&th:"
-msgstr "Lățime &contur:"
+msgstr "Lățime con&tur:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: desktopgrid/desktopgrid_config.ui:84
@@ -583,7 +581,7 @@ msgstr "Folosește efectul Prezentare Ferestre pentru a aranja ferestrele"
 #: desktopgrid/desktopgrid_config.ui:197
 #, kde-format
 msgid "Show buttons to alter count of virtual desktops"
-msgstr ""
+msgstr "Arată butoane pentru alterarea numărului de birouri virtuale"
 
 #. i18n: ectx: property (text), widget (QLabel, label_Strength)
 #: diminactive/diminactive_config.ui:17
@@ -662,6 +660,8 @@ msgstr "Contrast de fundal"
 msgctxt "Comment describing the KWin Effect"
 msgid "Improve contrast and readability behind semi-transparent windows"
 msgstr ""
+"Îmbunătățește contrastul și lizibilitatea în spatele ferestrelor semi-"
+"transparente"
 
 #: effect_builtins.cpp:147
 #, kde-format
@@ -685,7 +685,7 @@ msgstr "Cub de birou"
 #, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Display each virtual desktop on a side of a cube"
-msgstr ""
+msgstr "Afișează fiecare birou virtual pe fața unui cub"
 
 #: effect_builtins.cpp:177
 #, kde-format
@@ -925,7 +925,7 @@ msgstr "Foaie"
 msgctxt "Comment describing the KWin Effect"
 msgid ""
 "Make modal dialogs smoothly fly in and out when they are shown or hidden"
-msgstr ""
+msgstr "Face dialogurile modale să zboare lin când sunt arătate sau ascunse"
 
 #: effect_builtins.cpp:462
 #, kde-format
@@ -991,7 +991,7 @@ msgstr "Animație lunecoasă pentru indiciile Plasma"
 #, kde-format
 msgctxt "Name of a KWin Effect"
 msgid "Snap Helper"
-msgstr ""
+msgstr "Ajutător magnetic"
 
 #: effect_builtins.cpp:538
 #, kde-format
@@ -1651,6 +1651,8 @@ msgid ""
 "Select window to screen shot with left click or enter.\n"
 "Escape or right click to cancel."
 msgstr ""
+"Alegeți fereastra de capturat cu clic stâng sau Enter.\n"
+"Apăsați Escape sau clic drept pentru a anula."
 
 #: screenshot/screenshot.cpp:467
 #, kde-format
@@ -1658,6 +1660,8 @@ msgid ""
 "Create screen shot with left click or enter.\n"
 "Escape or right click to cancel."
 msgstr ""
+"Creați captura de ecran cu clic stâng sau Enter.\n"
+"Apăsați Escape sau clic drept pentru a anula."
 
 #: showfps/showfps.cpp:65
 #, kde-format
@@ -2053,7 +2057,7 @@ msgstr "Factor panoramare:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EnableFocusTracking)
 #: zoom/zoom_config.ui:66
-#, kde-format
+#, fuzzy, kde-format
 msgid ""
 "Enable tracking of the focused location. This needs QAccessible to be "
 "enabled per application (\"export QT_ACCESSIBILITY=1\")."

@@ -7,15 +7,15 @@
 # Taiki Komoda <kom@kde.gr.jp>, 2010.
 # TAKANO Yuji <takachan@running-dog.net>, 2015.
 # Tomohiro Hyakutake <tomhioo@outlook.jp>, 2019.
-# Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2004, 2005, 2006, 2007, 2008, 2010, 2015, 2019.
+# Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2004, 2005, 2006, 2007, 2008, 2010, 2015, 2019, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-09-30 10:59+0200\n"
-"PO-Revision-Date: 2019-05-26 21:14+0900\n"
-"Last-Translator: Tomohiro Hyakutake <tomhioo@outlook.jp>\n"
+"PO-Revision-Date: 2021-10-03 17:31-0700\n"
+"Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 19.04.1\n"
+"X-Generator: Poedit 3.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -993,7 +993,7 @@ msgstr ""
 #: debug_console.ui:288
 #, kde-format
 msgid "Keyboard"
-msgstr ""
+msgstr "キーボード"
 
 #. i18n: ectx: property (title), widget (QGroupBox, layoutBox)
 #: debug_console.ui:315
@@ -1435,10 +1435,9 @@ msgid "Show Desktop"
 msgstr "デスクトップを表示"
 
 #: kwinbindings.cpp:151
-#, fuzzy, kde-format
-#| msgid "Switch to Screen 1"
+#, kde-format
 msgid "Switch to Screen %1"
-msgstr "スクリーン 1 に切り替え"
+msgstr "スクリーン %1 に切り替え"
 
 #: kwinbindings.cpp:154
 #, kde-format
@@ -1915,22 +1914,19 @@ msgid "&No Border"
 msgstr "枠なし(&N)"
 
 #: useractions.cpp:294
-#, fuzzy, kde-format
-#| msgid "Window Short&cut..."
+#, kde-format
 msgid "Set Window Short&cut..."
-msgstr "ウィンドウのショートカット(&C)..."
+msgstr "ウィンドウにショートカットを割り当てる(&C)..."
 
 #: useractions.cpp:299
-#, fuzzy, kde-format
-#| msgid "Special &Window Settings..."
+#, kde-format
 msgid "Configure Special &Window Settings..."
-msgstr "特殊なウィンドウ設定(&W)..."
+msgstr "ウィンドウ固有の設定(&W)..."
 
 #: useractions.cpp:304
-#, fuzzy, kde-format
-#| msgid "S&pecial Application Settings..."
+#, kde-format
 msgid "Configure S&pecial Application Settings..."
-msgstr "特殊なアプリケーション設定(&P)..."
+msgstr "アプリケーション固有の設定(&P)..."
 
 #: useractions.cpp:312
 #, fuzzy, kde-format
@@ -1973,8 +1969,7 @@ msgid "&Desktops"
 msgstr "すべてのデスクトップ(&A)"
 
 #: useractions.cpp:477
-#, fuzzy, kde-format
-#| msgid "Move To &Desktop"
+#, kde-format
 msgid "Move to &Desktop"
 msgstr "デスクトップへ移動(&D)"
 
@@ -2076,10 +2071,9 @@ msgid "Switch One Desktop Down"
 msgstr "一つ下のデスクトップに切り替え"
 
 #: virtualdesktops.cpp:852
-#, fuzzy, kde-format
-#| msgid "Switch to Desktop 1"
+#, kde-format
 msgid "Switch to Desktop %1"
-msgstr "デスクトップ 1 に切り替え"
+msgstr "デスクトップ %1 に切り替え"
 
 #: virtualkeyboard.cpp:106
 #, kde-format

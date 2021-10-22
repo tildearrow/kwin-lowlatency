@@ -1,7 +1,6 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
-# Sergiu Bivol <sergiu@cip.md>, 2009, 2011.
-# Sergiu Bivol <sergiu@cip.md>, 2009, 2010, 2012, 2013, 2020.
+# This file is distributed under the same license as the kwin package.
+# Sergiu Bivol <sergiu@cip.md>, 2009, 2010, 2011, 2012, 2013, 2020.
 # Cristian Oneț <onet.cristian@gmail.com>, 2011, 2013.
 #
 msgid ""

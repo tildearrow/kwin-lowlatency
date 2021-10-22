@@ -1,7 +1,7 @@
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2007, 2008, 2009, 2010.
-# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2012, 2013, 2014, 2015, 2017, 2018, 2019.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2012, 2013, 2014, 2015, 2017, 2018, 2019, 2021.
 # Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
-# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012, 2013, 2015, 2016, 2018, 2020.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012, 2013, 2015, 2016, 2018, 2020, 2021.
 # Markus Slopianka <kamikazow@fishmouth.net>, 2010.
 # Felix Schweighofer <felix.schweighofer@googlemail.com>, 2010.
 # Hendrik Knackstedt <kn.hendrik@gmail.com>, 2011.
@@ -10,14 +10,13 @@ msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-03-28 15:34+0000\n"
-"PO-Revision-Date: 2020-04-04 22:34+0200\n"
-"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"PO-Revision-Date: 2021-04-20 06:13+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -757,7 +756,7 @@ msgstr "Gleiten"
 #, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Glide windows as they appear or disappear"
-msgstr ""
+msgstr "Fenster beim Erscheinen oder Verschwinden gleiten lassen"
 
 #: effect_builtins.cpp:267
 #, kde-format
@@ -831,7 +830,7 @@ msgstr "Lupe"
 #, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Magnify the section of the screen that is near the mouse cursor"
-msgstr "Vergrößert den Arbeitsflächenbereich unter der Mauszeiger"
+msgstr "Vergrößert den Arbeitsflächenbereich unter dem Mauszeiger"
 
 #: effect_builtins.cpp:357
 #, kde-format
@@ -1769,10 +1768,9 @@ msgstr "Nach hinten gleiten"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlideBackground)
 #: slide/slide_config.ui:112
-#, fuzzy, kde-format
-#| msgid "Slide when grouping"
+#, kde-format
 msgid "Slide desktop background"
-msgstr "In Gruppierung gleiten lassen"
+msgstr "Arbeitsflächen-Hintergrund gleiten lassen"
 
 #: thumbnailaside/thumbnailaside.cpp:40
 #: thumbnailaside/thumbnailaside_config.cpp:73

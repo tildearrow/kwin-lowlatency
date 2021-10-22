@@ -1,23 +1,23 @@
 # Thomas Diehl <thd@kde.org>, 2002, 2003, 2004.
 # Stephan Johach <hunsum@gmx.de>, 2005, 2006.
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008, 2009, 2010.
-# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2013, 2015, 2017, 2019, 2020, 2021.
-# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010, 2011, 2012, 2013.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2013, 2015, 2017, 2019, 2021.
+# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010, 2011, 2012, 2013, 2020, 2021.
 # Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+# Frank Steinmetzger <Warp_7@gmx.de>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-03-28 15:34+0000\n"
-"PO-Revision-Date: 2021-03-02 13:28+0100\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"PO-Revision-Date: 2021-06-06 23:50+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -433,6 +433,7 @@ msgstr "Immer im Vordergrund/Hintergrund halten"
 msgid "Move to previous/next desktop"
 msgstr "Zur nächsten/vorherigen Arbeitsfläche verschieben"
 
+# Weiter oben ist Opacity=Deckkraft
 #. i18n: ectx: property (text), item, widget (KComboBox, coAllW)
 #. i18n: ectx: property (text), item, widget (KComboBox, coTiAct4)
 #: actions.ui:500 mouse.ui:127
@@ -488,6 +489,7 @@ msgstr " ms"
 msgid "Window &placement:"
 msgstr "Fenster&positionierung:"
 
+# Hier ist ein Fehler im Originaltext. Es steht "Smart" im ersten li-Element, aber es geht um Minimal overlapping.
 #. i18n: ectx: property (whatsThis), widget (KComboBox, placementCombo)
 #: advanced.ui:76
 #, kde-format
@@ -640,7 +642,7 @@ msgstr "Aktivierung nach Klick"
 #: focus.ui:41
 #, kde-format
 msgid "Click to focus (mouse precedence)"
-msgstr "Aktivierung nach Klick - Vorrang für Maus)"
+msgstr "Aktivierung nach Klick - Vorrang für Maus"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:46
@@ -652,7 +654,7 @@ msgstr "Aktivierung bei Mauskontakt"
 #: focus.ui:51
 #, kde-format
 msgid "Focus follows mouse (mouse precedence)"
-msgstr "Aktivierung bei Mauskontakt - Vorrang für Maus)"
+msgstr "Aktivierung bei Mauskontakt - Vorrang für Maus"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicyCombo)
 #: focus.ui:56
@@ -820,7 +822,7 @@ msgstr ""
 #: focus.ui:156
 #, kde-format
 msgid "&Click raises active window"
-msgstr "&Aktives Fenster auf Klick nach &vorne holen"
+msgstr "&Aktives Fenster auf Klick nach vorne holen"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, autoRaiseOn)
 #: focus.ui:165
@@ -912,7 +914,7 @@ msgstr "&Fensteraktionen"
 #: main.cpp:93
 #, kde-format
 msgid "Mo&vement"
-msgstr "&Bewegung"
+msgstr "&Verschiebung"
 
 #: main.cpp:98
 #, kde-format
@@ -1318,11 +1320,11 @@ msgid ""
 msgstr ""
 "<html><head/><body><p><span style=\" font-style:italic;\">Aktivierung nach "
 "Klick - Vorrang für Maus</span>Dies ist fast wie <span style=\" font-style:"
-"italic;\">Aktivierung nach Klick</span>Wenn eine aktives Fenster durch das "
-"System gewählt werden muss,z. B. wenn das zurzeit aktive Fenster geschlossen "
-"wurde, dann ist das Fenster unter dem Mauszeiger der bevorzugte Kandidat. "
-"Ungewöhnliche aber mögliche Variante von <span style=\" font-style:italic;"
-"\">Aktivierung nach Klick</span>.</p></body></html>"
+"italic;\">Aktivierung nach Klick</span>Wenn ein aktives Fenster durch das "
+"System gewählt werden muss, z. B. wenn das zurzeit aktive Fenster "
+"geschlossen wurde, dann ist das Fenster unter dem Mauszeiger der bevorzugte "
+"Kandidat. Ungewöhnliche aber mögliche Variante von <span style=\" font-style:"
+"italic;\">Aktivierung nach Klick</span>.</p></body></html>"
 
 #: windows.cpp:178
 #, kde-format

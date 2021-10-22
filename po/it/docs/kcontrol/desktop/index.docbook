@@ -18,6 +18,20 @@
 >&Jost.Schenck; &Jost.Schenck.mail;</author>
 <othercredit role="translator"
 ><firstname
+>Paolo</firstname
+><surname
+>Zamponi</surname
+><affiliation
+><address
+><email
+>zapaolo@email.it</email
+></address
+></affiliation
+><contrib
+>Aggiornamento a Plasma 5.20</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
 >Luciano</firstname
 ><surname
 >Montanaro</surname
@@ -42,7 +56,7 @@
 </authorgroup>
 
 <date
->2015-04-09</date>
+>09/04/2015</date>
 <releaseinfo
 >Plasma 5.3</releaseinfo>
 
@@ -68,9 +82,9 @@
 ></title>
 
 <para
->&kde; offre la possibilità di avere molti desktop virtuali. In questa scheda puoi configurare il numero di desktop, il numero di righe nel <guilabel
+>&kde; ti offre la possibilità di avere diversi desktop virtuali. In questa scheda puoi configurare il numero dei desktop, il numero di righe nell'icona del <guilabel
 >Cambiadesktop</guilabel
-> e i nomi dei desktop. Basta usare la casella per regolarne il numero. Puoi assegnar loro dei nomi scrivendoli nelle campi di testo sottostanti.</para
+> e i nomi dei desktop. Basta usare la casella per regolarne il numero. Puoi assegnar loro dei nomi scrivendoli nelle caselle di testo sottostanti.</para
 > 
 <!-- not in 5.3
 <para
@@ -148,16 +162,16 @@ to use independent widgets and wallpapers on each individual desktop.
 ></term>
 <listitem
 ><para
->Questa sezione visualizza le scorciatoie configurate per cambiare i desktop e permette di modificarle. </para
+>Questa sezione visualizza le scorciatoie configurate per cambiare i desktop e ti permette di modificarle. </para
 ></listitem>
 </varlistentry>
 
 </variablelist>
 
 <para
->Far ruotare la rotellina del mouse su un'area vuota del desktop o sul <guilabel
+>La rotazione della rotellina del mouse su un'area vuota del desktop o sul <guilabel
 >Cambiadesktop</guilabel
-> nel pannello passa a un altro desktop virtuale in ordine numerico, a seconda della direzione di rotazione (in su o in giù).</para>
+> nel pannello farà passare a un altro desktop virtuale in ordine numerico, a seconda della direzione di rotazione (in su o in giù).</para>
 <para
 >Puoi modificare questo comportamento predefinito sulla pagina <guilabel
 >Azioni del mouse</guilabel

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-30 17:27+0200\n"
-"PO-Revision-Date: 2020-06-23 10:40+0300\n"
+"PO-Revision-Date: 2021-09-05 10:46+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -944,25 +944,25 @@ msgstr "Ei sijoitusta"
 #: ruleswidgetbase.ui:1066
 #, kde-format
 msgid "Minimal Overlapping"
-msgstr "Pienin lomitus"
+msgstr "Lomita mahdollisimman vähän"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1071
 #, kde-format
 msgid "Maximized"
-msgstr "Suurennettu"
+msgstr "Suurenna"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1076
 #, kde-format
 msgid "Cascaded"
-msgstr "Porrastettu"
+msgstr "Porrasta"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1081
 #, kde-format
 msgid "Centered"
-msgstr "Keskitys"
+msgstr "Keskitä"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1086
@@ -980,7 +980,7 @@ msgstr "Vasempaan yläkulmaan"
 #: ruleswidgetbase.ui:1096
 #, kde-format
 msgid "Under Mouse"
-msgstr "Hiiren alle"
+msgstr "Osoittimen kohdalle"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, placement)
 #: ruleswidgetbase.ui:1101
