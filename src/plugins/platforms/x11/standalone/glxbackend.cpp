@@ -785,6 +785,7 @@ bool GlxBackend::scanout(int screenId, SurfaceItem *surfaceItem)
       if (m_lastUnredirectedWindow!=-1) {
         printf("Unredirection window switch\n");
         xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
+        m_lastUnredirectedToplevel->discardWindowPixmap();
       }
       printf("Unredirection started\n");
       xcb_composite_unredirect_window(connection(), item->m_toplevel->frameId(), XCB_COMPOSITE_REDIRECT_MANUAL);
