@@ -4,7 +4,11 @@
 
 # ALMOST THERE
 
-unredirection is almost done!!!
+**TODO:**
+
+- TEST INTEL
+- TEST NVIDIA
+- RELEASE
 
 ## notice
 
