@@ -6,12 +6,13 @@
 
 **TODO:**
 
-- TEST INTEL
-- TEST NVIDIA
+- test intel **DONE**
+- **TEST MULTI-MONITOR**
+- TEST NVIDIA (ugh)
 - RELEASE
 
 ## notice
 
 KWin-lowlatency 5.22 is almost ready!
 
-it's still in test stage though. NVIDIA not tested.
+it's still in test stage...
