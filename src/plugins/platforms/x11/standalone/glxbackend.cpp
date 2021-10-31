@@ -764,16 +764,20 @@ void GlxBackend::endFrame(int screenId, const QRegion &renderedRegion, const QRe
         addToDamageHistory(damagedRegion);
 }
 
+// TODO: only hide parts of the overlay which are used by
+//       the unredirected window
 bool GlxBackend::scanout(int screenId, SurfaceItem *surfaceItem)
 {
     if (surfaceItem==NULL) {
       if (m_lastUnredirectedWindow!=-1) {
         printf("Unredirection stopped\n");
-        overlayWindow()->show();
         xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
         m_lastUnredirectedToplevel->discardWindowPixmap();
         m_lastUnredirectedWindow=-1;
         m_lastUnredirectedToplevel=NULL;
+        const QSize& s=screens()->size();
+        overlayWindow()->setShape(QRect(0,0,s.width(),s.height()));
+        overlayWindow()->show();
       }
       return false;
     }
@@ -789,7 +793,14 @@ bool GlxBackend::scanout(int screenId, SurfaceItem *surfaceItem)
       }
       printf("Unredirection started\n");
       xcb_composite_unredirect_window(connection(), item->m_toplevel->frameId(), XCB_COMPOSITE_REDIRECT_MANUAL);
-      overlayWindow()->hide();
+      const QSize& s=screens()->size();
+      QRegion region(0,0,s.width(),s.height());
+      region-=item->m_toplevel->frameGeometry();
+      if (region.isEmpty()) {
+        overlayWindow()->hide();
+      } else {
+        overlayWindow()->setShape(region);
+      }
       m_lastUnredirectedWindow=frameId;
       m_lastUnredirectedToplevel=item->m_toplevel;
     }
