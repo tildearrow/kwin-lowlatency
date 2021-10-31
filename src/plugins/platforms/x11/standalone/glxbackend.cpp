@@ -764,8 +764,6 @@ void GlxBackend::endFrame(int screenId, const QRegion &renderedRegion, const QRe
         addToDamageHistory(damagedRegion);
 }
 
-// TODO: only hide parts of the overlay which are used by
-//       the unredirected window
 bool GlxBackend::scanout(int screenId, SurfaceItem *surfaceItem)
 {
     if (surfaceItem==NULL) {
