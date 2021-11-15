@@ -1265,6 +1265,7 @@ void EffectsHandlerImpl::defineCursor(Qt::CursorShape shape)
 
 bool EffectsHandlerImpl::checkInputWindowEvent(QMouseEvent *e)
 {
+    Q_ASSERT(this!=NULL);
     if (m_grabbedMouseEffects.isEmpty()) {
         return false;
     }

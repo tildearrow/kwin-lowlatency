@@ -6,7 +6,6 @@
 
 **TODO:**
 
-- **TEST MULTI-MONITOR** - I added some code to possible handle it
 - TEST NVIDIA (ugh)
 - RELEASE
 
