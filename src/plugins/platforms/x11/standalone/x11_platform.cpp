@@ -276,17 +276,18 @@ void X11StandalonePlatform::createOpenGLSafePoint(OpenGLSafePoint safePoint)
             m_openGLFreezeProtectionThread->setObjectName("FreezeDetector");
             m_openGLFreezeProtectionThread->start();
             m_openGLFreezeProtection = new QTimer;
-            m_openGLFreezeProtection->setInterval(15000);
+            // this was 15000, but if you have an HDD it would trigger.
+            m_openGLFreezeProtection->setInterval(60000);
             m_openGLFreezeProtection->setSingleShot(true);
             m_openGLFreezeProtection->start();
             const QString configName = kwinApp()->config()->name();
             m_openGLFreezeProtection->moveToThread(m_openGLFreezeProtectionThread);
             connect(m_openGLFreezeProtection, &QTimer::timeout, m_openGLFreezeProtection,
                 [configName] {
-                    const QString unsafeKey(QLatin1String("OpenGLIsUnsafe") + (kwinApp()->isX11MultiHead() ? QString::number(kwinApp()->x11ScreenNumber()) : QString()));
-                    auto group = KConfigGroup(KSharedConfig::openConfig(configName), "Compositing");
-                    group.writeEntry(unsafeKey, true);
-                    group.sync();
+                    //const QString unsafeKey(QLatin1String("OpenGLIsUnsafe") + (kwinApp()->isX11MultiHead() ? QString::number(kwinApp()->x11ScreenNumber()) : QString()));
+                    //auto group = KConfigGroup(KSharedConfig::openConfig(configName), "Compositing");
+                    //group.writeEntry(unsafeKey, true);
+                    //group.sync();
                     KCrash::setDrKonqiEnabled(false);
                     qFatal("Freeze in OpenGL initialization detected");
                 }, Qt::DirectConnection);

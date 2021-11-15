@@ -66,6 +66,8 @@ Options::Options(QObject *parent)
     , m_glPreferBufferSwap(Options::defaultGlPreferBufferSwap())
     , m_glPlatformInterface(Options::defaultGlPlatformInterface())
     , m_windowsBlockCompositing(true)
+    , m_unredirectFullscreen(true)
+    , m_drmDirectScanout(true)
     , m_MoveMinimizedWindowsToEndOfTabBoxFocusChain(false)
     , OpTitlebarDblClick(Options::defaultOperationTitlebarDblClick())
     , CmdActiveTitlebar1(Options::defaultCommandActiveTitlebar1())
@@ -608,6 +610,24 @@ void Options::setWindowsBlockCompositing(bool value)
     Q_EMIT windowsBlockCompositingChanged();
 }
 
+void Options::setUnredirectFullscreen(bool value)
+{
+    if (m_unredirectFullscreen == value) {
+        return;
+    }
+    m_unredirectFullscreen = value;
+    emit unredirectFullscreenChanged();
+}
+
+void Options::setDrmDirectScanout(bool value)
+{
+    if (m_drmDirectScanout == value) {
+        return;
+    }
+    m_drmDirectScanout = value;
+    emit drmDirectScanoutChanged();
+}
+
 void Options::setMoveMinimizedWindowsToEndOfTabBoxFocusChain(bool value)
 {
     if (m_MoveMinimizedWindowsToEndOfTabBoxFocusChain == value) {
@@ -810,6 +830,8 @@ void Options::syncFromKcfgc()
     setElectricBorderTiling(m_settings->electricBorderTiling());
     setElectricBorderCornerRatio(m_settings->electricBorderCornerRatio());
     setWindowsBlockCompositing(m_settings->windowsBlockCompositing());
+    setUnredirectFullscreen(m_settings->unredirectFullscreen());
+    setDrmDirectScanout(m_settings->drmDirectScanout());
     setMoveMinimizedWindowsToEndOfTabBoxFocusChain(m_settings->moveMinimizedWindowsToEndOfTabBoxFocusChain());
     setLatencyPolicy(m_settings->latencyPolicy());
     setRenderTimeEstimator(m_settings->renderTimeEstimator());

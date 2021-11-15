@@ -197,6 +197,8 @@ class KWIN_EXPORT Options : public QObject
     Q_PROPERTY(GlSwapStrategy glPreferBufferSwap READ glPreferBufferSwap WRITE setGlPreferBufferSwap NOTIFY glPreferBufferSwapChanged)
     Q_PROPERTY(KWin::OpenGLPlatformInterface glPlatformInterface READ glPlatformInterface WRITE setGlPlatformInterface NOTIFY glPlatformInterfaceChanged)
     Q_PROPERTY(bool windowsBlockCompositing READ windowsBlockCompositing WRITE setWindowsBlockCompositing NOTIFY windowsBlockCompositingChanged)
+    Q_PROPERTY(bool unredirectFullscreen READ unredirectFullscreen WRITE setUnredirectFullscreen NOTIFY unredirectFullscreenChanged)
+    Q_PROPERTY(bool drmDirectScanout READ drmDirectScanout WRITE setDrmDirectScanout NOTIFY drmDirectScanoutChanged)
     Q_PROPERTY(LatencyPolicy latencyPolicy READ latencyPolicy WRITE setLatencyPolicy NOTIFY latencyPolicyChanged)
     Q_PROPERTY(RenderTimeEstimator renderTimeEstimator READ renderTimeEstimator WRITE setRenderTimeEstimator NOTIFY renderTimeEstimatorChanged)
 public:
@@ -606,6 +608,16 @@ public:
         return m_windowsBlockCompositing;
     }
 
+    bool unredirectFullscreen() const
+    {
+        return m_unredirectFullscreen;
+    }
+
+    bool drmDirectScanout() const
+    {
+        return m_drmDirectScanout;
+    }
+
     bool moveMinimizedWindowsToEndOfTabBoxFocusChain() const {
         return m_MoveMinimizedWindowsToEndOfTabBoxFocusChain;
     }
@@ -670,6 +682,8 @@ public:
     void setGlPreferBufferSwap(char glPreferBufferSwap);
     void setGlPlatformInterface(OpenGLPlatformInterface interface);
     void setWindowsBlockCompositing(bool set);
+    void setUnredirectFullscreen(bool set);
+    void setDrmDirectScanout(bool set);
     void setMoveMinimizedWindowsToEndOfTabBoxFocusChain(bool set);
     void setLatencyPolicy(LatencyPolicy policy);
     void setRenderTimeEstimator(RenderTimeEstimator estimator);
@@ -843,6 +857,8 @@ Q_SIGNALS:
     void glPreferBufferSwapChanged();
     void glPlatformInterfaceChanged();
     void windowsBlockCompositingChanged();
+    void unredirectFullscreenChanged();
+    void drmDirectScanoutChanged();
     void animationSpeedChanged();
     void latencyPolicyChanged();
     void configChanged();
@@ -889,6 +905,8 @@ private:
     GlSwapStrategy m_glPreferBufferSwap;
     OpenGLPlatformInterface m_glPlatformInterface;
     bool m_windowsBlockCompositing;
+    bool m_unredirectFullscreen;
+    bool m_drmDirectScanout;
     bool m_MoveMinimizedWindowsToEndOfTabBoxFocusChain;
 
     WindowOperation OpTitlebarDblClick;

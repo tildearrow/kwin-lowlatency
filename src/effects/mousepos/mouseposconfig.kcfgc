@@ -1,0 +1,5 @@
+File=mousepos.kcfg
+ClassName=MousePosConfig
+NameSpace=KWin
+Singleton=true
+Mutators=true

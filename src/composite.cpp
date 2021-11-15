@@ -734,6 +734,18 @@ void X11Compositor::configChanged()
 
 void X11Compositor::suspend(X11Compositor::SuspendReason reason)
 {
+    if (reason&UserSuspend) {
+      printf("Suspending compositor at user request.\n");
+    }
+    if (reason&BlockRuleSuspend) {
+      printf("Suspending compositor due to block rule.\n");
+    }
+    if (reason&ScriptSuspend) {
+      printf("Suspending compositor at script request.\n");
+    }
+    if (reason==NoReasonSuspend) {
+      printf("Suspending for no reason! Help!\n");
+    }
     Q_ASSERT(reason != NoReasonSuspend);
     m_suspended |= reason;
 

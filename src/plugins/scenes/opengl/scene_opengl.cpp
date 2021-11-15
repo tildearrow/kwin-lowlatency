@@ -358,6 +358,7 @@ static SurfaceItem *findTopMostSurface(SurfaceItem *item)
     }
 }
 
+// TODO: ALL OF THIS
 void SceneOpenGL::paint(AbstractOutput *output, const QRegion &damage, const QList<Toplevel *> &toplevels,
                         RenderLoop *renderLoop)
 {
@@ -392,7 +393,8 @@ void SceneOpenGL::paint(AbstractOutput *output, const QRegion &damage, const QLi
         for (int i = stacking_order.count() - 1; i >=0; i--) {
             Window *window = stacking_order[i];
             Toplevel *toplevel = window->window();
-            if (output && toplevel->isOnOutput(output) && window->isVisible() && toplevel->opacity() > 0) {
+            if (window->width()<32 || window->height()<32) continue;
+            if ((output==NULL || (output && toplevel->isOnOutput(output))) && window->isVisible() && toplevel->opacity() > 0) {
                 AbstractClient *c = dynamic_cast<AbstractClient*>(toplevel);
                 if (!c || !c->isFullScreen()) {
                     break;
@@ -421,8 +423,14 @@ void SceneOpenGL::paint(AbstractOutput *output, const QRegion &damage, const QLi
         renderLoop->setFullscreenSurface(fullscreenSurface);
 
         bool directScanout = false;
-        if (m_backend->directScanoutAllowed(output) && !static_cast<EffectsHandlerImpl*>(effects)->blocksDirectScanout()) {
+        if (m_backend->directScanoutAllowed(output)) {
+          if (!static_cast<EffectsHandlerImpl*>(effects)->blocksDirectScanout()) {
+            //printf("Scanning %p\n",fullscreenSurface);
             directScanout = m_backend->scanout(output, fullscreenSurface);
+          } else {
+            //printf("Effect blocks DS\n");
+            directScanout = m_backend->scanout(output, NULL);
+          }
         }
         if (directScanout) {
             renderLoop->endFrame();

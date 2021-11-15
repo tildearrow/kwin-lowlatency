@@ -63,6 +63,14 @@
            <default>true</default>
        </entry>
 
+       <entry name="UnredirectFullscreen" type="Bool">
+           <default>true</default>
+       </entry>
+
+       <entry name="DrmDirectScanout" type="Bool">
+           <default>true</default>
+       </entry>
+
        <entry name="LatencyPolicy" type="Enum">
            <choices name="LatencyPolicy">
                <choice name="LatencyExtremelyLow" value="ExtremelyLow"/>

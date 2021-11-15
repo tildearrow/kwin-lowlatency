@@ -98,6 +98,7 @@ set(kwin4_effect_builtins_sources
     thumbnailaside/thumbnailaside.cpp
     touchpoints/touchpoints.cpp
     trackmouse/trackmouse.cpp
+    mousepos/mousepos.cpp
     windowgeometry/windowgeometry.cpp
     wobblywindows/wobblywindows.cpp
     zoom/zoom.cpp
@@ -132,6 +133,7 @@ kconfig_add_kcfg_files(kwin4_effect_builtins_sources
     slidingpopups/slidingpopupsconfig.kcfgc
     thumbnailaside/thumbnailasideconfig.kcfgc
     trackmouse/trackmouseconfig.kcfgc
+    mousepos/mouseposconfig.kcfgc
     windowgeometry/windowgeometryconfig.kcfgc
     wobblywindows/wobblywindowsconfig.kcfgc
     zoom/zoomconfig.kcfgc
@@ -200,6 +202,7 @@ include(sheet/CMakeLists.txt)
 include(snaphelper/CMakeLists.txt)
 include(startupfeedback/CMakeLists.txt)
 add_subdirectory(trackmouse)
+add_subdirectory(mousepos)
 add_subdirectory(wobblywindows)
 
 ###############################################################################

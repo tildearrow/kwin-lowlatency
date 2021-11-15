@@ -35,6 +35,8 @@ public:
     QRegion shape() const override;
     QRegion opaque() const override;
 
+    Toplevel* m_toplevel;
+
 private Q_SLOTS:
     void handleBufferGeometryChanged(Toplevel *toplevel, const QRect &old);
 

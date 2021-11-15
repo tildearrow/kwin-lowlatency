@@ -295,6 +295,7 @@ public:
     explicit Toplevel();
     virtual xcb_window_t frameId() const;
     xcb_window_t window() const;
+    void discardWindowPixmap();
     /**
      * Returns the geometry of the pixmap or buffer attached to this Toplevel.
      *

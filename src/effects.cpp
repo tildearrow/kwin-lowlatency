@@ -1241,6 +1241,7 @@ void EffectsHandlerImpl::defineCursor(Qt::CursorShape shape)
 
 bool EffectsHandlerImpl::checkInputWindowEvent(QMouseEvent *e)
 {
+    Q_ASSERT(this!=NULL);
     if (m_grabbedMouseEffects.isEmpty()) {
         return false;
     }
@@ -1487,6 +1488,7 @@ QStringList EffectsHandlerImpl::activeEffects() const
 
 bool EffectsHandlerImpl::blocksDirectScanout() const
 {
+    if (fullscreen_effect != NULL) return true;
     for(QVector< KWin::EffectPair >::const_iterator it = loaded_effects.constBegin(),
                                                     end = loaded_effects.constEnd(); it != end; ++it) {
         if (it->second->isActive() && it->second->blocksDirectScanout()) {

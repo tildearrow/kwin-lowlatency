@@ -104,6 +104,7 @@ GlxBackend::GlxBackend(Display *display, X11StandalonePlatform *backend)
     , glxWindow(None)
     , ctx(nullptr)
     , m_bufferAge(0)
+    , m_lastUnredirectedWindow(-1)
     , m_x11Display(display)
     , m_backend(backend)
 {
@@ -770,13 +771,60 @@ void GlxBackend::endFrame(AbstractOutput *output, const QRegion &renderedRegion,
 
     present(renderedRegion);
 
-    if (overlayWindow()->window())  // show the window only after the first pass,
+    if (overlayWindow()->window() && m_lastUnredirectedWindow==-1)  // show the window only after the first pass,
         overlayWindow()->show();   // since that pass may take long
 
     // Save the damaged region to history
     if (supportsBufferAge()) {
         m_damageJournal.add(damagedRegion);
     }
+}
+
+bool GlxBackend::scanout(AbstractOutput* output, SurfaceItem *surfaceItem)
+{
+    if (surfaceItem==NULL) {
+      if (m_lastUnredirectedWindow!=-1) {
+        printf("Unredirection stopped\n");
+        xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
+        m_lastUnredirectedToplevel->discardWindowPixmap();
+        m_lastUnredirectedWindow=-1;
+        m_lastUnredirectedToplevel=NULL;
+        const QSize& s=screens()->size();
+        overlayWindow()->setShape(QRect(0,0,s.width(),s.height()));
+        overlayWindow()->show();
+      }
+      return false;
+    }
+    SurfaceItemX11* item = static_cast<SurfaceItemX11 *>(surfaceItem);
+    //printf("The toplevel is: %p\n",item->m_toplevel);
+    //if (item->m_toplevel==NULL) return false;
+    long long frameId=item->m_toplevel->frameId();
+    if (m_lastUnredirectedWindow!=frameId) {
+      if (m_lastUnredirectedWindow!=-1) {
+        printf("Unredirection window switch\n");
+        xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
+        m_lastUnredirectedToplevel->discardWindowPixmap();
+      }
+      printf("Unredirection started\n");
+      xcb_composite_unredirect_window(connection(), item->m_toplevel->frameId(), XCB_COMPOSITE_REDIRECT_MANUAL);
+      const QSize& s=screens()->size();
+      QRegion region(0,0,s.width(),s.height());
+      region-=item->m_toplevel->frameGeometry();
+      if (region.isEmpty()) {
+        overlayWindow()->hide();
+      } else {
+        overlayWindow()->setShape(region);
+      }
+      m_lastUnredirectedWindow=frameId;
+      m_lastUnredirectedToplevel=item->m_toplevel;
+    }
+    return false;
+}
+
+bool GlxBackend::directScanoutAllowed(AbstractOutput* output) const
+{
+    Q_UNUSED(output)
+    return options->unredirectFullscreen();
 }
 
 void GlxBackend::vblank(std::chrono::nanoseconds timestamp)
