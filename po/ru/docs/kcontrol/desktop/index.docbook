@@ -1,0 +1,188 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % Russian "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="desktop" lang="&language;">
+<title
+>Рабочие столы</title>
+<articleinfo>
+
+<authorgroup>
+<author
+>&Mike.McBride; &Mike.McBride.mail;</author>
+<author
+>&Jost.Schenck; &Jost.Schenck.mail;</author>
+<othercredit role="translator"
+><firstname
+>Екатерина</firstname
+> <surname
+>Пыжова</surname
+> <affiliation
+><address
+><email
+>haleth@yandex.ru</email
+></address
+></affiliation
+> <contrib
+>Перевод на русский язык</contrib
+></othercredit
+> <othercredit role="translator"
+><firstname
+>Олеся</firstname
+> <surname
+>Герасименко</surname
+>  <affiliation
+><address
+><email
+>gammaray@basealt.ru</email
+></address
+></affiliation
+>  <contrib
+>Перевод на русский язык</contrib
+></othercredit
+> <othercredit role="reviewer"
+>   <firstname
+>Александр</firstname
+><surname
+>Яворский</surname
+>   <contrib
+>Рецензирование</contrib
+> </othercredit
+>  
+</authorgroup>
+
+<date
+>9 апреля 2015 г.</date>
+<releaseinfo
+>Plasma 5.3</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Параметры системы</keyword>
+<keyword
+>рабочий стол</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="virtual-desktops">
+
+<title
+>Рабочие столы</title>
+
+<sect2 id="desktop-number">
+<title
+><guilabel
+>Число, расположение и способ переключения рабочих столов</guilabel
+></title>
+
+<para
+>&kde; предоставляет возможность работы на нескольких рабочих столах. Эта вкладка модуля программы &systemsettings; позволяет настроить количества рабочих столов и их названия, а также количество рядов рабочих столов, отображаемых в виджете «Переключение рабочих столов». Для задания количество рабочих столов и количества рядов служат поля ввода со счётчиками. Текстовые поля, расположенные ниже, позволяют присвоить рабочим столам имена.</para
+> 
+<!-- not in 5.3
+<para
+>Enable <guilabel
+>Different widgets for each desktop</guilabel
+> 
+to use independent widgets and wallpapers on each individual desktop.
+</para>
+-->
+</sect2>
+
+<sect2 id="desktop-switching">
+<title
+><guilabel
+>Переключение</guilabel
+></title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>С переходом по циклу</guilabel
+></term>
+<listitem
+><para
+>Включите этот параметр, чтобы при переключении за границу рабочего стола выполнялся возврат на противоположную сторону нового рабочего стола. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Анимация переключения рабочих столов</guilabel
+></term>
+<listitem
+><para
+>Раскрывающийся список позволяет выбрать следующие варианты анимации переключения рабочих столов: <guilabel
+>Без анимации</guilabel
+>, <guilabel
+>Прокрутка</guilabel
+>, <guilabel
+>Анимация куба рабочих столов</guilabel
+> и <guilabel
+>Плавная смена рабочих столов</guilabel
+>. Если для выбранного варианта анимации предусмотрена настройка параметров, то нажатие значка справа от раскрывающегося списка откроет диалоговое окно настройки. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Вывод имени рабочего стола при переключении</guilabel
+></term>
+<listitem
+><para
+>Включите этот параметр для вывода названий рабочих столов при их переключении. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Схематический обзор всех рабочих столов</guilabel
+></term>
+<listitem
+><para
+>Включите этот параметр для вывода схемы логического расположения рабочих столов при их переключении. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Комбинации клавиш</guilabel
+></term>
+<listitem
+><para
+>В этой части окна показываются настроенные комбинации клавиш переключения рабочих столов и предоставляется возможность их редактирования. </para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Прокрутка колеса мыши над пустым пространством рабочего стола или над значком переключателя рабочих столов в панели задач приводит к переключению рабочих столов. Переключение выполняется по порядку рабочих столов в списке, в соответствии с направлением прокрутки (вперёд или назад).</para>
+<para
+>Такое поведение переключения рабочих столов является стандартным. Чтобы его изменить, выберите в контекстном меню рабочего стола пункт <guilabel
+>Настроить рабочий стол…</guilabel
+>, затем пункт <guilabel
+>Действия мыши</guilabel
+> (<keycombo action="simul"
+>&Alt;<keycap
+>D</keycap
+></keycombo
+>, <keycombo action="simul"
+>&Alt;<keycap
+>S</keycap
+></keycombo
+>).</para>
+</sect2>
+</sect1>
+
+</article>

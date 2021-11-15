@@ -1,0 +1,304 @@
+# translation of kcmkwindecoration.po to Polish
+# Version: $Revision: 1599925 $
+# translation of kcmkwindecoration.po to
+# Norbert Popiołek <norbert@kde.com.pl>\n"
+# Michał Rudolf <mrudolf@kdewebdev.org>, 2002.
+# Michal Rudolf <mrudolf@kdewebdev.org>, 2002, 2003, 2004, 2005, 2009.
+# Marta Rybczyńska <kde-i18n@rybczynska.net>, 2008, 2009, 2010.
+# Marta Rybczynska <kde-i18n@rybczynska.net>, 2009.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-05-05 00:20+0000\n"
+"PO-Revision-Date: 2021-05-07 21:00+0200\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+">\n"
+"X-Generator: Lokalize 20.12.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Michał Rudolf, Norbert Popiołek, Łukasz Wojniłowicz"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"mrudolf@kdewebdev.org, norbert@kde.com.pl, lukasz.wojnilowicz@gmail.com"
+
+#: declarative-plugin/buttonsmodel.cpp:54
+#, kde-format
+msgid "More actions for this window"
+msgstr "Więcej działań dla tego okna"
+
+#: declarative-plugin/buttonsmodel.cpp:56
+#, kde-format
+msgid "Application menu"
+msgstr "Menu programów"
+
+#: declarative-plugin/buttonsmodel.cpp:58
+#, kde-format
+msgid "On all desktops"
+msgstr "Na wszystkich pulpitach"
+
+#: declarative-plugin/buttonsmodel.cpp:60
+#, kde-format
+msgid "Minimize"
+msgstr "Minimalizuj"
+
+#: declarative-plugin/buttonsmodel.cpp:62
+#, kde-format
+msgid "Maximize"
+msgstr "Maksymalizuj"
+
+#: declarative-plugin/buttonsmodel.cpp:64
+#, kde-format
+msgid "Close"
+msgstr "Zamknij"
+
+#: declarative-plugin/buttonsmodel.cpp:66
+#, kde-format
+msgid "Context help"
+msgstr "Pomoc podręczna"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Shade"
+msgstr "Zwiń"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Keep below other windows"
+msgstr "Utrzymuj pod innymi oknami"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "Keep above other windows"
+msgstr "Utrzymuj nad innymi oknami"
+
+#: kcm.cpp:49
+#, kde-format
+msgid "Window Decorations"
+msgstr "Wygląd okien"
+
+#: kcm.cpp:53
+#, kde-format
+msgid "Valerio Pilo"
+msgstr "Valerio Pilo"
+
+#: kcm.cpp:54
+#, kde-format
+msgid "Author"
+msgstr "Autor"
+
+#: kcm.cpp:184
+#, kde-format
+msgctxt "%1 is the name of a border size"
+msgid "Theme's default (%1)"
+msgstr "Zgodny z wyglądem (%1)"
+
+#: kwin-applywindowdecoration.cpp:32
+#, kde-format
+msgid ""
+"This tool allows you to set the window decoration theme for the currently "
+"active session, without accidentally setting it to one that is either not "
+"available, or which is already set."
+msgstr ""
+"To narzędzie umożliwia ustawienie wyglądu okien dla bieżącej sesji bez "
+"zagrożenia przypadkowego ustawienia go na taki, który jest niedostępny lub "
+"taki, który już jest ustawiony."
+
+#: kwin-applywindowdecoration.cpp:33
+#, kde-format
+msgid ""
+"The name of the window decoration theme you wish to set for KWin. Passing a "
+"full path will attempt to find a theme in that directory, and then apply "
+"that if one can be deduced."
+msgstr ""
+"Nazwa wyglądu okien, których chcesz ustawić dla KWin. Wpisanie pełnej "
+"ścieżki spowoduje wyszukanie tego wyglądu w danym katalogu, a następnie jego "
+"nałożenie, jeśli zostanie on znaleziony."
+
+#: kwin-applywindowdecoration.cpp:34
+#, kde-format
+msgid ""
+"Show all the themes available on the system (and which is the current theme)"
+msgstr ""
+"Pokaż wszystkie wyglądy dostępne w systemie (i który z nich jest bieżącym)"
+
+#: kwin-applywindowdecoration.cpp:65
+#, kde-format
+msgid ""
+"Resolved %1 to the KWin Aurorae theme \"%2\", and will attempt to set that "
+"as your current theme."
+msgstr ""
+"Rozwiązano %1 do wyglądu KWin Aurorae \"%2\" i zostanie on ustawiony jako "
+"bieżący wygląd."
+
+#: kwin-applywindowdecoration.cpp:69
+#, kde-format
+msgid ""
+"You attempted to pass a file path, but this could not be resolved to a "
+"theme, and we will have to abort, due to having no theme to set"
+msgstr ""
+"Próbowałeś wpisać ścieżkę pliku, lecz nie można z niej określić wyglądu, "
+"więc działanie zostanie przerwane, bo nie ma wyglądu do ustawienia"
+
+#: kwin-applywindowdecoration.cpp:75
+#, kde-format
+msgid ""
+"The requested theme \"%1\" is already set as the window decoration theme."
+msgstr "Żądany wygląd \"%1\" jest już ustawiony jako wygląd dla okien."
+
+#: kwin-applywindowdecoration.cpp:97
+#, kde-format
+msgid "Successfully applied the cursor theme %1 to your current Plasma session"
+msgstr "Pomyślnie zastosowano wygląd dla wskaźników %1 w bieżącej sesji Plazmy"
+
+#: kwin-applywindowdecoration.cpp:100
+#, kde-format
+msgid ""
+"Failed to save your theme settings - the reason is unknown, but this is an "
+"unrecoverable error. You may find that simply trying again will work."
+msgstr ""
+"Nie udało się zapisać ustawień wyglądu z nieznanego powodu, lecz jest to "
+"błąd, z którego nie można się wycofać. Spróbuj ponownie."
+
+#: kwin-applywindowdecoration.cpp:104
+#, kde-format
+msgid ""
+"Could not find theme \"%1\". The theme should be one of the following "
+"options: %2"
+msgstr ""
+"Nie można znaleźć wyglądu \"%1\". Wygląd powinien być jednym z następujących "
+"ustawień: %2"
+
+#: kwin-applywindowdecoration.cpp:109
+#, kde-format
+msgid "You have the following KWin window decoration themes on your system:"
+msgstr "Masz następujące wyglądy dla okien dla KWin w swoim systemie:"
+
+#: package/contents/ui/Buttons.qml:85
+#, kde-format
+msgid "Titlebar"
+msgstr "Pasek tytułu"
+
+#: package/contents/ui/Buttons.qml:245
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr "Upuść tutaj przycisk, aby go usunąć"
+
+#: package/contents/ui/Buttons.qml:261
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Przeciągnij przycisk stąd na pasek tytułu"
+
+#: package/contents/ui/main.qml:19
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr "Ten moduł umożliwia określenie wyglądu okien."
+
+#: package/contents/ui/main.qml:53
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr "Wygląd"
+
+#: package/contents/ui/main.qml:57
+#, kde-format
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Przyciski paska tytułu"
+
+#: package/contents/ui/main.qml:87
+#, kde-format
+msgctxt "Selector label"
+msgid "Window border size:"
+msgstr "Rozmiar obramowania okna:"
+
+#: package/contents/ui/main.qml:105
+#, kde-format
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Pobierz nowy wygląd dla okien..."
+
+#: package/contents/ui/main.qml:128
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "Zamknij okno po dwukrotnym naciśnięciu na przycisk menu"
+
+#: package/contents/ui/main.qml:145
+#, kde-format
+msgctxt "popup tip"
+msgid ""
+"Close by double clicking: Keep the window's Menu button pressed until it "
+"appears."
+msgstr ""
+"Zamykanie po dwukrotnym kliknięciu: Aby otworzyć menu, przytrzymaj przycisk "
+"naciśniętym na menu do chwili jego pokazania się."
+
+#: package/contents/ui/main.qml:152
+#, kde-format
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "Pokaż podpowiedź po najechaniu na przycisk paska tytułu"
+
+#: package/contents/ui/Themes.qml:92
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr "Edytuj wygląd %1..."
+
+#: utils.cpp:26
+#, kde-format
+msgid "No Borders"
+msgstr "Bez obramowań"
+
+#: utils.cpp:27
+#, kde-format
+msgid "No Side Borders"
+msgstr "Brak bocznego obramowania"
+
+#: utils.cpp:28
+#, kde-format
+msgid "Tiny"
+msgstr "Małe"
+
+#: utils.cpp:29
+#, kde-format
+msgid "Normal"
+msgstr "Normalne"
+
+#: utils.cpp:30
+#, kde-format
+msgid "Large"
+msgstr "Duże"
+
+#: utils.cpp:31
+#, kde-format
+msgid "Very Large"
+msgstr "Bardzo duże"
+
+#: utils.cpp:32
+#, kde-format
+msgid "Huge"
+msgstr "Wielkie"
+
+#: utils.cpp:33
+#, kde-format
+msgid "Very Huge"
+msgstr "Bardzo wielkie"
+
+#: utils.cpp:34
+#, kde-format
+msgid "Oversized"
+msgstr "Przewymiarowane"

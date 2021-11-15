@@ -2,10 +2,12 @@
 
 KWin uses CMake. This means that KWin can be build in a normal cmake-style out of source tree.
 
-    mkdir build
-    cd build
-    cmake ..
-    make
+```
+mkdir build
+cd build
+cmake ..
+make
+```
 
 # Dependencies
 

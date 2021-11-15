@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="kwinscreenedges" lang="&language;">
+<articleinfo>
+
+<title
+>Bildschirmränder</title>
+<authorgroup>
+<author
+>&Mike.McBride; &Mike.McBride.mail;</author>
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2015-07-14</date>
+<releaseinfo
+>Plasma 5.3</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systemeinstellungen</keyword>
+<keyword
+>Arbeitsfläche</keyword>
+<keyword
+>Effekte</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>Aktive Bildschirmränder ermöglichen Ihnen das Auslösen eines Effektes, indem Sie die Maus an eine Bildschirmränder bewegen. Hier können Sie einstellen, welche Effekte für welche Bildschirmränder aktiviert werden sollen. </para>
+
+<para
+>Click with any mouse button onto a square and select an effect in the context menu. Edges with a blue square have already an attached effect, a grey colored square indicates that no effect is selected for this edge.</para>
+
+<para
+>The number of accessible items in the context menu depends on the settings in the module <ulink url="help:/kcontrol/kwineffects/index.html"
+> <guilabel
+>Desktop Effects</guilabel
+></ulink
+> in the <guilabel
+>Workspace</guilabel
+> category. Select your favorite effects on the from the <guilabel
+>Window Management</guilabel
+> group. This activates the corresponding items in the context menu.</para>
+
+<para
+>Einstellungsmöglichkeiten für den Wechsel der Arbeitsfläche durch Berührung des Bildschirmrandes mit dem Mauszeiger finden Sie im Kontextmenü, wählen Sie im Kontextmenü den Effekt <guilabel
+>Fenster zeigen</guilabel
+>.</para>
+
+<para
+>In the <guilabel
+>Window Management</guilabel
+> section you can enable to <guilabel
+>Maximize windows by dragging them to the top of the screen</guilabel
+> or to <guilabel
+>Tile windows by dragging them to the side of the window</guilabel
+> and set a percentage of the screen to trigger the tiling. </para>
+
+<para
+>In the <guilabel
+>Other Settings</guilabel
+> section configure if you want to switch to another desktop when pushing the mouse cursor to an edge of the screen, &eg; only when moving windows. </para>
+<para
+><guilabel
+>Aktivierungsverzögerung</guilabel
+> ist die benötigte Zeit zum Anstoßen an einen Arbeitsflächenrand, bevor die Aktion ausgelöst wird. </para>
+<para
+><guilabel
+>Reaktivierungsverzögerung</guilabel
+> ist das erforderliche Zeitfenster nach einer Aktion, bevor die nächste ausgelöst werden kann. </para>
+</article>
