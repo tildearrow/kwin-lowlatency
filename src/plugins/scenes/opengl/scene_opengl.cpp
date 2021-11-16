@@ -646,7 +646,7 @@ void SceneOpenGL::paint(int screenId, const QRegion &damage, const QList<Topleve
         for (int i = stacking_order.count() - 1; i >=0; i--) {
             Window *window = stacking_order[i];
             Toplevel *toplevel = window->window();
-            if (window->width()<32 || window->height()<32) continue;
+            if (window->width()<3 || window->height()<3) continue;
             if ((toplevel->isOnScreen(screenId) || screenId == -1) && window->isVisible() && toplevel->opacity() > 0) {
                 AbstractClient *c = dynamic_cast<AbstractClient*>(toplevel);
                 if (!c || !c->isFullScreen()) {
