@@ -647,9 +647,11 @@ void SceneOpenGL::paint(int screenId, const QRegion &damage, const QList<Topleve
             Window *window = stacking_order[i];
             Toplevel *toplevel = window->window();
             if (window->width()<3 && window->height()<3) continue;
+            //printf("Testing window of size %dx%d...\n",window->width(),window->height());
             if ((toplevel->isOnScreen(screenId) || screenId == -1) && window->isVisible() && toplevel->opacity() > 0) {
                 AbstractClient *c = dynamic_cast<AbstractClient*>(toplevel);
                 if (!c || !c->isFullScreen()) {
+                    //printf("Client is not full-screen.\n");
                     break;
                 }
                 if (!window->surfaceItem()) {
@@ -663,10 +665,12 @@ void SceneOpenGL::paint(int screenId, const QRegion &damage, const QList<Topleve
                 pixmap->update();
                 // the subsurface has to be able to cover the whole window
                 if (topMost->position() != QPoint(0, 0)) {
+                    //printf("Client does not cover entire window.\n");
                     break;
                 }
                 // and it has to be completely opaque
                 if (!window->isOpaque() && !topMost->opaque().contains(QRect(0, 0, window->width(), window->height()))) {
+                    //printf("Client is not opaque.\n");
                     break;
                 }
                 fullscreenSurface = topMost;

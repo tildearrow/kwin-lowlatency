@@ -914,7 +914,10 @@ void EffectsHandlerImpl::windowToDesktops(EffectWindow *w, const QVector<uint> &
             continue;
         }
         VirtualDesktop *d = VirtualDesktopManager::self()->desktopForX11Id(x11Id);
-        Q_ASSERT(d);
+        if (d==NULL) {
+          printf("windowToDesktops: d is null!\n");
+          continue;
+        }
         if (desktops.contains(d)) {
             continue;
         }
