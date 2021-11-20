@@ -786,8 +786,16 @@ bool GlxBackend::scanout(AbstractOutput* output, SurfaceItem *surfaceItem)
     if (surfaceItem==NULL) {
       if (m_lastUnredirectedWindow!=-1) {
         printf("Unredirection stopped\n");
-        xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
-        (dynamic_cast<X11Client*>(m_lastUnredirectedToplevel))->discardWindowPixmap();
+        xcb_void_cookie_t success=xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
+        xcb_generic_error_t* xError=xcb_request_check(connection(),success);
+        if (xError==NULL) {
+          printf("FOR CRASH: THE TOPLEVEL IS %p\n",m_lastUnredirectedToplevel);
+          X11Client* xClient=(X11Client*)(m_lastUnredirectedToplevel);
+          printf("FOR CRASH: THE CLIENT IS %p\n",xClient);
+          if (xClient!=NULL) xClient->discardWindowPixmap();
+        } else {
+          printf("error while redirecting the window. this means the window must have disappeared...\n");
+        }
         m_lastUnredirectedWindow=-1;
         m_lastUnredirectedToplevel=NULL;
         const QSize& s=screens()->size();
@@ -803,8 +811,16 @@ bool GlxBackend::scanout(AbstractOutput* output, SurfaceItem *surfaceItem)
     if (m_lastUnredirectedWindow!=frameId) {
       if (m_lastUnredirectedWindow!=-1) {
         printf("Unredirection window switch\n");
-        xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
-        (dynamic_cast<X11Client*>(m_lastUnredirectedToplevel))->discardWindowPixmap();
+        xcb_void_cookie_t success=xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
+        xcb_generic_error_t* xError=xcb_request_check(connection(),success);
+        if (xError==NULL) {
+          printf("FOR CRASH: THE TOPLEVEL IS %p\n",m_lastUnredirectedToplevel);
+          X11Client* xClient=(X11Client*)(m_lastUnredirectedToplevel);
+          printf("FOR CRASH: THE CLIENT IS %p\n",xClient);
+          if (xClient!=NULL) xClient->discardWindowPixmap();
+        } else {
+          printf("error while redirecting the window. this means the window must have disappeared...\n");
+        }
       }
       printf("Unredirection started\n");
       xcb_composite_unredirect_window(connection(), item->m_toplevel->frameId(), XCB_COMPOSITE_REDIRECT_MANUAL);
