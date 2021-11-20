@@ -294,8 +294,8 @@ void ApplicationX11::crashChecking()
             cmd = cmd.left(500);
         }
         qCDebug(KWIN_CORE) << "Starting" << cmd << "and exiting";
-        char buf[1024];
-        sprintf(buf, "%s &", cmd.toLatin1().data());
+        char buf[4096];
+        snprintf(buf, 4095, "%s &", cmd.toLatin1().data());
         system(buf);
         ::exit(1);
     }
