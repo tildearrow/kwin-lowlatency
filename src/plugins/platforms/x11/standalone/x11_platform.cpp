@@ -265,7 +265,7 @@ void X11StandalonePlatform::createOpenGLSafePoint(OpenGLSafePoint safePoint)
     auto group = KConfigGroup(kwinApp()->config(), "Compositing");
     switch (safePoint) {
     case OpenGLSafePoint::PreInit:
-        group.writeEntry(unsafeKey, true);
+        if (!options->openGLIsAlwaysSafe()) group.writeEntry(unsafeKey, true);
         group.sync();
         // Deliberately continue with PreFrame
         Q_FALLTHROUGH();
@@ -284,10 +284,12 @@ void X11StandalonePlatform::createOpenGLSafePoint(OpenGLSafePoint safePoint)
             m_openGLFreezeProtection->moveToThread(m_openGLFreezeProtectionThread);
             connect(m_openGLFreezeProtection, &QTimer::timeout, m_openGLFreezeProtection,
                 [configName] {
-                    //const QString unsafeKey(QLatin1String("OpenGLIsUnsafe") + (kwinApp()->isX11MultiHead() ? QString::number(kwinApp()->x11ScreenNumber()) : QString()));
-                    //auto group = KConfigGroup(KSharedConfig::openConfig(configName), "Compositing");
-                    //group.writeEntry(unsafeKey, true);
-                    //group.sync();
+                    if (!options->openGLIsAlwaysSafe()) {
+                      const QString unsafeKey(QLatin1String("OpenGLIsUnsafe") + (kwinApp()->isX11MultiHead() ? QString::number(kwinApp()->x11ScreenNumber()) : QString()));
+                      auto group = KConfigGroup(KSharedConfig::openConfig(configName), "Compositing");
+                      group.writeEntry(unsafeKey, true);
+                      group.sync();
+                    }
                     KCrash::setDrKonqiEnabled(false);
                     qFatal("Freeze in OpenGL initialization detected");
                 }, Qt::DirectConnection);

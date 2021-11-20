@@ -68,6 +68,10 @@ Options::Options(QObject *parent)
     , m_windowsBlockCompositing(true)
     , m_unredirectFullscreen(true)
     , m_drmDirectScanout(true)
+    , m_debugUnredirect(false)
+    , m_unredirectNonOpaque(false)
+    , m_openGLIsAlwaysSafe(false)
+    , m_setMaxFramesAllowed(false)
     , m_MoveMinimizedWindowsToEndOfTabBoxFocusChain(false)
     , OpTitlebarDblClick(Options::defaultOperationTitlebarDblClick())
     , CmdActiveTitlebar1(Options::defaultCommandActiveTitlebar1())
@@ -628,6 +632,42 @@ void Options::setDrmDirectScanout(bool value)
     Q_EMIT drmDirectScanoutChanged();
 }
 
+void Options::setDebugUnredirect(bool value)
+{
+    if (m_debugUnredirect == value) {
+        return;
+    }
+    m_debugUnredirect = value;
+    Q_EMIT debugUnredirectChanged();
+}
+
+void Options::setUnredirectNonOpaque(bool value)
+{
+    if (m_unredirectNonOpaque == value) {
+        return;
+    }
+    m_unredirectNonOpaque = value;
+    Q_EMIT unredirectNonOpaqueChanged();
+}
+
+void Options::setOpenGLIsAlwaysSafe(bool value)
+{
+    if (m_openGLIsAlwaysSafe == value) {
+        return;
+    }
+    m_openGLIsAlwaysSafe = value;
+    Q_EMIT openGLIsAlwaysSafeChanged();
+}
+
+void Options::setSetMaxFramesAllowed(bool value)
+{
+    if (m_setMaxFramesAllowed == value) {
+        return;
+    }
+    m_setMaxFramesAllowed = value;
+    Q_EMIT setMaxFramesAllowedChanged();
+}
+
 void Options::setMoveMinimizedWindowsToEndOfTabBoxFocusChain(bool value)
 {
     if (m_MoveMinimizedWindowsToEndOfTabBoxFocusChain == value) {
@@ -832,6 +872,10 @@ void Options::syncFromKcfgc()
     setWindowsBlockCompositing(m_settings->windowsBlockCompositing());
     setUnredirectFullscreen(m_settings->unredirectFullscreen());
     setDrmDirectScanout(m_settings->drmDirectScanout());
+    setDebugUnredirect(m_settings->debugUnredirect());
+    setUnredirectNonOpaque(m_settings->unredirectNonOpaque());
+    setOpenGLIsAlwaysSafe(m_settings->openGLIsAlwaysSafe());
+    setSetMaxFramesAllowed(m_settings->setMaxFramesAllowed());
     setMoveMinimizedWindowsToEndOfTabBoxFocusChain(m_settings->moveMinimizedWindowsToEndOfTabBoxFocusChain());
     setLatencyPolicy(m_settings->latencyPolicy());
     setRenderTimeEstimator(m_settings->renderTimeEstimator());

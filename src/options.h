@@ -199,6 +199,10 @@ class KWIN_EXPORT Options : public QObject
     Q_PROPERTY(bool windowsBlockCompositing READ windowsBlockCompositing WRITE setWindowsBlockCompositing NOTIFY windowsBlockCompositingChanged)
     Q_PROPERTY(bool unredirectFullscreen READ unredirectFullscreen WRITE setUnredirectFullscreen NOTIFY unredirectFullscreenChanged)
     Q_PROPERTY(bool drmDirectScanout READ drmDirectScanout WRITE setDrmDirectScanout NOTIFY drmDirectScanoutChanged)
+    Q_PROPERTY(bool debugUnredirect READ debugUnredirect WRITE setDebugUnredirect NOTIFY debugUnredirectChanged)
+    Q_PROPERTY(bool unredirectNonOpaque READ unredirectNonOpaque WRITE setUnredirectNonOpaque NOTIFY unredirectNonOpaqueChanged)
+    Q_PROPERTY(bool openGLIsAlwaysSafe READ openGLIsAlwaysSafe WRITE setOpenGLIsAlwaysSafe NOTIFY openGLIsAlwaysSafeChanged)
+    Q_PROPERTY(bool setMaxFramesAllowed READ setMaxFramesAllowed WRITE setSetMaxFramesAllowed NOTIFY setMaxFramesAllowedChanged)
     Q_PROPERTY(LatencyPolicy latencyPolicy READ latencyPolicy WRITE setLatencyPolicy NOTIFY latencyPolicyChanged)
     Q_PROPERTY(RenderTimeEstimator renderTimeEstimator READ renderTimeEstimator WRITE setRenderTimeEstimator NOTIFY renderTimeEstimatorChanged)
 public:
@@ -618,6 +622,26 @@ public:
         return m_drmDirectScanout;
     }
 
+    bool debugUnredirect() const
+    {
+        return m_debugUnredirect;
+    }
+
+    bool unredirectNonOpaque() const
+    {
+        return m_unredirectNonOpaque;
+    }
+
+    bool openGLIsAlwaysSafe() const
+    {
+        return m_openGLIsAlwaysSafe;
+    }
+
+    bool setMaxFramesAllowed() const
+    {
+        return m_setMaxFramesAllowed;
+    }
+
     bool moveMinimizedWindowsToEndOfTabBoxFocusChain() const {
         return m_MoveMinimizedWindowsToEndOfTabBoxFocusChain;
     }
@@ -684,6 +708,10 @@ public:
     void setWindowsBlockCompositing(bool set);
     void setUnredirectFullscreen(bool set);
     void setDrmDirectScanout(bool set);
+    void setDebugUnredirect(bool set);
+    void setUnredirectNonOpaque(bool set);
+    void setOpenGLIsAlwaysSafe(bool set);
+    void setSetMaxFramesAllowed(bool set);
     void setMoveMinimizedWindowsToEndOfTabBoxFocusChain(bool set);
     void setLatencyPolicy(LatencyPolicy policy);
     void setRenderTimeEstimator(RenderTimeEstimator estimator);
@@ -859,6 +887,10 @@ Q_SIGNALS:
     void windowsBlockCompositingChanged();
     void unredirectFullscreenChanged();
     void drmDirectScanoutChanged();
+    void debugUnredirectChanged();
+    void unredirectNonOpaqueChanged();
+    void openGLIsAlwaysSafeChanged();
+    void setMaxFramesAllowedChanged();
     void animationSpeedChanged();
     void latencyPolicyChanged();
     void configChanged();
@@ -907,6 +939,10 @@ private:
     bool m_windowsBlockCompositing;
     bool m_unredirectFullscreen;
     bool m_drmDirectScanout;
+    bool m_debugUnredirect;
+    bool m_unredirectNonOpaque;
+    bool m_openGLIsAlwaysSafe;
+    bool m_setMaxFramesAllowed;
     bool m_MoveMinimizedWindowsToEndOfTabBoxFocusChain;
 
     WindowOperation OpTitlebarDblClick;

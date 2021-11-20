@@ -71,6 +71,22 @@
            <default>true</default>
        </entry>
 
+       <entry name="DebugUnredirect" type="Bool">
+           <default>false</default>
+       </entry>
+
+       <entry name="UnredirectNonOpaque" type="Bool">
+           <default>false</default>
+       </entry>
+
+       <entry name="OpenGLIsAlwaysSafe" type="Bool">
+           <default>false</default>
+       </entry>
+
+       <entry name="SetMaxFramesAllowed" type="Bool">
+           <default>false</default>
+       </entry>
+
        <entry name="LatencyPolicy" type="Enum">
            <choices name="LatencyPolicy">
                <choice name="LatencyExtremelyLow" value="ExtremelyLow"/>

@@ -241,7 +241,7 @@ you can reset this protection but be aware that this might result in an immediat
      </item>
     </widget>
    </item>
-   <item row="15" column="1">
+   <item row="18" column="1">
     <widget class="QCheckBox" name="kcfg_WindowsBlockCompositing">
      <property name="toolTip">
       <string>Applications can set a hint to disable compositing when the window is open.
@@ -252,7 +252,7 @@ you can reset this protection but be aware that this might result in an immediat
      </property>
     </widget>
    </item>
-   <item row="16" column="1">
+   <item row="19" column="1">
     <widget class="QCheckBox" name="kcfg_UnredirectFullscreen">
      <property name="toolTip">
       <string>When turned on, a full-screen application will bypass the compositor.
@@ -263,7 +263,7 @@ This provides latency reduction and enables VRR (if supported).</string>
      </property>
     </widget>
    </item>
-   <item row="17" column="1">
+   <item row="20" column="1">
     <widget class="QCheckBox" name="kcfg_DrmDirectScanout">
      <property name="toolTip">
       <string>When turned on, a full-screen application will bypass the compositor.
@@ -271,6 +271,50 @@ This provides latency reduction and enables VRR (if supported).</string>
      </property>
      <property name="text">
       <string>Enable full-screen direct scanout (Wayland)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="1">
+    <widget class="QCheckBox" name="kcfg_DebugUnredirect">
+     <property name="toolTip">
+      <string>Writes messages to standard output regarding unredirection/direct scanout.
+Useful when unredirection is not working or misbehaving.
+Open a terminal, and start KWin manually (kwin_x11 --replace) to see debug output.</string>
+     </property>
+     <property name="text">
+      <string>Debug full-screen unredirection/direct scanout</string>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="1">
+    <widget class="QCheckBox" name="kcfg_UnredirectNonOpaque">
+     <property name="toolTip">
+      <string>When turned on the compositor ignores the transparency of a window and attempts to unredirect anyway.</string>
+     </property>
+     <property name="text">
+      <string>Force unredirection for non-opaque windows</string>
+     </property>
+    </widget>
+   </item>
+   <item row="23" column="1">
+    <widget class="QCheckBox" name="kcfg_OpenGLIsAlwaysSafe">
+     <property name="toolTip">
+      <string>Disable disabling the compositor if OpenGL is deemed unsafe.
+Prevents annoying behavior if you have an HDD and Plasma takes too long to start.
+Use at your own risk!</string>
+     </property>
+     <property name="text">
+      <string>My OpenGL is always safe!</string>
+     </property>
+    </widget>
+   </item>
+   <item row="24" column="1">
+    <widget class="QCheckBox" name="kcfg_SetMaxFramesAllowed">
+     <property name="toolTip">
+      <string>Forces block-on-swap on NVIDIA cards.</string>
+     </property>
+     <property name="text">
+      <string>Set MaxFramesAllowed to 1 (NVIDIA only)</string>
      </property>
     </widget>
    </item>
@@ -306,6 +350,119 @@ This provides latency reduction and enables VRR (if supported).</string>
      <item>
       <property name="text">
        <string>Force smoothest animations</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="14" column="0">
+    <widget class="QLabel" name="rteLabel">
+     <property name="text">
+      <string>Render time estimator:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="1">
+    <widget class="QComboBox" name="kcfg_RenderTimeEstimator">
+     <item>
+      <property name="text">
+       <string>Minimum</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Maximum</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Average</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="15" column="0">
+    <widget class="QLabel" name="vsMLabel">
+     <property name="text">
+      <string>VSync mechanism:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="1">
+    <widget class="QComboBox" name="kcfg_VSyncMechanism">
+     <item>
+      <property name="text">
+       <string>Automatic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>None (hope for blocking swap)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Intel swap event, if available</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>glFinish (blocking swap)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SGI video sync</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>OML sync control, if available</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SGI video sync busy-wait (hacky)</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLabel" name="crashLabel">
+     <property name="text">
+      <string>Action on crash:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="1">
+    <widget class="QComboBox" name="kcfg_CrashAction">
+     <item>
+      <property name="text">
+       <string>Restart compositor (default)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Restart compositor but don't ever disable compositing</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Don't restart compositor (debug only)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Start Openbox</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Restart compositor and disable compositing immediately</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Scream at tildearrow for the lack of stability of this product</string>
       </property>
      </item>
     </widget>
