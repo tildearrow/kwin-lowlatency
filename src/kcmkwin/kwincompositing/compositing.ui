@@ -253,7 +253,7 @@ you can reset this protection but be aware that this might result in an immediat
     </widget>
    </item>
    <item row="16" column="1">
-    <widget class="QCheckBox" name="kcfg_unredirectFullscreen">
+    <widget class="QCheckBox" name="kcfg_UnredirectFullscreen">
      <property name="toolTip">
       <string>When turned on, a full-screen application will bypass the compositor.
 This provides latency reduction and enables VRR (if supported).</string>
@@ -264,7 +264,7 @@ This provides latency reduction and enables VRR (if supported).</string>
     </widget>
    </item>
    <item row="17" column="1">
-    <widget class="QCheckBox" name="kcfg_drmDirectScanout">
+    <widget class="QCheckBox" name="kcfg_DrmDirectScanout">
      <property name="toolTip">
       <string>When turned on, a full-screen application will bypass the compositor.
 This provides latency reduction and enables VRR (if supported).</string>
