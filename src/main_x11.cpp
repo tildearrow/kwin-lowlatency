@@ -325,8 +325,8 @@ void ApplicationX11::crashHandler(int signal)
     crashes++;
 
     fprintf(stderr, "Application::crashHandler() called with signal %d; recent crashes: %d\n", signal, crashes);
-    char cmd[1024];
-    sprintf(cmd, "%s --crashes %d &",
+    char cmd[8192];
+    snprintf(cmd, 8191, "%s --crashes %d &",
             QFile::encodeName(QCoreApplication::applicationFilePath()).constData(), crashes);
 
     sleep(1);
