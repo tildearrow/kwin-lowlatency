@@ -1,0 +1,1830 @@
+# translation of kwin_effects.po to
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Marta Rybczyńska <kde-i18n@rybczynska.net>, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
+# Maciej Wikło <maciej.wiklo@wp.pl>, 2008, 2009, 2010.
+# Mirek Sabiniewicz <m.sabiniewicz@gmail.com>, 2010.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
+# Ignacy Kajdan <ignacy.kajdan@gmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin_effects\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-09-24 01:39+0000\n"
+"PO-Revision-Date: 2021-09-05 10:29+0200\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.12.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Łukasz Wojniłowicz, Ignacy Kajdan"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "lukasz.wojnilowicz@gmail.com, ignacy.kajdan@gmail.com"
+
+#. i18n: ectx: property (text), widget (QLabel, labelConstantBlurDescription)
+#: blur/blur_config.ui:17
+#, kde-format
+msgid "Blur strength:"
+msgstr "Siła rozmycia:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelConstantBlurLight)
+#. i18n: ectx: property (text), widget (QLabel, labelConstantNoiseLight)
+#: blur/blur_config.ui:42 blur/blur_config.ui:108
+#, kde-format
+msgid "Light"
+msgstr "Słabe"
+
+#. i18n: ectx: property (text), widget (QLabel, labelConstantBlurStrong)
+#. i18n: ectx: property (text), widget (QLabel, labelConstantNoiseStrong)
+#: blur/blur_config.ui:74 blur/blur_config.ui:137
+#, kde-format
+msgid "Strong"
+msgstr "Mocne"
+
+#. i18n: ectx: property (text), widget (QLabel, labelConstantNoiseDescription)
+#: blur/blur_config.ui:83
+#, kde-format
+msgid "Noise strength:"
+msgstr "Siła szumu:"
+
+#: colorpicker/colorpicker.cpp:107
+#, kde-format
+msgid ""
+"Select a position for color picking with left click or enter.\n"
+"Escape or right click to cancel."
+msgstr ""
+"Wybierz położenie do pobrania barwy przy użyciu kliknięcia lewym przyciskiem "
+"myszy lub enter.\n"
+"Klawisz Escape lub kliknięcie prawym przyciskiem myszy zaniecha."
+
+#: desktopgrid/desktopgrid.cpp:107 desktopgrid/desktopgrid_config.cpp:57
+#, kde-format
+msgid "Show Desktop Grid"
+msgstr "Pokaż siatkę na pulpicie"
+
+#: desktopgrid/desktopgrid_config.cpp:52 invert/invert_config.cpp:38
+#: lookingglass/lookingglass_config.cpp:58 magnifier/magnifier_config.cpp:58
+#: mouseclick/mouseclick_config.cpp:50 mousemark/mousemark_config.cpp:56
+#: overview/kcm/overvieweffectkcm.cpp:37
+#: presentwindows/presentwindows_config.cpp:51
+#: showpaint/showpaint_config.cpp:36
+#: thumbnailaside/thumbnailaside_config.cpp:57
+#: trackmouse/trackmouse_config.cpp:54
+#: windowgeometry/windowgeometry_config.cpp:45 zoom/zoom_config.cpp:59
+#, kde-format
+msgid "KWin"
+msgstr "KWin"
+
+#: desktopgrid/desktopgrid_config.cpp:65
+#, kde-format
+msgctxt "Desktop name alignment:"
+msgid "Disabled"
+msgstr "Wyłączone"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_InRotationEdge)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_OutRotationEdge)
+#: desktopgrid/desktopgrid_config.cpp:66 glide/glide_config.ui:70
+#: glide/glide_config.ui:168
+#, kde-format
+msgid "Top"
+msgstr "Na górze"
+
+#: desktopgrid/desktopgrid_config.cpp:67
+#, kde-format
+msgid "Top-Right"
+msgstr "Prawy górny róg"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_InRotationEdge)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_OutRotationEdge)
+#: desktopgrid/desktopgrid_config.cpp:68 glide/glide_config.ui:75
+#: glide/glide_config.ui:173
+#, kde-format
+msgid "Right"
+msgstr "Po prawej"
+
+#: desktopgrid/desktopgrid_config.cpp:69
+#, kde-format
+msgid "Bottom-Right"
+msgstr "Prawy dolny róg"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_InRotationEdge)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_OutRotationEdge)
+#: desktopgrid/desktopgrid_config.cpp:70 glide/glide_config.ui:80
+#: glide/glide_config.ui:178
+#, kde-format
+msgid "Bottom"
+msgstr "Na dole"
+
+#: desktopgrid/desktopgrid_config.cpp:71
+#, kde-format
+msgid "Bottom-Left"
+msgstr "Lewy dolny róg"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_InRotationEdge)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_OutRotationEdge)
+#: desktopgrid/desktopgrid_config.cpp:72 glide/glide_config.ui:85
+#: glide/glide_config.ui:183
+#, kde-format
+msgid "Left"
+msgstr "Po lewej"
+
+#: desktopgrid/desktopgrid_config.cpp:73
+#, kde-format
+msgid "Top-Left"
+msgstr "Lewy górny róg"
+
+#: desktopgrid/desktopgrid_config.cpp:74
+#, kde-format
+msgid "Center"
+msgstr "Na środku"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: desktopgrid/desktopgrid_config.ui:17 mousemark/mousemark_config.ui:17
+#: presentwindows/presentwindows_config.ui:387
+#: thumbnailaside/thumbnailaside_config.ui:17
+#, kde-format
+msgid "Appearance"
+msgstr "Wygląd"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: desktopgrid/desktopgrid_config.ui:23
+#, kde-format
+msgid "Zoom &duration:"
+msgstr "Czas &przybliżania:"
+
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_ZoomDuration)
+#: desktopgrid/desktopgrid_config.ui:42
+#, kde-format
+msgctxt "Duration of zoom"
+msgid "Default"
+msgstr "Domyślny"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: desktopgrid/desktopgrid_config.ui:55
+#, kde-format
+msgid "Border wid&th:"
+msgstr "Szerokość obramowania:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: desktopgrid/desktopgrid_config.ui:84
+#, kde-format
+msgid "Desktop &name alignment:"
+msgstr "Wyrównanie &nazwy pulpitu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: desktopgrid/desktopgrid_config.ui:107
+#, kde-format
+msgid "&Layout mode:"
+msgstr "&Układ:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#: desktopgrid/desktopgrid_config.ui:127
+#, kde-format
+msgid "Pager"
+msgstr "Podgląd pulpitów"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#: desktopgrid/desktopgrid_config.ui:132
+#, kde-format
+msgid "Automatic"
+msgstr "Automatyczny"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#: desktopgrid/desktopgrid_config.ui:137
+#, kde-format
+msgid "Custom"
+msgstr "Inny"
+
+#. i18n: ectx: property (text), widget (QLabel, layoutRowsLabel)
+#: desktopgrid/desktopgrid_config.ui:145
+#, kde-format
+msgid "N&umber of rows:"
+msgstr "L&iczba wierszy:"
+
+#. i18n: ectx: property (text), widget (QLabel, clickBehaviorLabel)
+#: desktopgrid/desktopgrid_config.ui:177
+#, kde-format
+msgid "Click behavior:"
+msgstr "Zachowanie po kliknięciu:"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, switchDesktopAndActivateWindow)
+#: desktopgrid/desktopgrid_config.ui:190
+#, kde-format
+msgid ""
+"If the Present Windows effect is enabled, it will be automatically triggered."
+msgstr ""
+"Nastąpi samoczynne wyzwolenie tego, jeśli włączony jest efekt przedstawienia "
+"okien."
+
+#. i18n: ectx: property (text), widget (QRadioButton, switchDesktopAndActivateWindow)
+#: desktopgrid/desktopgrid_config.ui:193
+#, kde-format
+msgid "Switch desktop and activate window"
+msgstr "Przełącz pulpit i uaktywnij okno"
+
+#. i18n: ectx: property (text), widget (QRadioButton, switchDesktopOnly)
+#: desktopgrid/desktopgrid_config.ui:203
+#, kde-format
+msgid "Switch desktop only"
+msgstr "Poprzestań na przełączeniu pulpitu"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowAddRemove)
+#: desktopgrid/desktopgrid_config.ui:213
+#, kde-format
+msgid "Show buttons to alter count of virtual desktops"
+msgstr "Pokaż przyciski do zmiany liczby wirtualnych pulpitów"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: desktopgrid/desktopgrid_config.ui:236
+#: presentwindows/presentwindows_config.ui:17
+#, kde-format
+msgid "Activation"
+msgstr "Aktywacja"
+
+#. i18n: ectx: property (text), widget (QLabel, label_Strength)
+#: diminactive/diminactive_config.ui:17
+#, kde-format
+msgid "Strength:"
+msgstr "Siła:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_Dim)
+#: diminactive/diminactive_config.ui:40
+#, kde-format
+msgid "Dim:"
+msgstr "Przyciemnienie:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimPanels)
+#: diminactive/diminactive_config.ui:47
+#, kde-format
+msgid "Docks and panels"
+msgstr "Doki i panele"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimDesktop)
+#: diminactive/diminactive_config.ui:54
+#, kde-format
+msgid "Desktop"
+msgstr "Pulpit"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimKeepAbove)
+#: diminactive/diminactive_config.ui:61
+#, kde-format
+msgid "Keep above windows"
+msgstr "Utrzymuj nad oknami"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimByGroup)
+#: diminactive/diminactive_config.ui:68
+#, kde-format
+msgid "By window group"
+msgstr "Według grupy okna"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimFullScreen)
+#: diminactive/diminactive_config.ui:75
+#, kde-format
+msgid "Fullscreen windows"
+msgstr "Okna pełnoekranowe"
+
+#: effect_builtins.cpp:90
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Blur"
+msgstr "Rozmycie"
+
+#: effect_builtins.cpp:91
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Blurs the background behind semi-transparent windows"
+msgstr "Rozmywa tło za półprzezroczystymi oknami"
+
+#: effect_builtins.cpp:106
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Color Picker"
+msgstr "Wybór koloru"
+
+#: effect_builtins.cpp:107
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Supports picking a color"
+msgstr "Obsługuje wybieranie koloru"
+
+#: effect_builtins.cpp:122
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Background contrast"
+msgstr "Kontrast tła"
+
+#: effect_builtins.cpp:123
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Improve contrast and readability behind semi-transparent windows"
+msgstr "Polepsza kontrast i czytelność za półprzezroczystymi oknami"
+
+#: effect_builtins.cpp:138
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Desktop Grid"
+msgstr "Siatka pulpitu"
+
+#: effect_builtins.cpp:139
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Zoom out so all desktops are displayed side-by-side in a grid"
+msgstr ""
+"Pomniejsza do chwili, aż wszystkie pulpity będą widoczne obok siebie na "
+"siatce"
+
+#: effect_builtins.cpp:154
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Dim Inactive"
+msgstr "Przyciemnianie nieaktywnych"
+
+#: effect_builtins.cpp:155
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Darken inactive windows"
+msgstr "Przyciemnia nieaktywne okna"
+
+#: effect_builtins.cpp:170
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Fall Apart"
+msgstr "Rozpadanie"
+
+#: effect_builtins.cpp:171
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Closed windows fall into pieces"
+msgstr "Rozsypuje okna na kawałki przy ich zamykaniu"
+
+#: effect_builtins.cpp:186
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Glide"
+msgstr "Obracanie na zawiasie"
+
+#: effect_builtins.cpp:187
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Glide windows as they appear or disappear"
+msgstr "Okna obracają się na zawiasie przy otwieraniu lub zamykaniu"
+
+#: effect_builtins.cpp:202
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Highlight Window"
+msgstr "Podświetlanie okien"
+
+#: effect_builtins.cpp:203
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Highlight the appropriate window when hovering over taskbar entries"
+msgstr "Podświetla odpowiednie okno po najechaniu na wpis paska zadań"
+
+#: effect_builtins.cpp:218
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Invert"
+msgstr "Odwrócenie"
+
+#: effect_builtins.cpp:219
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Inverts the color of the desktop and windows"
+msgstr "Odwraca kolory pulpitu i okien"
+
+#: effect_builtins.cpp:234
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Kscreen"
+msgstr "KEkran"
+
+#: effect_builtins.cpp:235
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Helper Effect for KScreen"
+msgstr "Efekt pomocniczy dla KEkranu"
+
+#: effect_builtins.cpp:250
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Looking Glass"
+msgstr "Lupa wypukła"
+
+#: effect_builtins.cpp:251
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "A screen magnifier that looks like a fisheye lens"
+msgstr "Powiększa ekran przez \"rybie oko\""
+
+#: effect_builtins.cpp:266
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Magic Lamp"
+msgstr "Magiczna lampa"
+
+#: effect_builtins.cpp:267
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Simulate a magic lamp when minimizing windows"
+msgstr ""
+"Okna wchodzą do lampy przy minimalizowaniu i wychodzą przy powrocie z niej"
+
+#: effect_builtins.cpp:282
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Magnifier"
+msgstr "Lupa płaska"
+
+#: effect_builtins.cpp:283
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Magnify the section of the screen that is near the mouse cursor"
+msgstr "Powiększa obszar ekranu znajdujący się pod wskaźnikiem myszy"
+
+#: effect_builtins.cpp:298
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Mouse Click Animation"
+msgstr "Animacja kliknięcia myszą"
+
+#: effect_builtins.cpp:299
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid ""
+"Creates an animation whenever a mouse button is clicked. This is useful for "
+"screenrecordings/presentations"
+msgstr ""
+"Tworzy animację przy każdym kliknięciu klawiszem myszy. Jest to użyteczne "
+"przy nagrywaniu ekranu/prezentacjach"
+
+#: effect_builtins.cpp:314
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Mouse Mark"
+msgstr "Mysi mazak"
+
+#: effect_builtins.cpp:315
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Allows you to draw lines on the desktop"
+msgstr "Umożliwia rysowanie linii na pulpicie"
+
+#: effect_builtins.cpp:330
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Overview"
+msgstr "Przegląd"
+
+#: effect_builtins.cpp:331
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Allows you to overview virtual desktops and windows"
+msgstr "Umożliwia przeglądanie wirtualnych pulpitów i okien"
+
+#: effect_builtins.cpp:346
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Present Windows"
+msgstr "Przedstawienie okien"
+
+#: effect_builtins.cpp:347
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Zoom out until all opened windows can be displayed side-by-side"
+msgstr ""
+"Pomniejsza do chwili, aż wszystkie otwarte okna będą widoczne obok siebie"
+
+#: effect_builtins.cpp:362
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Resize Window"
+msgstr "Zmiana rozmiaru okna"
+
+#: effect_builtins.cpp:363
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Resizes windows with a fast texture scale instead of updating contents"
+msgstr ""
+"Zmienia rozmiar okna metodą szybkiego skalowania tekstur zamiast "
+"uaktualniania zawartości"
+
+#: effect_builtins.cpp:378
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Screen Edge"
+msgstr "Krawędź ekranu"
+
+#: effect_builtins.cpp:379
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Highlights a screen edge when approaching"
+msgstr "Podświetla krawędzie ekranu przy zbliżaniu się do nich"
+
+#: effect_builtins.cpp:394
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Screenshot"
+msgstr "Zrzut ekranu"
+
+#: effect_builtins.cpp:395
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Helper effect for screenshot tools"
+msgstr "Efekt pomocniczy dla zrzutów ekranu"
+
+#: effect_builtins.cpp:410
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Transform"
+msgstr "Przekształć"
+
+#: effect_builtins.cpp:411
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Animates display transformations"
+msgstr "Animuje przekształcenia wyświetlacza"
+
+#: effect_builtins.cpp:425
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Sheet"
+msgstr "Wyciąganie/Wsuwanie"
+
+#: effect_builtins.cpp:426
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid ""
+"Make modal dialogs smoothly fly in and out when they are shown or hidden"
+msgstr ""
+"Okna dialogowe są gładko wyciągane przy otwieraniu i wsuwane przy zamykaniu"
+
+#: effect_builtins.cpp:441
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Show FPS"
+msgstr "Wyświetlacz liczby klatek na sekundę"
+
+#: effect_builtins.cpp:442
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Display KWin's performance in the corner of the screen"
+msgstr "Wyświetla wydajność KWin w narożniku ekranu"
+
+#: effect_builtins.cpp:457
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Show Paint"
+msgstr "Pokazywanie elementów przerysowywanych"
+
+#: effect_builtins.cpp:458
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Highlight areas of the desktop that have been recently updated"
+msgstr "Podświetla obszary pulpitu, które zostały ostatnio uaktualnione"
+
+#: effect_builtins.cpp:473
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Slide"
+msgstr "Przesuwanie"
+
+#: effect_builtins.cpp:474
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Slide desktops when switching virtual desktops"
+msgstr "Przesuwa pulpity wirtualne przy przełączaniu"
+
+#: effect_builtins.cpp:489
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Slide Back"
+msgstr "Przesuwanie w tył"
+
+#: effect_builtins.cpp:490
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Slide back windows when another window is raised"
+msgstr "Przesuwa inne okna do tyłu przy przywoływaniu danego okna"
+
+#: effect_builtins.cpp:505
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Sliding popups"
+msgstr "Wysuwanie paneli"
+
+#: effect_builtins.cpp:506
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Sliding animation for Plasma popups"
+msgstr "Animuje wysuwanie paneli Plazmy"
+
+#: effect_builtins.cpp:521
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Snap Helper"
+msgstr "Pomocnik przeciągania"
+
+#: effect_builtins.cpp:522
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Help you locate the center of the screen when moving a window"
+msgstr "Pomaga znaleźć środek ekranu przy przesuwaniu okna"
+
+#: effect_builtins.cpp:537
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Startup Feedback"
+msgstr "Wrażenia przy starcie"
+
+#: effect_builtins.cpp:538
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Helper effect for startup feedback"
+msgstr "Efekt pomocniczy dla wrażeń przy starcie"
+
+#: effect_builtins.cpp:553
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Thumbnail Aside"
+msgstr "Miniatura z boku"
+
+#: effect_builtins.cpp:554
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Display window thumbnails on the edge of the screen"
+msgstr "Wyświetla miniatury okien na krawędzi ekranu"
+
+#: effect_builtins.cpp:569
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Touch Points"
+msgstr "Punkty dotyku"
+
+#: effect_builtins.cpp:570
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Visualize touch points"
+msgstr "Uwidacznia punkty dotyku"
+
+#: effect_builtins.cpp:585
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Track Mouse"
+msgstr "Śledzenie myszy"
+
+#: effect_builtins.cpp:586
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Display a mouse cursor locating effect when activated"
+msgstr "Wyświetla efekt wskazujący położenie wskaźnika myszy"
+
+#: effect_builtins.cpp:601
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Window Geometry"
+msgstr "Geometria okna"
+
+#: effect_builtins.cpp:602
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Display window geometries on move/resize"
+msgstr "Wyświetla geometrię okna podczas jego przesuwania/zmiany rozmiaru"
+
+#: effect_builtins.cpp:617
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Wobbly Windows"
+msgstr "Chwiejne okna"
+
+#: effect_builtins.cpp:618
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Deform windows while they are moving"
+msgstr "Odkształca okna przy ich przemieszczaniu"
+
+#: effect_builtins.cpp:633
+#, kde-format
+msgctxt "Name of a KWin Effect"
+msgid "Zoom"
+msgstr "Przybliżenie"
+
+#: effect_builtins.cpp:634
+#, kde-format
+msgctxt "Comment describing the KWin Effect"
+msgid "Magnify the entire desktop"
+msgstr "Powiększa cały pulpit"
+
+#. i18n: ectx: property (text), widget (QLabel, label_Duration)
+#: glide/glide_config.ui:19 scale/package/contents/ui/config.ui:17
+#: slide/slide_config.ui:19
+#, kde-format
+msgid "Duration:"
+msgstr "Czas trwania:"
+
+#. i18n: Duration of the slide animation.
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_Duration)
+#: glide/glide_config.ui:32 scale/package/contents/ui/config.ui:30
+#: slide/slide_config.ui:32
+#, kde-format
+msgid "Default"
+msgstr "Domyślny"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_Duration)
+#: glide/glide_config.ui:35 scale/package/contents/ui/config.ui:33
+#: slide/slide_config.ui:35
+#, kde-format
+msgid " milliseconds"
+msgstr " milisekundy"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_InAnimation)
+#: glide/glide_config.ui:50
+#, kde-format
+msgid "Window Open Animation"
+msgstr "Animacja otwarcia okna"
+
+#. i18n: ectx: property (text), widget (QLabel, label_InRotationEdge)
+#. i18n: ectx: property (text), widget (QLabel, label_OutRotationEdge)
+#: glide/glide_config.ui:56 glide/glide_config.ui:154
+#, kde-format
+msgid "Rotation edge:"
+msgstr "Krawędź obrotu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_InRotationAngle)
+#. i18n: ectx: property (text), widget (QLabel, label_OutRotationAngle)
+#: glide/glide_config.ui:93 glide/glide_config.ui:191
+#, kde-format
+msgid "Rotation angle:"
+msgstr "Kąt obrotu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_InDistance)
+#. i18n: ectx: property (text), widget (QLabel, label_OutDistance)
+#: glide/glide_config.ui:119 glide/glide_config.ui:198
+#, kde-format
+msgid "Distance:"
+msgstr "Odległość:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_OutAnimation)
+#: glide/glide_config.ui:148
+#, kde-format
+msgid "Window Close Animation"
+msgstr "Animacja zamknięcia okna"
+
+#: invert/invert.cpp:34 invert/invert_config.cpp:41
+#, kde-format
+msgid "Toggle Invert Effect"
+msgstr "Włącz/wyłącz efekt odwrócenia"
+
+#: invert/invert.cpp:42 invert/invert_config.cpp:47
+#, kde-format
+msgid "Toggle Invert Effect on Window"
+msgstr "Włącz/wyłącz efekt odwrócenia"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_FadeToBlack)
+#: login/package/contents/ui/config.ui:17
+#, kde-format
+msgid "Fade to black (fullscreen splash screens only)"
+msgstr "Zanikaj do czerni (tylko pełnoekranowe okna powitalne)"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: lookingglass/lookingglass_config.ui:24
+#, kde-format
+msgid "&Radius:"
+msgstr "P&romień:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: magiclamp/magiclamp_config.ui:17
+#, kde-format
+msgid "Animation duration:"
+msgstr "Długość animacji:"
+
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_AnimationDuration)
+#: magiclamp/magiclamp_config.ui:36
+#, kde-format
+msgctxt "Duration of rotation"
+msgid "Default"
+msgstr "Domyślna"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_AnimationDuration)
+#: magiclamp/magiclamp_config.ui:39
+#, kde-format
+msgid "milliseconds"
+msgstr "milisekund"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupSize)
+#: magnifier/magnifier_config.ui:17
+#, kde-format
+msgid "Size"
+msgstr "Rozmiar"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: magnifier/magnifier_config.ui:23
+#, kde-format
+msgid "&Width:"
+msgstr "&Szerokość:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_Width)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_Height)
+#: magnifier/magnifier_config.ui:42 magnifier/magnifier_config.ui:74
+#, kde-format
+msgid " px"
+msgstr " px"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: magnifier/magnifier_config.ui:55
+#, kde-format
+msgid "&Height:"
+msgstr "&Wysokość:"
+
+#: mouseclick/mouseclick.cpp:33 mouseclick/mouseclick_config.cpp:53
+#, kde-format
+msgid "Toggle Mouse Click Effect"
+msgstr "Przełącz efekt naciśnięcia myszą"
+
+#: mouseclick/mouseclick.cpp:41
+#, kde-format
+msgctxt "Left mouse button"
+msgid "Left"
+msgstr "Lewy"
+
+#: mouseclick/mouseclick.cpp:42
+#, kde-format
+msgctxt "Middle mouse button"
+msgid "Middle"
+msgstr "Środkowy"
+
+#: mouseclick/mouseclick.cpp:43
+#, kde-format
+msgctxt "Right mouse button"
+msgid "Right"
+msgstr "Prawy"
+
+#: mouseclick/mouseclick.h:62
+#, kde-format
+msgid "↓"
+msgstr "↓"
+
+#: mouseclick/mouseclick.h:63
+#, kde-format
+msgid "↑"
+msgstr "↑"
+
+#. i18n: ectx: attribute (title), widget (QWidget, basic_tab)
+#: mouseclick/mouseclick_config.ui:21
+#, kde-format
+msgid "Basic Settings"
+msgstr "Podstawowe ustawienia"
+
+#. i18n: ectx: property (text), widget (QLabel, button1_label)
+#: mouseclick/mouseclick_config.ui:37
+#, kde-format
+msgid "Left Mouse Button Color:"
+msgstr "Kolor po lewym przycisku myszy:"
+
+#. i18n: ectx: property (text), widget (QLabel, button2_label)
+#: mouseclick/mouseclick_config.ui:50
+#, kde-format
+msgid "Middle Mouse Button Color:"
+msgstr "Kolor po środkowym przycisku myszy:"
+
+#. i18n: ectx: property (text), widget (QLabel, button3_label)
+#: mouseclick/mouseclick_config.ui:70
+#, kde-format
+msgid "Right Mouse Button Color:"
+msgstr "Kolor po prawym przycisku myszy:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, advanced_tab)
+#: mouseclick/mouseclick_config.ui:91
+#, kde-format
+msgid "Advanced Settings"
+msgstr "Ustawienia rozszerzone"
+
+#. i18n: ectx: property (title), widget (QGroupBox, rings)
+#: mouseclick/mouseclick_config.ui:97
+#, kde-format
+msgid "Rings"
+msgstr "Pierścienie"
+
+#. i18n: ectx: property (text), widget (QLabel, ring_line_width_label)
+#: mouseclick/mouseclick_config.ui:103
+#, kde-format
+msgid "Line Width:"
+msgstr "Szerokość linii:"
+
+#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, kcfg_LineWidth)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingSize)
+#: mouseclick/mouseclick_config.ui:119 mouseclick/mouseclick_config.ui:171
+#, kde-format
+msgid " pixel"
+msgstr " piksel"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_RingLife)
+#: mouseclick/mouseclick_config.ui:132
+#, kde-format
+msgid " msec"
+msgstr " msec"
+
+#. i18n: ectx: property (text), widget (QLabel, ring_duration_label)
+#: mouseclick/mouseclick_config.ui:145
+#, kde-format
+msgid "Ring Duration:"
+msgstr "Czas trwania pierścienia:"
+
+#. i18n: ectx: property (text), widget (QLabel, ring_radius_label)
+#: mouseclick/mouseclick_config.ui:155
+#, kde-format
+msgid "Ring Radius:"
+msgstr "Promień pierścienia:"
+
+#. i18n: ectx: property (text), widget (QLabel, ring_count_label)
+#: mouseclick/mouseclick_config.ui:184
+#, kde-format
+msgid "Ring Count:"
+msgstr "Liczba pierścieni:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, font)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: mouseclick/mouseclick_config.ui:210 showfps/showfps_config.ui:17
+#, kde-format
+msgid "Text"
+msgstr "Tekst"
+
+#. i18n: ectx: property (text), widget (QLabel, font_label)
+#: mouseclick/mouseclick_config.ui:216
+#, kde-format
+msgid "Font:"
+msgstr "Czcionka:"
+
+#. i18n: ectx: property (text), widget (QLabel, showtext_label)
+#: mouseclick/mouseclick_config.ui:233
+#, kde-format
+msgid "Show Text:"
+msgstr "Pokaż tekst:"
+
+#: mousemark/mousemark.cpp:36
+#, kde-format
+msgid "Clear All Mouse Marks"
+msgstr "Wyczyść wszystkie ślady myszy"
+
+#: mousemark/mousemark.cpp:43 mousemark/mousemark_config.cpp:65
+#, kde-format
+msgid "Clear Last Mouse Mark"
+msgstr "Wyczyść ostatni ślad myszy"
+
+#: mousemark/mousemark_config.cpp:45
+#, kde-format
+msgctxt "Suffix"
+msgid " pixel"
+msgid_plural " pixels"
+msgstr[0] " piksel"
+msgstr[1] " piksele"
+msgstr[2] " pikseli"
+
+#: mousemark/mousemark_config.cpp:59
+#, kde-format
+msgid "Clear Mouse Marks"
+msgstr "Wyczyść ślady myszy"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: mousemark/mousemark_config.ui:23
+#, kde-format
+msgid "Wid&th:"
+msgstr "&Szerokość:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: mousemark/mousemark_config.ui:36
+#, kde-format
+msgid "&Color:"
+msgstr "&Kolor:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: mousemark/mousemark_config.ui:78
+#, kde-format
+msgid "Draw with the mouse by holding Shift+Meta keys and moving the mouse."
+msgstr "Rysowanie za pomocą myszy przy naciśniętych Shift+Meta."
+
+#: overview/kcm/overvieweffectkcm.cpp:43 overview/overvieweffect.cpp:79
+#, kde-format
+msgid "Toggle Overview"
+msgstr "Przestaw widok przeglądu"
+
+#. i18n: ectx: property (text), widget (QLabel, label_LayoutMode)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: overview/kcm/overvieweffectkcm.ui:22
+#: presentwindows/presentwindows_config.ui:393
+#, kde-format
+msgid "Layout mode:"
+msgstr "Tryb układu:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
+#: overview/kcm/overvieweffectkcm.ui:30
+#, kde-format
+msgid "Closest"
+msgstr "Najbliższe"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#: overview/kcm/overvieweffectkcm.ui:35
+#: presentwindows/presentwindows_config.ui:441
+#, kde-format
+msgid "Natural"
+msgstr "Naturalny"
+
+#: presentwindows/presentwindows.cpp:69
+#: presentwindows/presentwindows_config.cpp:62
+#, kde-format
+msgid "Toggle Present Windows (Current desktop)"
+msgstr "Włącz/wyłącz prezentację okien (Bieżący pulpit)"
+
+#: presentwindows/presentwindows.cpp:78
+#: presentwindows/presentwindows_config.cpp:56
+#, kde-format
+msgid "Toggle Present Windows (All desktops)"
+msgstr "Włącz/wyłącz prezentację okien (Wszystkie pulpity)"
+
+#: presentwindows/presentwindows.cpp:88
+#: presentwindows/presentwindows_config.cpp:68
+#, kde-format
+msgid "Toggle Present Windows (Window class)"
+msgstr "Włącz/wyłącz prezentację okien (Klasa okna)"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: presentwindows/presentwindows_config.ui:39
+#, kde-format
+msgid "Natural Layout Settings"
+msgstr "Ustawienia naturalnego układu"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_FillGaps)
+#: presentwindows/presentwindows_config.ui:45
+#, kde-format
+msgid "Fill &gaps"
+msgstr "&Wypełnij szczeliny"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: presentwindows/presentwindows_config.ui:65
+#, kde-format
+msgid "Faster"
+msgstr "Szybciej"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: presentwindows/presentwindows_config.ui:112
+#, kde-format
+msgid "Nicer"
+msgstr "Ładniej"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: presentwindows/presentwindows_config.ui:122
+#, kde-format
+msgid "Windows"
+msgstr "Okna"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: presentwindows/presentwindows_config.ui:128
+#: presentwindows/presentwindows_config.ui:282
+#, kde-format
+msgid "Left button:"
+msgstr "Lewy przycisk:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#: presentwindows/presentwindows_config.ui:139
+#: presentwindows/presentwindows_config.ui:183
+#: presentwindows/presentwindows_config.ui:232
+#: presentwindows/presentwindows_config.ui:293
+#: presentwindows/presentwindows_config.ui:327
+#: presentwindows/presentwindows_config.ui:361
+#, kde-format
+msgid "No action"
+msgstr "Brak działania"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#: presentwindows/presentwindows_config.ui:144
+#: presentwindows/presentwindows_config.ui:188
+#: presentwindows/presentwindows_config.ui:237
+#: presentwindows/presentwindows_config.ui:298
+#: presentwindows/presentwindows_config.ui:332
+#: presentwindows/presentwindows_config.ui:366
+#, kde-format
+msgid "Activate window"
+msgstr "Aktywuj okno"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#: presentwindows/presentwindows_config.ui:149
+#: presentwindows/presentwindows_config.ui:193
+#: presentwindows/presentwindows_config.ui:242
+#: presentwindows/presentwindows_config.ui:303
+#: presentwindows/presentwindows_config.ui:337
+#: presentwindows/presentwindows_config.ui:371
+#, kde-format
+msgid "End effect"
+msgstr "Zakończ efekt"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#: presentwindows/presentwindows_config.ui:154
+#: presentwindows/presentwindows_config.ui:198
+#: presentwindows/presentwindows_config.ui:247
+#, kde-format
+msgid "Bring window to current desktop"
+msgstr "Przenieś okno na bieżący pulpit"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#: presentwindows/presentwindows_config.ui:159
+#: presentwindows/presentwindows_config.ui:203
+#: presentwindows/presentwindows_config.ui:252
+#, kde-format
+msgid "Send window to all desktops"
+msgstr "Wyślij okno na wszystkie pulpity"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#: presentwindows/presentwindows_config.ui:164
+#: presentwindows/presentwindows_config.ui:208
+#: presentwindows/presentwindows_config.ui:257
+#, kde-format
+msgid "(Un-)Minimize window"
+msgstr "Minimalizuj/przywróć okno"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: presentwindows/presentwindows_config.ui:172
+#: presentwindows/presentwindows_config.ui:316
+#, kde-format
+msgid "Middle button:"
+msgstr "Środkowy przycisk:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#: presentwindows/presentwindows_config.ui:213
+#: presentwindows/presentwindows_config.ui:262
+#, kde-format
+msgid "Close window"
+msgstr "Zamknij okno"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: presentwindows/presentwindows_config.ui:221
+#: presentwindows/presentwindows_config.ui:350
+#, kde-format
+msgid "Right button:"
+msgstr "Prawy przycisk:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
+#: presentwindows/presentwindows_config.ui:273
+#, kde-format
+msgctxt "@title:group actions when clicking on desktop"
+msgid "Desktop"
+msgstr "Pulpit"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#: presentwindows/presentwindows_config.ui:308
+#: presentwindows/presentwindows_config.ui:342
+#: presentwindows/presentwindows_config.ui:376
+#, kde-format
+msgid "Show desktop"
+msgstr "Pokaż pulpit"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
+#: presentwindows/presentwindows_config.ui:406
+#, kde-format
+msgid "Display window &titles"
+msgstr "Wyświetl &tytuły okien"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowIcons)
+#: presentwindows/presentwindows_config.ui:413
+#, kde-format
+msgid "Display window &icons"
+msgstr "Wyświetl &ikony okien"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreMinimized)
+#: presentwindows/presentwindows_config.ui:420
+#, kde-format
+msgid "Ignore &minimized windows"
+msgstr "Pomijaj z&minimalizowane okna"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowPanel)
+#: presentwindows/presentwindows_config.ui:427
+#, kde-format
+msgid "Show &panels"
+msgstr "Pokaż &panele"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#: presentwindows/presentwindows_config.ui:446
+#, kde-format
+msgid "Regular Grid"
+msgstr "Regularna siatka"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#: presentwindows/presentwindows_config.ui:451
+#, kde-format
+msgid "Flexible Grid"
+msgstr "Elastyczna siatka"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowClosingWindows)
+#: presentwindows/presentwindows_config.ui:459
+#, kde-format
+msgid "Provide buttons to close the windows"
+msgstr "Zapewnij przyciski do zamknięcia okien"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_TextureScale)
+#: resize/resize_config.ui:17
+#, kde-format
+msgid "Scale window"
+msgstr "Przeskaluj okno"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Outline)
+#: resize/resize_config.ui:24
+#, kde-format
+msgid "Show outline"
+msgstr "Pokaż zarys"
+
+#. i18n: ectx: property (text), widget (QLabel, label_InScale)
+#: scale/package/contents/ui/config.ui:46
+#, kde-format
+msgid "Window open scale:"
+msgstr "Skala na otwarciu okna:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_OutScale)
+#: scale/package/contents/ui/config.ui:53
+#, kde-format
+msgid "Window close scale:"
+msgstr "Skala przed zamknięciem okna:"
+
+#: screenshot/screenshotdbusinterface1.cpp:471
+#, kde-format
+msgctxt "Notification caption that a screenshot got saved to file"
+msgid "Screenshot"
+msgstr "Zrzut ekranu"
+
+#: screenshot/screenshotdbusinterface1.cpp:472
+#, kde-format
+msgctxt "Notification with path to screenshot file"
+msgid "Screenshot saved to %1"
+msgstr "Zrzut ekranu zapisany w %1"
+
+#: screenshot/screenshotdbusinterface1.cpp:787
+#: screenshot/screenshotdbusinterface2.cpp:413
+#, kde-format
+msgid ""
+"Select window to screen shot with left click or enter.\n"
+"Escape or right click to cancel."
+msgstr ""
+"Wybierz okno do zrzutu ekranu przy użyciu kliknięcia lewym przyciskiem myszy "
+"lub enter.\n"
+"Klawisz Escape lub kliknięcie prawym przyciskiem myszy zaniecha."
+
+#: screenshot/screenshotdbusinterface1.cpp:790
+#: screenshot/screenshotdbusinterface2.cpp:431
+#, kde-format
+msgid ""
+"Create screen shot with left click or enter.\n"
+"Escape or right click to cancel."
+msgstr ""
+"Utwórz zrzut ekranu przy użyciu kliknięcia lewym przyciskiem myszy lub "
+"enter.\n"
+"Klawisz Escape lub kliknięcie prawym przyciskiem myszy zaniecha."
+
+#: showfps/showfps.cpp:50
+#, kde-format
+msgid "This effect is not a benchmark"
+msgstr "Ten efekt nie jest programem testującym wydajność"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: showfps/showfps_config.ui:23
+#, kde-format
+msgid "Text position:"
+msgstr "Położenie tekstu:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#: showfps/showfps_config.ui:43
+#, kde-format
+msgid "Inside Graph"
+msgstr "W wykresie"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#: showfps/showfps_config.ui:48
+#, kde-format
+msgid "Nowhere"
+msgstr "Nigdzie"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#: showfps/showfps_config.ui:53
+#, kde-format
+msgid "Top Left"
+msgstr "Lewy górny róg"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#: showfps/showfps_config.ui:58
+#, kde-format
+msgid "Top Right"
+msgstr "Prawy górny róg"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#: showfps/showfps_config.ui:63
+#, kde-format
+msgid "Bottom Left"
+msgstr "Lewy dolny róg"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#: showfps/showfps_config.ui:68
+#, kde-format
+msgid "Bottom Right"
+msgstr "Prawy dolny róg"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: showfps/showfps_config.ui:76
+#, kde-format
+msgid "Text font:"
+msgstr "Czcionka tekstu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: showfps/showfps_config.ui:96
+#, kde-format
+msgid "Text color:"
+msgstr "Kolor tekstu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: showfps/showfps_config.ui:119
+#, kde-format
+msgid "Text alpha:"
+msgstr "Kanał alfa tekstu:"
+
+#: showpaint/showpaint.cpp:39 showpaint/showpaint_config.cpp:41
+#, kde-format
+msgid "Toggle Show Paint"
+msgstr "Przełącz pokazywanie malunku"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_Gaps)
+#: slide/slide_config.ui:50
+#, kde-format
+msgid "Gap between desktops"
+msgstr "Szczelina pomiędzy pulpitami"
+
+#. i18n: ectx: property (text), widget (QLabel, label_HorizontalGap)
+#: slide/slide_config.ui:56
+#, kde-format
+msgid "Horizontal:"
+msgstr "W poziomie:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_VerticalGap)
+#: slide/slide_config.ui:79
+#, kde-format
+msgid "Vertical:"
+msgstr "W pionie:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlideDocks)
+#: slide/slide_config.ui:105
+#, kde-format
+msgid "Slide docks"
+msgstr "Wysuwane doki"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlideBackground)
+#: slide/slide_config.ui:112
+#, kde-format
+msgid "Slide desktop background"
+msgstr "Wysuwaj pulpit w tle"
+
+#: thumbnailaside/thumbnailaside.cpp:29
+#: thumbnailaside/thumbnailaside_config.cpp:62
+#, kde-format
+msgid "Toggle Thumbnail for Current Window"
+msgstr "Włącz/wyłącz miniaturę bieżącego okna"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: thumbnailaside/thumbnailaside_config.ui:23
+#, kde-format
+msgid "Maximum &width:"
+msgstr "Maksymalna &szerokość:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: thumbnailaside/thumbnailaside_config.ui:36
+#, kde-format
+msgid "&Spacing:"
+msgstr "Od&stęp:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_Spacing)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_MaxWidth)
+#: thumbnailaside/thumbnailaside_config.ui:55
+#: thumbnailaside/thumbnailaside_config.ui:106
+#, kde-format
+msgid " pixels"
+msgstr " pikseli"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: thumbnailaside/thumbnailaside_config.ui:68
+#, kde-format
+msgid "&Opacity:"
+msgstr "Nieprzezr&oczystość:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_Opacity)
+#: thumbnailaside/thumbnailaside_config.ui:87
+#, no-c-format, kde-format
+msgid " %"
+msgstr " %"
+
+#: trackmouse/trackmouse.cpp:44 trackmouse/trackmouse_config.cpp:59
+#, kde-format
+msgid "Track mouse"
+msgstr "Śledź mysz"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: trackmouse/trackmouse_config.ui:26
+#, kde-format
+msgid "Trigger effect with:"
+msgstr "Wywołaj efekt przy użyciu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_KeyboardShortcut)
+#: trackmouse/trackmouse_config.ui:33
+#, kde-format
+msgid "Keyboard shortcut:"
+msgstr "Skrót klawiszowy:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_ModifierKeys)
+#: trackmouse/trackmouse_config.ui:43
+#, kde-format
+msgid "Modifier keys:"
+msgstr "Klawisze odmieniające:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Alt)
+#: trackmouse/trackmouse_config.ui:65
+#, kde-format
+msgid "Alt"
+msgstr "Alt"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Control)
+#: trackmouse/trackmouse_config.ui:72
+#, kde-format
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Shift)
+#: trackmouse/trackmouse_config.ui:79
+#, kde-format
+msgid "Shift"
+msgstr "Shift"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Meta)
+#: trackmouse/trackmouse_config.ui:86
+#, kde-format
+msgid "Meta"
+msgstr "Meta"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, KWin::TranslucencyEffectConfigForm)
+#: translucency/package/contents/ui/config.ui:14
+#, kde-format
+msgid "Translucency"
+msgstr "Przezroczystość"
+
+#. i18n: ectx: property (title), widget (QGroupBox, m_opacityGroupBox)
+#: translucency/package/contents/ui/config.ui:20
+#, kde-format
+msgid "General Translucency Settings"
+msgstr "Ogólne ustawienie nieprzezroczystości"
+
+#. i18n: ectx: property (text), widget (QLabel, comboboxpopup_label)
+#: translucency/package/contents/ui/config.ui:64
+#, kde-format
+msgid "Combobox popups:"
+msgstr "Lista rozwijana:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: translucency/package/contents/ui/config.ui:121
+#: translucency/package/contents/ui/config.ui:431
+#, kde-format
+msgid "Opaque"
+msgstr "Nieprzezroczyste"
+
+#. i18n: ectx: property (text), widget (QLabel, dialogs_label)
+#: translucency/package/contents/ui/config.ui:137
+#, kde-format
+msgid "Dialogs:"
+msgstr "Okna dialogowe:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: translucency/package/contents/ui/config.ui:156
+#: translucency/package/contents/ui/config.ui:418
+#, kde-format
+msgid "Transparent"
+msgstr "Przezroczyste"
+
+#. i18n: ectx: property (text), widget (QLabel, menus_label)
+#: translucency/package/contents/ui/config.ui:188
+#, kde-format
+msgid "Menus:"
+msgstr "Menu:"
+
+#. i18n: ectx: property (text), widget (QLabel, moveresize_label)
+#: translucency/package/contents/ui/config.ui:207
+#, kde-format
+msgid "Moving windows:"
+msgstr "Okna przesuwane:"
+
+#. i18n: ectx: property (text), widget (QLabel, inactive_label)
+#: translucency/package/contents/ui/config.ui:226
+#, kde-format
+msgid "Inactive windows:"
+msgstr "Nieaktywne okna:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_IndividualMenuConfig)
+#: translucency/package/contents/ui/config.ui:267
+#, kde-format
+msgid "Set menu translucency independently"
+msgstr "Ustaw przezroczystość menu osobno"
+
+#. i18n: ectx: property (text), widget (QLabel, dropdownmenus_label)
+#: translucency/package/contents/ui/config.ui:285
+#, kde-format
+msgid "Dropdown menus:"
+msgstr "Menu rozwijane:"
+
+#. i18n: ectx: property (text), widget (QLabel, popupmenus_label)
+#: translucency/package/contents/ui/config.ui:329
+#, kde-format
+msgid "Popup menus:"
+msgstr "Menu wysuwne:"
+
+#. i18n: ectx: property (text), widget (QLabel, tornoffmenus_label)
+#: translucency/package/contents/ui/config.ui:367
+#, kde-format
+msgid "Torn-off menus:"
+msgstr "Menu odrywane:"
+
+#: windowgeometry/windowgeometry.cpp:43
+#, kde-format
+msgid "Toggle window geometry display (effect only)"
+msgstr "Przełącz wyświetlanie geometrii okna (tylko efekty)"
+
+#: windowgeometry/windowgeometry_config.cpp:47
+#, kde-format
+msgid "Toggle KWin composited geometry display"
+msgstr "Przełącz wyświetlanie kompozycyjnej geometrii KWin"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Move)
+#: windowgeometry/windowgeometry_config.ui:17
+#, kde-format
+msgid "Display for moving windows"
+msgstr "Wyświetl dla okien przenoszonych"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Resize)
+#: windowgeometry/windowgeometry_config.ui:24
+#, kde-format
+msgid "Display for resizing windows"
+msgstr "Wyświetl dla okien o zmienianym rozmiarze"
+
+#. i18n: ectx: property (title), widget (QGroupBox, advancedGroup)
+#: wobblywindows/wobblywindows_config.ui:20
+#, kde-format
+msgid "Advanced"
+msgstr "Zaawansowane"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: wobblywindows/wobblywindows_config.ui:26
+#, kde-format
+msgid "&Stiffness:"
+msgstr "&Sztywność:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: wobblywindows/wobblywindows_config.ui:68
+#, kde-format
+msgid "Dra&g:"
+msgstr "&Opór:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: wobblywindows/wobblywindows_config.ui:81
+#, kde-format
+msgid "&Move factor:"
+msgstr "&Współczynnik przesunięcia:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_MoveWobble)
+#: wobblywindows/wobblywindows_config.ui:155
+#, kde-format
+msgid "Wo&bble when moving"
+msgstr "&Odkształcaj podczas przenoszenia"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ResizeWobble)
+#: wobblywindows/wobblywindows_config.ui:162
+#, kde-format
+msgid "Wobble when &resizing"
+msgstr "Odkształcaj podczas zmiany &rozmiaru"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AdvancedMode)
+#: wobblywindows/wobblywindows_config.ui:182
+#, kde-format
+msgid "Enable &advanced mode"
+msgstr "Włącz tryb z&aawansowany"
+
+#. i18n: ectx: property (title), widget (QGroupBox, basicGroup)
+#: wobblywindows/wobblywindows_config.ui:192
+#, kde-format
+msgid "&Wobbliness"
+msgstr "S&kala odkształceń"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: wobblywindows/wobblywindows_config.ui:201
+#, kde-format
+msgid "Less"
+msgstr "Mniej"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: wobblywindows/wobblywindows_config.ui:224
+#, kde-format
+msgid "More"
+msgstr "Więcej"
+
+#: zoom/zoom.cpp:71
+#, kde-format
+msgid "Move Zoomed Area to Left"
+msgstr "Przenieś powiększony obszar w lewo"
+
+#: zoom/zoom.cpp:79
+#, kde-format
+msgid "Move Zoomed Area to Right"
+msgstr "Przenieś powiększony obszar w prawo"
+
+#: zoom/zoom.cpp:87
+#, kde-format
+msgid "Move Zoomed Area Upwards"
+msgstr "Przenieś powiększony obszar w górę"
+
+#: zoom/zoom.cpp:95
+#, kde-format
+msgid "Move Zoomed Area Downwards"
+msgstr "Przenieś powiększony obszar w dół"
+
+#: zoom/zoom.cpp:104 zoom/zoom_config.cpp:109
+#, kde-format
+msgid "Move Mouse to Focus"
+msgstr "Przenieś mysz do uaktywnienia"
+
+#: zoom/zoom.cpp:112 zoom/zoom_config.cpp:116
+#, kde-format
+msgid "Move Mouse to Center"
+msgstr "Przenieś mysz do środka"
+
+#: zoom/zoom_config.cpp:81
+#, kde-format
+msgid "Move Left"
+msgstr "Przesuń w lewo"
+
+#: zoom/zoom_config.cpp:88
+#, kde-format
+msgid "Move Right"
+msgstr "Przesuń w prawo"
+
+#: zoom/zoom_config.cpp:95
+#, kde-format
+msgid "Move Up"
+msgstr "Przesuń w górę"
+
+#: zoom/zoom_config.cpp:102
+#, kde-format
+msgid "Move Down"
+msgstr "Przesuń w dół"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, label)
+#. i18n: ectx: property (whatsThis), widget (QDoubleSpinBox, kcfg_ZoomFactor)
+#: zoom/zoom_config.ui:25 zoom/zoom_config.ui:41
+#, kde-format
+msgid "On zoom-in and zoom-out change the zoom by the defined zoom-factor."
+msgstr ""
+"Przy zbliżaniu i oddalaniu zmień poziom powiększenie o określony "
+"współczynnik powiększenia."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: zoom/zoom_config.ui:28
+#, kde-format
+msgid "Zoom Factor:"
+msgstr "Współczynnik powiększenia:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EnableFocusTracking)
+#: zoom/zoom_config.ui:66
+#, kde-format
+msgid ""
+"Enable tracking of the focused location. This needs QAccessible to be "
+"enabled per application (\"export QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1\")."
+msgstr ""
+"Włącz śledzenie uaktywnionego położenia. To potrzebuje QAccessible, osobno "
+"włączonego dla aplikacji (\"export QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1\")."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableFocusTracking)
+#: zoom/zoom_config.ui:69
+#, kde-format
+msgid "Enable Focus Tracking"
+msgstr "Włącz śledzenie uaktywnienia"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EnableTextCaretTracking)
+#: zoom/zoom_config.ui:76
+#, kde-format
+msgid ""
+"Enable tracking of the text cursor. This needs QAccessible to be enabled per "
+"application (\"export QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1\")."
+msgstr ""
+"Włącz śledzenie uaktywnionego położenia. To potrzebuje QAccessible, osobno "
+"włączonego dla aplikacji (\"export QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1\")."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableTextCaretTracking)
+#: zoom/zoom_config.ui:79
+#, kde-format
+msgid "Enable Text Cursor Tracking"
+msgstr "Włącz śledzenie kursora tekstowego"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: zoom/zoom_config.ui:86
+#, kde-format
+msgid "Mouse Pointer:"
+msgstr "Wskaźnik myszy:"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_MousePointer)
+#: zoom/zoom_config.ui:99
+#, kde-format
+msgid "Visibility of the mouse-pointer."
+msgstr "Widoczność wskaźnika myszy."
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MousePointer)
+#: zoom/zoom_config.ui:103
+#, kde-format
+msgid "Scale"
+msgstr "Skalowanie"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MousePointer)
+#: zoom/zoom_config.ui:108
+#, kde-format
+msgid "Keep"
+msgstr "Zachowaj"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MousePointer)
+#: zoom/zoom_config.ui:113
+#, kde-format
+msgid "Hide"
+msgstr "Ukryj"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_MouseTracking)
+#: zoom/zoom_config.ui:121
+#, kde-format
+msgid "Track moving of the mouse."
+msgstr "Śledzenie ruchu myszy."
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MouseTracking)
+#: zoom/zoom_config.ui:125
+#, kde-format
+msgid "Proportional"
+msgstr "Proporcjonalny"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MouseTracking)
+#: zoom/zoom_config.ui:130
+#, kde-format
+msgid "Centered"
+msgstr "Wyśrodkowany"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MouseTracking)
+#: zoom/zoom_config.ui:135
+#, kde-format
+msgid "Push"
+msgstr "Naciśnij"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MouseTracking)
+#: zoom/zoom_config.ui:140
+#, kde-format
+msgid "Disabled"
+msgstr "Wyłączony"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: zoom/zoom_config.ui:148
+#, kde-format
+msgid "Mouse Tracking:"
+msgstr "Śledzenie myszy:"

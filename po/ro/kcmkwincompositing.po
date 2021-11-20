@@ -1,0 +1,264 @@
+# Traducerea kcmkwincompositing.po în Română
+# translation of kcmkwincompositing to Romanian
+# Copyright (C) 2008 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kcmkwincompositing package.
+# Laurenţiu Buzdugan <lbuz@rolix.org>, 2008, 2009".
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2011, 2012, 2013, 2020, 2021.
+# Cristian Oneț <onet.cristian@gmail.com>, 2011.
+# Cristian Buzduga <cristianbzdg@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwincompositing\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-09-07 00:20+0000\n"
+"PO-Revision-Date: 2021-06-02 20:49+0100\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#. i18n: ectx: property (text), widget (KMessageWidget, glCrashedWarning)
+#: compositing.ui:31
+#, fuzzy, kde-format
+#| msgid ""
+#| "OpenGL compositing (the default) has crashed KWin in the past.\n"
+#| "This was most likely due to a driver bug.\n"
+#| "If you think that you have meanwhile upgraded to a stable driver,\n"
+#| "you can reset this protection but be aware that this might result in an "
+#| "immediate crash!\n"
+#| "Alternatively, you might want to use the XRender backend instead."
+msgid ""
+"OpenGL compositing (the default) has crashed KWin in the past.\n"
+"This was most likely due to a driver bug.\n"
+"If you think that you have meanwhile upgraded to a stable driver,\n"
+"you can reset this protection but be aware that this might result in an "
+"immediate crash!"
+msgstr ""
+"Compoziționarea OpenGL (implicită) a provocat prăbușirea KDE în trecut.\n"
+"Aceasta s-a datorat, cel mai probabil, unui defect din driver.\n"
+"Dacă credeți că ați înnoit între timp driver-ul la unul stabil, puteți "
+"reinițializa\n"
+"această protecție dar aveți în vedere că aceasta poate provoca o prăbușire "
+"imediată!\n"
+"Alternativ, puteți dori să folosiți platforma XRender în schimb."
+
+#. i18n: ectx: property (text), widget (KMessageWidget, scaleWarning)
+#: compositing.ui:44
+#, kde-format
+msgid ""
+"Scale method \"Accurate\" is not supported by all hardware and can cause "
+"performance regressions and rendering artifacts."
+msgstr ""
+"Metoda de scalare „Precisă” nu este susținută de toate echipamentele și "
+"poate provoca scăderi ale performanței și artefacte la randare."
+
+#. i18n: ectx: property (text), widget (KMessageWidget, windowThumbnailWarning)
+#: compositing.ui:67
+#, kde-format
+msgid ""
+"Keeping the window thumbnail always interferes with the minimized state of "
+"windows. This can result in windows not suspending their work when minimized."
+msgstr ""
+"Păstrarea miniaturii ferestrei interferează întotdeauna cu starea minimizată "
+"a ferestrelor. Aceasta poate face ca ferestrele să nu-și suspende lucrul "
+"când sunt minimizate."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Enabled)
+#: compositing.ui:79
+#, kde-format
+msgid "Enable compositor on startup"
+msgstr "Activează compozitorul la pornire"
+
+#. i18n: ectx: property (text), widget (QLabel, animationSpeedLabel)
+#: compositing.ui:86
+#, kde-format
+msgid "Animation speed:"
+msgstr "Viteza animației:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: compositing.ui:123
+#, kde-format
+msgid "Very slow"
+msgstr "Foarte lentă"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: compositing.ui:143
+#, kde-format
+msgid "Instant"
+msgstr "Instantanee"
+
+#. i18n: ectx: property (text), widget (QLabel, scaleMethodLabel)
+#: compositing.ui:155
+#, kde-format
+msgid "Scale method:"
+msgstr "Metoda de scalare:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:165
+#, kde-format
+msgid "Smooth"
+msgstr "Netedă"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:170
+#, kde-format
+msgid "Accurate"
+msgstr "Exactă"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: compositing.ui:180
+#, kde-format
+msgid "Rendering backend:"
+msgstr "Platformă de randare:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: compositing.ui:190
+#, kde-format
+msgid "Tearing prevention (\"vsync\"):"
+msgstr "Prevenirea frânturilor („vsync”):"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:198
+#, kde-format
+msgid "Automatic"
+msgstr "Automată"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:203
+#, kde-format
+msgid "Only when cheap"
+msgstr "Doar când e ieftină"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:208
+#, kde-format
+msgid "Full screen repaints"
+msgstr "Redesenare ecran întreg"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:213
+#, kde-format
+msgid "Re-use screen content"
+msgstr "Refolosește conținutul ecranului"
+
+#. i18n: ectx: property (text), widget (QLabel, label_HiddenPreviews)
+#: compositing.ui:221
+#, kde-format
+msgid "Keep window thumbnails:"
+msgstr "Păstrează miniaturile ferestrelor:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:229
+#, kde-format
+msgid "Never"
+msgstr "Niciodată"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:234
+#, kde-format
+msgid "Only for Shown Windows"
+msgstr "Doar pentru ferestre arătate"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:239
+#, kde-format
+msgid "Always"
+msgstr "Întotdeauna"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:249
+#, kde-format
+msgid ""
+"Applications can set a hint to block compositing when the window is open.\n"
+" This brings performance improvements for e.g. games.\n"
+" The setting can be overruled by window-specific rules."
+msgstr ""
+"Aplicațiile pot inițializa un indiciu pentru a bloca compoziționarea când e "
+"deschisă fereastra.\n"
+"Aceasta aduce îmbunătățiri de performanță, de exemplu în jocuri.\n"
+"Configurarea poate fi anulată de reguli specifice ferestrei."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:252
+#, kde-format
+msgid "Allow applications to block compositing"
+msgstr "Permite aplicațiilor să blocheze compoziționarea"
+
+#. i18n: ectx: property (text), widget (QLabel, latencyLabel)
+#: compositing.ui:259
+#, kde-format
+msgid "Latency:"
+msgstr "Latență:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
+#: compositing.ui:267
+#, kde-format
+msgid "Force lowest latency (may cause dropped frames)"
+msgstr "Forțează cea mai mică latență (poate provoca cadre scăpate)"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
+#: compositing.ui:272
+#, kde-format
+msgid "Prefer lower latency"
+msgstr "Preferă latență mai mică"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
+#: compositing.ui:277
+#, kde-format
+msgid "Balance of latency and smoothness"
+msgstr "Balanță între latență și netezime"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
+#: compositing.ui:282
+#, kde-format
+msgid "Prefer smoother animations"
+msgstr "Preferă animații mai netede"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
+#: compositing.ui:287
+#, kde-format
+msgid "Force smoothest animations"
+msgstr "Forțează cele mai netede animații"
+
+#: main.cpp:81
+#, kde-format
+msgid "Re-enable OpenGL detection"
+msgstr "Reactivează detectarea OpenGL"
+
+#: main.cpp:139
+#, kde-format
+msgid ""
+"\"Only when cheap\" only prevents tearing for full screen changes like a "
+"video."
+msgstr ""
+"„Doar când e ieftină” previne frânturile doar pentru schimbări ale "
+"întregului ecran, ca un film."
+
+#: main.cpp:143
+#, kde-format
+msgid "\"Full screen repaints\" can cause performance problems."
+msgstr "„Redesenare ecran întreg” poate provoca probleme de performanță."
+
+#: main.cpp:147
+#, kde-format
+msgid ""
+"\"Re-use screen content\" causes severe performance problems on MESA drivers."
+msgstr ""
+"„Refolosește conținutul ecranului” provoacă probleme grave de performanță cu "
+"driver-i MESA."
+
+#: main.cpp:167
+#, kde-format
+msgid "OpenGL 3.1"
+msgstr "OpenGL 3.1"
+
+#: main.cpp:168
+#, kde-format
+msgid "OpenGL 2.0"
+msgstr "OpenGL 2.0"

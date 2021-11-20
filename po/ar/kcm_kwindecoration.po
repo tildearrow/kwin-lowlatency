@@ -1,0 +1,296 @@
+# translation of kcmkwindecoration.po to Arabic
+# translation of kcmkwindecoration.po to
+# Copyright (C) 2001,2002, 2004, 2006, 2007, 2008 Free Software Foundation, Inc.
+# Mohammed Gamal <f2c2001@yahoo.com>, 2001.
+# Isam Bayazidi <bayazidi@arabeyes.org>, 2002.
+# Ossama Khayat <okhayat@yahoo.com>, 2004.
+# محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
+# AbdulAziz AlSharif <a.a-a.s@hotmail.com>, 2007.
+# Youssef Chahibi <chahibi@gmail.com>, 2007.
+# zayed <zayed.alsaidi@gmail.com>, 2008.
+# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2010, 2021.
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, ٢٠١٦.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-08-26 00:18+0000\n"
+"PO-Revision-Date: 2021-07-20 00:38+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Mohamed SAAD محمد سعد,زايد السعيدي"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "metehyi@free.fr ,zayed.alsaidi@gmail.com"
+
+#: declarative-plugin/buttonsmodel.cpp:54
+#, kde-format
+msgid "More actions for this window"
+msgstr "إجراءات أكثر لهذه النافذة"
+
+#: declarative-plugin/buttonsmodel.cpp:56
+#, kde-format
+msgid "Application menu"
+msgstr "قائمة التّطبيق"
+
+#: declarative-plugin/buttonsmodel.cpp:58
+#, kde-format
+msgid "On all desktops"
+msgstr "على كلّ أسطح المكتب"
+
+#: declarative-plugin/buttonsmodel.cpp:60
+#, kde-format
+msgid "Minimize"
+msgstr "صغّر"
+
+#: declarative-plugin/buttonsmodel.cpp:62
+#, kde-format
+msgid "Maximize"
+msgstr "كبّر"
+
+#: declarative-plugin/buttonsmodel.cpp:64
+#, kde-format
+msgid "Close"
+msgstr "أغلق"
+
+#: declarative-plugin/buttonsmodel.cpp:66
+#, kde-format
+msgid "Context help"
+msgstr "مساعدة سياقيّة"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Shade"
+msgstr "ظلّل"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Keep below other windows"
+msgstr "أبقها أسفل النوافذ الأخرى"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "Keep above other windows"
+msgstr "أبقها أعلى النوافذ الأخرى"
+
+#: kcm.cpp:49
+#, kde-format
+msgid "Window Decorations"
+msgstr "زخارف النوافذ"
+
+#: kcm.cpp:53
+#, kde-format
+msgid "Valerio Pilo"
+msgstr "Valerio Pilo"
+
+#: kcm.cpp:54
+#, kde-format
+msgid "Author"
+msgstr "المؤلف"
+
+#: kcm.cpp:184
+#, kde-format
+msgctxt "%1 is the name of a border size"
+msgid "Theme's default (%1)"
+msgstr "السمة المبدئيّة (%1)"
+
+#: kwin-applywindowdecoration.cpp:32
+#, kde-format
+msgid ""
+"This tool allows you to set the window decoration theme for the currently "
+"active session, without accidentally setting it to one that is either not "
+"available, or which is already set."
+msgstr ""
+"تتيح لك هذه الأداة ضبط سمة زخارف النوافذ لجلسة البلازما الحالية، دون تعينها "
+"عن طريق الخطأ لسمة إما غير متوفرة ، أو عينت بالفعل."
+
+#: kwin-applywindowdecoration.cpp:33
+#, kde-format
+msgid ""
+"The name of the window decoration theme you wish to set for KWin. Passing a "
+"full path will attempt to find a theme in that directory, and then apply "
+"that if one can be deduced."
+msgstr ""
+"اسم سمة زخرفة النافذة التي ترغب في تعيينها لـكوين. عند تقديم مسار كامل "
+"سيحاول العثور على سمة في ذاك الدليل ، ثم تطبيق ذلك إذا وجدها."
+
+#: kwin-applywindowdecoration.cpp:34
+#, kde-format
+msgid ""
+"Show all the themes available on the system (and which is the current theme)"
+msgstr "اعرض جميع السمات المتوفرة على النظام (وما السمة الحالية)"
+
+#: kwin-applywindowdecoration.cpp:65
+#, kde-format
+msgid ""
+"Resolved %1 to the KWin Aurorae theme \"%2\", and will attempt to set that "
+"as your current theme."
+msgstr "حل %1 إلى سمة أرورا لكوين \"%2\"، وسنحاول تعينه كسمتك الحالية."
+
+#: kwin-applywindowdecoration.cpp:71
+#, kde-format
+msgid ""
+"You attempted to pass a file path, but this could not be resolved to a "
+"theme, and we will have to abort, due to having no theme to set"
+msgstr ""
+"لقد حاولت تمرير مسار ملف ، ولكن لا يمكن حل هذا إلى سمة ، وسيتعين علينا إحباط "
+"ذلك ، نظرًا لعدم وجود سمة لتعيينها"
+
+#: kwin-applywindowdecoration.cpp:77
+#, kde-format
+msgid ""
+"The requested theme \"%1\" is already set as the window decoration theme."
+msgstr "عينت السمة المطلوبة \"%1\" بالفعل كسمة لجلسة البلازما الحالية."
+
+#: kwin-applywindowdecoration.cpp:99
+#, kde-format
+msgid "Successfully applied the cursor theme %1 to your current Plasma session"
+msgstr "طبقت سمة المؤشر %1 بنجاح لجلسة بلازما الحالية"
+
+#: kwin-applywindowdecoration.cpp:102
+#, kde-format
+msgid ""
+"Failed to save your theme settings - the reason is unknown, but this is an "
+"unrecoverable error. You may find that simply trying again will work."
+msgstr ""
+"فشل في حفظ إعدادات السمة - السبب غير معروف ، لكن هذا خطأ لا يمكن إصلاحه. قد "
+"تجد أن مجرد المحاولة مرة أخرى ستنجح."
+
+#: kwin-applywindowdecoration.cpp:106
+#, kde-format
+msgid ""
+"Could not find theme \"%1\". The theme should be one of the following "
+"options: %2"
+msgstr ""
+"لم يعثر على السمة المطلوبة \"%1\". السمة يجب أن تكون واحدة من الخيارات "
+"التالية: %2"
+
+#: kwin-applywindowdecoration.cpp:111
+#, kde-format
+msgid "You have the following KWin window decoration themes on your system:"
+msgstr "لديك سمات زخرفة النوافذ لكوين التالية على نظامك:"
+
+#: package/contents/ui/Buttons.qml:85
+#, kde-format
+msgid "Titlebar"
+msgstr "شريط العنوان"
+
+#: package/contents/ui/Buttons.qml:245
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr "أفلت هنا لإزالة الزّرّ"
+
+#: package/contents/ui/Buttons.qml:261
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "اسحب الأزرار من وإلا شريط العنوان"
+
+#: package/contents/ui/main.qml:19
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr "تتيح لك هذه الوحدة ضبط زخارف النافذة."
+
+#: package/contents/ui/main.qml:53
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr "السمة"
+
+#: package/contents/ui/main.qml:57
+#, kde-format
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "أزرار شريط العنوان"
+
+#: package/contents/ui/main.qml:87
+#, kde-format
+msgctxt "Selector label"
+msgid "Window border size:"
+msgstr "حجم حافة النافذة:"
+
+#: package/contents/ui/main.qml:105
+#, kde-format
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "اجلب زخرفة جديدة..."
+
+#: package/contents/ui/main.qml:128
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "أغلق النّوافذ بنقر مزدوج على زر القائمة"
+
+#: package/contents/ui/main.qml:145
+#, kde-format
+msgctxt "popup tip"
+msgid "Click and hold on the menu button to show the menu."
+msgstr "انقر وامسك على زر القائمة لإظهار القائمة"
+
+#: package/contents/ui/main.qml:152
+#, kde-format
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "أظهر تلميحات زر شريط العنوان"
+
+#: package/contents/ui/Themes.qml:92
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr "حرّر السّمة %1"
+
+#: utils.cpp:26
+#, kde-format
+msgid "No Borders"
+msgstr "لا حدود"
+
+#: utils.cpp:27
+#, kde-format
+msgid "No Side Borders"
+msgstr "لا حدود جانبيّة"
+
+#: utils.cpp:28
+#, kde-format
+msgid "Tiny"
+msgstr "ضئيل"
+
+#: utils.cpp:29
+#, kde-format
+msgid "Normal"
+msgstr "عادي"
+
+#: utils.cpp:30
+#, kde-format
+msgid "Large"
+msgstr "كبير"
+
+#: utils.cpp:31
+#, kde-format
+msgid "Very Large"
+msgstr "كبير جدًّا"
+
+#: utils.cpp:32
+#, kde-format
+msgid "Huge"
+msgstr "ضخم"
+
+#: utils.cpp:33
+#, kde-format
+msgid "Very Huge"
+msgstr "ضخم جدًّا"
+
+#: utils.cpp:34
+#, kde-format
+msgid "Oversized"
+msgstr "فوق الطّبيعيّ"

@@ -1,0 +1,251 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# g.sora <g.sora@tiscali.it>, 2010, 2011, 2012, 2013, 2021.
+# Giovanni Sora <g.sora@tioscali.it>, 2014, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-09-07 00:20+0000\n"
+"PO-Revision-Date: 2021-10-26 23:00+0200\n"
+"Last-Translator: giovanni <g.sora@tiscali.it>\n"
+"Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
+"Language: ia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.08.2\n"
+
+#. i18n: ectx: property (text), widget (KMessageWidget, glCrashedWarning)
+#: compositing.ui:31
+#, kde-format
+msgid ""
+"OpenGL compositing (the default) has crashed KWin in the past.\n"
+"This was most likely due to a driver bug.\n"
+"If you think that you have meanwhile upgraded to a stable driver,\n"
+"you can reset this protection but be aware that this might result in an "
+"immediate crash!"
+msgstr ""
+"OpenGL,compositing (le predefinite),i.e. le composition, habeva un fracasso "
+"in le pssato.\n"
+"Isto esseva multe probabilemente debite a un defecto de driver.\n"
+"Si tu pensa que tu ha intertanto actualisate a un driver stabile,\n"
+"tu pote reinitiar iste protection ma tu debe essere conscie  que isto pterea "
+"resultar in unfracasso immediate! "
+
+#. i18n: ectx: property (text), widget (KMessageWidget, scaleWarning)
+#: compositing.ui:44
+#, kde-format
+msgid ""
+"Scale method \"Accurate\" is not supported by all hardware and can cause "
+"performance regressions and rendering artifacts."
+msgstr ""
+"Methodo de scalar \"Accurate\" non es supportate ab omne hardware e pote "
+"causar regressiones de efficacia e artificios de rendition."
+
+#. i18n: ectx: property (text), widget (KMessageWidget, windowThumbnailWarning)
+#: compositing.ui:67
+#, kde-format
+msgid ""
+"Keeping the window thumbnail always interferes with the minimized state of "
+"windows. This can result in windows not suspending their work when minimized."
+msgstr ""
+"Mantener le miniaturas de fenestra sempre interfere con le stato minimisate "
+"de fenestras. Isto pote resultar in fenestras non suspendente lor labor "
+"quando minimisate."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Enabled)
+#: compositing.ui:79
+#, kde-format
+msgid "Enable compositor on startup"
+msgstr "Habilita effectos de compositor al initio"
+
+#. i18n: ectx: property (text), widget (QLabel, animationSpeedLabel)
+#: compositing.ui:86
+#, kde-format
+msgid "Animation speed:"
+msgstr "Velocitate de animation:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: compositing.ui:123
+#, kde-format
+msgid "Very slow"
+msgstr "Multe lente"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: compositing.ui:143
+#, kde-format
+msgid "Instant"
+msgstr "Instante"
+
+#. i18n: ectx: property (text), widget (QLabel, scaleMethodLabel)
+#: compositing.ui:155
+#, kde-format
+msgid "Scale method:"
+msgstr "Methodo de scala:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:165
+#, kde-format
+msgid "Smooth"
+msgstr "Lisie"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:170
+#, kde-format
+msgid "Accurate"
+msgstr "Accurate"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: compositing.ui:180
+#, kde-format
+msgid "Rendering backend:"
+msgstr "Retro administration de rendition (rendering):"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: compositing.ui:190
+#, kde-format
+msgid "Tearing prevention (\"vsync\"):"
+msgstr "Prevention de laceration (\"vsync\"):"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:198
+#, kde-format
+msgid "Automatic"
+msgstr "Automatic"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:203
+#, kde-format
+msgid "Only when cheap"
+msgstr "Solo quando incostose"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:208
+#, kde-format
+msgid "Full screen repaints"
+msgstr "Il repingi schermo completemente"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:213
+#, kde-format
+msgid "Re-use screen content"
+msgstr "Reusa contento de schermo"
+
+#. i18n: ectx: property (text), widget (QLabel, label_HiddenPreviews)
+#: compositing.ui:221
+#, kde-format
+msgid "Keep window thumbnails:"
+msgstr "Mantene miniaturas de fenestras:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:229
+#, kde-format
+msgid "Never"
+msgstr "Jammais"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:234
+#, kde-format
+msgid "Only for Shown Windows"
+msgstr "Solmente pro fenestras monstrate"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:239
+#, kde-format
+msgid "Always"
+msgstr "Sempre"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:249
+#, kde-format
+msgid ""
+"Applications can set a hint to block compositing when the window is open.\n"
+" This brings performance improvements for e.g. games.\n"
+" The setting can be overruled by window-specific rules."
+msgstr ""
+"Applicationes pote fixar un insinuation a blocar compositing quando le "
+"fenestra es aperite.\n"
+"Isto duce a melioramentos de execution p.ex. jocos.\n"
+"Le arrangiamento pote esser annnullate per regula specific de fenestra."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:252
+#, kde-format
+msgid "Allow applications to block compositing"
+msgstr "Permitte a applicationes de blocar composition"
+
+#. i18n: ectx: property (text), widget (QLabel, latencyLabel)
+#: compositing.ui:259
+#, kde-format
+msgid "Latency:"
+msgstr "Latentia:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
+#: compositing.ui:267
+#, kde-format
+msgid "Force lowest latency (may cause dropped frames)"
+msgstr "Fortia le latentia plus basse (pote causar quadros cadite)"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
+#: compositing.ui:272
+#, kde-format
+msgid "Prefer lower latency"
+msgstr "Prefere latentia plus basse"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
+#: compositing.ui:277
+#, kde-format
+msgid "Balance of latency and smoothness"
+msgstr "Balancia de latentia e lisiamento"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
+#: compositing.ui:282
+#, kde-format
+msgid "Prefer smoother animations"
+msgstr "Prefere animationes plus lisie"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
+#: compositing.ui:287
+#, kde-format
+msgid "Force smoothest animations"
+msgstr "Fortia animationes plus lisie"
+
+#: main.cpp:81
+#, kde-format
+msgid "Re-enable OpenGL detection"
+msgstr "Re-habilita detection de openGL"
+
+#: main.cpp:139
+#, kde-format
+msgid ""
+"\"Only when cheap\" only prevents tearing for full screen changes like a "
+"video."
+msgstr ""
+"\"Solmente quando incostose\" solmente preveni lacerar per cambiamentos de "
+"shermo plen como un video."
+
+#: main.cpp:143
+#, kde-format
+msgid "\"Full screen repaints\" can cause performance problems."
+msgstr "\"Pinger a shermo plen\" pote causar problemas de execution."
+
+#: main.cpp:147
+#, kde-format
+msgid ""
+"\"Re-use screen content\" causes severe performance problems on MESA drivers."
+msgstr ""
+"\"Re-Usa contento de schemo\" causa plure problemas de execution sur drivers "
+"MESA."
+
+#: main.cpp:167
+#, kde-format
+msgid "OpenGL 3.1"
+msgstr "OpenGL 3.1"
+
+#: main.cpp:168
+#, kde-format
+msgid "OpenGL 2.0"
+msgstr "OpenGL 2.0"

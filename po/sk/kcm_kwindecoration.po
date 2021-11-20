@@ -1,0 +1,297 @@
+# translation of kcmkwindecoration.po to Slovak
+# Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2001,2002.
+# Stanislav Visnovsky <visnovsky@kde.org>, 2003, 2004.
+# Richard Fric <Richard.Fric@kdemail.net>, 2006, 2009, 2010.
+# Michal Sulek <misurel@gmail.com>, 2009, 2010.
+# Roman Paholík <wizzardsk@gmail.com>, 2012, 2013, 2014, 2015.
+# Mthw <jari_45@hotmail.com>, 2018, 2019.
+# Matej Mrenica <matejm98mthw@gmail.com>, 2019, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkwindecoration\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-08-26 00:18+0000\n"
+"PO-Revision-Date: 2021-09-05 19:15+0200\n"
+"Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
+"Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 21.08.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stanislav Višňovský,Richard Frič,Michal Šulek"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "visnovsky@kde.org,Richard.Fric@kdemail.net,misurel@gmail.com"
+
+#: declarative-plugin/buttonsmodel.cpp:54
+#, kde-format
+msgid "More actions for this window"
+msgstr "Viac akcií pre toto okno"
+
+#: declarative-plugin/buttonsmodel.cpp:56
+#, kde-format
+msgid "Application menu"
+msgstr "Aplikačná ponuka"
+
+#: declarative-plugin/buttonsmodel.cpp:58
+#, kde-format
+msgid "On all desktops"
+msgstr "Na všetkých plochách"
+
+#: declarative-plugin/buttonsmodel.cpp:60
+#, kde-format
+msgid "Minimize"
+msgstr "Minimalizovať"
+
+#: declarative-plugin/buttonsmodel.cpp:62
+#, kde-format
+msgid "Maximize"
+msgstr "Maximalizovať"
+
+#: declarative-plugin/buttonsmodel.cpp:64
+#, kde-format
+msgid "Close"
+msgstr "Zavrieť"
+
+#: declarative-plugin/buttonsmodel.cpp:66
+#, kde-format
+msgid "Context help"
+msgstr "Kontextový pomocník"
+
+#: declarative-plugin/buttonsmodel.cpp:68
+#, kde-format
+msgid "Shade"
+msgstr "Zabaliť"
+
+#: declarative-plugin/buttonsmodel.cpp:70
+#, kde-format
+msgid "Keep below other windows"
+msgstr "Držať pod ostatnými oknami"
+
+#: declarative-plugin/buttonsmodel.cpp:72
+#, kde-format
+msgid "Keep above other windows"
+msgstr "Držať nad ostatnými oknami"
+
+#: kcm.cpp:49
+#, kde-format
+msgid "Window Decorations"
+msgstr "Dekorácie okien"
+
+#: kcm.cpp:53
+#, kde-format
+msgid "Valerio Pilo"
+msgstr "Valerio Pilo"
+
+#: kcm.cpp:54
+#, kde-format
+msgid "Author"
+msgstr "Autor"
+
+#: kcm.cpp:184
+#, kde-format
+msgctxt "%1 is the name of a border size"
+msgid "Theme's default (%1)"
+msgstr "Predvolené z témy (%1)"
+
+#: kwin-applywindowdecoration.cpp:32
+#, kde-format
+msgid ""
+"This tool allows you to set the window decoration theme for the currently "
+"active session, without accidentally setting it to one that is either not "
+"available, or which is already set."
+msgstr ""
+"Tento nástroj umožňuje nastaviť tému dekorácie okna pre aktuálne aktívnu "
+"reláciu bez toho, aby ste ju omylom nastavili na tému, ktorá buď nie je k "
+"dispozícii, alebo ktorá je už nastavená."
+
+#: kwin-applywindowdecoration.cpp:33
+#, kde-format
+msgid ""
+"The name of the window decoration theme you wish to set for KWin. Passing a "
+"full path will attempt to find a theme in that directory, and then apply "
+"that if one can be deduced."
+msgstr ""
+"Názov témy dekorácie okna, ktorú chcete pre KWin nastaviť. Úspešné "
+"absolvovanie úplnej cesty sa pokúsi nájsť tému v danom adresári a potom ju "
+"uplatniť, ak je možné ju odvodiť."
+
+#: kwin-applywindowdecoration.cpp:34
+#, kde-format
+msgid ""
+"Show all the themes available on the system (and which is the current theme)"
+msgstr "Zobraziť všetky témy dostupné v systéme (a ktorá je aktuálna téma)"
+
+#: kwin-applywindowdecoration.cpp:65
+#, kde-format
+msgid ""
+"Resolved %1 to the KWin Aurorae theme \"%2\", and will attempt to set that "
+"as your current theme."
+msgstr ""
+"Rozpoznané %1 ako KWin Aurorae téma \"%2\" a pokúsime sa ju nastaviť ako "
+"vašu aktuálnu tému."
+
+#: kwin-applywindowdecoration.cpp:71
+#, kde-format
+msgid ""
+"You attempted to pass a file path, but this could not be resolved to a "
+"theme, and we will have to abort, due to having no theme to set"
+msgstr ""
+"Pokúsili ste sa odovzdať cestu k súboru, ale túto cestu nebolo možné "
+"rozlíšiť ako tému a toto budeme musieť zrušiť, pretože nemáme žiadnu tému, "
+"ktorú by sme mohli nastaviť"
+
+#: kwin-applywindowdecoration.cpp:77
+#, kde-format
+msgid ""
+"The requested theme \"%1\" is already set as the window decoration theme."
+msgstr "Požadovaná téma „%1“ je už nastavená ako téma dekorácií okna."
+
+#: kwin-applywindowdecoration.cpp:99
+#, kde-format
+msgid "Successfully applied the cursor theme %1 to your current Plasma session"
+msgstr "Téma kurzora %1 bola úspešne použitá na vaše aktuálne sedenie Plasmy"
+
+#: kwin-applywindowdecoration.cpp:102
+#, kde-format
+msgid ""
+"Failed to save your theme settings - the reason is unknown, but this is an "
+"unrecoverable error. You may find that simply trying again will work."
+msgstr ""
+"Vaše nastavenie motívu sa nepodarilo uložiť - dôvod nie je známy, jedná sa "
+"však o neodstrániteľnú chybu. Možno zistíte, že jednoduché vyskúšanie znova "
+"bude fungovať."
+
+#: kwin-applywindowdecoration.cpp:106
+#, kde-format
+msgid ""
+"Could not find theme \"%1\". The theme should be one of the following "
+"options: %2"
+msgstr ""
+"Nepodarilo sa nájsť tému „%1“. Téma by mala byť jednou z nasledujúcich "
+"možností: %2"
+
+#: kwin-applywindowdecoration.cpp:111
+#, kde-format
+msgid "You have the following KWin window decoration themes on your system:"
+msgstr "Vo vašom systéme máte nasledujúce motívy dekorácie okien KWin:"
+
+#: package/contents/ui/Buttons.qml:85
+#, kde-format
+msgid "Titlebar"
+msgstr "Záhlavie"
+
+#: package/contents/ui/Buttons.qml:245
+#, kde-format
+msgid "Drop button here to remove it"
+msgstr "Pustite tu na odstránenie tlačidla"
+
+#: package/contents/ui/Buttons.qml:261
+#, kde-format
+msgid "Drag buttons between here and the titlebar"
+msgstr "Presuňte tlačidlá odtiaľto na záhlavie"
+
+#: package/contents/ui/main.qml:19
+#, kde-format
+msgid "This module lets you configure the window decorations."
+msgstr "Tento modul vám umožnuje nastaviť dekorácie okien."
+
+#: package/contents/ui/main.qml:53
+#, kde-format
+msgctxt "tab label"
+msgid "Theme"
+msgstr "Téma"
+
+#: package/contents/ui/main.qml:57
+#, kde-format
+msgctxt "tab label"
+msgid "Titlebar Buttons"
+msgstr "Tlačidlá záhlavia"
+
+#: package/contents/ui/main.qml:87
+#, kde-format
+msgctxt "Selector label"
+msgid "Window border size:"
+msgstr "Veľkosť orámovania okna:"
+
+#: package/contents/ui/main.qml:105
+#, kde-format
+msgctxt "button text"
+msgid "Get New Window Decorations..."
+msgstr "Získať nové dekorácie okien..."
+
+#: package/contents/ui/main.qml:128
+#, kde-format
+msgctxt "checkbox label"
+msgid "Close windows by double clicking the menu button"
+msgstr "Zavrieť okná dvojklikom na tlačidlo ponuky"
+
+#: package/contents/ui/main.qml:145
+#, kde-format
+msgctxt "popup tip"
+msgid "Click and hold on the menu button to show the menu."
+msgstr "Ponuku zobrazíte kliknutím a podržaním na tlačidla ponuky."
+
+#: package/contents/ui/main.qml:152
+#, kde-format
+msgctxt "checkbox label"
+msgid "Show titlebar button tooltips"
+msgstr "Zobrazovať popisy tlačidiel záhlavia"
+
+#: package/contents/ui/Themes.qml:92
+#, kde-format
+msgid "Edit %1 Theme"
+msgstr "Upraviť tému %1"
+
+#: utils.cpp:26
+#, kde-format
+msgid "No Borders"
+msgstr "Žiadne okraje"
+
+#: utils.cpp:27
+#, kde-format
+msgid "No Side Borders"
+msgstr "Bez bočného okraja"
+
+#: utils.cpp:28
+#, kde-format
+msgid "Tiny"
+msgstr "Drobná"
+
+#: utils.cpp:29
+#, kde-format
+msgid "Normal"
+msgstr "Normálna"
+
+#: utils.cpp:30
+#, kde-format
+msgid "Large"
+msgstr "Veľká"
+
+#: utils.cpp:31
+#, kde-format
+msgid "Very Large"
+msgstr "Veľmi veľká"
+
+#: utils.cpp:32
+#, kde-format
+msgid "Huge"
+msgstr "Obrovská"
+
+#: utils.cpp:33
+#, kde-format
+msgid "Very Huge"
+msgstr "Veľmi obrovská"
+
+#: utils.cpp:34
+#, kde-format
+msgid "Oversized"
+msgstr "Nadmerná"

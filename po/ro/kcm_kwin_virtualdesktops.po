@@ -1,0 +1,144 @@
+# Traducerea kcm_kwindesktop.po în Română
+# translation of kcm_kwindesktop to Romanian
+# Copyright (C) 2008 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kcm_kwindesktop package.
+# Laurenţiu Buzdugan <lbuz@rolix.org>, 2008, 2009".
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2011, 2013, 2020, 2021.
+# Cristian Oneț <onet.cristian@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_kwindesktop\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-09-10 00:19+0000\n"
+"PO-Revision-Date: 2021-07-25 12:31+0100\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sergiu Bivol"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sergiu@cip.md"
+
+#: desktopsmodel.cpp:466
+#, kde-format
+msgid "There was an error connecting to the compositor."
+msgstr "A avut loc o eroare în timpul conectării la compozitor."
+
+#: desktopsmodel.cpp:665
+#, kde-format
+msgid "There was an error saving the settings to the compositor."
+msgstr ""
+"A avut loc o eroare în timpul salvării configurărilor pentru compozitor."
+
+#: desktopsmodel.cpp:668
+#, kde-format
+msgid "There was an error requesting information from the compositor."
+msgstr "A avut loc o eroare în timpul cererii informațiilor de la compozitor."
+
+#: package/contents/ui/main.qml:17
+#, kde-format
+msgid ""
+"This module lets you configure the navigation, number and layout of virtual "
+"desktops."
+msgstr ""
+"Acest modul vă permite să configurați navigarea, numărul și aranjamentul "
+"birourilor virtuale."
+
+#: package/contents/ui/main.qml:91
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Rename"
+msgstr "Redenumește"
+
+#: package/contents/ui/main.qml:102
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Confirm new name"
+msgstr "Confirmă noua denumire"
+
+#: package/contents/ui/main.qml:110
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Remove"
+msgstr "Elimină"
+
+#: package/contents/ui/main.qml:136
+#, kde-format
+msgid ""
+"Virtual desktops have been changed outside this settings application. Saving "
+"now will overwrite the changes."
+msgstr ""
+"Birourile virtuale au fost modificate în afara acestei aplicații de "
+"configurare. Salvarea acum va suprascrie modificările."
+
+#: package/contents/ui/main.qml:152
+#, kde-format
+msgid "Row %1"
+msgstr "Rândul %1"
+
+#: package/contents/ui/main.qml:165
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Adaugă"
+
+#: package/contents/ui/main.qml:168
+#, kde-format
+msgid "New Desktop"
+msgstr "Birou nou"
+
+#: package/contents/ui/main.qml:183
+#, kde-format
+msgid "1 Row"
+msgid_plural "%1 Rows"
+msgstr[0] "1 rând"
+msgstr[1] "%1 rânduri"
+msgstr[2] "%1 de rânduri"
+
+#: package/contents/ui/main.qml:199
+#, kde-format
+msgid "Options:"
+msgstr "Opțiuni:"
+
+#: package/contents/ui/main.qml:201
+#, kde-format
+msgid "Navigation wraps around"
+msgstr "Navigarea o ia de la capăt"
+
+#: package/contents/ui/main.qml:219
+#, kde-format
+msgid "Show animation when switching:"
+msgstr "Arată animație la schimbare:"
+
+#: package/contents/ui/main.qml:270
+#, kde-format
+msgid "Show on-screen display when switching:"
+msgstr "Arată afișaj pe ecran la schimbare:"
+
+#: package/contents/ui/main.qml:289
+#, kde-format
+msgid "%1 ms"
+msgstr "%1 ms"
+
+#: package/contents/ui/main.qml:313
+#, kde-format
+msgid "Show desktop layout indicators"
+msgstr "Arată indicatorii de așezare a birourilor"
+
+#: virtualdesktops.cpp:33
+#, kde-format
+msgid "Virtual Desktops"
+msgstr "Birouri virtuale"
