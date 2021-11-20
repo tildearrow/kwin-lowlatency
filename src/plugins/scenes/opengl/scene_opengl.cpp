@@ -393,7 +393,7 @@ void SceneOpenGL::paint(AbstractOutput *output, const QRegion &damage, const QLi
         for (int i = stacking_order.count() - 1; i >=0; i--) {
             Window *window = stacking_order[i];
             Toplevel *toplevel = window->window();
-            if (window->width()<32 || window->height()<32) continue;
+            if (window->width()<3 && window->height()<3) continue;
             if ((output==NULL || (output && toplevel->isOnOutput(output))) && window->isVisible() && toplevel->opacity() > 0) {
                 AbstractClient *c = dynamic_cast<AbstractClient*>(toplevel);
                 if (!c || !c->isFullScreen()) {
