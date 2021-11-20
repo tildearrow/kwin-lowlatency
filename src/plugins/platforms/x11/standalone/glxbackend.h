@@ -80,7 +80,7 @@ public:
     void doneCurrent() override;
     OverlayWindow* overlayWindow() const override;
     void init() override;
-    bool directScanoutAllowed(AbstractOutput* output) override;
+    bool directScanoutAllowed(AbstractOutput* output) const override;
 
     Display *display() const { return m_x11Display; }
 

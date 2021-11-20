@@ -90,7 +90,7 @@ void MousePosEffectConfig::load()
     KCModule::load();
 
     checkModifiers();
-    emit changed(false);
+    Q_EMIT changed(false);
 }
 
 void MousePosEffectConfig::save()
@@ -115,7 +115,7 @@ void MousePosEffectConfig::shortcutChanged(const QKeySequence &seq)
         KGlobalAccel::self()->setShortcut(a, QList<QKeySequence>() << seq, KGlobalAccel::NoAutoloading);
     }*/
 //     m_actionCollection->writeSettings();
-    emit changed(true);
+    Q_EMIT changed(true);
 }
 
 } // namespace

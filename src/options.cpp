@@ -616,7 +616,7 @@ void Options::setUnredirectFullscreen(bool value)
         return;
     }
     m_unredirectFullscreen = value;
-    emit unredirectFullscreenChanged();
+    Q_EMIT unredirectFullscreenChanged();
 }
 
 void Options::setDrmDirectScanout(bool value)
@@ -625,7 +625,7 @@ void Options::setDrmDirectScanout(bool value)
         return;
     }
     m_drmDirectScanout = value;
-    emit drmDirectScanoutChanged();
+    Q_EMIT drmDirectScanoutChanged();
 }
 
 void Options::setMoveMinimizedWindowsToEndOfTabBoxFocusChain(bool value)

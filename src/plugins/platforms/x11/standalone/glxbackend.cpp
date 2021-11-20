@@ -30,6 +30,7 @@
 #include "screens.h"
 #include "surfaceitem_x11.h"
 #include "xcbutils.h"
+#include "x11client.h"
 // kwin libs
 #include <kwinglplatform.h>
 #include <kwinglutils.h>
@@ -786,7 +787,7 @@ bool GlxBackend::scanout(AbstractOutput* output, SurfaceItem *surfaceItem)
       if (m_lastUnredirectedWindow!=-1) {
         printf("Unredirection stopped\n");
         xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
-        m_lastUnredirectedToplevel->discardWindowPixmap();
+        (dynamic_cast<X11Client*>(m_lastUnredirectedToplevel))->discardWindowPixmap();
         m_lastUnredirectedWindow=-1;
         m_lastUnredirectedToplevel=NULL;
         const QSize& s=screens()->size();
@@ -803,7 +804,7 @@ bool GlxBackend::scanout(AbstractOutput* output, SurfaceItem *surfaceItem)
       if (m_lastUnredirectedWindow!=-1) {
         printf("Unredirection window switch\n");
         xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
-        m_lastUnredirectedToplevel->discardWindowPixmap();
+        (dynamic_cast<X11Client*>(m_lastUnredirectedToplevel))->discardWindowPixmap();
       }
       printf("Unredirection started\n");
       xcb_composite_unredirect_window(connection(), item->m_toplevel->frameId(), XCB_COMPOSITE_REDIRECT_MANUAL);
