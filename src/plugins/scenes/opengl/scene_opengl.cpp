@@ -390,6 +390,7 @@ void SceneOpenGL::paint(AbstractOutput *output, const QRegion &damage, const QLi
         renderLoop->beginFrame();
 
         SurfaceItem *fullscreenSurface = nullptr;
+        if (options->debugUnredirect()) printf("-----------------------\n");
         for (int i = stacking_order.count() - 1; i >=0; i--) {
             Window *window = stacking_order[i];
             Toplevel *toplevel = window->window();
@@ -398,7 +399,7 @@ void SceneOpenGL::paint(AbstractOutput *output, const QRegion &damage, const QLi
               if (options->debugUnredirect()) printf("Too small. Next one.\n");
               continue;
             }
-            if ((output==NULL || (output && toplevel->isOnOutput(output))) && window->isVisible() && toplevel->opacity() > 0) {
+            if ((output==NULL || (output && toplevel->isOnOutput(output))) && window->isVisible() && (toplevel->opacity() > 0 || (options->unredirectNonOpaque() && !(window->width()==32 && window->height()==32)))) {
                 AbstractClient *c = dynamic_cast<AbstractClient*>(toplevel);
                 if (!c || !c->isFullScreen()) {
                     if (options->debugUnredirect()) printf("Client is not full-screen.\n");
@@ -427,6 +428,8 @@ void SceneOpenGL::paint(AbstractOutput *output, const QRegion &damage, const QLi
                 }
                 fullscreenSurface = topMost;
                 break;
+            } else {
+              if (options->debugUnredirect()) printf("Window not visible, toplevel not on output and/or not opaque.\n");
             }
         }
         renderLoop->setFullscreenSurface(fullscreenSurface);

@@ -109,6 +109,8 @@ GlxBackend::GlxBackend(Display *display, X11StandalonePlatform *backend)
     , m_x11Display(display)
     , m_backend(backend)
 {
+     if (options->setMaxFramesAllowed()) setenv("__GL_MaxFramesAllowed", "1", true);
+
      // Force initialization of GLX integration in the Qt's xcb backend
      // to make it call XESetWireToEvent callbacks, which is required
      // by Mesa when using DRI2.
