@@ -20,9 +20,15 @@ the main aim of this project is to add additional settings to the compositor and
 
 [kwin-lowlatency is available in the AUR.](https://aur.archlinux.org/packages/kwin-lowlatency)
 
+also available as a package in the [CachyOS repository](https://wiki.cachyos.org/en/home/Repo). thanks ptr1337!
+
 ## Manjaro
 
-Manjaro has updated Plasma to 5.23! use the AUR package.
+Manjaro has updated Plasma to 5.23! follow the Arch Linux instructions.
+
+## openSUSE Leap and Tumbleweed
+
+available at [home:DarkWav:kwin-lowlatency](https://software.opensuse.org/download.html?project=home%3ADarkWav%3Akwin-lowlatency&package=kwin-lowlatency). Leap is on 5.18 though.
 
 ## other distributions/manual method
 
