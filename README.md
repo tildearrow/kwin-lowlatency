@@ -18,7 +18,7 @@ the main aim of this project is to add additional settings to the compositor and
 
 ## Arch Linux
 
-[kwin-lowlatency is available in the AUR. 5.23 only.](https://aur.archlinux.org/packages/kwin-lowlatency).
+[kwin-lowlatency is available in the AUR.](https://aur.archlinux.org/packages/kwin-lowlatency)
 
 ## Manjaro
 
