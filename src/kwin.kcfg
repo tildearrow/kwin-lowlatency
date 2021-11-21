@@ -278,6 +278,29 @@
             </choices>
             <default>RenderTimeEstimatorMaximum</default>
         </entry>
+        <entry name="VSyncMechanism" type="Enum">
+            <choices name="KWin::VSyncMechanism">
+                <choice name="VSyncMechanismAuto" value="Auto"/>
+                <choice name="VSyncMechanismNone" value="None"/>
+                <choice name="VSyncMechanismIntelSwap" value="IntelSwap"/>
+                <choice name="VSyncMechanismGLFinish" value="GLFinish"/>
+                <choice name="VSyncMechanismSGI" value="SGI"/>
+                <choice name="VSyncMechanismOML" value="OML"/>
+                <choice name="VSyncMechanismSGIHack" value="SGIHack"/>
+            </choices>
+            <default>VSyncMechanismAuto</default>
+        </entry>
+        <entry name="CrashAction" type="Enum">
+            <choices name="KWin::CrashAction">
+                <choice name="CrashActionRestart" value="Restart"/>
+                <choice name="CrashActionRestartNoDisable" value="RestartNoDisable"/>
+                <choice name="CrashActionQuit" value="Quit"/>
+                <choice name="CrashActionOpenbox" value="Openbox"/>
+                <choice name="CrashActionRestartDisable" value="RestartDisable"/>
+                <choice name="CrashActionAAAAAAA" value="AAAAAAA"/>
+            </choices>
+            <default>CrashActionRestart</default>
+        </entry>
     </group>
     <group name="TabBox">
         <entry name="ShowDelay" type="Bool">

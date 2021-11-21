@@ -46,7 +46,7 @@ enum XwaylandCrashPolicy {
  * This enum type specifies the latency level configured by the user.
  */
 enum LatencyPolicy {
-    LatencyExteremelyLow,
+    LatencyExtremelyLow,
     LatencyLow,
     LatencyMedium,
     LatencyHigh,
@@ -62,6 +62,31 @@ enum RenderTimeEstimator {
     RenderTimeEstimatorAverage,
 };
 
+/**
+ * This enum type specifies the VSync mechanism employed.
+ */
+enum VSyncMechanism {
+    VSyncMechanismAuto,
+    VSyncMechanismNone,
+    VSyncMechanismIntelSwap,
+    VSyncMechanismGLFinish,
+    VSyncMechanismSGI,
+    VSyncMechanismOML,
+    VSyncMechanismSGIHack
+};
+
+/**
+ * This enum type specifies the action to perform in the event of a crash.
+ */
+enum CrashAction {
+    CrashActionRestart,
+    CrashActionRestartNoDisable,
+    CrashActionQuit,
+    CrashActionOpenbox,
+    CrashActionRestartDisable,
+    CrashActionAAAAAAA
+};
+
 class Settings;
 
 class KWIN_EXPORT Options : public QObject
@@ -70,6 +95,8 @@ class KWIN_EXPORT Options : public QObject
     Q_ENUM(XwaylandCrashPolicy)
     Q_ENUM(LatencyPolicy)
     Q_ENUM(RenderTimeEstimator)
+    Q_ENUM(VSyncMechanism)
+    Q_ENUM(CrashAction)
     Q_PROPERTY(FocusPolicy focusPolicy READ focusPolicy WRITE setFocusPolicy NOTIFY focusPolicyChanged)
     Q_PROPERTY(XwaylandCrashPolicy xwaylandCrashPolicy READ xwaylandCrashPolicy WRITE setXwaylandCrashPolicy NOTIFY xwaylandCrashPolicyChanged)
     Q_PROPERTY(int xwaylandMaxCrashCount READ xwaylandMaxCrashCount WRITE setXwaylandMaxCrashCount NOTIFY xwaylandMaxCrashCountChanged)
@@ -205,6 +232,8 @@ class KWIN_EXPORT Options : public QObject
     Q_PROPERTY(bool setMaxFramesAllowed READ setMaxFramesAllowed WRITE setSetMaxFramesAllowed NOTIFY setMaxFramesAllowedChanged)
     Q_PROPERTY(LatencyPolicy latencyPolicy READ latencyPolicy WRITE setLatencyPolicy NOTIFY latencyPolicyChanged)
     Q_PROPERTY(RenderTimeEstimator renderTimeEstimator READ renderTimeEstimator WRITE setRenderTimeEstimator NOTIFY renderTimeEstimatorChanged)
+    Q_PROPERTY(VSyncMechanism vSyncMechanism READ vSyncMechanism WRITE setVSyncMechanism NOTIFY vSyncMechanismChanged)
+    Q_PROPERTY(CrashAction crashAction READ crashAction WRITE setCrashAction NOTIFY crashActionChanged)
 public:
 
     explicit Options(QObject *parent = nullptr);
@@ -649,6 +678,8 @@ public:
     QStringList modifierOnlyDBusShortcut(Qt::KeyboardModifier mod) const;
     LatencyPolicy latencyPolicy() const;
     RenderTimeEstimator renderTimeEstimator() const;
+    VSyncMechanism vSyncMechanism() const;
+    CrashAction crashAction() const;
 
     // setters
     void setFocusPolicy(FocusPolicy focusPolicy);
@@ -715,6 +746,8 @@ public:
     void setMoveMinimizedWindowsToEndOfTabBoxFocusChain(bool set);
     void setLatencyPolicy(LatencyPolicy policy);
     void setRenderTimeEstimator(RenderTimeEstimator estimator);
+    void setVSyncMechanism(VSyncMechanism mechanism);
+    void setCrashAction(CrashAction action);
 
     // default values
     static WindowOperation defaultOperationTitlebarDblClick() {
@@ -816,6 +849,12 @@ public:
     static RenderTimeEstimator defaultRenderTimeEstimator() {
         return RenderTimeEstimatorMaximum;
     }
+    static VSyncMechanism defaultVSyncMechanism() {
+        return VSyncMechanismAuto;
+    }
+    static CrashAction defaultCrashAction() {
+        return CrashActionRestart;
+    }
     /**
      * Performs loading all settings except compositing related.
      */
@@ -895,6 +934,8 @@ Q_SIGNALS:
     void latencyPolicyChanged();
     void configChanged();
     void renderTimeEstimatorChanged();
+    void vSyncMechanismChanged();
+    void crashActionChanged();
 
 private:
     void setElectricBorders(int borders);
@@ -925,6 +966,8 @@ private:
     int m_xwaylandMaxCrashCount;
     LatencyPolicy m_latencyPolicy;
     RenderTimeEstimator m_renderTimeEstimator;
+    VSyncMechanism m_vSyncMechanism;
+    CrashAction m_crashAction;
 
     CompositingType m_compositingMode;
     bool m_useCompositing;

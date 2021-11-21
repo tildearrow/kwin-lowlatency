@@ -56,6 +56,8 @@ Options::Options(QObject *parent)
     , m_xwaylandMaxCrashCount(Options::defaultXwaylandMaxCrashCount())
     , m_latencyPolicy(Options::defaultLatencyPolicy())
     , m_renderTimeEstimator(Options::defaultRenderTimeEstimator())
+    , m_vSyncMechanism(Options::defaultVSyncMechanism())
+    , m_crashAction(Options::defaultCrashAction())
     , m_compositingMode(Options::defaultCompositingMode())
     , m_useCompositing(Options::defaultUseCompositing())
     , m_hiddenPreviews(Options::defaultHiddenPreviews())
@@ -723,6 +725,34 @@ void Options::setRenderTimeEstimator(RenderTimeEstimator estimator)
     Q_EMIT renderTimeEstimatorChanged();
 }
 
+VSyncMechanism Options::vSyncMechanism() const
+{
+    return m_vSyncMechanism;
+}
+
+void Options::setVSyncMechanism(VSyncMechanism mechanism)
+{
+    if (m_vSyncMechanism == mechanism) {
+        return;
+    }
+    m_vSyncMechanism = mechanism;
+    Q_EMIT vSyncMechanismChanged();
+}
+
+CrashAction Options::crashAction() const
+{
+    return m_crashAction;
+}
+
+void Options::setCrashAction(CrashAction action)
+{
+    if (m_crashAction == action) {
+        return;
+    }
+    m_crashAction = action;
+    Q_EMIT crashActionChanged();
+}
+
 void Options::setGlPlatformInterface(OpenGLPlatformInterface interface)
 {
     // check environment variable
@@ -879,6 +909,8 @@ void Options::syncFromKcfgc()
     setMoveMinimizedWindowsToEndOfTabBoxFocusChain(m_settings->moveMinimizedWindowsToEndOfTabBoxFocusChain());
     setLatencyPolicy(m_settings->latencyPolicy());
     setRenderTimeEstimator(m_settings->renderTimeEstimator());
+    setVSyncMechanism(m_settings->vSyncMechanism());
+    setCrashAction(m_settings->crashAction());
 }
 
 bool Options::loadCompositingConfig (bool force)
