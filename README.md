@@ -22,7 +22,7 @@ the main aim of this project is to add additional settings to the compositor and
 
 ## Manjaro
 
-Manjaro doesn't have Plasma 5.23 yet. but you can build the 5.22 version instead.
+Manjaro has updated Plasma to 5.23! use the AUR package.
 
 ## other distributions/manual method
 
