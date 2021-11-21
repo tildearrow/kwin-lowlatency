@@ -5,16 +5,6 @@ since Plasma 5.21 the developers [merged official patches](https://invent.kde.or
 
 however, there's one thing that's not there yet: X11 full-screen unredirection....
 
-# WHERE IS 5.23
-
-wait, wait wait wait. in a bit!
-
-I still have to:
-
-- upgrade my setup to Plasma 5.23
-- port the patchset
-- release
-
 ## Unredirection
 
 the main aim of this project is to add additional settings to the compositor and bring back unredirection based on the direct scanout code. see [unredirect.md](unredirect.md) for more details.
