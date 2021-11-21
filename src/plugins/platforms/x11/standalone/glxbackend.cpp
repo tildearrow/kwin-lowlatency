@@ -273,6 +273,9 @@ void GlxBackend::init()
         // the vblank may occur right in between querying video sync counter and the act
         // of swapping buffers, but on the other hand, there is no any better alternative
         // option. NVIDIA doesn't provide any extension such as GLX_INTEL_swap_event.
+        //
+        // also, it's the only thing that works when you have multiple screens...
+        // ...assuming you can move that little dummy window it creates.
         if (!forceSoftwareVsync) {
             if (!m_vsyncMonitor) {
                 m_vsyncMonitor = SGIVideoSyncVsyncMonitor::create(this);
@@ -768,6 +771,9 @@ void GlxBackend::endFrame(AbstractOutput *output, const QRegion &renderedRegion,
 
     // If the GLX_INTEL_swap_event extension is not used for getting presentation feedback,
     // assume that the frame will be presented at the next vblank event, this is racy.
+    //
+    // don't you call it "racy". it's the only thing that allows us to eventually have
+    // some multi-monitor support with ease.
     if (m_vsyncMonitor) {
         m_vsyncMonitor->arm();
     }
