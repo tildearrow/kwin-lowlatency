@@ -28,11 +28,11 @@ the main aim of this project is to add additional settings to the compositor and
 
 ## Arch Linux
 
-[kwin-lowlatency is available in the AUR. 5.23 only.](https://aur.archlinux.org/packages/kwin-lowlatency).
+[kwin-lowlatency is available in the AUR. 5.23 only.](https://aur.archlinux.org/packages/kwin-lowlatency)
 
 ## Manjaro
 
-see `manjaro/PKGBUILD`. will become obsolete once Manjaro updates Plasma to 5.23
+Manjaro has updated to Plasma 5.23. use the AUR package.
 
 ## other distributions/manual method
 
