@@ -324,10 +324,21 @@ void ApplicationX11::crashHandler(int signal)
 {
     crashes++;
 
+    if (options->crashAction()==CrashActionRestartNoDisable) crashes=0;
+    if (options->crashAction()==CrashActionRestartDisable) crashes++;
+    if (options->crashAction()==CrashActionQuit) return;
+    if (options->crashAction()==CrashActionAAAAAAA) {
+      system("xdg-open \"https://github.com/tildearrow/kwin-lowlatency/issues/new?title=IT+JUST+CRASHED\" &");
+    }
+
     fprintf(stderr, "Application::crashHandler() called with signal %d; recent crashes: %d\n", signal, crashes);
     char cmd[8192];
-    snprintf(cmd, 8191, "%s --crashes %d &",
-            QFile::encodeName(QCoreApplication::applicationFilePath()).constData(), crashes);
+    if (options->crashAction()==CrashActionOpenbox) {
+      snprintf(cmd, 8191, "openbox --replace &");
+    } else {
+      snprintf(cmd, 8191, "%s --crashes %d &",
+              QFile::encodeName(QCoreApplication::applicationFilePath()).constData(), crashes);
+    }
 
     sleep(1);
     system(cmd);
