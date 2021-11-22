@@ -646,43 +646,35 @@ void SceneOpenGL::paint(int screenId, const QRegion &damage, const QList<Topleve
         for (int i = stacking_order.count() - 1; i >=0; i--) {
             Window *window = stacking_order[i];
             Toplevel *toplevel = window->window();
-            printf("Testing window of size %dx%d...\n",window->width(),window->height());
-            if (window->width()<3 && window->height()<3) {
-              printf("Too small. Next\n");
-              continue;
-            }
+            if (window->width()<3 && window->height()<3) continue;
+            //printf("Testing window of size %dx%d...\n",window->width(),window->height());
             if ((toplevel->isOnScreen(screenId) || screenId == -1) && window->isVisible() && toplevel->opacity() > 0) {
                 AbstractClient *c = dynamic_cast<AbstractClient*>(toplevel);
                 if (!c || !c->isFullScreen()) {
-                    printf("Client is not full-screen or no client.\n");
+                    //printf("Client is not full-screen.\n");
                     break;
                 }
                 if (!window->surfaceItem()) {
-                    printf("No surface item\n");
                     break;
                 }
                 SurfaceItem *topMost = findTopMostSurface(window->surfaceItem());
                 auto pixmap = topMost->windowPixmap();
                 if (!pixmap) {
-                    printf("No pixmap\n");
                     break;
                 }
                 pixmap->update();
                 // the subsurface has to be able to cover the whole window
                 if (topMost->position() != QPoint(0, 0)) {
-                    printf("Client does not cover entire window.\n");
+                    //printf("Client does not cover entire window.\n");
                     break;
                 }
                 // and it has to be completely opaque
                 if (!window->isOpaque() && !topMost->opaque().contains(QRect(0, 0, window->width(), window->height()))) {
-                    printf("Client is not opaque.\n");
+                    //printf("Client is not opaque.\n");
                     break;
                 }
                 fullscreenSurface = topMost;
-                printf("Found something to unredirect!\n");
                 break;
-            } else {
-              printf("Reqs not met\n");
             }
         }
         renderLoop->setFullscreenSurface(fullscreenSurface);
@@ -690,10 +682,10 @@ void SceneOpenGL::paint(int screenId, const QRegion &damage, const QList<Topleve
         bool directScanout = false;
         if (m_backend->directScanoutAllowed(screenId)) {
           if (!static_cast<EffectsHandlerImpl*>(effects)->blocksDirectScanout()) {
-            printf("Scanning %p\n",fullscreenSurface);
+            //printf("Scanning %p\n",fullscreenSurface);
             directScanout = m_backend->scanout(screenId, fullscreenSurface);
           } else {
-            printf("Effect blocks DS\n");
+            //printf("Effect blocks DS\n");
             directScanout = m_backend->scanout(screenId, NULL);
           }
         }
