@@ -749,6 +749,10 @@ void GlxBackend::present(const QRegion &damage)
         glDrawBuffer(GL_BACK);
     }
 
+    if (options->vSyncMechanism()==VSyncMechanismGLFinish) {
+      glFinish();
+    }
+
     if (!supportsBufferAge()) {
         glXWaitGL();
         XFlush(display());
