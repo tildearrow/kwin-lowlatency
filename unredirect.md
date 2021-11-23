@@ -51,7 +51,7 @@ the control flow for the unredirection detection process is:
 5. are all of the following conditions are met?
   - is an X11 session or the window is in the current output,
   - window is visible (e.g. not minimized), and
-  - window is not transparent OR user has forced unredirecting non-opaque windows AND windows is not 32x32 in size (for some reason there is a 32x32 dummy window on top all the time)
+  - window is not transparent OR user has forced unredirecting non-opaque windows AND window is not 32x32 in size (for some reason there is a 32x32 dummy window on top all the time)
   if not then go to 2.
 6. does the window exist and is it a full-screen window?
   - if not then quit.
