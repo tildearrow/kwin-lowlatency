@@ -30,6 +30,7 @@ if (HAVE_EPOXY_GLX)
         glxconvenience.cpp
         omlsynccontrolvsyncmonitor.cpp
         sgivideosyncvsyncmonitor.cpp
+        sgivideosyncbusywaitvsyncmonitor.cpp
     )
 endif()
 

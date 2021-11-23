@@ -1,4 +1,5 @@
 set(vsyncconvenience_SOURCES
+    dummyvsyncmonitor.cpp
     softwarevsyncmonitor.cpp
     vsyncmonitor.cpp
 )

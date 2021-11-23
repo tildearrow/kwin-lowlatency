@@ -16,8 +16,10 @@
 #include "glxconvenience.h"
 #include "logging.h"
 #include "glx_context_attribute_builder.h"
+#include "dummyvsyncmonitor.h"
 #include "omlsynccontrolvsyncmonitor.h"
 #include "sgivideosyncvsyncmonitor.h"
+#include "sgivideosyncbusywaitvsyncmonitor.h"
 #include "softwarevsyncmonitor.h"
 #include "x11_platform.h"
 // kwin
@@ -220,6 +222,11 @@ void GlxBackend::init()
         }
     }
 
+    // VSync mechanism option
+    if (options->vSyncMechanism()!=VSyncMechanismIntelSwap && options->vSyncMechanism()!=VSyncMechanismAuto) {
+      supportsSwapEvent=false;
+    }
+
     // Check whether certain features are supported
     m_haveMESACopySubBuffer = hasExtension(QByteArrayLiteral("GLX_MESA_copy_sub_buffer"));
     m_haveMESASwapControl   = hasExtension(QByteArrayLiteral("GLX_MESA_swap_control"));
@@ -277,11 +284,31 @@ void GlxBackend::init()
         // also, it's the only thing that works when you have multiple screens...
         // ...assuming you can move that little dummy window it creates.
         if (!forceSoftwareVsync) {
-            if (!m_vsyncMonitor) {
+            if (options->vSyncMechanism()==VSyncMechanismAuto) {
+              if (!m_vsyncMonitor) {
                 m_vsyncMonitor = SGIVideoSyncVsyncMonitor::create(this);
-            }
-            if (!m_vsyncMonitor) {
+              }
+              if (!m_vsyncMonitor) {
                 m_vsyncMonitor = OMLSyncControlVsyncMonitor::create(this);
+              }
+            } else {
+              if (options->vSyncMechanism()==VSyncMechanismSGI) {
+                if (!m_vsyncMonitor) {
+                  m_vsyncMonitor = SGIVideoSyncVsyncMonitor::create(this);
+                }
+              } else if (options->vSyncMechanism()==VSyncMechanismOML) {
+                if (!m_vsyncMonitor) {
+                  m_vsyncMonitor = OMLSyncControlVsyncMonitor::create(this);
+                }
+              } else if (options->vSyncMechanism()==VSyncMechanismSGIHack) {
+                if (!m_vsyncMonitor) {
+                  m_vsyncMonitor = SGIVideoSyncBusyWaitVsyncMonitor::create(this);
+                }
+              } else {
+                if (!m_vsyncMonitor) {
+                  m_vsyncMonitor = DummyVsyncMonitor::create(this);
+                }
+              }
             }
         }
         if (!m_vsyncMonitor) {
