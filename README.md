@@ -118,7 +118,29 @@ $ sudo make install
 
 # additional options menu
 
-KWin-lowlatency introduces a few options in System Settings > Display and Monitor > Compositor, which are used to control whether unredirection/direct scanout is on.
+KWin-lowlatency introduces a few options in System Settings > Display and Monitor > Compositor. these options are documented in this section.
+
+the options are:
+- **Enable full-screen unredirection (X11)**: allows a full-screen application to bypass the compositor, which reduces latency.
+- **Enable full-screen direct scanout (Wayland)**: same as above, but for Wayland.
+- **Debug full-screen unredirection/direct scanout**: writes unredirection/direct scanout check status to standard output on every frame, which is useful when it is not working and/or causing problems (KWin-lowlatency used to have problems with transparent dummy windows that stay on top hindering unredirection).
+- **Force unredirection for non-opaque windows**: ignores whether a full-screen window is transparent and attempts to unredirect anyway. may cause minor glitches.
+- **My OpenGL is always safe!**: tells the compositor to never set `OpenGLIsUnsafe` when it detects initialization problems. on vanilla KWin there is a bug which triggers a false-positive when KWin takes too long to start (e.g. on an HDD).
+- **Set MaxFramesAllowed to 1 (NVIDIA only)**: sets `__GL_MaxFramesAllowed` to 1 which ensures the compositor will wait for vertical blank (use in conjunction with VSync mechanism described below). has no effect on AMD and Intel graphics.
+- **Render time estimator**: this is a vanilla setting which isn't there for some reason. KWin-lowlatency adds it. may help with latency/stutter (use with caution).
+- **VSync mechanism**: forces a different vertical blank detection system from the default one. the options are:
+  - Automatic: default KWin behavior.
+    - uses Intel swap event if available (AMD and Intel (but I've heard it's disabled there due to bugs))
+    - uses `GLX_SGI_video_sync` extension otherwise (NVIDIA) or `GLX_OML_sync_control` if the former isn't available.
+    - worst case it falls back to using a timer (which may cause stuttering).
+  - None: don't use anything at all. will increase latency in nearly every case.
+  - Intel swap event: use the `GLX_INTEL_swap_event` extension (implemented by Mesa) for detecting the vertical blank. ironically this is not the default for Intel graphics due to some reason.
+  - glFinish: use the glFinish() operation at the end of a frame to block until the next vertical blank interval. doesn't always work.
+  - SGI video sync: use the `GLX_SGI_video_sync` extension to determine the next vertical blank.
+  - OML sync control: use the `GLX_OML_sync_control` extension to determine the next vertical blank. not available on NVIDIA, or at least not yet.
+  - SGI video sync busy-wait: use the `GLX_SGI_video_sync` extension, but poll every millisecond until the next vertical blank interval occurs. this option is there because there was a bug in Mesa which caused hangs when using the wait functions.
+- **Action on crash**: allows you to choose what happens when KWin-lowlatency crashes.
+- **Position of VSync pixel (SGI/OML only)**: COMING SOON! allows you to change the position of the dummy window created for detecting the next vertical blank when using SGI video sync or OML sync control. this may come in handy if you use more than one monitor.
 
 # misc/FAQ
 
