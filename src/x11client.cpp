@@ -4603,9 +4603,10 @@ void X11Client::doInteractiveResizeSync()
         m_syncRequest.timeout->start(250);
         sendSyncRequest();
     } else {                              // for clients not supporting the XSYNC protocol, we
-        m_syncRequest.isPending = true;   // limit the resizes to 30Hz to take pointless load from X11
-        m_syncRequest.timeout->start(33); // and the client, the mouse is still moved at full speed
-    }                                     // and no human can control faster resizes anyway
+        m_syncRequest.isPending = true;   // don't limit the resizes to any rate.
+        m_syncRequest.timeout->start(4);  // I want smoothness!
+    }                                     // and yes, I'm a human who can control this fast of a
+                                          // resize.
     const QRect moveResizeClientGeometry = frameRectToClientRect(moveResizeGeometry());
     const QRect moveResizeBufferGeometry = frameRectToBufferRect(moveResizeGeometry());
 
