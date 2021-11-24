@@ -20,6 +20,10 @@ the main aim of this project is to add additional settings to the compositor and
 
 [kwin-lowlatency is available in the AUR. 5.23 only.](https://aur.archlinux.org/packages/kwin-lowlatency)
 
+## Gentoo
+
+[work in progress pull request from ran-dall.](https://github.com/agates/kwin-lowlatency-overlay/pull/64)
+
 ## Manjaro
 
 Manjaro has updated to Plasma 5.23. use the AUR package.
@@ -52,7 +56,7 @@ $ git checkout Plasma/5.22
 you may want to check the current stable version out:
 
 ```
-$ git checkout v5.22.5
+$ git checkout v5.22.5-2
 ```
 
 #### patch format
@@ -61,7 +65,7 @@ download stock KWin source and patch file:
 
 ```
 $ wget https://download.kde.org/stable/plasma/5.22.5/kwin-5.22.5.tar.xz
-$ wget https://tildearrow.org/storage/kwin-lowlatency/kwin-lowlatency-5.22.5.patch
+$ wget https://tildearrow.org/storage/kwin-lowlatency/kwin-lowlatency-5.22.5-2.patch
 ```
 
 extract:
@@ -74,7 +78,7 @@ patch:
 
 ```
 $ cd kwin-5.22.5
-$ patch -p1 < ../kwin-lowlatency-5.22.5.patch
+$ patch -p1 < ../kwin-lowlatency-5.22.5-2.patch
 ```
 
 ### building
