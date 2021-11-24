@@ -40,6 +40,7 @@ public:
 
     int requestedEffectChainPosition() const override;
     bool isActive() const override;
+    bool blocksDirectScanout() const override;
 
     int dimStrength() const;
     bool dimPanels() const;
