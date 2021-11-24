@@ -74,6 +74,10 @@ Options::Options(QObject *parent)
     , m_unredirectNonOpaque(false)
     , m_openGLIsAlwaysSafe(false)
     , m_setMaxFramesAllowed(false)
+    , m_debugCompositeTimer(false)
+    , m_syncWindowX(0)
+    , m_syncWindowY(0)
+    , m_forceDisableVSync(false)
     , m_MoveMinimizedWindowsToEndOfTabBoxFocusChain(false)
     , OpTitlebarDblClick(Options::defaultOperationTitlebarDblClick())
     , CmdActiveTitlebar1(Options::defaultCommandActiveTitlebar1())
@@ -670,6 +674,42 @@ void Options::setSetMaxFramesAllowed(bool value)
     Q_EMIT setMaxFramesAllowedChanged();
 }
 
+void Options::setDebugCompositeTimer(bool value)
+{
+    if (m_debugCompositeTimer == value) {
+        return;
+    }
+    m_debugCompositeTimer = value;
+    Q_EMIT debugCompositeTimerChanged();
+}
+
+void Options::setSyncWindowX(int value)
+{
+    if (m_syncWindowX == value) {
+        return;
+    }
+    m_syncWindowX = value;
+    Q_EMIT syncWindowXChanged();
+}
+
+void Options::setSyncWindowY(int value)
+{
+    if (m_syncWindowY == value) {
+        return;
+    }
+    m_syncWindowY = value;
+    Q_EMIT syncWindowYChanged();
+}
+
+void Options::setForceDisableVSync(bool value)
+{
+    if (m_forceDisableVSync == value) {
+        return;
+    }
+    m_forceDisableVSync = value;
+    Q_EMIT forceDisableVSyncChanged();
+}
+
 void Options::setMoveMinimizedWindowsToEndOfTabBoxFocusChain(bool value)
 {
     if (m_MoveMinimizedWindowsToEndOfTabBoxFocusChain == value) {
@@ -906,6 +946,10 @@ void Options::syncFromKcfgc()
     setUnredirectNonOpaque(m_settings->unredirectNonOpaque());
     setOpenGLIsAlwaysSafe(m_settings->openGLIsAlwaysSafe());
     setSetMaxFramesAllowed(m_settings->setMaxFramesAllowed());
+    setDebugCompositeTimer(m_settings->debugCompositeTimer());
+    setSyncWindowX(m_settings->syncWindowX());
+    setSyncWindowY(m_settings->syncWindowY());
+    setForceDisableVSync(m_settings->forceDisableVSync());
     setMoveMinimizedWindowsToEndOfTabBoxFocusChain(m_settings->moveMinimizedWindowsToEndOfTabBoxFocusChain());
     setLatencyPolicy(m_settings->latencyPolicy());
     setRenderTimeEstimator(m_settings->renderTimeEstimator());

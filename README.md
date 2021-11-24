@@ -127,6 +127,7 @@ the options are:
 - **Force unredirection for non-opaque windows**: ignores whether a full-screen window is transparent and attempts to unredirect anyway. may cause minor glitches.
 - **My OpenGL is always safe!**: tells the compositor to never set `OpenGLIsUnsafe` when it detects initialization problems. on vanilla KWin there is a bug which triggers a false-positive when KWin takes too long to start (e.g. on an HDD).
 - **Set MaxFramesAllowed to 1 (NVIDIA only)**: sets `__GL_MaxFramesAllowed` to 1 which ensures the compositor will wait for vertical blank (use in conjunction with VSync mechanism described below). has no effect on AMD and Intel graphics.
+- **Debug composite timer**: writes the value of the composite timer to standard output on every frame. useful for debugging latency problems.
 - **Render time estimator**: this is a vanilla setting which isn't there for some reason. KWin-lowlatency adds it. may help with latency/stutter (use with caution).
 - **VSync mechanism**: forces a different vertical blank detection system from the default one. the options are:
   - Automatic: default KWin behavior.

@@ -260,6 +260,18 @@
         <entry name="SetMaxFramesAllowed" type="Bool">
             <default>false</default>
         </entry>
+        <entry name="DebugCompositeTimer" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="SyncWindowX" type="Int">
+            <default>0</default>
+        </entry>
+        <entry name="SyncWindowY" type="Int">
+            <default>0</default>
+        </entry>
+        <entry name="ForceDisableVSync" type="Bool">
+            <default>false</default>
+        </entry>
         <entry name="LatencyPolicy" type="Enum">
             <choices name="KWin::LatencyPolicy">
                 <choice name="LatencyExtremelyLow" value="ExtremelyLow"/>

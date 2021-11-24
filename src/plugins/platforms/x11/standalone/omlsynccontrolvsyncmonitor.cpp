@@ -8,6 +8,8 @@
 #include "glxconvenience.h"
 #include "logging.h"
 
+#include "options.h"
+
 #include <QX11Info>
 
 namespace KWin
@@ -66,7 +68,7 @@ OMLSyncControlVsyncMonitorHelper::OMLSyncControlVsyncMonitorHelper(QObject *pare
     XSetWindowAttributes attributes;
     attributes.colormap = colormap;
 
-    m_dummyWindow = XCreateWindow(m_display, rootWindow, 0, 0, 1, 1, 0, depth,
+    m_dummyWindow = XCreateWindow(m_display, rootWindow, options->syncWindowX(), options->syncWindowY(), 1, 1, 0, depth,
                                   InputOutput, visual, CWColormap, &attributes);
     XFreeColormap(m_display, colormap);
     if (!m_dummyWindow) {

@@ -230,6 +230,10 @@ class KWIN_EXPORT Options : public QObject
     Q_PROPERTY(bool unredirectNonOpaque READ unredirectNonOpaque WRITE setUnredirectNonOpaque NOTIFY unredirectNonOpaqueChanged)
     Q_PROPERTY(bool openGLIsAlwaysSafe READ openGLIsAlwaysSafe WRITE setOpenGLIsAlwaysSafe NOTIFY openGLIsAlwaysSafeChanged)
     Q_PROPERTY(bool setMaxFramesAllowed READ setMaxFramesAllowed WRITE setSetMaxFramesAllowed NOTIFY setMaxFramesAllowedChanged)
+    Q_PROPERTY(bool debugCompositeTimer READ debugCompositeTimer WRITE setDebugCompositeTimer NOTIFY debugCompositeTimerChanged)
+    Q_PROPERTY(int syncWindowX READ syncWindowX WRITE setSyncWindowX NOTIFY syncWindowXChanged)
+    Q_PROPERTY(int syncWindowY READ syncWindowY WRITE setSyncWindowY NOTIFY syncWindowYChanged)
+    Q_PROPERTY(bool forceDisableVSync READ forceDisableVSync WRITE setForceDisableVSync NOTIFY forceDisableVSyncChanged)
     Q_PROPERTY(LatencyPolicy latencyPolicy READ latencyPolicy WRITE setLatencyPolicy NOTIFY latencyPolicyChanged)
     Q_PROPERTY(RenderTimeEstimator renderTimeEstimator READ renderTimeEstimator WRITE setRenderTimeEstimator NOTIFY renderTimeEstimatorChanged)
     Q_PROPERTY(VSyncMechanism vSyncMechanism READ vSyncMechanism WRITE setVSyncMechanism NOTIFY vSyncMechanismChanged)
@@ -671,6 +675,26 @@ public:
         return m_setMaxFramesAllowed;
     }
 
+    bool debugCompositeTimer() const
+    {
+        return m_debugCompositeTimer;
+    }
+
+    int syncWindowX() const
+    {
+        return m_syncWindowX;
+    }
+
+    int syncWindowY() const
+    {
+        return m_syncWindowY;
+    }
+
+    bool forceDisableVSync() const
+    {
+        return m_forceDisableVSync;
+    }
+
     bool moveMinimizedWindowsToEndOfTabBoxFocusChain() const {
         return m_MoveMinimizedWindowsToEndOfTabBoxFocusChain;
     }
@@ -743,6 +767,10 @@ public:
     void setUnredirectNonOpaque(bool set);
     void setOpenGLIsAlwaysSafe(bool set);
     void setSetMaxFramesAllowed(bool set);
+    void setDebugCompositeTimer(bool set);
+    void setSyncWindowX(int value);
+    void setSyncWindowY(int value);
+    void setForceDisableVSync(bool set);
     void setMoveMinimizedWindowsToEndOfTabBoxFocusChain(bool set);
     void setLatencyPolicy(LatencyPolicy policy);
     void setRenderTimeEstimator(RenderTimeEstimator estimator);
@@ -930,6 +958,10 @@ Q_SIGNALS:
     void unredirectNonOpaqueChanged();
     void openGLIsAlwaysSafeChanged();
     void setMaxFramesAllowedChanged();
+    void debugCompositeTimerChanged();
+    void syncWindowXChanged();
+    void syncWindowYChanged();
+    void forceDisableVSyncChanged();
     void animationSpeedChanged();
     void latencyPolicyChanged();
     void configChanged();
@@ -986,6 +1018,10 @@ private:
     bool m_unredirectNonOpaque;
     bool m_openGLIsAlwaysSafe;
     bool m_setMaxFramesAllowed;
+    bool m_debugCompositeTimer;
+    int m_syncWindowX;
+    int m_syncWindowY;
+    bool m_forceDisableVSync;
     bool m_MoveMinimizedWindowsToEndOfTabBoxFocusChain;
 
     WindowOperation OpTitlebarDblClick;

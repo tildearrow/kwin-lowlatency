@@ -250,7 +250,7 @@ void GlxBackend::init()
         supportsSwapEvent = false;
     }
 
-    static bool syncToVblankDisabled = qEnvironmentVariableIsSet("KWIN_X11_NO_SYNC_TO_VBLANK");
+    static bool syncToVblankDisabled = qEnvironmentVariableIsSet("KWIN_X11_NO_SYNC_TO_VBLANK") || options->forceDisableVSync();
     if (!syncToVblankDisabled) {
         if (haveSwapInterval) {
             setSwapInterval(1);
