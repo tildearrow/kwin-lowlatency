@@ -142,6 +142,8 @@ the options are:
   - SGI video sync busy-wait: use the `GLX_SGI_video_sync` extension, but poll every millisecond until the next vertical blank interval occurs. this option is there because there was a bug in Mesa which caused hangs when using the wait functions.
 - **Action on crash**: allows you to choose what happens when KWin-lowlatency crashes.
 - **Position of VSync pixel (SGI/OML only)**: COMING SOON! allows you to change the position of the dummy window created for detecting the next vertical blank when using SGI video sync or OML sync control. this may come in handy if you use more than one monitor.
+- **Force disable VSync**: turns VSync off completely. no need to pass an environment variable to do that anymore with KWin-lowlatency! **may require restarting compositor manually.**
+  - use in conjunction with the settings above for _some_ kind of multi-monitor support. not perfect though.
 
 # misc/FAQ
 
