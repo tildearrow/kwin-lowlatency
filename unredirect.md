@@ -30,6 +30,7 @@ the possible messages are:
 - **Surface item has no pixmap.**: the window exists, but its surface item contains nothing.
 - **Position of surface item is not (0, 0).**: the window exists and is full-screen, but its contents do not actually cover the entire screen.
 - **Window is not opaque.**: the window exists, is full-screen and its contents cover the entire screen, but it is transparent or has the potential to be.
+- **Window rule prevents it.**: the "Allow unredirection/direct scanout" rule is present for that window and is set to force no.
 - **Window not visible, toplevel not on output and/or not opaque.**: the window may be minimized and/or is transparent.
 - **Scanning (nil)**: nothing to unredirect.
 - **Scanning 0x?????????????**: there is a window being unredirected. the random number is a pointer to the surface item of aforementioned window.
@@ -65,10 +66,12 @@ the control flow for the unredirection detection process is:
   - if not then quit.
 12. has the user forced unredirecting non-opaque windows OR the window is not transparent AND its contents cover the entire window?
   - if not then quit.
-13. we have something to unredirect!
-14. has the user turned unredirection or direct scanout on?
-  - if not then quit.
-15. is an effect active and preventing unredirection?
+13. is the allow unredirect rule for that window set and is it set to force no?
   - if so then quit.
-16. unredirect the window.
+14. we have something to unredirect!
+15. has the user turned unredirection or direct scanout on?
+  - if not then quit.
+16. is an effect active and preventing unredirection?
+  - if so then quit.
+17. unredirect the window.
 ```

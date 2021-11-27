@@ -358,7 +358,6 @@ static SurfaceItem *findTopMostSurface(SurfaceItem *item)
     }
 }
 
-// TODO: ALL OF THIS
 void SceneOpenGL::paint(AbstractOutput *output, const QRegion &damage, const QList<Toplevel *> &toplevels,
                         RenderLoop *renderLoop)
 {
@@ -425,6 +424,11 @@ void SceneOpenGL::paint(AbstractOutput *output, const QRegion &damage, const QLi
                 if (!options->unredirectNonOpaque() && !window->isOpaque() && !topMost->opaque().contains(QRect(0, 0, window->width(), window->height()))) {
                     if (options->debugUnredirect()) printf("Window is not opaque.\n");
                     break;
+                }
+                // and user has allowed unredirection for this app
+                if (!c->mayUnredirect()) {
+                  if (options->debugUnredirect()) printf("Window rule prevents it.\n");
+                  break;
                 }
                 fullscreenSurface = topMost;
                 break;

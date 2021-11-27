@@ -405,6 +405,8 @@ public:
         return QPoint(borderLeft(), borderTop());
     }
 
+    bool mayUnredirect() const;
+
     virtual void updateMouseGrab();
     /**
      * @returns The caption consisting of captionNormal and captionSuffix

@@ -649,6 +649,11 @@ void RulesModel::populateRuleList()
                          RulePolicy::ForceRule, RuleItem::Boolean,
                          i18n("Block compositing"), i18n("Appearance & Fixes"),
                          QIcon::fromTheme("composite-track-on")));
+
+    addRule(new RuleItem(QLatin1String("allowunredirect"),
+                         RulePolicy::ForceRule, RuleItem::Boolean,
+                         i18n("Allow unredirection/direct scanout"), i18n("Appearance & Fixes"),
+                         QIcon::fromTheme("window")));
 }
 
 
