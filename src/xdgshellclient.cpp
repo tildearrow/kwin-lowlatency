@@ -647,7 +647,7 @@ void XdgToplevelClient::updateDecoration(bool check_workspace_pos, bool force)
 
 bool XdgToplevelClient::supportsWindowRules() const
 {
-    return !m_plasmaShellSurface;
+    return true;
 }
 
 StrutRect XdgToplevelClient::strutRect(StrutArea area) const
@@ -946,7 +946,7 @@ void XdgToplevelClient::handleWindowClassChanged()
 {
     const QByteArray applicationId = m_shellSurface->windowClass().toUtf8();
     setResourceClass(resourceName(), applicationId);
-    if (shellSurface()->isConfigured() && supportsWindowRules()) {
+    if (shellSurface()->isConfigured()) {
         evaluateWindowRules();
     }
     setDesktopFileName(applicationId);
@@ -1196,40 +1196,39 @@ void XdgToplevelClient::initialize()
     // is sent if the client has called the set_mode() request with csd mode.
     updateDecoration(false, true);
 
-    if (supportsWindowRules()) {
-        setupWindowRules(false);
+    setupWindowRules(false);
 
-        moveResize(rules()->checkGeometry(frameGeometry(), true));
-        maximize(rules()->checkMaximize(initialMaximizeMode(), true));
-        setFullScreen(rules()->checkFullScreen(initialFullScreenMode(), true), false);
-        setOnActivities(rules()->checkActivity(activities(), true));
-        setDesktops(rules()->checkDesktops(desktops(), true));
-        setDesktopFileName(rules()->checkDesktopFile(desktopFileName(), true).toUtf8());
-        if (rules()->checkMinimize(isMinimized(), true)) {
-            minimize(true); // No animation.
-        }
-        setSkipTaskbar(rules()->checkSkipTaskbar(skipTaskbar(), true));
-        setSkipPager(rules()->checkSkipPager(skipPager(), true));
-        setSkipSwitcher(rules()->checkSkipSwitcher(skipSwitcher(), true));
-        setKeepAbove(rules()->checkKeepAbove(keepAbove(), true));
-        setKeepBelow(rules()->checkKeepBelow(keepBelow(), true));
-        setShortcut(rules()->checkShortcut(shortcut().toString(), true));
-        setNoBorder(rules()->checkNoBorder(noBorder(), true));
-
-        // Don't place the client if its position is set by a rule.
-        if (rules()->checkPosition(invalidPoint, true) != invalidPoint) {
-            needsPlacement = false;
-        }
-
-        // Don't place the client if the maximize state is set by a rule.
-        if (requestedMaximizeMode() != MaximizeRestore) {
-            needsPlacement = false;
-        }
-
-        discardTemporaryRules();
-        RuleBook::self()->discardUsed(this, false); // Remove Apply Now rules.
-        updateWindowRules(Rules::All);
+    moveResize(rules()->checkGeometry(frameGeometry(), true));
+    maximize(rules()->checkMaximize(initialMaximizeMode(), true));
+    setFullScreen(rules()->checkFullScreen(initialFullScreenMode(), true), false);
+    setOnActivities(rules()->checkActivity(activities(), true));
+    setDesktops(rules()->checkDesktops(desktops(), true));
+    setDesktopFileName(rules()->checkDesktopFile(desktopFileName(), true).toUtf8());
+    if (rules()->checkMinimize(isMinimized(), true)) {
+        minimize(true); // No animation.
     }
+    setSkipTaskbar(rules()->checkSkipTaskbar(skipTaskbar(), true));
+    setSkipPager(rules()->checkSkipPager(skipPager(), true));
+    setSkipSwitcher(rules()->checkSkipSwitcher(skipSwitcher(), true));
+    setKeepAbove(rules()->checkKeepAbove(keepAbove(), true));
+    setKeepBelow(rules()->checkKeepBelow(keepBelow(), true));
+    setShortcut(rules()->checkShortcut(shortcut().toString(), true));
+    setNoBorder(rules()->checkNoBorder(noBorder(), true));
+
+    // Don't place the client if its position is set by a rule.
+    if (rules()->checkPosition(invalidPoint, true) != invalidPoint) {
+        needsPlacement = false;
+    }
+
+    // Don't place the client if the maximize state is set by a rule.
+    if (requestedMaximizeMode() != MaximizeRestore) {
+        needsPlacement = false;
+    }
+
+    discardTemporaryRules();
+    RuleBook::self()->discardUsed(this, false); // Remove Apply Now rules.
+    updateWindowRules(Rules::All);
+
     if (isRequestedFullScreen()) {
         needsPlacement = false;
     }
@@ -1317,7 +1316,7 @@ void XdgToplevelClient::installXdgDecoration(XdgToplevelDecorationV1Interface *d
     connect(m_xdgDecoration, &XdgToplevelDecorationV1Interface::preferredModeChanged, this, [this] {
         if (m_isInitialized) {
             // force is true as we must send a new configure response.
-            updateDecoration(/* check_workspace_pos */ true, /* force */ true);
+            updateDecoration(/* check_workspace_pos */ false, /* force */ true);
         }
     });
 }
