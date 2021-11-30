@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-10-01 01:49+0000\n"
-"PO-Revision-Date: 2021-09-05 10:29+0200\n"
+"PO-Revision-Date: 2021-11-28 08:00+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.12.1\n"
+"X-Generator: Lokalize 22.03.70\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
@@ -32,7 +32,7 @@ msgstr "mikmach@wp.pl, lukasz.wojnilowicz@gmail.com"
 #: kcmrules.cpp:29
 #, kde-format
 msgid "Window Rules"
-msgstr "Zasady okien"
+msgstr "Zasady dla okien"
 
 #: kcmrules.cpp:33
 #, kde-format
@@ -328,13 +328,13 @@ msgstr "(%1, %2)"
 #: package/contents/ui/RulesList.qml:61
 #, kde-format
 msgid "No rules for specific windows are currently set"
-msgstr "Obecnie nie ustalono żadnych zasad dla okien"
+msgstr "Nie określono jeszcze żadnych zasad dla poszczególnych okien"
 
 #: package/contents/ui/RulesList.qml:62
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Click the <interface>Add New...</interface> button below to add some"
-msgstr "Aby dodać, naciśnij <interface>Dodaj nowy...</interface>"
+msgstr "Aby dodać nową zasadę, naciśnij <interface>Dodaj nową...</interface>"
 
 #: package/contents/ui/RulesList.qml:70
 #, kde-format
@@ -359,7 +359,7 @@ msgstr "Zapisz zasady"
 #: package/contents/ui/RulesList.qml:99
 #, kde-format
 msgid "Add New..."
-msgstr "Dodaj nowe..."
+msgstr "Dodaj nową..."
 
 #: package/contents/ui/RulesList.qml:110
 #, kde-format

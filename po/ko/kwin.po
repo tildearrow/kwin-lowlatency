@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-09 01:47+0000\n"
-"PO-Revision-Date: 2021-07-28 02:34+0200\n"
+"PO-Revision-Date: 2021-11-14 18:45+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 20.12.3\n"
+"X-Generator: Lokalize 21.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -1010,13 +1010,13 @@ msgstr "켜진 LED"
 #: debug_console.ui:425 debug_console.ui:439
 #, kde-format
 msgid "Clipboard"
-msgstr ""
+msgstr "클립보드"
 
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget_2)
 #: debug_console.ui:479
 #, kde-format
 msgid "Primary Selection"
-msgstr ""
+msgstr "주 선택"
 
 #: helpers/killer/killer.cpp:30
 #, kde-format
@@ -1284,30 +1284,30 @@ msgid ""
 msgstr "창 모드에서 출력으로 열 창 개수입니다. 기본값은 1입니다."
 
 #: main_wayland.cpp:463
-#, fuzzy, kde-format
-#| msgid "Wayland socket to use for incoming connections."
+#, kde-format
 msgid ""
 "Wayland socket to use for incoming connections. This can be combined with --"
 "socket to name the socket"
-msgstr "들어오는 연결에 사용할 Wayland 소켓입니다."
+msgstr ""
+"들어오는 연결에 사용할 Wayland 소켓입니다. --socket 옵션을 사용하여 이름을 지"
+"정할 수도 있습니다."
 
 #: main_wayland.cpp:467
-#, fuzzy, kde-format
-#| msgid "Wayland socket to use for incoming connections."
+#, kde-format
 msgid ""
 "XWayland socket to use for Xwayland's incoming connections. This can be set "
 "multiple times"
-msgstr "들어오는 연결에 사용할 Wayland 소켓입니다."
+msgstr "들어오는 연결에 사용할 XWayland 소켓입니다. 여러 번 지정할 수 있습니다"
 
 #: main_wayland.cpp:471
 #, kde-format
 msgid "Name of the xwayland display that has been pre-set up"
-msgstr ""
+msgstr "사전에 설정된 XWayland 디스플레이 이름"
 
 #: main_wayland.cpp:475
 #, kde-format
 msgid "Name of the xauthority file "
-msgstr ""
+msgstr "xauthority 파일의 이름"
 
 #: main_wayland.cpp:479
 #, kde-format
@@ -1752,17 +1752,15 @@ msgstr "요청한 크기 및 위치 무시 규칙 종류"
 
 #. i18n: ectx: label, entry (desktops), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:151
-#, fuzzy, kde-format
-#| msgid "Switch to Desktop %1"
+#, kde-format
 msgid "List of Desktop Ids"
-msgstr "바탕 화면 %1(으)로 전환"
+msgstr "바탕 화면 ID 목록"
 
 #. i18n: ectx: label, entry (desktopsrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:155
-#, fuzzy, kde-format
-#| msgid "Desktop number rule type"
+#, kde-format
 msgid "Desktop Ids rule type"
-msgstr "바탕 화면 번호 규칙 종류"
+msgstr "바탕 화면 ID 규칙 종류"
 
 #. i18n: ectx: label, entry (screen), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:162

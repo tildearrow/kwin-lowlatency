@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-09 01:47+0000\n"
-"PO-Revision-Date: 2021-09-05 14:54+0300\n"
+"PO-Revision-Date: 2021-11-10 18:31+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -2342,10 +2342,11 @@ msgctxt "Create a new desktop and move the window there"
 msgid "&New Desktop"
 msgstr "Uusi työ&pöytä"
 
+# *** TARKISTA: Mitä %1 %2 ovat?
 #: useractions.cpp:622
 #, kde-format
 msgid "Move to %1 %2"
-msgstr ""
+msgstr "Siirrä kohtaan %1 %2"
 
 #: useractions.cpp:635
 #, kde-format

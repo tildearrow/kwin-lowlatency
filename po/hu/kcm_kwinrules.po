@@ -1,20 +1,21 @@
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2012, 2019.
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013, 2014.
-# Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017.
+# Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017, 2021.
+# Kristof Kiszel <ulysses@fsf.hu>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-10-01 01:49+0000\n"
-"PO-Revision-Date: 2019-11-30 20:42+0100\n"
-"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
+"PO-Revision-Date: 2021-11-18 14:18+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.03.70\n"
+"X-Generator: Lokalize 21.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -24,23 +25,22 @@ msgstr "Kiszel Kristóf,Szántó Tamás"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "ulysses@kubuntu.org,tszanto@interware.hu"
+msgstr "ulysses@fsf.hu,tszanto@interware.hu"
 
 #: kcmrules.cpp:29
-#, fuzzy, kde-format
-#| msgid "Window ro&le:"
+#, kde-format
 msgid "Window Rules"
-msgstr "Ablaksze&rep:"
+msgstr "Ablakszabályok"
 
 #: kcmrules.cpp:33
 #, kde-format
 msgid "Ismael Asensio"
-msgstr ""
+msgstr "Ismael Asensio"
 
 #: kcmrules.cpp:34
 #, kde-format
 msgid "Author"
-msgstr ""
+msgstr "Szerző"
 
 #: kcmrules.cpp:38
 #, kde-format
@@ -60,7 +60,7 @@ msgstr ""
 #: kcmrules.cpp:246
 #, kde-format
 msgid "Copy of %1"
-msgstr ""
+msgstr "%1 másolata"
 
 #: kcmrules.cpp:425
 #, kde-format
@@ -75,7 +75,7 @@ msgstr "%1 ablakbeállításai"
 #: main.cpp:30
 #, kde-format
 msgid "KWinRules KCM launcher"
-msgstr ""
+msgstr "KWinRules beállítómodul-indító"
 
 #: main.cpp:31
 #, kde-format
@@ -137,6 +137,9 @@ msgid ""
 "created.\n"
 "No further changes will be affected."
 msgstr ""
+"Az ablaktulajdonság csak az ablak létrehozása után kerül beállításra a "
+"megadott értékre.\n"
+"Ez nem érinti a további változtatásokat."
 
 #: optionsmodel.cpp:157
 #, kde-format
@@ -150,6 +153,9 @@ msgid ""
 "be affected later\n"
 "(this action will be deleted afterwards)."
 msgstr ""
+"Az ablaktulajdonság azonnal beállításra kerül a megadott értékre, és nem "
+"később nem érintik a módosítások\n"
+"(a művelet ezt követően törlésre kerül)."
 
 #: optionsmodel.cpp:161
 #, kde-format
@@ -162,6 +168,8 @@ msgid ""
 "The value of the window property will be remembered and, every time the "
 "window is created, the last remembered value will be applied."
 msgstr ""
+"Az ablaktulajdonság értéke megőrződik, és az ablak minden egyes "
+"létrehozásakor a legutoljára eltárolt érték lesz alkalmazva."
 
 #: optionsmodel.cpp:165
 #, kde-format
@@ -175,6 +183,9 @@ msgid ""
 "for it will be used.\n"
 "Specifying this will block more generic window settings from taking effect."
 msgstr ""
+"Az ablaktulajdonság nem lesz érintett, ezért az alapértelmezett módon lesz "
+"kezelve.\n"
+"Ennek megadása blokkolja az általánosabb ablakbeállítások hatását."
 
 #: optionsmodel.cpp:169
 #, kde-format
@@ -185,6 +196,7 @@ msgstr "Kényszerítés"
 #, kde-format
 msgid "The window property will be always forced to the given value."
 msgstr ""
+"Az ablaktulajdonság mindig a megadott értékre lesz beállítva kényszerítetten."
 
 #: optionsmodel.cpp:172
 #, kde-format
@@ -197,11 +209,13 @@ msgid ""
 "The window property will be forced to the given value until it is hidden\n"
 "(this action will be deleted after the window is hidden)."
 msgstr ""
+"Az ablaktulajdonság a megadott értékre lesz kényszerítve, amíg nem rejtik\n"
+"(a művelet az ablak rejtése után törlésre kerül)."
 
 #: package/contents/ui/FileDialogLoader.qml:14
 #, kde-format
 msgid "Select File"
-msgstr ""
+msgstr "Fájl kiválasztása"
 
 #: package/contents/ui/FileDialogLoader.qml:26
 #, kde-format
@@ -211,25 +225,24 @@ msgstr "KWin szabályok (*.kwinrule)"
 #: package/contents/ui/OptionsComboBox.qml:35
 #, kde-format
 msgid "None selected"
-msgstr ""
+msgstr "Nincs kijelölés"
 
 #: package/contents/ui/OptionsComboBox.qml:41
 #, kde-format
 msgid "All selected"
-msgstr ""
+msgstr "Összes kijelölve"
 
 #: package/contents/ui/OptionsComboBox.qml:43
 #, kde-format
 msgid "%1 selected"
 msgid_plural "%1 selected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 kijelölve"
+msgstr[1] "%1 kijelölve"
 
 #: package/contents/ui/RulesEditor.qml:63
-#, fuzzy, kde-format
-#| msgid "&Detect Window Properties"
+#, kde-format
 msgid "No window properties changed"
-msgstr "Ablaktulaj&donságok felismerése"
+msgstr "Nem változtak ablaktulajdonságok"
 
 #: package/contents/ui/RulesEditor.qml:64
 #, kde-kuit-format
@@ -238,48 +251,47 @@ msgid ""
 "Click the <interface>Add Property...</interface> button below to add some "
 "window properties that will be affected by the rule"
 msgstr ""
+"Kattintson a <interface>Tulajdonság hozzáadása…</interface> gombra a szabály "
+"által érintett ablaktulajdonságok hozzáadásához"
 
 #: package/contents/ui/RulesEditor.qml:85
-#, fuzzy, kde-format
-#| msgid "&Closeable"
+#, kde-format
 msgid "Close"
-msgstr "&Bezárható"
+msgstr "Bezárás"
 
 #: package/contents/ui/RulesEditor.qml:85
-#, fuzzy, kde-format
-#| msgid "&New..."
+#, kde-format
 msgid "Add Property..."
-msgstr "Ú&j…"
+msgstr "Tulajdonság hozzáadása…"
 
 #: package/contents/ui/RulesEditor.qml:98
-#, fuzzy, kde-format
-#| msgid "&Detect Window Properties"
+#, kde-format
 msgid "Detect Window Properties"
-msgstr "Ablaktulaj&donságok felismerése"
+msgstr "Ablaktulajdonságok felismerése"
 
 #: package/contents/ui/RulesEditor.qml:114
 #: package/contents/ui/RulesEditor.qml:121
 #, kde-format
 msgid "Instantly"
-msgstr ""
+msgstr "Azonnal"
 
 #: package/contents/ui/RulesEditor.qml:115
 #: package/contents/ui/RulesEditor.qml:126
 #, kde-format
 msgid "After %1 second"
 msgid_plural "After %1 seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 másodperc után"
+msgstr[1] "%1 másodperc után"
 
 #: package/contents/ui/RulesEditor.qml:147
 #, kde-format
 msgid "Error"
-msgstr ""
+msgstr "Hiba"
 
 #: package/contents/ui/RulesEditor.qml:162
 #, kde-format
 msgid "Add property to the rule"
-msgstr ""
+msgstr "Tulajdonság hozzáadása a szabályhoz"
 
 #: package/contents/ui/RulesEditor.qml:257
 #: package/contents/ui/ValueEditor.qml:54
@@ -298,74 +310,72 @@ msgstr "Nem"
 #: package/contents/ui/ValueEditor.qml:179
 #, kde-format
 msgid "%1 %"
-msgstr ""
+msgstr "%1 %"
 
 #: package/contents/ui/RulesEditor.qml:261
 #, kde-format
 msgctxt "Coordinates (x, y)"
 msgid "(%1, %2)"
-msgstr ""
+msgstr "(%1, %2)"
 
 #: package/contents/ui/RulesEditor.qml:263
 #, kde-format
 msgctxt "Size (width, height)"
 msgid "(%1, %2)"
-msgstr ""
+msgstr "(%1, %2)"
 
 #: package/contents/ui/RulesList.qml:61
 #, kde-format
 msgid "No rules for specific windows are currently set"
-msgstr ""
+msgstr "Nincsenek megadva szabályok adott ablakokhoz"
 
 #: package/contents/ui/RulesList.qml:62
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Click the <interface>Add New...</interface> button below to add some"
 msgstr ""
+"Kattintson az <interface>Új hozzáadása…</interface> gombhoz szabályok "
+"hozzáadásához"
 
 #: package/contents/ui/RulesList.qml:70
 #, kde-format
 msgid "Select the rules to export"
-msgstr ""
+msgstr "Exportálandó szabályok kiválasztása"
 
 #: package/contents/ui/RulesList.qml:74
 #, kde-format
 msgid "Unselect All"
-msgstr ""
+msgstr "Kijelölés megszüntetése"
 
 #: package/contents/ui/RulesList.qml:74
 #, kde-format
 msgid "Select All"
-msgstr ""
+msgstr "Összes kijelölése"
 
 #: package/contents/ui/RulesList.qml:88
 #, kde-format
 msgid "Save Rules"
-msgstr ""
+msgstr "Szabályok mentése"
 
 #: package/contents/ui/RulesList.qml:99
-#, fuzzy, kde-format
-#| msgid "&New..."
+#, kde-format
 msgid "Add New..."
-msgstr "Ú&j…"
+msgstr "Új hozzáadása…"
 
 #: package/contents/ui/RulesList.qml:110
-#, fuzzy, kde-format
-#| msgid "&Import"
+#, kde-format
 msgid "Import..."
-msgstr "&Importálás"
+msgstr "Importálás…"
 
 #: package/contents/ui/RulesList.qml:118
-#, fuzzy, kde-format
-#| msgid "&Export"
+#, kde-format
 msgid "Cancel Export"
-msgstr "&Exportálás"
+msgstr "Exportálás megszakítása"
 
 #: package/contents/ui/RulesList.qml:118
-#, fuzzy, kde-format
-#| msgid "&Export"
+#, kde-format
 msgid "Export..."
-msgstr "&Exportálás"
+msgstr "Exportálás…"
 
 #: package/contents/ui/RulesList.qml:199
 #, kde-format
@@ -375,7 +385,7 @@ msgstr "Szerkesztés"
 #: package/contents/ui/RulesList.qml:208
 #, kde-format
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplikálás"
 
 #: package/contents/ui/RulesList.qml:217
 #, kde-format
@@ -396,7 +406,7 @@ msgstr "Szabályok exportálása"
 #, kde-format
 msgctxt "(x, y) coordinates separator in size/position"
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #: rulesmodel.cpp:222
 #, kde-format
@@ -404,10 +414,9 @@ msgid "Settings for %1"
 msgstr "%1 beállításai"
 
 #: rulesmodel.cpp:225
-#, fuzzy, kde-format
-#| msgid "Window settings for %1"
+#, kde-format
 msgid "New window settings"
-msgstr "%1 ablakbeállításai"
+msgstr "Új ablakbeállítások"
 
 #: rulesmodel.cpp:241
 #, kde-format
@@ -430,112 +439,98 @@ msgid ""
 "initial settings for size and position. To enforce these settings, also "
 "force the property \"%1\" to \"Yes\"."
 msgstr ""
+"Néhány alkalmazás saját maga állítja be a tulajdonságait indulás után, "
+"felülírva az Ön méretre és pozícióra vonatkozó beállításait. Ezen "
+"beállítások kényszerítéséhez állítsa a(z) „%1” tulajdonságo is „Igen”-re."
 
 #: rulesmodel.cpp:363
-#, fuzzy, kde-format
-#| msgid "&Description:"
+#, kde-format
 msgid "Description"
-msgstr "&Leírás:"
+msgstr "Leírás"
 
 #: rulesmodel.cpp:363 rulesmodel.cpp:371 rulesmodel.cpp:379 rulesmodel.cpp:386
 #: rulesmodel.cpp:392 rulesmodel.cpp:400 rulesmodel.cpp:405 rulesmodel.cpp:411
-#, fuzzy, kde-format
-#| msgid "&Window matching"
+#, kde-format
 msgid "Window matching"
-msgstr "&Ablakilleszkedés"
+msgstr "Ablakilleszkedés"
 
 #: rulesmodel.cpp:371
-#, fuzzy, kde-format
-#| msgid "Window &class (application):"
+#, kde-format
 msgid "Window class (application)"
-msgstr "Abla&kosztály (alkalmazás):"
+msgstr "Ablakosztály (alkalmazás)"
 
 #: rulesmodel.cpp:379
-#, fuzzy, kde-format
-#| msgid "Match w&hole window class"
+#, kde-format
 msgid "Match whole window class"
-msgstr "Tel&jes ablakosztály illesztése"
+msgstr "Teljes ablakosztály illesztése"
 
 #: rulesmodel.cpp:386
-#, fuzzy, kde-format
-#| msgid "Match w&hole window class"
+#, kde-format
 msgid "Whole window class"
-msgstr "Tel&jes ablakosztály illesztése"
+msgstr "Teljes ablakosztály illesztése"
 
 #: rulesmodel.cpp:392
-#, fuzzy, kde-format
-#| msgid "Window &types:"
+#, kde-format
 msgid "Window types"
-msgstr "Ablaktí&pusok:"
+msgstr "Ablaktípusok"
 
 #: rulesmodel.cpp:400
-#, fuzzy, kde-format
-#| msgid "Window ro&le:"
+#, kde-format
 msgid "Window role"
-msgstr "Ablaksze&rep:"
+msgstr "Ablakszerep"
 
 #: rulesmodel.cpp:405
-#, fuzzy, kde-format
-#| msgid "Window t&itle:"
+#, kde-format
 msgid "Window title"
-msgstr "Ablak&cím:"
+msgstr "Ablakcím"
 
 #: rulesmodel.cpp:411
-#, fuzzy, kde-format
-#| msgid "&Machine (hostname):"
+#, kde-format
 msgid "Machine (hostname)"
-msgstr "&Gépnév:"
+msgstr "Számítógép (gépnév)"
 
 #: rulesmodel.cpp:417
-#, fuzzy, kde-format
-#| msgid "&Position"
+#, kde-format
 msgid "Position"
-msgstr "&Elhelyezkedés"
+msgstr "Elhelyezkedés"
 
 #: rulesmodel.cpp:417 rulesmodel.cpp:423 rulesmodel.cpp:429 rulesmodel.cpp:434
 #: rulesmodel.cpp:442 rulesmodel.cpp:448 rulesmodel.cpp:464 rulesmodel.cpp:478
 #: rulesmodel.cpp:483 rulesmodel.cpp:488 rulesmodel.cpp:493 rulesmodel.cpp:498
 #: rulesmodel.cpp:505 rulesmodel.cpp:515 rulesmodel.cpp:520 rulesmodel.cpp:525
-#, fuzzy, kde-format
-#| msgid "&Size && Position"
+#, kde-format
 msgid "Size & Position"
-msgstr "&Méret és elhelyezkedés"
+msgstr "Méret és elhelyezkedés"
 
 #: rulesmodel.cpp:423
-#, fuzzy, kde-format
-#| msgid "&Size"
+#, kde-format
 msgid "Size"
-msgstr "Mé&ret"
+msgstr "Méret"
 
 #: rulesmodel.cpp:429
-#, fuzzy, kde-format
-#| msgid "Maximized &horizontally"
+#, kde-format
 msgid "Maximized horizontally"
-msgstr "Maximalizálva &vízszintesen"
+msgstr "Maximalizálva vízszintesen"
 
 #: rulesmodel.cpp:434
-#, fuzzy, kde-format
-#| msgid "Maximized &vertically"
+#, kde-format
 msgid "Maximized vertically"
-msgstr "Ma&ximalizálva függőlegesen"
+msgstr "Maximalizálva függőlegesen"
 
 #: rulesmodel.cpp:442
-#, fuzzy, kde-format
-#| msgid "All Desktops"
+#, kde-format
 msgid "Virtual Desktop"
-msgstr "Összes asztalra"
+msgstr "Virtuális asztal"
 
 #: rulesmodel.cpp:448
-#, fuzzy, kde-format
-#| msgid "All Desktops"
+#, kde-format
 msgid "Virtual Desktops"
-msgstr "Összes asztalra"
+msgstr "Virtuális asztalok"
 
 #: rulesmodel.cpp:464
-#, fuzzy, kde-format
-#| msgid "All Activities"
+#, kde-format
 msgid "Activities"
-msgstr "Összes aktivitásra"
+msgstr "Aktivitások"
 
 #: rulesmodel.cpp:478
 #, kde-format
@@ -543,34 +538,29 @@ msgid "Screen"
 msgstr "Képernyő"
 
 #: rulesmodel.cpp:483
-#, fuzzy, kde-format
-#| msgid "&Fullscreen"
+#, kde-format
 msgid "Fullscreen"
-msgstr "&Teljes képernyő"
+msgstr "Teljes képernyő"
 
 #: rulesmodel.cpp:488
-#, fuzzy, kde-format
-#| msgid "M&inimized"
+#, kde-format
 msgid "Minimized"
-msgstr "M&inimalizálva"
+msgstr "Minimalizálva"
 
 #: rulesmodel.cpp:493
-#, fuzzy, kde-format
-#| msgid "Sh&aded"
+#, kde-format
 msgid "Shaded"
-msgstr "&Felgördítve"
+msgstr "Felgördítve"
 
 #: rulesmodel.cpp:498
-#, fuzzy, kde-format
-#| msgid "Initial p&lacement"
+#, kde-format
 msgid "Initial placement"
-msgstr "Kezdeti e&lhelyezés"
+msgstr "Kezdeti elhelyezés"
 
 #: rulesmodel.cpp:505
-#, fuzzy, kde-format
-#| msgid "Ignore requested &geometry"
+#, kde-format
 msgid "Ignore requested geometry"
-msgstr "A kért méret és elhelyezkedés figyelmen kívül ha&gyása"
+msgstr "A kért méret és elhelyezkedés figyelmen kívül hagyása"
 
 #: rulesmodel.cpp:507
 #, kde-format
@@ -586,16 +576,14 @@ msgstr ""
 "ablakokat jelenít meg a képernyő közepén."
 
 #: rulesmodel.cpp:515
-#, fuzzy, kde-format
-#| msgid "M&inimum size"
+#, kde-format
 msgid "Minimum Size"
-msgstr "M&inimális méret"
+msgstr "Minimális méret"
 
 #: rulesmodel.cpp:520
-#, fuzzy, kde-format
-#| msgid "M&aximum size"
+#, kde-format
 msgid "Maximum Size"
-msgstr "Ma&ximális méret"
+msgstr "Maximális méret"
 
 #: rulesmodel.cpp:525
 #, kde-format
@@ -620,25 +608,23 @@ msgstr ""
 #: rulesmodel.cpp:536
 #, kde-format
 msgid "Keep above other windows"
-msgstr ""
+msgstr "Maradjon más ablakok fölött"
 
 #: rulesmodel.cpp:536 rulesmodel.cpp:541 rulesmodel.cpp:546 rulesmodel.cpp:552
 #: rulesmodel.cpp:558 rulesmodel.cpp:564
-#, fuzzy, kde-format
-#| msgid "&Arrangement && Access"
+#, kde-format
 msgid "Arrangement & Access"
-msgstr "Ig&azítás és elérés"
+msgstr "Igazítás és elérés"
 
 #: rulesmodel.cpp:541
 #, kde-format
 msgid "Keep below other windows"
-msgstr ""
+msgstr "Maradjon más ablakok alatt"
 
 #: rulesmodel.cpp:546
-#, fuzzy, kde-format
-#| msgid "Skip &taskbar"
+#, kde-format
 msgid "Skip taskbar"
-msgstr "Kihagyás a &feladatlistából"
+msgstr "Kihagyás a feladatlistából"
 
 #: rulesmodel.cpp:548
 #, kde-format
@@ -646,10 +632,9 @@ msgid "Window shall (not) appear in the taskbar."
 msgstr "Az ablak (ne) jelenjen meg a feladatlistában."
 
 #: rulesmodel.cpp:552
-#, fuzzy, kde-format
-#| msgid "Skip pa&ger"
+#, kde-format
 msgid "Skip pager"
-msgstr "&Kihagyás a lapozóból"
+msgstr "Kihagyás a lapozóból"
 
 #: rulesmodel.cpp:554
 #, kde-format
@@ -657,10 +642,9 @@ msgid "Window shall (not) appear in the manager for virtual desktops"
 msgstr "Az ablak (ne) jelenjen meg a virtuális asztalok kezelőjében"
 
 #: rulesmodel.cpp:558
-#, fuzzy, kde-format
-#| msgid "Skip &switcher"
+#, kde-format
 msgid "Skip switcher"
-msgstr "Kihagyá&s az ablakváltóból"
+msgstr "Kihagyás az ablakváltóból"
 
 #: rulesmodel.cpp:560
 #, kde-format
@@ -673,42 +657,36 @@ msgid "Shortcut"
 msgstr "Gyorsbillentyű"
 
 #: rulesmodel.cpp:570
-#, fuzzy, kde-format
-#| msgid "&No titlebar and frame"
+#, kde-format
 msgid "No titlebar and frame"
-msgstr "&Nincs címsor és keret"
+msgstr "Nincs címsor és keret"
 
 #: rulesmodel.cpp:570 rulesmodel.cpp:575 rulesmodel.cpp:581 rulesmodel.cpp:586
 #: rulesmodel.cpp:591 rulesmodel.cpp:602 rulesmodel.cpp:613 rulesmodel.cpp:621
 #: rulesmodel.cpp:634 rulesmodel.cpp:639 rulesmodel.cpp:645 rulesmodel.cpp:650
-#, fuzzy, kde-format
-#| msgid "Appearance && &Fixes"
+#, kde-format
 msgid "Appearance & Fixes"
 msgstr "Megjelenés és javítás"
 
 #: rulesmodel.cpp:575
-#, fuzzy, kde-format
-#| msgid "Titlebar color &scheme"
+#, kde-format
 msgid "Titlebar color scheme"
-msgstr "&Címsor színséma"
+msgstr "Címsor színséma"
 
 #: rulesmodel.cpp:581
-#, fuzzy, kde-format
-#| msgid "A&ctive opacity"
+#, kde-format
 msgid "Active opacity"
-msgstr "A&ktív átlátszatlanság"
+msgstr "Aktív átlátszatlanság"
 
 #: rulesmodel.cpp:586
-#, fuzzy, kde-format
-#| msgid "I&nactive opacity"
+#, kde-format
 msgid "Inactive opacity"
-msgstr "I&naktív átlátszatlanság"
+msgstr "Inaktív átlátszatlanság"
 
 #: rulesmodel.cpp:591
-#, fuzzy, kde-format
-#| msgid "&Focus stealing prevention"
+#, kde-format
 msgid "Focus stealing prevention"
-msgstr "A fókuszel&vétel megakadályozása"
+msgstr "Fókuszelvétel megakadályozása"
 
 #: rulesmodel.cpp:593
 #, kde-format
@@ -747,10 +725,9 @@ msgstr ""
 "fókuszvédelemmel."
 
 #: rulesmodel.cpp:613
-#, fuzzy, kde-format
-#| msgid "Accept &focus"
+#, kde-format
 msgid "Accept focus"
-msgstr "&Fókusz elfogadása"
+msgstr "Fókusz elfogadása"
 
 #: rulesmodel.cpp:615
 #, kde-format
@@ -790,16 +767,14 @@ msgstr ""
 "(például Alt+F2 a KRunner megjelenítéséhez)!"
 
 #: rulesmodel.cpp:634
-#, fuzzy, kde-format
-#| msgid "&Closeable"
+#, kde-format
 msgid "Closeable"
-msgstr "&Bezárható"
+msgstr "Bezárható"
 
 #: rulesmodel.cpp:639
-#, fuzzy, kde-format
-#| msgid "Window &type"
+#, kde-format
 msgid "Set window type"
-msgstr "Ablak&típus"
+msgstr "Ablaktípus beállítása"
 
 #: rulesmodel.cpp:645
 #, kde-format
@@ -860,7 +835,7 @@ msgstr "Önálló menüsor"
 #: rulesmodel.cpp:738
 #, kde-format
 msgid "On Screen Display"
-msgstr ""
+msgstr "Képernyőkijelzés"
 
 #: rulesmodel.cpp:745
 #, kde-format
@@ -923,9 +898,7 @@ msgid "On Main Window"
 msgstr "A főablakra"
 
 #: rulesmodel.cpp:802
-#, fuzzy, kde-format
-#| msgctxt "no focus stealing prevention"
-#| msgid "None"
+#, kde-format
 msgid "None"
 msgstr "Nincs"
 
@@ -953,3 +926,5 @@ msgstr "Rendkívüli"
 #, kde-format
 msgid "Could not detect window properties. The window is not managed by KWin."
 msgstr ""
+"Nem sikerült felismerni az ablaktulajdonságokat. Az ablakot nem a KWin "
+"kezeli."

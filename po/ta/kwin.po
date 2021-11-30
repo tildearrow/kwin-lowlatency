@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-09 01:47+0000\n"
-"PO-Revision-Date: 2021-09-23 21:43+0530\n"
+"PO-Revision-Date: 2021-11-16 19:58+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 21.11.80\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -48,6 +48,8 @@ msgid ""
 "Desktop effects have been suspended by another application.<br/>You can "
 "resume using the '%1' shortcut."
 msgstr ""
+"பணிமேடை அசைவூட்டங்கள் இன்னொரு செயலியால் முடக்கப்பட்டுள்ளன.<br/> '%1' என்ற சுருக்குவழியை "
+"கொண்டு அவற்றை மறுபடியும் இயக்கலாம்."
 
 #: debug_console.cpp:79
 #, kde-format
@@ -254,7 +256,7 @@ msgstr "மாற்றம் (வேகவளர்ச்சி இல்லா
 #, kde-format
 msgctxt "The global mouse pointer position"
 msgid "Global Position"
-msgstr ""
+msgstr "முழுதளாவிய இருப்பிடம்"
 
 #: debug_console.cpp:207
 #, kde-format
@@ -278,13 +280,13 @@ msgstr "பட்டனின் குறி"
 #, kde-format
 msgctxt "All currently pressed buttons in a mouse press/release event"
 msgid "Pressed Buttons"
-msgstr ""
+msgstr "அழுத்தியுள்ள பட்டன்கள்"
 
 #: debug_console.cpp:215
 #, kde-format
 msgctxt "A mouse pointer button release event"
 msgid "Pointer Button Release"
-msgstr ""
+msgstr "அழுத்தப்பட்ட சுட்டி பட்டனை விடப்பட்டது"
 
 #: debug_console.cpp:235
 #, kde-format
@@ -296,19 +298,19 @@ msgstr ""
 #, kde-format
 msgctxt "The orientation of a pointer axis event"
 msgid "Orientation"
-msgstr ""
+msgstr "நோக்குநிலை"
 
 #: debug_console.cpp:240
 #, kde-format
 msgctxt "An orientation of a pointer axis event"
 msgid "Horizontal"
-msgstr ""
+msgstr "கிடைமட்டம்"
 
 #: debug_console.cpp:241
 #, kde-format
 msgctxt "An orientation of a pointer axis event"
 msgid "Vertical"
-msgstr ""
+msgstr "நெடுக்கு"
 
 #: debug_console.cpp:242
 #, kde-format
@@ -320,13 +322,13 @@ msgstr ""
 #, kde-format
 msgctxt "A key press event"
 msgid "Key Press"
-msgstr ""
+msgstr "விசை அழுத்தப்பட்டது"
 
 #: debug_console.cpp:260
 #, kde-format
 msgctxt "A key release event"
 msgid "Key Release"
-msgstr ""
+msgstr "அழுத்தப்பட்ட விசை விடப்பட்டது"
 
 #: debug_console.cpp:269
 #, kde-format
@@ -891,19 +893,19 @@ msgstr ""
 #: debug_console.ui:69
 #, kde-format
 msgid "Input Events"
-msgstr ""
+msgstr "உள்ளீடு நிகழ்வுகள்"
 
 #. i18n: ectx: attribute (title), widget (QWidget, inputDevices)
 #: debug_console.ui:86
 #, kde-format
 msgid "Input Devices"
-msgstr ""
+msgstr "உள்ளீடு கருவிகள்"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: debug_console.ui:96
 #, kde-format
 msgid "OpenGL"
-msgstr ""
+msgstr "OpenGL"
 
 #. i18n: ectx: property (text), widget (QLabel, noOpenGLLabel)
 #: debug_console.ui:102
@@ -933,7 +935,7 @@ msgstr ""
 #: debug_console.ui:150
 #, kde-format
 msgid "Version:"
-msgstr ""
+msgstr "பதிப்பு:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: debug_console.ui:157
@@ -945,7 +947,7 @@ msgstr ""
 #: debug_console.ui:164
 #, kde-format
 msgid "Driver:"
-msgstr ""
+msgstr "இயக்கி:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: debug_console.ui:171
@@ -981,7 +983,7 @@ msgstr ""
 #: debug_console.ui:288
 #, kde-format
 msgid "Keyboard"
-msgstr ""
+msgstr "விசைப்பலகை"
 
 #. i18n: ectx: property (title), widget (QGroupBox, layoutBox)
 #: debug_console.ui:315
@@ -991,16 +993,15 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: debug_console.ui:337
-#, fuzzy, kde-format
-#| msgid "Configur&e Window Behavior..."
+#, kde-format
 msgid "Current Layout:"
-msgstr "சாளர நடத்தையை வடிவமை..."
+msgstr "தற்போதைய தளவமைப்பு:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, activeModifiersBox)
 #: debug_console.ui:372
 #, kde-format
 msgid "Active Modifiers"
-msgstr ""
+msgstr "செயலிலுள்ள மாற்றிகள்"
 
 #. i18n: ectx: property (title), widget (QGroupBox, ledsBox)
 #: debug_console.ui:388
@@ -1025,7 +1026,7 @@ msgstr ""
 #: debug_console.ui:479
 #, kde-format
 msgid "Primary Selection"
-msgstr ""
+msgstr "முதன்மையான தேர்வு"
 
 #: helpers/killer/killer.cpp:30
 #, kde-format
@@ -1055,7 +1056,7 @@ msgstr ""
 #: helpers/killer/killer.cpp:39
 #, kde-format
 msgid "Caption of the window to be terminated"
-msgstr ""
+msgstr "நிறுத்த வேண்டிய சாளரத்தின் தலைப்பு"
 
 #: helpers/killer/killer.cpp:39
 #, kde-format
@@ -1180,9 +1181,9 @@ msgid "KWin"
 msgstr "கேவின்"
 
 #: main.cpp:204
-#, fuzzy, kde-format
+#, kde-format
 msgid "(c) 1999-2019, The KDE Developers"
-msgstr "(c) 1999-2001, KDE  உருவாக்கிகள் "
+msgstr "(c) 1999-2001, கே.டீ.யீ. நிரலாளர்கள்"
 
 #: main.cpp:206
 #, kde-format
@@ -1232,12 +1233,12 @@ msgstr "விருப்பத்தேர்வுகளை முடக்�
 #: main.cpp:223
 #, kde-format
 msgid "Indicate that KWin has recently crashed n times"
-msgstr ""
+msgstr "சமீபத்தில் கேவின் n முறை முறிவடைந்துள்ளதென்பதை குறிக்கும்"
 
 #: main_wayland.cpp:427
 #, kde-format
 msgid "Start a rootless Xwayland server."
-msgstr ""
+msgstr "ரூட்டாக இயங்காத (rootless) Xwayland சேவையகத்தை துவக்கும்."
 
 #: main_wayland.cpp:429
 #, kde-format
@@ -1290,6 +1291,8 @@ msgstr ""
 msgid ""
 "The number of windows to open as outputs in windowed mode. Default value is 1"
 msgstr ""
+"சாளர பயன்முறையில் வெளியீடுகளாக திறக்க வேண்டிய சாளரங்களின் எண்ணிக்கை. இயல்பிருப்பு "
+"மதிப்பு 1 ஆகும்"
 
 #: main_wayland.cpp:463
 #, kde-format
@@ -1308,12 +1311,12 @@ msgstr ""
 #: main_wayland.cpp:471
 #, kde-format
 msgid "Name of the xwayland display that has been pre-set up"
-msgstr ""
+msgstr "ஏற்கனவே அமைக்கப்பட்டுள்ள xwayland திரையின் பெயர்"
 
 #: main_wayland.cpp:475
 #, kde-format
 msgid "Name of the xauthority file "
-msgstr ""
+msgstr "xauthority கோப்பின் பெயர்"
 
 #: main_wayland.cpp:479
 #, kde-format
@@ -1335,42 +1338,42 @@ msgstr ""
 #: main_wayland.cpp:521
 #, kde-format
 msgid "Input method that KWin starts."
-msgstr ""
+msgstr "கேவின் துவக்கும் உள்ளீட்டு முறை."
 
 #: main_wayland.cpp:526
 #, kde-format
 msgid "List all available backends and quit."
-msgstr ""
+msgstr "பயன்படுத்தக்கூடிய பின்நிலைகளை பட்டியலிட்டு வெளியேறும்."
 
 #: main_wayland.cpp:530
 #, kde-format
 msgid "Starts the session in locked mode."
-msgstr ""
+msgstr "அமர்வை பூட்டிய நிலையில் தொடங்கும்."
 
 #: main_wayland.cpp:534
 #, kde-format
 msgid "Starts the session without lock screen support."
-msgstr ""
+msgstr "திரையை பூட்டும் ஆதரவில்லாமல் அமர்வை துவக்கும்."
 
 #: main_wayland.cpp:538
 #, kde-format
 msgid "Starts the session without global shortcuts support."
-msgstr ""
+msgstr "பொது சுருக்குவழிகளுக்கான ஆதரவில்லாமல் அமர்வை துவக்கும்."
 
 #: main_wayland.cpp:543 main_x11.cpp:443
 #, kde-format
 msgid "Disable KActivities integration."
-msgstr ""
+msgstr "KActivities ஒருங்கிணைப்பை முடக்கு."
 
 #: main_wayland.cpp:548
 #, kde-format
 msgid "Exit after the session application, which is started by KWin, closed."
-msgstr ""
+msgstr "அமர்வு நிரல் (கேவின்னால் துவக்கப்படுவது) வெளியேறும்போது வெளியேறு."
 
 #: main_wayland.cpp:553
 #, kde-format
 msgid "Applications to start once Wayland and Xwayland server are started"
-msgstr ""
+msgstr "Wayland மற்றும் Xwayland சேவையகத்தை துவக்கிய பின் துவக்கப்பட வேண்டிய செயலிகள்"
 
 #: main_x11.cpp:65
 #, kde-format
@@ -1379,6 +1382,9 @@ msgid ""
 "It seems to have crashed several times in a row.\n"
 "You can select another window manager to run:"
 msgstr ""
+"கேவின் நிலையற்று உள்ளது.\n"
+"வரிசையாக பலமுறை முறிவடைந்துள்ளது.\n"
+"வேறொரு சாளர மேலாளியை நீங்கள் தேர்வு செய்யலாம்:"
 
 #: main_x11.cpp:225
 #, kde-format
@@ -1386,103 +1392,92 @@ msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
 "replace)\n"
 msgstr ""
-"kwin: மேலாளர் தேர்வை கோர இயலவில்லை,ம்ற்றொறு wm உபயோகத்தில் உள்ளதா?(try using --"
-"replace)\n"
+"கேவின்: சாளர மேலாளர் ஆக முடியவில்லை. இன்னொரு சாளர மேலாளி உபயோகத்தில் உள்ளதா? (--"
+"replace என்பதை பயன்படுத்தி பாருங்கள்)\n"
 
 #: main_x11.cpp:248
-#, fuzzy, kde-format
-#| msgid ""
-#| "kwin: unable to claim manager selection, another wm running? (try using --"
-#| "replace)\n"
+#, kde-format
 msgid "kwin: another window manager is running (try using --replace)\n"
 msgstr ""
-"kwin: மேலாளர் தேர்வை கோர இயலவில்லை,ம்ற்றொறு wm உபயோகத்தில் உள்ளதா?(try using --"
-"replace)\n"
+"கேவின்: இன்னொரு சாளர மேலாளர் இயங்குகிறது(--replace என்பதை பயன்படுத்தி பாருங்கள்)\n"
 
 #: main_x11.cpp:436
 #, kde-format
 msgid "Replace already-running ICCCM2.0-compliant window manager"
-msgstr "த்ற்போது செயல்படும் ICCCM2.0 புகார் சாளர மேளாளரை மாற்று"
+msgstr "ஏற்கனவே ஓடிக்கொண்டிருக்கும் ICCCM2.0 சாளர மேலாளருக்கு பதிலாக இயங்கும்"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:61
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:63
 #, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "activate"
-msgstr ""
+msgstr "செயல்படுத்து"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:64
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:66
 #, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "close"
-msgstr ""
+msgstr "மூடு"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:67
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:69
 #, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "min"
-msgstr ""
+msgstr "ஒதுக்கு"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:70
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:72
-#, fuzzy, kde-format
-#| msgid "Minimize"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "minimize"
-msgstr "சிறிதாக்கு"
+msgstr "ஒதுக்கு"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:73
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:75
 #, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "max"
-msgstr ""
+msgstr "முழு"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:76
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:78
-#, fuzzy, kde-format
-#| msgid "Maximize"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "maximize"
-msgstr "பெரிதாக்கு"
+msgstr "அதிகபட்ச பெரிதாக்கு"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:79
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:81
-#, fuzzy, kde-format
-#| msgid "&Fullscreen"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "fullscreen"
-msgstr "&முழுத்திரை"
+msgstr "முழுத்திரை"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:82
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:84
-#, fuzzy, kde-format
-#| msgid "Unshade"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "shade"
-msgstr "நிழலிடவேண்டாம்"
+msgstr "நிழலிடு"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:85
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:87
-#, fuzzy, kde-format
-#| msgid "Keep above others"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "keep above"
-msgstr "மற்றவைகளுக்கு மேலே வை"
+msgstr "மேலே வை"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:88
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:90
-#, fuzzy, kde-format
-#| msgid "Keep below others"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "keep below"
-msgstr "மற்றவைகளுக்கு கீழே வைக்கவும்"
+msgstr "கீழே வை"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:95
-#, fuzzy, kde-format
-#| msgid "Windows"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "window"
 msgstr "சாளரம்"
@@ -1491,21 +1486,20 @@ msgstr "சாளரம்"
 #, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "name"
-msgstr ""
+msgstr "பெயர்"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:107
 #, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "appname"
-msgstr ""
+msgstr "செயலி"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:109
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:162
-#, fuzzy, kde-format
-#| msgid "&All Desktops"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "desktop"
-msgstr "அனைத்து மேசைகள்"
+msgstr "பணிமேடை"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:267
 #, kde-format
@@ -1515,42 +1509,42 @@ msgstr "பணிமேடை %1-க்கு தாவு"
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:309
 #, kde-format
 msgid "Close running window on %1"
-msgstr "%1-இல் இயங்கும் சாளரத்தை மூடு"
+msgstr "%1-இலுள்ள சாளரத்தை மூடு"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:312
 #, kde-format
 msgid "(Un)minimize running window on %1"
-msgstr ""
+msgstr "%1-இலுள்ள சாளரத்தை ஒதுக்கு/காட்டு"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:315
 #, kde-format
 msgid "Maximize/restore running window on %1"
-msgstr ""
+msgstr "%1-இலுள்ள சாளரத்தை அதிகபட்ச பெரிதாக்கு / சிறிதாக்கு"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:318
 #, kde-format
 msgid "Toggle fullscreen for running window on %1"
-msgstr ""
+msgstr "%1-இலுள்ள சாளரத்திற்கான முழுத்திரை முறையை நிலைமாற்று"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:321
 #, kde-format
 msgid "(Un)shade running window on %1"
-msgstr ""
+msgstr "%1-இலுள்ள சாளரத்திற்கு நிழலிடு/நிழல்நீக்கு"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:324
 #, kde-format
 msgid "Toggle keep above for running window on %1"
-msgstr ""
+msgstr "%1-இலுள்ள சாளரத்தை மேலே வைப்பதை நிலைமாற்று"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:327
 #, kde-format
 msgid "Toggle keep below running window on %1"
-msgstr ""
+msgstr "%1-இலுள்ள சாளரத்தை கீழே வைப்பதை நிலைமாற்று"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:331
 #, kde-format
 msgid "Activate running window on %1"
-msgstr ""
+msgstr "%1-இலுள்ள சாளரத்தை செயல்படுத்து"
 
 #: plugins/nightcolor/nightcolormanager.cpp:62
 #, kde-format
@@ -1574,7 +1568,7 @@ msgstr "இரவு நிறமாற்றத்தை நிலைமாற�
 #: plugins/scenes/opengl/scene_opengl.cpp:269
 #, kde-format
 msgid "Desktop effects were restarted due to a graphics reset"
-msgstr ""
+msgstr "வரைகலை முறிவடைந்து மீட்டமைக்கப்பட்டதால் பணிமேடை அசைவூட்டங்கள் மீள்துவக்கப்பட்டன"
 
 #. i18n: ectx: label, entry (count), group (General)
 #: rulebooksettingsbase.kcfg:9
@@ -2125,13 +2119,13 @@ msgstr ""
 #, kde-format
 msgctxt "Error message"
 msgid "Plugin does not provide configuration file in expected location"
-msgstr ""
+msgstr "எதிர்பார்க்கப்பட்ட இடத்தில் செருகுநிரல் விருப்பத்தேர்வு கோப்பை வழங்கவில்லை"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, ShortcutDialog)
 #: shortcutdialog.ui:14
 #, kde-format
 msgid "Dialog"
-msgstr "சாளரம்"
+msgstr "சார் சாளரம்"
 
 #. i18n: ectx: property (text), widget (QToolButton, clearButton)
 #: shortcutdialog.ui:25
@@ -2211,6 +2205,8 @@ msgid ""
 "The Window Switcher installation is broken, resources are missing.\n"
 "Contact your distribution about this."
 msgstr ""
+"பணிமேடை மாற்றியின் நிறுவல் சரியாக இல்லை.\n"
+"உங்கள் இயக்குதள பராமரிப்பாளர்களை இது குறித்து அணுகுங்கள்."
 
 #: useractions.cpp:167
 #, kde-format
@@ -2524,52 +2520,44 @@ msgid "Pack Shrink Window Vertically"
 msgstr "சாளரத்தை செங்குத்தாக சுருக்கி திணி"
 
 #: useractions.cpp:1026
-#, fuzzy, kde-format
-#| msgid "Pack Window to the Left"
+#, kde-format
 msgid "Quick Tile Window to the Left"
-msgstr "சாளரத்தை இடதுபுறமாக்கு"
+msgstr "சாளரத்தை இடது பாதிக்கு பொருத்து"
 
 #: useractions.cpp:1028
-#, fuzzy, kde-format
-#| msgid "Pack Window to the Right"
+#, kde-format
 msgid "Quick Tile Window to the Right"
-msgstr "சாளரத்தை வலதுபுறமக்கு"
+msgstr "சாளரத்தை வலது பாதிக்கு பொருத்து"
 
 #: useractions.cpp:1030
-#, fuzzy, kde-format
-#| msgid "Pack Window to the Left"
+#, kde-format
 msgid "Quick Tile Window to the Top"
-msgstr "சாளரத்தை இடதுபுறமாக்கு"
+msgstr "சாளரத்தை மேல் பாதிக்கு பொருத்து"
 
 #: useractions.cpp:1032
-#, fuzzy, kde-format
-#| msgid "Pack Window to the Left"
+#, kde-format
 msgid "Quick Tile Window to the Bottom"
-msgstr "சாளரத்தை இடதுபுறமாக்கு"
+msgstr "சாளரத்தை கீழ் பாதிக்கு பொருத்து"
 
 #: useractions.cpp:1034
-#, fuzzy, kde-format
-#| msgid "Pack Window to the Left"
+#, kde-format
 msgid "Quick Tile Window to the Top Left"
-msgstr "சாளரத்தை இடதுபுறமாக்கு"
+msgstr "சாளரத்தை மேல்-இடது காற்பங்குக்கு பொருத்து"
 
 #: useractions.cpp:1036
-#, fuzzy, kde-format
-#| msgid "Pack Window to the Left"
+#, kde-format
 msgid "Quick Tile Window to the Bottom Left"
-msgstr "சாளரத்தை இடதுபுறமாக்கு"
+msgstr "சாளரத்தை கீழ்-இடது காற்பங்குக்கு பொருத்து"
 
 #: useractions.cpp:1038
-#, fuzzy, kde-format
-#| msgid "Pack Window to the Right"
+#, kde-format
 msgid "Quick Tile Window to the Top Right"
-msgstr "சாளரத்தை வலதுபுறமக்கு"
+msgstr "சாளரத்தை மேல்-வலது காற்பங்குக்கு பொருத்து"
 
 #: useractions.cpp:1040
-#, fuzzy, kde-format
-#| msgid "Pack Window to the Right"
+#, kde-format
 msgid "Quick Tile Window to the Bottom Right"
-msgstr "சாளரத்தை வலதுபுறமக்கு"
+msgstr "சாளரத்தை கீழ்-வலது காற்பங்குக்கு பொருத்து"
 
 #: useractions.cpp:1042
 #, kde-format
@@ -2703,6 +2691,8 @@ msgid ""
 "as active one.\n"
 "Therefore it is not possible to switch to a screen explicitly."
 msgstr ""
+"சுட்டிக்குறி உள்ள திரையையே செயலிலுள்ளதாக கருதுமாறு சாளர மேலாளர் அமைக்கப்பட்டுள்ளது.\n"
+"இதனால், சுட்டிக்குறியை கொண்டிராத திரைக்கு தாவ முடியாது."
 
 #: virtualdesktops.cpp:692 virtualdesktops.cpp:763
 #, kde-format
@@ -2758,3 +2748,12 @@ msgid ""
 "paste bin service\n"
 "like https://paste.kde.org instead of pasting into support threads.\n"
 msgstr ""
+"கேவின் ஆதரவு விவரங்கள்:\n"
+"https://forum.kde.org போன்ற இடங்களில் உதவி கோரும்போது இவ்விவரங்கள் குறிப்பிடப்பட "
+"வேண்டும்.\n"
+"தற்போது ஓடிக்கொண்டிருக்கும் பிரதி, பயன்படுத்தப்படும் விருப்பத்தேர்வுகள், OpenGL இயக்கி, "
+"மற்றும்\n"
+"ஓடிக்கொண்டிருக்கும் அசைவூட்டங்கள் போன்றவற்றின் விவரங்கள் இதில் அடங்கும்.\n"
+"உதவுவோருக்கு கீழுள்ள விவரங்களை அப்படியே வழங்குவதற்கு பதிலாக, https://paste.kde.org "
+"போன்ற\n"
+"ஒட்டுபலகை (pastebin) சேவையை பயன்படுத்தி ஒட்டியதற்கான இணைப்பை வழங்கலாம்.\n"

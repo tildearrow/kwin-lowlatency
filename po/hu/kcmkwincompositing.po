@@ -4,32 +4,26 @@
 # Tamas Szanto <tszanto@interware.hu>, 2007.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012, 2014, 2019.
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013, 2014.
-# Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017.
+# Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017, 2021.
+# Kristof Kiszel <ulysses@fsf.hu>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-09-07 00:20+0000\n"
-"PO-Revision-Date: 2019-11-30 20:24+0100\n"
-"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
+"PO-Revision-Date: 2021-11-19 11:58+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.03.70\n"
+"X-Generator: Lokalize 21.08.3\n"
 
 #. i18n: ectx: property (text), widget (KMessageWidget, glCrashedWarning)
 #: compositing.ui:31
-#, fuzzy, kde-format
-#| msgid ""
-#| "OpenGL compositing (the default) has crashed KWin in the past.\n"
-#| "This was most likely due to a driver bug.\n"
-#| "If you think that you have meanwhile upgraded to a stable driver,\n"
-#| "you can reset this protection but be aware that this might result in an "
-#| "immediate crash!\n"
-#| "Alternatively, you might want to use the XRender backend instead."
+#, kde-format
 msgid ""
 "OpenGL compositing (the default) has crashed KWin in the past.\n"
 "This was most likely due to a driver bug.\n"
@@ -40,8 +34,7 @@ msgstr ""
 "Az (alapértelmezett) OpenGL a KWin összeomlását okozta régebben.\n"
 "Ezt valószínűleg az illesztőprogram hibája okozta.\n"
 "Ha úgy gondolja, hogy időközben egy stabil illesztőprogramra frissített,\n"
-"eltávolíthatja ezt a védelmet, ez azonban azonnali összeomlást is okozhat!\n"
-"Alternatívaként használhatja az XRender modult is."
+"eltávolíthatja ezt a védelmet, ez azonban azonnali összeomlást is okozhat!"
 
 #. i18n: ectx: property (text), widget (KMessageWidget, scaleWarning)
 #: compositing.ui:44
@@ -60,9 +53,9 @@ msgid ""
 "Keeping the window thumbnail always interferes with the minimized state of "
 "windows. This can result in windows not suspending their work when minimized."
 msgstr ""
-"Az ablakok bélyegképének megtartása kölcsönhatásba léphet az ablak "
-"minimalizált állapotával. Ez okozhatja azt, hogy az ablak nem függeszti fel "
-"a működését minimalizált állapotban."
+"Az ablakok bélyegképének megtartása kölcsönhatásba lép az ablak minimalizált "
+"állapotával. Ez okozhatja azt, hogy az ablak nem függeszti fel a működését "
+"minimalizált állapotban."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Enabled)
 #: compositing.ui:79
@@ -189,38 +182,38 @@ msgstr "Az alkalmazások blokkolhatják a kompozitálást"
 #: compositing.ui:259
 #, kde-format
 msgid "Latency:"
-msgstr ""
+msgstr "Késleltetés:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
 #: compositing.ui:267
 #, kde-format
 msgid "Force lowest latency (may cause dropped frames)"
 msgstr ""
+"Legalacsonyabb késleltetés kényszerítése (képkockák eldobását okozhatja)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
 #: compositing.ui:272
 #, kde-format
 msgid "Prefer lower latency"
-msgstr ""
+msgstr "Alacsonyabb késleltetés előnyben"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
 #: compositing.ui:277
 #, kde-format
 msgid "Balance of latency and smoothness"
-msgstr ""
+msgstr "Egyensúly a késleltetés és a simaság között"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
 #: compositing.ui:282
 #, kde-format
 msgid "Prefer smoother animations"
-msgstr ""
+msgstr "Simább animációk előnyben"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LatencyPolicy)
 #: compositing.ui:287
-#, fuzzy, kde-format
-#| msgid "Various animations"
+#, kde-format
 msgid "Force smoothest animations"
-msgstr "Animációk"
+msgstr "Simább animációk kényszerítése"
 
 #: main.cpp:81
 #, kde-format

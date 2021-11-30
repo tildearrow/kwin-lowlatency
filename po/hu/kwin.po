@@ -2,20 +2,21 @@
 # Marcell Lengyel <miketkf@yahoo.com>, 1999.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012, 2014, 2019.
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013, 2014.
+# Kristof Kiszel <kiszel.kristof@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-09 01:47+0000\n"
-"PO-Revision-Date: 2019-12-09 00:31+0100\n"
-"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
+"PO-Revision-Date: 2021-11-23 11:37+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.03.70\n"
+"X-Generator: Lokalize 21.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -25,7 +26,7 @@ msgstr "Kiszel Kristóf,Lengyel Marcell,Szántó Tamás"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "ulysses@kubuntu.org,miketkf@yahoo.com,tszanto@interware.hu"
+msgstr "ulysses@fsf.hu,miketkf@yahoo.com,tszanto@interware.hu"
 
 #: abstract_client.cpp:2818
 #, kde-format
@@ -91,519 +92,515 @@ msgstr "Előre"
 #, kde-format
 msgctxt "A mouse button"
 msgid "Task"
-msgstr ""
+msgstr "Feladat"
 
 #: debug_console.cpp:103
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 4"
-msgstr ""
+msgstr "Extra gomb 4"
 
 #: debug_console.cpp:105
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 5"
-msgstr ""
+msgstr "Extra gomb 5"
 
 #: debug_console.cpp:107
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 6"
-msgstr ""
+msgstr "Extra gomb 6"
 
 #: debug_console.cpp:109
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 7"
-msgstr ""
+msgstr "Extra gomb 7"
 
 #: debug_console.cpp:111
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 8"
-msgstr ""
+msgstr "Extra gomb 8"
 
 #: debug_console.cpp:113
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 9"
-msgstr ""
+msgstr "Extra gomb 9"
 
 #: debug_console.cpp:115
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 10"
-msgstr ""
+msgstr "Extra gomb 10"
 
 #: debug_console.cpp:117
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 11"
-msgstr ""
+msgstr "Extra gomb 11"
 
 #: debug_console.cpp:119
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 12"
-msgstr ""
+msgstr "Extra gomb 12"
 
 #: debug_console.cpp:121
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 13"
-msgstr ""
+msgstr "Extra gomb 13"
 
 #: debug_console.cpp:123
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 14"
-msgstr ""
+msgstr "Extra gomb 14"
 
 #: debug_console.cpp:125
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 15"
-msgstr ""
+msgstr "Extra gomb 15"
 
 #: debug_console.cpp:127
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 16"
-msgstr ""
+msgstr "Extra gomb 16"
 
 #: debug_console.cpp:129
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 17"
-msgstr ""
+msgstr "Extra gomb 17"
 
 #: debug_console.cpp:131
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 18"
-msgstr ""
+msgstr "Extra gomb 18"
 
 #: debug_console.cpp:133
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 19"
-msgstr ""
+msgstr "Extra gomb 19"
 
 #: debug_console.cpp:135
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 20"
-msgstr ""
+msgstr "Extra gomb 20"
 
 #: debug_console.cpp:137
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 21"
-msgstr ""
+msgstr "Extra gomb 21"
 
 #: debug_console.cpp:139
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 22"
-msgstr ""
+msgstr "Extra gomb 22"
 
 #: debug_console.cpp:141
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 23"
-msgstr ""
+msgstr "Extra gomb 23"
 
 #: debug_console.cpp:143
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 24"
-msgstr ""
+msgstr "Extra gomb 24"
 
 #: debug_console.cpp:152 debug_console.cpp:154
 #, kde-format
 msgid "Input Device"
-msgstr ""
+msgstr "Beviteli eszköz"
 
 #: debug_console.cpp:152
 #, kde-format
 msgctxt "The input device of the event is not known"
 msgid "Unknown"
-msgstr ""
+msgstr "Ismeretlen"
 
 #: debug_console.cpp:189
 #, kde-format
 msgctxt "A mouse pointer motion event"
 msgid "Pointer Motion"
-msgstr ""
+msgstr "Mutató mozgás"
 
 #: debug_console.cpp:196
 #, kde-format
 msgctxt "The relative mouse movement"
 msgid "Delta"
-msgstr ""
+msgstr "Delta"
 
 #: debug_console.cpp:200
 #, kde-format
 msgctxt "The relative mouse movement"
 msgid "Delta (not accelerated)"
-msgstr ""
+msgstr "Delta (nem gyorsított)"
 
 #: debug_console.cpp:203
 #, kde-format
 msgctxt "The global mouse pointer position"
 msgid "Global Position"
-msgstr ""
+msgstr "Globális pozíció"
 
 #: debug_console.cpp:207
 #, kde-format
 msgctxt "A mouse pointer button press event"
 msgid "Pointer Button Press"
-msgstr ""
+msgstr "Mutatógomb nyomás"
 
 #: debug_console.cpp:210 debug_console.cpp:218
 #, kde-format
 msgctxt "A button in a mouse press/release event"
 msgid "Button"
-msgstr ""
+msgstr "Gomb"
 
 #: debug_console.cpp:211 debug_console.cpp:219
 #, kde-format
 msgctxt "A button in a mouse press/release event"
 msgid "Native Button code"
-msgstr ""
+msgstr "Natív gomb kódja"
 
 #: debug_console.cpp:212 debug_console.cpp:220
 #, kde-format
 msgctxt "All currently pressed buttons in a mouse press/release event"
 msgid "Pressed Buttons"
-msgstr ""
+msgstr "Megnyomott gombok"
 
 #: debug_console.cpp:215
 #, kde-format
 msgctxt "A mouse pointer button release event"
 msgid "Pointer Button Release"
-msgstr ""
+msgstr "Mutatógomb elengedés"
 
 #: debug_console.cpp:235
 #, kde-format
 msgctxt "A mouse pointer axis (wheel) event"
 msgid "Pointer Axis"
-msgstr ""
+msgstr "Mutatótengely"
 
 #: debug_console.cpp:239
 #, kde-format
 msgctxt "The orientation of a pointer axis event"
 msgid "Orientation"
-msgstr ""
+msgstr "Tájolás"
 
 #: debug_console.cpp:240
 #, kde-format
 msgctxt "An orientation of a pointer axis event"
 msgid "Horizontal"
-msgstr ""
+msgstr "Vízszintes"
 
 #: debug_console.cpp:241
 #, kde-format
 msgctxt "An orientation of a pointer axis event"
 msgid "Vertical"
-msgstr ""
+msgstr "Függőleges"
 
 #: debug_console.cpp:242
 #, kde-format
 msgctxt "The angle delta of a pointer axis event"
 msgid "Delta"
-msgstr ""
+msgstr "Delta"
 
 #: debug_console.cpp:257
 #, kde-format
 msgctxt "A key press event"
 msgid "Key Press"
-msgstr ""
+msgstr "Gomb lenyomása"
 
 #: debug_console.cpp:260
 #, kde-format
 msgctxt "A key release event"
 msgid "Key Release"
-msgstr ""
+msgstr "Gomb elengedése"
 
 #: debug_console.cpp:269
 #, kde-format
 msgctxt "A keyboard modifier"
 msgid "Shift"
-msgstr ""
+msgstr "Shift"
 
 #: debug_console.cpp:273
 #, kde-format
 msgctxt "A keyboard modifier"
 msgid "Control"
-msgstr ""
+msgstr "Control"
 
 #: debug_console.cpp:277
 #, kde-format
 msgctxt "A keyboard modifier"
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: debug_console.cpp:281
 #, kde-format
 msgctxt "A keyboard modifier"
 msgid "Meta"
-msgstr ""
+msgstr "Meta"
 
 #: debug_console.cpp:285
 #, kde-format
 msgctxt "A keyboard modifier"
 msgid "Keypad"
-msgstr ""
+msgstr "Számbillentyűzet"
 
 #: debug_console.cpp:289
 #, kde-format
 msgctxt "A keyboard modifier"
 msgid "Group-switch"
-msgstr ""
+msgstr "Csoportváltás"
 
 #: debug_console.cpp:295
 #, kde-format
 msgctxt "Whether the event is an automatic key repeat"
 msgid "Repeat"
-msgstr ""
+msgstr "Ismétlés"
 
 #: debug_console.cpp:299
 #, kde-format
 msgctxt "The code as read from the input device"
 msgid "Scan code"
-msgstr ""
+msgstr "Kódolvasás"
 
 #: debug_console.cpp:300
 #, kde-format
 msgctxt "Key according to Qt"
 msgid "Qt::Key code"
-msgstr ""
+msgstr "Qt::Key kód"
 
 #: debug_console.cpp:302
 #, kde-format
 msgctxt "The translated code to an Xkb symbol"
 msgid "Xkb symbol"
-msgstr ""
+msgstr "Xkb szimbólum"
 
 #: debug_console.cpp:303
 #, kde-format
 msgctxt "The translated code interpreted as text"
 msgid "Utf8"
-msgstr ""
+msgstr "Utf8"
 
 #: debug_console.cpp:304
 #, kde-format
 msgctxt "The currently active modifiers"
 msgid "Modifiers"
-msgstr ""
+msgstr "Módosítók"
 
 #: debug_console.cpp:316
 #, kde-format
 msgctxt "A touch down event"
 msgid "Touch down"
-msgstr ""
+msgstr "Érintés le"
 
 #: debug_console.cpp:318 debug_console.cpp:333 debug_console.cpp:348
 #, kde-format
 msgctxt "The id of the touch point in the touch event"
 msgid "Point identifier"
-msgstr ""
+msgstr "Pontazonosító"
 
 #: debug_console.cpp:319 debug_console.cpp:334
 #, kde-format
 msgctxt "The global position of the touch point"
 msgid "Global position"
-msgstr ""
+msgstr "Globális pozíció"
 
 #: debug_console.cpp:331
 #, kde-format
 msgctxt "A touch motion event"
 msgid "Touch Motion"
-msgstr ""
+msgstr "Érintőmozgás"
 
 #: debug_console.cpp:346
 #, kde-format
 msgctxt "A touch up event"
 msgid "Touch Up"
-msgstr ""
+msgstr "Érintés fel"
 
 #: debug_console.cpp:359
 #, kde-format
 msgctxt "A pinch gesture is started"
 msgid "Pinch start"
-msgstr ""
+msgstr "Csippentés indítása"
 
 #: debug_console.cpp:361
 #, kde-format
 msgctxt "Number of fingers in this pinch gesture"
 msgid "Finger count"
-msgstr ""
+msgstr "Ujjszám"
 
 #: debug_console.cpp:372
 #, kde-format
 msgctxt "A pinch gesture is updated"
 msgid "Pinch update"
-msgstr ""
+msgstr "Csippentés frissítése"
 
 #: debug_console.cpp:374
 #, kde-format
 msgctxt "Current scale in pinch gesture"
 msgid "Scale"
-msgstr ""
+msgstr "Skálázás"
 
 #: debug_console.cpp:375
 #, kde-format
 msgctxt "Current angle in pinch gesture"
 msgid "Angle delta"
-msgstr ""
+msgstr "Szögkülönbség"
 
 #: debug_console.cpp:376
 #, kde-format
 msgctxt "Current delta in pinch gesture"
 msgid "Delta x"
-msgstr ""
+msgstr "Delta x"
 
 #: debug_console.cpp:377
 #, kde-format
 msgctxt "Current delta in pinch gesture"
 msgid "Delta y"
-msgstr ""
+msgstr "Delta y"
 
 #: debug_console.cpp:388
 #, kde-format
 msgctxt "A pinch gesture ended"
 msgid "Pinch end"
-msgstr ""
+msgstr "Csippentés vége"
 
 #: debug_console.cpp:400
 #, kde-format
 msgctxt "A pinch gesture got cancelled"
 msgid "Pinch cancelled"
-msgstr ""
+msgstr "Csippentés megszakítva"
 
 #: debug_console.cpp:412
 #, kde-format
 msgctxt "A swipe gesture is started"
 msgid "Swipe start"
-msgstr ""
+msgstr "Húzás kezdése"
 
 #: debug_console.cpp:414
 #, kde-format
 msgctxt "Number of fingers in this swipe gesture"
 msgid "Finger count"
-msgstr ""
+msgstr "Ujjszám"
 
 #: debug_console.cpp:425
 #, kde-format
 msgctxt "A swipe gesture is updated"
 msgid "Swipe update"
-msgstr ""
+msgstr "Húzás frissítése"
 
 #: debug_console.cpp:427
 #, kde-format
 msgctxt "Current delta in swipe gesture"
 msgid "Delta x"
-msgstr ""
+msgstr "Delta x"
 
 #: debug_console.cpp:428
 #, kde-format
 msgctxt "Current delta in swipe gesture"
 msgid "Delta y"
-msgstr ""
+msgstr "Delta y"
 
 #: debug_console.cpp:439
 #, kde-format
 msgctxt "A swipe gesture ended"
 msgid "Swipe end"
-msgstr ""
+msgstr "Húzás vége"
 
 #: debug_console.cpp:451
 #, kde-format
 msgctxt "A swipe gesture got cancelled"
 msgid "Swipe cancelled"
-msgstr ""
+msgstr "Húzás megszakítva"
 
 #: debug_console.cpp:463
-#, fuzzy, kde-format
-#| msgid "Switch to Tab"
+#, kde-format
 msgctxt "A hardware switch (e.g. notebook lid) got toggled"
 msgid "Switch toggled"
-msgstr "Váltás erre a lapra:"
+msgstr "Kapcsoló váltva"
 
 #: debug_console.cpp:471
 #, kde-format
 msgctxt "Name of a hardware switch"
 msgid "Notebook lid"
-msgstr ""
+msgstr "Notebook fedél"
 
 #: debug_console.cpp:473
 #, kde-format
 msgctxt "Name of a hardware switch"
 msgid "Tablet mode"
-msgstr ""
+msgstr "Tablet mód"
 
 #: debug_console.cpp:475
-#, fuzzy, kde-format
-#| msgid "Switch to Tab"
+#, kde-format
 msgctxt "A hardware switch"
 msgid "Switch"
-msgstr "Váltás erre a lapra:"
+msgstr "Kapcsoló"
 
 #: debug_console.cpp:479
 #, kde-format
 msgctxt "The hardware switch got turned off"
 msgid "Off"
-msgstr ""
+msgstr "Ki"
 
 #: debug_console.cpp:482
 #, kde-format
 msgctxt "The hardware switch got turned on"
 msgid "On"
-msgstr ""
+msgstr "Be"
 
 #: debug_console.cpp:487
 #, kde-format
 msgctxt "State of a hardware switch (on/off)"
 msgid "State"
-msgstr ""
+msgstr "Állapot"
 
 #: debug_console.cpp:502
 #, kde-format
 msgid "Tablet Tool"
-msgstr ""
+msgstr "Tablet eszköz"
 
 #: debug_console.cpp:503
 #, kde-format
 msgid "EventType"
-msgstr ""
+msgstr "Eseménytípus"
 
 #: debug_console.cpp:504 debug_console.cpp:547 debug_console.cpp:560
 #, kde-format
 msgid "Position"
-msgstr ""
+msgstr "Pozíció"
 
 #: debug_console.cpp:506
 #, kde-format
 msgid "Tilt"
-msgstr ""
+msgstr "Döntés"
 
 #: debug_console.cpp:508
-#, fuzzy, kde-format
-#| msgid "caption"
+#, kde-format
 msgid "Rotation"
-msgstr "felirat"
+msgstr "Forgás"
 
 #: debug_console.cpp:509
 #, kde-format
 msgid "Pressure"
-msgstr ""
+msgstr "Nyomás"
 
 #: debug_console.cpp:510
-#, fuzzy, kde-format
-#| msgid "Mouse Emulation"
+#, kde-format
 msgid "Buttons"
-msgstr "Egéremuláció"
+msgstr "Gombok"
 
 #. i18n: ectx: property (title), widget (QGroupBox, modifiersBox)
 #: debug_console.cpp:511 debug_console.ui:356
@@ -614,266 +611,259 @@ msgstr "Módosítók"
 #: debug_console.cpp:520
 #, kde-format
 msgid "Tablet Tool Button"
-msgstr ""
+msgstr "Tablet eszközök gomb"
 
 #: debug_console.cpp:521 debug_console.cpp:534
-#, fuzzy, kde-format
-#| msgid "Mouse Emulation"
+#, kde-format
 msgid "Button"
-msgstr "Egéremuláció"
+msgstr "Gomb"
 
 #: debug_console.cpp:522 debug_console.cpp:535
-#, fuzzy, kde-format
-#| msgid "Mouse Emulation"
+#, kde-format
 msgid "Pressed"
-msgstr "Egéremuláció"
+msgstr "Lenyomva"
 
 #: debug_console.cpp:523 debug_console.cpp:536 debug_console.cpp:549
 #: debug_console.cpp:562
 #, kde-format
 msgid "Tablet"
-msgstr ""
+msgstr "Rajztábla"
 
 #: debug_console.cpp:533
 #, kde-format
 msgid "Tablet Pad Button"
-msgstr ""
+msgstr "Rajztábla gomb"
 
 #: debug_console.cpp:545
 #, kde-format
 msgid "Tablet Pad Strip"
-msgstr ""
+msgstr "Rajztábla csík"
 
 #: debug_console.cpp:546 debug_console.cpp:559
 #, kde-format
 msgid "Number"
-msgstr ""
+msgstr "Szám"
 
 #: debug_console.cpp:548 debug_console.cpp:561
 #, kde-format
 msgid "isFinger"
-msgstr ""
+msgstr "vanUjj"
 
 #: debug_console.cpp:558
 #, kde-format
 msgid "Tablet Pad Ring"
-msgstr ""
+msgstr "Rajztábla kör"
 
 #: debug_console.cpp:786
-#, fuzzy, kde-format
-#| msgid "Mouse Emulation"
+#, kde-format
 msgid "No Mouse Buttons"
-msgstr "Egéremuláció"
+msgstr "Nincsenek egérgombok"
 
 #: debug_console.cpp:790
 #, kde-format
 msgctxt "Mouse Button"
 msgid "left"
-msgstr ""
+msgstr "bal"
 
 #: debug_console.cpp:793
-#, fuzzy, kde-format
-#| msgid "Top-Right"
+#, kde-format
 msgctxt "Mouse Button"
 msgid "right"
-msgstr "Jobbról, felül"
+msgstr "Jobb"
 
 #: debug_console.cpp:796
 #, kde-format
 msgctxt "Mouse Button"
 msgid "middle"
-msgstr ""
+msgstr "középső"
 
 #: debug_console.cpp:799
 #, kde-format
 msgctxt "Mouse Button"
 msgid "back"
-msgstr ""
+msgstr "vissza"
 
 #: debug_console.cpp:802
 #, kde-format
 msgctxt "Mouse Button"
 msgid "forward"
-msgstr ""
+msgstr "előre"
 
 #: debug_console.cpp:805
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 1"
-msgstr ""
+msgstr "extra 1"
 
 #: debug_console.cpp:808
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 2"
-msgstr ""
+msgstr "extra 2"
 
 #: debug_console.cpp:811
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 3"
-msgstr ""
+msgstr "extra 3"
 
 #: debug_console.cpp:814
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 4"
-msgstr ""
+msgstr "extra 4"
 
 #: debug_console.cpp:817
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 5"
-msgstr ""
+msgstr "extra 5"
 
 #: debug_console.cpp:820
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 6"
-msgstr ""
+msgstr "extra 6"
 
 #: debug_console.cpp:823
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 7"
-msgstr ""
+msgstr "extra 7"
 
 #: debug_console.cpp:826
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 8"
-msgstr ""
+msgstr "extra 8"
 
 #: debug_console.cpp:829
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 9"
-msgstr ""
+msgstr "extra 9"
 
 #: debug_console.cpp:832
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 10"
-msgstr ""
+msgstr "extra 10"
 
 #: debug_console.cpp:835
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 11"
-msgstr ""
+msgstr "extra 11"
 
 #: debug_console.cpp:838
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 12"
-msgstr ""
+msgstr "extra 12"
 
 #: debug_console.cpp:841
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 13"
-msgstr ""
+msgstr "extra 13"
 
 #: debug_console.cpp:844
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 14"
-msgstr ""
+msgstr "extra 14"
 
 #: debug_console.cpp:847
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 15"
-msgstr ""
+msgstr "extra 15"
 
 #: debug_console.cpp:850
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 16"
-msgstr ""
+msgstr "extra 16"
 
 #: debug_console.cpp:853
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 17"
-msgstr ""
+msgstr "extra 17"
 
 #: debug_console.cpp:856
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 18"
-msgstr ""
+msgstr "extra 18"
 
 #: debug_console.cpp:859
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 19"
-msgstr ""
+msgstr "extra 19"
 
 #: debug_console.cpp:862
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 20"
-msgstr ""
+msgstr "extra 20"
 
 #: debug_console.cpp:865
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 21"
-msgstr ""
+msgstr "extra 21"
 
 #: debug_console.cpp:868
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 22"
-msgstr ""
+msgstr "extra 22"
 
 #: debug_console.cpp:871
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 23"
-msgstr ""
+msgstr "extra 23"
 
 #: debug_console.cpp:874
 #, kde-format
 msgctxt "Mouse Button"
 msgid "extra 24"
-msgstr ""
+msgstr "extra 24"
 
 #: debug_console.cpp:877
 #, kde-format
 msgctxt "Mouse Button"
 msgid "task"
-msgstr ""
+msgstr "feladat"
 
 #: debug_console.cpp:1223
-#, fuzzy, kde-format
-#| msgid "Close Window"
+#, kde-format
 msgid "X11 Client Windows"
-msgstr "Ablak bezárása"
+msgstr "X11 kliens ablakok"
 
 #: debug_console.cpp:1225
 #, kde-format
 msgid "X11 Unmanaged Windows"
-msgstr ""
+msgstr "Nem kezelt X11 ablakok"
 
 #: debug_console.cpp:1227
-#, fuzzy, kde-format
-#| msgid "Shade Window"
+#, kde-format
 msgid "Wayland Windows"
-msgstr "Ablak felgördítése"
+msgstr "Wayland ablakok"
 
 #: debug_console.cpp:1229
-#, fuzzy, kde-format
-#| msgid "Lower Window"
+#, kde-format
 msgid "Internal Windows"
-msgstr "Ablak hátraengedése"
+msgstr "Belső ablakok"
 
 #. i18n: ectx: property (text), widget (QPushButton, quitButton)
 #: debug_console.ui:32
 #, kde-format
 msgid "Quit Debug Console"
-msgstr ""
+msgstr "Kilépés a hibakereső konzolból"
 
 #. i18n: ectx: attribute (title), widget (QWidget, windows)
 #: debug_console.ui:45
@@ -885,49 +875,49 @@ msgstr "Ablakok"
 #: debug_console.ui:59
 #, kde-format
 msgid "Surfaces"
-msgstr ""
+msgstr "Felületek"
 
 #. i18n: ectx: attribute (title), widget (QWidget, input)
 #: debug_console.ui:69
 #, kde-format
 msgid "Input Events"
-msgstr ""
+msgstr "Beviteli események"
 
 #. i18n: ectx: attribute (title), widget (QWidget, inputDevices)
 #: debug_console.ui:86
 #, kde-format
 msgid "Input Devices"
-msgstr ""
+msgstr "Beviteli eszközök"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: debug_console.ui:96
 #, kde-format
 msgid "OpenGL"
-msgstr ""
+msgstr "OpenGL"
 
 #. i18n: ectx: property (text), widget (QLabel, noOpenGLLabel)
 #: debug_console.ui:102
 #, kde-format
 msgid "No OpenGL compositor running"
-msgstr ""
+msgstr "Nem fut OpenGL kompozitor"
 
 #. i18n: ectx: property (title), widget (QGroupBox, driverInfoBox)
 #: debug_console.ui:130
 #, kde-format
 msgid "OpenGL (ES) driver information"
-msgstr ""
+msgstr "OpenGL (ES) meghajtóinformációk"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: debug_console.ui:136
 #, kde-format
 msgid "Vendor:"
-msgstr ""
+msgstr "Gyártó:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: debug_console.ui:143
 #, kde-format
 msgid "Renderer:"
-msgstr ""
+msgstr "Leképező:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: debug_console.ui:150
@@ -939,7 +929,7 @@ msgstr "Verzió:"
 #: debug_console.ui:157
 #, kde-format
 msgid "Shading Language Version:"
-msgstr ""
+msgstr "Shading nyelv verzió:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: debug_console.ui:164
@@ -951,7 +941,7 @@ msgstr "Illesztőprogram:"
 #: debug_console.ui:171
 #, kde-format
 msgid "GPU class:"
-msgstr ""
+msgstr "GPU osztály:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: debug_console.ui:178
@@ -1018,13 +1008,13 @@ msgstr "Aktív LED-ek"
 #: debug_console.ui:425 debug_console.ui:439
 #, kde-format
 msgid "Clipboard"
-msgstr ""
+msgstr "Vágólap"
 
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget_2)
 #: debug_console.ui:479
 #, kde-format
 msgid "Primary Selection"
-msgstr ""
+msgstr "Elsődleges kijelölés"
 
 #: helpers/killer/killer.cpp:30
 #, kde-format
@@ -1108,11 +1098,7 @@ msgid "<b>Application \"%1\" is not responding</b>"
 msgstr "<b>A(z) „%1” alkalmazás nem válaszol</b>"
 
 #: helpers/killer/killer.cpp:83
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid ""
-#| "<para>You tried to close window \"%1\" from application \"%2\" (Process "
-#| "ID: %3) but the application is not responding.</para>"
+#, kde-kuit-format
 msgctxt "@info"
 msgid ""
 "<para>You tried to close window \"%1\" from application \"%2\" (Process ID: "
@@ -1122,12 +1108,7 @@ msgstr ""
 "(Folyamatazonosító: %3), de az alkalmazás nem válaszol.</para>"
 
 #: helpers/killer/killer.cpp:85
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid ""
-#| "<para>You tried to close window \"%1\" from application \"%2\" (Process "
-#| "ID: %3), running on host \"%4\", but the application is not responding.</"
-#| "para>"
+#, kde-kuit-format
 msgctxt "@info"
 msgid ""
 "<para>You tried to close window \"%1\" from application \"%2\" (Process ID: "
@@ -1138,12 +1119,7 @@ msgstr ""
 "válaszol.</para>"
 
 #: helpers/killer/killer.cpp:88
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid ""
-#| "<para>Do you want to terminate this application?</"
-#| "para><para><warning>Terminating the application will close all of its "
-#| "child windows. Any unsaved data will be lost.</warning></para>"
+#, kde-kuit-format
 msgctxt "@info"
 msgid ""
 "<para>Do you want to terminate this application?</"
@@ -1167,13 +1143,12 @@ msgstr "Várakozás tovább"
 #: input.cpp:2530
 #, kde-format
 msgid "Touchpad"
-msgstr ""
+msgstr "Érintőtábla"
 
 #: keyboard_layout.cpp:46
-#, fuzzy, kde-format
-#| msgid "Next Layout"
+#, kde-format
 msgid "Keyboard Layout Switcher"
-msgstr "Következő elrendezés"
+msgstr "Billentyűzetkiosztás-váltó"
 
 #: killwindow.cpp:33
 #, kde-format
@@ -1181,6 +1156,9 @@ msgid ""
 "Select window to force close with left click or enter.\n"
 "Escape or right click to cancel."
 msgstr ""
+"Válassza ki a bezárásra kényszerítendő ablakot bal egérgombbal vagy "
+"enterrel.\n"
+"Megszakításhoz nyomja meg az Escape-et vagy a jobb egérgombot."
 
 #: main.cpp:195 main.cpp:225
 #, kde-format
@@ -1193,10 +1171,9 @@ msgid "KWin"
 msgstr "KWin"
 
 #: main.cpp:204
-#, fuzzy, kde-format
-#| msgid "(c) 1999-2013, The KDE Developers"
+#, kde-format
 msgid "(c) 1999-2019, The KDE Developers"
-msgstr "© A KDE fejlesztői, 1999-2013."
+msgstr "© A KDE fejlesztői, 1999-2019."
 
 #: main.cpp:206
 #, kde-format
@@ -1249,62 +1226,65 @@ msgid "Indicate that KWin has recently crashed n times"
 msgstr "Jelzés, hogy a KWin n alkalommal lefagyott"
 
 #: main_wayland.cpp:427
-#, fuzzy, kde-format
-#| msgid "Start a nested X Server."
+#, kde-format
 msgid "Start a rootless Xwayland server."
-msgstr "Beágyazott X Server indítása."
+msgstr "Rootless Xwayland kiszolgáló indítása."
 
 #: main_wayland.cpp:429
 #, kde-format
 msgid ""
 "Name of the Wayland socket to listen on. If not set \"wayland-0\" is used."
 msgstr ""
+"A figyelendő Wayland socket neve. Ha nincs megadva, „wayland-0” az "
+"alapértelmezett."
 
 #: main_wayland.cpp:432
 #, kde-format
 msgid "Render to framebuffer."
-msgstr ""
+msgstr "Renderelés framebufferbe."
 
 #: main_wayland.cpp:434
 #, kde-format
 msgid "The framebuffer device to render to."
-msgstr ""
+msgstr "A leképezéshez használandó framebuffer eszköz."
 
 #: main_wayland.cpp:437
 #, kde-format
 msgid "The X11 Display to use in windowed mode on platform X11."
-msgstr ""
+msgstr "Az ablakos módon használandó X11 kijelző X11 platformon."
 
 #: main_wayland.cpp:440
 #, kde-format
 msgid "The Wayland Display to use in windowed mode on platform Wayland."
-msgstr ""
+msgstr "Az ablakos módon használandó Wayland kijelző Wayland platformon."
 
 #: main_wayland.cpp:442
 #, kde-format
 msgid "Render to a virtual framebuffer."
-msgstr ""
+msgstr "Renderelés egy virtuális framebufferbe."
 
 #: main_wayland.cpp:444
 #, kde-format
 msgid "The width for windowed mode. Default width is 1024."
-msgstr ""
+msgstr "Az ablakos mód szélessége. Alapértelmezett érték: 1024."
 
 #: main_wayland.cpp:448
 #, kde-format
 msgid "The height for windowed mode. Default height is 768."
-msgstr ""
+msgstr "Az ablakos mód magassága. Alapértelmezett érték: 768."
 
 #: main_wayland.cpp:453
 #, kde-format
 msgid "The scale for windowed mode. Default value is 1."
-msgstr ""
+msgstr "Az ablakoos mód skálázása. Alapértelmezett érték: 1."
 
 #: main_wayland.cpp:458
 #, kde-format
 msgid ""
 "The number of windows to open as outputs in windowed mode. Default value is 1"
 msgstr ""
+"Az ablakos módban kimenetként megnyitandó ablakok száma. Alapértelmezett "
+"érték: 1"
 
 #: main_wayland.cpp:463
 #, kde-format
@@ -1312,6 +1292,8 @@ msgid ""
 "Wayland socket to use for incoming connections. This can be combined with --"
 "socket to name the socket"
 msgstr ""
+"A bejövő kapcsolatokhoz használandó Wayland socket. Ez kombinálható a --"
+"socket kapcsolóval annak elnevezéséhez"
 
 #: main_wayland.cpp:467
 #, kde-format
@@ -1319,21 +1301,25 @@ msgid ""
 "XWayland socket to use for Xwayland's incoming connections. This can be set "
 "multiple times"
 msgstr ""
+"Az Xwayland bejövő kapcsolataihoz használandó XWayland socket. Ez többször "
+"is megadható"
 
 #: main_wayland.cpp:471
 #, kde-format
 msgid "Name of the xwayland display that has been pre-set up"
-msgstr ""
+msgstr "Az előre beállított xwayland kijelző neve"
 
 #: main_wayland.cpp:475
 #, kde-format
 msgid "Name of the xauthority file "
-msgstr ""
+msgstr "Az xauthority fájl neve "
 
 #: main_wayland.cpp:479
 #, kde-format
 msgid "Exits this instance so it can be restarted by kwin_wayland_wrapper."
 msgstr ""
+"Kilépés ebből a példányból, hogy újra lehessen indítani "
+"kwin_wayland_wrapperrel."
 
 #: main_wayland.cpp:513
 #, kde-format
@@ -1341,51 +1327,54 @@ msgid ""
 "Enable libinput support for input events processing. Note: never use in a "
 "nested session.\t(deprecated)"
 msgstr ""
+"Engedélyezze a libinput támogatást a beviteli események feldolgozásához. "
+"Megjegyzés: soha ne használja beágyazott munkamenetben.\t(elavult)"
 
 #: main_wayland.cpp:515
 #, kde-format
 msgid "Render through drm node."
-msgstr ""
+msgstr "Renderelés drm node-on."
 
 #: main_wayland.cpp:521
 #, kde-format
 msgid "Input method that KWin starts."
-msgstr ""
+msgstr "A KWin által indított beviteli mód."
 
 #: main_wayland.cpp:526
 #, kde-format
 msgid "List all available backends and quit."
-msgstr ""
+msgstr "Az összes elérhető modul listázása és kilépés."
 
 #: main_wayland.cpp:530
 #, kde-format
 msgid "Starts the session in locked mode."
-msgstr ""
+msgstr "Munkamenet indítása zárolt módban."
 
 #: main_wayland.cpp:534
 #, kde-format
 msgid "Starts the session without lock screen support."
-msgstr ""
+msgstr "Munkamenet indítása képernyőzár támogatás nélkül."
 
 #: main_wayland.cpp:538
 #, kde-format
 msgid "Starts the session without global shortcuts support."
-msgstr ""
+msgstr "Munkamenet indítás a globális billentyűparancsok támogatása nélkül."
 
 #: main_wayland.cpp:543 main_x11.cpp:443
 #, kde-format
 msgid "Disable KActivities integration."
-msgstr ""
+msgstr "KActivities intergráció kikapcsolása."
 
 #: main_wayland.cpp:548
 #, kde-format
 msgid "Exit after the session application, which is started by KWin, closed."
-msgstr ""
+msgstr "Kilépés a KWin által indított munkamenet alkalmazás bezárása után."
 
 #: main_wayland.cpp:553
 #, kde-format
 msgid "Applications to start once Wayland and Xwayland server are started"
 msgstr ""
+"A Wayland és Xwayland kiszolgálók elindulása után indítandó alkalmazások"
 
 #: main_x11.cpp:65
 #, kde-format
@@ -1420,176 +1409,162 @@ msgstr "Átváltás már futó ICCCM2.0-kompatibilis ablakkezelőről"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:61
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:63
-#, fuzzy, kde-format
-#| msgid "&All Activities"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "activate"
-msgstr "Az összes a&ktivitásra"
+msgstr "aktiválás"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:64
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:66
-#, fuzzy, kde-format
-#| msgid "&Close"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "close"
-msgstr "&Bezárás"
+msgstr "bezárás"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:67
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:69
 #, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "min"
-msgstr ""
+msgstr "min"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:70
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:72
-#, fuzzy, kde-format
-#| msgid "Minimize"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "minimize"
-msgstr "Minimalizálás"
+msgstr "minimalizálás"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:73
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:75
 #, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "max"
-msgstr ""
+msgstr "max"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:76
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:78
-#, fuzzy, kde-format
-#| msgid "Maximize"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "maximize"
-msgstr "Maximalizálás"
+msgstr "maximalizálás"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:79
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:81
-#, fuzzy, kde-format
-#| msgid "&Fullscreen"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "fullscreen"
-msgstr "Teljes képernyős &ablak"
+msgstr "teljes képernyőre"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:82
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:84
-#, fuzzy, kde-format
-#| msgid "Unshade"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "shade"
-msgstr "Legördítés"
+msgstr "felgördítés"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:85
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:87
-#, fuzzy, kde-format
-#| msgid "Keep above others"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "keep above"
-msgstr "Az ablak a többi fölé kerüljön"
+msgstr "maradjon felül"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:88
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:90
-#, fuzzy, kde-format
-#| msgid "Keep below others"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "keep below"
-msgstr "Az ablak a többi alá kerüljön"
+msgstr "maradjon alul"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:95
-#, fuzzy, kde-format
-#| msgid "Windows"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "window"
-msgstr "Ablakok"
+msgstr "ablak"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:105
-#, fuzzy, kde-format
-#| msgid "name"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "name"
 msgstr "név"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:107
-#, fuzzy, kde-format
-#| msgid "name"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "appname"
-msgstr "név"
+msgstr "alkalmazásnév"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:109
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:162
-#, fuzzy, kde-format
-#| msgid "&All Desktops"
+#, kde-format
 msgctxt "Note this is a KRunner keyword"
 msgid "desktop"
-msgstr "Az összes &asztalra"
+msgstr "asztal"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:267
-#, fuzzy, kde-format
-#| msgid "Switch to Desktop %1"
+#, kde-format
 msgid "Switch to desktop %1"
 msgstr "Váltás a(z) %1. asztalra"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:309
 #, kde-format
 msgid "Close running window on %1"
-msgstr ""
+msgstr "A(z) %1 asztalon futó ablak bezárása"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:312
 #, kde-format
 msgid "(Un)minimize running window on %1"
-msgstr ""
+msgstr "A(z) %1 asztalon futó ablak minimalizálása/visszaállítása"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:315
 #, kde-format
 msgid "Maximize/restore running window on %1"
-msgstr ""
+msgstr "A(z) %1 asztalon futó ablak maximalizálása/visszaállítása"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:318
 #, kde-format
 msgid "Toggle fullscreen for running window on %1"
-msgstr ""
+msgstr "A(z) %1 asztalon futó ablak teljes képernyőjének be-ki kapcsolása"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:321
 #, kde-format
 msgid "(Un)shade running window on %1"
-msgstr ""
+msgstr "A(z) %1 asztalon futó ablak le/felgördítése"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:324
 #, kde-format
 msgid "Toggle keep above for running window on %1"
-msgstr ""
+msgstr "A(z) %1 asztalon futó ablak többi fölött maradásának be-ki kapcsolása"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:327
 #, kde-format
 msgid "Toggle keep below running window on %1"
-msgstr ""
+msgstr "A(z) %1 asztalon futó ablak többi alatt maradásának be-ki kapcsolása"
 
 #: plugins/krunner-integration/windowsrunnerinterface.cpp:331
-#, fuzzy, kde-format
-#| msgid "Activate Window (%1)"
+#, kde-format
 msgid "Activate running window on %1"
-msgstr "Ablak aktiválása (%1)"
+msgstr "A(z) %1 asztalon futó ablak aktiválása"
 
 #: plugins/nightcolor/nightcolormanager.cpp:62
 #, kde-format
 msgctxt "Night Color was disabled"
 msgid "Night Color Off"
-msgstr ""
+msgstr "Éjszakai színek ki"
 
 #: plugins/nightcolor/nightcolormanager.cpp:63
 #, kde-format
 msgctxt "Night Color was enabled"
 msgid "Night Color On"
-msgstr ""
+msgstr "Éjszakai színek be"
 
 #: plugins/nightcolor/nightcolormanager.cpp:98
 #: plugins/nightcolor/nightcolormanager.cpp:101
 #: plugins/nightcolor/nightcolormanager.cpp:108
 #, kde-format
 msgid "Toggle Night Color"
-msgstr ""
+msgstr "Éjszakai színek váltása"
 
 #: plugins/scenes/opengl/scene_opengl.cpp:269
 #, kde-format
@@ -1601,552 +1576,523 @@ msgstr ""
 #: rulebooksettingsbase.kcfg:9
 #, kde-format
 msgid "Total rules count (legacy)"
-msgstr ""
+msgstr "Szabályok teljes száma (régi)"
 
 #. i18n: ectx: label, entry (ruleGroupList), group (General)
 #: rulebooksettingsbase.kcfg:13
 #, kde-format
 msgid "Ordered list of rules groups"
-msgstr ""
+msgstr "Szabálycsoportok rendezett listája"
 
 #. i18n: ectx: label, entry (description), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:10
 #, kde-format
 msgid "Rule description"
-msgstr ""
+msgstr "Szabályleírás"
 
 #. i18n: ectx: label, entry (descriptionLegacy), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:13
 #, kde-format
 msgid "Rule description (legacy)"
-msgstr ""
+msgstr "Szabályleírás (régi)"
 
 #. i18n: ectx: label, entry (DeleteRule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:16
 #, kde-format
 msgid "Delete this rule (for use in imports)"
-msgstr ""
+msgstr "Szabály törlése (importban való használatra)"
 
 #. i18n: ectx: label, entry (wmclass), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:20
 #, kde-format
 msgid "Window class (application)"
-msgstr ""
+msgstr "Ablakosztály (alkalmazás)"
 
 #. i18n: ectx: label, entry (wmclassmatch), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:23
 #, kde-format
 msgid "Window class string match type"
-msgstr ""
+msgstr "Ablakosztály illesztési típus"
 
 #. i18n: ectx: label, entry (wmclasscomplete), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:29
 #, kde-format
 msgid "Match whole window class"
-msgstr ""
+msgstr "Teljes ablakosztály illesztése"
 
 #. i18n: ectx: label, entry (windowrole), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:34
-#, fuzzy, kde-format
-#| msgid "Windows"
+#, kde-format
 msgid "Window role"
-msgstr "Ablakok"
+msgstr "Ablakszerep"
 
 #. i18n: ectx: label, entry (windowrolematch), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:37
 #, kde-format
 msgid "Window role string match type"
-msgstr ""
+msgstr "Ablakszerep illesztési típus"
 
 #. i18n: ectx: label, entry (title), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:44
-#, fuzzy, kde-format
-#| msgid "Windows"
+#, kde-format
 msgid "Window title"
-msgstr "Ablakok"
+msgstr "Ablakcím"
 
 #. i18n: ectx: label, entry (titlematch), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:47
 #, kde-format
 msgid "Window title string match type"
-msgstr ""
+msgstr "Ablakcím illesztési típus"
 
 #. i18n: ectx: label, entry (clientmachine), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:54
-#, fuzzy, kde-format
-#| msgid "hostname"
+#, kde-format
 msgid "Machine (hostname)"
-msgstr "gépnév"
+msgstr "Számítógép (gépnév)"
 
 #. i18n: ectx: label, entry (clientmachinematch), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:57
 #, kde-format
 msgid "Machine string match type"
-msgstr ""
+msgstr "Gépnév illesztési típus"
 
 #. i18n: ectx: label, entry (types), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:64
 #, kde-format
 msgid "Window types that match"
-msgstr ""
+msgstr "Illeszkedő ablaktípusok"
 
 #. i18n: ectx: label, entry (placement), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:69
 #, kde-format
 msgid "Initial placement"
-msgstr ""
+msgstr "Kezdeti elhelyezés"
 
 #. i18n: ectx: label, entry (placementrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:74
-#, fuzzy, kde-format
-#| msgid "&Fullscreen"
+#, kde-format
 msgid "Initial placement rule type"
-msgstr "Teljes képernyős &ablak"
+msgstr "Kezdeti elhelyezés szabálytípus"
 
 #. i18n: ectx: label, entry (position), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:79
-#, fuzzy, kde-format
-#| msgid "Window Operations Menu"
+#, kde-format
 msgid "Window position"
-msgstr "Az ablakműveletek menü"
+msgstr "Ablakpozíció"
 
 #. i18n: ectx: label, entry (positionrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:83
-#, fuzzy, kde-format
-#| msgid "Window to Screen 0"
+#, kde-format
 msgid "Window position rule type"
-msgstr "Ablak áthelyezése a 0. képernyőre"
+msgstr "Ablakpozíció szabálytípus"
 
 #. i18n: ectx: label, entry (size), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:90
-#, fuzzy, kde-format
-#| msgid "Windows"
+#, kde-format
 msgid "Window size"
-msgstr "Ablakok"
+msgstr "Ablakméret"
 
 #. i18n: ectx: label, entry (sizerule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:93
 #, kde-format
 msgid "Window size rule type"
-msgstr ""
+msgstr "Ablakméret szabálytípus"
 
 #. i18n: ectx: label, entry (minsize), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:100
 #, kde-format
 msgid "Window minimum size"
-msgstr ""
+msgstr "Minimális ablakméret"
 
 #. i18n: ectx: label, entry (minsizerule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:104
 #, kde-format
 msgid "Window minimum size rule type"
-msgstr ""
+msgstr "Minimális ablakméret szabálytípus"
 
 #. i18n: ectx: label, entry (maxsize), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:109
 #, kde-format
 msgid "Window maximum size"
-msgstr ""
+msgstr "Maximális ablakméret"
 
 #. i18n: ectx: label, entry (maxsizerule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:113
 #, kde-format
 msgid "Window maximum size rule type"
-msgstr ""
+msgstr "Maximális ablakméret szabálytípus"
 
 #. i18n: ectx: label, entry (opacityactive), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:118
-#, fuzzy, kde-format
-#| msgid "Active Modifiers"
+#, kde-format
 msgid "Active opacity"
-msgstr "Aktív módosítók"
+msgstr "Aktív átlátszatlanság"
 
 #. i18n: ectx: label, entry (opacityactiverule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:124
 #, kde-format
 msgid "Active opacity rule type"
-msgstr ""
+msgstr "Aktív átlátszatlanság szabálytípus"
 
 #. i18n: ectx: label, entry (opacityinactive), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:129
 #, kde-format
 msgid "Inactive opacity"
-msgstr ""
+msgstr "Inaktív átlátszatlanság"
 
 #. i18n: ectx: label, entry (opacityinactiverule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:135
 #, kde-format
 msgid "Inactive opacity rule type"
-msgstr ""
+msgstr "Inaktív átlátszatlanság szabálytípus"
 
 #. i18n: ectx: label, entry (ignoregeometry), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:140
 #, kde-format
 msgid "Ignore requested geometry"
-msgstr ""
+msgstr "A kért méret és elhelyezkedés figyelmen kívül hagyása"
 
 #. i18n: ectx: label, entry (ignoregeometryrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:144
 #, kde-format
 msgid "Ignore requested geometry rule type"
-msgstr ""
+msgstr "A kért méret és elhelyezkedés figyelmen kívül hagyása szabálytípus"
 
 #. i18n: ectx: label, entry (desktops), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:151
-#, fuzzy, kde-format
-#| msgid "Switch to Desktop 2"
+#, kde-format
 msgid "List of Desktop Ids"
-msgstr "Váltás a 2. asztalra"
+msgstr "Asztalazonosítók listája"
 
 #. i18n: ectx: label, entry (desktopsrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:155
-#, fuzzy, kde-format
-#| msgid "Desktop Cube"
+#, kde-format
 msgid "Desktop Ids rule type"
-msgstr "Asztalkocka"
+msgstr "Asztalazonosítók szabálytípus"
 
 #. i18n: ectx: label, entry (screen), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:162
 #, kde-format
 msgid "Screen number"
-msgstr ""
+msgstr "Képernyőszám"
 
 #. i18n: ectx: label, entry (screenrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:166
 #, kde-format
 msgid "Screen number rule type"
-msgstr ""
+msgstr "Képernyőszám szabálytípus"
 
 #. i18n: ectx: label, entry (activity), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:173
-#, fuzzy, kde-format
-#| msgid "&All Activities"
+#, kde-format
 msgid "Activity"
-msgstr "Az összes a&ktivitásra"
+msgstr "Aktivitás"
 
 #. i18n: ectx: label, entry (activityrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:176
 #, kde-format
 msgid "Activity rule type"
-msgstr ""
+msgstr "Aktivitás szabálytípus"
 
 #. i18n: ectx: label, entry (type), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:183
-#, fuzzy, kde-format
-#| msgid "Setup Window Shortcut"
+#, kde-format
 msgid "Set window type to"
-msgstr "Billentyűparancs rendelése ablakhoz"
+msgstr "Ablaktípus beállítása"
 
 #. i18n: ectx: label, entry (typerule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:189
 #, kde-format
 msgid "Set window type rule type"
-msgstr ""
+msgstr "Ablaktípus beállítása szabálytípus"
 
 #. i18n: ectx: label, entry (maximizevert), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:194
-#, fuzzy, kde-format
-#| msgid "Maximize Window Vertically"
+#, kde-format
 msgid "Maximized vertically"
-msgstr "Ablak függőleges maximalizálása"
+msgstr "Maximalizálva függőlegesen"
 
 #. i18n: ectx: label, entry (maximizevertrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:198
-#, fuzzy, kde-format
-#| msgid "Maximize Window Vertically"
+#, kde-format
 msgid "Maximized vertically rule type"
-msgstr "Ablak függőleges maximalizálása"
+msgstr "Maximalizálva függőlegesen szabálytípus"
 
 #. i18n: ectx: label, entry (maximizehoriz), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:205
-#, fuzzy, kde-format
-#| msgid "Maximize Window Horizontally"
+#, kde-format
 msgid "Maximized horizontally"
-msgstr "Ablak vízszintes maximalizálása"
+msgstr "Maximalizálva vízszintesen"
 
 #. i18n: ectx: label, entry (maximizehorizrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:209
-#, fuzzy, kde-format
-#| msgid "Maximize Window Horizontally"
+#, kde-format
 msgid "Maximized horizontally rule type"
-msgstr "Ablak vízszintes maximalizálása"
+msgstr "Maximalizálva vízszintesen szabálytípus"
 
 #. i18n: ectx: label, entry (minimize), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:216
-#, fuzzy, kde-format
-#| msgid "Minimize"
+#, kde-format
 msgid "Minimized"
-msgstr "Minimalizálás"
+msgstr "Minimalizálva"
 
 #. i18n: ectx: label, entry (minimizerule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:220
 #, kde-format
 msgid "Minimized rule type"
-msgstr ""
+msgstr "Minimalizálva szabálytípus"
 
 #. i18n: ectx: label, entry (shade), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:227
-#, fuzzy, kde-format
-#| msgid "Shade"
+#, kde-format
 msgid "Shaded"
-msgstr "Felgördítés"
+msgstr "Felgördítve"
 
 #. i18n: ectx: label, entry (shaderule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:231
 #, kde-format
 msgid "Shaded rule type"
-msgstr ""
+msgstr "Felgördítve szabálytípus"
 
 #. i18n: ectx: label, entry (skiptaskbar), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:238
 #, kde-format
 msgid "Skip taskbar"
-msgstr ""
+msgstr "Kihagyás a feladatlistából"
 
 #. i18n: ectx: label, entry (skiptaskbarrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:242
 #, kde-format
 msgid "Skip taskbar rule type"
-msgstr ""
+msgstr "Kihagyás a feladatlistából szabálytípus"
 
 #. i18n: ectx: label, entry (skippager), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:249
 #, kde-format
 msgid "Skip pager"
-msgstr ""
+msgstr "Kihagyás a lapozóból"
 
 #. i18n: ectx: label, entry (skippagerrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:253
 #, kde-format
 msgid "Skip pager rule type"
-msgstr ""
+msgstr "Kihagyás a lapozóból szabálytípus"
 
 #. i18n: ectx: label, entry (skipswitcher), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:260
-#, fuzzy, kde-format
-#| msgid "Switch to Tab"
+#, kde-format
 msgid "Skip switcher"
-msgstr "Váltás erre a lapra:"
+msgstr "Kihagyás az ablakváltóból"
 
 #. i18n: ectx: label, entry (skipswitcherrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:264
 #, kde-format
 msgid "Skip switcher rule type"
-msgstr ""
+msgstr "Kihagyás az ablakváltóból szabálytípus"
 
 #. i18n: ectx: label, entry (above), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:271
-#, fuzzy, kde-format
-#| msgid "Keep above others"
+#, kde-format
 msgid "Keep above"
-msgstr "Az ablak a többi fölé kerüljön"
+msgstr "Maradjon felül"
 
 #. i18n: ectx: label, entry (aboverule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:275
-#, fuzzy, kde-format
-#| msgid "Keep above others"
+#, kde-format
 msgid "Keep above rule type"
-msgstr "Az ablak a többi fölé kerüljön"
+msgstr "Maradjon felül szabálytípus"
 
 #. i18n: ectx: label, entry (below), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:282
-#, fuzzy, kde-format
-#| msgid "Keep below others"
+#, kde-format
 msgid "Keep below"
-msgstr "Az ablak a többi alá kerüljön"
+msgstr "Maradjon alul"
 
 #. i18n: ectx: label, entry (belowrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:286
-#, fuzzy, kde-format
-#| msgid "Keep below others"
+#, kde-format
 msgid "Keep below rule type"
-msgstr "Az ablak a többi alá kerüljön"
+msgstr "Maradjon alul szabálytípus"
 
 #. i18n: ectx: label, entry (fullscreen), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:293
-#, fuzzy, kde-format
-#| msgid "&Fullscreen"
+#, kde-format
 msgid "Fullscreen"
-msgstr "Teljes képernyős &ablak"
+msgstr "Teljes képernyő"
 
 #. i18n: ectx: label, entry (fullscreenrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:297
-#, fuzzy, kde-format
-#| msgid "&Fullscreen"
+#, kde-format
 msgid "Fullscreen rule type"
-msgstr "Teljes képernyős &ablak"
+msgstr "Teljes képernyő szabálytípus"
 
 #. i18n: ectx: label, entry (noborder), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:304
 #, kde-format
 msgid "No titlebar and frame"
-msgstr ""
+msgstr "Nincs címsor és keret"
 
 #. i18n: ectx: label, entry (noborderrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:308
 #, kde-format
 msgid "No titlebar rule type"
-msgstr ""
+msgstr "Nincs címsor szabálytípus"
 
 #. i18n: ectx: label, entry (decocolor), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:315
 #, kde-format
 msgid "Titlebar color and scheme"
-msgstr ""
+msgstr "Címsorszín és séma"
 
 #. i18n: ectx: label, entry (decocolorrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:318
 #, kde-format
 msgid "Titlebar color rule type"
-msgstr ""
+msgstr "Címsorszín szabálytípus"
 
 #. i18n: ectx: label, entry (blockcompositing), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:323
-#, fuzzy, kde-format
-#| msgid "Suspend Compositing"
+#, kde-format
 msgid "Block Compositing"
-msgstr "A kompozit kiterjesztés felfüggesztése"
+msgstr "Kompozitálás blokkolása"
 
 #. i18n: ectx: label, entry (blockcompositingrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:327
 #, kde-format
 msgid "Block Compositing rule type"
-msgstr ""
+msgstr "Kompozitálás blokkolása szabálytípus"
 
 #. i18n: ectx: label, entry (fsplevel), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:332
 #, kde-format
 msgid "Focus stealing prevention"
-msgstr ""
+msgstr "Fókuszelvétel megakadályozása"
 
 #. i18n: ectx: label, entry (fsplevelrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:338
 #, kde-format
 msgid "Focus stealing prevention rule type"
-msgstr ""
+msgstr "Fókuszelvétel megakadályozása szabálytípus"
 
 #. i18n: ectx: label, entry (fpplevel), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:343
 #, kde-format
 msgid "Focus protection"
-msgstr ""
+msgstr "Fókuszvédelem"
 
 #. i18n: ectx: label, entry (fpplevelrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:349
 #, kde-format
 msgid "Focus protection rule type"
-msgstr ""
+msgstr "Fókuszvédelem szabálytípus"
 
 #. i18n: ectx: label, entry (acceptfocus), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:354
 #, kde-format
 msgid "Accept Focus"
-msgstr ""
+msgstr "Fókusz elfogadása"
 
 #. i18n: ectx: label, entry (acceptfocusrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:358
 #, kde-format
 msgid "Accept Focus rule type"
-msgstr ""
+msgstr "Fókusz elfogadása szabálytípus"
 
 #. i18n: ectx: label, entry (closeable), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:363
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgid "Closeable"
-msgstr "Bezárás"
+msgstr "Bezárható"
 
 #. i18n: ectx: label, entry (closeablerule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:367
 #, kde-format
 msgid "Closeable rule type"
-msgstr ""
+msgstr "Bezárhatósági szabálytípus"
 
 #. i18n: ectx: label, entry (autogroup), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:372
 #, kde-format
 msgid "Autogroup with identical"
-msgstr ""
+msgstr "Azonosak automatikus csoportosítása"
 
 #. i18n: ectx: label, entry (autogrouprule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:376
 #, kde-format
 msgid "Autogroup with identical rule type"
-msgstr ""
+msgstr "Azonosak automatikus csoportosítása szabálytípus"
 
 #. i18n: ectx: label, entry (autogroupfg), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:381
 #, kde-format
 msgid "Autogroup in foreground"
-msgstr ""
+msgstr "Automatikus csoportosítás előtérben"
 
 #. i18n: ectx: label, entry (autogroupfgrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:385
 #, kde-format
 msgid "Autogroup in foreground rule type"
-msgstr ""
+msgstr "Automatikus csoportosítás előtérben szabálytípus"
 
 #. i18n: ectx: label, entry (autogroupid), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:390
 #, kde-format
 msgid "Autogroup by ID"
-msgstr ""
+msgstr "Automatikus csoportosítás azonosító szerint"
 
 #. i18n: ectx: label, entry (autogroupidrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:393
 #, kde-format
 msgid "Autogroup by ID rule type"
-msgstr ""
+msgstr "Automatikus csoportosítás azonosító szerint szabálytípus"
 
 #. i18n: ectx: label, entry (strictgeometry), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:398
 #, kde-format
 msgid "Obey geometry restrictions"
-msgstr ""
+msgstr "Méret- és elhelyezkedéskorlátozások betartása"
 
 #. i18n: ectx: label, entry (strictgeometryrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:402
 #, kde-format
 msgid "Obey geometry restrictions rule type"
-msgstr ""
+msgstr "Méret- és elhelyezkedéskorlátozások betartása szabálytípus"
 
 #. i18n: ectx: label, entry (shortcut), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:407
 #, kde-format
 msgid "Shortcut"
-msgstr ""
+msgstr "Billentyűparancs"
 
 #. i18n: ectx: label, entry (shortcutrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:410
 #, kde-format
 msgid "Shortcut rule type"
-msgstr ""
+msgstr "Billentyűparancs szabálytípus"
 
 #. i18n: ectx: label, entry (disableglobalshortcuts), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:417
-#, fuzzy, kde-format
-#| msgid "Block Global Shortcuts"
+#, kde-format
 msgid "Ignore global shortcuts"
-msgstr "A globális billentyűparancsok blokkolása"
+msgstr "Globális gyorsbillentyűk mellőzése"
 
 #. i18n: ectx: label, entry (disableglobalshortcutsrule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:421
 #, kde-format
 msgid "Ignore global shortcuts rule type"
-msgstr ""
+msgstr "Globális gyorsbillentyűk mellőzése szabálytípus"
 
 #. i18n: ectx: label, entry (desktopfile), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:426
-#, fuzzy, kde-format
-#| msgid "Desktop Cube"
+#, kde-format
 msgid "Desktop file name"
-msgstr "Asztalkocka"
+msgstr "Asztali fájl neve"
 
 #. i18n: ectx: label, entry (desktopfilerule), group ($(ruleDescriptionOrNumber))
 #: rulesettings.kcfg:429
 #, kde-format
 msgid "Desktop file name rule type"
-msgstr ""
+msgstr "Asztali fájl neve szabálytípus"
 
 #: scripting/genericscriptedconfig.cpp:70
 #, kde-format
@@ -2275,10 +2221,9 @@ msgid "&Move"
 msgstr "&Mozgatás"
 
 #: useractions.cpp:245
-#, fuzzy, kde-format
-#| msgid "Re&size"
+#, kde-format
 msgid "&Resize"
-msgstr "Mé&retezés"
+msgstr "Át&méretezés"
 
 #: useractions.cpp:250
 #, kde-format
@@ -2296,10 +2241,9 @@ msgid "&Fullscreen"
 msgstr "Teljes képernyős &ablak"
 
 #: useractions.cpp:268
-#, fuzzy, kde-format
-#| msgid "Shade"
+#, kde-format
 msgid "&Shade"
-msgstr "Felgördítés"
+msgstr "Felgördíté&s"
 
 #: useractions.cpp:274
 #, kde-format
@@ -2307,31 +2251,27 @@ msgid "&No Border"
 msgstr "Az &ablakkeret elrejtése"
 
 #: useractions.cpp:282
-#, fuzzy, kde-format
-#| msgid "Window &Shortcut..."
+#, kde-format
 msgid "Set Window Short&cut..."
-msgstr "Billentyűparancs rendelése az &ablakhoz…"
+msgstr "&Gyorsbillentyű rendelése az ablak…"
 
 #: useractions.cpp:287
-#, fuzzy, kde-format
-#| msgid "&Special Window Settings..."
+#, kde-format
 msgid "Configure Special &Window Settings..."
-msgstr "Spe&ciális ablakbeállítások…"
+msgstr "Spe&ciális ablakbeállítások módosítása…"
 
 #: useractions.cpp:292
-#, fuzzy, kde-format
-#| msgid "S&pecial Application Settings..."
+#, kde-format
 msgid "Configure S&pecial Application Settings..."
-msgstr "Spe&ciális alkalmazásbeállítások…"
+msgstr "Spe&ciális alkalmazásbeállítások módosítása…"
 
 #: useractions.cpp:300
-#, fuzzy, kde-format
-#| msgid "Window Manager"
+#, kde-format
 msgctxt ""
 "Entry in context menu of window decoration to open the configuration module "
 "of KWin"
 msgid "Configure W&indow Manager..."
-msgstr "Ablakkezelő"
+msgstr "Az a&blakkezelő beállításai…"
 
 #: useractions.cpp:328
 #, kde-format
@@ -2359,28 +2299,24 @@ msgid "&Extensions"
 msgstr "&Kiterjesztések"
 
 #: useractions.cpp:450
-#, fuzzy, kde-format
-#| msgid "&All Desktops"
+#, kde-format
 msgid "&Desktops"
-msgstr "Az összes &asztalra"
+msgstr "&Asztalok"
 
 #: useractions.cpp:463
-#, fuzzy, kde-format
-#| msgid "Move To &Desktop"
+#, kde-format
 msgid "Move to &Desktop"
 msgstr "Áthelyezé&s asztalra"
 
 #: useractions.cpp:480
-#, fuzzy, kde-format
-#| msgid "Move To &Screen"
+#, kde-format
 msgid "Move to &Screen"
 msgstr "Áthelye&zés képernyőre"
 
 #: useractions.cpp:496
-#, fuzzy, kde-format
-#| msgid "Ac&tivities"
+#, kde-format
 msgid "Show in &Activities"
-msgstr "Ak&tivitások"
+msgstr "Megjelenítés az &aktivitásokon"
 
 #: useractions.cpp:511 useractions.cpp:578
 #, kde-format
@@ -2388,9 +2324,7 @@ msgid "&All Desktops"
 msgstr "Az összes &asztalra"
 
 #: useractions.cpp:553
-#, fuzzy, kde-format
-#| msgctxt "Create a new desktop and move there the window"
-#| msgid "&New Desktop"
+#, kde-format
 msgctxt "Create a new desktop and move the window there"
 msgid "&New Desktop"
 msgstr "Ú&j asztalra"
@@ -2398,32 +2332,27 @@ msgstr "Ú&j asztalra"
 #: useractions.cpp:622
 #, kde-format
 msgid "Move to %1 %2"
-msgstr ""
+msgstr "Áthelyezés ide: %1 %2"
 
 #: useractions.cpp:635
-#, fuzzy, kde-format
-#| msgctxt "Create a new desktop and move there the window"
-#| msgid "&New Desktop"
+#, kde-format
 msgctxt "Create a new desktop and add the window to that desktop"
 msgid "Add to &New Desktop"
-msgstr "Ú&j asztalra"
+msgstr "Hozzáadás ú&j asztalhoz"
 
 #: useractions.cpp:647
-#, fuzzy, kde-format
-#| msgid "Move To &Desktop"
+#, kde-format
 msgctxt "Create a new desktop and move the window to that desktop"
 msgid "Move to New Desktop"
-msgstr "Áthelyezé&s asztalra"
+msgstr "Áthelyezés új asztalra"
 
 #: useractions.cpp:678
-#, fuzzy, kde-format
-#| msgctxt "@item:inmenu List of all Screens to send a window to"
-#| msgid "Screen &%1"
+#, kde-format
 msgctxt ""
 "@item:inmenu List of all Screens to send a window to. First argument is a "
 "number, second the output identifier. E.g. Screen 1 (HDMI1)"
 msgid "Screen &%1 (%2)"
-msgstr "&%1. képernyő"
+msgstr "&%1. képernyő (%2)"
 
 #: useractions.cpp:703
 #, kde-format
@@ -2585,16 +2514,14 @@ msgid "Quick Tile Window to the Right"
 msgstr "Ablak áthelyezése jobbra"
 
 #: useractions.cpp:1030
-#, fuzzy, kde-format
-#| msgid "Quick Tile Window to the Top Left"
+#, kde-format
 msgid "Quick Tile Window to the Top"
-msgstr "Ablak áthelyezése bal felülre"
+msgstr "Ablakcsempe áthelyezése fentre"
 
 #: useractions.cpp:1032
-#, fuzzy, kde-format
-#| msgid "Quick Tile Window to the Bottom Left"
+#, kde-format
 msgid "Quick Tile Window to the Bottom"
-msgstr "Ablak áthelyezése bal alulra"
+msgstr "Ablakcsempe áthelyezése lentre"
 
 #: useractions.cpp:1034
 #, kde-format

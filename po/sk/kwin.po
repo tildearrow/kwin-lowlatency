@@ -14,14 +14,14 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-09 01:47+0000\n"
-"PO-Revision-Date: 2021-09-23 20:39+0200\n"
-"Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
+"PO-Revision-Date: 2021-11-18 13:05+0100\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #, kde-format
@@ -60,12 +60,12 @@ msgstr ""
 #: debug_console.cpp:79
 #, kde-format
 msgid "Timestamp"
-msgstr "Časové razítko"
+msgstr "Časová značka"
 
 #: debug_console.cpp:84
 #, kde-format
 msgid "Timestamp (µsec)"
-msgstr "Časová pečiatka (µsec)"
+msgstr "Časová značka (µsec)"
 
 #: debug_console.cpp:91
 #, kde-format
@@ -956,7 +956,7 @@ msgstr "Trieda GPU:"
 #: debug_console.ui:178
 #, kde-format
 msgid "OpenGL Version:"
-msgstr "Verzia OpenGL"
+msgstr "Verzia OpenGL:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: debug_console.ui:185

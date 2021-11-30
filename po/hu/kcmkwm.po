@@ -5,20 +5,21 @@
 # Marcell Lengyel <miketkf@yahoo.com>, 1998.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012, 2014, 2015, 2019.
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013.
+# Kristof Kiszel <ulysses@fsf.hu>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-04-27 00:19+0000\n"
-"PO-Revision-Date: 2019-12-08 18:28+0100\n"
-"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
+"PO-Revision-Date: 2021-11-19 13:10+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.03.70\n"
+"X-Generator: Lokalize 21.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -28,7 +29,7 @@ msgstr "Kiszel Kristóf,Szántó Tamás"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "ulysses@kubuntu.org,tszanto@interware.hu"
+msgstr "ulysses@fsf.hu,tszanto@interware.hu"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
 #: actions.ui:17
@@ -594,13 +595,16 @@ msgid ""
 "windows are allowed to do so. This will override the window placement mode "
 "defined above."
 msgstr ""
+"Ha bevan kapcsolva, akkor azok az alkalmazások, amelyek képesek megjegyezni "
+"az ablakaik pozícióját, ezt megtehetik. Ez felülírja a fentebb meghatározott "
+"ablakelhelyezési módot."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowKDEAppsToRememberWindowPositions)
 #: advanced.ui:121
 #, kde-format
 msgid ""
 "Allow apps to remember the positions of their own windows, if they support it"
-msgstr ""
+msgstr "Az alkalmazások megjegyezhetik az ablakaik pozícióját, ha támogatják"
 
 #. i18n: ectx: property (text), widget (QLabel, specialWindowsLabel)
 #: advanced.ui:128
@@ -866,23 +870,15 @@ msgstr "Több képernyős működés:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ActiveMouseScreen)
 #: focus.ui:203
-#, fuzzy, kde-format
-#| msgid ""
-#| "When this option is enabled, the active Xinerama screen (where new "
-#| "windows appear, for example) is the screen containing the mouse pointer. "
-#| "When disabled, the active Xinerama screen is the screen containing the "
-#| "focused window. By default this option is disabled for Click to focus and "
-#| "enabled for other focus policies."
+#, kde-format
 msgid ""
 "When this option is enabled, the active screen (where new windows appear, "
 "for example) is the screen containing the mouse pointer. When disabled, the "
 "active screen is the screen containing the focused window."
 msgstr ""
-"Ha ez be van jelölve, akkor az lesz az aktív Xinerama-képernyő (ahol az új "
-"ablakok is megjelennek), ahol az egérmutató van. Ha nincs bejelölve, az az "
-"aktív Xinerama-képernyő, ahol a fókuszált ablak van. Alapértelmezésben nincs "
-"bejelölve „Fókusz kattintásra” mód esetén, a többi fókuszálási módban "
-"azonban igen."
+"Ha ez be van jelölve, akkor az lesz az aktív képernyő (ahol az új ablakok is "
+"megjelennek), ahol az egérmutató van. Ha nincs bejelölve, az az aktív "
+"képernyő, ahol a fókuszált ablak van."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ActiveMouseScreen)
 #: focus.ui:206
@@ -892,16 +888,12 @@ msgstr "Az aktív képe&rnyő az legyen, ahol az egérmutató van"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_SeparateScreenFocus)
 #: focus.ui:213
-#, fuzzy, kde-format
-#| msgid ""
-#| "When this option is enabled, focus operations are limited only to the "
-#| "active Xinerama screen"
+#, kde-format
 msgid ""
 "When this option is enabled, focus operations are limited only to the active "
 "screen"
 msgstr ""
-"Ha be van jelölve, a fókuszálási műveletek az aktív Xinerama-képernyőre "
-"korlátozódnak."
+"Ha be van jelölve, a fókuszálási műveletek az aktív képernyőre korlátozódnak."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SeparateScreenFocus)
 #: focus.ui:216
@@ -911,10 +903,9 @@ msgstr "Fókuszálás csak az &aktív képernyőn"
 
 #. i18n: ectx: property (text), widget (QLabel, windowFocusPolicyDescriptionLabel)
 #: focus.ui:229
-#, fuzzy, kde-format
-#| msgid "Window &activation policy:"
+#, kde-format
 msgid "Window activation policy description"
-msgstr "Ablak&aktiválási szabály:"
+msgstr "Ablakaktiválási szabály leírása"
 
 #: main.cpp:74
 #, kde-format
@@ -1059,7 +1050,7 @@ msgstr "Maximalizálás"
 #: mouse.ui:45 mouse.ui:620 mouse.ui:655 mouse.ui:690
 #, kde-format
 msgid "Vertically maximize"
-msgstr ""
+msgstr "Maximalizálás függőlegesen"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
@@ -1069,7 +1060,7 @@ msgstr ""
 #: mouse.ui:50 mouse.ui:625 mouse.ui:660 mouse.ui:695
 #, kde-format
 msgid "Horizontally maximize"
-msgstr ""
+msgstr "Maximalizálás vízszintesen"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
@@ -1318,31 +1309,17 @@ msgid "&Snap windows:"
 msgstr "Ablakok &dokkolása:"
 
 #: windows.cpp:99
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus:"
-#| "</span> A window becomes active when you click into it. This behavior is "
-#| "common on other operating systems and likely what you want.</p></body></"
-#| "html>"
+#, kde-format
 msgid ""
 "<em>Click to focus:</em> A window becomes active when you click into it. "
 "This behavior is common on other operating systems and likely what you want."
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Kattintás "
-"fókuszáláshoz:</span> Egy ablak akkor válik aktívvá, ha rákattint. Ez a "
-"működés általános más operációs rendszereken, és valószínűleg ezt szeretné.</"
-"p></body></html>"
+"<em>Kattintás fókuszáláshoz:</em> Egy ablak akkor válik aktívvá, ha "
+"rákattint. Ez a működés általános más operációs rendszereken, és "
+"valószínűleg ezt szeretné."
 
 #: windows.cpp:103
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Click to focus "
-#| "(mouse precedence):</span> Mostly the same as <span style=\" font-style:"
-#| "italic;\">Click to focus</span>. If an active window has to be chosen by "
-#| "the system (eg. because the currently active one was closed) the window "
-#| "under the mouse is the preferred candidate. Unusual, but possible variant "
-#| "of <span style=\" font-style:italic;\">Click to focus</span>.</p></body></"
-#| "html>"
+#, kde-format
 msgid ""
 "<em>Click to focus (mouse precedence):</em> Mostly the same as <em>Click to "
 "focus</em>. If an active window has to be chosen by the system (eg. because "
@@ -1350,68 +1327,40 @@ msgid ""
 "preferred candidate. Unusual, but possible variant of <em>Click to focus</"
 "em>."
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Kattintás "
-"fókuszáláshoz - Egérprecedencia:</span> Szinte teljesen megegyezik a <span "
-"style=\" font-style:italic;\">Kattintás fókuszáláshoz</span> működésével. Ha "
-"a rendszernek ki kell választania az aktív ablakot (például az aktuális "
-"bezárása miatt), az egér alatti ablak az előnyben részesített jelölt. "
-"Szokatlan, de lehetséges változata a <span style=\" font-style:italic;"
-"\">Kattintás fókuszálásra</span> működésének.</p></body></html>"
+"<em>Kattintás fókuszáláshoz - Egérprecedencia:</em> Szinte teljesen "
+"megegyezik a <em>Kattintás fókuszáláshoz</em> működésével. Ha a rendszernek "
+"ki kell választania az aktív ablakot (például az aktuális bezárása miatt), "
+"az egér alatti ablak az előnyben részesített jelölt. Szokatlan, de "
+"lehetséges változata a <em>Kattintás fókuszálásra</em> működésének."
 
 #: windows.cpp:108
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus follows "
-#| "mouse:</span> Moving the mouse onto a window will activate it. Eg. "
-#| "windows randomly appearing under the mouse will not gain the focus. <span "
-#| "style=\" font-style:italic;\">Focus stealing prevention</span> takes "
-#| "place as usual. Think as <span style=\" font-style:italic;\">Click to "
-#| "focus</span> just without having to actually click.</p></body></html>"
+#, kde-format
 msgid ""
 "<em>Focus follows mouse:</em> Moving the mouse onto a window will activate "
 "it. Eg. windows randomly appearing under the mouse will not gain the focus. "
 "<em>Focus stealing prevention</em> takes place as usual. Think as <em>Click "
 "to focus</em> just without having to actually click."
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Fókuszálás "
-"egérkövetéssel</span> Az egér mozgatása egy ablakba aktiválja azt. Az egér "
-"alatt véletlenszerűen megjelenő ablakok például nem kapják meg a fókuszt. A "
-"<span style=\" font-style:italic;\">fókuszlopás megakadályozása</span> "
-"ugyanúgy működik, mint máskor. Olyan, mint a <span style=\" font-style:"
-"italic;\">Kattintás fókuszálásra</span>, csak kattintás nélkül.</p></body></"
-"html>"
+"<em>Fókuszálás egérkövetéssel:</em> Az egér mozgatása egy ablakba aktiválja "
+"azt. Az egér alatt véletlenszerűen megjelenő ablakok például nem kapják meg "
+"a fókuszt. A <em>Fókuszlopás megakadályozása</em> ugyanúgy működik, mint "
+"máskor. Olyan, mint a <em>Kattintás fókuszálásra</em>, csak kattintás nélkül."
 
 #: windows.cpp:112
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p>This is mostly the same as <span style=\" font-"
-#| "style:italic;\">Focus follows mouse</span>. If an active window has to be "
-#| "chosen by the system (eg. because the currently active one was closed) "
-#| "the window under the mouse is the preferred candidate. Choose this, if "
-#| "you want a hover controlled focus.</p></body></html>"
+#, kde-format
 msgid ""
 "This is mostly the same as <em>Focus follows mouse</em>. If an active window "
 "has to be chosen by the system (eg. because the currently active one was "
 "closed) the window under the mouse is the preferred candidate. Choose this, "
 "if you want a hover controlled focus."
 msgstr ""
-"<html><head/><body><p>Szinte teljesen ugyanaz, mint a <span style=\" font-"
-"style:italic;\">Fókuszálás egérkövetéssel</span>. Ha a rendszernek ki kell "
-"választania az aktív ablakot (az aktuális bezárása miatt), az egér alatti "
-"ablak az előnyben részesített jelölt. Válassza ezt, ha rámutatással szeretné "
-"irányítani a fókuszálást.</p></body></html>"
+"Szinte teljesen ugyanaz, mint a <em>Fókuszálás egérkövetéssel</em>. Ha a "
+"rendszernek ki kell választania az aktív ablakot (az aktuális bezárása "
+"miatt), az egér alatti ablak az előnyben részesített jelölt. Válassza ezt, "
+"ha rámutatással szeretné irányítani a fókuszálást."
 
 #: windows.cpp:117
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus under "
-#| "mouse:</span> The focus always remains on the window under the mouse.<br/"
-#| "><span style=\" font-weight:600;\">Warning: </span><span style=\" font-"
-#| "style:italic;\">Focus stealing prevention</span> and the <span style=\" "
-#| "font-style:italic;\">tabbox ('Alt+Tab') </span>contradict the activation "
-#| "policy and will not work. You very likely want to use <span style=\" font-"
-#| "style:italic;\">Focus follows mouse (mouse precedence)</span> instead!</"
-#| "p></body></html>"
+#, kde-format
 msgid ""
 "<em>Focus under mouse:</em> The focus always remains on the window under the "
 "mouse.<br/><strong>Warning:</strong> <em>Focus stealing prevention</em> and "
@@ -1419,26 +1368,14 @@ msgid ""
 "not work. You very likely want to use <em>Focus follows mouse (mouse "
 "precedence)</em> instead!"
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Fókusz az egér "
-"alatt:</span> A fókusz mindig az egér alatti ablaké.<br/><span style=\" font-"
-"weight:600;\">Megjegyzés: A </span><span style=\" font-style:italic;"
-"\">Fókuszlopás megakadályozása</span> és a <span style=\" font-style:italic;"
-"\">tabdoboz („Alt+Tab”)</span> sérti a szabályokat, és nem fog működni. "
-"Valószínűleg inkább a <span style=\" font-style:italic;\">Fókuszálás "
-"egérkövetéssel - Egérprecedencia</span> az Önnek való!</p></body></html>"
+"<em>Fókusz az egér alatt:</em> A fókusz mindig az egér alatti ablaké.<br/"
+"><strong>Megjegyzés:</strong> A <em>Fókuszlopás megakadályozása</em> és a "
+"<em>tabdoboz („Alt+Tab”)</em> sérti a szabályokat, és nem fog működni. "
+"Valószínűleg inkább a <em>Fókuszálás egérkövetéssel - Egérprecedencia</em> "
+"az Önnek való!"
 
 #: windows.cpp:121
-#, fuzzy, kde-format
-#| msgid ""
-#| "<html><head/><body><p><span style=\" font-style:italic;\">Focus strictly "
-#| "under mouse:</span> The focus is always on the window under the mouse (in "
-#| "doubt nowhere) very much like the focus behavior in an unmanaged legacy "
-#| "X11 environment.<br/><span style=\" font-weight:600;\">Warning: </"
-#| "span><span style=\" font-style:italic;\">Focus stealing prevention</span> "
-#| "and the <span style=\" font-style:italic;\">tabbox ('Alt+Tab') </"
-#| "span>contradict the activation policy and will not work. You very likely "
-#| "want to use <span style=\" font-style:italic;\">Focus follows mouse "
-#| "(mouse precedence)</span> instead!</p></body></html>"
+#, kde-format
 msgid ""
 "<em>Focus strictly under mouse:</em> The focus is always on the window under "
 "the mouse (in doubt nowhere) very much like the focus behavior in an "
@@ -1447,12 +1384,9 @@ msgid ""
 "activation policy and will not work. You very likely want to use <em>Focus "
 "follows mouse (mouse precedence)</em> instead!"
 msgstr ""
-"<html><head/><body><p><span style=\" font-style:italic;\">Fókusz szigorúan "
-"az egér alatt</span>A fókusz mindig az egér alatti ablaké  - kétség esetén "
-"sehol -, hasonlóan egy nem kezelt, elavult X11 környezethez.<br/><span style="
-"\" font-weight:600;\">Megjegyzés:</span><span style=\" font-style:italic;"
-"\">A Fókuszlopás megakadályozása</span> és a <span style=\" font-style:"
-"italic;\">tabdoboz („Alt+Tab”)</span> sérti a szabályokat, és nem fog "
-"működni. Valószínűleg inkább a <span style=\" font-style:italic;"
-"\">Fókuszálás egérkövetéssel - Egérprecedencia</span> az Önnek való!</p></"
-"body></html>"
+"<em>Fókusz szigorúan az egér alatt:</em>A fókusz mindig az egér alatti "
+"ablaké  - kétség esetén sehol -, hasonlóan egy nem kezelt, elavult X11 "
+"környezethez.<br/><strong>Megjegyzés:</strong> A <em>Fókuszlopás "
+"megakadályozása</em> és a <em>tabdoboz („Alt+Tab”)</em> sérti a szabályokat, "
+"és nem fog működni. Valószínűleg inkább a <em>Fókuszálás egérkövetéssel - "
+"Egérprecedencia</em> az Önnek való!"

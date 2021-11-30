@@ -3,21 +3,22 @@
 # Tamas Szanto <tszanto@interware.hu>, 2001.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012, 2014, 2015, 2019.
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013, 2014.
-# Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017, 2018, 2020.
+# Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017, 2018, 2020, 2021.
+# Kristof Kiszel <ulysses@fsf.hu>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-08-26 00:18+0000\n"
-"PO-Revision-Date: 2020-12-19 19:27+0100\n"
-"Last-Translator: Kristóf Kiszel <kiszel.kristof@gmail.com>\n"
+"PO-Revision-Date: 2021-11-19 13:06+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.03.70\n"
+"X-Generator: Lokalize 21.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -27,12 +28,12 @@ msgstr "Kiszel Kristóf"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kiszel.kristof@gmail.com"
+msgstr "ulysses@fsf.hu"
 
 #: declarative-plugin/buttonsmodel.cpp:54
 #, kde-format
 msgid "More actions for this window"
-msgstr ""
+msgstr "További műveletek"
 
 #: declarative-plugin/buttonsmodel.cpp:56
 #, kde-format
@@ -72,12 +73,12 @@ msgstr "Felgördítés"
 #: declarative-plugin/buttonsmodel.cpp:70
 #, kde-format
 msgid "Keep below other windows"
-msgstr ""
+msgstr "Maradjon más ablakok alatt"
 
 #: declarative-plugin/buttonsmodel.cpp:72
 #, kde-format
 msgid "Keep above other windows"
-msgstr ""
+msgstr "Maradjon más ablakok fölött"
 
 #: kcm.cpp:49
 #, kde-format
@@ -107,6 +108,9 @@ msgid ""
 "active session, without accidentally setting it to one that is either not "
 "available, or which is already set."
 msgstr ""
+"Ez az eszköz lehetővé teszi, hogy beállítsa az ablakdekoráció témáját a "
+"jelenleg aktív munkamenethez, anélkül, hogy véletlenül olyanra állítaná be, "
+"amelyik nem érhető el, vagy már be van állítva."
 
 #: kwin-applywindowdecoration.cpp:33
 #, kde-format
@@ -115,12 +119,17 @@ msgid ""
 "full path will attempt to find a theme in that directory, and then apply "
 "that if one can be deduced."
 msgstr ""
+"A KWin számára beállítani kívánt ablakdekorációs téma neve. Teljes elérési "
+"útvonal megkísérli megtalálni a témát az adott mappában, majd alkalmazza, ha "
+"van ilyen."
 
 #: kwin-applywindowdecoration.cpp:34
 #, kde-format
 msgid ""
 "Show all the themes available on the system (and which is the current theme)"
 msgstr ""
+"A rendszer összes elérhető témájának megjelenítése (és hogy melyik a "
+"jelenlegi téma)"
 
 #: kwin-applywindowdecoration.cpp:65
 #, kde-format
@@ -128,6 +137,8 @@ msgid ""
 "Resolved %1 to the KWin Aurorae theme \"%2\", and will attempt to set that "
 "as your current theme."
 msgstr ""
+"%1 feloldva, mint a(z) „%2” KWin Aurorae téma, és a beállításának "
+"megkísérlése, mint jelenlegi téma."
 
 #: kwin-applywindowdecoration.cpp:71
 #, kde-format
@@ -135,17 +146,20 @@ msgid ""
 "You attempted to pass a file path, but this could not be resolved to a "
 "theme, and we will have to abort, due to having no theme to set"
 msgstr ""
+"Egy fájl elérési útvonalát próbálta meg átadni, de az nem oldható fel "
+"témaként, ezért téma hiányában a beállítási folyamat megszakad"
 
 #: kwin-applywindowdecoration.cpp:77
 #, kde-format
 msgid ""
 "The requested theme \"%1\" is already set as the window decoration theme."
-msgstr ""
+msgstr "A kért „%1” téma már be van állítva, mint ablakdekorációs téma."
 
 #: kwin-applywindowdecoration.cpp:99
 #, kde-format
 msgid "Successfully applied the cursor theme %1 to your current Plasma session"
 msgstr ""
+"A(z) %1 kurzortéma sikeresen beállítva a jelenlegi Plasma munkamenethez"
 
 #: kwin-applywindowdecoration.cpp:102
 #, kde-format
@@ -153,6 +167,8 @@ msgid ""
 "Failed to save your theme settings - the reason is unknown, but this is an "
 "unrecoverable error. You may find that simply trying again will work."
 msgstr ""
+"Nem sikerült menteni a témabeállításait - ennek oka ismeretlen, de ez egy "
+"nem javítható hiba. Próbálja meg ismét, valószínűleg működni fog."
 
 #: kwin-applywindowdecoration.cpp:106
 #, kde-format
@@ -160,11 +176,13 @@ msgid ""
 "Could not find theme \"%1\". The theme should be one of the following "
 "options: %2"
 msgstr ""
+"A(z) „%1” téma nem található. A téma a következő opciók egyike kell, hogy "
+"legyen: %2"
 
 #: kwin-applywindowdecoration.cpp:111
 #, kde-format
 msgid "You have the following KWin window decoration themes on your system:"
-msgstr ""
+msgstr "A következő KWin ablakdekorációs témák találhatók meg a rendszeren:"
 
 #: package/contents/ui/Buttons.qml:85
 #, kde-format
@@ -220,7 +238,7 @@ msgstr "Az ablakok bezárhatók legyenek a menügombra történő dupla kattint�
 #, kde-format
 msgctxt "popup tip"
 msgid "Click and hold on the menu button to show the menu."
-msgstr ""
+msgstr "Kattintson és tartsa lenyomva a menü gombot a menü megjelenítéséhez."
 
 #: package/contents/ui/main.qml:152
 #, kde-format

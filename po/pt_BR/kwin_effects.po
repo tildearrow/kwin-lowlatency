@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-09-24 01:39+0000\n"
-"PO-Revision-Date: 2021-09-15 08:35-0300\n"
+"PO-Revision-Date: 2021-11-09 17:16-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -70,7 +70,7 @@ msgstr ""
 #: desktopgrid/desktopgrid.cpp:107 desktopgrid/desktopgrid_config.cpp:57
 #, kde-format
 msgid "Show Desktop Grid"
-msgstr "Mostrar a grade de áreas de trabalho virtuais"
+msgstr "Mostrar a grade de áreas de trabalho"
 
 #: desktopgrid/desktopgrid_config.cpp:52 invert/invert_config.cpp:38
 #: lookingglass/lookingglass_config.cpp:58 magnifier/magnifier_config.cpp:58

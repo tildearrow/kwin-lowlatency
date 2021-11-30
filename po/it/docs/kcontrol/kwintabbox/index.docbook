@@ -7,7 +7,7 @@
 <article id="kwintabbox" lang="&language;">
 <articleinfo>
 <title
->Scambiafinestre</title>
+>Selettore delle attività</title>
 <authorgroup>
 <author
 >&Martin.Graesslin;&Martin.Graesslin.mail;</author>
@@ -70,15 +70,15 @@
 >Navigare tra le finestre</title>
 
 <para
->Lo scambiafinestre permette all'utente di passare facilmente tra le finestre attualmente aperte usando la tastiera. È molto configurabile e permette all'utente di controllare il suo comportamento, l'aspetto visivo, le scorciatoie di tastiera ed il filtraggio delle finestre.</para>
+>Il selettore delle attività permette all'utente di passare facilmente tra le finestre attualmente aperte usando la tastiera. È molto configurabile e permette all'utente di controllare il suo comportamento, l'aspetto visivo, le scorciatoie di tastiera ed il filtraggio delle finestre.</para>
 
 <para
->Lo scambiafinestre è spesso invocato usando la combinazione di tasti <keycombo
+>Il selettore delle attività è spesso invocato usando la combinazione di tasti <keycombo
 >&Alt;&Tab;</keycombo
->, che però può essere cambiata. Quando invocato, esso mostra un elenco di tutte le finestre attualmente aperte, che sono filtrate facoltativamente oppure ampliate in base alle impostazioni della configurazione. Per esempio, l'elenco può essere filtrato in modo da mostrare solo le finestre che soddisfano certi criteri, ad esempio quelle che sono attualmente visibili. Quando l'elenco viene mostrato l'utente può passare ciclicamente in avanti o all'indietro tra tutte le finestre elencate usando ripetutamente la combinazione di tasti dello scambiafinestre: rilasciandola, la finestra che era selezionata nell'elenco verrà attivata.</para>
+>, che però può essere cambiata. Quando invocato, esso mostra un elenco di tutte le finestre attualmente aperte, che sono filtrate facoltativamente oppure ampliate in base alle impostazioni della configurazione. Per esempio, l'elenco può essere filtrato in modo da mostrare solo le finestre che soddisfano certi criteri, ad esempio quelle che sono attualmente visibili. Quando l'elenco viene mostrato l'utente può passare ciclicamente in avanti o all'indietro tra tutte le finestre elencate usando ripetutamente la combinazione di tasti del selettore delle attività: rilasciandola, la finestra che era selezionata nell'elenco verrà attivata.</para>
 
 <para
->Dato che le scambiafinestre offre molte opzioni di configurazione, possono essere definite due raccolte di impostazioni di configurazione, che sono chiamate <guilabel
+>Dato che il selettore delle attività offre molte opzioni di configurazione, possono essere definite due raccolte di impostazioni di configurazione, che sono chiamate <guilabel
 >Principale</guilabel
 > e <guilabel
 >Alternativo</guilabel
@@ -94,13 +94,13 @@
 >Questo gruppo di opzioni di configurazione controlla come viene visualizzato l'elenco delle finestre nello schermo. La visualizzazione predefinita si chiama <guilabel
 >Brezza</guilabel
 >, che elenca tutte le finestre aperte nella parte sinistra delle schermo. Tra le altre visualizzazioni ci sono <guilabel
->Scambiafinestre circolare</guilabel
+>Selezione circolare</guilabel
 > (un carosello 3D), <guilabel
->Scambiafinestre a pila</guilabel
+>Selezione a pila</guilabel
 > (una pila di carte 3D) e <guilabel
 >Medio arrotondato</guilabel
 > (un elenco di icone in stile Microsoft &Windows;), ma puoi scaricarne ed installarne molte altre facendo clic sul pulsante <guibutton
->Recupera nuovi scambiafinestre...</guibutton
+>Recupera nuovi selettori delle attività...</guibutton
 >, che è situato in basso a destra nella finestra.</para>
 
 <para
@@ -109,11 +109,11 @@
 <para
 >La casella <guilabel
 >Mostra la finestra selezionata</guilabel
-> determina quanto chiaramente l'utente vedrà la finestra che verrà attivata. Se questa casella è spuntata, tutte le finestre verranno oscurate tranne quella che è attualmente evidenziata nello scambiafinestre.</para>
+> determina quanto chiaramente l'utente vedrà la finestra che verrà attivata. Se questa casella è spuntata, tutte le finestre verranno oscurate tranne quella che è attualmente evidenziata nel selettore delle attività.</para>
 
 <note
 ><para
->Ci possono essere dei casi in cui la visualizzazione desiderata dello scambiafinestre non può essere mostrata. Una di queste situazioni si può verificare quando un processo chiamato «composizione» è stato disattivato oppure disabilitato. Se ciò dovesse succedere l'elenco delle finestre verrebbe comunque visualizzato, ma in una forma molto semplice.</para
+>Ci possono essere dei casi in cui la visualizzazione desiderata del selettore delle attività non può essere mostrata. Una di queste situazioni si può verificare quando un processo chiamato «composizione» è stato disattivato oppure disabilitato. Se ciò dovesse succedere l'elenco delle finestre verrebbe comunque visualizzato, ma in una forma molto semplice.</para
 ></note>
 </sect2>
 
@@ -121,9 +121,9 @@
 <title
 >Scorciatoie</title>
 <para
->Questa sezione ti permette di definire fino a quattro scorciatoie di tastiera per la configurazione dello scambiafinestre <guilabel
+>Questa sezione ti permette di definire fino a quattro scorciatoie di tastiera per la configurazione del selettore delle attività <guilabel
 >Principale</guilabel
->, ed altrettante per quella dell'<guilabel
+>, e altrettante per quella dell'<guilabel
 >Alternativo</guilabel
 >. Le scorciatoie del <guilabel
 >Principale</guilabel
@@ -155,7 +155,7 @@
 
 <note
 ><para
->Per invocare lo scambiafinestre può essere usata una qualsiasi delle scorciatoie di tastiera definite. Per invocarlo invece senza usare la tastiera puoi definire delle azioni per i bordi dello schermo nel modulo <ulink url="help:/kcontrol/kwinscreenedges/index.html"
+>Per invocare il selettore delle attività può essere usata una qualsiasi delle scorciatoie di tastiera definite. Per invocarlo invece senza usare la tastiera puoi definire delle azioni per i bordi dello schermo nel modulo <ulink url="help:/kcontrol/kwinscreenedges/index.html"
 ><guilabel
 >Bordi dello schermo</guilabel
 ></ulink
@@ -167,7 +167,7 @@
 <title
 >Contenuto</title>
 <para
->Le opzioni in questa sezione controllano parzialmente quali finestre appariranno nell'elenco dello scambiafinestre.</para>
+>Le opzioni in questa sezione controllano parzialmente quali finestre appariranno nell'elenco del selettore delle attività.</para>
 
 <para
 >L'elenco a tendina <guilabel
@@ -195,7 +195,7 @@
 <title
 >Filtra le finestre per</title>
 <para
->Questa sezione contiene le opzioni per filtrare ulteriormente l'elenco delle finestre dello scambiafinestre.</para>
+>Questa sezione contiene le opzioni per filtrare ulteriormente l'elenco delle finestre del selettore delle attività.</para>
 
 <para
 >L'opzione <guilabel
@@ -238,18 +238,18 @@
 > per mostrare solo quelle che lo sono.</para>
 
 <para
->Se deselezioni un'opzione in questa sezione, allora non verrà applicato nessun filtraggio per essa. Ad esempio, se selezioni le opzioni Schermi e deselezioni le altre tre, allora l'elenco delle finestre dello scambiafinestre verrà filtrato solamente in base a quali finestre sono nello schermo corrente.</para>
+>Se deselezioni un'opzione in questa sezione, allora non verrà applicato nessun filtraggio per essa. Ad esempio, se selezioni le opzioni Schermi e deselezioni le altre tre, allora l'elenco delle finestre del selettore delle attività verrà filtrato solamente in base a quali finestre sono nello schermo corrente.</para>
 <para
->Tutte le opzioni descritte nella sezione qui sopra lavorano insieme per fornire un controllo molto fine del comportamento e dell'aspetto dello scambiafinestre. Ad esempio, potresti scegliere di invocare la raccolta <guilabel
+>Tutte le opzioni descritte nella sezione qui sopra lavorano insieme per fornire un controllo molto fine del comportamento e dell'aspetto del selettore delle attività. Ad esempio, potresti scegliere di invocare la raccolta <guilabel
 >Principale</guilabel
 > delle impostazioni con la combinazione di tasti <keycombo
 >&Alt;&Tab;</keycombo
 >, in modo da mostrare le finestre aperte in un carosello, oppure solo una finestra per applicazione o anche di elencare solamente le finestre che sono nel desktop corrente e nello schermo attualmente attivo. Ciò può fornirti un passaggio tra le finestre sensibile al contesto molto veloce se hai sia i desktop virtuali «Lavoro» che «Casa», mantenendo i fogli elettronici per lavoro e per casa sullo stesso schermo.</para>
 
 <para
->La disponibilità della configurazione di uno scambiafinestre <guilabel
+>La disponibilità della configurazione di un selettore delle attività <guilabel
 >Alternativo</guilabel
-> ti offre una seconda modalità di filtrare e di navigare facilmente tra le finestre nell'elenco. Con otto combinazioni di tasti disponibili nelle due configurazioni dello scambiafinestre dovrebbe essere possibile navigare facilmente e velocemente tra un gran numero di finestre.</para>
+> ti offre una seconda modalità di filtrare e di navigare facilmente tra le finestre nell'elenco. Con otto combinazioni di tasti disponibili nelle due configurazioni del selettore delle attività dovrebbe essere possibile navigare facilmente e velocemente tra un gran numero di finestre.</para>
 </sect2>
 </sect1>
 </article>

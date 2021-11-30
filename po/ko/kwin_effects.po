@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-09-24 01:39+0000\n"
-"PO-Revision-Date: 2021-05-17 00:46+0200\n"
+"PO-Revision-Date: 2021-11-12 00:57+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 20.12.3\n"
+"X-Generator: Lokalize 21.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -327,7 +327,7 @@ msgstr "반투명 창 뒤편의 명암과 가독성을 개선함"
 #, kde-format
 msgctxt "Name of a KWin Effect"
 msgid "Desktop Grid"
-msgstr "데스크톱 모눈"
+msgstr "바탕 화면 모눈"
 
 #: effect_builtins.cpp:139
 #, kde-format
@@ -475,15 +475,13 @@ msgstr "바탕 화면에 선을 그립니다"
 #, kde-format
 msgctxt "Name of a KWin Effect"
 msgid "Overview"
-msgstr ""
+msgstr "한눈에 보기"
 
 #: effect_builtins.cpp:331
-#, fuzzy, kde-format
-#| msgctxt "Comment describing the KWin Effect"
-#| msgid "Allows you to draw lines on the desktop"
+#, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Allows you to overview virtual desktops and windows"
-msgstr "바탕 화면에 선을 그립니다"
+msgstr "가상 바탕 화면과 창 한눈에 보기"
 
 #: effect_builtins.cpp:346
 #, kde-format
@@ -534,17 +532,16 @@ msgid "Helper effect for screenshot tools"
 msgstr "스크린샷 도구 도우미 효과"
 
 #: effect_builtins.cpp:410
-#, fuzzy, kde-format
-#| msgid "Transparent"
+#, kde-format
 msgctxt "Name of a KWin Effect"
 msgid "Transform"
-msgstr "투명"
+msgstr "변형"
 
 #: effect_builtins.cpp:411
 #, kde-format
 msgctxt "Comment describing the KWin Effect"
 msgid "Animates display transformations"
-msgstr ""
+msgstr "디스플레이 변형 애니메이션"
 
 #: effect_builtins.cpp:425
 #, kde-format
@@ -1002,10 +999,9 @@ msgid "Draw with the mouse by holding Shift+Meta keys and moving the mouse."
 msgstr "Shift+Meta 키를 누르면서 마우스를 움직여서 그림을 그리십시오."
 
 #: overview/kcm/overvieweffectkcm.cpp:43 overview/overvieweffect.cpp:79
-#, fuzzy, kde-format
-#| msgid "Toggle Invert Effect"
+#, kde-format
 msgid "Toggle Overview"
-msgstr "반전 효과 켬/끔"
+msgstr "한눈에 보기 전환"
 
 #. i18n: ectx: property (text), widget (QLabel, label_LayoutMode)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -1019,7 +1015,7 @@ msgstr "레이아웃 모드:"
 #: overview/kcm/overvieweffectkcm.ui:30
 #, kde-format
 msgid "Closest"
-msgstr ""
+msgstr "가장 가깝게"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
@@ -1756,7 +1752,7 @@ msgstr "마우스 포인터:"
 #: zoom/zoom_config.ui:99
 #, kde-format
 msgid "Visibility of the mouse-pointer."
-msgstr "마우스 포인터를 보일지 여부입니다."
+msgstr "마우스 포인터를 표시할지 여부입니다."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MousePointer)
 #: zoom/zoom_config.ui:103

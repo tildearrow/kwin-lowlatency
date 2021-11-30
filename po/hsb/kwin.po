@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-09 01:47+0000\n"
-"PO-Revision-Date: 2008-11-21 01:39+0100\n"
+"PO-Revision-Date: 2021-11-28 14:11+0100\n"
 "Last-Translator: Eduard Werner <edi.werner@gmx.de>\n"
 "Language-Team: en_US <kde-i18n-doc@lists.kde.org>\n"
 "Language: hsb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KAider 0.1\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3;\n"
+"X-Generator: Poedit 2.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -61,55 +61,55 @@ msgstr ""
 #, kde-format
 msgctxt "A mouse button"
 msgid "Left"
-msgstr ""
+msgstr "Lěwy"
 
 #: debug_console.cpp:93
 #, kde-format
 msgctxt "A mouse button"
 msgid "Right"
-msgstr ""
+msgstr "Prawy"
 
 #: debug_console.cpp:95
 #, kde-format
 msgctxt "A mouse button"
 msgid "Middle"
-msgstr ""
+msgstr "Srjedźanski"
 
 #: debug_console.cpp:97
 #, kde-format
 msgctxt "A mouse button"
 msgid "Back"
-msgstr ""
+msgstr "Wróćo"
 
 #: debug_console.cpp:99
 #, kde-format
 msgctxt "A mouse button"
 msgid "Forward"
-msgstr ""
+msgstr "Doprědka"
 
 #: debug_console.cpp:101
 #, kde-format
 msgctxt "A mouse button"
 msgid "Task"
-msgstr ""
+msgstr "Nadawk"
 
 #: debug_console.cpp:103
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 4"
-msgstr ""
+msgstr "Dalši knefl 4"
 
 #: debug_console.cpp:105
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 5"
-msgstr ""
+msgstr "Dalši knefl 5"
 
 #: debug_console.cpp:107
 #, kde-format
 msgctxt "A mouse button"
 msgid "Extra Button 6"
-msgstr ""
+msgstr "Dalši knefl 6"
 
 #: debug_console.cpp:109
 #, kde-format
@@ -2237,8 +2237,7 @@ msgid "&Move"
 msgstr "&Přesunyć"
 
 #: useractions.cpp:245
-#, fuzzy, kde-format
-#| msgid "Re&size"
+#, kde-format
 msgid "&Resize"
 msgstr "&Wulkosć změnić"
 
@@ -2258,7 +2257,7 @@ msgid "&Fullscreen"
 msgstr "Přez &cyłu wobrazowku"
 
 #: useractions.cpp:268
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Shade"
 msgstr "&Sćin podkłasć"
 
@@ -2307,7 +2306,7 @@ msgstr "&Minimizować"
 #: useractions.cpp:340
 #, kde-format
 msgid "&More Actions"
-msgstr ""
+msgstr "&Wjace akcijow"
 
 #: useractions.cpp:343
 #, kde-format
@@ -2317,25 +2316,22 @@ msgstr "&Začinić"
 #: useractions.cpp:410
 #, kde-format
 msgid "&Extensions"
-msgstr ""
+msgstr "&Ekstensije"
 
 #: useractions.cpp:450
-#, fuzzy, kde-format
-#| msgid "&All Desktops"
+#, kde-format
 msgid "&Desktops"
-msgstr "&Wšitke dźěłowe powjerchi"
+msgstr "&Dźěłowe powjerchi"
 
 #: useractions.cpp:463
-#, fuzzy, kde-format
-#| msgid "To &Desktop"
+#, kde-format
 msgid "Move to &Desktop"
 msgstr "Na &dźěłowy powjerch"
 
 #: useractions.cpp:480
-#, fuzzy, kde-format
-#| msgid "To &Desktop"
+#, kde-format
 msgid "Move to &Screen"
-msgstr "Na &dźěłowy powjerch"
+msgstr "Na &wobrazowku"
 
 #: useractions.cpp:496
 #, kde-format
@@ -2348,16 +2344,15 @@ msgid "&All Desktops"
 msgstr "&Wšitke dźěłowe powjerchi"
 
 #: useractions.cpp:553
-#, fuzzy, kde-format
-#| msgid "To &Desktop"
+#, kde-format
 msgctxt "Create a new desktop and move the window there"
 msgid "&New Desktop"
-msgstr "Na &dźěłowy powjerch"
+msgstr "Na &nowy dźěłowy powjerch"
 
 #: useractions.cpp:622
 #, kde-format
 msgid "Move to %1 %2"
-msgstr ""
+msgstr "Přesunyć na %1 %2"
 
 #: useractions.cpp:635
 #, fuzzy, kde-format
@@ -2507,7 +2502,7 @@ msgstr "Wokno horje"
 #: useractions.cpp:1016
 #, kde-format
 msgid "Pack Window Down"
-msgstr "Wokno dele "
+msgstr "Wokno dele sunyć"
 
 #: useractions.cpp:1018
 #, kde-format
@@ -2617,10 +2612,9 @@ msgid "Keep Window on All Desktops"
 msgstr "Wokno na wšěch dźěłowych powjerchach"
 
 #: useractions.cpp:1066
-#, fuzzy, kde-format
-#| msgid "Window to Desktop 1"
+#, kde-format
 msgid "Window to Desktop %1"
-msgstr "Wokno na dźěłowy powjerch 1"
+msgstr "Wokno na dźěłowy powjerch %1"
 
 #: useractions.cpp:1068
 #, kde-format
