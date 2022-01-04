@@ -418,7 +418,7 @@
 >Coincidència exacta</guilabel
 > com la <guilabel
 >Coincidència parcial</guilabel
-> implementen la coincidència sensible a majúscules i minúscules. Per exemple, <emphasis
+> implementen la coincidència sense distingir majúscules i minúscules. Per exemple, <emphasis
 >AB</emphasis
 > coincideix amb la cadena <emphasis
 >AB</emphasis
@@ -675,7 +675,7 @@
 > <imageobject
 > <imagedata fileref="Face-smile.png" format="PNG"/> </imageobject
 ></inlinemediaobject
-> Per exemple, quan l'atribut de <guilabel
+> Per exemple, quan l'atribut <guilabel
 >Ignora la barra de tasques</guilabel
 > s'estableix a <guilabel
 >No</guilabel
@@ -902,7 +902,7 @@
   <varlistentry
 ><term
 ><emphasis role="bold"
->Autoagrupa com a idèntiques</emphasis
+>Agrupa automàticament com a idèntiques</emphasis
 ></term>
     <listitem>
     <para
@@ -916,7 +916,7 @@
   <varlistentry
 ><term
 ><emphasis role="bold"
->Autoagrupa en primer pla</emphasis
+>Agrupa automàticament en primer pla</emphasis
 ></term>
     <listitem>
     <para
@@ -926,7 +926,7 @@
   <varlistentry
 ><term
 ><emphasis role="bold"
->Autoagrupa per ID</emphasis
+>Agrupa automàticament per ID</emphasis
 ></term>
     <listitem>
     <para
@@ -1138,7 +1138,7 @@
 <para
 ><tip
 ><para
->Una finestra de terminal encara pot ser tancada per l'usuari final, però, finalitzant la sessió del shell, tot i que utilitzant <guilabel
+>Una finestra de terminal encara pot ser tancada per l'usuari final, però finalitzant la sessió del shell, tot i que utilitzant <guilabel
 >Accepta el focus</guilabel
 > en desactivar l'entrada del teclat es farà que sigui més difícil tancar la finestra.</para
 ></tip>
@@ -1556,7 +1556,7 @@
 ></listitem>
 <listitem
 ><para
->Activeu els següents atributs: <screenshot>
+>Activeu els atributs següents: <screenshot>
 <screeninfo
 ></screeninfo>
   <mediaobject>
@@ -1585,10 +1585,10 @@
 >No</guilabel
 > per a mostrar la finestra a la barra de tasques, el qual es tradueix a: <emphasis
 >no</emphasis
+>, <emphasis
+>no</emphasis
 > <emphasis
->no fer</emphasis
-> <emphasis
->ignora la barra de tasques</emphasis
+>ignoris la barra de tasques</emphasis
 > <inlinemediaobject
 > <imageobject
 > <imagedata fileref="Face-smile.png" format="PNG"/> </imageobject
@@ -1607,7 +1607,7 @@
 ><para
 >Utilitzeu <guilabel
 >Detecta les propietats de la finestra</guilabel
-> i seleccioneu la finestra del &kopete;. Per a que només coincideixi per nom de la classe principal deixeu les caselles de selecció sense marcar -per a obtenir més informació, vegeu <link linkend="window-matching"
+> i seleccioneu la finestra del &kopete;. Perquè només coincideixi per nom de la classe principal deixeu les caselles de selecció sense marcar -per a obtenir més informació, vegeu <link linkend="window-matching"
 >Coincidència de finestra</link
 >-: <screenshot>
 <screeninfo
@@ -1649,7 +1649,7 @@
 ></listitem>
 <listitem
 ><para
->Activeu els següents atributs: <screenshot>
+>Activeu els atributs següents: <screenshot>
 <screeninfo
 ></screeninfo>
   <mediaobject>
@@ -1698,9 +1698,9 @@
 ><title
 >Suprimir una finestra mostrada al paginador</title>
 <para
-><guilabel
+>El <guilabel
 >KNotes</guilabel
-> actualment no permet a les seves notes passar al paginador però, una regla, resol aquesta mancança. </para>
+> actualment no permet a les seves notes passar al paginador, però una regla resol aquesta mancança. </para>
 <para
 >Assumint que hi ha disponible una finestra de <emphasis
 >nota adhesiva</emphasis
@@ -1899,7 +1899,7 @@
 ></listitem>
 <listitem
 ><para
->Activeu els següents atributs: <screenshot>
+>Activeu els atributs següents: <screenshot>
 <screeninfo
 ></screeninfo>
   <mediaobject>
@@ -1978,7 +1978,7 @@
 ></listitem>
 <listitem
 ><para
->Activeu els següents atributs: <screenshot>
+>Activeu els atributs següents: <screenshot>
 <screeninfo
 ></screeninfo>
   <mediaobject>
@@ -2059,7 +2059,7 @@
 ></listitem>
 <listitem
 ><para
->Activeu els següents atributs: <screenshot>
+>Activeu els atributs següents: <screenshot>
 <screeninfo
 ></screeninfo>
   <mediaobject>

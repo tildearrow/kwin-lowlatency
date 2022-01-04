@@ -1,5 +1,5 @@
 # translation of kcmkwindecoration.po to Polish
-# Version: $Revision: 1607576 $
+# Version: $Revision: 1616097 $
 # translation of kcmkwindecoration.po to
 # Norbert Popiołek <norbert@kde.com.pl>\n"
 # Michał Rudolf <mrudolf@kdewebdev.org>, 2002.
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kcmkwindecoration\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-08-26 00:18+0000\n"
-"PO-Revision-Date: 2021-06-12 07:58+0200\n"
+"PO-Revision-Date: 2021-12-30 13:20+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 ">\n"
-"X-Generator: Lokalize 20.12.1\n"
+"X-Generator: Lokalize 22.03.70\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
@@ -53,12 +53,12 @@ msgstr "Na wszystkich pulpitach"
 #: declarative-plugin/buttonsmodel.cpp:60
 #, kde-format
 msgid "Minimize"
-msgstr "Minimalizuj"
+msgstr "Zminimalizuj"
 
 #: declarative-plugin/buttonsmodel.cpp:62
 #, kde-format
 msgid "Maximize"
-msgstr "Maksymalizuj"
+msgstr "Zmaksymalizuj"
 
 #: declarative-plugin/buttonsmodel.cpp:64
 #, kde-format

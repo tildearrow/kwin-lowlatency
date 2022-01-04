@@ -295,7 +295,7 @@
 </tip>
 
 <para
->Si preferiu no utilitzar l'eleva automàticament, assegureu-vos que l'opció <guilabel
+>Si preferiu no utilitzar elevar automàticament, assegureu-vos que l'opció <guilabel
 >Eleva la finestra activa amb un clic</guilabel
 > està marcada. No seríeu feliç amb tanta acció, l'efecte net serà que les finestres no seran elevades en absolut. </para>
 
@@ -312,7 +312,7 @@
 
 <sect3 id="action-actions-sec1">
 <title
->Doble clic:</title>
+>Doble clic</title>
 
 <para
 >En aquesta llista desplegable podeu seleccionar <guilabel
@@ -339,7 +339,7 @@
 
 <para
 >Hi ha disponibles opcions similars per a <guilabel
->Roda del ratolí:</guilabel
+>Roda del ratolí</guilabel
 >. </para>
 <!--FIXME Raise/Lower Shade/Unshade Maximize/Restore Keep Above/Below Move to Previous/Next Desktop Change Opacity -->
 
@@ -395,7 +395,7 @@
 <varlistentry>
 <term
 ><guilabel
->Canvia entre eleva i abaixa</guilabel
+>Canvia entre elevar i abaixar</guilabel
 ></term>
 <listitem>
 <para
@@ -467,7 +467,7 @@ Minimize, Shade, Close
 ></term>
 <listitem>
 <para
->Això fa que la finestra on feu clic sigui activada, l'eleva al davant de la pantalla, i li passa a un clic de ratolí per a l'aplicació. </para>
+>Això fa que la finestra on feu clic sigui activada, elevada al davant de la pantalla, i li passa a un clic de ratolí per a l'aplicació. </para>
 </listitem>
 </varlistentry>
 
@@ -500,7 +500,7 @@ Minimize, Shade, Close
 ></term>
 <listitem>
 <para
->Això fa que la finestra on feu clic sigui activada i l'eleva a la part superior de la pantalla. El clic del ratolí no es transmet a la finestra de l'aplicació. </para>
+>Això fa que la finestra on feu clic sigui activada i elevada a la part superior de la pantalla. El clic del ratolí no es transmet a la finestra de l'aplicació. </para>
 </listitem>
 </varlistentry>
 </variablelist>
@@ -630,7 +630,7 @@ Minimize, Shade, Close
 <varlistentry>
 <term
 ><guilabel
->Canvia entre eleva i abaixa</guilabel
+>Canvia entre elevar i abaixar</guilabel
 ></term>
 <listitem>
 <para

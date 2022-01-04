@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-09 01:47+0000\n"
-"PO-Revision-Date: 2021-11-23 14:31\n"
+"POT-Creation-Date: 2021-12-10 02:10+0000\n"
+"PO-Revision-Date: 2021-12-22 14:10\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -39,7 +39,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-china@kde.org"
 
-#: abstract_client.cpp:2818
+#: abstract_client.cpp:2819
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -1147,7 +1147,7 @@ msgstr "终止程序(&T) %1"
 msgid "Wait Longer"
 msgstr "等待更长时间"
 
-#: input.cpp:2530
+#: input.cpp:2531
 #, kde-format
 msgid "Touchpad"
 msgstr "触摸板"

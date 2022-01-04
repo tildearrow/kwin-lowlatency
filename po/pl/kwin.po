@@ -1,5 +1,5 @@
 # translation of kwin.po to
-# Version: $Revision: 1612022 $
+# Version: $Revision: 1616097 $
 # translation of kwin.po to Polish
 # translation of kwin.po to
 # Norbert Popiołek <norbert@kde.com.pl>
@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-09 01:47+0000\n"
-"PO-Revision-Date: 2021-09-04 09:00+0200\n"
+"POT-Creation-Date: 2021-12-10 02:10+0000\n"
+"PO-Revision-Date: 2021-12-30 13:20+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -31,7 +31,7 @@ msgstr ""
 ">\n"
 ">\n"
 ">\n"
-"X-Generator: Lokalize 20.12.1\n"
+"X-Generator: Lokalize 22.03.70\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
@@ -46,7 +46,7 @@ msgid "Your emails"
 msgstr ""
 "mrudolf@kdewebdev.org, norbert@kde.com.pl, lukasz.wojnilowicz@gmail.com"
 
-#: abstract_client.cpp:2818
+#: abstract_client.cpp:2819
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -1158,7 +1158,7 @@ msgstr "&Zakończ program %1"
 msgid "Wait Longer"
 msgstr "Poczekaj dłużej"
 
-#: input.cpp:2530
+#: input.cpp:2531
 #, kde-format
 msgid "Touchpad"
 msgstr "Gładzik"
@@ -2292,12 +2292,12 @@ msgstr "Ustawienia zarządzania oknam&i..."
 #: useractions.cpp:328
 #, kde-format
 msgid "Ma&ximize"
-msgstr "&Maksymalizuj"
+msgstr "Z&maksymalizuj"
 
 #: useractions.cpp:334
 #, kde-format
 msgid "Mi&nimize"
-msgstr "Mi&nimalizuj"
+msgstr "Zmi&nimalizuj"
 
 #: useractions.cpp:340
 #, kde-format
@@ -2400,22 +2400,22 @@ msgstr "Zamknij okno"
 #: useractions.cpp:978
 #, kde-format
 msgid "Maximize Window"
-msgstr "Maksymalizuj okno"
+msgstr "Zmaksymalizuj okno"
 
 #: useractions.cpp:980
 #, kde-format
 msgid "Maximize Window Vertically"
-msgstr "Maksymalizuj okno w pionie"
+msgstr "Zmaksymalizuj okno w pionie"
 
 #: useractions.cpp:982
 #, kde-format
 msgid "Maximize Window Horizontally"
-msgstr "Maksymalizuj okno w poziomie"
+msgstr "Zmaksymalizuj okno w poziomie"
 
 #: useractions.cpp:984
 #, kde-format
 msgid "Minimize Window"
-msgstr "Minimalizuj okno"
+msgstr "Zminimalizuj okno"
 
 #: useractions.cpp:986
 #, kde-format

@@ -3,6 +3,7 @@
 # Anne-Marie Mahfouf <annemarie.mahfouf@free.fr>, 2009, 2010, 2011, 2012, 2013.
 # xavier <ktranslator31@yahoo.fr>, 2013.
 # Simon Depiets <sdepiets@gmail.com>, 2019.
+# Xavier Besnard <xavier.besnard@neuf.fr>, 2021.
 #
 msgid ""
 msgstr ""
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 19.03.70\n"
+"X-Generator: Lokalize 21.11.90\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"

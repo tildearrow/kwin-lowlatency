@@ -1,27 +1,26 @@
 # Translation of kcmkwm.po to Catalan (Valencian)
-# Copyright (C) 1998-2019 This_file_is_part_of_KDE
+# Copyright (C) 1998-2021 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
-# or the same license as the source of its messages in English.
 #
 # Sebastià Pla i Sanz <sps@sastia.com>, 1998, 1999, 2000, 2001, 2002, 2004, 2005, 2006.
-# Antoni Bella Pérez <antonibella5@yahoo.com>, 2003, 2011, 2013, 2015.
+# Antoni Bella Pérez <antonibella5@yahoo.com>, 2003, 2011, 2013, 2015, 2020, 2021.
 # Albert Astals Cid <aacid@kde.org>, 2005.
-# Josep Ma. Ferrer <txemaq@gmail.com>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2016, 2017, 2018, 2019.
+# Josep M. Ferrer <txemaq@gmail.com>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
 # Manuel Tortosa Moreno <manutortosa@chakra-project.org>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-04-27 00:19+0000\n"
-"PO-Revision-Date: 2019-07-11 12:28+0200\n"
-"Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
+"PO-Revision-Date: 2021-10-11 18:14+0200\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Lokalize 20.12.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 
@@ -37,18 +36,16 @@ msgstr "sps@sastia.com"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
 #: actions.ui:17
-#, fuzzy, kde-format
-#| msgid "Inactive Inner Window"
+#, kde-format
 msgid "Inactive Inner Window Actions"
-msgstr "Finestra interior inactiva"
+msgstr "Accions de finestra interior inactiva"
 
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: actions.ui:26 mouse.ui:177
-#, fuzzy, kde-format
-#| msgid "&Double-click:"
+#, kde-format
 msgid "&Left click:"
-msgstr "&Doble clic:"
+msgstr "Clic &esquerre:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandWindow1)
 #: actions.ui:39
@@ -65,8 +62,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow2)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow3)
 #: actions.ui:43 actions.ui:83 actions.ui:123
-#, fuzzy, kde-format
-#| msgid "Activate, Raise & Pass Click"
+#, kde-format
 msgid "Activate, raise and pass click"
 msgstr "Activa, eleva i passa el clic"
 
@@ -74,8 +70,7 @@ msgstr "Activa, eleva i passa el clic"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow2)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindow3)
 #: actions.ui:48 actions.ui:88 actions.ui:128
-#, fuzzy, kde-format
-#| msgid "Activate & Pass Click"
+#, kde-format
 msgid "Activate and pass click"
 msgstr "Activa i passa el clic"
 
@@ -99,18 +94,16 @@ msgstr "Activa"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
 #: actions.ui:58 actions.ui:98 actions.ui:138 mouse.ui:283 mouse.ui:398
 #: mouse.ui:513
-#, fuzzy, kde-format
-#| msgid "Activate & Raise"
+#, kde-format
 msgid "Activate and raise"
 msgstr "Activa i eleva"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: actions.ui:66 mouse.ui:200
-#, fuzzy, kde-format
-#| msgid "&Double-click:"
+#, kde-format
 msgid "&Middle click:"
-msgstr "&Doble clic:"
+msgstr "Clic del &mig:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandWindow2)
 #: actions.ui:79
@@ -128,7 +121,7 @@ msgstr ""
 #: actions.ui:106 mouse.ui:213
 #, kde-format
 msgid "&Right click:"
-msgstr ""
+msgstr "Clic &dret:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandWindow3)
 #: actions.ui:119
@@ -144,10 +137,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: actions.ui:146 mouse.ui:88
-#, fuzzy, kde-format
-#| msgid "M&ouse wheel:"
+#, kde-format
 msgid "Mouse &wheel:"
-msgstr "R&oda del ratolí:"
+msgstr "&Roda del ratolí:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandWindowWheel)
 #: actions.ui:159
@@ -168,31 +160,27 @@ msgstr "Desplaçament"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindowWheel)
 #: actions.ui:168
-#, fuzzy, kde-format
-#| msgid "Activate & Scroll"
+#, kde-format
 msgid "Activate and scroll"
 msgstr "Activa i desplaça"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandWindowWheel)
 #: actions.ui:173
-#, fuzzy, kde-format
-#| msgid "Activate, Raise & Scroll"
+#, kde-format
 msgid "Activate, raise and scroll"
 msgstr "Activa, eleva i desplaça"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: actions.ui:184
-#, fuzzy, kde-format
-#| msgid "Inner Window, Titlebar & Frame"
+#, kde-format
 msgid "Inner Window, Titlebar and Frame Actions"
-msgstr "Finestra interior, barra de títol i marc"
+msgstr "Accions de finestra interior, barra de títol i marc"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: actions.ui:195
-#, fuzzy, kde-format
-#| msgid "Modifier &key:"
+#, kde-format
 msgid "Mo&difier key:"
-msgstr "Te&cla modificadora:"
+msgstr "Tecla mo&dificadora:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandAllKey)
 #: actions.ui:205
@@ -218,18 +206,16 @@ msgstr "Alt"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: actions.ui:236
-#, fuzzy, kde-format
-#| msgid "   + "
+#, kde-format
 msgid "  + "
-msgstr "   + "
+msgstr "  + "
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: actions.ui:248 mouse.ui:601
-#, fuzzy, kde-format
-#| msgid "&Double-click:"
+#, kde-format
 msgid "L&eft click:"
-msgstr "&Doble clic:"
+msgstr "Clic &esquerre:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandAll1)
 #: actions.ui:261
@@ -253,8 +239,7 @@ msgstr "Mou"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
 #: actions.ui:270 actions.ui:340 actions.ui:410
-#, fuzzy, kde-format
-#| msgid "Activate, Raise & Move"
+#, kde-format
 msgid "Activate, raise and move"
 msgstr "Activa, eleva i mou"
 
@@ -269,10 +254,9 @@ msgstr "Activa, eleva i mou"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
 #: actions.ui:275 actions.ui:345 actions.ui:415 mouse.ui:246 mouse.ui:308
 #: mouse.ui:361 mouse.ui:423 mouse.ui:476 mouse.ui:538
-#, fuzzy, kde-format
-#| msgid "Toggle Raise & Lower"
+#, kde-format
 msgid "Toggle raise and lower"
-msgstr "Canvia entre eleva i abaixa"
+msgstr "Canvia entre elevar i abaixar"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll1)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
@@ -335,8 +319,7 @@ msgstr "Minimitza"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
 #: actions.ui:300 actions.ui:370 actions.ui:440
-#, fuzzy, kde-format
-#| msgid "Decrease Opacity"
+#, kde-format
 msgid "Decrease opacity"
 msgstr "Disminueix l'opacitat"
 
@@ -344,8 +327,7 @@ msgstr "Disminueix l'opacitat"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll2)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAll3)
 #: actions.ui:305 actions.ui:375 actions.ui:445
-#, fuzzy, kde-format
-#| msgid "Increase Opacity"
+#, kde-format
 msgid "Increase opacity"
 msgstr "Augmenta l'opacitat"
 
@@ -365,17 +347,15 @@ msgstr "Augmenta l'opacitat"
 #: actions.ui:310 actions.ui:380 actions.ui:450 actions.ui:505 mouse.ui:80
 #: mouse.ui:132 mouse.ui:271 mouse.ui:333 mouse.ui:386 mouse.ui:448
 #: mouse.ui:501 mouse.ui:563
-#, fuzzy, kde-format
-#| msgid "Nothing"
+#, kde-format
 msgid "Do nothing"
-msgstr "Res"
+msgstr "No faces res"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: actions.ui:318
-#, fuzzy, kde-format
-#| msgid "Middle b&utton:"
+#, kde-format
 msgid "Middle &click:"
-msgstr "Botó del &mig:"
+msgstr "&Clic del mig:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandAll2)
 #: actions.ui:331
@@ -392,7 +372,7 @@ msgstr ""
 #: actions.ui:388 mouse.ui:671
 #, kde-format
 msgid "Right clic&k:"
-msgstr ""
+msgstr "Clic dre&t:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandAll3)
 #: actions.ui:401
@@ -406,8 +386,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: actions.ui:458
-#, fuzzy, kde-format
-#| msgid "M&ouse wheel:"
+#, kde-format
 msgid "Mo&use wheel:"
 msgstr "R&oda del ratolí:"
 
@@ -424,78 +403,68 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
 #: actions.ui:475 mouse.ui:102
-#, fuzzy, kde-format
-#| msgid "Raise/Lower"
+#, kde-format
 msgid "Raise/lower"
-msgstr "Eleva/Abaixa"
+msgstr "Eleva/abaixa"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
 #: actions.ui:480 mouse.ui:107
-#, fuzzy, kde-format
-#| msgid "Shade/Unshade"
+#, kde-format
 msgid "Shade/unshade"
-msgstr "Plega/Desplega"
+msgstr "Plega/desplega"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
 #: actions.ui:485 mouse.ui:112
-#, fuzzy, kde-format
-#| msgid "Maximize/Restore"
+#, kde-format
 msgid "Maximize/restore"
-msgstr "Maximitza/Restaura"
+msgstr "Maximitza/restaura"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
 #: actions.ui:490 mouse.ui:117
-#, fuzzy, kde-format
-#| msgid "Keep Above/Below"
+#, kde-format
 msgid "Keep above/below"
 msgstr "Mantén damunt/a sota"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
 #: actions.ui:495 mouse.ui:122
-#, fuzzy, kde-format
-#| msgid "Move to Previous/Next Desktop"
+#, kde-format
 msgid "Move to previous/next desktop"
 msgstr "Mou a l'escriptori anterior/següent"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandAllWheel)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandTitlebarWheel)
 #: actions.ui:500 mouse.ui:127
-#, fuzzy, kde-format
-#| msgid "Change Opacity"
+#, kde-format
 msgid "Change opacity"
 msgstr "Canvia l'opacitat"
 
 #. i18n: ectx: property (text), widget (QLabel, shadeHoverLabel)
 #: advanced.ui:20
-#, fuzzy, kde-format
-#| msgid "Window Tabbing"
+#, kde-format
 msgid "Window &unshading:"
-msgstr "Pestanyes de finestres"
+msgstr "Des&plegat de la finestra:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShadeHover)
 #: advanced.ui:32
-#, fuzzy, kde-format
-#| msgid ""
-#| "If Shade Hover is enabled, a shaded window will un-shade automatically "
-#| "when the mouse pointer has been over the title bar for some time."
+#, kde-format
 msgid ""
 "<html><head/><body><p>If this option is enabled, a shaded window will "
 "unshade automatically when the mouse pointer has been over the titlebar for "
 "some time.</p></body></html>"
 msgstr ""
-"Si el desplegat automàtic està activat, una finestra plegada es desplegarà "
-"automàticament quan l'apuntador del ratolí estiga damunt de la barra de "
-"títol durant un temps."
+"<html><head/><body><p>Si el desplegat automàtic està activat, una finestra "
+"plegada es desplegarà automàticament quan l'apuntador del ratolí estiga "
+"damunt de la barra de títol durant un temps</p></body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShadeHover)
 #: advanced.ui:35
 #, kde-format
 msgid "On titlebar hover after:"
-msgstr ""
+msgstr "Després de passar per sobre de la barra de títol:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_ShadeHoverInterval)
 #: advanced.ui:42
@@ -517,10 +486,9 @@ msgstr " ms"
 
 #. i18n: ectx: property (text), widget (QLabel, windowPlacementLabel)
 #: advanced.ui:66
-#, fuzzy, kde-format
-#| msgid "&Placement:"
+#, kde-format
 msgid "Window &placement:"
-msgstr "Co&l·locació:"
+msgstr "Co&l·locació de la finestra:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_Placement)
 #: advanced.ui:76
@@ -553,27 +521,51 @@ msgid ""
 "\"><span style=\" font-style:italic;\">Under mouse</span> will place the "
 "window under the pointer</li></ul></body></html>"
 msgstr ""
+"<html><head/><body><p>La política de col·locació determina a on apareixerà "
+"una finestra nova a l'escriptori.</p><ul style=\"margin-top: 0px; margin-"
+"bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\"><li "
+"style=\" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
+"italic;\">Intel·ligent</span> intentarà aconseguir una superposició mínima "
+"de les finestres</li><li style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Maximitzada</span> intentarà maximitzar cada "
+"finestra per omplir la pantalla completa. Pot ser útil perquè afecti "
+"selectivament la col·locació de finestres usant la configuració específica "
+"de la finestra. </li><li style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Cascada</span> situarà les finestres en "
+"cascada</li><li style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
+"margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"style:italic;\">Aleatòria</span> usarà una posició aleatòria</li><li style="
+"\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Centrada</span> col·locarà la finestra centrada</li><li style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Arraconada</"
+"span> col·locarà la finestra a la cantonada superior esquerra</li><li style="
+"\" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -"
+"qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Sota el ratolí</span> col·locarà la finestra sota l'apuntador</li></ul></"
+"body></html>"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
 #: advanced.ui:80
-#, fuzzy, kde-format
-#| msgid "Snap windows onl&y when overlapping"
+#, kde-format
 msgid "Minimal Overlapping"
-msgstr "Enganxa les finestres només en &encavallar-se"
+msgstr "Superposició mínima"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
 #: advanced.ui:85
-#, fuzzy, kde-format
-#| msgid "Maximize"
+#, kde-format
 msgid "Maximized"
-msgstr "Maximitza"
+msgstr "Maximitzada"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
 #: advanced.ui:90
-#, fuzzy, kde-format
-#| msgid "Cascade"
+#, kde-format
 msgid "Cascaded"
-msgstr "Cascada"
+msgstr "En cascada"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
 #: advanced.ui:95
@@ -591,12 +583,11 @@ msgstr "Centrada"
 #: advanced.ui:105
 #, kde-format
 msgid "In Top-Left Corner"
-msgstr ""
+msgstr "A la cantonada superior esquerra"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Placement)
 #: advanced.ui:110
-#, fuzzy, kde-format
-#| msgid "Under Mouse"
+#, kde-format
 msgid "Under mouse"
 msgstr "Sota el ratolí"
 
@@ -608,6 +599,9 @@ msgid ""
 "windows are allowed to do so. This will override the window placement mode "
 "defined above."
 msgstr ""
+"Quan està activat, les aplicacions que poden recordar les posicions de les "
+"seues finestres tindran permés fer-ho. Això substituirà el mode definit més "
+"amunt de col·locació de les finestres."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowKDEAppsToRememberWindowPositions)
 #: advanced.ui:121
@@ -615,13 +609,13 @@ msgstr ""
 msgid ""
 "Allow apps to remember the positions of their own windows, if they support it"
 msgstr ""
+"Permet que les aplicacions recorden la posició de les seues pròpies finestres"
 
 #. i18n: ectx: property (text), widget (QLabel, specialWindowsLabel)
 #: advanced.ui:128
-#, fuzzy, kde-format
-#| msgid "Special Windows"
+#, kde-format
 msgid "&Special windows:"
-msgstr "Finestres especials"
+msgstr "Finestres e&specials:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_HideUtilityWindowsForInactive)
 #: advanced.ui:138
@@ -634,9 +628,9 @@ msgid ""
 msgstr ""
 "Quan està activat, les finestres d'utilitat (finestres d'eines, menús "
 "escapçats...) de les aplicacions inactives s'ocultaran i només es mostraran "
-"quan l'aplicació esdevingui activa. Tingueu present que les aplicacions han "
-"de marcar les finestres amb el tipus de finestra correcte perquè funcione "
-"aquesta característica."
+"quan l'aplicació esdevingui activa. Cal tindre present que les aplicacions "
+"han de marcar les finestres amb el tipus de finestra correcte perquè "
+"funcione aquesta característica."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_HideUtilityWindowsForInactive)
 #: advanced.ui:141
@@ -648,59 +642,58 @@ msgstr "Oculta les finestres d'utilitat per a les aplicacions inactives"
 #: focus.ui:22
 #, kde-format
 msgid "Window &activation policy:"
-msgstr ""
+msgstr "Política d'&activació de les finestres:"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, windowFocusPolicy)
 #: focus.ui:32
 #, kde-format
 msgid "With this option you can specify how and when windows will be focused."
 msgstr ""
+"Amb aquesta opció es pot especificar com i quan les finestres tindran el "
+"focus."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
 #: focus.ui:36
 #, kde-format
 msgctxt "sassa asas"
 msgid "Click to focus"
-msgstr ""
+msgstr "Clic al focus"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
 #: focus.ui:41
 #, kde-format
 msgid "Click to focus (mouse precedence)"
-msgstr ""
+msgstr "Clic al focus (prioritat al ratolí)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
 #: focus.ui:46
-#, fuzzy, kde-format
-#| msgid "Active screen follows &mouse"
+#, kde-format
 msgid "Focus follows mouse"
-msgstr "La finestra activa segueix el &ratolí"
+msgstr "El focus segueix el ratolí"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
 #: focus.ui:51
 #, kde-format
 msgid "Focus follows mouse (mouse precedence)"
-msgstr ""
+msgstr "El focus segueix el ratolí (prioritat al ratolí)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
 #: focus.ui:56
-#, fuzzy, kde-format
-#| msgid "Under Mouse"
+#, kde-format
 msgid "Focus under mouse"
-msgstr "Sota el ratolí"
+msgstr "Focus sota el ratolí"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, windowFocusPolicy)
 #: focus.ui:61
 #, kde-format
 msgid "Focus strictly under mouse"
-msgstr ""
+msgstr "Focus estrictament sota el ratolí"
 
 #. i18n: ectx: property (text), widget (QLabel, delayFocusOnLabel)
 #: focus.ui:69
-#, fuzzy, kde-format
-#| msgid "&Delay focus by"
+#, kde-format
 msgid "&Delay focus by:"
-msgstr "Retar&d del focus en"
+msgstr "Retar&d del focus en:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_DelayFocusInterval)
 #: focus.ui:82
@@ -714,38 +707,13 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, focusStealingLabel)
 #: focus.ui:101
-#, fuzzy, kde-format
-#| msgid "Focus &stealing prevention"
+#, kde-format
 msgid "Focus &stealing prevention:"
-msgstr "Prevenció de ro&batori de focus"
+msgstr "Prevenció de robatori de focu&s:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_FocusStealingPreventionLevel)
 #: focus.ui:114
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p>This option specifies how much KWin will try to prevent unwanted focus "
-#| "stealing caused by unexpected activation of new windows. (Note: This "
-#| "feature does not work with the Focus Under Mouse or Focus Strictly Under "
-#| "Mouse focus policies.)\n"
-#| "<ul>\n"
-#| "<li><em>None:</em> Prevention is turned off and new windows always become "
-#| "activated.</li>\n"
-#| "<li><em>Low:</em> Prevention is enabled; when some window does not have "
-#| "support for the underlying mechanism and KWin cannot reliably decide "
-#| "whether to activate the window or not, it will be activated. This setting "
-#| "may have both worse and better results than the medium level, depending "
-#| "on the applications.</li>\n"
-#| "<li><em>Medium:</em> Prevention is enabled.</li>\n"
-#| "<li><em>High:</em> New windows get activated only if no window is "
-#| "currently active or if they belong to the currently active application. "
-#| "This setting is probably not really usable when not using mouse focus "
-#| "policy.</li>\n"
-#| "<li><em>Extreme:</em> All windows must be explicitly activated by the "
-#| "user.</li>\n"
-#| "</ul></p>\n"
-#| "<p>Windows that are prevented from stealing focus are marked as demanding "
-#| "attention, which by default means their taskbar entry will be "
-#| "highlighted. This can be changed in the Notifications control module.</p>"
+#, kde-format
 msgid ""
 "<html><head/><body><p>This option specifies how much KWin will try to "
 "prevent unwanted focus stealing caused by unexpected activation of new "
@@ -778,29 +746,38 @@ msgid ""
 "by default means their taskbar entry will be highlighted. This can be "
 "changed in the Notifications control module.</p></body></html>"
 msgstr ""
-"<p>Aquesta opció especifica quan provarà KWin d'evitar robatori de focus no "
-"desitjat causat per una activació inesperada de noves finestres. (Nota: "
-"Aquesta característica no funciona amb les polítiques Focus sota el ratolí o "
-"Focus estrictament sota el ratolí).\n"
-"<ul>\n"
-"<li><em>Sense:</em> La prevenció està apagada i les finestres noves sempre "
-"s'activen.</li>\n"
-"<li><em>Baix:</em> La prevenció està activada; quan una finestra determinada "
-"no admet el mecanisme subjacent i el KWin no pot decidir de manera fiable si "
-"activar la finestra o no, s'activarà. Aquest valor pot empitjorar o millorar "
-"els resultats del nivell mitjà, depenent de les aplicacions.</li>\n"
-"<li><em>Mitjà:</em> La prevenció està habilitada.</li>\n"
-"<li><em>Alt:</em> Les finestres noves s'activen només si no hi ha cap "
-"finestra activa actualment o si pertanyen a l'aplicació activa. Aquest "
-"arranjament probablement no és realment usable si no s'usa política de focus "
-"al ratolí.</li>\n"
-"<li><em>Extrem:</em> Totes les finestres s'han d'activar explícitament per "
-"l'usuari.</li>\n"
-"</ul></p>\n"
-"<p>Les finestres a les quals s'impedeix que robin el focus es marquen com a "
-"sol·licitants d'atenció, el que significa que, per omissió, la seua entrada "
-"a la barra de tasques es ressaltarà. Això es pot canviar al mòdul de control "
-"de Notificacions.</p>"
+"<html><head/><body><p>Aquesta opció especifica quan el KWin provarà d'evitar "
+"un robatori de focus no desitjat causat per una activació inesperada de "
+"finestres noves. (Nota: Aquesta característica no funciona amb les "
+"polítiques <span style=\" font-style:italic;\">Focus sota el ratolí</span> o "
+"<span style=\" font-style:italic;\">Focus estrictament sota el ratolí</"
+"span>).</p><ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: "
+"0px; margin-right: 0px; -qt-list-indent: 1;\"><li style=\" margin-top:12px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px;\"><span style=\" font-style:italic;\">Sense:</span> La "
+"prevenció està apagada i les finestres noves sempre s'activen.</li><li style="
+"\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Baixa:"
+"</span> La prevenció està activada; quan una finestra determinada no admet "
+"el mecanisme subjacent i el KWin no pot decidir de manera fiable si activar "
+"la finestra o no, s'activarà. Aquest valor pot empitjorar o millorar els "
+"resultats del nivell mitjà, depenent de les aplicacions.</li><li style=\" "
+"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+"block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;"
+"\">Mitjana:</span> La prevenció està habilitada.</li><li style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">Alta:</"
+"span> Les finestres noves s'activen només si no hi ha cap finestra activa "
+"actualment o si pertanyen a l'aplicació activa. Aquest arranjament "
+"probablement no és realment usable si no s'usa la política de focus al "
+"ratolí.</li><li style=\" margin-top:0px; margin-bottom:12px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-style:italic;\">Extrema:</span> Totes les finestres s'han "
+"d'activar explícitament per l'usuari.</li></ul><p>Les finestres a les quals "
+"s'impedeix que robin el focus es marquen com a sol·licitants d'atenció, el "
+"que significa que, per omissió, la seua entrada a la barra de tasques es "
+"ressaltarà. Això es pot canviar al mòdul de control de Notificacions.</p></"
+"body></html>"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_BorderSnapZone)
@@ -810,42 +787,41 @@ msgstr ""
 #: focus.ui:118 moving.ui:53 moving.ui:75 moving.ui:97
 #, kde-format
 msgid "None"
-msgstr "Cap"
+msgstr "Sense"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_FocusStealingPreventionLevel)
 #: focus.ui:123
 #, kde-format
 msgid "Low"
-msgstr "Baix"
+msgstr "Baixa"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_FocusStealingPreventionLevel)
 #: focus.ui:128
 #, kde-format
 msgid "Medium"
-msgstr "Mitjà"
+msgstr "Mitjana"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_FocusStealingPreventionLevel)
 #: focus.ui:133
 #, kde-format
 msgid "High"
-msgstr "Alt"
+msgstr "Alta"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_FocusStealingPreventionLevel)
 #: focus.ui:138
 #, kde-format
 msgid "Extreme"
-msgstr "Extrem"
+msgstr "Extrema"
 
 #. i18n: ectx: property (text), widget (QLabel, raisingWindowsLabel)
 #: focus.ui:146
-#, fuzzy, kde-format
-#| msgid "Raising windows"
+#, kde-format
 msgid "Raising windows:"
-msgstr "Eleva les finestres"
+msgstr "Eleva les finestres:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ClickRaise)
 #: focus.ui:153
@@ -861,10 +837,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ClickRaise)
 #: focus.ui:156
-#, fuzzy, kde-format
-#| msgid "C&lick raises active window"
+#, kde-format
 msgid "&Click raises active window"
-msgstr "Eleva la finestra activa amb un c&lic"
+msgstr "Eleva la finestra activa amb un &clic"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoRaise)
 #: focus.ui:165
@@ -878,10 +853,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoRaise)
 #: focus.ui:168
-#, fuzzy, kde-format
-#| msgid "&Raise on hover, delayed by"
+#, kde-format
 msgid "&Raise on hover, delayed by:"
-msgstr "Eleva en passa&r per sobre, amb retard"
+msgstr "Eleva en passa&r per sobre, amb un retard de:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_AutoRaiseInterval)
 #: focus.ui:175
@@ -895,30 +869,21 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, multiscreenBehaviorLabel)
 #: focus.ui:196
-#, fuzzy, kde-format
-#| msgid "Multiscreen behaviour"
+#, kde-format
 msgid "Multiscreen behavior:"
-msgstr "Comportament multipantalla"
+msgstr "Comportament multipantalla:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ActiveMouseScreen)
 #: focus.ui:203
-#, fuzzy, kde-format
-#| msgid ""
-#| "When this option is enabled, the active Xinerama screen (where new "
-#| "windows appear, for example) is the screen containing the mouse pointer. "
-#| "When disabled, the active Xinerama screen is the screen containing the "
-#| "focused window. By default this option is disabled for Click to focus and "
-#| "enabled for other focus policies."
+#, kde-format
 msgid ""
 "When this option is enabled, the active screen (where new windows appear, "
 "for example) is the screen containing the mouse pointer. When disabled, the "
 "active screen is the screen containing the focused window."
 msgstr ""
-"Quan aquesta opció està activada, la pantalla de Xinerama activa (p. ex. a "
-"on apareixen les noves finestres) és la pantalla amb el cursor del ratolí. "
-"Quan està desactivada, la pantalla de Xinerama activa és la pantalla amb la "
-"finestra enfocada. Aquesta opció es desactiva per defecte en el clic al "
-"focus i s'activa en altres polítiques de focus."
+"Quan aquesta opció està activada, la pantalla activa (p. ex. a on apareixen "
+"les noves finestres) és la pantalla amb el cursor del ratolí. Quan està "
+"desactivada, la pantalla activa és la pantalla amb la finestra enfocada."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ActiveMouseScreen)
 #: focus.ui:206
@@ -928,29 +893,25 @@ msgstr "La finestra activa segueix el &ratolí"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_SeparateScreenFocus)
 #: focus.ui:213
-#, fuzzy, kde-format
-#| msgid ""
-#| "When this option is enabled, focus operations are limited only to the "
-#| "active Xinerama screen"
+#, kde-format
 msgid ""
 "When this option is enabled, focus operations are limited only to the active "
 "screen"
 msgstr ""
 "Quan aquesta opció està activada, les operacions del focus es limiten a la "
-"pantalla de Xinerama activa"
+"pantalla activa"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SeparateScreenFocus)
 #: focus.ui:216
-#, fuzzy, kde-format
-#| msgid "S&eparate screen focus"
+#, kde-format
 msgid "&Separate screen focus"
-msgstr "S&epara el focus de cada pantalla"
+msgstr "&Separa el focus de cada pantalla"
 
 #. i18n: ectx: property (text), widget (QLabel, windowFocusPolicyDescriptionLabel)
 #: focus.ui:229
 #, kde-format
 msgid "Window activation policy description"
-msgstr ""
+msgstr "Descripció de la política d'activació de les finestres"
 
 #: main.cpp:74
 #, kde-format
@@ -958,28 +919,24 @@ msgid "&Focus"
 msgstr "&Focus"
 
 #: main.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar A&ctions"
-msgstr "Accions de la barra de &títol"
+msgstr "A&ccions de la barra de títol"
 
 #: main.cpp:86
-#, fuzzy, kde-format
-#| msgid "Window Actio&ns"
+#, kde-format
 msgid "W&indow Actions"
-msgstr "Accio&ns de la finestra"
+msgstr "Accions de la f&inestra"
 
 #: main.cpp:92
-#, fuzzy, kde-format
-#| msgid "&Placement:"
+#, kde-format
 msgid "Mo&vement"
-msgstr "Co&l·locació:"
+msgstr "Mo&viment"
 
 #: main.cpp:98
-#, fuzzy, kde-format
-#| msgid "Ad&vanced"
+#, kde-format
 msgid "Adva&nced"
-msgstr "Avan&çat"
+msgstr "Ava&nçat"
 
 #: main.cpp:102
 #, kde-format
@@ -1049,7 +1006,7 @@ msgstr ""
 "<p><h1>Comportament de la finestra</h1> Ací podeu personalitzar la manera "
 "com es comporten les finestres en moure-les, dimensionar-les o clicar "
 "damunt. També podeu especificar una política de focus i una política de "
-"col·locació per a les finestres noves.</p><p>Tingueu present que aquesta "
+"col·locació per a les finestres noves.</p><p>Cal tindre present que aquesta "
 "configuració no tindrà cap efecte si no feu servir KWin com a gestor de "
 "finestres. Si useu un gestor de finestres diferent, consulteu la seua "
 "documentació per a personalitzar el comportament de les finestres.</p>"
@@ -1066,10 +1023,9 @@ msgstr "Accio&ns de la finestra"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
 #: mouse.ui:17
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar Actions"
-msgstr "Accions de la barra de &títol"
+msgstr "Accions de la barra de títol"
 
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #: mouse.ui:26
@@ -1101,7 +1057,7 @@ msgstr "Maximitza"
 #: mouse.ui:45 mouse.ui:620 mouse.ui:655 mouse.ui:690
 #, kde-format
 msgid "Vertically maximize"
-msgstr ""
+msgstr "Maximitza verticalment"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
@@ -1111,7 +1067,7 @@ msgstr ""
 #: mouse.ui:50 mouse.ui:625 mouse.ui:660 mouse.ui:695
 #, kde-format
 msgid "Horizontally maximize"
-msgstr ""
+msgstr "Maximitza horitzontalment"
 
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
@@ -1144,24 +1100,23 @@ msgstr "Tanca"
 #. i18n: @item:inlistbox behavior on double click
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TitlebarDoubleClickCommand)
 #: mouse.ui:75
-#, fuzzy, kde-format
-#| msgid "On All Desktops"
+#, kde-format
 msgid "Show on all desktops"
-msgstr "A tots els escriptoris"
+msgstr "Mostra a tots els escriptoris"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandTitlebarWheel)
 #: mouse.ui:98
-#, fuzzy, kde-format
-#| msgid "Behavior on <em>double</em> click into the titlebar."
+#, kde-format
 msgid "Behavior on <em>mouse wheel</em> scroll over the titlebar."
-msgstr "Comportament del <em>doble</em> clic a la barra de títol."
+msgstr ""
+"Comportament del desplaçament de la <em>roda del ratolí</em> sobre la barra "
+"de títol."
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: mouse.ui:143
-#, fuzzy, kde-format
-#| msgid "&Titlebar Actions"
+#, kde-format
 msgid "Titlebar and Frame Actions"
-msgstr "Accions de la barra de &títol"
+msgstr "Accions de la barra de títol i el marc"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: mouse.ui:167
@@ -1195,10 +1150,9 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
 #: mouse.ui:266 mouse.ui:328 mouse.ui:381 mouse.ui:443 mouse.ui:496
 #: mouse.ui:558
-#, fuzzy, kde-format
-#| msgid "Operations Menu"
+#, kde-format
 msgid "Show actions menu"
-msgstr "Menú d'operacions"
+msgstr "Mostra el menú de les accions"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandInactiveTitlebar1)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_CommandInactiveTitlebar2)
@@ -1216,17 +1170,15 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar2)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_CommandInactiveTitlebar3)
 #: mouse.ui:288 mouse.ui:403 mouse.ui:518
-#, fuzzy, kde-format
-#| msgid "Activate & Lower"
+#, kde-format
 msgid "Activate and lower"
 msgstr "Activa i abaixa"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: mouse.ui:589
-#, fuzzy, kde-format
-#| msgid "Maximize Button"
+#, kde-format
 msgid "Maximize Button Actions"
-msgstr "Botó maximitza"
+msgstr "Accions del botó maximitza"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_8)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_MaximizeButtonLeftClickCommand)
@@ -1244,10 +1196,9 @@ msgstr "Comportament del clic <em>central</em> al botó maximitza."
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: mouse.ui:636
-#, fuzzy, kde-format
-#| msgid "Middle b&utton:"
+#, kde-format
 msgid "Middle c&lick:"
-msgstr "Botó del &mig:"
+msgstr "C&lic del mig:"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_10)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_MaximizeButtonRightClickCommand)
@@ -1260,7 +1211,7 @@ msgstr "Comportament del clic <em>dret</em> al botó maximitza."
 #: moving.ui:20
 #, kde-format
 msgid "Window &geometry:"
-msgstr ""
+msgstr "&Geometria de la finestra:"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_GeometryTip)
 #: moving.ui:30
@@ -1276,30 +1227,24 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_GeometryTip)
 #: moving.ui:33
-#, fuzzy, kde-format
-#| msgid "Display window &geometry when moving or resizing"
+#, kde-format
 msgid "Display when moving or resizing"
-msgstr "Mostra la &geometria de la finestra en moure o dimensionar"
+msgstr "Mostra en moure o dimensionar"
 
 #. i18n: ectx: property (text), widget (QLabel, borderSnapLabel)
 #: moving.ui:40
-#, fuzzy, kde-format
-#| msgid "&Border snap zone:"
+#, kde-format
 msgid "Screen &edge snap zone:"
-msgstr "Zona d'atracció de la &vora:"
+msgstr "Zona d'atracció de la &vora de la pantalla:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_BorderSnapZone)
 #: moving.ui:50
-#, fuzzy, kde-format
-#| msgid ""
-#| "Here you can set the snap zone for screen borders, i.e. the 'strength' of "
-#| "the magnetic field which will make windows snap to the border when moved "
-#| "near it."
+#, kde-format
 msgid ""
 "Here you can set the snap zone for screen edges, i.e. the 'strength' of the "
 "magnetic field which will make windows snap to the border when moved near it."
 msgstr ""
-"Ací podeu establir la zona d'atracció per a les vores de pantalla, la "
+"Ací podeu establir la zona d'atracció per a les vores de la pantalla, la "
 "«força» del camp magnètic que fa que les finestres s'enganxin a la vora quan "
 "es mouen a prop."
 
@@ -1307,10 +1252,9 @@ msgstr ""
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_WindowSnapZone)
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_CenterSnapZone)
 #: moving.ui:56 moving.ui:78 moving.ui:100
-#, fuzzy, kde-format
-#| msgid " pixel"
+#, kde-format
 msgid " px"
-msgstr " píxel"
+msgstr " px"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_WindowSnapZone)
 #: moving.ui:72
@@ -1350,10 +1294,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SnapOnlyWhenOverlapping)
 #: moving.ui:116
-#, fuzzy, kde-format
-#| msgid "Snap windows onl&y when overlapping"
+#, kde-format
 msgid "Only when overlapping"
-msgstr "Enganxa les finestres només en &encavallar-se"
+msgstr "Només en encavallar-se"
 
 #. i18n: ectx: property (text), widget (QLabel, windowSnapLabel)
 #: moving.ui:123
@@ -1369,36 +1312,22 @@ msgstr "Zona d'atracció del &centre:"
 
 #. i18n: ectx: property (text), widget (QLabel, OverlapSnapLabel)
 #: moving.ui:143
-#, fuzzy, kde-format
-#| msgid "Raising windows"
+#, kde-format
 msgid "&Snap windows:"
-msgstr "Eleva les finestres"
+msgstr "E&nganxa les finestres:"
 
 #: windows.cpp:99
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Click To Focus</b><br>\n"
-#| "A window becomes active when you click into it.<br><br>\n"
-#| "This behaviour is common on other operating systems and<br>\n"
-#| "likely what you want."
+#, kde-format
 msgid ""
 "<em>Click to focus:</em> A window becomes active when you click into it. "
 "This behavior is common on other operating systems and likely what you want."
 msgstr ""
-"<b>Clic al focus</b><br>\n"
-"Una finestra esdevé activa quan hi cliqueu.<br><br>\n"
-"Aquest comportament és comú en altres sistemes operatius i<br>\n"
-"segurament és el que voldreu."
+"<em>Clic al focus:</em> Una finestra esdevé activa quan hi cliqueu. Aquest "
+"comportament és comú en altres sistemes operatius i segurament és el que "
+"voldreu."
 
 #: windows.cpp:103
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Click To Focus - Mouse Precedence</b><br>\n"
-#| "This is mostly the same as <i>Click To Focus</i><br><br>\n"
-#| "If an active window has to be chosen by the system<br>\n"
-#| "(eg. because the currently active one was closed) <br>\n"
-#| "the window under the mouse is the preferred candidate.<br><br>\n"
-#| "Unusual, but possible variant of <i>Click To Focus</i>."
+#, kde-format
 msgid ""
 "<em>Click to focus (mouse precedence):</em> Mostly the same as <em>Click to "
 "focus</em>. If an active window has to be chosen by the system (eg. because "
@@ -1406,68 +1335,42 @@ msgid ""
 "preferred candidate. Unusual, but possible variant of <em>Click to focus</"
 "em>."
 msgstr ""
-"<b>Clic al focus - Prioritat al ratolí</b><br>\n"
-"En general, és similar a <i>Clic al focus</i>.<br><br>\n"
-"Si el sistema ha de seleccionar una finestra activa<br>\n"
-"(p. ex. perquè l'activa actualment s'ha tancat) <br>\n"
-"la candidata preferida serà la finestra que hi ha sota el ratolí.<br><br>\n"
-"No és habitual, però és una possible variació de <i>Clic al focus</i>."
+"<em>Clic al focus (prioritat al ratolí):</em> En general, és similar a "
+"<em>Clic al focus</em>. Si el sistema ha de seleccionar una finestra activa "
+"(p. ex. perquè l'actualment activa s'ha tancat) la candidata preferida serà "
+"la finestra que hi ha sota el ratolí. No és habitual, però és una possible "
+"variació de <em>Clic al focus</em>."
 
 #: windows.cpp:108
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Follows Mouse</b><br>\n"
-#| "Moving the mouse onto a window will activate it.<br><br>\n"
-#| "Eg. windows randomly appearing under the mouse will not gain the focus."
-#| "<br>\n"
-#| "Focus stealing prevention takes place as usual.<br><br>\n"
-#| "Think as <i>Click To Focus</i> just without having to actually click."
+#, kde-format
 msgid ""
 "<em>Focus follows mouse:</em> Moving the mouse onto a window will activate "
 "it. Eg. windows randomly appearing under the mouse will not gain the focus. "
 "<em>Focus stealing prevention</em> takes place as usual. Think as <em>Click "
 "to focus</em> just without having to actually click."
 msgstr ""
-"<b>El focus segueix el ratolí</b><br>\n"
-"Movent el ratolí dins una finestra, aquesta s'activarà.<br><br>\n"
-"P. ex. les finestres que apareguen a l'atzar sota el ratolí no activaran el "
-"focus.<br>\n"
-"La prevenció de robatori de focus funciona com és habitual.<br><br>\n"
-"Penseu en <i>Clic al focus</i> però sense que calga clicar."
+"<em>El focus segueix el ratolí:</em> Movent el ratolí dins una finestra, "
+"aquesta s'activarà. P. ex. les finestres que apareguen a l'atzar sota el "
+"ratolí no obtindran el focus. La <em>Prevenció de robatori de focus</em> "
+"funciona com és habitual. Penseu en <em>Clic al focus</em> però sense que "
+"calga fer clic."
 
 #: windows.cpp:112
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Follows Mouse - Mouse Precedence</b><br>\n"
-#| "This is mostly the same as <i>Focus Follows Mouse</i><br><br>\n"
-#| "If an active window has to be chosen by the system<br>\n"
-#| "(eg. because the currently active one was closed) <br>\n"
-#| "the window under the mouse is the preferred candidate.<br><br>\n"
-#| "Choose this, if you want a hover controlled focus."
+#, kde-format
 msgid ""
 "This is mostly the same as <em>Focus follows mouse</em>. If an active window "
 "has to be chosen by the system (eg. because the currently active one was "
 "closed) the window under the mouse is the preferred candidate. Choose this, "
 "if you want a hover controlled focus."
 msgstr ""
-"<b>El focus segueix el ratolí - Prioritat al ratolí</b><br>\n"
-"En general, és similar a <i>El focus segueix el ratolí</i>.<br><br>\n"
-"Si el sistema ha de seleccionar una finestra activa<br>\n"
-"(p. ex. perquè l'activa actualment s'ha tancat) <br>\n"
-"la candidata preferida serà la finestra que hi ha sota el ratolí.<br><br>\n"
-"Seleccioneu aquesta si voleu un focus controlat en passar-hi per sobre."
+"En general és similar a <em>El focus segueix el ratolí</em>. Si el sistema "
+"ha de seleccionar una finestra activa (p. ex. perquè l'actualment activa "
+"s'ha tancat) la candidata preferida serà la finestra que hi ha sota el "
+"ratolí. Seleccioneu aquesta si voleu un focus controlat en passar-hi per "
+"sobre."
 
 #: windows.cpp:117
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Under Mouse</b><br>\n"
-#| "The focus always remains on the window under the mouse.<br><br>\n"
-#| "\n"
-#| "Notice:<br>\n"
-#| "<b>Focus stealing prevention</b> and the <b>tabbox (\"Alt+Tab\")</b><br>\n"
-#| "contradict the policy and <b>will not work</b>.<br><br>\n"
-#| "You very likely want to use<br>\n"
-#| "<i>Focus Follows Mouse - Mouse Precedence</i> instead!"
+#, kde-format
 msgid ""
 "<em>Focus under mouse:</em> The focus always remains on the window under the "
 "mouse.<br/><strong>Warning:</strong> <em>Focus stealing prevention</em> and "
@@ -1475,30 +1378,14 @@ msgid ""
 "not work. You very likely want to use <em>Focus follows mouse (mouse "
 "precedence)</em> instead!"
 msgstr ""
-"<b>Focus sota el ratolí</b><br>\n"
-"El focus sempre roman en la finestra sota el ratolí.<br><br>\n"
-"\n"
-"Avís:<br>\n"
-"<b>La prevenció de robatori de focus</b> i la <b>caixa de pestanyes («Alt"
-"+Tab»)</b><br>\n"
-"entren en contradicció amb la política i <b>no funcionaran</b>.<br><br>\n"
-"En el seu lloc, segurament voldreu utilitzar<br>\n"
-"<i>El focus segueix el ratolí - Prioritat al ratolí</i>."
+"<em>Focus sota el ratolí:</em> El focus sempre roman en la finestra sota el "
+"ratolí.<br/><strong>Avís:</strong> La <em>prevenció de robatori de focus</"
+"em> i la <em>caixa de pestanyes («Alt+Tab»)</em> entren en contradicció amb "
+"la política i no funcionaran. En el seu lloc, segurament voldreu usar <em>El "
+"focus segueix el ratolí (prioritat al ratolí)</em>."
 
 #: windows.cpp:121
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>Focus Strictly Under Mouse</b><br>\n"
-#| "The focus is always on the window under the mouse - in doubt nowhere -"
-#| "<br>\n"
-#| "very much like the focus behaviour in an unmanaged legacy X11 environment."
-#| "<br><br>\n"
-#| "\n"
-#| "Notice:<br>\n"
-#| "<b>Focus stealing prevention</b> and the <b>tabbox (\"Alt+Tab\")</b><br>\n"
-#| "contradict the policy and <b>will not work</b>.<br><br>\n"
-#| "You very likely want to use<br>\n"
-#| "<i>Focus Follows Mouse - Mouse Precedence</i> instead!"
+#, kde-format
 msgid ""
 "<em>Focus strictly under mouse:</em> The focus is always on the window under "
 "the mouse (in doubt nowhere) very much like the focus behavior in an "
@@ -1507,15 +1394,10 @@ msgid ""
 "activation policy and will not work. You very likely want to use <em>Focus "
 "follows mouse (mouse precedence)</em> instead!"
 msgstr ""
-"<b>Focus estrictament sota el ratolí</b><br>\n"
-"El focus està sempre en la finestra sota el ratolí - en cas de dubte, no "
-"està enlloc -<br>\n"
-"molt semblant al comportament del focus en un antic entorn X11 no gestionat."
-"<br><br>\n"
-"\n"
-"Avís:<br>\n"
-"<b>La prevenció de robatori de focus</b> i la <b>caixa de pestanyes («Alt"
-"+Tab»)</b><br>\n"
-"entren en contradicció amb la política i <b>no funcionaran</b>.<br><br>\n"
-"En el seu lloc, segurament voldreu utilitzar<br>\n"
-"<i>El focus segueix el ratolí - Prioritat al ratolí</i>."
+"<em>Focus estrictament sota el ratolí:</em> El focus sempre està en la "
+"finestra sota el ratolí (en cas de dubte, no està enlloc) molt semblant al "
+"comportament del focus en un entorn X11 antic no gestionat.<br/><strong>Avís:"
+"</strong> La <em>prevenció de robatori de focus</em> i la <em>caixa de "
+"pestanyes («Alt+Tab»)</em> entren en contradicció amb la política i no "
+"funcionaran. En el seu lloc, segurament voldreu usar el <em>Focus segueix el "
+"ratolí (prioritat al ratolí)</em>."

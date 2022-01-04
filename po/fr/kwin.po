@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-09 01:47+0000\n"
-"PO-Revision-Date: 2021-09-05 10:18+0200\n"
+"POT-Creation-Date: 2021-12-10 02:10+0000\n"
+"PO-Revision-Date: 2021-12-27 22:16+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
@@ -32,7 +32,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 21.12.0\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -53,7 +53,7 @@ msgstr ""
 "cousin@kde.org,gerard@delafond.org, yann.verley@free.fr, nicolas."
 "ternisien@gmail.com,renard@kde.org,sdepiets@gmail.com"
 
-#: abstract_client.cpp:2818
+#: abstract_client.cpp:2819
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -1166,7 +1166,7 @@ msgstr "Fermer l'applica&tion %1"
 msgid "Wait Longer"
 msgstr "Attendre plus longtemps"
 
-#: input.cpp:2530
+#: input.cpp:2531
 #, kde-format
 msgid "Touchpad"
 msgstr "Pavé tactile"
@@ -1332,7 +1332,7 @@ msgstr ""
 #: main_wayland.cpp:471
 #, kde-format
 msgid "Name of the xwayland display that has been pre-set up"
-msgstr "Nom de l'affichage « xwayland » ayant été pré-configuré"
+msgstr "Nom de l'affichage « xwayland » ayant été préconfiguré"
 
 #: main_wayland.cpp:475
 #, kde-format

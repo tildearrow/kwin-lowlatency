@@ -4,16 +4,16 @@
 # version 3 or later versions approved by the membership of KDE e.V.
 # or the same license as the source of its messages in English.
 #
-# Josep Ma. Ferrer <txemaq@gmail.com>, 2007, 2009, 2010, 2013, 2014, 2018, 2019.
+# Josep M. Ferrer <txemaq@gmail.com>, 2007, 2009, 2010, 2013, 2014, 2018, 2019.
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2015, 2016.
-# Alfredo vicente <alviboi@gmail.com>, 2019.
+# Alfredo Vicente <alviboi@gmail.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-09-10 00:19+0000\n"
 "PO-Revision-Date: 2019-07-22 11:29+0200\n"
-"Last-Translator: Alfredo vicente <alviboi@gmail.com>\n"
+"Last-Translator: Alfredo Vicente <alviboi@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Josep Ma. Ferrer"
+msgstr "Josep M. Ferrer"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"

@@ -3,7 +3,7 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep Ma. Ferrer <txemaq@gmail.com>, 2001, 2002, 2007, 2008, 2009, 2010, 2012, 2013, 2014, 2015, 2018, 2019.
+# Josep M. Ferrer <txemaq@gmail.com>, 2001, 2002, 2007, 2008, 2009, 2010, 2012, 2013, 2014, 2015, 2018, 2019.
 # Albert Astals Cid <aacid@kde.org>, 2004.
 # Sebastià Pla i Sanz <sps@sastia.com>, 2004, 2005.
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2017, 2019.
@@ -27,7 +27,7 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Josep Ma. Ferrer,Albert Astals Cid,Sebastià Pla i Sanz, Empar Montoro"
+msgstr "Josep M. Ferrer,Albert Astals Cid,Sebastià Pla i Sanz, Empar Montoro"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-09 01:47+0000\n"
+"POT-Creation-Date: 2021-12-10 02:10+0000\n"
 "PO-Revision-Date: 2021-09-10 14:03+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English <kde-l10n-en_gb@kde.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 "anarchist_tomato@herzeleid.net, dwayne@translate.org.za, steve."
 "allewell@gmail.com"
 
-#: abstract_client.cpp:2818
+#: abstract_client.cpp:2819
 #, kde-format
 msgctxt "Application is not responding, appended to window title"
 msgid "(Not Responding)"
@@ -1142,7 +1142,7 @@ msgstr "&Terminate Application %1"
 msgid "Wait Longer"
 msgstr "Wait Longer"
 
-#: input.cpp:2530
+#: input.cpp:2531
 #, kde-format
 msgid "Touchpad"
 msgstr "Touchpad"
