@@ -1,3 +1,7 @@
+# **PLEASE DON'T STAR THIS PROJECT ANYMORE**
+
+it doesn't work on 5.24 and I have no time to maintain it!
+
 # KWin-lowlatency
 
 KWin-lowlatency is (was?) my attempt to reduce latency and stuttering in the popular KWin compositor used in KDE.
