@@ -1,0 +1,8 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/effects/mousepos/">
+  <file>shaders/motion.frag</file>
+  <file>shaders/motion.vert</file>
+  <file>shaders/motion_core.frag</file>
+  <file>shaders/motion_core.vert</file>
+</qresource>
+</RCC>

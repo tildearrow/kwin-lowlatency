@@ -38,6 +38,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <math.h>
 
+Q_LOGGING_CATEGORY(KWIN_MOUSEPOS, "kwin_effect_mousepos", QtWarningMsg)
+
 namespace KWin
 {
 
@@ -99,10 +101,10 @@ bool MousePosEffect::loadData()
     m_inited = true;
     printf("load data!\n");
 
-    m_shader = ShaderManager::instance()->generateShaderFromResources(ShaderTrait::MapTexture, QString("motion.vert"), QStringLiteral("motion.frag"));
+    m_shader = ShaderManager::instance()->generateShaderFromFile(ShaderTrait::MapTexture, QString(":/effects/mousepos/shaders/motion.vert"), QStringLiteral(":/effects/mousepos/shaders/motion.frag"));
     if (!m_shader->isValid()) {
         printf("failure.\n");
-        qCCritical(KWINEFFECTS) << "The shader failed to load!";
+        qCCritical(KWIN_MOUSEPOS) << "The shader failed to load!";
         return false;
     }
     printf("shader loaded.\n");

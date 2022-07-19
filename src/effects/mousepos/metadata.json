@@ -1,0 +1,16 @@
+{
+    "KPlugin": {
+        "Category": "Accessibility",
+        "Description": "Display a mouse cursor",
+        "Description[es]": "Muestra el cursor de ratón",
+        "EnabledByDefault": false,
+        "Id": "mousepos",
+        "License": "GPL",
+        "Name": "Paint cursor",
+        "Name[es]": "Pintar cursor"
+    },
+    "X-KDE-ConfigModule": "kwin_mousepos_config",
+    "org.kde.kwin.effect": {
+        "video": "https://files.kde.org/plasma/kwin/effect-videos/track_mouse.mp4"
+    }
+}
