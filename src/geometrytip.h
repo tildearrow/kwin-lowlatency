@@ -9,7 +9,7 @@
 
 #ifndef KWIN_GEOMETRY_TIP_H
 #define KWIN_GEOMETRY_TIP_H
-#include "xcbutils.h"
+#include "utils/xcbutils.h"
 
 #include <QLabel>
 

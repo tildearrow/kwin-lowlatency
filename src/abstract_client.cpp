@@ -1001,6 +1001,7 @@ bool AbstractClient::startInteractiveMoveResize()
     Q_EMIT clientStartUserMovedResized(this);
     if (ScreenEdges::self()->isDesktopSwitchingMovingClients())
         ScreenEdges::self()->reserveDesktopSwitching(true, Qt::Vertical|Qt::Horizontal);
+    positionGeometryTip();
     return true;
 }
 
@@ -1124,6 +1125,7 @@ void AbstractClient::handleInteractiveMoveResize(const QPoint &local, const QPoi
             checkQuickTilingMaximizationZones(global.x(), global.y());
         }
     }
+    positionGeometryTip();
 }
 
 void AbstractClient::handleInteractiveMoveResize(int x, int y, int x_root, int y_root)
