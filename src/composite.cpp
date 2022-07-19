@@ -318,7 +318,7 @@ void Compositor::initializeX11()
 
     if (!m_selectionOwner) {
         char selection_name[ 100 ];
-        sprintf(selection_name, "_NET_WM_CM_S%d", Application::x11ScreenNumber());
+        snprintf(selection_name, 99, "_NET_WM_CM_S%d", Application::x11ScreenNumber());
         m_selectionOwner = new CompositorSelectionOwner(selection_name);
         connect(m_selectionOwner, &CompositorSelectionOwner::lostOwnership,
                 this, &Compositor::stop);
@@ -747,6 +747,18 @@ void X11Compositor::configChanged()
 
 void X11Compositor::suspend(X11Compositor::SuspendReason reason)
 {
+    if (reason&UserSuspend) {
+      printf("Suspending compositor at user request.\n");
+    }
+    if (reason&BlockRuleSuspend) {
+      printf("Suspending compositor due to block rule.\n");
+    }
+    if (reason&ScriptSuspend) {
+      printf("Suspending compositor at script request.\n");
+    }
+    if (reason==NoReasonSuspend) {
+      printf("Suspending for no reason! Help!\n");
+    }
     Q_ASSERT(reason != NoReasonSuspend);
     m_suspended |= reason;
 

@@ -301,6 +301,8 @@ public:
     void handleSyncTimeout();
 
     static void cleanupX11();
+    // screw it.
+    void discardWindowPixmap();
 
 public Q_SLOTS:
     void closeWindow() override;
@@ -422,7 +424,6 @@ private:
 
     void updateInputShape();
     void updateServerGeometry();
-    void discardWindowPixmap();
     void updateWindowPixmap();
 
     xcb_timestamp_t readUserTimeMapTimestamp(const KStartupInfoId* asn_id, const KStartupInfoData* asn_data,

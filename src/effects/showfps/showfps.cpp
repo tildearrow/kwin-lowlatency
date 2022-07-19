@@ -400,6 +400,10 @@ void ShowFpsEffect::postPaintScreen()
     effects->addRepaint(fps_rect);
 }
 
+bool ShowFpsEffect::blocksDirectScanout() const {
+  return false;
+}
+
 QImage ShowFpsEffect::fpsTextImage(int fps)
 {
     QImage im(100, 100, QImage::Format_ARGB32);

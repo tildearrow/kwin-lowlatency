@@ -137,7 +137,8 @@ set_package_properties(KF5Kirigami2 PROPERTIES
     TYPE RUNTIME
 )
 
-find_package(KDecoration2 ${PROJECT_VERSION} CONFIG REQUIRED)
+# huh? this was ${PROJECT_VERSION} but Arch will never have 5.24.6
+find_package(KDecoration2 "5.24.4" CONFIG REQUIRED)
 
 find_package(KScreenLocker CONFIG REQUIRED)
 set_package_properties(KScreenLocker PROPERTIES

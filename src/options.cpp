@@ -56,6 +56,8 @@ Options::Options(QObject *parent)
     , m_xwaylandMaxCrashCount(Options::defaultXwaylandMaxCrashCount())
     , m_latencyPolicy(Options::defaultLatencyPolicy())
     , m_renderTimeEstimator(Options::defaultRenderTimeEstimator())
+    , m_vSyncMechanism(Options::defaultVSyncMechanism())
+    , m_crashAction(Options::defaultCrashAction())
     , m_compositingMode(Options::defaultCompositingMode())
     , m_useCompositing(Options::defaultUseCompositing())
     , m_hiddenPreviews(Options::defaultHiddenPreviews())
@@ -65,6 +67,16 @@ Options::Options(QObject *parent)
     , m_glPreferBufferSwap(Options::defaultGlPreferBufferSwap())
     , m_glPlatformInterface(Options::defaultGlPlatformInterface())
     , m_windowsBlockCompositing(true)
+    , m_unredirectFullscreen(true)
+    , m_drmDirectScanout(true)
+    , m_debugUnredirect(false)
+    , m_unredirectNonOpaque(false)
+    , m_openGLIsAlwaysSafe(false)
+    , m_setMaxFramesAllowed(false)
+    , m_debugCompositeTimer(false)
+    , m_syncWindowX(0)
+    , m_syncWindowY(0)
+    , m_forceDisableVSync(false)
     , m_MoveMinimizedWindowsToEndOfTabBoxFocusChain(false)
     , OpTitlebarDblClick(Options::defaultOperationTitlebarDblClick())
     , CmdActiveTitlebar1(Options::defaultCommandActiveTitlebar1())
@@ -588,6 +600,96 @@ void Options::setWindowsBlockCompositing(bool value)
     Q_EMIT windowsBlockCompositingChanged();
 }
 
+void Options::setUnredirectFullscreen(bool value)
+{
+    if (m_unredirectFullscreen == value) {
+        return;
+    }
+    m_unredirectFullscreen = value;
+    Q_EMIT unredirectFullscreenChanged();
+}
+
+void Options::setDrmDirectScanout(bool value)
+{
+    if (m_drmDirectScanout == value) {
+        return;
+    }
+    m_drmDirectScanout = value;
+    Q_EMIT drmDirectScanoutChanged();
+}
+
+void Options::setDebugUnredirect(bool value)
+{
+    if (m_debugUnredirect == value) {
+        return;
+    }
+    m_debugUnredirect = value;
+    Q_EMIT debugUnredirectChanged();
+}
+
+void Options::setUnredirectNonOpaque(bool value)
+{
+    if (m_unredirectNonOpaque == value) {
+        return;
+    }
+    m_unredirectNonOpaque = value;
+    Q_EMIT unredirectNonOpaqueChanged();
+}
+
+void Options::setOpenGLIsAlwaysSafe(bool value)
+{
+    if (m_openGLIsAlwaysSafe == value) {
+        return;
+    }
+    m_openGLIsAlwaysSafe = value;
+    Q_EMIT openGLIsAlwaysSafeChanged();
+}
+
+void Options::setSetMaxFramesAllowed(bool value)
+{
+    if (m_setMaxFramesAllowed == value) {
+        return;
+    }
+    m_setMaxFramesAllowed = value;
+    Q_EMIT setMaxFramesAllowedChanged();
+}
+
+void Options::setDebugCompositeTimer(bool value)
+{
+    if (m_debugCompositeTimer == value) {
+        return;
+    }
+    m_debugCompositeTimer = value;
+    Q_EMIT debugCompositeTimerChanged();
+}
+
+void Options::setSyncWindowX(int value)
+{
+    if (m_syncWindowX == value) {
+        return;
+    }
+    m_syncWindowX = value;
+    Q_EMIT syncWindowXChanged();
+}
+
+void Options::setSyncWindowY(int value)
+{
+    if (m_syncWindowY == value) {
+        return;
+    }
+    m_syncWindowY = value;
+    Q_EMIT syncWindowYChanged();
+}
+
+void Options::setForceDisableVSync(bool value)
+{
+    if (m_forceDisableVSync == value) {
+        return;
+    }
+    m_forceDisableVSync = value;
+    Q_EMIT forceDisableVSyncChanged();
+}
+
 void Options::setMoveMinimizedWindowsToEndOfTabBoxFocusChain(bool value)
 {
     if (m_MoveMinimizedWindowsToEndOfTabBoxFocusChain == value) {
@@ -641,6 +743,34 @@ void Options::setRenderTimeEstimator(RenderTimeEstimator estimator)
     }
     m_renderTimeEstimator = estimator;
     Q_EMIT renderTimeEstimatorChanged();
+}
+
+VSyncMechanism Options::vSyncMechanism() const
+{
+    return m_vSyncMechanism;
+}
+
+void Options::setVSyncMechanism(VSyncMechanism mechanism)
+{
+    if (m_vSyncMechanism == mechanism) {
+        return;
+    }
+    m_vSyncMechanism = mechanism;
+    Q_EMIT vSyncMechanismChanged();
+}
+
+CrashAction Options::crashAction() const
+{
+    return m_crashAction;
+}
+
+void Options::setCrashAction(CrashAction action)
+{
+    if (m_crashAction == action) {
+        return;
+    }
+    m_crashAction = action;
+    Q_EMIT crashActionChanged();
 }
 
 void Options::setGlPlatformInterface(OpenGLPlatformInterface interface)
@@ -789,9 +919,21 @@ void Options::syncFromKcfgc()
     setElectricBorderTiling(m_settings->electricBorderTiling());
     setElectricBorderCornerRatio(m_settings->electricBorderCornerRatio());
     setWindowsBlockCompositing(m_settings->windowsBlockCompositing());
+    setUnredirectFullscreen(m_settings->unredirectFullscreen());
+    setDrmDirectScanout(m_settings->drmDirectScanout());
+    setDebugUnredirect(m_settings->debugUnredirect());
+    setUnredirectNonOpaque(m_settings->unredirectNonOpaque());
+    setOpenGLIsAlwaysSafe(m_settings->openGLIsAlwaysSafe());
+    setSetMaxFramesAllowed(m_settings->setMaxFramesAllowed());
+    setDebugCompositeTimer(m_settings->debugCompositeTimer());
+    setSyncWindowX(m_settings->syncWindowX());
+    setSyncWindowY(m_settings->syncWindowY());
+    setForceDisableVSync(m_settings->forceDisableVSync());
     setMoveMinimizedWindowsToEndOfTabBoxFocusChain(m_settings->moveMinimizedWindowsToEndOfTabBoxFocusChain());
     setLatencyPolicy(m_settings->latencyPolicy());
     setRenderTimeEstimator(m_settings->renderTimeEstimator());
+    setVSyncMechanism(m_settings->vSyncMechanism());
+    setCrashAction(m_settings->crashAction());
 }
 
 bool Options::loadCompositingConfig (bool force)

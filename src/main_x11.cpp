@@ -293,8 +293,8 @@ void ApplicationX11::crashChecking()
             cmd = cmd.left(500);
         }
         qCDebug(KWIN_CORE) << "Starting" << cmd << "and exiting";
-        char buf[1024];
-        sprintf(buf, "%s &", cmd.toLatin1().data());
+        char buf[4096];
+        snprintf(buf, 4095, "%s &", cmd.toLatin1().data());
         system(buf);
         ::exit(1);
     }
@@ -323,10 +323,21 @@ void ApplicationX11::crashHandler(int signal)
 {
     crashes++;
 
+    if (options->crashAction()==CrashActionRestartNoDisable) crashes=0;
+    if (options->crashAction()==CrashActionRestartDisable) crashes++;
+    if (options->crashAction()==CrashActionQuit) return;
+    if (options->crashAction()==CrashActionAAAAAAA) {
+      system("xdg-open \"https://github.com/tildearrow/kwin-lowlatency/issues/new?title=IT+JUST+CRASHED\" &");
+    }
+
     fprintf(stderr, "Application::crashHandler() called with signal %d; recent crashes: %d\n", signal, crashes);
-    char cmd[1024];
-    sprintf(cmd, "%s --crashes %d &",
-            QFile::encodeName(QCoreApplication::applicationFilePath()).constData(), crashes);
+    char cmd[8192];
+    if (options->crashAction()==CrashActionOpenbox) {
+      snprintf(cmd, 8191, "openbox --replace &");
+    } else {
+      snprintf(cmd, 8191, "%s --crashes %d &",
+              QFile::encodeName(QCoreApplication::applicationFilePath()).constData(), crashes);
+    }
 
     sleep(1);
     system(cmd);

@@ -40,6 +40,7 @@ public:
     void paintScreen(int mask, const QRegion &region, ScreenPaintData& data) override;
     void paintWindow(EffectWindow* w, int mask, QRegion region, WindowPaintData& data) override;
     void postPaintScreen() override;
+    bool blocksDirectScanout() const override;
     enum {
         INSIDE_GRAPH,
         NOWHERE,

@@ -15,6 +15,7 @@ namespace KWin
 SurfaceItemX11::SurfaceItemX11(Toplevel *window, Item *parent)
     : SurfaceItem(window, parent)
 {
+    m_toplevel = window;
     connect(window, &Toplevel::bufferGeometryChanged,
             this, &SurfaceItemX11::handleBufferGeometryChanged);
     connect(window, &Toplevel::geometryShapeChanged,

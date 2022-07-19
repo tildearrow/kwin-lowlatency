@@ -93,6 +93,7 @@ void RenderLoopPrivate::scheduleRepaint()
     }
 
     const std::chrono::nanoseconds waitInterval = nextRenderTimestamp - currentTime;
+    if (options->debugCompositeTimer()) printf("Composite timer: %ldns\n",waitInterval);
     compositeTimer.start(std::chrono::duration_cast<std::chrono::milliseconds>(waitInterval));
 }
 

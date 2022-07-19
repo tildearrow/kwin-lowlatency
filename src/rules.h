@@ -69,6 +69,7 @@ public:
     bool checkNoBorder(bool noborder, bool init = false) const;
     QString checkDecoColor(QString schemeFile) const;
     bool checkBlockCompositing(bool block) const;
+    bool checkAllowUnredirect(bool allow) const;
     int checkFSP(int fsp) const;
     int checkFPP(int fpp) const;
     bool checkAcceptFocus(bool focus) const;
@@ -164,6 +165,7 @@ public:
     bool applyNoBorder(bool& noborder, bool init) const;
     bool applyDecoColor(QString &schemeFile) const;
     bool applyBlockCompositing(bool& block) const;
+    bool applyAllowUnredirect(bool& allow) const;
     bool applyFSP(int& fsp) const;
     bool applyFPP(int& fpp) const;
     bool applyAcceptFocus(bool& focus) const;
@@ -256,6 +258,8 @@ private:
     ForceRule decocolorrule;
     bool blockcompositing;
     ForceRule blockcompositingrule;
+    bool allowunredirect;
+    ForceRule allowunredirectrule;
     int fsplevel;
     int fpplevel;
     ForceRule fsplevelrule;

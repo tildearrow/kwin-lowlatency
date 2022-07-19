@@ -1,4 +1,5 @@
 target_sources(kwin PRIVATE
+    dummyvsyncmonitor.cpp
     softwarevsyncmonitor.cpp
     vsyncmonitor.cpp
 )

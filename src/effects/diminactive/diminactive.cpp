@@ -56,6 +56,10 @@ DimInactiveEffect::~DimInactiveEffect()
 {
 }
 
+bool DimInactiveEffect::blocksDirectScanout() const {
+  return false;
+}
+
 void DimInactiveEffect::reconfigure(ReconfigureFlags flags)
 {
     Q_UNUSED(flags)

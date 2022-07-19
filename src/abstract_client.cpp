@@ -238,6 +238,11 @@ void AbstractClient::markAsZombie()
     m_zombie = true;
 }
 
+bool AbstractClient::mayUnredirect() const
+{
+    return rules()->checkAllowUnredirect(true);
+}
+
 Layer AbstractClient::layer() const
 {
     if (m_layer == UnknownLayer)

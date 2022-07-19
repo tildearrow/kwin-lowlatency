@@ -4585,12 +4585,12 @@ void X11Client::doInteractiveResizeSync()
         m_syncRequest.timeout->start(250);
         sendSyncRequest();
     } else {
-        // For clients not supporting the XSYNC protocol, we limit the resizes to 30Hz
-        // to take pointless load from X11 and the client, the mouse is still moved at
-        // full speed and no human can control faster resizes anyway.
+        // don't limit the resizes to any rate. I want smoothness!
+        // and yes, I'm a human who can contorl this fast of a rate.
+        // plus Windows is smooth, so why can't KDE be so?
         m_syncRequest.isPending = true;
         m_syncRequest.interactiveResize = true;
-        m_syncRequest.timeout->start(33);
+        m_syncRequest.timeout->start(4);
     }
 
     const QRect moveResizeClientGeometry = frameRectToClientRect(moveResizeGeometry());

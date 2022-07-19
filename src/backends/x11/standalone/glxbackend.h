@@ -10,6 +10,7 @@
 #define KWIN_GLX_BACKEND_H
 #include "openglbackend.h"
 #include "openglsurfacetexture_x11.h"
+#include "toplevel.h"
 #include "x11eventfilter.h"
 #include "utils/common.h"
 
@@ -74,10 +75,12 @@ public:
     SurfaceTexture *createSurfaceTextureX11(SurfacePixmapX11 *pixmap) override;
     QRegion beginFrame(AbstractOutput *output) override;
     void endFrame(AbstractOutput *output, const QRegion &renderedRegion, const QRegion &damagedRegion) override;
+    bool scanout(AbstractOutput* output, SurfaceItem* surfaceItem) override;
     bool makeCurrent() override;
     void doneCurrent() override;
     OverlayWindow* overlayWindow() const override;
     void init() override;
+    bool directScanoutAllowed(AbstractOutput* output) const override;
 
     Display *display() const { return m_x11Display; }
 
@@ -113,6 +116,8 @@ private:
     bool m_haveMESASwapControl = false;
     bool m_haveEXTSwapControl = false;
     bool m_haveSGISwapControl = false;
+    long long m_lastUnredirectedWindow;
+    Toplevel* m_lastUnredirectedToplevel;
     Display *m_x11Display;
     X11StandalonePlatform *m_backend;
     VsyncMonitor *m_vsyncMonitor = nullptr;

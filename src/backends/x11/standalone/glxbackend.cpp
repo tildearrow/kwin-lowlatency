@@ -16,8 +16,10 @@
 #include "glxconvenience.h"
 #include "logging.h"
 #include "glx_context_attribute_builder.h"
+#include "dummyvsyncmonitor.h"
 #include "omlsynccontrolvsyncmonitor.h"
 #include "sgivideosyncvsyncmonitor.h"
+#include "sgivideosyncbusywaitvsyncmonitor.h"
 #include "softwarevsyncmonitor.h"
 #include "x11_platform.h"
 // kwin
@@ -30,6 +32,7 @@
 #include "screens.h"
 #include "surfaceitem_x11.h"
 #include "utils/xcbutils.h"
+#include "x11client.h"
 // kwin libs
 #include <kwinglplatform.h>
 #include <kwinglutils.h>
@@ -104,9 +107,12 @@ GlxBackend::GlxBackend(Display *display, X11StandalonePlatform *backend)
     , glxWindow(None)
     , ctx(nullptr)
     , m_bufferAge(0)
+    , m_lastUnredirectedWindow(-1)
     , m_x11Display(display)
     , m_backend(backend)
 {
+     if (options->setMaxFramesAllowed()) setenv("__GL_MaxFramesAllowed", "1", true);
+
      // Force initialization of GLX integration in the Qt's xcb backend
      // to make it call XESetWireToEvent callbacks, which is required
      // by Mesa when using DRI2.
@@ -216,6 +222,11 @@ void GlxBackend::init()
         }
     }
 
+    // VSync mechanism option
+    if (options->vSyncMechanism()!=VSyncMechanismIntelSwap && options->vSyncMechanism()!=VSyncMechanismAuto) {
+      supportsSwapEvent=false;
+    }
+
     // Check whether certain features are supported
     m_haveMESACopySubBuffer = hasExtension(QByteArrayLiteral("GLX_MESA_copy_sub_buffer"));
     m_haveMESASwapControl   = hasExtension(QByteArrayLiteral("GLX_MESA_swap_control"));
@@ -239,7 +250,7 @@ void GlxBackend::init()
         supportsSwapEvent = false;
     }
 
-    static bool syncToVblankDisabled = qEnvironmentVariableIsSet("KWIN_X11_NO_SYNC_TO_VBLANK");
+    static bool syncToVblankDisabled = qEnvironmentVariableIsSet("KWIN_X11_NO_SYNC_TO_VBLANK") || options->forceDisableVSync();
     if (!syncToVblankDisabled) {
         if (haveSwapInterval) {
             setSwapInterval(1);
@@ -269,12 +280,35 @@ void GlxBackend::init()
         // the vblank may occur right in between querying video sync counter and the act
         // of swapping buffers, but on the other hand, there is no any better alternative
         // option. NVIDIA doesn't provide any extension such as GLX_INTEL_swap_event.
+        //
+        // also, it's the only thing that works when you have multiple screens...
+        // ...assuming you can move that little dummy window it creates.
         if (!forceSoftwareVsync) {
-            if (!m_vsyncMonitor) {
+            if (options->vSyncMechanism()==VSyncMechanismAuto) {
+              if (!m_vsyncMonitor) {
                 m_vsyncMonitor = SGIVideoSyncVsyncMonitor::create(this);
-            }
-            if (!m_vsyncMonitor) {
+              }
+              if (!m_vsyncMonitor) {
                 m_vsyncMonitor = OMLSyncControlVsyncMonitor::create(this);
+              }
+            } else {
+              if (options->vSyncMechanism()==VSyncMechanismSGI) {
+                if (!m_vsyncMonitor) {
+                  m_vsyncMonitor = SGIVideoSyncVsyncMonitor::create(this);
+                }
+              } else if (options->vSyncMechanism()==VSyncMechanismOML) {
+                if (!m_vsyncMonitor) {
+                  m_vsyncMonitor = OMLSyncControlVsyncMonitor::create(this);
+                }
+              } else if (options->vSyncMechanism()==VSyncMechanismSGIHack) {
+                if (!m_vsyncMonitor) {
+                  m_vsyncMonitor = SGIVideoSyncBusyWaitVsyncMonitor::create(this);
+                }
+              } else {
+                if (!m_vsyncMonitor) {
+                  m_vsyncMonitor = DummyVsyncMonitor::create(this);
+                }
+              }
             }
         }
         if (!m_vsyncMonitor) {
@@ -704,6 +738,10 @@ void GlxBackend::present(const QRegion &damage)
         glDrawBuffer(GL_BACK);
     }
 
+    if (options->vSyncMechanism()==VSyncMechanismGLFinish) {
+      glFinish();
+    }
+
     if (!supportsBufferAge()) {
         glXWaitGL();
         XFlush(display());
@@ -753,6 +791,9 @@ void GlxBackend::endFrame(AbstractOutput *output, const QRegion &renderedRegion,
 
     // If the GLX_INTEL_swap_event extension is not used for getting presentation feedback,
     // assume that the frame will be presented at the next vblank event, this is racy.
+    //
+    // don't you call it "racy". it's the only thing that allows us to eventually have
+    // some multi-monitor support with ease.
     if (m_vsyncMonitor) {
         m_vsyncMonitor->arm();
     }
@@ -769,13 +810,76 @@ void GlxBackend::endFrame(AbstractOutput *output, const QRegion &renderedRegion,
 
     present(effectiveRenderedRegion);
 
-    if (overlayWindow()->window())  // show the window only after the first pass,
+    if (overlayWindow()->window() && m_lastUnredirectedWindow==-1)  // show the window only after the first pass,
         overlayWindow()->show();   // since that pass may take long
 
     // Save the damaged region to history
     if (supportsBufferAge()) {
         m_damageJournal.add(damagedRegion);
     }
+}
+
+bool GlxBackend::scanout(AbstractOutput* output, SurfaceItem *surfaceItem)
+{
+    if (surfaceItem==NULL) {
+      if (m_lastUnredirectedWindow!=-1) {
+        printf("Unredirection stopped\n");
+        xcb_void_cookie_t success=xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
+        xcb_generic_error_t* xError=xcb_request_check(connection(),success);
+        if (xError==NULL) {
+          printf("FOR CRASH: THE TOPLEVEL IS %p\n",m_lastUnredirectedToplevel);
+          X11Client* xClient=(X11Client*)(m_lastUnredirectedToplevel);
+          printf("FOR CRASH: THE CLIENT IS %p\n",xClient);
+          if (xClient!=NULL) xClient->discardWindowPixmap();
+        } else {
+          printf("error while redirecting the window. this means the window must have disappeared...\n");
+        }
+        m_lastUnredirectedWindow=-1;
+        m_lastUnredirectedToplevel=NULL;
+        const QSize& s=screens()->size();
+        overlayWindow()->setShape(QRect(0,0,s.width(),s.height()));
+        overlayWindow()->show();
+      }
+      return false;
+    }
+    SurfaceItemX11* item = static_cast<SurfaceItemX11 *>(surfaceItem);
+    //printf("The toplevel is: %p\n",item->m_toplevel);
+    //if (item->m_toplevel==NULL) return false;
+    long long frameId=item->m_toplevel->frameId();
+    if (m_lastUnredirectedWindow!=frameId) {
+      if (m_lastUnredirectedWindow!=-1) {
+        printf("Unredirection window switch\n");
+        xcb_void_cookie_t success=xcb_composite_redirect_window(connection(), m_lastUnredirectedWindow, XCB_COMPOSITE_REDIRECT_MANUAL);
+        xcb_generic_error_t* xError=xcb_request_check(connection(),success);
+        if (xError==NULL) {
+          printf("FOR CRASH: THE TOPLEVEL IS %p\n",m_lastUnredirectedToplevel);
+          X11Client* xClient=(X11Client*)(m_lastUnredirectedToplevel);
+          printf("FOR CRASH: THE CLIENT IS %p\n",xClient);
+          if (xClient!=NULL) xClient->discardWindowPixmap();
+        } else {
+          printf("error while redirecting the window. this means the window must have disappeared...\n");
+        }
+      }
+      printf("Unredirection started\n");
+      xcb_composite_unredirect_window(connection(), item->m_toplevel->frameId(), XCB_COMPOSITE_REDIRECT_MANUAL);
+      const QSize& s=screens()->size();
+      QRegion region(0,0,s.width(),s.height());
+      region-=item->m_toplevel->frameGeometry();
+      if (region.isEmpty()) {
+        overlayWindow()->hide();
+      } else {
+        overlayWindow()->setShape(region);
+      }
+      m_lastUnredirectedWindow=frameId;
+      m_lastUnredirectedToplevel=item->m_toplevel;
+    }
+    return false;
+}
+
+bool GlxBackend::directScanoutAllowed(AbstractOutput* output) const
+{
+    Q_UNUSED(output)
+    return options->unredirectFullscreen();
 }
 
 void GlxBackend::vblank(std::chrono::nanoseconds timestamp)

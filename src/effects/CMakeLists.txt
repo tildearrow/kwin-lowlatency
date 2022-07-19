@@ -160,6 +160,7 @@ add_subdirectory(sheet)
 add_subdirectory(snaphelper)
 add_subdirectory(startupfeedback)
 add_subdirectory(trackmouse)
+add_subdirectory(mousepos)
 add_subdirectory(wobblywindows)
 
 ###############################################################################

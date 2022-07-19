@@ -127,6 +127,9 @@ var fadingPopupsEffect = {
             }
         }
     },
+    blocksDirectScanout: function () {
+      return false;
+    },
     init: function () {
         fadingPopupsEffect.loadConfig();
 

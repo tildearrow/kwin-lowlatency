@@ -4,7 +4,7 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#include "omlsynccontrolvsyncmonitor.h"
+#include "sgivideosyncbusywaitvsyncmonitor.h"
 #include "glxconvenience.h"
 #include "logging.h"
 
@@ -15,15 +15,15 @@
 namespace KWin
 {
 
-OMLSyncControlVsyncMonitor *OMLSyncControlVsyncMonitor::create(QObject *parent)
+SGIVideoSyncBusyWaitVsyncMonitor *SGIVideoSyncBusyWaitVsyncMonitor::create(QObject *parent)
 {
     const char *extensions = glXQueryExtensionsString(QX11Info::display(),
                                                       QX11Info::appScreen());
-    if (!strstr(extensions, "GLX_OML_sync_control")) {
-        return nullptr; // GLX_OML_sync_control is unsupported.
+    if (!strstr(extensions, "GLX_SGI_video_sync")) {
+        return nullptr; // GLX_SGI_video_sync is unsupported.
     }
 
-    OMLSyncControlVsyncMonitor *monitor = new OMLSyncControlVsyncMonitor(parent);
+    SGIVideoSyncBusyWaitVsyncMonitor *monitor = new SGIVideoSyncBusyWaitVsyncMonitor(parent);
     if (monitor->isValid()) {
         return monitor;
     }
@@ -31,7 +31,7 @@ OMLSyncControlVsyncMonitor *OMLSyncControlVsyncMonitor::create(QObject *parent)
     return nullptr;
 }
 
-OMLSyncControlVsyncMonitorHelper::OMLSyncControlVsyncMonitorHelper(QObject *parent)
+SGIVideoSyncBusyWaitVsyncMonitorHelper::SGIVideoSyncBusyWaitVsyncMonitorHelper(QObject *parent)
     : QObject(parent)
 {
     // Establish a new X11 connection to avoid locking up the main X11 connection.
@@ -89,7 +89,7 @@ OMLSyncControlVsyncMonitorHelper::OMLSyncControlVsyncMonitorHelper(QObject *pare
     }
 }
 
-OMLSyncControlVsyncMonitorHelper::~OMLSyncControlVsyncMonitorHelper()
+SGIVideoSyncBusyWaitVsyncMonitorHelper::~SGIVideoSyncBusyWaitVsyncMonitorHelper()
 {
     if (m_localContext) {
         glXDestroyContext(m_display, m_localContext);
@@ -105,43 +105,50 @@ OMLSyncControlVsyncMonitorHelper::~OMLSyncControlVsyncMonitorHelper()
     }
 }
 
-bool OMLSyncControlVsyncMonitorHelper::isValid() const
+bool SGIVideoSyncBusyWaitVsyncMonitorHelper::isValid() const
 {
     return m_display && m_localContext && m_drawable;
 }
 
-void OMLSyncControlVsyncMonitorHelper::poll()
+void SGIVideoSyncBusyWaitVsyncMonitorHelper::poll()
 {
     if (!glXMakeCurrent(m_display, m_drawable, m_localContext)) {
         qCDebug(KWIN_X11STANDALONE) << "Failed to make vsync monitor OpenGL context current";
+        Q_EMIT errorOccurred();
         return;
     }
 
-    int64_t ust, msc, sbc;
+    uint count;
+    uint icount;
 
-    glXGetSyncValuesOML(m_display, m_drawable, &ust, &msc, &sbc);
-    glXWaitForMscOML(m_display, m_drawable, 0, 2, (msc + 1) % 2, &ust, &msc, &sbc);
+    glXGetVideoSyncSGI(&icount);
 
-    Q_EMIT vblankOccurred(std::chrono::microseconds(ust));
+    while (icount==count) {
+      QThread::usleep(1000);
+      glXGetVideoSyncSGI(&count);
+    }
+
+    // Using monotonic clock is inaccurate, but it's still a pretty good estimate.
+    Q_EMIT vblankOccurred(std::chrono::steady_clock::now().time_since_epoch());
 }
 
-OMLSyncControlVsyncMonitor::OMLSyncControlVsyncMonitor(QObject *parent)
+SGIVideoSyncBusyWaitVsyncMonitor::SGIVideoSyncBusyWaitVsyncMonitor(QObject *parent)
     : VsyncMonitor(parent)
     , m_thread(new QThread)
-    , m_helper(new OMLSyncControlVsyncMonitorHelper)
+    , m_helper(new SGIVideoSyncBusyWaitVsyncMonitorHelper)
 {
     m_helper->moveToThread(m_thread);
 
-    connect(m_helper, &OMLSyncControlVsyncMonitorHelper::errorOccurred,
-            this, &OMLSyncControlVsyncMonitor::errorOccurred);
-    connect(m_helper, &OMLSyncControlVsyncMonitorHelper::vblankOccurred,
-            this, &OMLSyncControlVsyncMonitor::vblankOccurred);
+    connect(m_helper, &SGIVideoSyncBusyWaitVsyncMonitorHelper::errorOccurred,
+            this, &SGIVideoSyncBusyWaitVsyncMonitor::errorOccurred);
+    connect(m_helper, &SGIVideoSyncBusyWaitVsyncMonitorHelper::vblankOccurred,
+            this, &SGIVideoSyncBusyWaitVsyncMonitor::vblankOccurred);
 
     m_thread->setObjectName(QStringLiteral("vsync event monitor"));
     m_thread->start();
 }
 
-OMLSyncControlVsyncMonitor::~OMLSyncControlVsyncMonitor()
+SGIVideoSyncBusyWaitVsyncMonitor::~SGIVideoSyncBusyWaitVsyncMonitor()
 {
     m_thread->quit();
     m_thread->wait();
@@ -150,14 +157,14 @@ OMLSyncControlVsyncMonitor::~OMLSyncControlVsyncMonitor()
     delete m_thread;
 }
 
-bool OMLSyncControlVsyncMonitor::isValid() const
+bool SGIVideoSyncBusyWaitVsyncMonitor::isValid() const
 {
     return m_helper->isValid();
 }
 
-void OMLSyncControlVsyncMonitor::arm()
+void SGIVideoSyncBusyWaitVsyncMonitor::arm()
 {
-    QMetaObject::invokeMethod(m_helper, &OMLSyncControlVsyncMonitorHelper::poll);
+    QMetaObject::invokeMethod(m_helper, &SGIVideoSyncBusyWaitVsyncMonitorHelper::poll);
 }
 
 } // namespace KWin

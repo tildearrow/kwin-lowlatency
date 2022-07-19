@@ -207,40 +207,64 @@ void SceneOpenGL::paint(AbstractOutput *output, const QRegion &damage, const QLi
     renderLoop->beginFrame();
 
     SurfaceItem *fullscreenSurface = nullptr;
+    if (options->debugUnredirect()) printf("-----------------------\n");
     for (int i = stacking_order.count() - 1; i >=0; i--) {
         Window *window = stacking_order[i];
         Toplevel *toplevel = window->window();
-        if (output && toplevel->isOnOutput(output) && window->isVisible() && toplevel->opacity() > 0) {
+        if (options->debugUnredirect()) printf("Testing window of size %dx%d...\n",window->width(),window->height());
+        if (window->width()<3 && window->height()<3) {
+          if (options->debugUnredirect()) printf("Too small. Next one.\n");
+          continue;
+        }
+        if ((output==NULL || (output && toplevel->isOnOutput(output))) && window->isVisible() && (toplevel->opacity() > 0 || (options->unredirectNonOpaque() && !(window->width()==32 && window->height()==32)))) {
             AbstractClient *c = dynamic_cast<AbstractClient*>(toplevel);
             if (!c || !c->isFullScreen()) {
+                if (options->debugUnredirect()) printf("Client is not full-screen.\n");
                 break;
             }
             if (!window->surfaceItem()) {
+                if (options->debugUnredirect()) printf("Window has no surface item\n");
                 break;
             }
             SurfaceItem *topMost = findTopMostSurface(window->surfaceItem());
             auto pixmap = topMost->pixmap();
             if (!pixmap) {
+                if (options->debugUnredirect()) printf("Surface item has no pixmap.\n");
                 break;
             }
             pixmap->update();
             // the subsurface has to be able to cover the whole window
             if (topMost->position() != QPoint(0, 0)) {
+                if (options->debugUnredirect()) printf("Position of surface item is not (0, 0).\n");
                 break;
             }
             // and it has to be completely opaque
-            if (!window->isOpaque() && !topMost->opaque().contains(QRect(0, 0, window->width(), window->height()))) {
+            if (!options->unredirectNonOpaque() && !window->isOpaque() && !topMost->opaque().contains(QRect(0, 0, window->width(), window->height()))) {
+                if (options->debugUnredirect()) printf("Window is not opaque.\n");
                 break;
+            }
+            // and user has allowed unredirection for this app
+            if (!c->mayUnredirect()) {
+              if (options->debugUnredirect()) printf("Window rule prevents it.\n");
+              break;
             }
             fullscreenSurface = topMost;
             break;
+        } else {
+          if (options->debugUnredirect()) printf("Window not visible, toplevel not on output and/or not opaque.\n");
         }
     }
     renderLoop->setFullscreenSurface(fullscreenSurface);
 
     bool directScanout = false;
-    if (m_backend->directScanoutAllowed(output) && !static_cast<EffectsHandlerImpl*>(effects)->blocksDirectScanout()) {
+    if (m_backend->directScanoutAllowed(output)) {
+      if (!static_cast<EffectsHandlerImpl*>(effects)->blocksDirectScanout()) {
+        if (options->debugUnredirect()) printf("Scanning %p\n",fullscreenSurface);
         directScanout = m_backend->scanout(output, fullscreenSurface);
+      } else {
+        if (options->debugUnredirect()) printf("Effect blocks DS.\n");
+        directScanout = m_backend->scanout(output, NULL);
+      }
     }
     if (directScanout) {
         renderLoop->endFrame();

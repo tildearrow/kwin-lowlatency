@@ -239,6 +239,36 @@
         <entry name="WindowsBlockCompositing" type="Bool">
             <default>true</default>
         </entry>
+        <entry name="UnredirectFullscreen" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="DrmDirectScanout" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="DebugUnredirect" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="UnredirectNonOpaque" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="OpenGLIsAlwaysSafe" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="SetMaxFramesAllowed" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="DebugCompositeTimer" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="SyncWindowX" type="Int">
+            <default>0</default>
+        </entry>
+        <entry name="SyncWindowY" type="Int">
+            <default>0</default>
+        </entry>
+        <entry name="ForceDisableVSync" type="Bool">
+            <default>false</default>
+        </entry>
         <entry name="LatencyPolicy" type="Enum">
             <choices name="KWin::LatencyPolicy">
                 <choice name="LatencyExtremelyLow" value="ExtremelyLow"/>
@@ -256,6 +286,29 @@
                 <choice name="RenderTimeEstimatorAverage" value="Average"/>
             </choices>
             <default>RenderTimeEstimatorMaximum</default>
+        </entry>
+        <entry name="VSyncMechanism" type="Enum">
+            <choices name="KWin::VSyncMechanism">
+                <choice name="VSyncMechanismAuto" value="Auto"/>
+                <choice name="VSyncMechanismNone" value="None"/>
+                <choice name="VSyncMechanismIntelSwap" value="IntelSwap"/>
+                <choice name="VSyncMechanismGLFinish" value="GLFinish"/>
+                <choice name="VSyncMechanismSGI" value="SGI"/>
+                <choice name="VSyncMechanismOML" value="OML"/>
+                <choice name="VSyncMechanismSGIHack" value="SGIHack"/>
+            </choices>
+            <default>VSyncMechanismAuto</default>
+        </entry>
+        <entry name="CrashAction" type="Enum">
+            <choices name="KWin::CrashAction">
+                <choice name="CrashActionRestart" value="Restart"/>
+                <choice name="CrashActionRestartNoDisable" value="RestartNoDisable"/>
+                <choice name="CrashActionQuit" value="Quit"/>
+                <choice name="CrashActionOpenbox" value="Openbox"/>
+                <choice name="CrashActionRestartDisable" value="RestartDisable"/>
+                <choice name="CrashActionAAAAAAA" value="AAAAAAA"/>
+            </choices>
+            <default>CrashActionRestart</default>
         </entry>
     </group>
     <group name="TabBox">
