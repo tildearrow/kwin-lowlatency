@@ -1444,7 +1444,6 @@ void AbstractClient::handleInteractiveMoveResize(int x, int y, int x_root, int y
     } else {
         doInteractiveResizeSync();
     }
-
     Q_EMIT clientStepUserMovedResized(this, moveResizeGeometry());
 }
 
@@ -2128,6 +2127,10 @@ bool AbstractClient::doStartInteractiveMoveResize()
 }
 
 void AbstractClient::doFinishInteractiveMoveResize()
+{
+}
+
+void AbstractClient::positionGeometryTip()
 {
 }
 

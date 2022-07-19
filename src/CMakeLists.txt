@@ -46,6 +46,7 @@ set(kwin_SRCS
     events.cpp
     focuschain.cpp
     ftrace.cpp
+    geometrytip.cpp
     gestures.cpp
     globalshortcuts.cpp
     group.cpp

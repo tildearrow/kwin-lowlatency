@@ -144,6 +144,7 @@ add_subdirectory(slideback)
 add_subdirectory(slidingpopups)
 add_subdirectory(thumbnailaside)
 add_subdirectory(touchpoints)
+add_subdirectory(windowgeometry)
 add_subdirectory(zoom)
 
 # OpenGL-specific effects

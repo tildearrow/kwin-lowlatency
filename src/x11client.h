@@ -400,6 +400,7 @@ private:
     void sendSyncRequest();
     void leaveInteractiveMoveResize() override;
     void performInteractiveResize();
+    void positionGeometryTip() override;
     void establishCommandWindowGrab(uint8_t button);
     void establishCommandAllGrab(uint8_t button);
     void resizeDecoration();

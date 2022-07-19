@@ -1147,6 +1147,10 @@ protected:
      * ensures that the internal mode is properly ended.
      */
     virtual void leaveInteractiveMoveResize();
+    /**
+     * Positions the geometry tip.
+     */
+    virtual void positionGeometryTip();
     /*
      * Checks if the mouse cursor is near the edge of the screen and if so
      * activates quick tiling or maximization
