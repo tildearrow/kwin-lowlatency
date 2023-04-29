@@ -1,10 +1,8 @@
-# **PLEASE DON'T STAR THIS PROJECT ANYMORE**
+# **archived**
 
-it doesn't work on 5.24 and I have no time to maintain it!
+can't maintain this anymore... thanks everyone.
 
-# are you going to revive it?
-
-well, I just noticed KWin devs removed one feature that was vital to me, so perhaps...
+feel free to continue the project if you wish.
 
 # KWin-lowlatency
 
